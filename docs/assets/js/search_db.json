@@ -29,7 +29,7 @@
   },
   {
     "title": "Our Team & Collaborators - Vatsal Sanjay (PI)",
-    "content": "[ ](https://github.com/VatsalSy) [ ](https://scholar.google.com/citations?user=tHb_qZoAAAAJ&hl=en) [ ](https://bsky.app/profile/comphy-lab.org) - [Postdoc, Phys. Fluids - Univ. Twente / 2022-25](https://pof.tnw.utwente.nl/people/profile/1330) - Ph.D., Phys. Fluids - Univ. Twente / 2018-22, **Thesis:** Viscous Free-Surface Flows - B.Tech + M.Tech, Two-Phase Flow & Instability Lab, IIT-Roorkee / 2013-18, **Thesis:** Understanding of mutual interactions between liquid jets: Entrainment and sheet formation - [Personal Website](https://vatsalsanjay.com) **Research Interest:** See [here](https://comphy-lab.org/research) [Download CV](https://raw.githubusercontent.com/VatsalSy/Vatsal_CV/master/Vatsal_CV.pdf){: .cv-button}",
+    "content": "[ ](https://github.com/VatsalSy) [ ](https://scholar.google.com/citations?user=tHb_qZoAAAAJ&hl=en) [ ](https://bsky.app/profile/comphy-lab.org) - [Postdoc, Phys. Fluids - Univ. Twente / 2022-25](https://pof.tnw.utwente.nl/people/profile/1330) - Ph.D., Phys. Fluids - Univ. Twente / 2018-22, **Thesis:** Viscous Free-Surface Flows - B.Tech + M.Tech, Two-Phase Flow & Instability Lab, IIT-Roorkee / 2013-18, **Thesis:** Understanding of mutual interactions between liquid jets: Entrainment and sheet formation - [Personal Website](https://vatsalsanjay.com), Photo: Florian Braakman. **Research Interest:** See [research page](https://comphy-lab.org/research) [Download CV](https://raw.githubusercontent.com/VatsalSy/Vatsal_CV/master/Vatsal_CV.pdf){: .cv-button}",
     "url": "https://comphy-lab.org/team/#vatsal-sanjay-pi",
     "type": "website_section",
     "priority": 1
@@ -218,7 +218,7 @@
   },
   {
     "title": "Our Team & Collaborators - Vincent Bertin",
-    "content": "[ ](https://scholar.google.com/citations?user=jO_RTLR2xBYC&hl=en&inst=5726176096060060532&oi=ao) - [Postdoc, University Aix-Marseille ](https://vincent-bertin.github.io/) **Collaboration on:** Elastic Sheets, Spinning Pizza.",
+    "content": "[ ](https://scholar.google.com/citations?user=jO_RTLR2xBYC&hl=en&inst=5726176096060060532&oi=ao) - [Postdoc, University Aix-Marseille](https://vincent-bertin.github.io/) **Collaboration on:** Elastic Sheets, Spinning Pizza.",
     "url": "https://comphy-lab.org/team/#vincent-bertin",
     "type": "website_section",
     "priority": 1
@@ -327,6 +327,20 @@
     "url": "https://comphy-lab.org/team/#laurence-bruggink",
     "type": "website_section",
     "priority": 1
+  },
+  {
+    "title": "[17] Bashkatov, A., B\u00fcrkle, F., Demirk\u0131r, \u00c7., Ding, W.,Sanjay, V., Babich, A., Yang, X., Mutschke, G., Czarske, J., Lohse, D., et al. Electrolyte droplet spraying in H2 bubbles during water electrolysis under normal and microgravity conditions. Nat. Commun., 16, 4580 (2025).",
+    "content": "[17] Bashkatov, A., B\u00fcrkle, F., Demirk\u0131r, \u00c7., Ding, W.,Sanjay, V., Babich, A., Yang, X., Mutschke, G., Czarske, J., Lohse, D., et al. Electrolyte droplet spraying in H2 bubbles during water electrolysis under normal and microgravity conditions. Nat. Commun., 16, 4580 (2025).",
+    "url": "https://comphy-lab.org/research/#17",
+    "type": "paper",
+    "tags": [
+      "Bubbles",
+      "Jets",
+      "Coalescence",
+      "Soft-matter-singularities",
+      "Drops"
+    ],
+    "priority": 2
   },
   {
     "title": "[15]Sanjay, V., & Lohse, D. Unifying theory of scaling in drop impact: Forces & maximum spreading diameter. Phys. Rev. Lett., 134, 104003 (2025).",
@@ -7270,8 +7284,15 @@
     "priority": 4
   },
   {
+    "title": "History - <i class=\"fa-solid fa-graduation-cap gradcap-icon\"></i> CoMPhy Lab is Moving to Durham University!",
+    "content": "Join Us Starting July 1st, 2025 , the CoMPhy Lab will be relocating to Durham University, UK. We are excited to join the [Condensed Matter Physics section](https://www.durham.ac.uk/research/institutes-and-centres/condensed-matter-physics/) in the [Department of Physics](https://www.durham.ac.uk/departments/academic/physics/) and continue our research in computational physics and fluid dynamics in our new home.",
+    "url": "https://comphy-lab.org#history",
+    "type": "website_section",
+    "priority": 8
+  },
+  {
     "title": "History - May",
-    "content": "- [ Dixit, A. , Oratis, A., Zinelis, K., Lohse, D., & Sanjay, V. Viscoelastic Worthington Jets and Droplets Produced by Bursting Bubbles. J. Fluid Mech., 1010, A2 (2025).](/research#16) View Paper",
+    "content": "- [Bashkatov, A., B\u00fcrkle, F., Demirk\u0131r, \u00c7., Ding, W., Sanjay, V. , Babich, A., Yang, X., Mutschke, G., Czarske, J., Lohse, D., et al. Electrolyte droplet spraying in H2 bubbles during water electrolysis under normal and microgravity conditions. Nat. Commun., 16, 4580 (2025).](/research#17) View Paper - [ Dixit, A. , Oratis, A., Zinelis, K., Lohse, D., & Sanjay, V. Viscoelastic Worthington Jets and Droplets Produced by Bursting Bubbles. J. Fluid Mech., 1010, A2 (2025).](/research#16) View Paper",
     "url": "https://comphy-lab.org#history",
     "type": "website_section",
     "priority": 8
@@ -7319,8 +7340,15 @@
     "priority": 8
   },
   {
+    "title": "News - <i class=\"fa-solid fa-graduation-cap gradcap-icon\"></i> CoMPhy Lab is Moving to Durham University!",
+    "content": "Join Us Starting July 1st, 2025 , the CoMPhy Lab will be relocating to Durham University, UK. We are excited to join the [Condensed Matter Physics section](https://www.durham.ac.uk/research/institutes-and-centres/condensed-matter-physics/) in the [Department of Physics](https://www.durham.ac.uk/departments/academic/physics/) and continue our research in computational physics and fluid dynamics in our new home.",
+    "url": "https://comphy-lab.org#news",
+    "type": "website_section",
+    "priority": 8
+  },
+  {
     "title": "News - May",
-    "content": "- [ Dixit, A. , Oratis, A., Zinelis, K., Lohse, D., & Sanjay, V. Viscoelastic Worthington Jets and Droplets Produced by Bursting Bubbles. J. Fluid Mech., 1010, A2 (2025).](/research#16) View Paper",
+    "content": "- [Bashkatov, A., B\u00fcrkle, F., Demirk\u0131r, \u00c7., Ding, W., Sanjay, V. , Babich, A., Yang, X., Mutschke, G., Czarske, J., Lohse, D., et al. Electrolyte droplet spraying in H2 bubbles during water electrolysis under normal and microgravity conditions. Nat. Commun., 16, 4580 (2025).](/research#17) View Paper - [ Dixit, A. , Oratis, A., Zinelis, K., Lohse, D., & Sanjay, V. Viscoelastic Worthington Jets and Droplets Produced by Bursting Bubbles. J. Fluid Mech., 1010, A2 (2025).](/research#16) View Paper",
     "url": "https://comphy-lab.org#news",
     "type": "website_section",
     "priority": 8
@@ -7334,70 +7362,77 @@
   },
   {
     "title": "News - March",
-    "content": "- Prof. Detlef Lohse shares his scientific journey in The Living Histories Series . His inspiring discussion on curiosity, mentorship, and the \"puzzle solving\" joy of science offers valuable insights for researchers at all career stages. Watch on YouTube - [ Sanjay, V. , & Lohse, D. Unifying theory of scaling in drop impact: Forces & maximum spreading diameter. Published in Physical Review Letters.](/research#15) View Paper - Join us for a hybrid online+offline course: [High-Fidelity Simulations Using Basilisk C](/teaching/2025-Basilisk101-Madrid) in Madrid, Spain (March 10-13). Learn some computational (colorful) fluid dynamics with hands-on coding sessions.",
+    "content": "- Prof. Detlef Lohse shares his scientific journey in The Living Histories Series . His inspiring discussion on curiosity, mentorship, and the \"puzzle solving\" joy of science offers valuable insights for researchers at all career stages. Watch on YouTube",
     "url": "https://comphy-lab.org#news",
     "type": "website_section",
     "priority": 8
   },
   {
-    "title": "News - February",
-    "content": "- [ Sanjay, V. , Zhang, B., Lv, C., & Lohse, D. J. Fluid Mech., 1004, A6 (2025) selected as the cover article.](/research#14) Download Cover View Paper - Milan Sent graduated with a bachelor's degree from University of Twente. Thesis: Spinning Pizza",
-    "url": "https://comphy-lab.org#news",
+    "title": "Claude - CLAUDE.md",
+    "content": "This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.",
+    "url": "https://comphy-lab.org#claude",
+    "type": "website_section",
+    "priority": 8
+  },
+  {
+    "title": "Claude - Repository Overview",
+    "content": "This repository contains the CoMPhy Lab website, a static site built with Jekyll for the Computational Multiphase Physics Laboratory. The site features research publications, team member information, teaching materials, and lab news.",
+    "url": "https://comphy-lab.org#claude",
     "type": "website_section",
     "priority": 8
   },
   {
     "title": "Claude - Build and Development Commands",
-    "content": "- **Install dependencies:** `bundle install && cd scripts && npm install && cd ..` - **Build site and search database:** `./scripts/build.sh` - **Run local server:** `bundle exec jekyll serve` (don't run this automatically, user will do manually) - **Fetch blog content:** `cd scripts && npm run fetch-github && cd ..` - **Generate search database:** `ruby scripts/generate_search_db.rb`",
+    "content": "- **Install dependencies:** ```bash bundle install && cd scripts && npm install && cd .. ``` - **Build site and generate search database:** ```bash ./scripts/build.sh ``` - **Run local server:** ```bash bundle exec jekyll serve ``` - **View website in browser:** - **Generate SEO tags:** ```bash bundle exec ruby scripts/generate_seo_tags.rb ``` - **Generate filtered research pages:** ```bash bundle exec ruby scripts/generate_filtered_research.rb ``` - **Run code checks and auto-fixes:** ```bash ./scripts/lint-check.sh ```",
     "url": "https://comphy-lab.org#claude",
     "type": "website_section",
     "priority": 8
   },
   {
-    "title": "Claude - Repository Guidelines",
-    "content": "- Refer to README.md to understand the codebase structure and organization - After adding or deleting files, update README.md accordingly - Keep README.md up-to-date whenever changes affect what's documented there - Templates are in _layouts/*.html with corresponding CSS files: - default.html uses styles.css in /assets/css - research.html uses research.css - team.html uses team.css - All layouts use styles.css as base styling",
+    "title": "Claude - Code Organization",
+    "content": "- **Jekyll Collections:** `_team`, `_research`, `_teaching` - **Layouts:** Located in `_layouts/` directory with corresponding CSS files - **Assets:** CSS, JavaScript, images, and favicon files in `assets/` directory - **Content:** Primarily in Markdown format with HTML for complex components",
     "url": "https://comphy-lab.org#claude",
     "type": "website_section",
     "priority": 8
   },
   {
-    "title": "Claude - General",
-    "content": "- Use 2-space indentation across all files - Follow DRY principles: reuse components, variables, and styles - Add comments for complex logic, but keep code self-documenting - Support both light and dark themes for all new features and changes - Test all UI changes in both themes before committing - Use CSS variables for theme-specific colors (defined in styles.css)",
+    "title": "Claude - Key Features and Components",
+    "content": "1. **Search and Command Palette:** - Triggered by keyboard shortcut (\u2318K on Mac, ctrl+K on Windows) - JavaScript implementation in `assets/js/command-data.js` and `assets/js/command-palette.js` - CSS styling in `assets/css/command-palette.css` 2. **Theme Toggle:** - Light/dark mode support across all pages - Theme variables in `assets/css/styles.css` and page-specific CSS - Theme state persisted via localStorage 3. **Research Publications:** - Filterable by tags - Pre-generated SEO-friendly tag pages - Publication entries in `_research/index.md` 4. **Responsive Design:** - Breakpoints at 1700px, 1300px, 900px, 768px, 500px - Mobile-first approach for media queries",
     "url": "https://comphy-lab.org#claude",
     "type": "website_section",
     "priority": 8
   },
   {
-    "title": "Claude - HTML/Markdown",
-    "content": "- Use semantic HTML elements - Follow BEM naming convention for CSS classes (e.g., `s-header__nav-list`) - Keep content files in markdown format where possible",
+    "title": "Claude - Content Management Guidelines",
+    "content": "- **Research Papers:** Add to `_research/index.md` following the established format - **Team Members:** Modify `_team/index.md` using the existing structure - **Teaching Content:** Add course pages to `_teaching/` directory - **News:** Update `News.md` with new announcements",
     "url": "https://comphy-lab.org#claude",
     "type": "website_section",
     "priority": 8
   },
   {
-    "title": "Claude - CSS",
-    "content": "- Use CSS variables for colors and typography (defined in `:root`) - Use responsive breakpoints at 1700px, 1300px, 900px, 768px, 500px - Use `rem` units for font sizes and spacing - Follow mobile-first approach for media queries - Implement dark theme styles using the [data-theme=\"dark\"] selector - Theme colors are defined in styles.css and page-specific CSS files",
+    "title": "Claude - CSS Architecture",
+    "content": "- CSS variables for colors, typography, and spacing - Page-specific styles in dedicated CSS files (research.css, teaching.css, team.css) - Dark theme support via [data-theme=\"dark\"] selector - Mobile-first responsive design",
     "url": "https://comphy-lab.org#claude",
     "type": "website_section",
     "priority": 8
   },
   {
-    "title": "Claude - JavaScript",
-    "content": "- Use ES6+ features (arrow functions, const/let, template literals) - Always include 'use strict' mode - Use async/await for asynchronous operations - Implement error handling with try/catch blocks - Use camelCase for variable and function names - Prefer event delegation for multiple similar elements",
+    "title": "Claude - JavaScript Guidelines",
+    "content": "- Use ES6+ features (arrow functions, const/let, template literals) - Include 'use strict' mode - Use async/await for asynchronous operations - Implement error handling with try/catch blocks - Use camelCase for variable and function names - Follow proper dependency order in script loading: - Load command-palette.js before command-data.js - Load Fuse.js before any code that uses it - Run lint-check.sh to automatically fix order issues",
     "url": "https://comphy-lab.org#claude",
     "type": "website_section",
     "priority": 8
   },
   {
-    "title": "Claude - Images",
-    "content": "- Optimize images for web (compress to reduce file size) - Follow naming convention: `[name]-[descriptor].[extension]` - Include alt text for all images",
+    "title": "Claude - Deployment Process",
+    "content": "- Site is automatically deployed via GitHub Pages when changes are merged to main - GitHub Actions workflows trigger the build and deployment process - Cloudflare cache is purged automatically on deployment",
     "url": "https://comphy-lab.org#claude",
     "type": "website_section",
     "priority": 8
   },
   {
     "title": "Aboutcomphy - About Us",
-    "content": "We are based at the Physics of Fluids Department at the University of Twente, where we investigate [**non-Newtonian free-surface flows**](/research/?tag=Non-Newtonian) and [**soft matter singularities**](/research/?tag=Soft-matter-singularities). Our group employs a synergy of continuum simulations, experiments (through collaborations), and theoretical analysis to understand phenomena ranging involving drops, bubbles, jets, sheets, and more. We strive to connect fundamental findings with real-world applications, from industrial processes to everyday fluid dynamics.",
+    "content": "We investigate [**non-Newtonian free-surface flows**](/research/?tag=Non-Newtonian) and [**soft matter singularities**](/research/?tag=Soft-matter-singularities). Our group employs a synergy of continuum simulations, experiments (through collaborations), and theoretical analysis to understand phenomena ranging involving drops, bubbles, jets, sheets, and more. We strive to connect fundamental findings with real-world applications, from industrial processes to everyday fluid dynamics.",
     "url": "https://comphy-lab.org/#about",
     "type": "website_section",
     "priority": 8
