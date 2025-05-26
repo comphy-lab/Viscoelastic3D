@@ -7284,6 +7284,629 @@
     "priority": 4
   },
   {
+    "title": "reset_install_requirements.sh | SOAPY - Simulation Of Axisymmetric Phenomena in bubblY films: Context",
+    "content": "reset_install_requirements.sh See raw file reset_install_requirements.sh #!/bin/zsh # tested on MacOS only.",
+    "url": "https://comphy-lab.org/soapy/reset_install_requirements.sh.html",
+    "type": "docs_content",
+    "priority": 4
+  },
+  {
+    "title": "reset_install_requirements.sh | SOAPY - Simulation Of Axisymmetric Phenomena in bubblY films: Let us know...",
+    "content": "Let us know if you find issues running with Linux by opening an issue. # modify using http://basilisk.fr/src/INSTALL # ensures that we are always using the latest version of basilisk # Check if --hard flag is passed HARD_RESET = \\f alse if [[ \" \\$ 1\" == \"--hard\" ]]; then HARD_RESET = \\t rue fi # Function to install basilisk install_basilisk() { darcs clone http://basilisk.fr/basilisk cd basilisk/src if [[ \" \\$ OSTYPE\" == \"darwin\" * ]]; then echo \"Using MacOS\" ln -s config.osx config else echo \"Using Linux\" ln -s config.gcc config fi make -k make } # Remove project config always rm -rf .project_config # Check if basilisk needs to be installed if [[ \" \\$ HARD_RESET\" == true ]] || [[ ! -d \"basilisk\" ]]; then echo \"Installing basilisk...\" rm -rf basilisk install_basilisk else echo \"Using existing basilisk installation...\" cd basilisk/src fi # Setup environment variables echo \"export BASILISK= \\$ PWD\" >> ../../.project_config echo \"export PATH= \\\\ $PATH : \\\\ $BASILISK \" >> ../../.project_config source ../../.project_config # Check if qcc is working properly echo \"\\nChecking qcc installation...\" if ! qcc --version > /dev/null 2 >& 1 ; then echo \"\\033[0;31mError: qcc is not working properly.\\033[0m\" echo \"Please ensure you have Xcode Command Line Tools installed.\" echo \"You can install them by running: xcode-select --install\" echo \"For more details, visit: http://basilisk.fr/src/INSTALL\" exit 1 else echo \"\\033[0;32mqcc is properly installed.\\033[0m\" qcc --version fi",
+    "url": "https://comphy-lab.org/soapy/reset_install_requirements.sh.html",
+    "type": "docs_content",
+    "priority": 4
+  },
+  {
+    "title": "reset_install_requirements.sh | SOAPY - Simulation Of Axisymmetric Phenomena in bubblY films - Code Example: #!/bin/zsh# tested on...",
+    "content": "#!/bin/zsh# tested on MacOS only.",
+    "url": "https://comphy-lab.org/soapy/reset_install_requirements.sh.html",
+    "type": "docs_code",
+    "priority": 4
+  },
+  {
+    "title": "reset_install_requirements.sh | SOAPY - Simulation Of Axisymmetric Phenomena in bubblY films - Code Example: Let us know...",
+    "content": "Let us know if you find issues running with Linux by opening an issue.# modify using http://basilisk.fr/src/INSTALL# ensures that we are always using the latest version of basilisk# Check if --hard flag is passedHARD_RESET=\\falseif[[\"\\$1\"==\"--hard\"]];thenHARD_RESET=\\truefi# Function to install basiliskinstall_basilisk(){darcsclone http://basilisk.fr/basiliskcdbasilisk/srcif[[\"\\$OSTYPE\"==\"darwin\"*]];thenecho\"Using MacOS\"ln-sconfig.osx configelseecho\"Using Linux\"ln-sconfig.gcc configfimake-kmake}# Remove project config alwaysrm-rf.project_config# Check if basilisk needs to be installedif[[\"\\$HARD_RESET\"==true]]||[[!-d\"basilisk\"]];thenecho\"Installing basilisk...\"rm-rfbasiliskinstall_basiliskelseecho\"Using existing basilisk installation...\"cdbasilisk/srcfi# Setup environment variablesecho\"export BASILISK=\\$PWD\">>../../.project_configecho\"export PATH=\\\\$PATH:\\\\$BASILISK\">>../../.project_configsource../../.project_config# Check if qcc is working properlyecho\"\\nChecking qcc installation...\"if!qcc--version>/dev/null2>&1;thenecho\"\\033[0;31mError: qcc is not working properly.\\033[0m\"echo\"Please ensure you have Xcode Command Line Tools installed.\"echo\"You can install them by running: xcode-select --install\"echo\"For more details, visit: http://basilisk.fr/src/INSTALL\"exit1elseecho\"\\033[0;32mqcc is properly installed.\\033[0m\"qcc--versionfi",
+    "url": "https://comphy-lab.org/soapy/reset_install_requirements.sh.html",
+    "type": "docs_code",
+    "priority": 4
+  },
+  {
+    "title": "SOAPY - Simulation Of Axisymmetric Phenomena in bubblY films | SOAPY - Simulation Of Axisymmetric Phenomena in bubblY films: SOAPY - Simulation...",
+    "content": "SOAPY - Simulation Of Axisymmetric Phenomena in bubblY films S imulation O f A xisymmetric P henomena in bubbl Y films High-fidelity simulations of soap bubble dynamics and wrinkling instabilities using Basilisk C. Research Overview This repository contains computational tools for studying the dynamics of thin liquid films forming bubbles, with a focus on wrinkling instabilities driven by surface tension and viscous effects.",
+    "url": "https://comphy-lab.org/soapy/index.html",
+    "type": "docs_content",
+    "priority": 4
+  },
+  {
+    "title": "SOAPY - Simulation Of Axisymmetric Phenomena in bubblY films | SOAPY - Simulation Of Axisymmetric Phenomena in bubblY films: The simulations solve...",
+    "content": "The simulations solve the two-phase Navier-Stokes equations in axisymmetric configurations, capturing the complex interplay between: Surface tension-driven dynamics at the liquid-gas interface Viscous dissipation within the thin film Gravitational effects characterized by the Bond number Film thickness variations leading to instability formation Physical System The code models a soap bubble consisting of: - A thin liquid film (water with surfactants) - Surrounding gas phase (air) - Interface dynamics tracked using Volume-of-Fluid (VOF) method - Smoke tracer diffusion for flow visualization Key Dimensionless Parameters Ohnesorge number (Oh) : Ratio of viscous to inertio-capillary forces \\[\\text{Oh} = \\frac{\\mu}{\\sqrt{\\rho\\sigma R}}\\] Bond number (Bo) : Ratio of gravitational to surface tension forces \\[\\text{Bo} = \\frac{\\rho g R^2}{\\sigma}\\] P\u00e9clet number (Pe) : Ratio of advective to diffusive transport \\[\\text{Pe} = \\frac{V_\\gamma R}{D}\\] where \\(V_\\gamma\\) is the inertio-capillary velocity Curvature parameter (k) : Ratio of bubble radius to film thickness \\[k = \\frac{R}{h}\\] Repository Structure basilisk/src/ - Core Basilisk CFD library (reference only, do not modify) simulationCases/ - Test cases for simulation soapBubble-full.c - Full bubble simulation (spherical cap + rim) soapBubble-half.c - Half-bubble simulation variant postProcess/ - Project-specific post-processing tools getData.c - Data extraction utility getFacet.c - Interface facet extraction Video-generic.py - Python script for post-processing Simulation Configurations Full Bubble Simulation ( soapBubble-full.c ) Models a complete bubble with: - Lower hemisphere: Circular cap geometry - Upper region: Spherical rim structure - Initial film thickness: \\(h = 1/k\\) - Adaptive mesh refinement near interfaces Half Bubble Simulation ( soapBubble-half.c ) Variant configuration for studying partial bubble dynamics with modified boundary conditions.",
+    "url": "https://comphy-lab.org/soapy/index.html",
+    "type": "docs_content",
+    "priority": 4
+  },
+  {
+    "title": "SOAPY - Simulation Of Axisymmetric Phenomena in bubblY films | SOAPY - Simulation Of Axisymmetric Phenomena in bubblY films: Physical Parameters Used...",
+    "content": "Physical Parameters Used Parameter Symbol Typical Value Description Ohnesorge number \\(\\text{Oh}\\) \\(10^{-3}\\) Viscous effects Density ratio \\(\\rho_2/\\rho_1\\) \\(10^{-3}\\) Gas/liquid density Viscosity ratio \\(\\mu_2/\\mu_1\\) \\(10^{-3}\\) Gas/liquid viscosity Curvature parameter \\(k\\) 25 \\(R/h\\) ratio P\u00e9clet number (gas) \\(\\text{Pe}_{\\text{gas}}\\) \\(10^{-1}\\) Smoke diffusion Domain size \\(L\\) 5.0 Computational domain Installation and Usage Prerequisites C99-compliant compiler (gcc or clang) GNU make Python 3+ with matplotlib, numpy for post-processing Quick Setup # Clone repository git clone git@github.com:comphy-lab/soapy.git cd soapy # Install Basilisk locally ./reset_install_requirements.sh source .project_config # Compile simulations cd simulationCases make soapBubble-full.tst Running Simulations # Run full bubble simulation ./soapBubble-full.tst # Run with custom parameters (edit source file for parameter changes) # Key parameters: Oh1, k, tmax, MAXlevel # Output files are saved in intermediate/ directory Post-Processing cd postProcess # Compile data extraction tools qcc -autolink getData.c -o getData -lm qcc -autolink getFacet.c -o getFacet -lm # Generate animations python Video-generic.py --case ../simulationCases --folder output_frames Output Data The simulations generate: - Snapshot files : Binary dumps at regular intervals ( \\(\\Delta t = 0.01\\) ) - Interface data : VOF field and curvature information - Velocity fields : Full velocity components in axisymmetric coordinates - Tracer concentration : Smoke diffusion patterns - Pressure fields : Dynamic pressure evolution Scientific Background The simulations investigate the Taylor-Culick instability in soap bubbles, where: Thin film dynamics : The bubble consists of a liquid film of thickness \\(h \\ll R\\) (bubble radius) Wrinkling mechanism : Instabilities arise from the competition between surface tension and viscous forces Rim formation : The bubble edge develops a toroidal rim structure that influences stability Drainage patterns : Gravity and capillary forces create complex flow patterns within the film Relevant Physics Taylor-Culick velocity : Characteristic retraction speed \\[V_{\\text{TC}} = \\sqrt{\\frac{2\\sigma}{\\rho h}}\\] Rayleigh-Plateau instability : Drives rim breakup and droplet formation Marangoni effects : Surface tension gradients due to surfactant concentration Film thinning : Coupled drainage and evaporation processes Numerical Methods The code employs: Volume-of-Fluid (VOF) method for interface tracking Adaptive mesh refinement (AMR) for resolving thin films Implicit viscous solver for stability at low Oh numbers Conservative momentum advection for accurate interface dynamics Height-function curvature computation for surface tension Contributing This code is part of ongoing research.",
+    "url": "https://comphy-lab.org/soapy/index.html",
+    "type": "docs_content",
+    "priority": 4
+  },
+  {
+    "title": "SOAPY - Simulation Of Axisymmetric Phenomena in bubblY films | SOAPY - Simulation Of Axisymmetric Phenomena in bubblY films: For collaborations or...",
+    "content": "For collaborations or questions: Open an issue for bug reports or feature requests Contact the authors for research collaborations See CLAUDE.md for code style guidelines Authors Saumili Jana - Primary developer ( jsaumili@gmail.com ) Vatsal Sanjay - vatsalsy@comphy-lab.org License This project is licensed under the GNU General Public License v3.0 - see the LICENSE file for details. Generated Documentation Root Directory reset_install_requirements.sh postProcess postProcess/Video-generic.py postProcess/getData.c postProcess/getFacet.c simulationCases simulationCases/Makefile simulationCases/cleanup.sh simulationCases/runCases.sh simulationCases/soapBubble-full.c simulationCases/soapBubble-half.c",
+    "url": "https://comphy-lab.org/soapy/index.html",
+    "type": "docs_content",
+    "priority": 4
+  },
+  {
+    "title": "SOAPY - Simulation Of Axisymmetric Phenomena in bubblY films | SOAPY - Simulation Of Axisymmetric Phenomena in bubblY films - Code Example",
+    "content": "# Clone repositorygitclone git@github.com:comphy-lab/soapy.gitcdsoapy# Install Basilisk locally./reset_install_requirements.shsource.project_config# Compile simulationscdsimulationCasesmakesoapBubble-full.tst",
+    "url": "https://comphy-lab.org/soapy/index.html",
+    "type": "docs_code",
+    "priority": 4
+  },
+  {
+    "title": "SOAPY - Simulation Of Axisymmetric Phenomena in bubblY films | SOAPY - Simulation Of Axisymmetric Phenomena in bubblY films - Code Example",
+    "content": "# Run full bubble simulation./soapBubble-full.tst# Run with custom parameters (edit source file for parameter changes)# Key parameters: Oh1, k, tmax, MAXlevel# Output files are saved in intermediate/ directory",
+    "url": "https://comphy-lab.org/soapy/index.html",
+    "type": "docs_code",
+    "priority": 4
+  },
+  {
+    "title": "SOAPY - Simulation Of Axisymmetric Phenomena in bubblY films | SOAPY - Simulation Of Axisymmetric Phenomena in bubblY films - Code Example",
+    "content": "cdpostProcess# Compile data extraction toolsqcc-autolinkgetData.c-ogetData-lmqcc-autolinkgetFacet.c-ogetFacet-lm# Generate animationspythonVideo-generic.py--case../simulationCases--folderoutput_frames",
+    "url": "https://comphy-lab.org/soapy/index.html",
+    "type": "docs_code",
+    "priority": 4
+  },
+  {
+    "title": "simulationCases/soapBubble-half.c | SOAPY - Simulation Of Axisymmetric Phenomena in bubblY films: Context",
+    "content": "simulationCases/soapBubble-half.c See raw file Axisymmetric Bubble Wrinkling Simulation Overview This simulation models the dynamics of a thin liquid film forming a bubble with wrinkling instabilities. The code solves the two-phase Navier-Stokes equations in an axisymmetric configuration, capturing the interface dynamics between a liquid film and surrounding gas phase.",
+    "url": "https://comphy-lab.org/soapy/simulationCases/soapBubble-half.c.html",
+    "type": "docs_content",
+    "priority": 4
+  },
+  {
+    "title": "simulationCases/soapBubble-half.c | SOAPY - Simulation Of Axisymmetric Phenomena in bubblY films: Physics Description The...",
+    "content": "Physics Description The simulation captures: - Two-phase flow dynamics with surface tension effects - Gravitational forcing characterized by Bond number (Bo) - Viscous effects characterized by Ohnesorge number (Oh) - Interface tracking using Volume-of-Fluid (VOF) method - Adaptive mesh refinement for efficient computation Authors and Changelog Author : Saumili Jana (jsaumili@gmail.com) Created : October 18, 2024 Version History Oct 28, 2024 (Vatsal): Fixed initial condition implementation Mar 6, 2025 (Saumili): Corrected boundary condition formulation Mar 15, 2025 (Saumili): Updated pressure boundary conditions Mar 31, 2025 (Saumili): Increased iterations for convergence Apr 4, 2025 (Saumili): Corrected pressure initial condition Phase Convention f = 1: Liquid phase (thin film) f = 0: Gas phase (surrounding medium) #include \"axi.h\" #include \"navier-stokes/centered.h\" #include \"two-phase.h\" #include \"navier-stokes/conserving.h\" #include \"tension.h\" #include \"henry.h\" scalar T [], * stracers = { T }; Simulation Parameters Adaptive Mesh Refinement Tolerances These control the error thresholds for grid adaptation: - Volume fraction error tolerance - Velocity component error tolerance - Curvature error tolerance - Acceleration error tolerance #define fErr ( 1e-3 ) 52 #define VelErr ( 1e-3 ) 53 #define KErr ( 1e-3 ) 54 #define AErr ( 1e-3 ) 55 #define MINlevel 2 56 57 Time Control Parameters tsnap : Interval for saving simulation snapshots #define tsnap ( 0.01 ) 62 63 Physical Properties Rho21 : Density ratio between gas and liquid phases ( \\(\\rho_g/\\rho_l\\) ) Mu21 : Viscosity ratio between gas and liquid phases ( \\(\\mu_g/\\mu_l\\) ) Xcent , Ycent : Center coordinates of the bubble R2circle : Macro for computing squared radial distance #define Rho21 ( 1e-3 ) 71 #define Mu21 ( 1e-3 ) 72 #define Xcent ( 0.0 ) 74 #define Ycent ( 0.0 ) 75 #define R2circle ( x , y ) ( sq ( x - Xcent ) + sq ( y - Ycent )) 76 77 Boundary Conditions Left Boundary (Axis of Symmetry) No-slip wall condition for velocity Contact angle set to 90 degrees via Dirichlet condition on f u . t [ left ] = dirichlet ( 0.0 ); u . n [ left ] = dirichlet ( 0.0 ); f [ left ] = dirichlet ( 0.0 ); Right Boundary (Outflow) Neumann conditions for velocity components Dirichlet condition for pressure (atmospheric) u . t [ right ] = neumann ( 0.0 ); u . n [ right ] = neumann ( 0.0 ); p [ right ] = dirichlet ( 0.0 ); Top Boundary (Outflow) Neumann conditions for velocity components Dirichlet condition for pressure (atmospheric) u . t [ top ] = neumann ( 0.0 ); u . n [ top ] = neumann ( 0.0 ); p [ top ] = dirichlet ( 0.0 ); Global Variables MAXlevel : Maximum refinement level for adaptive mesh tmax : Maximum simulation time Oh1 : Ohnesorge number for liquid film Bo : Bond number (gravity/surface tension ratio) Ldomain : Domain size k : Curvature parameter (R/h ratio) h : Film thickness int MAXlevel ; double tmax , Oh1 , Pe_gas , Ldomain , k , h ; Main Function Purpose Initializes simulation parameters and launches the computation.",
+    "url": "https://comphy-lab.org/soapy/simulationCases/soapBubble-half.c.html",
+    "type": "docs_content",
+    "priority": 4
+  },
+  {
+    "title": "simulationCases/soapBubble-half.c | SOAPY - Simulation Of Axisymmetric Phenomena in bubblY films: Key Parameters Set...",
+    "content": "Key Parameters Set Maximum grid refinement level: 8 Simulation duration: 1.0 time units Domain size: 2.4 units Ohnesorge number: 0.01 (moderate viscous effects) Curvature parameter: 10 (thin film approximation) int main ( int argc , char const * argv []) { // Parameter assignments MAXlevel = 11 ; tmax = 1.0 ; Ldomain = 5.0 ; Oh1 = 1e-3 ; k = 2.5e1 ; Note on the Peclet number: Peclet number based on diffusion coefficient of smoke in air. \\[ Pe = \\frac{V_\\gamma R_0}{D} \\] The inertio-capillary velocity is usuallly 0.1-1 m/s. Typical bubble radius is 1 mm. The diffusion coefficient of smoke in air is 1e-4 to 1e-5 m^2/s.",
+    "url": "https://comphy-lab.org/soapy/simulationCases/soapBubble-half.c.html",
+    "type": "docs_content",
+    "priority": 4
+  },
+  {
+    "title": "simulationCases/soapBubble-half.c | SOAPY - Simulation Of Axisymmetric Phenomena in bubblY films: Pe_gas = 1e-1...",
+    "content": "Pe_gas = 1e-1 ; fprintf ( ferr , \"Level %d , tmax %g , Oh1 %3.2e , Lo %g\\n \" , MAXlevel , tmax , Oh1 , Ldomain ); // Domain configuration L0 = Ldomain ; init_grid ( 1 << 6 ); // Create output directory char comm [ 80 ]; sprintf ( comm , \"mkdir -p intermediate\" ); system ( comm ); // Physical properties assignment rho1 = 1.0 ; rho2 = Rho21 ; mu1 = Oh1 ; mu2 = Mu21 * Oh1 ; f . sigma = 1.0 ; // Surface tension coefficient // for smoke concentration T T . D1 = 1e-3 / Pe_gas ; // inverse Peclet number based on diffusion coefficient of smoke in water, $Pe_\\text{water} \\to \\infty$. T . D2 = 1e0 / Pe_gas ; // inverse Peclet number based on diffusion coefficient of smoke in air. T . alpha = 1e-3 ; // proportion of smoke in water right at the interface (this should be close to 0.). run (); } Initial Condition Event Purpose Sets up the initial bubble geometry with a half-circle lower part and spherical rim upper part.",
+    "url": "https://comphy-lab.org/soapy/simulationCases/soapBubble-half.c.html",
+    "type": "docs_content",
+    "priority": 4
+  },
+  {
+    "title": "simulationCases/soapBubble-half.c | SOAPY - Simulation Of Axisymmetric Phenomena in bubblY films: This creates a...",
+    "content": "This creates a bubble with controlled wrinkling potential based on the curvature parameter k.",
+    "url": "https://comphy-lab.org/soapy/simulationCases/soapBubble-half.c.html",
+    "type": "docs_content",
+    "priority": 4
+  },
+  {
+    "title": "simulationCases/soapBubble-half.c | SOAPY - Simulation Of Axisymmetric Phenomena in bubblY films: Geometry Construction Lower...",
+    "content": "Geometry Construction Lower region: Half-circular cap Upper region: Spherical shell rim Film thickness: h = 1/k Initial refinement focused near the interface event init ( t = 0 ) { if (! restore ( file = \"dump\" )) { float y_p , x_p , x1 , x2 ; h = 1 / k ; y_p = 0.1 ; x1 = sqrt ( sq ( 1.0 - h ) - sq ( y_p )); x2 = sqrt ( 1 - sq ( y_p )); x_p = ( x1 + x2 ) / 2 ; // Adaptive refinement near interface refine (( R2circle ( x , y ) < 1.05 ) && ( R2circle ( x , y ) > sq ( 0.025 *( 1.0 - h ))) && ( level < MAXlevel )); // Initialize level-set function for interface vertex scalar phi []; foreach_vertex () { if ( y < y_p && x > 0.0 ) { // Lower part - half circle geometry phi [] = ( sq ( h / 2 ) - ( sq ( x - x_p ) + sq ( y - y_p ))); } else { // Upper part - spherical rim double r = sqrt ( sq ( x ) + sq ( y )); double shell = min ( 1. - r , ( r - ( 1. - h ))); phi [] = shell ; } } fractions ( phi , f ); fraction ( T , ( sq (( 1.0 - h )* 0.5 ) - R2circle ( x , y ))); // Initialize pressure field based on region foreach () { T [] *= 1e1 ; if ( R2circle ( x , y ) < sq ( 1.0 - h )) { p [] = 2. + 2. /( 1. - h ); // Inner bubble pressure } else if (( R2circle ( x , y ) <= 1 ) && ( R2circle ( x , y ) >= sq ( 1.0 - h ))) { p [] = 2 * f []; // Film pressure } else { p [] = 0 ; // Atmospheric pressure } u . x [] = 0 ; u . y [] = 0 ; } } } Adaptive Mesh Refinement Event Purpose Dynamically refines the computational mesh based on solution gradients.",
+    "url": "https://comphy-lab.org/soapy/simulationCases/soapBubble-half.c.html",
+    "type": "docs_content",
+    "priority": 4
+  },
+  {
+    "title": "simulationCases/soapBubble-half.c | SOAPY - Simulation Of Axisymmetric Phenomena in bubblY films: This ensures high...",
+    "content": "This ensures high resolution near the interface and regions of high curvature while maintaining efficiency in smooth regions. Refinement Criteria Volume fraction gradients (interface tracking) Velocity component gradients (flow features) Curvature gradients (wrinkling detection) scalar KAPPA []; event adapt ( i ++) { curvature ( f , KAPPA ); adapt_wavelet (( scalar *){ f , u . x , u . y , KAPPA }, ( double []){ fErr , VelErr , VelErr , KErr }, MAXlevel , MAXlevel - 4 ); } Data Output Event Purpose Saves simulation state at regular intervals for post-processing and restart capability.",
+    "url": "https://comphy-lab.org/soapy/simulationCases/soapBubble-half.c.html",
+    "type": "docs_content",
+    "priority": 4
+  },
+  {
+    "title": "simulationCases/soapBubble-half.c | SOAPY - Simulation Of Axisymmetric Phenomena in bubblY films: Output Schedule Initial...",
+    "content": "Output Schedule Initial condition saved at t = 0 Snapshots saved every tsnap time units Full field data including pressure dumped event writingFiles ( t = 0 , t += tsnap ; t <= tmax ) { p . nodump = false ; // Enable pressure output dump ( file = \"dump\" ); char nameOut [ 80 ]; sprintf ( nameOut , \"intermediate/snapshot- %5.4f \" , t ); dump ( file = nameOut ); } Logging Event Purpose Maintains a detailed log of simulation progress including timestep information and key parameters.",
+    "url": "https://comphy-lab.org/soapy/simulationCases/soapBubble-half.c.html",
+    "type": "docs_content",
+    "priority": 4
+  },
+  {
+    "title": "simulationCases/soapBubble-half.c | SOAPY - Simulation Of Axisymmetric Phenomena in bubblY films: Log Contents Iteration...",
+    "content": "Log Contents Iteration number Current timestep size Simulation time Initial header with all simulation parameters event logWriting ( i ++) { static FILE * fp ; if ( pid () == 0 ) { if ( i == 0 ) { fprintf ( ferr , \"i dt t \\n \" ); fp = fopen ( \"log\" , \"w\" ); fprintf ( fp , \"Level %d , tmax %g , Oh %3.2e , Lo %g\\n \" , MAXlevel , tmax , Oh1 , Ldomain ); fprintf ( fp , \"i dt t \\n \" ); fprintf ( fp , \" %d %g %g \\n \" , i , dt , t ); fclose ( fp ); } else { fp = fopen ( \"log\" , \"a\" ); fprintf ( fp , \" %d %g %g\\n \" , i , dt , t ); fclose ( fp ); } fprintf ( ferr , \" %d %g %g\\n \" , i , dt , t ); } }",
+    "url": "https://comphy-lab.org/soapy/simulationCases/soapBubble-half.c.html",
+    "type": "docs_content",
+    "priority": 4
+  },
+  {
+    "title": "simulationCases/soapBubble-half.c | SOAPY - Simulation Of Axisymmetric Phenomena in bubblY films - C/C++ Code",
+    "content": "#include\"axi.h\"#include\"navier-stokes/centered.h\"#include\"two-phase.h\"#include\"navier-stokes/conserving.h\"#include\"tension.h\"#include\"henry.h\"scalar T[],*stracers={T};",
+    "url": "https://comphy-lab.org/soapy/simulationCases/soapBubble-half.c.html",
+    "type": "docs_code",
+    "priority": 4
+  },
+  {
+    "title": "simulationCases/soapBubble-half.c | SOAPY - Simulation Of Axisymmetric Phenomena in bubblY films - Code Example",
+    "content": "#define fErr(1e-3)52#define VelErr(1e-3)53#define KErr(1e-3)54#define AErr(1e-3)55#define MINlevel25657",
+    "url": "https://comphy-lab.org/soapy/simulationCases/soapBubble-half.c.html",
+    "type": "docs_code",
+    "priority": 4
+  },
+  {
+    "title": "simulationCases/soapBubble-half.c | SOAPY - Simulation Of Axisymmetric Phenomena in bubblY films - Code Example",
+    "content": "#define Rho21(1e-3)71#define Mu21(1e-3)72#define Xcent(0.0)74#define Ycent(0.0)75#define R2circle(x,y)(sq(x-Xcent)+sq(y-Ycent))7677",
+    "url": "https://comphy-lab.org/soapy/simulationCases/soapBubble-half.c.html",
+    "type": "docs_code",
+    "priority": 4
+  },
+  {
+    "title": "simulationCases/soapBubble-half.c | SOAPY - Simulation Of Axisymmetric Phenomena in bubblY films - Code Example",
+    "content": "u.t[left]=dirichlet(0.0);u.n[left]=dirichlet(0.0);f[left]=dirichlet(0.0);",
+    "url": "https://comphy-lab.org/soapy/simulationCases/soapBubble-half.c.html",
+    "type": "docs_code",
+    "priority": 4
+  },
+  {
+    "title": "simulationCases/soapBubble-half.c | SOAPY - Simulation Of Axisymmetric Phenomena in bubblY films - Code Example",
+    "content": "u.t[right]=neumann(0.0);u.n[right]=neumann(0.0);p[right]=dirichlet(0.0);",
+    "url": "https://comphy-lab.org/soapy/simulationCases/soapBubble-half.c.html",
+    "type": "docs_code",
+    "priority": 4
+  },
+  {
+    "title": "simulationCases/soapBubble-half.c | SOAPY - Simulation Of Axisymmetric Phenomena in bubblY films - Code Example",
+    "content": "u.t[top]=neumann(0.0);u.n[top]=neumann(0.0);p[top]=dirichlet(0.0);",
+    "url": "https://comphy-lab.org/soapy/simulationCases/soapBubble-half.c.html",
+    "type": "docs_code",
+    "priority": 4
+  },
+  {
+    "title": "simulationCases/soapBubble-half.c | SOAPY - Simulation Of Axisymmetric Phenomena in bubblY films - Code Example",
+    "content": "intmain(intargc,charconst*argv[]){// Parameter assignmentsMAXlevel=11;tmax=1.0;Ldomain=5.0;Oh1=1e-3;k=2.5e1;",
+    "url": "https://comphy-lab.org/soapy/simulationCases/soapBubble-half.c.html",
+    "type": "docs_code",
+    "priority": 4
+  },
+  {
+    "title": "simulationCases/soapBubble-half.c | SOAPY - Simulation Of Axisymmetric Phenomena in bubblY films - Code Example: Context",
+    "content": "Pe_gas=1e-1;fprintf(ferr,\"Level%d, tmax%g, Oh1%3.2e, Lo%g\\n\",MAXlevel,tmax,Oh1,Ldomain);// Domain configurationL0=Ldomain;init_grid(1<<6);// Create output directorycharcomm[80];sprintf(comm,\"mkdir -p intermediate\");system(comm);// Physical properties assignmentrho1=1.0;rho2=Rho21;mu1=Oh1;mu2=Mu21*Oh1;f.sigma=1.0;// Surface tension coefficient// for smoke concentration TT.D1=1e-3/Pe_gas;// inverse Peclet number based on diffusion coefficient of smoke in water, $Pe_\\text{water} \\to \\infty$.T.D2=1e0/Pe_gas;// inverse Peclet number based on diffusion coefficient of smoke in air.T.alpha=1e-3;// proportion of smoke in water right at the interface (this should be close to 0.).run();}",
+    "url": "https://comphy-lab.org/soapy/simulationCases/soapBubble-half.c.html",
+    "type": "docs_code",
+    "priority": 4
+  },
+  {
+    "title": "simulationCases/soapBubble-half.c | SOAPY - Simulation Of Axisymmetric Phenomena in bubblY films - Code Example: Context",
+    "content": "event init(t=0){if(!restore(file=\"dump\")){floaty_p,x_p,x1,x2;h=1/k;y_p=0.1;x1=sqrt(sq(1.0-h)-sq(y_p));x2=sqrt(1-sq(y_p));x_p=(x1+x2)/2;// Adaptive refinement near interfacerefine((R2circle(x,y)<1.05)&&(R2circle(x,y)>sq(0.025*(1.0-h)))&&(level<MAXlevel));// Initialize level-set function for interfacevertex scalar phi[];foreach_vertex(){if(y<y_p&&x>0.0){// Lower part - half circle geometryphi[]=(sq(h/2)-(sq(x-x_p)+sq(y-y_p)));}else{// Upper part - spherical rimdoubler=sqrt(sq(x)+sq(y));doubleshell=min(1.-r,(r-(1.-h)));phi[]=shell;}}fractions(phi,f);fraction(T,(sq((1.0-h)*0.5)-R2circle(x,y)));// Initialize pressure field based on regionforeach(){T[]*=1e1;if(R2circle(x,y)<sq(1.0-h)){p[]=2.+2./(1.-h);// Inner bubble pressure}elseif((R2circle(x,y)<=1)&&(R2circle(x,y)>=sq(1.0-h))){p[]=2*f[];// Film pressure}else{p[]=0;// Atmospheric pressure}u.x[]=0;u.y[]=0;}}}",
+    "url": "https://comphy-lab.org/soapy/simulationCases/soapBubble-half.c.html",
+    "type": "docs_code",
+    "priority": 4
+  },
+  {
+    "title": "simulationCases/soapBubble-half.c | SOAPY - Simulation Of Axisymmetric Phenomena in bubblY films - Code Example",
+    "content": "scalar KAPPA[];event adapt(i++){curvature(f,KAPPA);adapt_wavelet((scalar*){f,u.x,u.y,KAPPA},(double[]){fErr,VelErr,VelErr,KErr},MAXlevel,MAXlevel-4);}",
+    "url": "https://comphy-lab.org/soapy/simulationCases/soapBubble-half.c.html",
+    "type": "docs_code",
+    "priority": 4
+  },
+  {
+    "title": "simulationCases/soapBubble-half.c | SOAPY - Simulation Of Axisymmetric Phenomena in bubblY films - Code Example",
+    "content": "event writingFiles(t=0,t+=tsnap;t<=tmax){p.nodump=false;// Enable pressure outputdump(file=\"dump\");charnameOut[80];sprintf(nameOut,\"intermediate/snapshot-%5.4f\",t);dump(file=nameOut);}",
+    "url": "https://comphy-lab.org/soapy/simulationCases/soapBubble-half.c.html",
+    "type": "docs_code",
+    "priority": 4
+  },
+  {
+    "title": "simulationCases/soapBubble-half.c | SOAPY - Simulation Of Axisymmetric Phenomena in bubblY films - Code Example",
+    "content": "event logWriting(i++){staticFILE*fp;if(pid()==0){if(i==0){fprintf(ferr,\"i dt t\\n\");fp=fopen(\"log\",\"w\");fprintf(fp,\"Level%d, tmax%g, Oh%3.2e, Lo%g\\n\",MAXlevel,tmax,Oh1,Ldomain);fprintf(fp,\"i dt t\\n\");fprintf(fp,\"%d%g%g\\n\",i,dt,t);fclose(fp);}else{fp=fopen(\"log\",\"a\");fprintf(fp,\"%d%g%g\\n\",i,dt,t);fclose(fp);}fprintf(ferr,\"%d%g%g\\n\",i,dt,t);}}",
+    "url": "https://comphy-lab.org/soapy/simulationCases/soapBubble-half.c.html",
+    "type": "docs_code",
+    "priority": 4
+  },
+  {
+    "title": "simulationCases/runCases.sh | SOAPY - Simulation Of Axisymmetric Phenomena in bubblY films",
+    "content": "simulationCases/runCases.sh See raw file runCases.sh #!/bin/bash # Save the original directory ORIG_DIR = \\$ ( pwd ) mkdir -p \\$ 1 cp \\$ 1.c \\$ 1/ cd \\$ 1 CC99 = 'mpicc -std=c99' qcc -Wall -O2 -D_MPI = 1 -disable-dimensions -I\\${ORIG_DIR} /src-local -I\\${ORIG_DIR} /../src-local \\$ 1.c -o \\$ 1 -lm mpirun -np \\$ 2 ./\\$1",
+    "url": "https://comphy-lab.org/soapy/simulationCases/runCases.sh.html",
+    "type": "docs_content",
+    "priority": 4
+  },
+  {
+    "title": "simulationCases/runCases.sh | SOAPY - Simulation Of Axisymmetric Phenomena in bubblY films - Code Example",
+    "content": "#!/bin/bash# Save the original directoryORIG_DIR=\\$(pwd)mkdir-p\\$1cp\\$1.c\\$1/cd\\$1CC99='mpicc -std=c99'qcc-Wall-O2-D_MPI=1-disable-dimensions-I\\${ORIG_DIR}/src-local-I\\${ORIG_DIR}/../src-local\\$1.c-o\\$1-lmmpirun-np\\$2 ./\\$1",
+    "url": "https://comphy-lab.org/soapy/simulationCases/runCases.sh.html",
+    "type": "docs_code",
+    "priority": 4
+  },
+  {
+    "title": "simulationCases/Makefile | SOAPY - Simulation Of Axisymmetric Phenomena in bubblY films",
+    "content": "simulationCases/Makefile See raw file Makefile # Check if .project_config exists ifeq ( \\$ ( wildcard ../.project_config ) , ) \\$ ( error \"../.project_config not found\" ) endif BASILISK := \\$ ( shell . ../.project_config && echo \\$\\$ BASILISK ) CFLAGS += -O2 -disable-dimensions CFLAGS += -I\\$ ( PWD ) /src-local -I\\$ ( PWD ) /../src-local # Fix permissions for runtest script fix-permissions: @chmod +x \\$ ( BASILISK ) /src/runtest # Make all test targets depend on fix-permissions %.tst: fix-permissions include \\$ ( BASILISK ) /Makefile.defs",
+    "url": "https://comphy-lab.org/soapy/simulationCases/Makefile.html",
+    "type": "docs_content",
+    "priority": 4
+  },
+  {
+    "title": "simulationCases/Makefile | SOAPY - Simulation Of Axisymmetric Phenomena in bubblY films - Code Example",
+    "content": "# Check if .project_config existsifeq(\\$(wildcard../.project_config),)\\$(error\"../.project_config not found\")endifBASILISK:=\\$(shell. ../.project_config&&echo\\$\\$BASILISK)CFLAGS+=-O2-disable-dimensionsCFLAGS+=-I\\$(PWD)/src-local-I\\$(PWD)/../src-local# Fix permissions for runtest scriptfix-permissions:@chmod+x\\$(BASILISK)/src/runtest# Make all test targets depend on fix-permissions%.tst:fix-permissionsinclude\\$(BASILISK)/Makefile.defs",
+    "url": "https://comphy-lab.org/soapy/simulationCases/Makefile.html",
+    "type": "docs_code",
+    "priority": 4
+  },
+  {
+    "title": "simulationCases/cleanup.sh | SOAPY - Simulation Of Axisymmetric Phenomena in bubblY films: Context",
+    "content": "simulationCases/cleanup.sh See raw file cleanup.sh \u26a0\ufe0f DANGER: Destructive Script Warning This script permanently deletes directories and ALL their contents! Files deleted with rm -rf CANNOT be recovered No recycle bin or trash - deletion is immediate and permanent Can delete entire directory trees including subdirectories Always double-check the directory path before running Purpose This script is designed to clean up simulation output directories in the SOAPY project. It's commonly used to remove the intermediate/ directories that contain large binary dump files from completed simulations.",
+    "url": "https://comphy-lab.org/soapy/simulationCases/cleanup.sh.html",
+    "type": "docs_content",
+    "priority": 4
+  },
+  {
+    "title": "simulationCases/cleanup.sh | SOAPY - Simulation Of Axisymmetric Phenomena in bubblY films: Examples",
+    "content": "Usage ./cleanup.sh < directory_name > Example: # Remove intermediate simulation data ./cleanup.sh intermediate # Remove a specific output directory ./cleanup.sh output_test_run Safety Features The enhanced script now includes several safety checks: Argument verification - Ensures a directory name is provided Existence check - Verifies the directory exists before attempting deletion Path display - Shows the full absolute path of the directory to be deleted Size information - Displays directory size and file count Confirmation prompt - Requires explicit \"yes\" confirmation before deletion Graceful cancellation - Any response other than \"yes\" cancels the operation Script Source #!/bin/bash # cleanup.sh - Safely remove directories with confirmation # WARNING: This script permanently deletes directories and all contents! # Usage: ./cleanup.sh <directory_name> # Check if argument is provided if [ \\$ # -eq 0 ] ; then echo \"Error: No directory specified\" echo \"Usage: \\$0 <directory_name>\" exit 1 fi # Check if directory exists if [ ! -d \"\\$1\" ] ; then echo \"Error: Directory '\\$1' does not exist\" exit 1 fi # Get absolute path for clarity FULLPATH = \\$ ( cd \"\\$1\" 2 > /dev/null && pwd ) if [ -z \"\\$FULLPATH\" ] ; then echo \"Error: Cannot access directory '\\$1'\" exit 1 fi # Show directory size and confirm deletion echo \"WARNING: This will permanently delete the following directory and ALL its contents:\" echo \" \\$FULLPATH\" echo \"\" echo \"Directory information:\" du -sh \"\\$1\" 2 > /dev/null || echo \" Size: Unable to determine\" echo \" Number of files: \\$(find \" \\$ 1\" -type f 2>/dev/null | wc -l)\" echo \"\" read -p \"Are you sure you want to delete this directory?",
+    "url": "https://comphy-lab.org/soapy/simulationCases/cleanup.sh.html",
+    "type": "docs_content",
+    "priority": 4
+  },
+  {
+    "title": "simulationCases/cleanup.sh | SOAPY - Simulation Of Axisymmetric Phenomena in bubblY films: Type 'yes' to...",
+    "content": "Type 'yes' to confirm: \" CONFIRM if [ \"\\$CONFIRM\" = \"yes\" ] ; then echo \"Deleting directory...\" rm -rf \"\\$1\" if [ \\$ ? -eq 0 ] ; then echo \"Directory successfully deleted.\" else echo \"Error: Failed to delete directory.\" exit 1 fi else echo \"Deletion cancelled.\" exit 0 fi",
+    "url": "https://comphy-lab.org/soapy/simulationCases/cleanup.sh.html",
+    "type": "docs_content",
+    "priority": 4
+  },
+  {
+    "title": "simulationCases/cleanup.sh | SOAPY - Simulation Of Axisymmetric Phenomena in bubblY films - Code Example",
+    "content": "# Remove intermediate simulation data./cleanup.shintermediate# Remove a specific output directory./cleanup.shoutput_test_run",
+    "url": "https://comphy-lab.org/soapy/simulationCases/cleanup.sh.html",
+    "type": "docs_code",
+    "priority": 4
+  },
+  {
+    "title": "simulationCases/cleanup.sh | SOAPY - Simulation Of Axisymmetric Phenomena in bubblY films - Code Example: Context",
+    "content": "#!/bin/bash# cleanup.sh - Safely remove directories with confirmation# WARNING: This script permanently deletes directories and all contents!# Usage: ./cleanup.sh <directory_name># Check if argument is providedif[\\$#-eq0];thenecho\"Error: No directory specified\"echo\"Usage: \\$0 <directory_name>\"exit1fi# Check if directory existsif[!-d\"\\$1\"];thenecho\"Error: Directory '\\$1' does not exist\"exit1fi# Get absolute path for clarityFULLPATH=\\$(cd\"\\$1\"2>/dev/null&&pwd)if[-z\"\\$FULLPATH\"];thenecho\"Error: Cannot access directory '\\$1'\"exit1fi# Show directory size and confirm deletionecho\"WARNING: This will permanently delete the following directory and ALL its contents:\"echo\"  \\$FULLPATH\"echo\"\"echo\"Directory information:\"du-sh\"\\$1\"2>/dev/null||echo\"  Size: Unable to determine\"echo\"  Number of files: \\$(find \"\\$1\" -type f 2>/dev/null | wc -l)\"echo\"\"read-p\"Are you sure you want to delete this directory?",
+    "url": "https://comphy-lab.org/soapy/simulationCases/cleanup.sh.html",
+    "type": "docs_code",
+    "priority": 4
+  },
+  {
+    "title": "simulationCases/cleanup.sh | SOAPY - Simulation Of Axisymmetric Phenomena in bubblY films - Code Example: Type 'yes' to...",
+    "content": "Type 'yes' to confirm: \"CONFIRMif[\"\\$CONFIRM\"=\"yes\"];thenecho\"Deleting directory...\"rm-rf\"\\$1\"if[\\$?-eq0];thenecho\"Directory successfully deleted.\"elseecho\"Error: Failed to delete directory.\"exit1fielseecho\"Deletion cancelled.\"exit0fi",
+    "url": "https://comphy-lab.org/soapy/simulationCases/cleanup.sh.html",
+    "type": "docs_code",
+    "priority": 4
+  },
+  {
+    "title": "simulationCases/soapBubble-full.c | SOAPY - Simulation Of Axisymmetric Phenomena in bubblY films: Context",
+    "content": "simulationCases/soapBubble-full.c See raw file Axisymmetric Bubble Wrinkling Simulation Overview This simulation models the dynamics of a thin liquid film forming a bubble with wrinkling instabilities. The code solves the two-phase Navier-Stokes equations in an axisymmetric configuration, capturing the interface dynamics between a liquid film and surrounding gas phase.",
+    "url": "https://comphy-lab.org/soapy/simulationCases/soapBubble-full.c.html",
+    "type": "docs_content",
+    "priority": 4
+  },
+  {
+    "title": "simulationCases/soapBubble-full.c | SOAPY - Simulation Of Axisymmetric Phenomena in bubblY films: Physics Description The...",
+    "content": "Physics Description The simulation captures: - Two-phase flow dynamics with surface tension effects - Gravitational forcing characterized by Bond number (Bo) - Viscous effects characterized by Ohnesorge number (Oh) - Interface tracking using Volume-of-Fluid (VOF) method - Adaptive mesh refinement for efficient computation Authors and Changelog Author : Saumili Jana (jsaumili@gmail.com) Created : October 18, 2024 Version History Oct 28, 2024 (Vatsal): Fixed initial condition implementation Mar 6, 2025 (Saumili): Corrected boundary condition formulation Mar 15, 2025 (Saumili): Updated pressure boundary conditions Mar 31, 2025 (Saumili): Increased iterations for convergence Apr 4, 2025 (Saumili): Corrected pressure initial condition Phase Convention f = 1: Liquid phase (thin film) f = 0: Gas phase (surrounding medium) #include \"axi.h\" #include \"navier-stokes/centered.h\" #include \"two-phase.h\" #include \"navier-stokes/conserving.h\" #include \"tension.h\" #include \"henry.h\" scalar T [], * stracers = { T }; Simulation Parameters Adaptive Mesh Refinement Tolerances These control the error thresholds for grid adaptation: - Volume fraction error tolerance - Velocity component error tolerance - Curvature error tolerance - Acceleration error tolerance #define fErr ( 1e-3 ) 52 #define VelErr ( 1e-3 ) 53 #define KErr ( 1e-3 ) 54 #define AErr ( 1e-3 ) 55 #define MINlevel 2 56 57 Time Control Parameters tsnap : Interval for saving simulation snapshots #define tsnap ( 0.01 ) 62 63 Physical Properties Rho21 : Density ratio between gas and liquid phases ( \\(\\rho_g/\\rho_l\\) ) Mu21 : Viscosity ratio between gas and liquid phases ( \\(\\mu_g/\\mu_l\\) ) Xcent , Ycent : Center coordinates of the bubble R2circle : Macro for computing squared radial distance #define Rho21 ( 1e-3 ) 71 #define Mu21 ( 1e-3 ) 72 #define Xcent ( 0.0 ) 74 #define Ycent ( 0.0 ) 75 #define R2circle ( x , y ) ( sq ( x - Xcent ) + sq ( y - Ycent )) 76 77 Boundary Conditions Left Boundary (Axis of Symmetry) No-slip wall condition for velocity Contact angle set to 90 degrees via Dirichlet condition on f u . t [ left ] = dirichlet ( 0.0 ); u . n [ left ] = dirichlet ( 0.0 ); f [ left ] = dirichlet ( 0.0 ); Right Boundary (Outflow) Neumann conditions for velocity components Dirichlet condition for pressure (atmospheric) u . t [ right ] = neumann ( 0.0 ); u . n [ right ] = neumann ( 0.0 ); p [ right ] = dirichlet ( 0.0 ); Top Boundary (Outflow) Neumann conditions for velocity components Dirichlet condition for pressure (atmospheric) u . t [ top ] = neumann ( 0.0 ); u . n [ top ] = neumann ( 0.0 ); p [ top ] = dirichlet ( 0.0 ); Global Variables MAXlevel : Maximum refinement level for adaptive mesh tmax : Maximum simulation time Oh1 : Ohnesorge number for liquid film Bo : Bond number (gravity/surface tension ratio) Ldomain : Domain size k : Curvature parameter (R/h ratio) h : Film thickness int MAXlevel ; double tmax , Oh1 , Pe_gas , Ldomain , k , h ; Main Function Purpose Initializes simulation parameters and launches the computation.",
+    "url": "https://comphy-lab.org/soapy/simulationCases/soapBubble-full.c.html",
+    "type": "docs_content",
+    "priority": 4
+  },
+  {
+    "title": "simulationCases/soapBubble-full.c | SOAPY - Simulation Of Axisymmetric Phenomena in bubblY films: Key Parameters Set...",
+    "content": "Key Parameters Set Maximum grid refinement level: 8 Simulation duration: 1.0 time units Domain size: 2.4 units Ohnesorge number: 0.01 (moderate viscous effects) Curvature parameter: 10 (thin film approximation) int main ( int argc , char const * argv []) { // Parameter assignments MAXlevel = 11 ; tmax = 1.0 ; Ldomain = 5.0 ; X0 = - 1.005 ; Oh1 = 1e-3 ; k = 2.5e1 ; Note on the Peclet number: Peclet number based on diffusion coefficient of smoke in air. \\[ Pe = \\frac{V_\\gamma R_0}{D} \\] The inertio-capillary velocity is usuallly 0.1-1 m/s. Typical bubble radius is 1 mm. The diffusion coefficient of smoke in air is 1e-4 to 1e-5 m^2/s.",
+    "url": "https://comphy-lab.org/soapy/simulationCases/soapBubble-full.c.html",
+    "type": "docs_content",
+    "priority": 4
+  },
+  {
+    "title": "simulationCases/soapBubble-full.c | SOAPY - Simulation Of Axisymmetric Phenomena in bubblY films: Pe_gas = 1e-1...",
+    "content": "Pe_gas = 1e-1 ; fprintf ( ferr , \"Level %d , tmax %g , Oh1 %3.2e , Lo %g\\n \" , MAXlevel , tmax , Oh1 , Ldomain ); // Domain configuration L0 = Ldomain ; init_grid ( 1 << 6 ); // Create output directory char comm [ 80 ]; sprintf ( comm , \"mkdir -p intermediate\" ); system ( comm ); // Physical properties assignment rho1 = 1.0 ; rho2 = Rho21 ; mu1 = Oh1 ; mu2 = Mu21 * Oh1 ; f . sigma = 1.0 ; // Surface tension coefficient // for smoke concentration T T . D1 = 1e-3 / Pe_gas ; // inverse Peclet number based on diffusion coefficient of smoke in water, $Pe_\\text{water} \\to \\infty$. T . D2 = 1e0 / Pe_gas ; // inverse Peclet number based on diffusion coefficient of smoke in air. T . alpha = 1e-3 ; // proportion of smoke in water right at the interface (this should be close to 0.). run (); } Initial Condition Event Purpose Sets up the initial bubble geometry with a half-circle lower part and spherical rim upper part.",
+    "url": "https://comphy-lab.org/soapy/simulationCases/soapBubble-full.c.html",
+    "type": "docs_content",
+    "priority": 4
+  },
+  {
+    "title": "simulationCases/soapBubble-full.c | SOAPY - Simulation Of Axisymmetric Phenomena in bubblY films: This creates a...",
+    "content": "This creates a bubble with controlled wrinkling potential based on the curvature parameter k.",
+    "url": "https://comphy-lab.org/soapy/simulationCases/soapBubble-full.c.html",
+    "type": "docs_content",
+    "priority": 4
+  },
+  {
+    "title": "simulationCases/soapBubble-full.c | SOAPY - Simulation Of Axisymmetric Phenomena in bubblY films: Geometry Construction Lower...",
+    "content": "Geometry Construction Lower region: Half-circular cap Upper region: Spherical shell rim Film thickness: h = 1/k Initial refinement focused near the interface event init ( t = 0 ) { if (! restore ( file = \"dump\" )) { float y_p , x_p , x1 , x2 ; h = 1 / k ; y_p = 0.1 ; x1 = sqrt ( sq ( 1.0 - h ) - sq ( y_p )); x2 = sqrt ( 1 - sq ( y_p )); x_p = ( x1 + x2 ) / 2 ; // Adaptive refinement near interface refine (( R2circle ( x , y ) < 1.05 ) && ( R2circle ( x , y ) > sq ( 0.025 *( 1.0 - h ))) && ( level < MAXlevel )); // Initialize level-set function for interface vertex scalar phi []; foreach_vertex () { if ( y < y_p && x > 0.0 ) { // Lower part - half circle geometry phi [] = ( sq ( h / 2 ) - ( sq ( x - x_p ) + sq ( y - y_p ))); } else { // Upper part - spherical rim double r = sqrt ( sq ( x ) + sq ( y )); double shell = min ( 1. - r , ( r - ( 1. - h ))); phi [] = shell ; } } fractions ( phi , f ); fraction ( T , ( sq (( 1.0 - h )* 0.5 ) - R2circle ( x , y ))); // Initialize pressure field based on region foreach () { T [] *= 1e1 ; if ( R2circle ( x , y ) < sq ( 1.0 - h )) { p [] = 2. + 2. /( 1. - h ); // Inner bubble pressure } else if (( R2circle ( x , y ) <= 1 ) && ( R2circle ( x , y ) >= sq ( 1.0 - h ))) { p [] = 2 * f []; // Film pressure } else { p [] = 0 ; // Atmospheric pressure } u . x [] = 0 ; u . y [] = 0 ; } } } Adaptive Mesh Refinement Event Purpose Dynamically refines the computational mesh based on solution gradients.",
+    "url": "https://comphy-lab.org/soapy/simulationCases/soapBubble-full.c.html",
+    "type": "docs_content",
+    "priority": 4
+  },
+  {
+    "title": "simulationCases/soapBubble-full.c | SOAPY - Simulation Of Axisymmetric Phenomena in bubblY films: This ensures high...",
+    "content": "This ensures high resolution near the interface and regions of high curvature while maintaining efficiency in smooth regions. Refinement Criteria Volume fraction gradients (interface tracking) Velocity component gradients (flow features) Curvature gradients (wrinkling detection) scalar KAPPA []; event adapt ( i ++) { curvature ( f , KAPPA ); adapt_wavelet (( scalar *){ f , u . x , u . y , KAPPA }, ( double []){ fErr , VelErr , VelErr , KErr }, MAXlevel , MAXlevel - 4 ); } Data Output Event Purpose Saves simulation state at regular intervals for post-processing and restart capability.",
+    "url": "https://comphy-lab.org/soapy/simulationCases/soapBubble-full.c.html",
+    "type": "docs_content",
+    "priority": 4
+  },
+  {
+    "title": "simulationCases/soapBubble-full.c | SOAPY - Simulation Of Axisymmetric Phenomena in bubblY films: Output Schedule Initial...",
+    "content": "Output Schedule Initial condition saved at t = 0 Snapshots saved every tsnap time units Full field data including pressure dumped event writingFiles ( t = 0 , t += tsnap ; t <= tmax ) { p . nodump = false ; // Enable pressure output dump ( file = \"dump\" ); char nameOut [ 80 ]; sprintf ( nameOut , \"intermediate/snapshot- %5.4f \" , t ); dump ( file = nameOut ); } Logging Event Purpose Maintains a detailed log of simulation progress including timestep information and key parameters.",
+    "url": "https://comphy-lab.org/soapy/simulationCases/soapBubble-full.c.html",
+    "type": "docs_content",
+    "priority": 4
+  },
+  {
+    "title": "simulationCases/soapBubble-full.c | SOAPY - Simulation Of Axisymmetric Phenomena in bubblY films: Log Contents Iteration...",
+    "content": "Log Contents Iteration number Current timestep size Simulation time Initial header with all simulation parameters event logWriting ( i ++) { static FILE * fp ; if ( pid () == 0 ) { if ( i == 0 ) { fprintf ( ferr , \"i dt t \\n \" ); fp = fopen ( \"log\" , \"w\" ); fprintf ( fp , \"Level %d , tmax %g , Oh %3.2e , Lo %g\\n \" , MAXlevel , tmax , Oh1 , Ldomain ); fprintf ( fp , \"i dt t \\n \" ); fprintf ( fp , \" %d %g %g \\n \" , i , dt , t ); fclose ( fp ); } else { fp = fopen ( \"log\" , \"a\" ); fprintf ( fp , \" %d %g %g\\n \" , i , dt , t ); fclose ( fp ); } fprintf ( ferr , \" %d %g %g\\n \" , i , dt , t ); } }",
+    "url": "https://comphy-lab.org/soapy/simulationCases/soapBubble-full.c.html",
+    "type": "docs_content",
+    "priority": 4
+  },
+  {
+    "title": "simulationCases/soapBubble-full.c | SOAPY - Simulation Of Axisymmetric Phenomena in bubblY films - C/C++ Code",
+    "content": "#include\"axi.h\"#include\"navier-stokes/centered.h\"#include\"two-phase.h\"#include\"navier-stokes/conserving.h\"#include\"tension.h\"#include\"henry.h\"scalar T[],*stracers={T};",
+    "url": "https://comphy-lab.org/soapy/simulationCases/soapBubble-full.c.html",
+    "type": "docs_code",
+    "priority": 4
+  },
+  {
+    "title": "simulationCases/soapBubble-full.c | SOAPY - Simulation Of Axisymmetric Phenomena in bubblY films - Code Example",
+    "content": "#define fErr(1e-3)52#define VelErr(1e-3)53#define KErr(1e-3)54#define AErr(1e-3)55#define MINlevel25657",
+    "url": "https://comphy-lab.org/soapy/simulationCases/soapBubble-full.c.html",
+    "type": "docs_code",
+    "priority": 4
+  },
+  {
+    "title": "simulationCases/soapBubble-full.c | SOAPY - Simulation Of Axisymmetric Phenomena in bubblY films - Code Example",
+    "content": "#define Rho21(1e-3)71#define Mu21(1e-3)72#define Xcent(0.0)74#define Ycent(0.0)75#define R2circle(x,y)(sq(x-Xcent)+sq(y-Ycent))7677",
+    "url": "https://comphy-lab.org/soapy/simulationCases/soapBubble-full.c.html",
+    "type": "docs_code",
+    "priority": 4
+  },
+  {
+    "title": "simulationCases/soapBubble-full.c | SOAPY - Simulation Of Axisymmetric Phenomena in bubblY films - Code Example",
+    "content": "u.t[left]=dirichlet(0.0);u.n[left]=dirichlet(0.0);f[left]=dirichlet(0.0);",
+    "url": "https://comphy-lab.org/soapy/simulationCases/soapBubble-full.c.html",
+    "type": "docs_code",
+    "priority": 4
+  },
+  {
+    "title": "simulationCases/soapBubble-full.c | SOAPY - Simulation Of Axisymmetric Phenomena in bubblY films - Code Example",
+    "content": "u.t[right]=neumann(0.0);u.n[right]=neumann(0.0);p[right]=dirichlet(0.0);",
+    "url": "https://comphy-lab.org/soapy/simulationCases/soapBubble-full.c.html",
+    "type": "docs_code",
+    "priority": 4
+  },
+  {
+    "title": "simulationCases/soapBubble-full.c | SOAPY - Simulation Of Axisymmetric Phenomena in bubblY films - Code Example",
+    "content": "u.t[top]=neumann(0.0);u.n[top]=neumann(0.0);p[top]=dirichlet(0.0);",
+    "url": "https://comphy-lab.org/soapy/simulationCases/soapBubble-full.c.html",
+    "type": "docs_code",
+    "priority": 4
+  },
+  {
+    "title": "simulationCases/soapBubble-full.c | SOAPY - Simulation Of Axisymmetric Phenomena in bubblY films - Code Example",
+    "content": "intmain(intargc,charconst*argv[]){// Parameter assignmentsMAXlevel=11;tmax=1.0;Ldomain=5.0;X0=-1.005;Oh1=1e-3;k=2.5e1;",
+    "url": "https://comphy-lab.org/soapy/simulationCases/soapBubble-full.c.html",
+    "type": "docs_code",
+    "priority": 4
+  },
+  {
+    "title": "simulationCases/soapBubble-full.c | SOAPY - Simulation Of Axisymmetric Phenomena in bubblY films - Code Example: Context",
+    "content": "Pe_gas=1e-1;fprintf(ferr,\"Level%d, tmax%g, Oh1%3.2e, Lo%g\\n\",MAXlevel,tmax,Oh1,Ldomain);// Domain configurationL0=Ldomain;init_grid(1<<6);// Create output directorycharcomm[80];sprintf(comm,\"mkdir -p intermediate\");system(comm);// Physical properties assignmentrho1=1.0;rho2=Rho21;mu1=Oh1;mu2=Mu21*Oh1;f.sigma=1.0;// Surface tension coefficient// for smoke concentration TT.D1=1e-3/Pe_gas;// inverse Peclet number based on diffusion coefficient of smoke in water, $Pe_\\text{water} \\to \\infty$.T.D2=1e0/Pe_gas;// inverse Peclet number based on diffusion coefficient of smoke in air.T.alpha=1e-3;// proportion of smoke in water right at the interface (this should be close to 0.).run();}",
+    "url": "https://comphy-lab.org/soapy/simulationCases/soapBubble-full.c.html",
+    "type": "docs_code",
+    "priority": 4
+  },
+  {
+    "title": "simulationCases/soapBubble-full.c | SOAPY - Simulation Of Axisymmetric Phenomena in bubblY films - Code Example: Context",
+    "content": "event init(t=0){if(!restore(file=\"dump\")){floaty_p,x_p,x1,x2;h=1/k;y_p=0.1;x1=sqrt(sq(1.0-h)-sq(y_p));x2=sqrt(1-sq(y_p));x_p=(x1+x2)/2;// Adaptive refinement near interfacerefine((R2circle(x,y)<1.05)&&(R2circle(x,y)>sq(0.025*(1.0-h)))&&(level<MAXlevel));// Initialize level-set function for interfacevertex scalar phi[];foreach_vertex(){if(y<y_p&&x>0.0){// Lower part - half circle geometryphi[]=(sq(h/2)-(sq(x-x_p)+sq(y-y_p)));}else{// Upper part - spherical rimdoubler=sqrt(sq(x)+sq(y));doubleshell=min(1.-r,(r-(1.-h)));phi[]=shell;}}fractions(phi,f);fraction(T,(sq((1.0-h)*0.5)-R2circle(x,y)));// Initialize pressure field based on regionforeach(){T[]*=1e1;if(R2circle(x,y)<sq(1.0-h)){p[]=2.+2./(1.-h);// Inner bubble pressure}elseif((R2circle(x,y)<=1)&&(R2circle(x,y)>=sq(1.0-h))){p[]=2*f[];// Film pressure}else{p[]=0;// Atmospheric pressure}u.x[]=0;u.y[]=0;}}}",
+    "url": "https://comphy-lab.org/soapy/simulationCases/soapBubble-full.c.html",
+    "type": "docs_code",
+    "priority": 4
+  },
+  {
+    "title": "simulationCases/soapBubble-full.c | SOAPY - Simulation Of Axisymmetric Phenomena in bubblY films - Code Example",
+    "content": "scalar KAPPA[];event adapt(i++){curvature(f,KAPPA);adapt_wavelet((scalar*){f,u.x,u.y,KAPPA},(double[]){fErr,VelErr,VelErr,KErr},MAXlevel,MAXlevel-4);}",
+    "url": "https://comphy-lab.org/soapy/simulationCases/soapBubble-full.c.html",
+    "type": "docs_code",
+    "priority": 4
+  },
+  {
+    "title": "simulationCases/soapBubble-full.c | SOAPY - Simulation Of Axisymmetric Phenomena in bubblY films - Code Example",
+    "content": "event writingFiles(t=0,t+=tsnap;t<=tmax){p.nodump=false;// Enable pressure outputdump(file=\"dump\");charnameOut[80];sprintf(nameOut,\"intermediate/snapshot-%5.4f\",t);dump(file=nameOut);}",
+    "url": "https://comphy-lab.org/soapy/simulationCases/soapBubble-full.c.html",
+    "type": "docs_code",
+    "priority": 4
+  },
+  {
+    "title": "simulationCases/soapBubble-full.c | SOAPY - Simulation Of Axisymmetric Phenomena in bubblY films - Code Example",
+    "content": "event logWriting(i++){staticFILE*fp;if(pid()==0){if(i==0){fprintf(ferr,\"i dt t\\n\");fp=fopen(\"log\",\"w\");fprintf(fp,\"Level%d, tmax%g, Oh%3.2e, Lo%g\\n\",MAXlevel,tmax,Oh1,Ldomain);fprintf(fp,\"i dt t\\n\");fprintf(fp,\"%d%g%g\\n\",i,dt,t);fclose(fp);}else{fp=fopen(\"log\",\"a\");fprintf(fp,\"%d%g%g\\n\",i,dt,t);fclose(fp);}fprintf(ferr,\"%d%g%g\\n\",i,dt,t);}}",
+    "url": "https://comphy-lab.org/soapy/simulationCases/soapBubble-full.c.html",
+    "type": "docs_code",
+    "priority": 4
+  },
+  {
+    "title": "Simulation Cases | Documentation",
+    "content": "Simulation Cases cleanup.sh rm -rf \\$1 Makefile ifeq (\\$(wildcard ../.projectconfig),) \\$(error '../.projectconfig not found') endif BASILISK := \\$(shell . ../.proje... runCases.sh ORIGDIR=\\$(pwd) mkdir -p \\$1 cp \\$1.c \\$1/ cd \\$1 CC99='mpicc -std=c99' qcc -Wall -O2 -DMPI=1 -disable-dimensions -I\\... soapBubble-full.c This simulation models the dynamics of a thin liquid film forming a bubble with wrinkling instabilities. The code sol... soapBubble-half.c This simulation models the dynamics of a thin liquid film forming a bubble with wrinkling instabilities. The code sol...",
+    "url": "https://comphy-lab.org/soapy/simulationCases/index.html",
+    "type": "docs_content",
+    "priority": 4
+  },
+  {
+    "title": "postProcess/getFacet.c | SOAPY - Simulation Of Axisymmetric Phenomena in bubblY films",
+    "content": "postProcess/getFacet.c See raw file Facet Extraction Utility Extract interface facets from Basilisk simulation files. Author : Vatsal Sanjay (vatsalsy@comphy-lab.org) Lab : CoMPhy Lab, Physics of Fluids Department Updated : March 8, 2025 Usage ./getFacet < simulation_file > Output: Facet data to stderr #include \"utils.h\" #include \"output.h\" #include \"fractions.h\" VOF fraction field scalar f []; Input filename buffer char filename [ 80 ]; Main Function Extract facets from a saved simulation state. Parameters a : Argument count arguments : Command-line arguments arguments[1] : Simulation file path Process Load simulation file Extract facets from VOF field Output to stderr int main ( int a , char const * arguments []) { sprintf ( filename , \" %s \" , arguments [ 1 ]); restore ( file = filename ); FILE * fp = ferr ; output_facets ( f , fp ); fflush ( fp ); fclose ( fp ); }",
+    "url": "https://comphy-lab.org/soapy/postProcess/getFacet.c.html",
+    "type": "docs_content",
+    "priority": 4
+  },
+  {
+    "title": "postProcess/getFacet.c | SOAPY - Simulation Of Axisymmetric Phenomena in bubblY films - C/C++ Code",
+    "content": "#include\"utils.h\"#include\"output.h\"#include\"fractions.h\"",
+    "url": "https://comphy-lab.org/soapy/postProcess/getFacet.c.html",
+    "type": "docs_code",
+    "priority": 4
+  },
+  {
+    "title": "postProcess/getFacet.c | SOAPY - Simulation Of Axisymmetric Phenomena in bubblY films - Code Example",
+    "content": "intmain(inta,charconst*arguments[]){sprintf(filename,\"%s\",arguments[1]);restore(file=filename);FILE*fp=ferr;output_facets(f,fp);fflush(fp);fclose(fp);}",
+    "url": "https://comphy-lab.org/soapy/postProcess/getFacet.c.html",
+    "type": "docs_code",
+    "priority": 4
+  },
+  {
+    "title": "postProcess/getData.c | SOAPY - Simulation Of Axisymmetric Phenomena in bubblY films: Context",
+    "content": "postProcess/getData.c See raw file Simulation Data Extraction Extract and interpolate field data from Basilisk snapshots onto a regular grid. Author : Vatsal Sanjay (vatsalsy@comphy-lab.org) Lab : CoMPhy Lab, Physics of Fluids Department Updated : March 8, 2025 Usage ./getData < filename > < xmin > < ymin > < xmax > < ymax > < ny > Output: Grid data (x, y, field_values) to stderr #include \"utils.h\" #include \"output.h\" VOF and velocity fields scalar f []; vector u []; Command-line parameters char filename [ 80 ]; int nx , ny , len ; double xmin , ymin , xmax , ymax , Deltax , Deltay ; Temperature field and scalar list scalar T []; scalar * list = NULL ; Main Function Extract simulation data and interpolate onto a regular grid.",
+    "url": "https://comphy-lab.org/soapy/postProcess/getData.c.html",
+    "type": "docs_content",
+    "priority": 4
+  },
+  {
+    "title": "postProcess/getData.c | SOAPY - Simulation Of Axisymmetric Phenomena in bubblY films: Parameters filename :...",
+    "content": "Parameters filename : Simulation snapshot file xmin , ymin : Lower bounds of extraction region xmax , ymax : Upper bounds of extraction region ny : Number of grid points in y-direction Process Parse arguments and validate input Load simulation and normalize T field Create uniform grid with spacing Deltay Interpolate fields onto grid points Output grid data to stderr int main ( int a , char const * arguments []) { if ( a != 7 ) { fprintf ( stderr , \"Error: Expected 6 arguments \\n \" ); fprintf ( stderr , \"Usage: %s <filename> <xmin> <ymin> <xmax> <ymax> <ny> \\n \" , arguments [ 0 ]); return 1 ; } sprintf ( filename , \" %s \" , arguments [ 1 ]); xmin = atof ( arguments [ 2 ]); ymin = atof ( arguments [ 3 ]); xmax = atof ( arguments [ 4 ]); ymax = atof ( arguments [ 5 ]); ny = atoi ( arguments [ 6 ]); list = list_add ( list , T ); /* Load simulation */ restore ( file = filename ); /* Normalize T by maximum value */",
+    "url": "https://comphy-lab.org/soapy/postProcess/getData.c.html",
+    "type": "docs_content",
+    "priority": 4
+  },
+  {
+    "title": "postProcess/getData.c | SOAPY - Simulation Of Axisymmetric Phenomena in bubblY films - Code Example",
+    "content": "charfilename[80];intnx,ny,len;doublexmin,ymin,xmax,ymax,Deltax,Deltay;",
+    "url": "https://comphy-lab.org/soapy/postProcess/getData.c.html",
+    "type": "docs_code",
+    "priority": 4
+  },
+  {
+    "title": "postProcess/getData.c | SOAPY - Simulation Of Axisymmetric Phenomena in bubblY films - Code Example",
+    "content": "intmain(inta,charconst*arguments[]){if(a!=7){fprintf(stderr,\"Error: Expected 6 arguments\\n\");fprintf(stderr,\"Usage:%s<filename> <xmin> <ymin> <xmax> <ymax> <ny>\\n\",arguments[0]);return1;}sprintf(filename,\"%s\",arguments[1]);xmin=atof(arguments[2]);ymin=atof(arguments[3]);xmax=atof(arguments[4]);ymax=atof(arguments[5]);ny=atoi(arguments[6]);list=list_add(list,T);/* Load simulation */restore(file=filename);/* Normalize T by maximum value */",
+    "url": "https://comphy-lab.org/soapy/postProcess/getData.c.html",
+    "type": "docs_code",
+    "priority": 4
+  },
+  {
+    "title": "postProcess/Video-generic.py | SOAPY - Simulation Of Axisymmetric Phenomena in bubblY films: Context",
+    "content": "postProcess/Video-generic.py See raw file #!/usr/bin/env python3 # -*- coding: utf-8 -*- Basilisk Fluid Dynamics Visualization Script This script processes Basilisk simulation snapshots to create high-quality visualizations of fluid dynamics simulations, particularly for soap bubble and multiphase flow problems. It reads simulation data from intermediate snapshot files, extracts facet information (interfaces), and temperature/scalar fields, then generates publication-quality plots. The script supports parallel processing for efficient generation of animation frames from large simulation datasets.",
+    "url": "https://comphy-lab.org/soapy/postProcess/Video-generic.py.html",
+    "type": "docs_content",
+    "priority": 4
+  },
+  {
+    "title": "postProcess/Video-generic.py | SOAPY - Simulation Of Axisymmetric Phenomena in bubblY films: Context",
+    "content": "Usage: python Video-generic.py [options] Basic usage: python Video-generic.py -CPUs 8 -nGFS 1000 Custom simulation: python Video-generic.py -caseToProcess ../mySimulation -RMAX 5.0 Dependencies: - numpy: For numerical operations - matplotlib: For visualization - multiprocessing: For parallel processing - subprocess: For calling external Basilisk utilities - argparse: For command-line argument parsing External Requirements: - ./getFacet: Basilisk utility to extract interface facets - ./getData: Basilisk utility to extract field data - LaTeX: For rendering mathematical expressions in plots Author: Vatsal Sanjay Email: vatsalsy@comphy-lab.org Affiliation: CoMPhy Lab, Physics of Fluids Department Last updated: Mar 8, 2025 import numpy as np import os import subprocess as sp import matplotlib import matplotlib.pyplot as plt from matplotlib.collections import LineCollection from matplotlib.ticker import StrMethodFormatter import multiprocessing as mp from functools import partial import argparse import sys # =============================== # Matplotlib Configuration # =============================== matplotlib.rcParams[ 'font.family' ] = 'serif' matplotlib.rcParams[ 'text.usetex' ] = True matplotlib.rcParams[ 'text.latex.preamble' ] = r' \\ usepackage{amsmath}' # =============================== # Data Extraction Functions # =============================== def gettingFacets(filename, includeCoat = 'true' ): Extract interface facets from a Basilisk snapshot file.",
+    "url": "https://comphy-lab.org/soapy/postProcess/Video-generic.py.html",
+    "type": "docs_content",
+    "priority": 4
+  },
+  {
+    "title": "postProcess/Video-generic.py | SOAPY - Simulation Of Axisymmetric Phenomena in bubblY films: Function Definition",
+    "content": "This function calls the external getFacet utility to extract the coordinates of interface segments (facets) from a Basilisk simulation snapshot. The facets represent the boundaries between different phases or the free surface. The function automatically mirrors facets across the r=0 axis for axisymmetric simulations, creating a full 2D representation. Args: filename (str): Path to the Basilisk snapshot file includeCoat (str, optional): Whether to include coating interfaces. Defaults to \u2018true\u2019. Returns: list: List of line segments, where each segment is a tuple of two points ((r1, z1), (r2, z2)). Returns empty list if file has insufficient data.",
+    "url": "https://comphy-lab.org/soapy/postProcess/Video-generic.py.html",
+    "type": "docs_content",
+    "priority": 4
+  },
+  {
+    "title": "postProcess/Video-generic.py | SOAPY - Simulation Of Axisymmetric Phenomena in bubblY films: Examples",
+    "content": "Raises: subprocess.CalledProcessError: If getFacet utility fails Example: >>> facets = gettingFacets(\u201csnapshot-0.1000\u201d) >>> print(f\u201dFound {len(facets)} facet segments\u201d) # Execute the getFacet utility exe = [ \"./getFacet\" , filename, includeCoat] p = sp.Popen(exe, stdout = sp.PIPE, stderr = sp.PIPE) stdout, stderr = p.communicate() # Parse the output from stderr (Basilisk utilities output to stderr) temp1 = stderr.decode( \"utf-8\" ) temp2 = temp1.split( \" \\n \" ) segs = [] skip = False # Only process if we have substantial output (>100 lines indicates valid data) if ( len (temp2) > 1e2 ): for n1 in range ( len (temp2)): temp3 = temp2[n1].split( \" \" ) if temp3 == [ '' ]: skip = False pass else : if not skip: # Parse the next line for the second point of the segment temp4 = temp2[n1 + 1 ].split( \" \" ) # Note: getFacet outputs in (z, r) format, we convert to (r, z) r1, z1 = np.array([ float (temp3[ 1 ]), float (temp3[ 0 ])]) r2, z2 = np.array([ float (temp4[ 1 ]), float (temp4[ 0 ])]) # Add the original segment segs.append(((r1, z1), (r2, z2))) # Mirror across r=0 for axisymmetric visualization segs.append((( - r1, z1), ( - r2, z2))) skip = True return segs def gettingfield(filename, zmin, zmax, rmax, nr): Extract field data from a Basilisk snapshot within specified bounds.",
+    "url": "https://comphy-lab.org/soapy/postProcess/Video-generic.py.html",
+    "type": "docs_content",
+    "priority": 4
+  },
+  {
+    "title": "postProcess/Video-generic.py | SOAPY - Simulation Of Axisymmetric Phenomena in bubblY films: Function Definition",
+    "content": "This function calls the getData utility to extract scalar field data (e.g., temperature, concentration) from a Basilisk simulation on a regular grid. The data is extracted in a rectangular region for efficient visualization.",
+    "url": "https://comphy-lab.org/soapy/postProcess/Video-generic.py.html",
+    "type": "docs_content",
+    "priority": 4
+  },
+  {
+    "title": "postProcess/Video-generic.py | SOAPY - Simulation Of Axisymmetric Phenomena in bubblY films: Args: filename (str):...",
+    "content": "Args: filename (str): Path to the Basilisk snapshot file zmin (float): Minimum z-coordinate for data extraction zmax (float): Maximum z-coordinate for data extraction rmax (float): Maximum radial coordinate for data extraction nr (int): Number of grid points in the radial direction Returns: tuple: Contains: - R (numpy.ndarray): 2D array of radial coordinates (nz x nr) - Z (numpy.ndarray): 2D array of axial coordinates (nz x nr) - T (numpy.ndarray): 2D array of field values (nz x nr) - nz (int): Number of grid points in the axial direction Raises: subprocess.CalledProcessError: If getData utility fails ValueError: If data reshaping fails due to inconsistent dimensions Example: >>> R, Z, T, nz = gettingfield(\u201csnapshot-0.1000\u201d, 0, 4, 2, 256) >>> print(f\u201dGrid size: {nz} x {nr}\u201c) # Execute the getData utility with specified bounds exe = [ \"./getData\" , filename, str (zmin), str ( 0 ), str (zmax), str (rmax), str (nr)] p = sp.Popen(exe, stdout = sp.PIPE, stderr = sp.PIPE) stdout, stderr = p.communicate() # Parse the output temp1 = stderr.decode( \"utf-8\" ) temp2 = temp1.split( \" \\n \" ) Rtemp, Ztemp, Ttemp = [], [], [] # Extract data points from output for n1 in range ( len (temp2)): temp3 = temp2[n1].split( \" \" ) if temp3 == [ '' ]: pass else : # getData outputs in (z, r, field) format Ztemp.append( float (temp3[ 0 ])) Rtemp.append( float (temp3[ 1 ])) Ttemp.append( float (temp3[ 2 ])) # Convert to numpy arrays R = np.asarray(Rtemp) Z = np.asarray(Ztemp) T = np.asarray(Ttemp) # Calculate grid dimensions nz = int ( len (Z) / nr) print ( \"nz is %d \" % nz) # Reshape into 2D grids for visualization R.resize((nz, nr)) Z.resize((nz, nr)) T.resize((nz, nr)) return R, Z, T, nz # =============================== # Visualization Functions # =============================== def process_timestep(ti, caseToProcess, folder, tsnap, GridsPerR, rmin, rmax, zmin, zmax, lw): Process and visualize a single timestep from the simulation.",
+    "url": "https://comphy-lab.org/soapy/postProcess/Video-generic.py.html",
+    "type": "docs_content",
+    "priority": 4
+  },
+  {
+    "title": "postProcess/Video-generic.py | SOAPY - Simulation Of Axisymmetric Phenomena in bubblY films: Function Definition",
+    "content": "This function handles the complete visualization pipeline for one timestep: reading data, creating the plot with field visualization and interface contours, and saving the image. It\u2019s designed to be called in parallel for multiple timesteps.",
+    "url": "https://comphy-lab.org/soapy/postProcess/Video-generic.py.html",
+    "type": "docs_content",
+    "priority": 4
+  },
+  {
+    "title": "postProcess/Video-generic.py | SOAPY - Simulation Of Axisymmetric Phenomena in bubblY films: The visualization includes:...",
+    "content": "The visualization includes: - Temperature/scalar field as a colored heatmap - Interface facets as blue lines - Domain boundaries - Axis of symmetry (for axisymmetric cases) Args: ti (int): Timestep index caseToProcess (str): Path to the simulation case directory folder (str): Output directory for saving images tsnap (float): Time interval between snapshots GridsPerR (int): Number of grid points per unit radius rmin (float): Minimum radial coordinate for plotting rmax (float): Maximum radial coordinate for plotting zmin (float): Minimum axial coordinate for plotting zmax (float): Maximum axial coordinate for plotting lw (float): Line width for plotting boundaries Returns: None: Saves image to disk Note: - Skips processing if output image already exists - Prints error messages if snapshot file is missing or corrupted - Images are saved with 8-digit zero-padded filenames for proper sorting Example: >>> process_timestep(100, \u201c../simCase\u201d, \u201coutput\u201d, 0.01, 128, -2, 2, 0, 4, 2) # Creates output/00001000.png for t=1.0 # Calculate physical time for this timestep t = tsnap * ti place = f\" { caseToProcess } /intermediate/snapshot- { t :.4f} \" name = f\" { folder } / { int (t * 1000 ) :08d} .png\" # Check if snapshot file exists if not os.path.exists(place): print ( f\" { place } File not found!\" ) return # Skip if output already exists (useful for resuming interrupted runs) if os.path.exists(name): print ( f\" { name } Image present!\" ) return # Extract interface facets segs = gettingFacets(place) if not segs: print ( f\"Problem in the available file { place } \" ) return # Calculate grid resolution based on domain size nr = int (GridsPerR * rmax) # Extract field data R, Z, T, nz = gettingfield(place, zmin, zmax, rmax, nr) zminp, zmaxp, rminp, rmaxp = Z. min (), Z. max (), R. min (), R. max () # =============================== # Plotting Configuration # =============================== AxesLabel, TickLabel = 50 , 20 fig, ax = plt.subplots() fig.set_size_inches( 19.20 , 10.80 ) # Full HD resolution # Plot domain boundaries and axis of symmetry ax.plot([ 0 , 0 ], [zmin, zmax], '-.' , color = 'grey' , linewidth = lw) # Symmetry axis ax.plot([rmin, rmin], [zmin, zmax], '-' , color = 'black' , linewidth = lw) # Left boundary ax.plot([rmin, rmax], [zmin, zmin], '-' , color = 'black' , linewidth = lw) # Bottom boundary ax.plot([rmin, rmax], [zmax, zmax], '-' , color = 'black' , linewidth = lw) # Top boundary ax.plot([rmax, rmax], [zmin, zmax], '-' , color = 'black' , linewidth = lw) # Right boundary # Add interface facets as a collection for efficiency line_segments = LineCollection(segs, linewidths = 4 , colors = 'blue' , linestyle = 'solid' ) ax.add_collection(line_segments) # Create temperature/scalar field visualization cntrl2 = ax.imshow(T, interpolation = 'Bilinear' , cmap = 'hot_r' , origin = 'lower' , extent = [rminp, rmaxp, zminp, zmaxp], vmax = 1.0 , vmin = 0.0 ) # Configure plot appearance ax.set_aspect( 'equal' ) ax.set_xlim(rmin, rmax) ax.set_ylim(zmin, zmax) ax.set_title( f'$t/ \\\\ tau_ \\\\ gamma$ = { t :4.3f} ' , fontsize = TickLabel) ax.axis( 'off' ) # Remove axes for cleaner visualization # Save figure with tight layout plt.savefig(name, bbox_inches = \"tight\" ) plt.close() # =============================== # Main Execution # =============================== def main(): Main function that orchestrates the parallel visualization process.",
+    "url": "https://comphy-lab.org/soapy/postProcess/Video-generic.py.html",
+    "type": "docs_content",
+    "priority": 4
+  },
+  {
+    "title": "postProcess/Video-generic.py | SOAPY - Simulation Of Axisymmetric Phenomena in bubblY films: Context",
+    "content": "This function: 1. Parses command-line arguments for configuration 2. Sets up the output directory 3. Creates a multiprocessing pool 4.",
+    "url": "https://comphy-lab.org/soapy/postProcess/Video-generic.py.html",
+    "type": "docs_content",
+    "priority": 4
+  },
+  {
+    "title": "postProcess/Video-generic.py | SOAPY - Simulation Of Axisymmetric Phenomena in bubblY films: Distributes timestep processing...",
+    "content": "Distributes timestep processing across available CPUs The parallel processing significantly speeds up visualization of large simulation datasets by processing multiple timesteps simultaneously. parser = argparse.ArgumentParser( description = 'Generate visualizations from Basilisk simulation snapshots' , formatter_class = argparse.RawDescriptionHelpFormatter) parser.add_argument( '--CPUs' , type = int , default = 8 , help = 'Number of CPUs to use for parallel processing' ) parser.add_argument( '--nGFS' , type = int , default = 4000 , help = 'Number of snapshot files to process' ) parser.add_argument( '--GridsPerR' , type = int , default = 128 , help = 'Grid resolution per unit radius (affects image quality)' ) parser.add_argument( '--ZMAX' , type = float , default = 4.0 , help = 'Maximum Z coordinate for visualization domain' ) parser.add_argument( '--RMAX' , type = float , default = 4.0 , help = 'Maximum R coordinate for visualization domain' ) parser.add_argument( '--ZMIN' , type = float , default = 0.0 , help = 'Minimum Z coordinate for visualization domain' ) parser.add_argument( '--tsnap' , type = float , default = 0.01 , help = 'Time interval between snapshots' ) parser.add_argument( '--caseToProcess' , type = str , default = '../simulationCases/soapBubble-full' , help = 'Path to simulation case directory' ) parser.add_argument( '--folderToSave' , type = str , default = 'Video' , help = 'Output directory for images' ) args = parser.parse_args() # Extract arguments num_processes = args.CPUs nGFS = args.nGFS tsnap = args.tsnap ZMAX = args.ZMAX RMAX = args.RMAX ZMIN = args.ZMIN # Set up visualization domain (full domain for axisymmetric cases) rmin, rmax, zmin, zmax = [ - RMAX, RMAX, ZMIN, ZMAX] GridsPerR = args.GridsPerR # Visualization parameters lw = 2 # Line width for boundaries folder = args.folderToSave caseToProcess = args.caseToProcess # Create output directory if it doesn't exist if not os.path.isdir(folder): os.makedirs(folder) print ( f\"Created output directory: { folder } \" ) # =============================== # Parallel Processing # =============================== print ( f\"Starting parallel processing with { num_processes } CPUs...\" ) print ( f\"Processing { nGFS } timesteps from { caseToProcess } \" ) # Create a pool of worker processes with mp.Pool(processes = num_processes) as pool: # Create partial function with fixed arguments # This allows us to pass only the timestep index to each worker process_func = partial(process_timestep, caseToProcess = caseToProcess, folder = folder, tsnap = tsnap, GridsPerR = GridsPerR, rmin = rmin, rmax = rmax, zmin = zmin, zmax = zmax, lw = lw) # Map the process function to all timesteps # This distributes the work across available CPUs pool. map (process_func, range (nGFS)) print ( f\"Processing complete!",
+    "url": "https://comphy-lab.org/soapy/postProcess/Video-generic.py.html",
+    "type": "docs_content",
+    "priority": 4
+  },
+  {
+    "title": "postProcess/Video-generic.py | SOAPY - Simulation Of Axisymmetric Phenomena in bubblY films: Images saved to...",
+    "content": "Images saved to { folder } /\" ) print ( \"To create a video from images, use:\" ) print ( f\" ffmpeg -framerate 30 -pattern_type glob -i ' { folder } /*.png' -c:v libx264 output.mp4\" ) if __name__ == \"__main__\" : main()",
+    "url": "https://comphy-lab.org/soapy/postProcess/Video-generic.py.html",
+    "type": "docs_content",
+    "priority": 4
+  },
+  {
+    "title": "postProcess/Video-generic.py | SOAPY - Simulation Of Axisymmetric Phenomena in bubblY films - Code Example: Methods",
+    "content": "importnumpyasnpimportosimportsubprocessasspimportmatplotlibimportmatplotlib.pyplotaspltfrommatplotlib.collectionsimportLineCollectionfrommatplotlib.tickerimportStrMethodFormatterimportmultiprocessingasmpfromfunctoolsimportpartialimportargparseimportsys# ===============================# Matplotlib Configuration# ===============================matplotlib.rcParams['font.family']='serif'matplotlib.rcParams['text.usetex']=Truematplotlib.rcParams['text.latex.preamble']=r'\\usepackage{amsmath}'# ===============================# Data Extraction Functions# ===============================defgettingFacets(filename, includeCoat='true'):",
+    "url": "https://comphy-lab.org/soapy/postProcess/Video-generic.py.html",
+    "type": "docs_code",
+    "priority": 4
+  },
+  {
+    "title": "postProcess/Video-generic.py | SOAPY - Simulation Of Axisymmetric Phenomena in bubblY films - Code Example: # Execute the...",
+    "content": "# Execute the getFacet utilityexe=[\"./getFacet\", filename, includeCoat]p=sp.Popen(exe, stdout=sp.PIPE, stderr=sp.PIPE)stdout, stderr=p.communicate()# Parse the output from stderr (Basilisk utilities output to stderr)temp1=stderr.decode(\"utf-8\")temp2=temp1.split(\"\\n\")segs=[]skip=False# Only process if we have substantial output (>100 lines indicates valid data)if(len(temp2)>1e2):forn1inrange(len(temp2)):temp3=temp2[n1].split(\" \")iftemp3==['']:skip=Falsepasselse:ifnotskip:# Parse the next line for the second point of the segmenttemp4=temp2[n1+1].split(\" \")# Note: getFacet outputs in (z, r) format, we convert to (r, z)r1, z1=np.array([float(temp3[1]),float(temp3[0])])r2, z2=np.array([float(temp4[1]),float(temp4[0])])# Add the original segmentsegs.append(((r1, z1), (r2, z2)))# Mirror across r=0 for axisymmetric visualizationsegs.append(((-r1, z1), (-r2, z2)))skip=Truereturnsegsdefgettingfield(filename, zmin, zmax, rmax, nr):",
+    "url": "https://comphy-lab.org/soapy/postProcess/Video-generic.py.html",
+    "type": "docs_code",
+    "priority": 4
+  },
+  {
+    "title": "postProcess/Video-generic.py | SOAPY - Simulation Of Axisymmetric Phenomena in bubblY films - Code Example: # Execute the...",
+    "content": "# Execute the getData utility with specified boundsexe=[\"./getData\", filename,str(zmin),str(0),str(zmax),str(rmax),str(nr)]p=sp.Popen(exe, stdout=sp.PIPE, stderr=sp.PIPE)stdout, stderr=p.communicate()# Parse the outputtemp1=stderr.decode(\"utf-8\")temp2=temp1.split(\"\\n\")Rtemp, Ztemp, Ttemp=[], [], []# Extract data points from outputforn1inrange(len(temp2)):temp3=temp2[n1].split(\" \")iftemp3==['']:passelse:# getData outputs in (z, r, field) formatZtemp.append(float(temp3[0]))Rtemp.append(float(temp3[1]))Ttemp.append(float(temp3[2]))# Convert to numpy arraysR=np.asarray(Rtemp)Z=np.asarray(Ztemp)T=np.asarray(Ttemp)# Calculate grid dimensionsnz=int(len(Z)/nr)print(\"nz is%d\"%nz)# Reshape into 2D grids for visualizationR.resize((nz, nr))Z.resize((nz, nr))T.resize((nz, nr))returnR, Z, T, nz# ===============================# Visualization Functions# ===============================defprocess_timestep(ti, caseToProcess, folder, tsnap, GridsPerR, rmin, rmax, zmin, zmax, lw):",
+    "url": "https://comphy-lab.org/soapy/postProcess/Video-generic.py.html",
+    "type": "docs_code",
+    "priority": 4
+  },
+  {
+    "title": "postProcess/Video-generic.py | SOAPY - Simulation Of Axisymmetric Phenomena in bubblY films - Code Example: # Calculate physical...",
+    "content": "# Calculate physical time for this timestept=tsnap*tiplace=f\"{caseToProcess}/intermediate/snapshot-{t:.4f}\"name=f\"{folder}/{int(t*1000):08d}.png\"# Check if snapshot file existsifnotos.path.exists(place):print(f\"{place}File not found!\")return# Skip if output already exists (useful for resuming interrupted runs)ifos.path.exists(name):print(f\"{name}Image present!\")return# Extract interface facetssegs=gettingFacets(place)ifnotsegs:print(f\"Problem in the available file{place}\")return# Calculate grid resolution based on domain sizenr=int(GridsPerR*rmax)# Extract field dataR, Z, T, nz=gettingfield(place, zmin, zmax, rmax, nr)zminp, zmaxp, rminp, rmaxp=Z.min(), Z.max(), R.min(), R.max()# ===============================# Plotting Configuration# ===============================AxesLabel, TickLabel=50,20fig, ax=plt.subplots()fig.set_size_inches(19.20,10.80)# Full HD resolution# Plot domain boundaries and axis of symmetryax.plot([0,0], [zmin, zmax],'-.', color='grey', linewidth=lw)# Symmetry axisax.plot([rmin, rmin], [zmin, zmax],'-', color='black', linewidth=lw)# Left boundaryax.plot([rmin, rmax], [zmin, zmin],'-', color='black', linewidth=lw)# Bottom boundaryax.plot([rmin, rmax], [zmax, zmax],'-', color='black', linewidth=lw)# Top boundaryax.plot([rmax, rmax], [zmin, zmax],'-', color='black', linewidth=lw)# Right boundary# Add interface facets as a collection for efficiencyline_segments=LineCollection(segs, linewidths=4, colors='blue', linestyle='solid')ax.add_collection(line_segments)# Create temperature/scalar field visualizationcntrl2=ax.imshow(T, interpolation='Bilinear', cmap='hot_r', origin='lower',extent=[rminp, rmaxp, zminp, zmaxp], vmax=1.0, vmin=0.0)# Configure plot appearanceax.set_aspect('equal')ax.set_xlim(rmin, rmax)ax.set_ylim(zmin, zmax)ax.set_title(f'$t/\\\\tau_\\\\gamma$ ={t:4.3f}', fontsize=TickLabel)ax.axis('off')# Remove axes for cleaner visualization# Save figure with tight layoutplt.savefig(name, bbox_inches=\"tight\")plt.close()# ===============================# Main Execution# ===============================defmain():",
+    "url": "https://comphy-lab.org/soapy/postProcess/Video-generic.py.html",
+    "type": "docs_code",
+    "priority": 4
+  },
+  {
+    "title": "postProcess/Video-generic.py | SOAPY - Simulation Of Axisymmetric Phenomena in bubblY films - Code Example: Context",
+    "content": "parser=argparse.ArgumentParser(description='Generate visualizations from Basilisk simulation snapshots',formatter_class=argparse.RawDescriptionHelpFormatter)parser.add_argument('--CPUs',type=int, default=8,help='Number of CPUs to use for parallel processing')parser.add_argument('--nGFS',type=int, default=4000,help='Number of snapshot files to process')parser.add_argument('--GridsPerR',type=int, default=128,help='Grid resolution per unit radius (affects image quality)')parser.add_argument('--ZMAX',type=float, default=4.0,help='Maximum Z coordinate for visualization domain')parser.add_argument('--RMAX',type=float, default=4.0,help='Maximum R coordinate for visualization domain')parser.add_argument('--ZMIN',type=float, default=0.0,help='Minimum Z coordinate for visualization domain')parser.add_argument('--tsnap',type=float, default=0.01,help='Time interval between snapshots')parser.add_argument('--caseToProcess',type=str,default='../simulationCases/soapBubble-full',help='Path to simulation case directory')parser.add_argument('--folderToSave',type=str, default='Video',help='Output directory for images')args=parser.parse_args()# Extract argumentsnum_processes=args.CPUsnGFS=args.nGFStsnap=args.tsnapZMAX=args.ZMAXRMAX=args.RMAXZMIN=args.ZMIN# Set up visualization domain (full domain for axisymmetric cases)rmin, rmax, zmin, zmax=[-RMAX, RMAX, ZMIN, ZMAX]GridsPerR=args.GridsPerR# Visualization parameterslw=2# Line width for boundariesfolder=args.folderToSavecaseToProcess=args.caseToProcess# Create output directory if it doesn't existifnotos.path.isdir(folder):os.makedirs(folder)print(f\"Created output directory:{folder}\")# ===============================# Parallel Processing# ===============================print(f\"Starting parallel processing with{num_processes}CPUs...\")print(f\"Processing{nGFS}timesteps from{caseToProcess}\")# Create a pool of worker processeswithmp.Pool(processes=num_processes)aspool:# Create partial function with fixed arguments# This allows us to pass only the timestep index to each workerprocess_func=partial(process_timestep,caseToProcess=caseToProcess,folder=folder,tsnap=tsnap,GridsPerR=GridsPerR,rmin=rmin,rmax=rmax,zmin=zmin,zmax=zmax,lw=lw)# Map the process function to all timesteps# This distributes the work across available CPUspool.map(process_func,range(nGFS))print(f\"Processing complete!",
+    "url": "https://comphy-lab.org/soapy/postProcess/Video-generic.py.html",
+    "type": "docs_code",
+    "priority": 4
+  },
+  {
+    "title": "postProcess/Video-generic.py | SOAPY - Simulation Of Axisymmetric Phenomena in bubblY films - Code Example: Images saved to{folder}/\")print(\"To...",
+    "content": "Images saved to{folder}/\")print(\"To create a video from images, use:\")print(f\"  ffmpeg -framerate 30 -pattern_type glob -i '{folder}/*.png' -c:v libx264 output.mp4\")if__name__==\"__main__\":main()",
+    "url": "https://comphy-lab.org/soapy/postProcess/Video-generic.py.html",
+    "type": "docs_code",
+    "priority": 4
+  },
+  {
+    "title": "Post-Processing Tools | Documentation",
+    "content": "Post-Processing Tools getData.c Extract and interpolate field data from Basilisk snapshots onto a regular grid. - Author: Vatsal Sanjay (vatsalsy@com... getFacet.c Extract interface facets from Basilisk simulation files. - Author: Vatsal Sanjay (vatsalsy@comphy-lab.org) - Lab: CoM... Video-generic.py Basilisk Fluid Dynamics Visualization Script This script processes Basilisk simulation snapshots to create high-quali...",
+    "url": "https://comphy-lab.org/soapy/postProcess/index.html",
+    "type": "docs_content",
+    "priority": 4
+  },
+  {
     "title": "reset_install_requirements.sh | Documentation: Context",
     "content": "reset_install_requirements.sh See raw file reset_install_requirements.sh #!/bin/zsh # tested on MacOS only.",
     "url": "https://comphy-lab.org/HoleySheet/reset_install_requirements.sh.html",
