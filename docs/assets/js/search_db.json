@@ -10735,8 +10735,8 @@
     "priority": 8
   },
   {
-    "title": "Claude - Build and Development Commands",
-    "content": "- **Install dependencies:** ```bash bundle install && cd scripts && npm install && cd .. ``` - **Build site and generate search database:** ```bash ./scripts/build.sh ``` - **Run local server:** ```bash bundle exec jekyll serve ``` - **View website in browser:** - **Generate SEO tags:** ```bash bundle exec ruby scripts/generate_seo_tags.rb ``` - **Generate filtered research pages:** ```bash bundle exec ruby scripts/generate_filtered_research.rb ``` - **Run code checks and auto-fixes:** ```bash ./scripts/lint-check.sh ```",
+    "title": "Claude - Build and Development Commands: - **Complete setup...",
+    "content": "- **Complete setup (for fresh or existing environments):** ```bash ./scripts/setup.sh ``` This script will automatically: - Install Ruby via rbenv if not present - Install Node.js via nvm if not present - Install Bundler if not present - Install all Ruby gems and npm packages - Build the site and generate search database - Run validation tests - **Manual dependency installation (if setup.sh was already run):** ```bash bundle install && npm install ``` - **Update dependencies:** ```bash bundle update && npm update ``` - **Build site and generate search database:** ```bash ./scripts/build.sh ``` - **Run local server:** ```bash bundle exec jekyll serve ``` - **View website in browser:** - **Generate SEO tags:** ```bash bundle exec ruby scripts/generate_seo_tags.rb ``` - **Generate filtered research pages:** ```bash bundle exec ruby scripts/generate_filtered_research.rb ``` - **Run code checks and auto-fixes:** ```bash ./scripts/lint-check.sh ``` - **Run tests:** ```bash # Jest tests with coverage npm test -- --coverage # Simple validation tests node scripts/simple-test.js # Test wrapper ./scripts/runTests.sh ``` - **Fix JavaScript issues:** ```bash # Fix line length (80 chars max) ./scripts/fix-js-line-length.sh # Convert single to double quotes ./scripts/fix-quotes.sh # Fix script loading order ./scripts/fix-script-order.sh ```",
     "url": "https://comphy-lab.org#claude",
     "type": "website_section",
     "priority": 8
@@ -10777,8 +10777,71 @@
     "priority": 8
   },
   {
+    "title": "Claude - Core Scripts",
+    "content": "- **setup.sh** - Complete environment setup (installs Ruby/Node.js if needed) - **build.sh** - Builds site, generates search database, SEO tags, and filtered pages - **lint-check.sh** - Runs all linters and auto-fixes issues",
+    "url": "https://comphy-lab.org#claude",
+    "type": "website_section",
+    "priority": 8
+  },
+  {
+    "title": "Claude - Utility Scripts",
+    "content": "- **fix-js-line-length.sh** - Ensures JS files stay within 80 character limit - **fix-quotes.sh** - Standardizes quotes in JavaScript files - **fix-script-order.sh** - Fixes script dependency loading order - **simple-test.js** - Lightweight test runner for basic validation - **runTests.sh** - Wrapper for running npm tests",
+    "url": "https://comphy-lab.org#claude",
+    "type": "website_section",
+    "priority": 8
+  },
+  {
+    "title": "Claude - Ruby Scripts",
+    "content": "- **generate_seo_tags.rb** - Creates SEO meta tags for all pages - **generate_filtered_research.rb** - Generates tag-based research filter pages",
+    "url": "https://comphy-lab.org#claude",
+    "type": "website_section",
+    "priority": 8
+  },
+  {
+    "title": "Claude - Running Tests",
+    "content": "- Use `npm test` for full Jest test suite - Use `npm test -- --coverage` for coverage report - Use `node scripts/simple-test.js` for quick validation - Tests are located in `/tests` directory",
+    "url": "https://comphy-lab.org#claude",
+    "type": "website_section",
+    "priority": 8
+  },
+  {
+    "title": "Claude - Test Files",
+    "content": "- **command-data.test.js** - Tests command palette functionality - **fix-line-length.test.js** - Tests line breaking utilities - **platform-utils.test.js** - Tests platform detection - **shortcut-key.test.js** - Tests keyboard shortcuts - **teaching.test.js** - Tests course sorting - **setup.js** - Browser environment mocks",
+    "url": "https://comphy-lab.org#claude",
+    "type": "website_section",
+    "priority": 8
+  },
+  {
+    "title": "Claude - Writing Tests",
+    "content": "- Follow existing patterns in test files - Mock browser APIs using setup.js - Aim for 80%+ code coverage - Test edge cases and error handling",
+    "url": "https://comphy-lab.org#claude",
+    "type": "website_section",
+    "priority": 8
+  },
+  {
     "title": "Claude - Deployment Process",
     "content": "- Site is automatically deployed via GitHub Pages when changes are merged to main - GitHub Actions workflows trigger the build and deployment process - Cloudflare cache is purged automatically on deployment",
+    "url": "https://comphy-lab.org#claude",
+    "type": "website_section",
+    "priority": 8
+  },
+  {
+    "title": "Claude - Setup Process",
+    "content": "- **Always use `./scripts/setup.sh` for environment setup** - This single script handles both fresh installations and existing environments - Do not create separate setup scripts - everything is consolidated in setup.sh - The script automatically installs Ruby/Node.js if not present",
+    "url": "https://comphy-lab.org#claude",
+    "type": "website_section",
+    "priority": 8
+  },
+  {
+    "title": "Claude - File Management",
+    "content": "- ALWAYS prefer editing existing files over creating new ones - NEVER proactively create documentation files unless explicitly requested - Do what has been asked; nothing more, nothing less",
+    "url": "https://comphy-lab.org#claude",
+    "type": "website_section",
+    "priority": 8
+  },
+  {
+    "title": "Claude - Development Workflow",
+    "content": "1. Run `./scripts/setup.sh` for initial setup 2. Use `./scripts/build.sh` to build the site 3. Run `bundle exec jekyll serve` for local development 4. Use `./scripts/lint-check.sh` before committing 5. Run tests with `npm test` to ensure quality",
     "url": "https://comphy-lab.org#claude",
     "type": "website_section",
     "priority": 8
