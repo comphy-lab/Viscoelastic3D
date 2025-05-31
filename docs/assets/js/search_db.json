@@ -10736,7 +10736,7 @@
   },
   {
     "title": "Claude - Build and Development Commands: - **Complete setup...",
-    "content": "- **Complete setup (for fresh or existing environments):** ```bash ./scripts/setup.sh ``` This script will automatically: - Install Ruby via rbenv if not present - Install Node.js via nvm if not present - Install Bundler if not present - Install all Ruby gems and npm packages - Build the site and generate search database - Run validation tests - **Manual dependency installation (if setup.sh was already run):** ```bash bundle install && npm install ``` - **Update dependencies:** ```bash bundle update && npm update ``` - **Build site and generate search database:** ```bash ./scripts/build.sh ``` - **Run local server:** ```bash bundle exec jekyll serve ``` - **View website in browser:** - **Generate SEO tags:** ```bash bundle exec ruby scripts/generate_seo_tags.rb ``` - **Generate filtered research pages:** ```bash bundle exec ruby scripts/generate_filtered_research.rb ``` - **Run code checks and auto-fixes:** ```bash ./scripts/lint-check.sh ``` - **Run tests:** ```bash # Jest tests with coverage npm test -- --coverage # Simple validation tests node scripts/simple-test.js # Test wrapper ./scripts/runTests.sh ``` - **Fix JavaScript issues:** ```bash # Fix line length (80 chars max) ./scripts/fix-js-line-length.sh # Convert single to double quotes ./scripts/fix-quotes.sh # Fix script loading order ./scripts/fix-script-order.sh ```",
+    "content": "- **Complete setup (for fresh or existing environments):** ```bash ./scripts/setup.sh ``` This script will automatically: - Install Ruby via rbenv if not present - Install Node.js via nvm if not present - Install Bundler if not present - Install all Ruby gems and npm packages - Build the site and generate search database - Install Git hooks for pre-commit checks (via Husky) - Run validation tests - **Manual dependency installation (if setup.sh was already run):** ```bash bundle install && npm install ``` - **Update dependencies:** ```bash bundle update && npm update ``` - **Build site and generate search database:** ```bash ./scripts/build.sh ``` - **Run local server:** ```bash bundle exec jekyll serve ``` - **View website in browser:** - **Generate SEO tags:** ```bash bundle exec ruby scripts/generate_seo_tags.rb ``` - **Generate filtered research pages:** ```bash bundle exec ruby scripts/generate_filtered_research.rb ``` - **Run code checks and auto-fixes:** ```bash ./scripts/lint-check.sh ``` - **Run tests:** ```bash # Jest tests with coverage npm test -- --coverage # Simple validation tests node scripts/simple-test.js # Test wrapper ./scripts/runTests.sh ``` - **Fix JavaScript issues:** ```bash # Fix line length (80 chars max) ./scripts/fix-js-line-length.sh # Convert single to double quotes ./scripts/fix-quotes.sh # Fix script loading order ./scripts/fix-script-order.sh ```",
     "url": "https://comphy-lab.org#claude",
     "type": "website_section",
     "priority": 8
@@ -10772,6 +10772,13 @@
   {
     "title": "Claude - JavaScript Guidelines",
     "content": "- Use ES6+ features (arrow functions, const/let, template literals) - Include 'use strict' mode - Use async/await for asynchronous operations - Implement error handling with try/catch blocks - Use camelCase for variable and function names - Follow proper dependency order in script loading: - Load command-palette.js before command-data.js - Load Fuse.js before any code that uses it - Run lint-check.sh to automatically fix order issues",
+    "url": "https://comphy-lab.org#claude",
+    "type": "website_section",
+    "priority": 8
+  },
+  {
+    "title": "Claude - Pre-commit Hooks",
+    "content": "This repository uses Husky and lint-staged for automatic code quality checks: - **Automatic Installation**: Hooks are installed automatically when you run `./scripts/setup.sh` - **What Gets Checked**: Only staged files are checked before commit - **JavaScript**: ESLint (with auto-fix) + Prettier formatting - **CSS**: Prettier formatting - **Markdown**: markdownlint-cli2 validation - **JSON/YAML**: Prettier formatting If a commit fails due to linting errors: 1. Review the error messages 2. Fix any issues that couldn't be auto-fixed 3. Stage the fixes: `git add .` 4. Retry the commit To bypass hooks in emergencies: `git commit --no-verify`",
     "url": "https://comphy-lab.org#claude",
     "type": "website_section",
     "priority": 8
