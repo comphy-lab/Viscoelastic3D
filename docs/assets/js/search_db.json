@@ -627,6 +627,97 @@
     "priority": 3
   },
   {
+    "title": "2025 jfm viscoelatic worthington jets - Viscoelastic Worthington Jets & Droplets: Breaking the Surface of Bubble Physics: > [!abstract] TL;DR...",
+    "content": "> [!abstract] TL;DR > When bubbles burst at a liquid surface, they create jets and droplets through a fascinating physical process. Our research reveals how adding polymers to the liquid dramatically changes this behavior, creating three distinct regimes depending on elasticity and relaxation time. These findings have implications for everything from oceanic aerosols to biomedical applications and industrial processes. Have you ever watched a bubble pop at the surface of your sparkling water or champagne? This seemingly simple event $-$ a bubble bursting $-$ conceals rich physics that connects to remarkably diverse phenomena, from ocean spray formation to pathogen transmission in respiratory droplets. As a fluid dynamicist studying interfacial phenomena, I've long been fascinated by what happens in the fleeting moments after a bubble bursts. When a bubble at a liquid\u2013air interface bursts, it often shoots out a thin, fast jet of liquid \u2013 a striking phenomenon known as a _Worthington jet_.",
+    "url": "https://blogs.comphy-lab.org/2025-JFM-Viscoelatic-Worthington-jets/#viscoelastic-worthington-jets-droplets-breaking-the-surface-of-bubble-physics",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "2025 jfm viscoelatic worthington jets - Viscoelastic Worthington Jets & Droplets: Breaking the Surface of Bubble Physics: This process isn\u2019t...",
+    "content": "This process isn\u2019t just a neat visual; it plays a role in everything from ocean spray to the fizz in a glass of champagne. In a typical **Newtonian** fluid like water (where the liquid\u2019s viscosity is constant), a bursting bubble leads to an upward jet driven by surface tension. As the jet rises, it can break up into one or multiple tiny droplets due to the Rayleigh\u2013Plateau instability (the same mechanism that causes a stream of water to form droplets). This is the classic picture that decades of research established for bursting bubbles in simple liquids. But what happens if the liquid is not so simple \u2013 say it contains a bit of polymer or has elastic properties? It turns out the story of bubble bursting gets a lot more interesting, which is what our study explores.",
+    "url": "https://blogs.comphy-lab.org/2025-JFM-Viscoelatic-Worthington-jets/#viscoelastic-worthington-jets-droplets-breaking-the-surface-of-bubble-physics",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "2025 jfm viscoelatic worthington jets - The Phenomenon: More Than Just a Pop",
+    "content": "When a bubble bursts at a liquid surface, it doesn't simply disappear. Instead, a complex sequence unfolds in milliseconds: 1. The bubble's thin film ruptures[^1][^2] 2. Capillary waves travel along the cavity surface[^3] 3. These waves converge at the bottom of the cavity 4. This convergence creates a focused flow that forms an upward-shooting \"Worthington jet\" [^4][^5][^6] 5. This jet may break into droplets that escape into the air While this process is relatively well-understood for simple liquids like water (Newtonian fluids), many real-world scenarios involve liquids containing polymers\u2014from biological fluids to industrial solutions. Our research investigated how these polymers fundamentally alter the bubble bursting dynamics. See [[History-Worthington-jets-from-bursting-bubbles]] for historical context.",
+    "url": "https://blogs.comphy-lab.org/2025-JFM-Viscoelatic-Worthington-jets/#the-phenomenon-more-than-just-a-pop",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "2025 jfm viscoelatic worthington jets - The Physics at Play: A Dance of Forces",
+    "content": "> [!note] What makes a fluid viscoelastic? > Viscoelastic fluids contain polymers\u2014long molecular chains that introduce elastic behavior. Unlike ordinary liquids that simply flow, these fluids partially \"remember\" their shape when deformed, similar to a memory foam mattress, but in liquid form! The addition of polymers introduces two key parameters beyond the conventional Ohnesorge number (which relates viscous forces to inertial and surface tension forces): 1. **Elastocapillary number** $Ec$: The ratio of elastic modulus to Laplace pressure, measuring the strength of elastic effects. $$Ec = \\frac{GR_0}{\\gamma} $$ 2. **Deborah number** $De$: The ratio of relaxation time to process time, measuring the fluid's \"memory\". $$De = \\frac{\\lambda}{\\sqrt{\\rho R_0^3/\\gamma}}$$ > [!note] Note: > - Higher $Ec$ means stronger elastic effects > - Higher $De$ means the fluid \"remembers\" deformations longer",
+    "url": "https://blogs.comphy-lab.org/2025-JFM-Viscoelatic-Worthington-jets/#the-physics-at-play-a-dance-of-forces",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "2025 jfm viscoelatic worthington jets - Key Discoveries: Three Distinct Regimes: Our most fascinating...",
+    "content": "Our most fascinating finding was the emergence of three distinct regimes: > [!important] The Three Regimes > > 1. **Jets forming droplets**: At low elasticity or fast relaxation times, similar to Newtonian behavior but with modified dynamics > 2. **Jets without droplet formation**: At intermediate elasticity, where polymeric stresses suppress droplet breakup > 3. **Complete jet suppression**: At high elasticity, where polymer stresses prevent jet formation entirely What's particularly interesting is how these regimes depend on the Deborah number. For high De (approaching infinity), the viscoelastic medium preserves memory of deformations, and transitions occur at sharp Ec thresholds. For low De (approaching zero), the system behaves more like a Newtonian fluid with enhanced effective viscosity. The critical thresholds we identified provide fundamental insights into when and how polymers influence Worthington jets and droplets.",
+    "url": "https://blogs.comphy-lab.org/2025-JFM-Viscoelatic-Worthington-jets/#key-discoveries-three-distinct-regimes",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "2025 jfm viscoelatic worthington jets - Key Discoveries: Three Distinct Regimes: Remarkably, while viscoelasticity...",
+    "content": "Remarkably, while viscoelasticity significantly alters the jet dynamics, it doesn't affect the capillary wave speed!",
+    "url": "https://blogs.comphy-lab.org/2025-JFM-Viscoelatic-Worthington-jets/#key-discoveries-three-distinct-regimes",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "2025 jfm viscoelatic worthington jets - Implementation Details: ElastoFlow Framework",
+    "content": "To conduct these simulations, we developed a framework we call \"ElastoFlow\" for the Basilisk C environment. The implementation handles the complex interplay between viscoelasticity, surface tension, and inertia through: - Volume of Fluid (VoF) method for interface tracking - Log-conformation approach for numerical stability with viscoelastic constitutive models - Adaptive Mesh Refinement for efficiently capturing multiscale dynamics > [!tip] Technical Deep Dive Our computational approach overcomes the notorious \"high Weissenberg number problem\" that has historically plagued viscoelastic simulations. The log-conformation formulation we employed maintains the positive-definiteness of the conformation tensor, enabling stable simulations even in highly elastic regimes.",
+    "url": "https://blogs.comphy-lab.org/2025-JFM-Viscoelatic-Worthington-jets/#implementation-details-elastoflow-framework",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "2025 jfm viscoelatic worthington jets - Broader Implications: Beyond the Laboratory",
+    "content": "This research has implications across several domains: - **Oceanic aerosol formation**: Understanding how polymers in seawater affect bubble bursting could improve climate models - **Biomedical applications**: Insights into how biological fluids produce droplets could help control pathogen transmission - **Industrial processes**: Better design of polymer-containing sprays and foams The ability to predict and potentially control droplet formation by adjusting polymer properties opens new avenues for engineering applications.",
+    "url": "https://blogs.comphy-lab.org/2025-JFM-Viscoelatic-Worthington-jets/#broader-implications-beyond-the-laboratory",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "2025 jfm viscoelatic worthington jets - For Fellow Researchers",
+    "content": "If you're interested in exploring this topic further, our simulation code is available on GitHub. We've designed ElastoFlow to be extensible and adaptable to various viscoelastic problems beyond bubble bursting. The framework includes: - Comprehensive implementation of the Oldroyd-B model - Adaptable boundary conditions - Detailed error controls for fluid properties - Streamlined workflows for high-performance computing environments We're continuing to develop this research direction, and we welcome collaborations and extensions of this work.",
+    "url": "https://blogs.comphy-lab.org/2025-JFM-Viscoelatic-Worthington-jets/#for-fellow-researchers",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "2025 jfm viscoelatic worthington jets - Final Thoughts: What I find...",
+    "content": "What I find most fascinating about this study is how the addition of polymers\u2014molecular chains that introduce elasticity\u2014can fundamentally transform fluid behavior in ways that aren't immediately intuitive. A small amount of polymer can completely suppress droplet formation, or in some regimes, enhance it. This work highlights the rich interplay between elasticity, viscosity, and surface tension at fluid interfaces. Each time I watch a bubble burst in slow motion with our simulations, I'm reminded of how complex and beautiful fluid dynamics can be, even in seemingly simple phenomena we observe every day. For those interested in the technical details, please check out our paper and the available code repositories. And as always, I welcome questions and discussions about this fascinating corner of fluid dynamics! > [!faq] Original Paper > A. Dixit, A. Oratis, K. Zinelis, D. Lohse & V. Sanjay, Viscoelastic Worthington jets and droplets produced by bursting bubbles, J.",
+    "url": "https://blogs.comphy-lab.org/2025-JFM-Viscoelatic-Worthington-jets/#final-thoughts",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "2025 jfm viscoelatic worthington jets - Final Thoughts: Context",
+    "content": "Fluid Mech., 1010, A2 (2025) [Open Access](https://doi.org/10.1017/jfm.2025.237).",
+    "url": "https://blogs.comphy-lab.org/2025-JFM-Viscoelatic-Worthington-jets/#final-thoughts",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "2025 jfm viscoelatic worthington jets - Videos: Context",
+    "content": "--- [^1]: V. Sanjay, U. Sen, P. Kant & D. Lohse, Taylor--Culick retractions and the influence of the surroundings, J. Fluid Mech., 948, A14 (2022), [doi: 10.1017/jfm.2022.671](https://doi.org/10.1017/jfm.2022.671) [^2]: E. Villermaux, Fragmentation versus cohesion, J. Fluid Mech., 898, P1 (2020), [doi: 10.1017/jfm.2020.366](https://doi.org/10.1017/jfm.2020.366) [^3]: V. Sanjay, D. Lohse & M. Jalaal, Bursting bubble in a viscoplastic medium, J. Fluid Mech., 922, A2 (2021), [doi: 10.1017/jfm.2021.489](https://doi.org/10.1017/jfm.2021.489) [^4]: A. M. Worthington, On the forms assumed by drops of liquids falling vertically on a horizontal plate, Proc. R. Soc. London A, 25, 261-272 (1877), [doi: 10.1098/rspl.1876.0048](https://doi.org/10.1098/rspl.1876.0048) [^5]: A. M. Worthington, A second paper on the forms assumed by drops of liquids falling vertically on a horizontal plate, Proc. R. Soc. London, 25, 498-503 (1877), [doi: 10.1098/rspl.1876.0073](https://doi.org/10.1098/rspl.1876.0073) [^6]: A. M.",
+    "url": "https://blogs.comphy-lab.org/2025-JFM-Viscoelatic-Worthington-jets/#videos",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "2025 jfm viscoelatic worthington jets - Videos: Worthington, A study...",
+    "content": "Worthington, A study of splashes, London: Longman, Green and Co (1908), [link](https://bit.ly/Worthington-splash-book) --- > [!significance]- Metadata > Author:: [Vatsal Sanjay](https://vatsalsanjay.com) > Date published:: May 6, 2025 > [!meta] Back to main website > [Home](https://comphy-lab.org/), [Team](https://comphy-lab.org/team), [Research](https://comphy-lab.org/research), [Github](https://github.com/comphy-lab), [Blogs](https://blogs.comphy-lab.org)",
+    "url": "https://blogs.comphy-lab.org/2025-JFM-Viscoelatic-Worthington-jets/#videos",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
     "title": "0_todo blog public",
     "content": "![CoMPhy-Lab](_Media/CoMPhy-Lab-no-name.png) Here is a list of things on our to-publish list: - [ ] Stokes waves and related topics \ud83d\udcc5 2025-03-01 \u23f3 2025-02-05 ^E1A6F85F-5E63-405E-9EF7-E8CC8662D3CC - [x] Showcase bubbles, waves: \ud83d\udcc5 2025-01-12 ^0B681993-8C8A-49A5-93B6-83368684058E",
     "url": "https://blogs.comphy-lab.org/0_ToDo-Blog-public/",
@@ -707,6 +798,83 @@
     "title": "0_todo blog public - 2017",
     "content": "- [ ] **Formation of liquid chain by collision of two laminar jets** Link: [DOI](https://doi.org/10.1063/1.4998288) - [ ] **On air entrainment in a water pool by impingement of a jet** Link: [DOI](https://doi.org/10.1002/aic.15828) --- > [!meta] Back to main website > [Home](https://comphy-lab.org/), [Team](https://comphy-lab.org/team), [Research](https://comphy-lab.org/research), [Github](https://github.com/comphy-lab)",
     "url": "https://blogs.comphy-lab.org/0_ToDo-Blog-public/#2017",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "Claude - CLAUDE.md",
+    "content": "This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.",
+    "url": "https://blogs.comphy-lab.org/CLAUDE/#claudemd",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "Claude - Repository Overview",
+    "content": "This is a research blog repository for the Computational Multiphase Physics (CoMPhy) Lab, containing academic content in Markdown format. The site is published at [blogs-comphy-lab.org](https://blogs-comphy-lab.org/).",
+    "url": "https://blogs.comphy-lab.org/CLAUDE/#repository-overview",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "Claude - Content Structure",
+    "content": "- `Blog/` - Research blog posts and updates - `Code-Documentations/` - Technical documentation - `Lecture-Notes/` - Teaching materials and course content - `Talks/` - Presentation materials and abstracts - `_AtomicNotes/` - Atomic knowledge pieces (linked notes) - `_Media/` - Images and media files - `_scripts/` - Jupyter notebooks for generating figures",
+    "url": "https://blogs.comphy-lab.org/CLAUDE/#content-structure",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "Claude - Markdown Files",
+    "content": "All content uses Markdown with YAML frontmatter: ```yaml --- created: YYYY-MM-DDThh:mm:ss+01:00 modified: YYYY-MM-DDThh:mm:ss+01:00 status: [Published/Working/Draft/done \u2705] website: https://blogs-comphy-lab.org/your-post-url --- ```",
+    "url": "https://blogs.comphy-lab.org/CLAUDE/#markdown-files",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "Claude - Obsidian Features",
+    "content": "- Wiki-style links: `[[post-name]]` and `[[post-name|alias]]` - Image embedding: `![[_Media/filename.png]]` - Callouts: `> [!note]`, `> [!tldr]`, `> [!important]`",
+    "url": "https://blogs.comphy-lab.org/CLAUDE/#obsidian-features",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "Claude - PDF Export",
+    "content": "Convert Markdown to PDF using the export script: ```bash ./.obsidian/scripts/export-pdf.sh \"filename.md\" ``` The script handles: - Obsidian syntax conversion to standard Markdown - Image path processing - Bibliography integration via Pandoc - LaTeX/XeLaTeX PDF generation",
+    "url": "https://blogs.comphy-lab.org/CLAUDE/#pdf-export",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "Claude - Content Validation",
+    "content": "- Ensure all images exist in `_Media/` directory - Verify wiki links point to existing content - Check YAML frontmatter format",
+    "url": "https://blogs.comphy-lab.org/CLAUDE/#content-validation",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "Claude - File Organization",
+    "content": "- Place new blog posts in `Blog/` - Store images in `_Media/` with descriptive names - Use atomic notes in `_AtomicNotes/` for reusable concepts",
+    "url": "https://blogs.comphy-lab.org/CLAUDE/#file-organization",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "Claude - Mathematical Content",
+    "content": "- Use LaTeX syntax for equations: `$$equation$$` or `$inline$` - Include Jupyter notebooks in `_scripts/` for computational examples - Save generated plots to `_Media/`",
+    "url": "https://blogs.comphy-lab.org/CLAUDE/#mathematical-content",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "Claude - Academic Standards",
+    "content": "- Include proper citations and references - Use descriptive filenames without spaces - Maintain consistent notation across related posts",
+    "url": "https://blogs.comphy-lab.org/CLAUDE/#academic-standards",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "Claude - Publishing Workflow",
+    "content": "Content is managed through: 1. Obsidian vault for local editing 2. Git version control for collaboration 3. Website deployment at blogs-comphy-lab.org The repository supports both individual researchers and collaborative editing through GitHub's issue templates and pull request workflow.",
+    "url": "https://blogs.comphy-lab.org/CLAUDE/#publishing-workflow",
     "type": "blog_section",
     "priority": 3
   },
@@ -2223,6 +2391,132 @@
     "priority": 3
   },
   {
+    "title": "Commonwealth split site phd scholarships - Transforming physics research into development impact",
+    "content": "The Commonwealth Split-site PhD Scholarship offers an exceptional opportunity for **doctoral candidates** from developing Commonwealth countries to spend **12 months** conducting research at Durham University while maintaining their PhD registration at their home institution. As one of the UK's top physics departments with confirmed Commonwealth Scholarship Commission (CSC) partnership status, Durham provides world-class facilities and expertise perfectly aligned with development-focused research. This guide, prepared by the Computational Matter Physics (CoMPhy) Lab, will help prospective applicants understand this prestigious opportunity and prepare competitive applications.",
+    "url": "https://blogs.comphy-lab.org/Join-Us/Commonwealth-Split-site-PhD-Scholarships/#transforming-physics-research-into-development-impact",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "Commonwealth split site phd scholarships - Who can apply and from where",
+    "content": "The scholarship targets PhD candidates from **42 eligible low and middle-income Commonwealth countries** as classified by the OECD Development Assistance Committee. For a full list of eligible countries, please visit [the list of countries](https://cscuk.fcdo.gov.uk/scholarships/commonwealth-split-site-scholarships-for-low-and-middle-income-countries/).",
+    "url": "https://blogs.comphy-lab.org/Join-Us/Commonwealth-Split-site-PhD-Scholarships/#who-can-apply-and-from-where",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "Commonwealth split site phd scholarships - Eligibility: Context",
+    "content": "Source: [link](https://cscuk.fcdo.gov.uk/scholarships/commonwealth-split-site-scholarships-for-low-and-middle-income-countries/) To be eligible, you must already be **registered for a PhD at a university in one of these countries** by September. Academic requirements include holding at least an upper second-class (2:1) honours degree, or a lower second-class degree plus a relevant Master's qualification. Crucially, you must demonstrate that you cannot afford UK study without this scholarship. There are no age limits, but you must be a citizen or have refugee status in an eligible country and have been residing there for at least two years before applying. The most critical eligibility requirement is the **institutional link between your home university and Durham University**. This must be a formal partnership at the departmental or institutional level - not merely a collaboration between individual researchers.",
+    "url": "https://blogs.comphy-lab.org/Join-Us/Commonwealth-Split-site-PhD-Scholarships/#eligibility",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "Commonwealth split site phd scholarships - Eligibility: Both your home...",
+    "content": "Both your home supervisor and proposed Durham University supervisor must provide supporting statements detailing this partnership.",
+    "url": "https://blogs.comphy-lab.org/Join-Us/Commonwealth-Split-site-PhD-Scholarships/#eligibility",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "Commonwealth split site phd scholarships - Navigate the application timeline and process: Applications usually open...",
+    "content": "Applications usually open annually in **October and close in mid-December** (16:00 GMT) [Britishcouncil](https://study-uk.britishcouncil.org/scholarships-funding/commonwealth-scholarships). For example, for the 2025/26 cycle, applications have already closed on December 16, 2024, with results expected by July 2025 for September 2025 start. Mark these dates for future cycles as the timeline remains consistent yearly. The application process is **entirely online through CSC Central**, the official CSC application system. You apply directly \u2014 no nomination from your university or government is required. Start your application at least 6 months before the deadline to allow time for securing supervisor agreements, gathering documents, and crafting your proposal. Your application journey involves first identifying a Durham University supervisor whose research aligns with your interests, then confirming the institutional link exists between universities.",
+    "url": "https://blogs.comphy-lab.org/Join-Us/Commonwealth-Split-site-PhD-Scholarships/#navigate-the-application-timeline-and-process",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "Commonwealth split site phd scholarships - Navigate the application timeline and process: Next, secure supporting...",
+    "content": "Next, secure supporting statements from both supervisors and gather all required documents. Complete the online application including your research proposal and development impact statement. Upload all documents in the correct format (PDF preferred, maximum 5MB per file) and ensure your referees submit their references by the deadline.",
+    "url": "https://blogs.comphy-lab.org/Join-Us/Commonwealth-Split-site-PhD-Scholarships/#navigate-the-application-timeline-and-process",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "Commonwealth split site phd scholarships - Compile essential documentation: Documentation requirements are...",
+    "content": "Documentation requirements are strict - missing or incomplete documents render applications ineligible. You'll need a **passport or national ID** showing your photograph, date of birth, and country of citizenship. Academic documents include complete transcripts for all higher education qualifications with certified English translations if needed [official website](https://cscuk.fcdo.gov.uk/scholarships/commonwealth-split-site-scholarships-for-low-and-middle-income-countries/). Reference requirements include **two academic references** submitted directly by referees through the online system, plus supporting statements from both your home supervisor and proposed Durham Universty supervisor. These supervisor statements are critical they must be on institutional letterhead, signed, and explicitly detail the institutional partnership between universities. Without both statements confirming the institutional link, your application will be considered ineligible.",
+    "url": "https://blogs.comphy-lab.org/Join-Us/Commonwealth-Split-site-PhD-Scholarships/#compile-essential-documentation",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "Commonwealth split site phd scholarships - Compile essential documentation: Additional documents include...",
+    "content": "Additional documents include your detailed research proposal, a four-part development impact statement, employment history if applicable, and up to 10 publications or prizes if relevant. While no specific English language test is required, all documents must be in English.",
+    "url": "https://blogs.comphy-lab.org/Join-Us/Commonwealth-Split-site-PhD-Scholarships/#compile-essential-documentation",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "Commonwealth split site phd scholarships - Understanding your funding package",
+    "content": "The scholarship provides comprehensive financial support for your 12-month UK stay. **Monthly stipend rates for 2025/26** are 1378 GBP for most UK locations or 1690 GBP for London universities. Based on Durham's location, you'll receive the standard rate, which adequately covers living costs in this historic city where accommodation ranges from 174-262 GBP per week in university housing [Link 1](https://uniacco.com/blog/cost-of-living-in-durham) [Link 2](https://en.uhomes.com/uk/durham). **Full tuition fees** are covered through Durham's part-funding agreement with CSC - you pay nothing. The scholarship includes return economy airfare from your home country to the UK, a warm clothing allowance, and a study travel grant for research-related travel. There are also special provisions. Please visit [Financial assistance, official webpage](https://cscuk.fcdo.gov.uk/scholarships/commonwealth-split-site-scholarships-for-low-and-middle-income-countries/) for details.",
+    "url": "https://blogs.comphy-lab.org/Join-Us/Commonwealth-Split-site-PhD-Scholarships/#understanding-your-funding-package",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "Commonwealth split site phd scholarships - Establishing crucial institutional links: The institutional link...",
+    "content": "The institutional link requirement is the most common reason for application rejection. Your universities must have a **formal partnership beyond individual researcher collaboration**. Acceptable links include memoranda of understanding between institutions, departmental collaboration agreements, joint research projects, staff exchange programs, or established student mobility frameworks. Durham Physics has existing partnerships with several Commonwealth universities through various research networks. At the CoMPhy Lab, we maintain collaborations in computational multiphase physics. When approaching us, clearly indicate your home university's existing relationship with Durham University or propose how such a partnership could be established. Both supervisors must provide detailed statements explaining the nature of the institutional partnership, any history of collaboration, shared resources or facilities, and future partnership plans.",
+    "url": "https://blogs.comphy-lab.org/Join-Us/Commonwealth-Split-site-PhD-Scholarships/#establishing-crucial-institutional-links",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "Commonwealth split site phd scholarships - Establishing crucial institutional links: These statements must...",
+    "content": "These statements must demonstrate that the link exists at an organizational level, not just between individuals. Consider having your department head or international office confirm the partnership formally.",
+    "url": "https://blogs.comphy-lab.org/Join-Us/Commonwealth-Split-site-PhD-Scholarships/#establishing-crucial-institutional-links",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "Commonwealth split site phd scholarships - Crafting a development-focused proposal: Your proposal must...",
+    "content": "Your proposal must demonstrate clear development impact while maintaining scientific excellence. Our research aligns perfectly with several **CSC development themes**, particularly `Science and Technology for Development` through our work in #TODO. Structure your development impact statement in four parts. - First, **identify the problem** (200 words) by linking your research to global, national, and local development challenges. Use recent statistics from credible sources and connect to your chosen CSC theme. For CoMPhy-Lab research interests, this might involve `energy access statistics, technology gaps, or infrastructure challenges in your home country` #TODO. - Second, explain **skill application** (200 words) by detailing specific capabilities you'll gain at Durham University and how you'll apply them post-award. Be specific about organizations you'll work with and implementation strategies.",
+    "url": "https://blogs.comphy-lab.org/Join-Us/Commonwealth-Split-site-PhD-Scholarships/#crafting-a-development-focused-proposal",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "Commonwealth split site phd scholarships - Crafting a development-focused proposal: Results",
+    "content": "For CoMPhy Lab research, this could include computational modeling skills, #TODO - Third, outline **expected outcomes** (200 words) with specific, measurable results over 1-5 years. Identify clear beneficiary groups and quantify impact where possible. For instance, #TODO improved solar cell efficiency could provide electricity to specific communities, or quantum sensing applications could enhance medical diagnostics in underserved areas. - Finally, describe **impact measurement** (100 words) including data collection methods, key performance indicators, and reporting mechanisms. Show how you'll track and demonstrate the real-world impact of your research.",
+    "url": "https://blogs.comphy-lab.org/Join-Us/Commonwealth-Split-site-PhD-Scholarships/#crafting-a-development-focused-proposal",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "Commonwealth split site phd scholarships - Meeting selection criteria for success: Selection panels evaluate...",
+    "content": "Selection panels evaluate applications using three equally weighted criteria, each accounting for 33% of your score [link](https://cscuk.fcdo.gov.uk/advice-for-applicants/). - **Academic merit** assessment considers your degree classifications, research publications, and academic trajectory. While the minimum is a 2:1 degree, successful candidates often have first-class honours or distinction-level Master's degrees. Your referees should specifically address your intellectual capacity and research potential. - **Development impact** evaluation examines how clearly you articulate home country needs, the realism of your impact plans, and alignment with CSC themes. Successful applications demonstrate deep understanding of local contexts and propose achievable, measurable outcomes.",
+    "url": "https://blogs.comphy-lab.org/Join-Us/Commonwealth-Split-site-PhD-Scholarships/#meeting-selection-criteria-for-success",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "Commonwealth split site phd scholarships - Meeting selection criteria for success: Generic statements about...",
+    "content": "Generic statements about \"helping development\" fail \u2014 be specific about who benefits and how. - **Research proposal quality** assessment focuses on scientific rigor, innovation, feasibility, and contribution to both knowledge and development. Your proposal should be accessible to non-specialist reviewers while maintaining scholarly standards. With success rates typically 5-10%, only the strongest applications combining all three elements succeed.",
+    "url": "https://blogs.comphy-lab.org/Join-Us/Commonwealth-Split-site-PhD-Scholarships/#meeting-selection-criteria-for-success",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "Commonwealth split site phd scholarships - Post-scholarship commitments and opportunities",
+    "content": "Accepting this scholarship commits you to **return home within one month** of completion. CSC cannot support visa extensions, postdoctoral positions, or remaining for graduation ceremonies. This return requirement ensures you apply your UK-gained knowledge for home country development. You'll join a vibrant **lifelong alumni network** with immediate access to regional Commonwealth Scholar groups and ongoing engagement opportunities [British council link](https://www.britishcouncil.in/study-uk/scholarships/commonwealth-scholarships).",
+    "url": "https://blogs.comphy-lab.org/Join-Us/Commonwealth-Split-site-PhD-Scholarships/#post-scholarship-commitments-and-opportunities",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "Commonwealth split site phd scholarships - Your path forward: The Commonwealth Split-site...",
+    "content": "The Commonwealth Split-site PhD Scholarship represents a transformative opportunity to advance both your research career and your home country's development. Start preparing now for the next application cycle by identifying potential Durham supervisors whose research aligns with your interests and development goals. Contact your home university's international office to explore or establish institutional links with Durham. Begin drafting your research proposal and development impact statement, seeking feedback from mentors and previous Commonwealth Scholars. Connect with the CoMPhy Lab through our website to explore supervision possibilities in computational physics, materials science, or quantum applications. We particularly welcome proposals addressing energy access, sustainable materials, quantum technologies for development, climate modeling, or computational solutions to development challenges.",
+    "url": "https://blogs.comphy-lab.org/Join-Us/Commonwealth-Split-site-PhD-Scholarships/#your-path-forward",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "Commonwealth split site phd scholarships - Your path forward: Class Definition",
+    "content": "Our established CSC partnership, world-class facilities, supportive environment, and commitment to development-focused research make Durham an ideal choice for your Commonwealth Split-site PhD experience. Remember that successful applications balance scientific excellence with genuine development commitment. Your research should advance knowledge while creating measurable impact in your home country. With thorough preparation, clear development focus, and strong institutional support, you can join the select group of Commonwealth Scholars using physics to drive positive change across the developing world.",
+    "url": "https://blogs.comphy-lab.org/Join-Us/Commonwealth-Split-site-PhD-Scholarships/#your-path-forward",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
     "title": "Herschel\u2013bulkley formulation - Herschel\u2013Bulkley formulation for non-Newtonian flows",
     "content": "> [!tldr] TL;DR > The **Herschel\u2013Bulkley** model unifies Newtonian, Bingham, and power-law fluids via a yield stress and a strain-rate-dependent viscosity. An \ufffc$\\epsilon$-regularization ensures stable computations and recovers simpler models (Newtonian, Bingham) by tuning model parameters. Dimensionless groups (e.g., the plasto-capillary number \ufffc and the effective Ohnesorge) capture the interplay of fluid rheology, capillarity, and flow scales. Implementation details are provided, along with references, open-source code, and demonstrations of bubble-burst simulations in viscoplastic media.",
     "url": "https://blogs.comphy-lab.org/Code-Documentations/Herschel\u2013Bulkley formulation/#herschelbulkley-formulation-for-non-newtonian-flows",
@@ -2289,6 +2583,27 @@
     "title": "Herschel\u2013bulkley formulation - References",
     "content": "[1] N. J. Balmforth, I. A. Frigaard, and G. Ovarlez, \u201cYielding to Stress: Recent Developments in Viscoplastic Fluid Mechanics,\u201d _Annu. Rev. Fluid Mech._, vol. 46, pp. 121\u2013146, Jan. 2014, doi: [10.1146/annurev-fluid-010313-141424](https://doi.org/10.1146/annurev-fluid-010313-141424). [2] V. Sanjay, D. Lohse, and M. Jalaal, \u201cBursting bubble in a viscoplastic medium,\u201d _J. Fluid Mech._, vol. 922, p. A2, 2021. > [!significance]- Metadata > Author:: [Vatsal Sanjay](https://vatsalsanjay.com) > Date published:: Dec 31, 2024 > Date modified:: Jan 26, 2025 at 11:50 CET > [!meta] Back to main website > [Home](https://comphy-lab.org/), [Team](https://comphy-lab.org/team), [Research](https://comphy-lab.org/research), [Github](https://github.com/comphy-lab)",
     "url": "https://blogs.comphy-lab.org/Code-Documentations/Herschel\u2013Bulkley formulation/#references",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "2025 06 30_conference vpflow abstract - Taming singularities: yield-stress regularization in bubble-bursting: > [!significance] Speaker...",
+    "content": "> [!significance] Speaker > [Vatsal Sanjay](https://vatsalsanjay.com) ([CoMPhy Lab](https://comphy-lab.org)) Capillary collapse of a bursting bubble is a canonical inertio-capillary singularity: the retracting rim launches a wave packet that focuses at the cavity base, driving a high-speed Worthington jet and, classically, droplets. Non-Newtonian physics rewrites this script. For example, yield stress and elasticity tame these waves and the jet and often suppress them [1]. Using high-fidelity simulations carried out with _MultiRheoFlow_ (https://comphy-lab.org/MultiRheoFlow/) $-$ a new open-source Basilisk C framework for interfacial flows with arbitrary rheology $-$ we explore how viscoplasticity and its elastoviscoplastic extension regularizes the singular flow. Yield stress intercepts the collapsing wavepacket, arrests curvature blow-up, and suppresses Worthington jetting [2]. In contrast, elasticity relaxation can reopen a singular path, reinstating a solitary jet or droplet [3].",
+    "url": "https://blogs.comphy-lab.org/Talks/2025-06-30_Conference-VPflow-abstract/#taming-singularities-yield-stress-regularization-in-bubble-bursting",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "2025 06 30_conference vpflow abstract - Taming singularities: yield-stress regularization in bubble-bursting: By tracking curvature...",
+    "content": "By tracking curvature histories, kinetic\u2013plastic energy exchange, and stoppage times, we build a compact regime map that exposes the mechanical routes by which non-linear rheology regularizes free-surface singularities. The findings extend beyond bubbles, offering a template for predicting and controlling singular events in yield-stress and other complex fluids. ![[../_Media/2025-06-30_Conference-VPflow-abstract-1749493868724.png]] Fig. Worthington jet vs. elastoviscoplastic medium, adapted from [1]. > [!info]- Metadata > Posted by:: Vatsal > Date published:: 2025-06-09 > Date modified:: Jun 9, 2025 at 20:28 CET > [!meta] Back to main website > [Home](https://comphy-lab.org/), [Team](https://comphy-lab.org/team), [Research](https://comphy-lab.org/research), [Github](https://github.com/comphy-lab) ---",
+    "url": "https://blogs.comphy-lab.org/Talks/2025-06-30_Conference-VPflow-abstract/#taming-singularities-yield-stress-regularization-in-bubble-bursting",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "2025 06 30_conference vpflow abstract - References",
+    "content": "[1] A. G. Balasubramanian, V. Sanjay, M. Jalaal, R. Vinuesa, and O. Tammisola, \u201cBursting bubble in an elasto-viscoplastic medium,\u201d _J. Fluid Mech._, vol. 1001, p. A9, Dec. 2024, doi: [10.1017/jfm.2024.1073](https://doi.org/10.1017/jfm.2024.1073) [2] V. Sanjay, D. Lohse, and M. Jalaal, \u201cBursting bubble in a viscoplastic medium,\u201d _J. Fluid Mech._, vol. 922, p. A2, 2021, doi: [10.1017/jfm.2021.489](https://doi.org/10.1017/jfm.2021.489) [3] A. K. Dixit, A. Oratis, K. Zinelis, D. Lohse, and V. Sanjay, \u201cViscoelastic Worthington jets and droplets produced by bursting bubbles,\u201d _J. Fluid Mech._, vol. 1010, p. A2, May 2025, doi: [10.1017/jfm.2025.237](https://doi.org/10.1017/jfm.2025.237). [[2025-06-30_Conference-VPflow-abstract.pdf|this page in .pdf]]",
+    "url": "https://blogs.comphy-lab.org/Talks/2025-06-30_Conference-VPflow-abstract/#references",
     "type": "blog_section",
     "priority": 3
   },
@@ -2457,6 +2772,104 @@
     "title": "Arrowheads in elastoinertial turbulence - Conclusion: The community\u2019s focus...",
     "content": "The community\u2019s focus has shifted to how such structures populate the state space and trigger transitions, rather than expecting them to appear as steady patterns in experiments. Ongoing work continues to unravel the multi-stage transition to elastic and elasto-inertial turbulence $\u2013$ with arrowhead/narwhal waves serving as a valuable piece of the puzzle, albeit one with clear limitations. This critical understanding ensures that we appreciate the arrowhead structures for what they are: insightful and pedagogical solutions that illuminate EIT\u2019s mechanics, but ultimately unstable in the wild chaos of real 3D turbulence. --- > [!significance]- Metadata > Author:: [Vatsal Sanjay](https://vatsalsanjay.com) > Date published:: Feb 24, 2025 > [!meta] Back to main website > [Home](https://comphy-lab.org/), [Team](https://comphy-lab.org/team), [Research](https://comphy-lab.org/research), [Github](https://github.com/comphy-lab), [Blogs](https://blogs.comphy-lab.org)",
     "url": "https://blogs.comphy-lab.org/Blog/Arrowheads in elastoinertial turbulence/#conclusion",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "History worthington jets from bursting bubbles - From Newtonian Beginnings to Viscoelastic Surprises (Historical Context): Early studies of...",
+    "content": "Early studies of bubble bursting (dating back to at least the early 20th century) focused on Newtonian fluids and laid the groundwork for understanding the bursting mechanism. Pioneering experiments by A.M. Worthington over a century ago captured photographs of jets formed by collapsing cavities, essentially visualizing the birth of the Worthington jet phenomenon. By the mid-20th century, scientists recognized that bursting bubbles were important in nature \u2013 for instance, generating sea spray aerosols and even transporting microorganisms. These studies assumed _ideal_ liquids like pure water, and by the late 1900s the physics was well-charted: when a bubble\u2019s cap ruptures, a bowl-shaped cavity is left in the surface. Capillary waves travel down the cavity\u2019s sides and converge at the cavity\u2019s bottom, shooting a high-speed jet upward, which then often pinches off droplets. This Newtonian paradigm was the default for a long time. However, real-world liquids aren\u2019t always Newtonian.",
+    "url": "https://blogs.comphy-lab.org/Blog/History-Worthington-jets-from-bursting-bubbles/#from-newtonian-beginnings-to-viscoelastic-surprises-historical-context",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "History worthington jets from bursting bubbles - From Newtonian Beginnings to Viscoelastic Surprises (Historical Context): Examples",
+    "content": "Sea water, for example, is full of **surfactants** and organic matter; foods and biofluids can be **viscoelastic** (think of saliva or mucus which stretches like a weak elastic goo). Researchers gradually realized that these non-Newtonian traits could change the bubble-bursting outcome. A key turning point came in the 1990s. In 1996, J.M. Cheny and K. Walters carried out experiments with water mixed with a tiny amount of polymer (on the order of only tens of parts per million). To everyone\u2019s surprise, the addition of a **viscoelastic** agent (the polymer) dramatically altered the jet: even such a small polymer concentration reduced the jet height by roughly an order of magnitude. In other words, the normally tall, spire-like jet seen in pure water became stunted. This was a clear indication that something beyond ordinary viscosity \u2013 namely elastic stresses introduced by the polymer \u2013 was influencing the process.",
+    "url": "https://blogs.comphy-lab.org/Blog/History-Worthington-jets-from-bursting-bubbles/#from-newtonian-beginnings-to-viscoelastic-surprises-historical-context",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "History worthington jets from bursting bubbles - From Newtonian Beginnings to Viscoelastic Surprises (Historical Context): This historical milestone...",
+    "content": "This historical milestone demonstrated that the classical Newtonian model was not the whole story, sparking fresh interest in bubble bursting under non-Newtonian conditions. Over the following years, interest in _complex fluids_ grew, but only recently have we begun to see a flurry of studies examining bubble bursting in fluids with additives like polymers. The motivation is clear: **bubbles burst in nature and industry under all kinds of fluid conditions**, so understanding how phenomena like elasticity alter the outcome is crucial. Our current work fits into this evolving narrative by using simulations to dig deeper into those viscoelastic effects that intrigued researchers since the late 20th century.",
+    "url": "https://blogs.comphy-lab.org/Blog/History-Worthington-jets-from-bursting-bubbles/#from-newtonian-beginnings-to-viscoelastic-surprises-historical-context",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "History worthington jets from bursting bubbles - Viscoelastic Effects in Prior Studies: What Do We Know?: Several experimental and...",
+    "content": "Several experimental and computational studies have set the stage for our current investigation by exploring how viscoelasticity changes the bursting-bubble dynamics. Building on the early findings of Cheny and Walters (1996), later researchers quantified and expanded those observations. Cheny and Walters had shown that introducing a small amount of polymer (roughly 50 ppm of a long-chain polymer in water) could drastically shrink the burst-induced jet. This **jet height suppression** implied that elastic stresses (even if the fluid had just a \u201cdash\u201d of polymer) were counteracting the forces that typically drive a tall jet. Fast-forward to recent years: Rodr\u00edguez-D\u00edaz _et al._ (2023) carried out bubble-burst experiments with **weakly viscoelastic** polymer solutions and uncovered a nuanced effect. They observed that at an _optimal_ polymer concentration (around 25 ppm in their case), the tiny amount of polymer actually made the jet _faster_. How?",
+    "url": "https://blogs.comphy-lab.org/Blog/History-Worthington-jets-from-bursting-bubbles/#viscoelastic-effects-in-prior-studies-what-do-we-know",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "History worthington jets from bursting bubbles - Viscoelastic Effects in Prior Studies: What Do We Know?: The polymer molecules...",
+    "content": "The polymer molecules at the interface dampened the small ripples on the collapsing cavity (the short-wavelength capillary waves), leading to a smoother, more focused collapse. Smoothing out those ripples caused the liquid to shoot upward more directly, enhancing the jet\u2019s velocity. In other words, a little elasticity at the interface ironed out disturbances that would normally waste energy, thus the jet came out quicker and slightly more forceful. However, when Rodr\u00edguez-D\u00edaz _et al._ increased the polymer concentration further, the story changed. Higher polymer content introduced stronger **bulk elastic effects** \u2013 essentially the liquid became noticeably stretchy or resistant to fast flow. In those cases, the rising jet often **failed to produce the usual top droplet at all**. The fluid\u2019s elastic resistance to stretching (sometimes called **extensional thickening**) prevented the jet from necking and breaking up into a drop.",
+    "url": "https://blogs.comphy-lab.org/Blog/History-Worthington-jets-from-bursting-bubbles/#viscoelastic-effects-in-prior-studies-what-do-we-know",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "History worthington jets from bursting bubbles - Viscoelastic Effects in Prior Studies: What Do We Know?: Summary - JavaScript",
+    "content": "In summary, their experiments showed a viscoelastic sweet spot where a little elasticity boosts the jet, and a regime where too much elasticity chokes off droplet formation. Other studies have echoed these findings. Very recent work by Cabalgante-Corrales _et al._ (2025) further confirmed that beyond a certain elasticity threshold, **droplet emission can be completely suppressed**. In their observations, if the polymer relaxation time (a measure of how long the fluid\u2019s elastic stresses persist) is sufficiently large compared to the timescale of the jet formation, no droplets are emitted at all \u2013 the jet essentially forms a single column that retracts without snapping off a small drop. This threshold can be described in terms of a dimensionless **Weissenberg number** (which compares the polymer\u2019s relaxation time to the jet\u2019s characteristic time scale); when it exceeds a value on the order of 0.5, the fluid\u2019s elasticity dominates the breakup process.",
+    "url": "https://blogs.comphy-lab.org/Blog/History-Worthington-jets-from-bursting-bubbles/#viscoelastic-effects-in-prior-studies-what-do-we-know",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "History worthington jets from bursting bubbles - Viscoelastic Effects in Prior Studies: What Do We Know?: All these prior...",
+    "content": "All these prior studies, from 1996 to 2025, consistently point to the fact that even _weak_ viscoelasticity can profoundly influence the outcome of a bursting bubble. They provided clues like **droplet suppression** and **capillary-wave damping** that any complete theory or model must explain.",
+    "url": "https://blogs.comphy-lab.org/Blog/History-Worthington-jets-from-bursting-bubbles/#viscoelastic-effects-in-prior-studies-what-do-we-know",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "History worthington jets from bursting bubbles - How Our Simulations Build on These Insights: Our current study...",
+    "content": "Our current study uses high-fidelity numerical simulations to explore bubble bursting in viscoelastic liquids, helping to clarify the mechanisms behind the experimental observations above. By employing an **Oldroyd-B viscoelastic model** (a common model for polymer solutions) in a Volume-of-Fluid simulation framework, we can control and vary the fluid\u2019s key properties systematically \u2013 something difficult to do in experiments. We map out a range of conditions in terms of dimensionless groups (like the _elasto-capillary number_ and _Deborah number_, which relate to polymer elasticity and relaxation time) to see how each influences the jet and droplet outcome. Essentially, these simulations let us rewind, pause, and inspect the bursting process in ways a high-speed camera cannot: we can look at the tension in the fluid, the distribution of polymer stresses, and test \u201cwhat-if\u201d scenarios by dialing elasticity up or down independently of other factors.",
+    "url": "https://blogs.comphy-lab.org/Blog/History-Worthington-jets-from-bursting-bubbles/#how-our-simulations-build-on-these-insights",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "History worthington jets from bursting bubbles - How Our Simulations Build on These Insights: What we found...",
+    "content": "What we found corroborates many of the past experimental findings while also providing a clearer picture of why they happen. For instance, our simulations show that introducing a small amount of polymer indeed **dampens the high-frequency capillary waves** on the collapsing bubble cavity, much like Rodr\u00edguez-D\u00edaz _et al._ noted. We can directly see the interface becoming smoother in the simulation, which in turn leads to a more coherent jet that can even travel faster than it would in pure water. On the other hand, when we crank up the viscoelastic effects (by increasing polymer concentration or elasticity in the simulation), the jet\u2019s behavior changes dramatically. The jet tends to be thicker and more stable \u2013 so stable, in fact, that it doesn\u2019t break up into a droplet at the tip. This matches the **droplet suppression** regime reported in experiments.",
+    "url": "https://blogs.comphy-lab.org/Blog/History-Worthington-jets-from-bursting-bubbles/#how-our-simulations-build-on-these-insights",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "History worthington jets from bursting bubbles - How Our Simulations Build on These Insights: In the simulations,...",
+    "content": "In the simulations, we observe that the polymer stresses accumulate during the cavity collapse and jet rise, and if those stresses are high enough, they counteract the necking that would normally pinch off a droplet. The result is a jet that simply subsides back without spraying droplets. By varying the fluid\u2019s relaxation time, we can pinpoint the threshold at which this happens, supporting the idea that there is a critical viscoelastic relaxation timescale beyond which the droplet never forms. In short, our simulations **extend the insights of earlier works** by providing a full-field view of the flow and isolating the roles of different effects. They confirm that the viscoelastic phenomena observed by Cheny & Walters, Rodr\u00edguez-D\u00edaz _et al._, and others are not just experimental quirks, but fundamental aspects of the physics when polymers are present.",
+    "url": "https://blogs.comphy-lab.org/Blog/History-Worthington-jets-from-bursting-bubbles/#how-our-simulations-build-on-these-insights",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "History worthington jets from bursting bubbles - How Our Simulations Build on These Insights: Examples",
+    "content": "Moreover, the simulations help untangle the interplay between viscous and elastic forces: for example, we find there\u2019s a trade-off between a fluid\u2019s viscosity and its elasticity in setting the jet speed and whether a droplet pinches off. This kind of systematic exploration would be challenging in a lab but is feasible in a simulation, allowing us to fill gaps in the understanding.",
+    "url": "https://blogs.comphy-lab.org/Blog/History-Worthington-jets-from-bursting-bubbles/#how-our-simulations-build-on-these-insights",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "History worthington jets from bursting bubbles - Concluding Thoughts: Bubble bursting might...",
+    "content": "Bubble bursting might last only a few milliseconds, but as research over the decades has shown, it\u2019s a rich and complex phenomenon \u2013 especially when you venture beyond ordinary liquids. Historically, scientists figured out the basics in simple fluids, establishing a baseline for how jets and droplets form after a burst. The addition of polymers and other non-Newtonian effects then revealed new twists: slower, stubbier jets or no droplets at all under the right conditions. By comparing past experiments and new simulations, we now have a much clearer picture of _why_ those twists occur. **Viscoelasticity**, in essence, adds a kind of \u201cmemory\u201d to the liquid: the fluid remembers being stretched and fights back, which can either smooth out the jet formation or halt the droplet breakup \u2013 or both. For a scientifically curious reader or an early-career researcher, the take-home message is that **even a dash of polymer can tip the balance** of forces during a bubble burst.",
+    "url": "https://blogs.comphy-lab.org/Blog/History-Worthington-jets-from-bursting-bubbles/#concluding-thoughts",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "History worthington jets from bursting bubbles - Concluding Thoughts: This means traditional...",
+    "content": "This means traditional Newtonian models need adjustments when dealing with real-world fluids. Our study contributes to this evolving understanding by not only confirming the experimental observations in a controlled setting but also by quantifying the thresholds and mechanisms at play. Going forward, these insights could inform everything from predicting oceanic spray in various water conditions to designing industrial processes (or even culinary tricks) where bubble bursting is a factor. The humble bubble, when combined with a bit of polymer physics, continues to teach us new fluid dynamics \u2013 a beautiful example of how revisiting a classic problem with fresh eyes can lead to deeper knowledge. **References:** _(The cited works correspond to the following)_ - Cheny, J.M. & Walters, K. (1996). Extravagant viscoelastic effects in the Worthington jet experiment. _J.",
+    "url": "https://blogs.comphy-lab.org/Blog/History-Worthington-jets-from-bursting-bubbles/#concluding-thoughts",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "History worthington jets from bursting bubbles - Concluding Thoughts: Context",
+    "content": "Non-Newtonian Fluid Mech._ **67**, 125\u2013135. - Rodr\u00edguez-D\u00edaz, P., Rubio, M., Montanero, J.M., Ga\u00f1\u00e1n-Calvo, A.M. & Cabezas, M.G. (2023). Bubble bursting in a weakly viscoelastic liquid. _J. Fluid Mech._ **954**, A20. - Cabalgante-Corrales, C., Mu\u00f1oz-S\u00e1nchez, B.N., Ferrera, C., Fuster, D. & Sevilla, A. (2025). Viscoelastic effects on jet drop formation in bubble bursting. _Phys. Rev. Fluids_ **10**, 013603. (supporting information on droplet suppression) - _Additional references on bubble bursting in Newtonian and complex fluids are cited in-line above (e.g., Worthington\u2019s early work, studies by Ghabache et al. 2014/2016 on champagne bubbles, etc.), illustrating the progression from classical to modern understanding._",
+    "url": "https://blogs.comphy-lab.org/Blog/History-Worthington-jets-from-bursting-bubbles/#concluding-thoughts",
     "type": "blog_section",
     "priority": 3
   },
@@ -3008,7 +3421,7 @@
   },
   {
     "title": "2025 jfm viscous drop impact - Technical Significance",
-    "content": "> [!note] For the technically inclined > The study provides a comprehensive framework for predicting impact forces through dimensionless numbers and scaling laws. For researchers working in this field, the paper presents new scaling laws that unify previous observations and provide a foundation for future work. The careful experimental validation combined with theoretical analysis makes this a significant contribution to our understanding of drop impact dynamics. > [!faq] Original Paper > Sanjay, V., Zhang, B., Lv, C., & Lohse, D. (2025). The role of viscosity on drop impact forces. Journal of Fluid Mechanics, 1004, A6. [Open Access](https://doi.org/10.1017/jfm.2024.982).",
+    "content": "> [!note] For the technically inclined > The study provides a comprehensive framework for predicting impact forces through dimensionless numbers and scaling laws. For researchers working in this field, the paper presents new scaling laws that unify previous observations and provide a foundation for future work. The careful experimental validation combined with theoretical analysis makes this a significant contribution to our understanding of drop impact dynamics. > [!faq] Original Paper > V. Sanjay, B. Zhang, C. Lv & D. Lohse, The role of viscosity on drop impact forces, J. Fluid Mech., 1004, A6 (2025) [Open Access](https://doi.org/10.1017/jfm.2024.982).",
     "url": "https://blogs.comphy-lab.org/Blog/2025-JFM-viscous-drop-impact/#technical-significance",
     "type": "blog_section",
     "priority": 3
