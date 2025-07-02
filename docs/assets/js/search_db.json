@@ -3561,7 +3561,7 @@
   },
   {
     "title": "Test documentation: Lid driven cavity using dye injection | Test documentation: Lid driven cavity using dye injection: Repository Structure basilisk/src/...",
-    "content": "Repository Structure basilisk/src/ - Core Basilisk CFD library (reference only, do not modify) simulationCases/ - Test cases for simulation LidDrivenCavity-Newtonian-dyeInjection.c - Lid-driven cavity with dye injection src-local/ - Custom header files extending Basilisk functionality dye-injection.h - Dye injection for flow visualization postProcess/ - Project-specific post-processing tools LidDrivenCavity-Newtonian-dyeInjection.ipynb - Jupyter notebook for analysis and visualization LidDrivenCavity-Newtonian-dyeInjection.py - Python script for post-processing getData-LidDriven.c - Data extraction utility src-local/ Directory The src-local/ directory contains custom header files that extend the base Basilisk functionality: dye-injection.h : Implements a circular tracer (dye) injection for flow visualization with: Configurable injection time and position Circular dye region with adjustable radius Integration with Basilisk\u2019s tracer module for advection postProcess/ Directory The postProcess/ directory provides tools for analyzing and visualizing simulation results: LidDrivenCavity-Newtonian-dyeInjection.ipynb : Jupyter notebook that: Provides interactive analysis of simulation results Visualizes dye transport in the cavity Contains both code and documentation in a single document Allows for reproducible analysis workflow LidDrivenCavity-Newtonian-dyeInjection.py : Python script for generating visualizations that: Processes simulation timesteps in parallel Creates two-panel plots showing dye concentration and velocity magnitude Adds streamlines to visualize flow patterns Uses \u2018getData-LidDriven\u2019 utility to extract field data getData-LidDriven.c : C utility that extracts and processes numerical data from simulation output files simulationCases/ Directory The simulationCases/ directory contains simulation configurations: LidDrivenCavity-Newtonian-dyeInjection.c : Main simulation case that implements: Classical lid-driven cavity flow for a Newtonian fluid Configurable Reynolds number (default: Re = 1) Dye injection in the upper center of the cavity at t=0.05 Adaptive grid with level 8 refinement Proper boundary conditions for the moving lid and no-slip walls Regular snapshot generation for visualization Getting Started Prerequisites Basilisk C installed ( Installation instructions ) C compiler (gcc recommended) Make build system Python 3 with pip for documentation generation BeautifulSoup4 for HTML processing (included in requirements.txt) Scientific visualization tools (optional: ParaView, Gnuplot, etc.) Installation Clone this repository: git clone https://github.com/username/comphy-lab.git cd comphy-lab Make sure Basilisk is properly installed and the BASILISK environment variable is set.",
+    "content": "Repository Structure basilisk/src/ - Core Basilisk CFD library (reference only, do not modify) simulationCases/ - Test cases for simulation LidDrivenCavity-Newtonian-dyeInjection.c - Lid-driven cavity with dye injection src-local/ - Custom header files extending Basilisk functionality dye-injection.h - Dye injection for flow visualization postProcess/ - Project-specific post-processing tools LidDrivenCavity-Newtonian-dyeInjection.ipynb - Jupyter notebook for analysis and visualization LidDrivenCavity-Newtonian-dyeInjection.py - Python script for post-processing Visualization3D.ipynb - Jupyter notebook for 3D visualization getData-LidDriven.c - Data extraction utility src-local/ Directory The src-local/ directory contains custom header files that extend the base Basilisk functionality: dye-injection.h : Implements a circular tracer (dye) injection for flow visualization with: Configurable injection time and position Circular dye region with adjustable radius Integration with Basilisk\u2019s tracer module for advection postProcess/ Directory The postProcess/ directory provides tools for analyzing and visualizing simulation results: LidDrivenCavity-Newtonian-dyeInjection.ipynb : Jupyter notebook that: Provides interactive analysis of simulation results Visualizes dye transport in the cavity Contains both code and documentation in a single document Allows for reproducible analysis workflow LidDrivenCavity-Newtonian-dyeInjection.py : Python script for generating visualizations that: Processes simulation timesteps in parallel Creates two-panel plots showing dye concentration and velocity magnitude Adds streamlines to visualize flow patterns Uses \u2018getData-LidDriven\u2019 utility to extract field data getData-LidDriven.c : C utility that extracts and processes numerical data from simulation output files simulationCases/ Directory The simulationCases/ directory contains simulation configurations: LidDrivenCavity-Newtonian-dyeInjection.c : Main simulation case that implements: Classical lid-driven cavity flow for a Newtonian fluid Configurable Reynolds number (default: Re = 1) Dye injection in the upper center of the cavity at t=0.05 Adaptive grid with level 8 refinement Proper boundary conditions for the moving lid and no-slip walls Regular snapshot generation for visualization Getting Started Prerequisites Basilisk C installed ( Installation instructions ) C compiler (gcc recommended) Make build system Python 3 with pip for documentation generation BeautifulSoup4 for HTML processing (included in requirements.txt) Scientific visualization tools (optional: ParaView, Gnuplot, etc.) Installation Clone this repository: git clone https://github.com/username/comphy-lab.git cd comphy-lab Make sure Basilisk is properly installed and the BASILISK environment variable is set.",
     "url": "https://comphy-lab.org/documentationWeb/index.html",
     "type": "docs_content",
     "priority": 4
@@ -3603,7 +3603,7 @@
   },
   {
     "title": "Test documentation: Lid driven cavity using dye injection | Test documentation: Lid driven cavity using dye injection: Context",
-    "content": "Acknowledgments S. Popinet & collaborators, Basilisk C, http://basilisk.fr (Last accessed: June 2025) (2013-2025) Generated Documentation Root Directory reset_install_requirements.sh postProcess postProcess/LidDrivenCavity-Newtonian-dyeInjection.ipynb postProcess/LidDrivenCavity-Newtonian-dyeInjection.py postProcess/getData-LidDriven.c simulationCases simulationCases/LidDrivenCavity-Newtonian-dyeInjection.c simulationCases/Makefile src-local src-local/dye-injection.h",
+    "content": "Acknowledgments S. Popinet & collaborators, Basilisk C, http://basilisk.fr (Last accessed: June 2025) (2013-2025) Generated Documentation Root Directory reset_install_requirements.sh postProcess postProcess/LidDrivenCavity-Newtonian-dyeInjection.ipynb postProcess/LidDrivenCavity-Newtonian-dyeInjection.py postProcess/Visulization3D.ipynb postProcess/getData-LidDriven.c postProcess/getFacets3D.c simulationCases simulationCases/LidDrivenCavity-Newtonian-dyeInjection.c simulationCases/Makefile src-local src-local/dye-injection.h",
     "url": "https://comphy-lab.org/documentationWeb/index.html",
     "type": "docs_content",
     "priority": 4
@@ -3700,10 +3700,171 @@
     "priority": 4
   },
   {
-    "title": "postProcess/LidDrivenCavity-Newtonian-dyeInjection.ipynb | Test documentation: Lid driven cavity using dye injection",
-    "content": "postProcess/LidDrivenCavity-Newtonian-dyeInjection.ipynb See raw file Post-processing test for Lid-Driven Cavity flow with dye injection. Jupyter Notebook: Post-processing test for Lid-Driven Cavity flow with dye injection. Download Notebook View in nbviewer Open in Colab About this notebook Import all relevant libraries. Key Features: Visualization of data and results Analysis of simulation outputs Interactive exploration of parameters Tip: For the best interactive experience, download the notebook or open it in Google Colab. Notebook Preview Notebook Preview Unavailable The notebook preview could not be loaded. This may be because: The notebook file is not yet available in the repository The nbviewer service is temporarily unavailable The repository is private or has access restrictions You can still download the notebook using the button above or view it directly through one of the external services.",
+    "title": "postProcess/LidDrivenCavity-Newtonian-dyeInjection.ipynb | Test documentation: Lid driven cavity using dye injection: Context",
+    "content": "postProcess/LidDrivenCavity-Newtonian-dyeInjection.ipynb See raw file Post-processing test for Lid-Driven Cavity flow with dye injection. Jupyter Notebook: Post-processing test for Lid-Driven Cavity flow with dye injection. Download Notebook View in nbviewer Open in Colab About this notebook Import all relevant libraries. Key Features: Visualization of data and results Analysis of simulation outputs Interactive exploration of parameters Tip: For the best interactive experience with 3D visualizations and widgets, download the notebook or open it in Google Colab. Notebook Content Post-processing test for Lid-Driven Cavity flow with dye injection. \u00b6 Premble \u00b6 Import all relevant libraries.",
     "url": "https://comphy-lab.org/documentationWeb/postProcess/LidDrivenCavity-Newtonian-dyeInjection.ipynb.html",
     "type": "docs_content",
+    "priority": 4
+  },
+  {
+    "title": "postProcess/LidDrivenCavity-Newtonian-dyeInjection.ipynb | Test documentation: Lid driven cavity using dye injection: Methods - Import Statements",
+    "content": "In [1]: import numpy as np import os import subprocess as sp import matplotlib import matplotlib.pyplot as plt from matplotlib.collections import LineCollection from matplotlib.ticker import StrMethodFormatter from mpl_toolkits.axes_grid1 import make_axes_locatable import argparse # Add at top with other imports import multiprocessing as mp from functools import partial matplotlib . rcParams [ 'font.family' ] = 'serif' matplotlib . rcParams [ 'text.usetex' ] = True matplotlib . rcParams [ 'text.latex.preamble' ] = r '\\usepackage {amsmath} ' Relevant functions \u00b6 Getting field data from simulation files \u00b6 Extract simulation field data from a simulation file. This function executes the external program \"getData-LidDriven\" with the given simulation file and boundary parameters to extract numerical data for axial and radial coordinates, temperature, velocity, and stream function.",
+    "url": "https://comphy-lab.org/documentationWeb/postProcess/LidDrivenCavity-Newtonian-dyeInjection.ipynb.html",
+    "type": "docs_content",
+    "priority": 4
+  },
+  {
+    "title": "postProcess/LidDrivenCavity-Newtonian-dyeInjection.ipynb | Test documentation: Lid driven cavity using dye injection: The output is...",
+    "content": "The output is parsed into NumPy arrays, reshaped to a (nz, nr) grid based on the number of radial grid points (nr), rotated 90\u00b0 counterclockwise, and flipped vertically to ensure the correct orientation for further processing. It returns the processed field arrays along with the total number of axial grid points (nz). Args: filename: Path to the simulation data file. zmin: Minimum axial coordinate. zmax: Maximum axial coordinate. rmin: Minimum radial coordinate. rmax: Maximum radial coordinate. nr: Number of grid points in the radial direction. Returns: tuple: A tuple containing: - R (numpy.ndarray): 2D array of radial coordinate values. - Z (numpy.ndarray): 2D array of axial coordinate values. - T (numpy.ndarray): 2D array of temperature values. - vel (numpy.ndarray): 2D array of velocity values. - psi (numpy.ndarray): 2D array of stream function values. - nz (int): Number of grid points in the axial direction.",
+    "url": "https://comphy-lab.org/documentationWeb/postProcess/LidDrivenCavity-Newtonian-dyeInjection.ipynb.html",
+    "type": "docs_content",
+    "priority": 4
+  },
+  {
+    "title": "postProcess/LidDrivenCavity-Newtonian-dyeInjection.ipynb | Test documentation: Lid driven cavity using dye injection: Python Function",
+    "content": "In [2]: def gettingfield ( filename , zmin , zmax , rmin , rmax , nr ): \"\"\" Extract simulation field data from a simulation file. This function executes the external program \"getData-LidDriven\" with the given simulation file and boundary parameters to extract numerical data for axial and radial coordinates, temperature, velocity, and stream function. The output is parsed into NumPy arrays, reshaped to a (nz, nr) grid based on the number of radial grid points (nr), rotated 90\u00b0 counterclockwise, and flipped vertically to ensure the correct orientation for further processing. It returns the processed field arrays along with the total number of axial grid points (nz). Args: filename: Path to the simulation data file. zmin: Minimum axial coordinate. zmax: Maximum axial coordinate. rmin: Minimum radial coordinate. rmax: Maximum radial coordinate. nr: Number of grid points in the radial direction.",
+    "url": "https://comphy-lab.org/documentationWeb/postProcess/LidDrivenCavity-Newtonian-dyeInjection.ipynb.html",
+    "type": "docs_content",
+    "priority": 4
+  },
+  {
+    "title": "postProcess/LidDrivenCavity-Newtonian-dyeInjection.ipynb | Test documentation: Lid driven cavity using dye injection: Returns: tuple: A...",
+    "content": "Returns: tuple: A tuple containing: - R (numpy.ndarray): 2D array of radial coordinate values. - Z (numpy.ndarray): 2D array of axial coordinate values. - T (numpy.ndarray): 2D array of temperature values. - vel (numpy.ndarray): 2D array of velocity values. - psi (numpy.ndarray): 2D array of stream function values. - nz (int): Number of grid points in the axial direction. \"\"\" exe = [ \"./getData-LidDriven\" , filename , str ( zmin ), str ( rmin ), str ( zmax ), str ( rmax ), str ( nr )] p = sp . Popen ( exe , stdout = sp . PIPE , stderr = sp .",
+    "url": "https://comphy-lab.org/documentationWeb/postProcess/LidDrivenCavity-Newtonian-dyeInjection.ipynb.html",
+    "type": "docs_content",
+    "priority": 4
+  },
+  {
+    "title": "postProcess/LidDrivenCavity-Newtonian-dyeInjection.ipynb | Test documentation: Lid driven cavity using dye injection: PIPE ) stdout...",
+    "content": "PIPE ) stdout , stderr = p . communicate () temp1 = stderr . decode ( \"utf-8\" ) temp2 = temp1 . split ( \" \\n \" ) # print(temp2) #debugging Rtemp , Ztemp , Ttemp , veltemp , Psitemp = [],[],[],[], [] for n1 in range ( len ( temp2 )): temp3 = temp2 [ n1 ] . split ( \" \" ) if temp3 == [ '' ]: pass else : Ztemp . append ( float ( temp3 [ 0 ])) Rtemp . append ( float ( temp3 [ 1 ])) Ttemp . append ( float ( temp3 [ 2 ])) veltemp . append ( float ( temp3 [ 3 ])) Psitemp . append ( float ( temp3 [ 4 ])) R = np . asarray ( Rtemp ) Z = np . asarray ( Ztemp ) T = np . asarray ( Ttemp ) vel = np . asarray ( veltemp ) psi = np . asarray ( Psitemp ) nz = int ( len ( Z ) / nr ) # print(\"nr is %d %d\" % (nr, len(R))) # debugging print ( \"nz is %d \" % nz ) R . resize (( nz , nr )) Z . resize (( nz , nr )) T . resize (( nz , nr )) vel . resize (( nz , nr )) psi . resize (( nz , nr )) # rotate the arrays by 90 degrees R = np . rot90 ( R , k = 1 ) Z = np . rot90 ( Z , k = 1 ) T = np . rot90 ( T , k = 1 ) vel = np . rot90 ( vel , k = 1 ) psi = np . rot90 ( psi , k = 1 ) # flip the array R = np . flip ( R , axis = 0 ) Z = np . flip ( Z , axis = 0 ) T = np . flip ( T , axis = 0 ) vel = np . flip ( vel , axis = 0 ) psi = np . flip ( psi , axis = 0 ) return R , Z , T , vel , psi , nz Process each time-step \u00b6 In [3]: def process_timestep ( caseToProcess , folder , GridsPerR , rmin , rmax , zmin , zmax , lw = 2.0 , t = 0.01 ): \"\"\" Generates and saves a two-panel plot for a simulation timestep.",
+    "url": "https://comphy-lab.org/documentationWeb/postProcess/LidDrivenCavity-Newtonian-dyeInjection.ipynb.html",
+    "type": "docs_content",
+    "priority": 4
+  },
+  {
+    "title": "postProcess/LidDrivenCavity-Newtonian-dyeInjection.ipynb | Test documentation: Lid driven cavity using dye injection: Calculates the simulation...",
+    "content": "Calculates the simulation time using the timestep index and a time increment, then retrieves field data from an intermediate snapshot file. Creates a figure with two subplots\u2014one displaying the dye color (with a coolwarm heat map) and the other showing velocity magnitude (with a viridis heat map). Both panels include domain boundaries and streamlines for the stream function.",
+    "url": "https://comphy-lab.org/documentationWeb/postProcess/LidDrivenCavity-Newtonian-dyeInjection.ipynb.html",
+    "type": "docs_content",
+    "priority": 4
+  },
+  {
+    "title": "postProcess/LidDrivenCavity-Newtonian-dyeInjection.ipynb | Test documentation: Lid driven cavity using dye injection: Function Definition",
+    "content": "If the snapshot file is missing or the output image already exists, the function prints a warning and exits. \"\"\" place = f \" { caseToProcess } /intermediate/snapshot- { t : .4f } \" name = f \" { folder } / { int ( t * 1000 ) : 08d } .png\" # Check if the file exists if not os . path . exists ( place ): print ( f \" { place } File not found!\" ) return # if name exits, return if os . path . exists ( name ): print ( f \" { name } already exists!\" ) return # if folder does not exist, create it if not os . path . exists ( folder ): os . makedirs ( folder ) # Calculate number of grid points in r-direction based on domain size nr = int ( GridsPerR * rmax ) # Extract field data from the simulation file R , Z , T , vel , psi , nz = gettingfield ( place , zmin , zmax , rmin , rmax , nr ) # Get actual domain bounds from the data zminp , zmaxp , rminp , rmaxp = Z . min (), Z . max (), R . min (), R . max () # Set up the figure with two subplots AxesLabel , TickLabel = 50 , 20 fig , ( ax1 , ax2 ) = plt . subplots ( 1 , 2 , figsize = ( 24 , 11 ), constrained_layout = True ) # First subplot - Rate of Strain Tensor (D2) # Draw domain boundaries ax1 . plot ([ rmin , rmin ], [ zmin , zmax ], '-' , color = 'black' , linewidth = lw ) ax1 . plot ([ rmin , rmax ], [ zmin , zmin ], '-' , color = 'black' , linewidth = lw ) ax1 . plot ([ rmin , rmax ], [ zmax , zmax ], '-' , color = 'black' , linewidth = lw ) ax1 . plot ([ rmax , rmax ], [ zmin , zmax ], '-' , color = 'black' , linewidth = lw ) # Plot the dye with a heat map cntrl1 = ax1 . pcolormesh ( Z , R , T , cmap = \"coolwarm\" , edgecolor = 'face' , vmax = 1 , vmin = 0 ) # Add streamlines using the stream function ax1 . contour ( Z , R , psi , 20 , colors = 'black' , linewidths = 2 ) # Configure the first subplot ax1 . set_aspect ( 'equal' ) ax1 . set_xlim ( rmin , rmax ) ax1 . set_ylim ( zmin , zmax ) ax1 . set_title ( r 'Rate of Strain Tensor' , fontsize = TickLabel ) # Add colorbar to the first subplot divider1 = make_axes_locatable ( ax1 ) cax1 = divider1 . append_axes ( \"right\" , size = \"5%\" , pad = 0.1 ) c1 = plt . colorbar ( cntrl1 , cax = cax1 ) c1 . set_label ( r '$log_ {10} (\\|\\mathcal {D} _ {ij} \\|)$' , fontsize = TickLabel , labelpad = 5 ) c1 . ax . tick_params ( labelsize = TickLabel ) # Second subplot - Velocity Magnitude # Draw domain boundaries ax2 . plot ([ rmin , rmin ], [ zmin , zmax ], '-' , color = 'black' , linewidth = lw ) ax2 . plot ([ rmin , rmax ], [ zmin , zmin ], '-' , color = 'black' , linewidth = lw ) ax2 . plot ([ rmin , rmax ], [ zmax , zmax ], '-' , color = 'black' , linewidth = lw ) ax2 . plot ([ rmax , rmax ], [ zmin , zmax ], '-' , color = 'black' , linewidth = lw ) # Plot velocity magnitude with viridis colormap cntrl2 = ax2 . pcolormesh ( Z , R , vel , cmap = \"viridis\" , edgecolor = 'face' , vmax = 1 , vmin = 0 ) # Add streamlines using the stream function ax2 . contour ( Z , R , psi , 20 , colors = 'black' , linewidths = 2 ) # Configure the second subplot ax2 . set_aspect ( 'equal' ) ax2 . set_xlim ( rmin , rmax ) ax2 . set_ylim ( zmin , zmax ) ax2 . set_title ( r 'Velocity Magnitude' , fontsize = TickLabel ) # Add colorbar to the second subplot divider2 = make_axes_locatable ( ax2 ) cax2 = divider2 . append_axes ( \"right\" , size = \"5%\" , pad = 0.1 ) c2 = plt . colorbar ( cntrl2 , cax = cax2 ) c2 . set_label ( r 'Velocity' , fontsize = TickLabel , labelpad = 5 ) c2 . ax . tick_params ( labelsize = TickLabel ) # Turn off axes for cleaner visualization ax1 . axis ( 'off' ) ax2 . axis ( 'off' ) plt . savefig ( name , bbox_inches = 'tight' ) # Display the figure plt . show () Main execution \u00b6 In [4]: GridsPerR , ZMAX , RMAX , ZMIN , RMIN = 512 , 0.5 , 0.5 , - 0.5 , - 0.5 , caseToProcess , folderToSave = '../simulationCases/LidDrivenCavity-Newtonian-dyeInjection' , 'LidDrivenCavity-Newtonian-dyeInjection' process_timestep ( caseToProcess , folderToSave , GridsPerR , RMIN , RMAX , ZMIN , ZMAX , lw = 2 , t = 0.1 ) nz is 256 In [ ]:",
+    "url": "https://comphy-lab.org/documentationWeb/postProcess/LidDrivenCavity-Newtonian-dyeInjection.ipynb.html",
+    "type": "docs_content",
+    "priority": 4
+  },
+  {
+    "title": "postProcess/LidDrivenCavity-Newtonian-dyeInjection.ipynb | Test documentation: Lid driven cavity using dye injection - Code Example",
+    "content": "importnumpyasnpimportosimportsubprocessasspimportmatplotlibimportmatplotlib.pyplotaspltfrommatplotlib.collectionsimportLineCollectionfrommatplotlib.tickerimportStrMethodFormatterfrommpl_toolkits.axes_grid1importmake_axes_locatableimportargparse# Add at top with other importsimportmultiprocessingasmpfromfunctoolsimportpartialmatplotlib.rcParams['font.family']='serif'matplotlib.rcParams['text.usetex']=Truematplotlib.rcParams['text.latex.preamble']=r'\\usepackage{amsmath}'",
+    "url": "https://comphy-lab.org/documentationWeb/postProcess/LidDrivenCavity-Newtonian-dyeInjection.ipynb.html",
+    "type": "docs_code",
+    "priority": 4
+  },
+  {
+    "title": "postProcess/LidDrivenCavity-Newtonian-dyeInjection.ipynb | Test documentation: Lid driven cavity using dye injection - Code Example: Function Definition",
+    "content": "defgettingfield(filename,zmin,zmax,rmin,rmax,nr):\"\"\"Extract simulation field data from a simulation file.This function executes the external program \"getData-LidDriven\" with the given simulation file andboundary parameters to extract numerical data for axial and radial coordinates, temperature, velocity,and stream function.",
+    "url": "https://comphy-lab.org/documentationWeb/postProcess/LidDrivenCavity-Newtonian-dyeInjection.ipynb.html",
+    "type": "docs_code",
+    "priority": 4
+  },
+  {
+    "title": "postProcess/LidDrivenCavity-Newtonian-dyeInjection.ipynb | Test documentation: Lid driven cavity using dye injection - Code Example: The output is...",
+    "content": "The output is parsed into NumPy arrays, reshaped to a (nz, nr) grid based on thenumber of radial grid points (nr), rotated 90\u00b0 counterclockwise, and flipped vertically to ensure thecorrect orientation for further processing.",
+    "url": "https://comphy-lab.org/documentationWeb/postProcess/LidDrivenCavity-Newtonian-dyeInjection.ipynb.html",
+    "type": "docs_code",
+    "priority": 4
+  },
+  {
+    "title": "postProcess/LidDrivenCavity-Newtonian-dyeInjection.ipynb | Test documentation: Lid driven cavity using dye injection - Code Example: It returns the...",
+    "content": "It returns the processed field arrays along with the totalnumber of axial grid points (nz).Args:filename: Path to the simulation data file.zmin: Minimum axial coordinate.zmax: Maximum axial coordinate.rmin: Minimum radial coordinate.rmax: Maximum radial coordinate.nr: Number of grid points in the radial direction.Returns:tuple: A tuple containing:- R (numpy.ndarray): 2D array of radial coordinate values.- Z (numpy.ndarray): 2D array of axial coordinate values.- T (numpy.ndarray): 2D array of temperature values.- vel (numpy.ndarray): 2D array of velocity values.- psi (numpy.ndarray): 2D array of stream function values.- nz (int): Number of grid points in the axial direction.\"\"\"exe=[\"./getData-LidDriven\",filename,str(zmin),str(rmin),str(zmax),str(rmax),str(nr)]p=sp.Popen(exe,stdout=sp.PIPE,stderr=sp.PIPE)stdout,stderr=p.communicate()temp1=stderr.decode(\"utf-8\")temp2=temp1.split(\"\\n\")# print(temp2) #debuggingRtemp,Ztemp,Ttemp,veltemp,Psitemp=[],[],[],[],[]forn1inrange(len(temp2)):temp3=temp2[n1].split(\" \")iftemp3==['']:passelse:Ztemp.append(float(temp3[0]))Rtemp.append(float(temp3[1]))Ttemp.append(float(temp3[2]))veltemp.append(float(temp3[3]))Psitemp.append(float(temp3[4]))R=np.asarray(Rtemp)Z=np.asarray(Ztemp)T=np.asarray(Ttemp)vel=np.asarray(veltemp)psi=np.asarray(Psitemp)nz=int(len(Z)/nr)# print(\"nr is %d %d\" % (nr, len(R))) # debuggingprint(\"nz is%d\"%nz)R.resize((nz,nr))Z.resize((nz,nr))T.resize((nz,nr))vel.resize((nz,nr))psi.resize((nz,nr))# rotate the arrays by 90 degreesR=np.rot90(R,k=1)Z=np.rot90(Z,k=1)T=np.rot90(T,k=1)vel=np.rot90(vel,k=1)psi=np.rot90(psi,k=1)# flip the arrayR=np.flip(R,axis=0)Z=np.flip(Z,axis=0)T=np.flip(T,axis=0)vel=np.flip(vel,axis=0)psi=np.flip(psi,axis=0)returnR,Z,T,vel,psi,nz",
+    "url": "https://comphy-lab.org/documentationWeb/postProcess/LidDrivenCavity-Newtonian-dyeInjection.ipynb.html",
+    "type": "docs_code",
+    "priority": 4
+  },
+  {
+    "title": "postProcess/LidDrivenCavity-Newtonian-dyeInjection.ipynb | Test documentation: Lid driven cavity using dye injection - Code Example: Context",
+    "content": "defprocess_timestep(caseToProcess,folder,GridsPerR,rmin,rmax,zmin,zmax,lw=2.0,t=0.01):\"\"\"Generates and saves a two-panel plot for a simulation timestep.Calculates the simulation time using the timestep index and a time increment, thenretrieves field data from an intermediate snapshot file. Creates a figure with twosubplots\u2014one displaying the dye color (with a coolwarm heat map) andthe other showing velocity magnitude (with a viridis heat map).",
+    "url": "https://comphy-lab.org/documentationWeb/postProcess/LidDrivenCavity-Newtonian-dyeInjection.ipynb.html",
+    "type": "docs_code",
+    "priority": 4
+  },
+  {
+    "title": "postProcess/LidDrivenCavity-Newtonian-dyeInjection.ipynb | Test documentation: Lid driven cavity using dye injection - Code Example: Both panels includedomain...",
+    "content": "Both panels includedomain boundaries and streamlines for the stream function.",
+    "url": "https://comphy-lab.org/documentationWeb/postProcess/LidDrivenCavity-Newtonian-dyeInjection.ipynb.html",
+    "type": "docs_code",
+    "priority": 4
+  },
+  {
+    "title": "postProcess/LidDrivenCavity-Newtonian-dyeInjection.ipynb | Test documentation: Lid driven cavity using dye injection - Code Example: Function Definition",
+    "content": "If the snapshot file ismissing or the output image already exists, the function prints a warning and exits.\"\"\"place=f\"{caseToProcess}/intermediate/snapshot-{t:.4f}\"name=f\"{folder}/{int(t*1000):08d}.png\"# Check if the file existsifnotos.path.exists(place):print(f\"{place}File not found!\")return# if name exits, returnifos.path.exists(name):print(f\"{name}already exists!\")return# if folder does not exist, create itifnotos.path.exists(folder):os.makedirs(folder)# Calculate number of grid points in r-direction based on domain sizenr=int(GridsPerR*rmax)# Extract field data from the simulation fileR,Z,T,vel,psi,nz=gettingfield(place,zmin,zmax,rmin,rmax,nr)# Get actual domain bounds from the datazminp,zmaxp,rminp,rmaxp=Z.min(),Z.max(),R.min(),R.max()# Set up the figure with two subplotsAxesLabel,TickLabel=50,20fig,(ax1,ax2)=plt.subplots(1,2,figsize=(24,11),constrained_layout=True)# First subplot - Rate of Strain Tensor (D2)# Draw domain boundariesax1.plot([rmin,rmin],[zmin,zmax],'-',color='black',linewidth=lw)ax1.plot([rmin,rmax],[zmin,zmin],'-',color='black',linewidth=lw)ax1.plot([rmin,rmax],[zmax,zmax],'-',color='black',linewidth=lw)ax1.plot([rmax,rmax],[zmin,zmax],'-',color='black',linewidth=lw)# Plot the dye with a heat mapcntrl1=ax1.pcolormesh(Z,R,T,cmap=\"coolwarm\",edgecolor='face',vmax=1,vmin=0)# Add streamlines using the stream functionax1.contour(Z,R,psi,20,colors='black',linewidths=2)# Configure the first subplotax1.set_aspect('equal')ax1.set_xlim(rmin,rmax)ax1.set_ylim(zmin,zmax)ax1.set_title(r'Rate of Strain Tensor',fontsize=TickLabel)# Add colorbar to the first subplotdivider1=make_axes_locatable(ax1)cax1=divider1.append_axes(\"right\",size=\"5%\",pad=0.1)c1=plt.colorbar(cntrl1,cax=cax1)c1.set_label(r'$log_{10}(\\|\\mathcal{D}_{ij}\\|)$',fontsize=TickLabel,labelpad=5)c1.ax.tick_params(labelsize=TickLabel)# Second subplot - Velocity Magnitude# Draw domain boundariesax2.plot([rmin,rmin],[zmin,zmax],'-',color='black',linewidth=lw)ax2.plot([rmin,rmax],[zmin,zmin],'-',color='black',linewidth=lw)ax2.plot([rmin,rmax],[zmax,zmax],'-',color='black',linewidth=lw)ax2.plot([rmax,rmax],[zmin,zmax],'-',color='black',linewidth=lw)# Plot velocity magnitude with viridis colormapcntrl2=ax2.pcolormesh(Z,R,vel,cmap=\"viridis\",edgecolor='face',vmax=1,vmin=0)# Add streamlines using the stream functionax2.contour(Z,R,psi,20,colors='black',linewidths=2)# Configure the second subplotax2.set_aspect('equal')ax2.set_xlim(rmin,rmax)ax2.set_ylim(zmin,zmax)ax2.set_title(r'Velocity Magnitude',fontsize=TickLabel)# Add colorbar to the second subplotdivider2=make_axes_locatable(ax2)cax2=divider2.append_axes(\"right\",size=\"5%\",pad=0.1)c2=plt.colorbar(cntrl2,cax=cax2)c2.set_label(r'Velocity',fontsize=TickLabel,labelpad=5)c2.ax.tick_params(labelsize=TickLabel)# Turn off axes for cleaner visualizationax1.axis('off')ax2.axis('off')plt.savefig(name,bbox_inches='tight')# Display the figureplt.show()",
+    "url": "https://comphy-lab.org/documentationWeb/postProcess/LidDrivenCavity-Newtonian-dyeInjection.ipynb.html",
+    "type": "docs_code",
+    "priority": 4
+  },
+  {
+    "title": "postProcess/LidDrivenCavity-Newtonian-dyeInjection.ipynb | Test documentation: Lid driven cavity using dye injection - Code Example",
+    "content": "GridsPerR,ZMAX,RMAX,ZMIN,RMIN=512,0.5,0.5,-0.5,-0.5,caseToProcess,folderToSave='../simulationCases/LidDrivenCavity-Newtonian-dyeInjection','LidDrivenCavity-Newtonian-dyeInjection'process_timestep(caseToProcess,folderToSave,GridsPerR,RMIN,RMAX,ZMIN,ZMAX,lw=2,t=0.1)",
+    "url": "https://comphy-lab.org/documentationWeb/postProcess/LidDrivenCavity-Newtonian-dyeInjection.ipynb.html",
+    "type": "docs_code",
+    "priority": 4
+  },
+  {
+    "title": "postProcess/getFacets3D.c | Test documentation: Lid driven cavity using dye injection: Context",
+    "content": "postProcess/getFacets3D.c See raw file Facet Output Visualization Tool This module provides functionality for extracting and outputting interface facets from volume fraction fields in computational fluid dynamics simulations. It is designed to work with the Basilisk C framework for solving partial differential equations on adaptive octree/quadtree grids. Overview The tool reads volume fraction data from saved simulation files and extracts the interface geometry using facet reconstruction algorithms. The extracted facets can be visualized or processed for further analysis of multiphase flow interfaces.",
+    "url": "https://comphy-lab.org/documentationWeb/postProcess/getFacets3D.c.html",
+    "type": "docs_content",
+    "priority": 4
+  },
+  {
+    "title": "postProcess/getFacets3D.c | Test documentation: Lid driven cavity using dye injection: C/C++ Code",
+    "content": "Authors Vatsal Sanjay (vatsalsanjay@gmail.com) Physics of Fluids Group Dependencies Basilisk C framework Octree grid implementation Navier-Stokes centered solver Volume fraction utilities #include \"grid/octree.h\" #include \"navier-stokes/centered.h\" #include \"fractions.h\" scalar f []; char filename [ 80 ]; output_facets_v2 Extracts and outputs the facets (interface segments/polygons) from a volume fraction field. This function implements a marching squares/cubes-like algorithm to reconstruct interfaces from volume fraction data. The function iterates through all grid cells and identifies those containing an interface (where the volume fraction is between 0 and 1). For each interface cell, it: 1. Computes the interface normal using neighboring cell data 2. Calculates the plane constant \u03b1 for the linear interface approximation 3. Extracts the intersection points between the interface and cell edges 4.",
+    "url": "https://comphy-lab.org/documentationWeb/postProcess/getFacets3D.c.html",
+    "type": "docs_content",
+    "priority": 4
+  },
+  {
+    "title": "postProcess/getFacets3D.c | Test documentation: Lid driven cavity using dye injection: Outputs the facet...",
+    "content": "Outputs the facet vertices to the specified file Parameters c : Volume fraction scalar field containing the interface data fp : Output file pointer for writing facet coordinates (default: stdout) s : Face vector field for surface tension calculations (default: {{-1}}) Output Format The output format depends on the spatial dimension: - 1D : Single x-coordinate of the interface position - 2D : Line segments as pairs of (x,y) coordinates, blank line separated - 3D : Polygon vertices as (x,y,z) coordinates, blank line separated Implementation Notes Only processes cells with volume fraction in range (1e-6, 1-1e-6) to avoid numerical issues near pure phases Uses the PLIC (Piecewise Linear Interface Calculation) method for interface reconstruction Facet extraction tolerance is set to 1.1 for robust polygon generation in 3D cases trace void output_facets_v2 ( scalar c , FILE * fp = stdout , face vector s = {{- 1 }}) { foreach () if ( c [] > 1e-6 && c [] < 1. - 1e-6 ) { coord n = facet_normal ( point , c , s ); double alpha = plane_alpha ( c [], n ); #if dimension == fprintf ( fp , \" %g\\n \" , x + Delta * alpha / n . x ); #elif dimension == coord segment [ 2 ]; if ( facets ( n , alpha , segment ) == 2 ) fprintf ( fp , \" %g %g\\n%g %g\\n\\n \" , x + segment [ 0 ]. x * Delta , y + segment [ 0 ]. y * Delta , x + segment [ 1 ]. x * Delta , y + segment [ 1 ]. y * Delta ); #else // dimension == coord v [ 12 ]; int m = facets ( n , alpha , v , 1.1 ); for ( int i = 0 ; i < m ; i ++) fprintf ( fp , \" %g %g %g\\n \" , x + v [ i ]. x * Delta , y + v [ i ]. y * Delta , z + v [ i ]. z * Delta ); if ( m > 0 ) fputc ( ' \\n ' , fp ); #endif } fflush ( fp ); } main Entry point for the facet extraction tool.",
+    "url": "https://comphy-lab.org/documentationWeb/postProcess/getFacets3D.c.html",
+    "type": "docs_content",
+    "priority": 4
+  },
+  {
+    "title": "postProcess/getFacets3D.c | Test documentation: Lid driven cavity using dye injection: Processes a saved...",
+    "content": "Processes a saved simulation file specified as a command-line argument and outputs the extracted facets to standard error. Command Line Usage ./program_name simulation_file.dump Parameters a : Number of command line arguments arguments : Array of command line argument strings arguments[1] : Path to the input simulation file Processing Steps Reads the filename from command line arguments Sets boundary conditions for the volume fraction field Restores the simulation state from the saved file Ensures proper prolongation operators for adaptive mesh refinement Calls output_facets_v2 to extract and output interface facets Boundary Conditions Bottom boundary: Dirichlet condition with f = 1 (fully filled) Tree Grid Handling For adaptive (tree) grids, the function ensures that the volume fraction field uses the appropriate fraction_refine prolongation operator. This is crucial for maintaining conservation properties during mesh refinement and coarsening operations.",
+    "url": "https://comphy-lab.org/documentationWeb/postProcess/getFacets3D.c.html",
+    "type": "docs_content",
+    "priority": 4
+  },
+  {
+    "title": "postProcess/getFacets3D.c | Test documentation: Lid driven cavity using dye injection: C/C++ Main",
+    "content": "Output Interface facets are written to standard error (ferr) in a format suitable for visualization with tools like gnuplot or paraview. int main ( int a , char const * arguments []) { sprintf ( filename , \" %s \" , arguments [ 1 ]); f [ bottom ] = dirichlet ( 1. ); restore ( file = filename ); #if TREE // Ensure proper prolongation for volume fraction fields on adaptive grids void (* prolongation )( Point , scalar ) = f . prolongation ; if ( prolongation != fraction_refine ) { f . prolongation = fraction_refine ; f . dirty = true ; } #endif // TREE output_facets_v2 ( f , ferr ); }",
+    "url": "https://comphy-lab.org/documentationWeb/postProcess/getFacets3D.c.html",
+    "type": "docs_content",
+    "priority": 4
+  },
+  {
+    "title": "postProcess/getFacets3D.c | Test documentation: Lid driven cavity using dye injection - C/C++ Code",
+    "content": "#include\"grid/octree.h\"#include\"navier-stokes/centered.h\"#include\"fractions.h\"scalar f[];charfilename[80];",
+    "url": "https://comphy-lab.org/documentationWeb/postProcess/getFacets3D.c.html",
+    "type": "docs_code",
+    "priority": 4
+  },
+  {
+    "title": "postProcess/getFacets3D.c | Test documentation: Lid driven cavity using dye injection - Code Example: tracevoidoutput_facets_v2(scalar c,FILE*fp=stdout,face vector...",
+    "content": "tracevoidoutput_facets_v2(scalar c,FILE*fp=stdout,face vector s={{-1}}){foreach()if(c[]>1e-6&&c[]<1.-1e-6){coord n=facet_normal(point,c,s);doublealpha=plane_alpha(c[],n);#if dimension ==fprintf(fp,\"%g\\n\",x+Delta*alpha/n.x);#elif dimension ==coord segment[2];if(facets(n,alpha,segment)==2)fprintf(fp,\"%g%g\\n%g%g\\n\\n\",x+segment[0].x*Delta,y+segment[0].y*Delta,x+segment[1].x*Delta,y+segment[1].y*Delta);#else// dimension ==coord v[12];intm=facets(n,alpha,v,1.1);for(inti=0;i<m;i++)fprintf(fp,\"%g%g%g\\n\",x+v[i].x*Delta,y+v[i].y*Delta,z+v[i].z*Delta);if(m>0)fputc('\\n',fp);#endif}fflush(fp);}",
+    "url": "https://comphy-lab.org/documentationWeb/postProcess/getFacets3D.c.html",
+    "type": "docs_code",
+    "priority": 4
+  },
+  {
+    "title": "postProcess/getFacets3D.c | Test documentation: Lid driven cavity using dye injection - Code Example",
+    "content": "intmain(inta,charconst*arguments[]){sprintf(filename,\"%s\",arguments[1]);f[bottom]=dirichlet(1.);restore(file=filename);#if TREE// Ensure proper prolongation for volume fraction fields on adaptive gridsvoid(*prolongation)(Point,scalar)=f.prolongation;if(prolongation!=fraction_refine){f.prolongation=fraction_refine;f.dirty=true;}#endif// TREEoutput_facets_v2(f,ferr);}",
+    "url": "https://comphy-lab.org/documentationWeb/postProcess/getFacets3D.c.html",
+    "type": "docs_code",
     "priority": 4
   },
   {
@@ -3778,9 +3939,65 @@
   },
   {
     "title": "Post-Processing Tools | Documentation",
-    "content": "Post-Processing Tools getData-LidDriven.c Vatsal Sanjay Email: vatsalsy@comphy-lab.org CoMPhy Lab Physics of Fluids Department Last updated: Mar 8, 2025 ~~~c LidDrivenCavity-Newtonian-dyeInjection.ipynb Import all relevant libraries. LidDrivenCavity-Newtonian-dyeInjection.py Rtemp, Ztemp, Ttemp, veltemp, Psitemp = [],[],[],[], [] for n1 in range(len(temp2)): temp3 = temp2[n1].split(' ') if ...",
+    "content": "Post-Processing Tools getData-LidDriven.c Vatsal Sanjay Email: vatsalsy@comphy-lab.org CoMPhy Lab Physics of Fluids Department Last updated: Mar 8, 2025 ~~~c getFacets3D.c This module provides functionality for extracting and outputting interface facets from volume fraction fields in comp... LidDrivenCavity-Newtonian-dyeInjection.ipynb Import all relevant libraries. LidDrivenCavity-Newtonian-dyeInjection.py Rtemp, Ztemp, Ttemp, veltemp, Psitemp = [],[],[],[], [] for n1 in range(len(temp2)): temp3 = temp2[n1].split(' ') if ... Visulization3D.ipynb This notebook provides visualization and analysis related to Visulization3D.",
     "url": "https://comphy-lab.org/documentationWeb/postProcess/index.html",
     "type": "docs_content",
+    "priority": 4
+  },
+  {
+    "title": "postProcess/Visulization3D.ipynb | Test documentation: Lid driven cavity using dye injection: Context",
+    "content": "postProcess/Visulization3D.ipynb See raw file Visulization3D.ipynb Jupyter Notebook: Visulization3D.ipynb Download Notebook View in nbviewer Open in Colab About this notebook This notebook provides visualization and analysis related to Visulization3D. Key Features: Visualization of data and results Analysis of simulation outputs Interactive exploration of parameters Tip: For the best interactive experience with 3D visualizations and widgets, download the notebook or open it in Google Colab. Notebook Content In [1]: import subprocess as sp import numpy as np import k3d Test \u00b6 In [2]: plot = k3d . plot () plot += k3d . line ([[ 0 , 0 , 0 ], [ 1 , 1 , 1 ]]) plot . display () Output() Trial 1 \u00b6 In [3]: def getFacets3D ( filename ): exe = [ \"./getFacets3D\" , filename ] p = sp . Popen ( exe , stdout = sp . PIPE , stderr = sp .",
+    "url": "https://comphy-lab.org/documentationWeb/postProcess/Visulization3D.ipynb.html",
+    "type": "docs_content",
+    "priority": 4
+  },
+  {
+    "title": "postProcess/Visulization3D.ipynb | Test documentation: Lid driven cavity using dye injection: PIPE ) stdout...",
+    "content": "PIPE ) stdout , stderr = p . communicate () temp1 = stderr . decode ( \"utf-8\" ) lines = temp1 . strip () . split ( ' \\n ' ) all_points = [] all_indices = [] current_index = 0 for line in lines : if line . strip () == '' : # Move to next plane if len ( all_points ) > current_index : # Calculate indices for the previous plane n = len ( all_points ) - current_index indices = np . vstack (( np . zeros ( n - 2 , dtype = np . uint32 ) + current_index , np . arange ( 1 , n - 1 , dtype = np . uint32 ) + current_index , np . arange ( 2 , n , dtype = np . uint32 ) + current_index )) .",
+    "url": "https://comphy-lab.org/documentationWeb/postProcess/Visulization3D.ipynb.html",
+    "type": "docs_content",
+    "priority": 4
+  },
+  {
+    "title": "postProcess/Visulization3D.ipynb | Test documentation: Lid driven cavity using dye injection: Context",
+    "content": "T . flatten () all_indices . append ( indices ) current_index = len ( all_points ) else : # Convert each line into a tuple of floats (x, y, z) and add it to all_points point = tuple ( map ( float , line . split ())) all_points . append ( point ) # Adding indices for the last plane if it exists if len ( all_points ) > current_index : n = len ( all_points ) - current_index indices = np . vstack (( np . zeros ( n - 2 , dtype = np . uint32 ) + current_index , np . arange ( 1 , n - 1 , dtype = np . uint32 ) + current_index , np . arange ( 2 , n , dtype = np . uint32 ) + current_index )) .",
+    "url": "https://comphy-lab.org/documentationWeb/postProcess/Visulization3D.ipynb.html",
+    "type": "docs_content",
+    "priority": 4
+  },
+  {
+    "title": "postProcess/Visulization3D.ipynb | Test documentation: Lid driven cavity using dye injection: Context",
+    "content": "T . flatten () all_indices . append ( indices ) # Convert lists to numpy arrays all_points = np . array ( all_points , dtype = np . float32 ) all_indices = np . concatenate ( all_indices ) . astype ( np . uint32 ) return all_points , all_indices In [4]: # Example usage points , indices = getFacets3D ( \"dump\" ) print ( len ( points )) print ( len ( indices )) 1655813 2544717 In [5]: # Plotting with k3d plot = k3d . plot () mesh = k3d . mesh ( points , indices , wireframe = True ) # Set opacity to 1 for full solidity plot += mesh plot . display () Output() In [ ]:",
+    "url": "https://comphy-lab.org/documentationWeb/postProcess/Visulization3D.ipynb.html",
+    "type": "docs_content",
+    "priority": 4
+  },
+  {
+    "title": "postProcess/Visulization3D.ipynb | Test documentation: Lid driven cavity using dye injection - Code Example",
+    "content": "plot=k3d.plot()plot+=k3d.line([[0,0,0],[1,1,1]])plot.display()",
+    "url": "https://comphy-lab.org/documentationWeb/postProcess/Visulization3D.ipynb.html",
+    "type": "docs_code",
+    "priority": 4
+  },
+  {
+    "title": "postProcess/Visulization3D.ipynb | Test documentation: Lid driven cavity using dye injection - Code Example: Context",
+    "content": "defgetFacets3D(filename):exe=[\"./getFacets3D\",filename]p=sp.Popen(exe,stdout=sp.PIPE,stderr=sp.PIPE)stdout,stderr=p.communicate()temp1=stderr.decode(\"utf-8\")lines=temp1.strip().split('\\n')all_points=[]all_indices=[]current_index=0forlineinlines:ifline.strip()=='':# Move to next planeiflen(all_points)>current_index:# Calculate indices for the previous planen=len(all_points)-current_indexindices=np.vstack((np.zeros(n-2,dtype=np.uint32)+current_index,np.arange(1,n-1,dtype=np.uint32)+current_index,np.arange(2,n,dtype=np.uint32)+current_index)).T.flatten()all_indices.append(indices)current_index=len(all_points)else:# Convert each line into a tuple of floats (x, y, z) and add it to all_pointspoint=tuple(map(float,line.split()))all_points.append(point)# Adding indices for the last plane if it existsiflen(all_points)>current_index:n=len(all_points)-current_indexindices=np.vstack((np.zeros(n-2,dtype=np.uint32)+current_index,np.arange(1,n-1,dtype=np.uint32)+current_index,np.arange(2,n,dtype=np.uint32)+current_index)).T.flatten()all_indices.append(indices)# Convert lists to numpy arraysall_points=np.array(all_points,dtype=np.float32)all_indices=np.concatenate(all_indices).astype(np.uint32)returnall_points,all_indices",
+    "url": "https://comphy-lab.org/documentationWeb/postProcess/Visulization3D.ipynb.html",
+    "type": "docs_code",
+    "priority": 4
+  },
+  {
+    "title": "postProcess/Visulization3D.ipynb | Test documentation: Lid driven cavity using dye injection - Code Example",
+    "content": "# Example usagepoints,indices=getFacets3D(\"dump\")print(len(points))print(len(indices))",
+    "url": "https://comphy-lab.org/documentationWeb/postProcess/Visulization3D.ipynb.html",
+    "type": "docs_code",
+    "priority": 4
+  },
+  {
+    "title": "postProcess/Visulization3D.ipynb | Test documentation: Lid driven cavity using dye injection - Code Example",
+    "content": "# Plotting with k3dplot=k3d.plot()mesh=k3d.mesh(points,indices,wireframe=True)# Set opacity to 1 for full solidityplot+=meshplot.display()",
+    "url": "https://comphy-lab.org/documentationWeb/postProcess/Visulization3D.ipynb.html",
+    "type": "docs_code",
     "priority": 4
   },
   {
