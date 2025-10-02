@@ -718,6 +718,13 @@
     "priority": 3
   },
   {
+    "title": "0_readme - Computational tools & visualization:",
+    "content": "2025-10-01 [[visual-pdes]]: Interactive browser-based PDE simulator - exploring pattern formation, reaction-diffusion systems, and mathematical visualization through GPU-accelerated simulations. A \"Desmos for PDEs\" that runs in your browser.",
+    "url": "https://blogs.comphy-lab.org/0_README/#computational-tools-visualization",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
     "title": "0_readme - Elastoinertial turbulence:",
     "content": "2025-02-24 [[Arrowheads in elastoinertial turbulence]]: Critical review of arrowhead structures in elastoinertial turbulence, examining their existence in 3D flows and experimental observations.",
     "url": "https://blogs.comphy-lab.org/0_README/#elastoinertial-turbulence",
@@ -3129,6 +3136,118 @@
     "title": "Stokes waves_arbitary order - For dispersion relation in higher order: High\u2010order expansions of...",
     "content": "High\u2010order expansions of the Stokes dispersion relation up to ($\\epsilon^8$) have been verified numerically by Schwartz (1974). -> A good place for review is Annu. Rev. Fluid Mech. by L. W. Schwartz and J. D. Fenton [@schwartzStronglyNonlinearWaves1982] -> The code at [@sanjayComphylabStandingnonlinearwavesStanding2024] implements the above formulation for calculating the dispersion relation as a function of $ak$. It also uses the initial condition mentioned at the top of this document as the initial condition for the direct numerical simulations. ![[Stokes waves_arbitary order-20250125232439287.png]] ---",
     "url": "https://blogs.comphy-lab.org/Blog/Stokes waves_arbitary order/#for-dispersion-relation-in-higher-order",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "Visual pdes",
+    "content": "modified: 2025-10-01T12:26:37+01:00 created: 2025-10-01T09:34:30+01:00",
+    "url": "https://blogs.comphy-lab.org/Blog/visual-pdes/",
+    "type": "blog_content",
+    "priority": 3
+  },
+  {
+    "title": "Visual pdes - Visual PDE: Where mathematics becomes art you can paint with your fingers",
+    "content": "VisualPDE lets anyone\u2014students, teachers, and researchers\u2014simulate rich partial differential equation (PDE) models directly in the browser, in real time, no coding or installs. Under the hood it turns your device\u2019s GPU into a math engine, so patterns bloom and waves ripple as fast as you can drag a slider or draw with your finger. It\u2019s \u201cDesmos for PDEs,\u201d except the plots are alive. > [!summary] TL;DR > Open visualpde.com, pick an example (or type your own equations), then **paint** initial conditions, adjust **sliders**, and **share** a link or **embed** the live sim. It runs on laptops, tablets, and phones, with **GPU\u2011accelerated timestepping** delivering **tens of thousands of steps per second** on typical demos.",
+    "url": "https://blogs.comphy-lab.org/Blog/visual-pdes/#visual-pde-where-mathematics-becomes-art-you-can-paint-with-your-fingers",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "Visual pdes - What is VisualPDE?",
+    "content": "PDEs describe how things change across space and time: heat diffuses, waves propagate, chemicals react and spread, populations move. Historically, exploring them required code, licenses, and compute time. **VisualPDE removes those barriers**: open a link and you\u2019re simulating on the spot\u2014**no installation**, works on most devices, and the **entire site is open source** if you want to peek or fork. > [!info] What to do? > Think interactive PDEs you can **play** with\u2014edit equations live, watch solutions evolve instantly, and share or embed your setup with one click.",
+    "url": "https://blogs.comphy-lab.org/Blog/visual-pdes/#what-is-visualpde",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "Visual pdes - GPU + WebGL",
+    "content": "VisualPDE **treats the simulation grid like an image**. Each pixel stores field values; **fragment shaders** update every pixel in parallel. Your browser\u2019s **WebGL** pipeline does the heavy lifting, stepping the system **hundreds of times per frame** for smooth, responsive dynamics. Result: **real\u2011time PDEs in a tab**. - WebGL + GLSL shaders = parallel updates - Grid = floating\u2011point textures - \u201cSolve\u2011as\u2011you\u2011type\u201d responsiveness",
+    "url": "https://blogs.comphy-lab.org/Blog/visual-pdes/#gpu-webgl",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "Visual pdes - Numerics that favor interactivity",
+    "content": "Under the hood are familiar methods from a first course in scientific computing: - **Space:** Finite difference method on a 1D/2D grid. - **Time:** explicit schemes you can choose: **Forward Euler**, **Adams\u2013Bashforth (2\u2011step)**, **Midpoint**, and **RK4**. VisualPDE also **detects instability** (NaNs/infinities) and nudges you to tweak the timestep or scheme. > [!tip] Rules of thumb > If a sim \u201cblows up,\u201d **halve $\\Delta t$** or switch from Forward Euler to **RK4**. For pattern\u2011forming systems, a small $\\Delta t$ is usually fine thanks to modern GPUs.",
+    "url": "https://blogs.comphy-lab.org/Blog/visual-pdes/#numerics-that-favor-interactivity",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "Visual pdes - Precision & performance",
+    "content": "To maximize compatibility\u2014especially on mobile\u2014VisualPDE currently uses **single\u2011precision floats**. In practice, that\u2019s enough for teaching and rapid exploration; **double precision** is on the roadmap as browser support matures. Typical demos achieve **tens of thousands of timesteps per second** on modern hardware.",
+    "url": "https://blogs.comphy-lab.org/Blog/visual-pdes/#precision-performance",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "Visual pdes - Playful interface, serious models: - **Paintable initial...",
+    "content": "- **Paintable initial conditions.** Pause and **draw** on the domain with a brush\u2014seed a ring for a wave equation, scribble a hot patch for diffusion, or drop \u201cprey\u201d into a corner of a predator\u2013prey model. - **Parameter sliders.** Declare ranges (e.g., `a = 0.5 in [0,1]`) and explore transitions live. - **Live math.** LaTeX rendering confirms your equations are interpreted as intended. - **Flexible domains & boundaries.** Use standard rectangular setups, **custom masks**, and common boundary conditions (periodic, Dirichlet, Neumann, Robin). - **Rich visualization.** Toggle **2D colormaps**, **contours**, **vector fields**, or a **3D surface** for 2D sims\u2014instantly. - **Share & embed.** Generate a **short link** that encodes your full setup, or copy an **iframe** to embed an interactive figure in docs, lectures, or posts. > [!example] Minimal embed snippet > > ```html > src=\"https://visualpde.com/sim/?preset=heatEquation\" > width=\"640\" height=\"480\" loading=\"lazy\" > title=\"VisualPDE simulation\"> > > ``` > > You can also export embed code (tiny or customized), screenshots or short clips for slides and social posts \u2014 use the share button at the right hand side of each simulation.",
+    "url": "https://blogs.comphy-lab.org/Blog/visual-pdes/#playful-interface-serious-models",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "Visual pdes - Pattern formation: spots, stripes, labyrinths",
+    "content": "- **Gray\u2013Scott model.** Two parameters steer a **zoo of behaviors**: stationary/moving spots, labyrinths, waves, and more. Exploring this interactively is eye\u2011opening. Explore the Gray-Scott model on VisualPDE - **Turing systems.** Try **Schnakenberg** or **Brusselator**; even **\u201cTuring on Turing\u201d**\u2014use an image/webcam as spatial heterogeneity to watch your face turn into spots and stripes.",
+    "url": "https://blogs.comphy-lab.org/Blog/visual-pdes/#pattern-formation-spots-stripes-labyrinths",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "Visual pdes - Environment: landscapes come alive",
+    "content": "- [Dryland vegetation (Klausmeier):](https://visualpde.com/mathematical-biology/vegetation-patterns.html) Add a rainfall gradient on a slope and watch **tiger\u2011bush stripes** emerge, rotate, or break up. - [Urban flooding (Oxford):](https://visualpde.com/visual-stories/flooding) A LiDAR\u2011based elevation map lets you \u201cpour\u201d water, adjust river inflow, and even \u201cdig\u201d diversion channels\u2014an intuitive sandbox for flood intuition.",
+    "url": "https://blogs.comphy-lab.org/Blog/visual-pdes/#environment-landscapes-come-alive",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "Visual pdes - Health: waves of life and risk",
+    "content": "- **FitzHugh\u2013Nagumo model.** Visualize **spiral waves** and their competition with homogeneous oscillations\u2014an accessible window into arrhythmia\u2011like dynamics. FitzHugh\u2013Nagumo model - [Airborne virus story:](https://visualpde.com/visual-stories/airborne-infections) Toggle ventilation to see how airflow reshapes indoor concentration patterns; an interactive Plus Magazine feature showcased this beautifully.",
+    "url": "https://blogs.comphy-lab.org/Blog/visual-pdes/#health-waves-of-life-and-risk",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "Visual pdes - Physics & beyond",
+    "content": "- **Kuramoto\u2013Sivashinsky.** A classic spatiotemporal chaos demo in a few lines. Kuramoto\u2013Sivashinsky equation - **Cahn\u2013Hilliard.** Phase separation that coarsens over time. Cahn\u2013Hilliard equation _(All available as ready\u2011to\u2011run examples.)_ > [!note] Why this matters for learning > Immediate, visual feedback **builds intuition** for symmetry breaking, instability, and nonlinearity\u2014concepts that are hard to \u201csee\u201d in static notes. In classrooms and outreach, embedded sims consistently boost engagement.",
+    "url": "https://blogs.comphy-lab.org/Blog/visual-pdes/#physics-beyond",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "Visual pdes - Where VisualPDE fits in the tool landscape",
+    "content": "- **COMSOL-type codes:** good for engineering detail and complex 3D geometries, but closed sourced which is often a deal breaker for reproducibility. - **MATLAB / Mathematica:** great for coding bespoke solvers and symbolic work; less immediate for **shareable, interactive** experiments, also closed sourced. - **Open source codes** like [[Basilisk101/0-README|Basilisk C]], [OpenFOAM](https://www.openfoam.com/), [Pyoomph](https://pyoomph.github.io/)**: Open source, high precision, but heavy weight \u2014 not ideal for easily sharing. **VisualPDE fills the gap:** frictionless, **free**, shareable, and powerful enough for **research prototyping** and **teaching**\u2014in a browser.",
+    "url": "https://blogs.comphy-lab.org/Blog/visual-pdes/#where-visualpde-fits-in-the-tool-landscape",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "Visual pdes - Community, credibility, and what\u2019s next",
+    "content": "- The site and solver details are openly documented; the **codebase** is on [GitHub](https://github.com/Pecnut/visual-pde). - VisualPDE has featured in [Chalkdust](https://chalkdustmagazine.com/regulars/on-the-cover/visual-pde/) and in [Plus magazine](https://plus.maths.org/content/playing-visualpde) (with interactive articles/podcasts), and a [peer\u2011reviewed BMB paper](https://doi.org/10.1007/s11538-023-01218-4) provides technical and pedagogical context. - **Roadmap:** continued performance and usability improvements, and work toward a **Julia\u2011based** companion for larger or more complex studies\u2014all while keeping interactivity at the core.",
+    "url": "https://blogs.comphy-lab.org/Blog/visual-pdes/#community-credibility-and-whats-next",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "Visual pdes - Get started",
+    "content": "1. **Visit** [visualpde.com](https://visualpde.com) \u2192 **Explore** an example that catches your eye (waves, epidemics, ecology). 2. **Play:** - Press **pause** and **paint** an initial condition. - Add a **slider** for a parameter (`a in [0,1]`) and watch the behavior shift. - Flip the **time\u2011stepping** scheme (try RK4) and compare stability. 3. **Share or embed** what you made (short link or iframe), or record a short clip for your slides.",
+    "url": "https://blogs.comphy-lab.org/Blog/visual-pdes/#get-started",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "Visual pdes - The big picture: VisualPDE **democratizes** a...",
+    "content": "VisualPDE **democratizes** a language used across science\u2014**PDEs**\u2014by making them **visible, tactile, and shareable**. You can **draw** a hypothesis, **nudge** a parameter, and **see** the consequences in seconds. That shift\u2014from static math to **interactive exploration**\u2014is why this tool resonates in classrooms, labs, and public science alike. Open your browser; the canvas is already waiting. _Acknowledgements & sources:_ this post integrates and cites the VisualPDE paper[^1], documentation[^2], and example library (open source, with extensive user\u2011guide material and \"Visual Stories\").",
+    "url": "https://blogs.comphy-lab.org/Blog/visual-pdes/#the-big-picture",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "Visual pdes - The big picture: Context",
+    "content": "Also see: [https://visualpde.com/about/](https://visualpde.com/about/). > [!significance]- Metadata > Author:: [Vatsal Sanjay](https://comphy-lab.org/VatsalSy) > Date published:: Oct 1, 2025 > [!meta] Back to main website > [Home](https://comphy-lab.org/), [Team](https://comphy-lab.org/team), [Research](https://comphy-lab.org/research), [Github](https://github.com/comphy-lab), [Blogs](https://blogs.comphy-lab.org) [^1]: Walker, B. J., Townsend, A. K., Chudasama, A. K., & Krause, A. L. (2023). VisualPDE: rapid interactive simulations of partial differential equations. Bull. Math. Biol., 85(11), 113. [^2]: https://visualpde.com/user-guide",
+    "url": "https://blogs.comphy-lab.org/Blog/visual-pdes/#the-big-picture",
     "type": "blog_section",
     "priority": 3
   },
