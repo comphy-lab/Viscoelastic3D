@@ -718,16 +718,16 @@
     "priority": 3
   },
   {
-    "title": "0_readme - Computational tools & visualization:",
-    "content": "2025-10-01 [[2025-visual-pdes]]: Interactive browser-based PDE simulator - exploring pattern formation, reaction-diffusion systems, and mathematical visualization through GPU-accelerated simulations. A \"Desmos for PDEs\" that runs in your browser.",
-    "url": "https://blogs.comphy-lab.org/0_README/#computational-tools-visualization",
+    "title": "0_readme - Laser-droplet interactions:",
+    "content": "2025-10-06 [[2025-Curvature-Inversion-in-Laser\u2011Struck-Droplets]]: Understanding how laser-induced pressure impulses control droplet sheet curvature in EUV lithography - from raised-cosine impulses to forward-bending sheets in tin microdroplets.",
+    "url": "https://blogs.comphy-lab.org/0_README/#laser-droplet-interactions",
     "type": "blog_section",
     "priority": 3
   },
   {
-    "title": "0_readme - Laser-droplet interactions:",
-    "content": "2025-10-06 [[2025-Curvature-Inversion-in-Laser\u2011Struck-Droplets]]: Understanding how laser-induced pressure impulses control droplet sheet curvature in EUV lithography - from raised-cosine impulses to forward-bending sheets in tin microdroplets.",
-    "url": "https://blogs.comphy-lab.org/0_README/#laser-droplet-interactions",
+    "title": "0_readme - Computational tools & visualization:",
+    "content": "2025-10-01 [[2025-visual-pdes]]: Interactive browser-based PDE simulator - exploring pattern formation, reaction-diffusion systems, and mathematical visualization through GPU-accelerated simulations. A \"Desmos for PDEs\" that runs in your browser.",
+    "url": "https://blogs.comphy-lab.org/0_README/#computational-tools-visualization",
     "type": "blog_section",
     "priority": 3
   },
@@ -754,14 +754,14 @@
   },
   {
     "title": "0_readme - H-B formulation:",
-    "content": "2024-12-31 [[Herschel\u2013Bulkley formulation]]: Mathematical formulation of the Herschel-Bulkley model for non-Newtonian flows, with emphasis on yield stress fluids.",
+    "content": "2024-12-31 [[2025-Herschel\u2013Bulkley-formulation]]: Mathematical formulation of the Herschel-Bulkley model for non-Newtonian flows, with emphasis on yield stress fluids.",
     "url": "https://blogs.comphy-lab.org/0_README/#h-b-formulation",
     "type": "blog_section",
     "priority": 3
   },
   {
     "title": "0_readme - Gauss' Law:",
-    "content": "2025-01-21 [[Gauss law of Electrostatics]]: Analysis of electric field flux through different surfaces using Gauss's law, with visual demonstrations.",
+    "content": "2025-01-21 [[Gauss-law-of-Electrostatics]]: Analysis of electric field flux through different surfaces using Gauss's law, with visual demonstrations.",
     "url": "https://blogs.comphy-lab.org/0_README/#gauss-law",
     "type": "blog_section",
     "priority": 3
@@ -791,48 +791,6 @@
     "title": "0_readme - Contributing: Choose an option...",
     "content": "Choose an option below: - [\ud83d\udde3\ufe0f Request a new blog topic](https://github.com/comphy-lab/CoMPhy-Lab-Blogs/issues/new?template=blog_topic_request.md&labels=blog-request,enhancement) - [\ud83d\udcda Request documentation](https://github.com/comphy-lab/CoMPhy-Lab-Blogs/issues/new?template=documentation_request.md&labels=documentation) - [\ud83d\udd0d Report content correction](https://github.com/comphy-lab/CoMPhy-Lab-Blogs/issues/new?template=content_correction.md&labels=correction) 2. **Pull Requests**: Want to contribute directly? - Fork the repository - Make your changes (it can simply be correcting grammar or making a new post - simply write in plain text or markdown format and add it to the root folder). - Submit a pull request with a clear description of your changes Visit our [GitHub repository](https://github.com/comphy-lab/CoMPhy-Lab-Blogs) to get started. --- *Note: This documentation is maintained by the CoMPhy Lab team and is regularly updated with our latest research findings and computational methods.* > [!meta] Back to main website > [Home](https://comphy-lab.org/), [Team](https://comphy-lab.org/team), [Research](https://comphy-lab.org/research), [Github](https://github.com/comphy-lab)",
     "url": "https://blogs.comphy-lab.org/0_README/#contributing",
-    "type": "blog_section",
-    "priority": 3
-  },
-  {
-    "title": "Bursting bubbles complex - Introduction",
-    "content": "Bubble bursting at the liquid\u2013air interface is a ubiquitous phenomenon. Whether in a glass of champagne, a carbonated beverage, or a natural setting (e.g., mudpots, ocean spray), bubbles rise due to buoyancy and eventually rupture at the free surface. Upon bursting, the cavity created in the free surface collapses, generating jets and ejected droplets. These droplets play important roles in: - **Aromatic transport** in champagne and sparkling beverages. - **Pathogen and aerosol spread** in contaminated water or biological fluids (coughing, sneezing). - **Cloud formation** through sea spray in the atmosphere. - **Geophysical processes**, such as mudpots or volcanic lakes involving complex rheology.",
-    "url": "https://blogs.comphy-lab.org/Bursting-bubbles-complex/#introduction",
-    "type": "blog_section",
-    "priority": 3
-  },
-  {
-    "title": "Bursting bubbles complex - The Phenomenon",
-    "content": "When the bubble film ruptures, a \u201chole\u201d forms in the thin liquid interface. Surface tension drives capillary waves that converge at the bottom of the cavity, shooting liquid upward in a narrow jet. This jet eventually breaks into droplets, as observed in: - **Champagne**: Enhancing aroma and flavor perception. - **Contaminated water**: Ejecting micro-droplets that can carry pathogens. - **Viscoplastic mud**: Where the yield stress of the medium significantly alters jet formation and droplet size. - **Viscoelastic fluids**: Such as mucosalivary fluids during sneezing or coughing. Extensive studies have addressed bubble bursting in Newtonian fluids (e.g., water). However, **non-Newtonian media**\u2014including **viscoplastic** (mud, clay suspensions) and **viscoelastic** (polymeric solutions, mucosal fluids)\u2014pose open research questions due to their complex rheological behavior.",
-    "url": "https://blogs.comphy-lab.org/Bursting-bubbles-complex/#the-phenomenon",
-    "type": "blog_section",
-    "priority": 3
-  },
-  {
-    "title": "Bursting bubbles complex - Proposed Approach: This combined proposal...",
-    "content": "This combined proposal integrates numerical simulations with potential experimental validation to capture the entire process: 1. **Fundamental Two-Phase Flow** - Implement and validate two-phase flow simulations (e.g., in [Basilisk C](http://basilisk.fr)) for bubble dynamics, jet formation, and droplet ejection in Newtonian fluids. 2. **Non-Newtonian Rheology** - Extend the code to handle **generalized Newtonian** and **viscoelastic** models. - Explore how capillary waves and cavity collapse are altered by viscoplastic or viscoelastic effects. 3. **Comparison & Validation** - Compare numerical results against known scaling laws [e.g., Duchemin et al. (2002), Walls et al. (2015), Deike et al. (2018)] and experimental data from ongoing parallel experiments. 4. **Applications & Implications** - Relate findings to **aroma transport** in champagne, **aerosol generation** in pathogen-laden fluids, and **cloud formation** via marine aerosol. - Draw analogies to droplet formation in **coughing/sneezing**, focusing on the role of viscoelasticity in droplet sizes and distribution.",
-    "url": "https://blogs.comphy-lab.org/Bursting-bubbles-complex/#proposed-approach",
-    "type": "blog_section",
-    "priority": 3
-  },
-  {
-    "title": "Bursting bubbles complex - Skills & What You Will Learn",
-    "content": "- **Fluid Dynamics Fundamentals** Develop an in-depth understanding of multiphase flows, capillary-driven phenomena, and wave\u2013interface interactions. - **Rheology** Learn how non-Newtonian properties (viscoplasticity, viscoelasticity) influence flow and droplet formation. - **Computational Techniques** Gain experience using open-source codes (e.g., Basilisk C) for high-resolution simulations, parameter sweeps, and data analysis. - **Collaboration** Work alongside experimentalists, compare numerical and laboratory results, and interact with theorists modeling related flows.",
-    "url": "https://blogs.comphy-lab.org/Bursting-bubbles-complex/#skills-what-you-will-learn",
-    "type": "blog_section",
-    "priority": 3
-  },
-  {
-    "title": "Bursting bubbles complex - Supervision",
-    "content": "| **Supervisor** | **Email** | **Office** | |-----------------------------|---------------------------------------------|---------------------------| | **Ayush Dixit** | [a.k.dixit@utwente.nl](mailto:a.k.dixit@utwente.nl) | Meander 250 | | **Coen Verschuur** | [c.i.verschuur@utwente.nl](mailto:c.i.verschuur@utwente.nl) | Meander 114B | | **Dr. Vatsal Sanjay** | [vatsalsanjay@gmail.com](mailto:vatsalsanjay@gmail.com) | Meander 246B | | **Dr. Alexandros Oratis** | [a.t.oratis@utwente.nl](mailto:a.t.oratis@utwente.nl) | TU Delft | | **Assis. Prof. Dr. Maziyar (Mazi) Jalaal** | [m.jalaal@uva.nl](mailto:m.jalaal@uva.nl) | University of Amsterdam | | **Prof. Dr. Detlef Lohse** | [d.lohse@utwente.nl](mailto:d.lohse@utwente.nl) | Meander 261 | Feel free to reach out to any of the listed supervisors for more details.",
-    "url": "https://blogs.comphy-lab.org/Bursting-bubbles-complex/#supervision",
-    "type": "blog_section",
-    "priority": 3
-  },
-  {
-    "title": "Bursting bubbles complex - Key References",
-    "content": "- Deike, L., et al. (2018). *Dynamics of jets produced by bursting bubbles.* - Duchemin, L., et al. (2002). *Jet formation in bubble bursting.* - Ghabache, E., et al. (2016). *Evaporation of droplets from bursting bubbles.* - Gordillo, J. M. (2019). *Capillary waves and jet formation in bubble collapse.* - Lhuissier, H., & Villermaux, E. (2012). *Bursting bubble film droplets.* - Walls, P. L. L., et al. (2015). *Jet drops from bursting bubbles: How gravity and viscosity couple to inhibit droplet production.* - Walls, A. C., et al. (2017). *Viscoelastic effects in droplet formation.* - Bourouiba, L. (2021). *Fluid dynamics of disease transmission.* - Sanjay, V., Lohse, D., & Jalaal, M. (2021). *Non-Newtonian bubble collapse in mudpots.*",
-    "url": "https://blogs.comphy-lab.org/Bursting-bubbles-complex/#key-references",
     "type": "blog_section",
     "priority": 3
   },
@@ -917,97 +875,6 @@
     "title": "0_todo blog public - 2017",
     "content": "- [ ] **Formation of liquid chain by collision of two laminar jets** Link: [DOI](https://doi.org/10.1063/1.4998288) - [ ] **On air entrainment in a water pool by impingement of a jet** Link: [DOI](https://doi.org/10.1002/aic.15828) --- > [!meta] Back to main website > [Home](https://comphy-lab.org/), [Team](https://comphy-lab.org/team), [Research](https://comphy-lab.org/research), [Github](https://github.com/comphy-lab)",
     "url": "https://blogs.comphy-lab.org/0_ToDo-Blog-public/#2017",
-    "type": "blog_section",
-    "priority": 3
-  },
-  {
-    "title": "2025 jfm viscoelatic worthington jets - Viscoelastic Worthington Jets & Droplets: Breaking the Surface of Bubble Physics: > [!abstract] TL;DR...",
-    "content": "> [!abstract] TL;DR > When bubbles burst at a liquid surface, they create jets and droplets through a fascinating physical process. Our research reveals how adding polymers to the liquid dramatically changes this behavior, creating three distinct regimes depending on elasticity and relaxation time. These findings have implications for everything from oceanic aerosols to biomedical applications and industrial processes. Have you ever watched a bubble pop at the surface of your sparkling water or champagne? This seemingly simple event $-$ a bubble bursting $-$ conceals rich physics that connects to remarkably diverse phenomena, from ocean spray formation to pathogen transmission in respiratory droplets. As a fluid dynamicist studying interfacial phenomena, I've long been fascinated by what happens in the fleeting moments after a bubble bursts. When a bubble at a liquid\u2013air interface bursts, it often shoots out a thin, fast jet of liquid \u2013 a striking phenomenon known as a _Worthington jet_.",
-    "url": "https://blogs.comphy-lab.org/2025-JFM-Viscoelatic-Worthington-jets/#viscoelastic-worthington-jets-droplets-breaking-the-surface-of-bubble-physics",
-    "type": "blog_section",
-    "priority": 3
-  },
-  {
-    "title": "2025 jfm viscoelatic worthington jets - Viscoelastic Worthington Jets & Droplets: Breaking the Surface of Bubble Physics: This process isn\u2019t...",
-    "content": "This process isn\u2019t just a neat visual; it plays a role in everything from ocean spray to the fizz in a glass of champagne. In a typical **Newtonian** fluid like water (where the liquid\u2019s viscosity is constant), a bursting bubble leads to an upward jet driven by surface tension. As the jet rises, it can break up into one or multiple tiny droplets due to the Rayleigh\u2013Plateau instability (the same mechanism that causes a stream of water to form droplets). This is the classic picture that decades of research established for bursting bubbles in simple liquids. But what happens if the liquid is not so simple \u2013 say it contains a bit of polymer or has elastic properties? It turns out the story of bubble bursting gets a lot more interesting, which is what our study explores.",
-    "url": "https://blogs.comphy-lab.org/2025-JFM-Viscoelatic-Worthington-jets/#viscoelastic-worthington-jets-droplets-breaking-the-surface-of-bubble-physics",
-    "type": "blog_section",
-    "priority": 3
-  },
-  {
-    "title": "2025 jfm viscoelatic worthington jets - The Phenomenon: More Than Just a Pop",
-    "content": "When a bubble bursts at a liquid surface, it doesn't simply disappear. Instead, a complex sequence unfolds in milliseconds: 1. The bubble's thin film ruptures[^1][^2] 2. Capillary waves travel along the cavity surface[^3] 3. These waves converge at the bottom of the cavity 4. This convergence creates a focused flow that forms an upward-shooting \"Worthington jet\" [^4][^5][^6] 5. This jet may break into droplets that escape into the air While this process is relatively well-understood for simple liquids like water (Newtonian fluids), many real-world scenarios involve liquids containing polymers\u2014from biological fluids to industrial solutions. Our research investigated how these polymers fundamentally alter the bubble bursting dynamics. See [[2025-History-Worthington-jets-from-bursting-bubbles]] for historical context.",
-    "url": "https://blogs.comphy-lab.org/2025-JFM-Viscoelatic-Worthington-jets/#the-phenomenon-more-than-just-a-pop",
-    "type": "blog_section",
-    "priority": 3
-  },
-  {
-    "title": "2025 jfm viscoelatic worthington jets - The Physics at Play: A Dance of Forces",
-    "content": "> [!note] What makes a fluid viscoelastic? > Viscoelastic fluids contain polymers\u2014long molecular chains that introduce elastic behavior. Unlike ordinary liquids that simply flow, these fluids partially \"remember\" their shape when deformed, similar to a memory foam mattress, but in liquid form! The addition of polymers introduces two key parameters beyond the conventional Ohnesorge number (which relates viscous forces to inertial and surface tension forces): 1. **Elastocapillary number** $Ec$: The ratio of elastic modulus to Laplace pressure, measuring the strength of elastic effects. $$Ec = \\frac{GR_0}{\\gamma} $$ 2. **Deborah number** $De$: The ratio of relaxation time to process time, measuring the fluid's \"memory\". $$De = \\frac{\\lambda}{\\sqrt{\\rho R_0^3/\\gamma}}$$ > [!note] Note: > - Higher $Ec$ means stronger elastic effects > - Higher $De$ means the fluid \"remembers\" deformations longer",
-    "url": "https://blogs.comphy-lab.org/2025-JFM-Viscoelatic-Worthington-jets/#the-physics-at-play-a-dance-of-forces",
-    "type": "blog_section",
-    "priority": 3
-  },
-  {
-    "title": "2025 jfm viscoelatic worthington jets - Key Discoveries: Three Distinct Regimes: Our most fascinating...",
-    "content": "Our most fascinating finding was the emergence of three distinct regimes: > [!important] The Three Regimes > > 1. **Jets forming droplets**: At low elasticity or fast relaxation times, similar to Newtonian behavior but with modified dynamics > 2. **Jets without droplet formation**: At intermediate elasticity, where polymeric stresses suppress droplet breakup > 3. **Complete jet suppression**: At high elasticity, where polymer stresses prevent jet formation entirely What's particularly interesting is how these regimes depend on the Deborah number. For high De (approaching infinity), the viscoelastic medium preserves memory of deformations, and transitions occur at sharp Ec thresholds. For low De (approaching zero), the system behaves more like a Newtonian fluid with enhanced effective viscosity. The critical thresholds we identified provide fundamental insights into when and how polymers influence Worthington jets and droplets.",
-    "url": "https://blogs.comphy-lab.org/2025-JFM-Viscoelatic-Worthington-jets/#key-discoveries-three-distinct-regimes",
-    "type": "blog_section",
-    "priority": 3
-  },
-  {
-    "title": "2025 jfm viscoelatic worthington jets - Key Discoveries: Three Distinct Regimes: Remarkably, while viscoelasticity...",
-    "content": "Remarkably, while viscoelasticity significantly alters the jet dynamics, it doesn't affect the capillary wave speed!",
-    "url": "https://blogs.comphy-lab.org/2025-JFM-Viscoelatic-Worthington-jets/#key-discoveries-three-distinct-regimes",
-    "type": "blog_section",
-    "priority": 3
-  },
-  {
-    "title": "2025 jfm viscoelatic worthington jets - Implementation Details: ElastoFlow Framework",
-    "content": "To conduct these simulations, we developed a framework we call \"ElastoFlow\" for the Basilisk C environment. The implementation handles the complex interplay between viscoelasticity, surface tension, and inertia through: - Volume of Fluid (VoF) method for interface tracking - Log-conformation approach for numerical stability with viscoelastic constitutive models - Adaptive Mesh Refinement for efficiently capturing multiscale dynamics > [!tip] Technical Deep Dive Our computational approach overcomes the notorious \"high Weissenberg number problem\" that has historically plagued viscoelastic simulations. The log-conformation formulation we employed maintains the positive-definiteness of the conformation tensor, enabling stable simulations even in highly elastic regimes.",
-    "url": "https://blogs.comphy-lab.org/2025-JFM-Viscoelatic-Worthington-jets/#implementation-details-elastoflow-framework",
-    "type": "blog_section",
-    "priority": 3
-  },
-  {
-    "title": "2025 jfm viscoelatic worthington jets - Broader Implications: Beyond the Laboratory",
-    "content": "This research has implications across several domains: - **Oceanic aerosol formation**: Understanding how polymers in seawater affect bubble bursting could improve climate models - **Biomedical applications**: Insights into how biological fluids produce droplets could help control pathogen transmission - **Industrial processes**: Better design of polymer-containing sprays and foams The ability to predict and potentially control droplet formation by adjusting polymer properties opens new avenues for engineering applications.",
-    "url": "https://blogs.comphy-lab.org/2025-JFM-Viscoelatic-Worthington-jets/#broader-implications-beyond-the-laboratory",
-    "type": "blog_section",
-    "priority": 3
-  },
-  {
-    "title": "2025 jfm viscoelatic worthington jets - For Fellow Researchers",
-    "content": "If you're interested in exploring this topic further, our simulation code is available on GitHub. We've designed ElastoFlow to be extensible and adaptable to various viscoelastic problems beyond bubble bursting. The framework includes: - Comprehensive implementation of the Oldroyd-B model - Adaptable boundary conditions - Detailed error controls for fluid properties - Streamlined workflows for high-performance computing environments We're continuing to develop this research direction, and we welcome collaborations and extensions of this work.",
-    "url": "https://blogs.comphy-lab.org/2025-JFM-Viscoelatic-Worthington-jets/#for-fellow-researchers",
-    "type": "blog_section",
-    "priority": 3
-  },
-  {
-    "title": "2025 jfm viscoelatic worthington jets - Final Thoughts: What I find...",
-    "content": "What I find most fascinating about this study is how the addition of polymers\u2014molecular chains that introduce elasticity\u2014can fundamentally transform fluid behavior in ways that aren't immediately intuitive. A small amount of polymer can completely suppress droplet formation, or in some regimes, enhance it. This work highlights the rich interplay between elasticity, viscosity, and surface tension at fluid interfaces. Each time I watch a bubble burst in slow motion with our simulations, I'm reminded of how complex and beautiful fluid dynamics can be, even in seemingly simple phenomena we observe every day. For those interested in the technical details, please check out our paper and the available code repositories. And as always, I welcome questions and discussions about this fascinating corner of fluid dynamics! > [!faq] Original Paper > A. Dixit, A. Oratis, K. Zinelis, D. Lohse & V. Sanjay, Viscoelastic Worthington jets and droplets produced by bursting bubbles, J.",
-    "url": "https://blogs.comphy-lab.org/2025-JFM-Viscoelatic-Worthington-jets/#final-thoughts",
-    "type": "blog_section",
-    "priority": 3
-  },
-  {
-    "title": "2025 jfm viscoelatic worthington jets - Final Thoughts: Context",
-    "content": "Fluid Mech., 1010, A2 (2025) [Open Access](https://doi.org/10.1017/jfm.2025.237).",
-    "url": "https://blogs.comphy-lab.org/2025-JFM-Viscoelatic-Worthington-jets/#final-thoughts",
-    "type": "blog_section",
-    "priority": 3
-  },
-  {
-    "title": "2025 jfm viscoelatic worthington jets - Videos: Context",
-    "content": "--- [^1]: V. Sanjay, U. Sen, P. Kant & D. Lohse, Taylor--Culick retractions and the influence of the surroundings, J. Fluid Mech., 948, A14 (2022), [doi: 10.1017/jfm.2022.671](https://doi.org/10.1017/jfm.2022.671) [^2]: E. Villermaux, Fragmentation versus cohesion, J. Fluid Mech., 898, P1 (2020), [doi: 10.1017/jfm.2020.366](https://doi.org/10.1017/jfm.2020.366) [^3]: V. Sanjay, D. Lohse & M. Jalaal, Bursting bubble in a viscoplastic medium, J. Fluid Mech., 922, A2 (2021), [doi: 10.1017/jfm.2021.489](https://doi.org/10.1017/jfm.2021.489) [^4]: A. M. Worthington, On the forms assumed by drops of liquids falling vertically on a horizontal plate, Proc. R. Soc. London A, 25, 261-272 (1877), [doi: 10.1098/rspl.1876.0048](https://doi.org/10.1098/rspl.1876.0048) [^5]: A. M. Worthington, A second paper on the forms assumed by drops of liquids falling vertically on a horizontal plate, Proc. R. Soc. London, 25, 498-503 (1877), [doi: 10.1098/rspl.1876.0073](https://doi.org/10.1098/rspl.1876.0073) [^6]: A. M.",
-    "url": "https://blogs.comphy-lab.org/2025-JFM-Viscoelatic-Worthington-jets/#videos",
-    "type": "blog_section",
-    "priority": 3
-  },
-  {
-    "title": "2025 jfm viscoelatic worthington jets - Videos: Worthington, A study...",
-    "content": "Worthington, A study of splashes, London: Longman, Green and Co (1908), [link](https://bit.ly/Worthington-splash-book) --- > [!significance]- Metadata > Author:: [Vatsal Sanjay](https://vatsalsanjay.com) > Date published:: May 6, 2025 > [!meta] Back to main website > [Home](https://comphy-lab.org/), [Team](https://comphy-lab.org/team), [Research](https://comphy-lab.org/research), [Github](https://github.com/comphy-lab), [Blogs](https://blogs.comphy-lab.org)",
-    "url": "https://blogs.comphy-lab.org/2025-JFM-Viscoelatic-Worthington-jets/#videos",
     "type": "blog_section",
     "priority": 3
   },
@@ -1132,7 +999,7 @@
   },
   {
     "title": "Gaussian surface is very similar to the control volume in fluid mechanics - Gaussian surface is very similar to the control volume in fluid mechanics",
-    "content": "They are closely related in a mathematical sense. In [[Gauss law of Electrostatics|Gauss\u2019s law for electrostatics]], one picks a closed surface\u2014the Gaussian surface\u2014to evaluate the net electric flux and relate it to enclosed charge via the divergence theorem. In fluid mechanics, one defines a control volume (with a control surface) to analyze fluxes of mass, momentum, or energy. Both rely on the same underlying integral theorem (the divergence theorem) to connect fluxes through the surface to sources or sinks within the volume. The physical interpretations differ\u2014charge density for electromagnetism versus mass or momentum for fluid flow\u2014but the conceptual framework is very similar.",
+    "content": "They are closely related in a mathematical sense. In [[Gauss-law-of-Electrostatics|Gauss\u2019s law for electrostatics]], one picks a closed surface\u2014the Gaussian surface\u2014to evaluate the net electric flux and relate it to enclosed charge via the divergence theorem. In fluid mechanics, one defines a control volume (with a control surface) to analyze fluxes of mass, momentum, or energy. Both rely on the same underlying integral theorem (the divergence theorem) to connect fluxes through the surface to sources or sinks within the volume. The physical interpretations differ\u2014charge density for electromagnetism versus mass or momentum for fluid flow\u2014but the conceptual framework is very similar.",
     "url": "https://blogs.comphy-lab.org/_AtomicNotes/Gaussian surface is very similar to the control volume in fluid mechanics/#gaussian-surface-is-very-similar-to-the-control-volume-in-fluid-mechanics",
     "type": "blog_section",
     "priority": 3
@@ -1245,252 +1112,252 @@
   {
     "title": "Gauss law of electrostatics - Gauss law of electrostatics: > [!important]- Pre-requisites...",
     "content": "> [!important]- Pre-requisites > I assume a working knowledge of > * Electric field $\\vec{E}$. > * [[Geometric description of electric field]] > * [[What is electric field flux?]] > * What is the electric field created by a point change $q$? > $E = q/(4\\pi\\varepsilon_0r^2)$ > * [[Principle of superposition of electric fields]] > [!tldr] TL;DR > Gauss\u2019 law states that the net electric flux through any closed surface is proportional to the total charge enclosed inside it. Its integral form, $\\oint \\vec{E} \\cdot d\\vec{A} = q_{\\text{in}}/\\varepsilon_0$, is most practically used with high\u2010symmetry geometries (spherical, cylindrical, planar). Even though it might seem universal, using it directly for complex geometries often requires additional methods. The differential form, $\\vec{\\nabla} \\cdot \\vec{E} = \\rho/\\varepsilon_0$, underpins charge\u2010field relationships in Maxwell\u2019s equations.",
-    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Gauss law of Electrostatics/#gauss-law-of-electrostatics",
+    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Gauss-law-of-Electrostatics/#gauss-law-of-electrostatics",
     "type": "blog_section",
     "priority": 3
   },
   {
     "title": "Gauss law of electrostatics - Gauss law of electrostatics: Key insights include:...",
     "content": "Key insights include: _flux remains invariant if charges stay within the boundary_, and _external charges yield zero net flux through a given surface_. Applications to spherical shells, infinite planes, and wires highlight its computational utility. However, without symmetry, one typically reverts to direct integration or other approaches. Often, one of the first wonders students encounter in electrostatics is the deceptively simple yet powerful Gauss' law. I still recall my own initial surprise when I realized flux through any closed surface enclosing a single charge remained the same, no matter how oddly shaped that surface was. In this post, I hope to convey that same amazement while walking you through the essential details and derivations.",
-    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Gauss law of Electrostatics/#gauss-law-of-electrostatics",
+    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Gauss-law-of-Electrostatics/#gauss-law-of-electrostatics",
     "type": "blog_section",
     "priority": 3
   },
   {
     "title": "Gauss law of electrostatics - Question we ask: which of the following three surfaces will see the maximum flux of $\\vec{E}$ pass through itself?",
     "content": "![fig1](20250121002320090_Gauss%20law%20of%20Electrostatics.png) Fig. A cone, a sphere, and a batman symbol (enclose it in the front and the back) encircle a lonely charge of magnitude $q$. Which of the three will experience maximum eleectric field flux passing through them? This is perhaps the most counterintuitive result of the Gauss law. > [!question] Try it yourself > Instead of taking my (well, Gauss') word for it, try finding the flux through the cone and the circle by integrating the dot product of the local electric field and the area (note that for cone, we must account for both the lateral and the base area). Once you find the solution, make a PR at the GitHub repository please show all intermediate steps.",
-    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Gauss law of Electrostatics/#question-we-ask-which-of-the-following-three-surfaces-will-see-the-maximum-flux-of-vece-pass-through-itself",
+    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Gauss-law-of-Electrostatics/#question-we-ask-which-of-the-following-three-surfaces-will-see-the-maximum-flux-of-vece-pass-through-itself",
     "type": "blog_section",
     "priority": 3
   },
   {
     "title": "Gauss law of electrostatics - General form of Gauss' law",
     "content": "> [!tldr] Main statement of Gauss' law > The flux of electric field $\\vec{E}$ though a closed surface (known as the Gaussian surface) is equal to the amount of change enclosed by that surface. $\\int_A\\vec{E}\\cdot\\vec{n}dA = q_{\\text{in}}/\\varepsilon_0$, $\\vec{E}$ is the electric field, $n$ is the normal vector to the area element $dA$, $q_{\\text{in}}$ is the change enclosed inside the Gaussian surface and $\\varepsilon_0$ is the [[permittivity of free space]]. > * In the differential form, it is identical to: > $\\vec{\\nabla}\\cdot\\vec{E} = \\rho/\\varepsilon_0$, where $\\rho$ is the local electric changed density. Let us define the flux as: $$ \\Phi = \\int_A\\vec{E}\\cdot d\\vec{A} = \\int_A\\vec{E}\\cdot \\hat{n}dA $$ Then, $$ \\int_A\\vec{E}\\cdot \\hat{n}dA = \\frac{q_{\\text{in}}}{\\varepsilon_0} $$ Of course, $q_\\text{in}$ is $$ q_\\text{in} = \\int_A\\sigma dA = \\int_V\\rho dV, $$ where $\\sigma$ and $\\rho$ are the surface and volumetric change densities, respectively.",
-    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Gauss law of Electrostatics/#general-form-of-gauss-law",
+    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Gauss-law-of-Electrostatics/#general-form-of-gauss-law",
     "type": "blog_section",
     "priority": 3
   },
   {
     "title": "Gauss law of electrostatics - Proof:",
     "content": "> [!caution] > I leave it upto you to decide if the following derivations are the proofs or merely consistency checks for the Gauss' law.",
-    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Gauss law of Electrostatics/#proof",
+    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Gauss-law-of-Electrostatics/#proof",
     "type": "blog_section",
     "priority": 3
   },
   {
     "title": "Gauss law of electrostatics - Special case of spherical Gaussian surface enclosing a single charge:",
     "content": "![|500](20250121013316786_Gauss%20law%20of%20Electrostatics.png) Electric field by a point change: $$ \\vec{E} = \\frac{q}{4\\pi\\varepsilon_0r^2}\\hat{r} $$ Flux through a sphere of radius $r$, $$ \\Phi = E\\hat{r}\\cdot\\hat{r}A = EA = \\frac{q}{4\\pi\\varepsilon_0r^2}4\\pi r^2 = \\frac{q}{\\varepsilon_0} $$",
-    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Gauss law of Electrostatics/#special-case-of-spherical-gaussian-surface-enclosing-a-single-charge",
+    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Gauss-law-of-Electrostatics/#special-case-of-spherical-gaussian-surface-enclosing-a-single-charge",
     "type": "blog_section",
     "priority": 3
   },
   {
     "title": "Gauss law of electrostatics - Arbitary Gaussian surface enclosing a single charge:",
     "content": "![|750](20250121013334249_Gauss%20law%20of%20Electrostatics.png) Electric field by a point change: $$ \\vec{E} = \\frac{q}{4\\pi\\varepsilon_0r^2}\\hat{r} $$ Local flux at the indicated location: $$ d\\Phi = E\\hat{r}\\cdot\\hat{n}dA = \\frac{q}{4\\pi\\varepsilon_0r^2}\\cos\\alpha\\,dA = \\frac{q}{4\\pi\\varepsilon_0}\\frac{\\cos\\alpha\\,dA}{r^2} $$ Here, $\\cos\\alpha\\,dA/r^2 = d\\Omega$ is in fact the solid angle subtended by the local area element. $$ \\Phi = \\int d\\Phi = \\int_\\Omega\\frac{q}{4\\pi\\varepsilon_0}d\\Omega $$ The solid angle $\\Omega$ integrates to give $4\\pi$ resulting in $$ \\Phi = \\frac{q}{\\varepsilon_0} $$ ---",
-    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Gauss law of Electrostatics/#arbitary-gaussian-surface-enclosing-a-single-charge",
+    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Gauss-law-of-Electrostatics/#arbitary-gaussian-surface-enclosing-a-single-charge",
     "type": "blog_section",
     "priority": 3
   },
   {
     "title": "Gauss law of electrostatics - Consequences of Gauss' law: > [!danger] Displace...",
     "content": "> [!danger] Displace the charge all you want, it won\u2019t change the flux > The flux of $\\vec{E}$ only depends on the amount of charge contained inside a Gaussian surface and not on whether or not the charge is moving inside the space enclosed by this Gaussian surface. **Remarkable property:** If charges are moved around **but do not cross** the boundary of $A$, the flux of $E$ through $A$ remains **unchanged**. Despite this unchanging flux, the field $E$ itself can undergo substantial modifications everywhere else.",
-    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Gauss law of Electrostatics/#consequences-of-gauss-law",
+    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Gauss-law-of-Electrostatics/#consequences-of-gauss-law",
     "type": "blog_section",
     "priority": 3
   },
   {
     "title": "Gauss law of electrostatics - Consequences of Gauss' law: Conversely, if charges...",
     "content": "Conversely, if charges **do** cross the boundary of $A$, the flux through $A$ will generally change. > [!danger] A charge outside the Gaussian surface imparts net zero flux in that control surface > It is easier to see by construction that electric field lines coming out of a charge outside a Gaussian surface will pass straight through without creating any global flux. ![|750](20250121023006325_Gauss%20law%20of%20Electrostatics.png) > [!danger] On the impossibility of equilibrium in electrostatics In any electrostatic field, a charge cannot be in [stable equilibrium](https://en.wikipedia.org/wiki/Mechanical_equilibrium). A single point charge $q$ cannot remain in stable equilibrium under the electrostatic influence of other, fixed charges in vacuum. Can you think of a scenario? Say, we do. And now, let us enclose this $q$ within a small closed surface $A$. For $q$ to be in stable equilibrium, the net electric field from all other charges must point inward everywhere on $A$.",
-    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Gauss law of Electrostatics/#consequences-of-gauss-law",
+    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Gauss-law-of-Electrostatics/#consequences-of-gauss-law",
     "type": "blog_section",
     "priority": 3
   },
   {
     "title": "Gauss law of electrostatics - Consequences of Gauss' law: Such an inward...",
     "content": "Such an inward field is critical to create a restoring force for any small displacement of $q$. However, Gauss\u2019s theorem tells us that the total electric flux through $A$ must be zero if no net charge (creating this electrostatic field) is contained inside $A$. This zero flux requirement forces the field to have both inward and outward components on the surface, contradicting the need for a purely inward field. Hence, no purely electrostatic arrangement of external charges can hold a point charge in stable equilibrium in a vacuum. ![|250](20250121015925070_Gauss%20law%20of%20Electrostatics.png)",
-    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Gauss law of Electrostatics/#consequences-of-gauss-law",
+    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Gauss-law-of-Electrostatics/#consequences-of-gauss-law",
     "type": "blog_section",
     "priority": 3
   },
   {
     "title": "Gauss law of electrostatics - Symmetries to the rescue",
     "content": "Now, one of the best ways to make Gauss\u2019 law practical is by using symmetry arguments. Below are three major symmetry cases that come in handy.",
-    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Gauss law of Electrostatics/#symmetries-to-the-rescue",
+    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Gauss-law-of-Electrostatics/#symmetries-to-the-rescue",
     "type": "blog_section",
     "priority": 3
   },
   {
     "title": "Gauss law of electrostatics - Plannar symmetry",
     "content": "![|750](20250121033252912_Gauss%20law%20of%20Electrostatics.png) Consider an infinite sheet with uniform surface\u2010charge density $\\sigma$. By symmetry, the electric field must point perpendicular to the sheet and have the same magnitude on either side (left-right symmetry). Select a \"pillbox\" (a short cylinder) that straddles the sheet as your Gaussian surface. The flux then emerges through the two circular faces only; there is no flux through the curved surface because $\\vec{E}$ is parallel there. The integral form of Gauss\u2019s law yields $$ 2\\,E\\,A \\;=\\; \\frac{\\sigma\\,A}{\\varepsilon_0} $$ $$ \\quad\\Longrightarrow\\quad E \\;=\\; \\frac{\\sigma}{2\\,\\varepsilon_0}. $$ Hence, an infinite charged plane produces a constant electric field whose magnitude depends solely on $\\sigma$.",
-    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Gauss law of Electrostatics/#plannar-symmetry",
+    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Gauss-law-of-Electrostatics/#plannar-symmetry",
     "type": "blog_section",
     "priority": 3
   },
   {
     "title": "Gauss law of electrostatics - Special case:",
     "content": "![[plates.png]] When **two** parallel sheets carry equal and opposite surface\u2010charge densities $+\\sigma$ and $-\\sigma$, superposition implies that the fields from each sheet **add** in the region between them and **cancel** outside. Specifically, in the space between the plates, each sheet contributes $\\sigma/(2\\,\\varepsilon_0)$ in the **same** direction, giving a total $$ E_{\\text{between}} \\;=\\; \\frac{\\sigma}{\\varepsilon_0}. $$ Outside the plates, the fields from the two sheets have opposite directions and thus cancel to zero, assuming the plates are large compared to their separation. This configuration approximates the uniform field of a parallel\u2010plate capacitor.",
-    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Gauss law of Electrostatics/#special-case",
+    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Gauss-law-of-Electrostatics/#special-case",
     "type": "blog_section",
     "priority": 3
   },
   {
     "title": "Gauss law of electrostatics - Cyliindrical symmetry",
     "content": "![|750](20250121033734979_Gauss%20law%20of%20Electrostatics.png) Consider an infinitely long wire with a uniform linear charge density $\\lambda$. By symmetry, the electric field $\\vec{E}$ at distance $r$ from the wire must point radially outward and have constant magnitude on a coaxial cylindrical surface of radius $r$. Let us choose this coaxial cylinder as our Gaussian surface (length L). The flux is through the curved surface only; both end caps see $\\vec{E}$ parallel to their planes and hence yield no net contribution. Applying Gauss\u2019s law, $$ E \\,(2\\pi r L) \\;=\\; \\frac{\\lambda\\,L}{\\varepsilon_0} $$ $$\\quad\\Longrightarrow\\quad E \\;=\\; \\frac{\\lambda}{2\\pi \\varepsilon_0\\,r}. $$ The field diminishes as $1/r$ from the wire.",
-    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Gauss law of Electrostatics/#cyliindrical-symmetry",
+    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Gauss-law-of-Electrostatics/#cyliindrical-symmetry",
     "type": "blog_section",
     "priority": 3
   },
   {
     "title": "Gauss law of electrostatics - Spherical symmetry",
     "content": "Here, let us consider two cases: 1. uniformly charged sphere with charge density $\\rho$ and 2. a thin spherical shell with change $q$. Both have a radius of $a$. Also, assume $\\frac{4\\pi a^3}{3}\\rho = q$. ![|750](20250121035211075_Gauss%20law%20of%20Electrostatics.png)",
-    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Gauss law of Electrostatics/#spherical-symmetry",
+    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Gauss-law-of-Electrostatics/#spherical-symmetry",
     "type": "blog_section",
     "priority": 3
   },
   {
     "title": "Gauss law of electrostatics - For $r > a$:",
     "content": "Here, the Gaussian surface contains the entire spherical object inside it. So, in both cases, the Gaussian surface sees a total charge of $q$. Consequently, $$ E = \\frac{q}{4\\pi\\varepsilon_0r^2} $$",
-    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Gauss law of Electrostatics/#for-r-a",
+    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Gauss-law-of-Electrostatics/#for-r-a",
     "type": "blog_section",
     "priority": 3
   },
   {
     "title": "Gauss law of electrostatics - For $r < a$:",
     "content": "* *Shell:* Charge enclosed inside the shell for $r [!note] Note > To play with the above plots, see: [[Gauss-law-of-electrostatics.ipynb]]",
-    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Gauss law of Electrostatics/#for-r-a",
+    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Gauss-law-of-Electrostatics/#for-r-a",
     "type": "blog_section",
     "priority": 3
   },
   {
     "title": "Gauss law of electrostatics - A critique of the Gauss' law in the non-local form",
     "content": "One might wonder: is Gauss' law too good to be true for complicated geometries? Below, I share a brief critique.",
-    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Gauss law of Electrostatics/#a-critique-of-the-gauss-law-in-the-non-local-form",
+    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Gauss-law-of-Electrostatics/#a-critique-of-the-gauss-law-in-the-non-local-form",
     "type": "blog_section",
     "priority": 3
   },
   {
     "title": "Gauss law of electrostatics - Illusion of Generality",
     "content": "The integral form, $$ \\int_A \\vec{E} \\cdot d\\vec{A} = \\frac{q_\\text{in}}{\\varepsilon_0}, $$ can give a misleading impression that it solves _any_ electrostatic field problem elegantly. While it is indeed general as a statement of charge\u2013field relationships, _practical_ usage relies heavily on symmetry arguments to simplify the surface integral.",
-    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Gauss law of Electrostatics/#illusion-of-generality",
+    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Gauss-law-of-Electrostatics/#illusion-of-generality",
     "type": "blog_section",
     "priority": 3
   },
   {
     "title": "Gauss law of electrostatics - Dependence on Symmetry",
     "content": "Gauss\u2019s integral theorem is most effective when the field and geometry exhibit high symmetry (e.g., spherical, cylindrical, or planar). In such cases, one can choose a closed surface $A$ where the electric field $\\vec{E}$ is either constant in magnitude or zero over different parts of the surface. This makes the flux integral collapse to a simple multiplication, thus giving a direct link between enclosed charge and field magnitude.",
-    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Gauss law of Electrostatics/#dependence-on-symmetry",
+    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Gauss-law-of-Electrostatics/#dependence-on-symmetry",
     "type": "blog_section",
     "priority": 3
   },
   {
     "title": "Gauss law of electrostatics - Limitations in Complex Geometries",
     "content": "For configurations lacking these symmetries\u2014such as a uniformly charged disk or other irregular charge distributions\u2014no straightforward closed surface simplifies the flux integral. In these scenarios, one must resort to more laborious methods, like direct integration of Coulomb\u2019s law or employing the local (differential) form combined with suitable boundary conditions. > [!faq] Note: > Of course, let us be very clear that the above critique is only about the non-local form (or integral formulation) of Gauss' law. If we use the more general differential form (or together with the Maxwell's laws of electromagnetism, the above limitations do not apply).",
-    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Gauss law of Electrostatics/#limitations-in-complex-geometries",
+    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Gauss-law-of-Electrostatics/#limitations-in-complex-geometries",
     "type": "blog_section",
     "priority": 3
   },
   {
     "title": "Gauss law of electrostatics - Some food for throught: Gauss' law is...",
     "content": "Gauss' law is agnostic to the number of dimensions in the problem. In this note, we mainly looked at cases in 3D. Now, think about living in a 2D space. Answer the following: 1. How does the Coulomb's law change in 2D? 2. Adapt Gauss\u2019s law to a 2D problem, where **flux** becomes a line integral around a closed loop. Consider a point charge qqq in a 2D plane. Choose a circle of radius $r$ around the charge as the \"Gaussian\" boundary. Compute the total radial component of $\\vec{E}$ along this circle and show that it is proportional to $q/\\varepsilon_0$ (with an appropriate constant reflecting 2D geometry). 3. For a hypothetical \"4D\" space, the electric field of a point charge might scale differently with distance.",
-    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Gauss law of Electrostatics/#some-food-for-throught",
+    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Gauss-law-of-Electrostatics/#some-food-for-throught",
     "type": "blog_section",
     "priority": 3
   },
   {
     "title": "Gauss law of electrostatics - Some food for throught: Use dimensional analysis...",
     "content": "Use dimensional analysis to argue how Gauss\u2019s law might look there, and what the \"closed surface\u201d would mean in 4D. **Hint:** Highlight the dimension-agnostic idea that flux = enclosed charge/$\\varepsilon_0$\u200b remains structurally the same, although radius-dependencies of $\\vec{E}$ and definitions of \"surface\" change with dimension. **Note:** To submit answers to the questions above or in case you find a mistake in this note, please feel free to open a pull request at the repository: [link to repository](https://github.com/comphy-lab/CoMPhy-Lab-Blogs).",
-    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Gauss law of Electrostatics/#some-food-for-throught",
+    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Gauss-law-of-Electrostatics/#some-food-for-throught",
     "type": "blog_section",
     "priority": 3
   },
   {
     "title": "Gauss law of electrostatics - Integral form:",
     "content": "In this post, we encountered Gauss law in integral form as, $$ \\oint_A \\vec{E} \\cdot d\\vec{A} \\;=\\; \\frac{q_{\\text{in}}}{\\epsilon_0}, $$ where $\\vec{E}$ is the electric field, $q_{\\text{in}}$ is the total charge enclosed by $A$, and $\\epsilon_0$ is the permittivity of free space.",
-    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Gauss law of Electrostatics/#integral-form",
+    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Gauss-law-of-Electrostatics/#integral-form",
     "type": "blog_section",
     "priority": 3
   },
   {
     "title": "Gauss law of electrostatics - Relate enclosed charge to charge density.",
     "content": "The enclosed charge can be expressed in terms of the volume charge density $\\rho$ using a volume integral: $$ q_{\\text{in}} \\;=\\; \\int_{V} \\rho \\, dV. $$ Here, $V$ is the volume bounded by the surface \\(S\\).",
-    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Gauss law of Electrostatics/#relate-enclosed-charge-to-charge-density",
+    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Gauss-law-of-Electrostatics/#relate-enclosed-charge-to-charge-density",
     "type": "blog_section",
     "priority": 3
   },
   {
     "title": "Gauss law of electrostatics - Apply the divergence theorem: Rewrite the left...",
     "content": "Rewrite the left side of Gauss\u2019s law using the divergence theorem (also known as Gauss\u2019s divergence theorem): $$ \\oint_A \\vec{E} \\cdot d\\vec{A} \\;=\\; \\int_{V} \\vec{\\nabla} \\cdot \\vec{E} \\; dV. $$ > [!signifigance] Gauss' divergence therorem > This is yet another significant contribution from Gauss. It relates volume integrals to fluxes at the boundaries. This theorem is more generally used throughout the Physics literature. For example, simplifying integrals in Rayleigh$-$B\u00e9nard convection or in Taylor$-$Culick retractions. > $$ \\oint_A\\boldsymbol{F\\cdot}d\\boldsymbol{A} = \\int_{V}\\boldsymbol{\\nabla\\cdot F}\\;dV $$ > **Rate of change of a physical quantity** (see [[Relationship between rate of change of a physical quantity and its divergence]]) in a volume is tied directly to its net flux across the boundary of that volume. More generally, in fluid mechanics, this principle underpins conservation laws such as mass, momentum, or energy.",
-    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Gauss law of Electrostatics/#apply-the-divergence-theorem",
+    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Gauss-law-of-Electrostatics/#apply-the-divergence-theorem",
     "type": "blog_section",
     "priority": 3
   },
   {
     "title": "Gauss law of electrostatics - Apply the divergence theorem: Thus, $$ \\int_{V}...",
     "content": "Thus, $$ \\int_{V} \\vec{\\nabla} \\cdot \\vec{E} \\; dV \\;=\\; \\frac{1}{\\epsilon_0} \\int_{V} \\rho \\; dV. $$",
-    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Gauss law of Electrostatics/#apply-the-divergence-theorem",
+    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Gauss-law-of-Electrostatics/#apply-the-divergence-theorem",
     "type": "blog_section",
     "priority": 3
   },
   {
     "title": "Gauss law of electrostatics - Conclude the differential form",
     "content": "Because this equation must hold for any volume $V$, the integrands themselves must be equal at every point in space: $$ \\vec{\\nabla} \\cdot \\vec{E} \\;=\\; \\frac{\\rho}{\\epsilon_0}. $$ This is Gauss\u2019s law in **differential form**. It states that the divergence of the electric field at a point is proportional to the local charge density at that point.",
-    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Gauss law of Electrostatics/#conclude-the-differential-form",
+    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Gauss-law-of-Electrostatics/#conclude-the-differential-form",
     "type": "blog_section",
     "priority": 3
   },
   {
     "title": "Gauss law of electrostatics - Significance to Maxwell's laws of electromagnetism",
     "content": "The Gauss' law of electrostatics is one of the special cases of Maxwell's laws of electromagnetism.",
-    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Gauss law of Electrostatics/#significance-to-maxwells-laws-of-electromagnetism",
+    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Gauss-law-of-Electrostatics/#significance-to-maxwells-laws-of-electromagnetism",
     "type": "blog_section",
     "priority": 3
   },
   {
     "title": "Gauss law of electrostatics - Gauss's Law (Electric):",
     "content": "$$ \\vec{\\nabla} \\cdot \\vec{E} = \\frac{\\rho}{\\varepsilon_0} $$",
-    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Gauss law of Electrostatics/#gausss-law-electric",
+    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Gauss-law-of-Electrostatics/#gausss-law-electric",
     "type": "blog_section",
     "priority": 3
   },
   {
     "title": "Gauss law of electrostatics - Faraday's Law of Induction:",
     "content": "$$ \\vec{\\nabla} \\times \\vec{E} = -\\frac{\\partial \\vec{B}}{\\partial t} $$",
-    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Gauss law of Electrostatics/#faradays-law-of-induction",
+    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Gauss-law-of-Electrostatics/#faradays-law-of-induction",
     "type": "blog_section",
     "priority": 3
   },
   {
     "title": "Gauss law of electrostatics - Amp\u00e8re\u2013Maxwell Law:",
     "content": "$$ \\vec{\\nabla} \\times \\vec{B} = \\mu_0 \\vec{J} + \\mu_0 \\varepsilon_0 \\frac{\\partial \\vec{E}}{\\partial t} $$",
-    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Gauss law of Electrostatics/#amp\u00e8remaxwell-law",
+    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Gauss-law-of-Electrostatics/#amp\u00e8remaxwell-law",
     "type": "blog_section",
     "priority": 3
   },
   {
     "title": "Gauss law of electrostatics - Gauss's Law (Electric):",
     "content": "$$ \\oint \\vec{E} \\cdot d\\vec{A} = \\frac{q_\\text{in}}{\\varepsilon_0} $$",
-    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Gauss law of Electrostatics/#gausss-law-electric",
+    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Gauss-law-of-Electrostatics/#gausss-law-electric",
     "type": "blog_section",
     "priority": 3
   },
   {
     "title": "Gauss law of electrostatics - Faraday's Law of Induction:",
     "content": "$$ \\oint \\vec{E} \\cdot d\\vec{\\ell} = -\\frac{d}{dt}\\left(\\int \\vec{B} \\cdot d\\vec{A}\\right) $$",
-    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Gauss law of Electrostatics/#faradays-law-of-induction",
+    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Gauss-law-of-Electrostatics/#faradays-law-of-induction",
     "type": "blog_section",
     "priority": 3
   },
   {
     "title": "Gauss law of electrostatics - Amp\u00e8re\u2013Maxwell Law:: Conclusion",
     "content": "$$ \\oint \\vec{B} \\cdot d\\vec{\\ell} = \\mu_0 I_\\text{in} + \\mu_0 \\varepsilon_0 \\frac{d}{dt}\\left(\\int \\vec{E} \\cdot d\\vec{A}\\right) $$ > [!summary] Conclusion > That brings us to the end of this reflective overview of Gauss' law and its place within Maxwell's equations. Even though the symmetrical geometries often steal the spotlight, the underlying message is that Gauss' law is deeply fundamental\u2014tied intimately to how charges shape and define the electric field around them. I hope these notes, with their many examples, help you see both its elegance and its limitations. > [!info] Info > Thanks for reading, and feel free to dive deeper (or suggest improvements) via the [GitHub repository](https://github.com/comphy-lab/CoMPhy-Lab-Blogs)! --- > [!testy] Some side notes: > * To explore some history, see: [[History-of-Gauss]] > * Here, we discuss a lot about Gaussian surfaces.",
-    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Gauss law of Electrostatics/#amp\u00e8remaxwell-law",
+    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Gauss-law-of-Electrostatics/#amp\u00e8remaxwell-law",
     "type": "blog_section",
     "priority": 3
   },
   {
     "title": "Gauss law of electrostatics - Amp\u00e8re\u2013Maxwell Law:: The fluid dynamicist...",
     "content": "The fluid dynamicist in me cannot help but point out that a [[Gaussian surface is very similar to the control volume in fluid mechanics]]. \ud83d\udca1 --- > [!significance]- Metadata > Author:: [Vatsal Sanjay](https://vatsalsanjay.com) > Date published:: Jan 21, 2025 > Date modified:: Jan 25, 2025 at 14:22 > [!link] Back to main website > [Home](https://comphy-lab.org/), [Team](https://comphy-lab.org/team), [Research](https://comphy-lab.org/research), [Github](https://github.com/comphy-lab)",
-    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Gauss law of Electrostatics/#amp\u00e8remaxwell-law",
+    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Gauss-law-of-Electrostatics/#amp\u00e8remaxwell-law",
     "type": "blog_section",
     "priority": 3
   },
@@ -2538,72 +2405,394 @@
     "priority": 3
   },
   {
-    "title": "Herschel\u2013bulkley formulation - Herschel\u2013Bulkley formulation for non-Newtonian flows",
+    "title": "1 intro soft matter - Lecture 1: Different Faces of Soft Condensed Matter",
+    "content": "An introduction to soft materials, why they're soft, and how we measure softness. See [[0-README|course overview and structure]] for context. ---",
+    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Intro-Soft-Matter/1-Intro-Soft-Matter/#lecture-1-different-faces-of-soft-condensed-matter",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "1 intro soft matter - Prologue: Opening Poll",
+    "content": "> [!question] **\"Name one soft material you've touched today.\"** Soft matter is everywhere in daily life\u2014from the water in your shower and shampoo to the bread on your table, tissues, foams, and gels. This simple question anchors a deeper truth: **the materials we interact with most are soft**. ---",
+    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Intro-Soft-Matter/1-Intro-Soft-Matter/#prologue-opening-poll",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "1 intro soft matter - What is Soft Matter?",
+    "content": "> [!tldr] Definition > Materials easily deformed by modest stresses, thermal fluctuations, or interfacial forces; typically organized by **mesoscopic building blocks** (droplets, bubbles, grains, polymer coils) held together by **relatively weak interactions**.",
+    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Intro-Soft-Matter/1-Intro-Soft-Matter/#what-is-soft-matter",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "1 intro soft matter - **Water + Gelatin \u2192 Gel**",
+    "content": "Observe the transformation of gelatin and water: - **Liquid state:** Individual molecules move freely - **Cooling:** Gelatin chains form a crosslinked network - **Solid state:** Wobbly, flexible gel structure - **Mechanism:** Structure held by *weak* (often reversible) interactions, not rigid covalent bonds The gel **feels solid** (can hold shape), yet **wobbles easily** when pushed\u2014a hallmark of soft matter. ![](../../_Media/1-Intro-Soft-Matter-1761103784897.png)",
+    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Intro-Soft-Matter/1-Intro-Soft-Matter/#water-gelatin-gel",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "1 intro soft matter - **Beer Foam (Foam \ud83c\udf7a)**",
+    "content": "![](../../_Media/1-Intro-Soft-Matter-1761103818495.png) **Good foam (left):** Stable bubble structure with clear thin walls **Bad foam (right):** Bubbles coalesce and collapse Foams are **gas bubbles trapped in liquid** with surfactants stabilizing the interfaces. They exemplify soft matter because: - Structure held by **surface tension** (weak force) - **Easy to deform** under modest stresses - **Flow and rearrange** under sustained forces - **Evolve over time** via coalescence and coarsening ![](../../_Media/1-Intro-Soft-Matter-1761103864489.png) *Reference:* P. S. Stewart & S. Hilgenfeldt, *Annu. Rev. Fluid Mech.*, **55**:1, 323\u2013350 (2023)",
+    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Intro-Soft-Matter/1-Intro-Soft-Matter/#beer-foam-foam-",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "1 intro soft matter - **Shaving Cream**",
+    "content": "![](../../_Media/1-Intro-Soft-Matter-1761103886417.png) A dense **foam of gas + liquid**\u2014microstructure determines function: - Spreads easily (**flows** under shear) - Holds shape temporarily (**stores energy**) - Responds to manual deformation (**viscoelastic** behavior) > [!note] Key Insight > In many soft materials, **surface tension, entropy, and geometry** govern structure and mechanics far more than stiff, covalent bond stretching does. ---",
+    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Intro-Soft-Matter/1-Intro-Soft-Matter/#shaving-cream",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "1 intro soft matter - Atomic Scaling Argument",
+    "content": "![](../../_Media/1-Intro-Soft-Matter-1761103927376.png) When you compress a solid, you push overlapping electron clouds closer together. The **bulk modulus** scales roughly as: $$K \\sim \\frac{U}{a^3}$$ where: - **$U$** = interaction energy per atom (~tens of eV, from Coulombic/quantum mechanics) - **$a$** = atomic length scale (~1 \u00c5ngstr\u00f6m) This is the correct **scaling**: interaction energies packed into atomic volumes yield enormous bulk moduli.",
+    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Intro-Soft-Matter/1-Intro-Soft-Matter/#atomic-scaling-argument",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "1 intro soft matter - Numerical Estimate",
+    "content": "**Coulombic energy at 1 \u00c5ngstr\u00f6m:** Two unit charges separated by $r = 1\\,\\text{\u00c5}$ give: $$U = \\frac{1}{4\\pi\\varepsilon_0}\\frac{e^2}{1\\,\\text{\u00c5}} \\approx 14.4\\,\\text{eV}$$ **Converting to modulus:** Using the conversion $1\\,\\text{eV/\u00c5}^3 = 160.22\\,\\text{GPa}$: $$K \\sim \\frac{14.4\\,\\text{eV}}{(1\\,\\text{\u00c5})^3} \\approx 2.3 \\times 10^6\\,\\text{MPa}$$ *(Higher estimates using Bohr radius $a_0 \\approx 0.529\\,\\text{\u00c5}$ and $U \\approx 27.2\\,\\text{eV}$ reach $\\sim 2.9 \\times 10^7\\,\\text{MPa}$\u2014the key point is the **scaling**, not the exact prefactor.)*",
+    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Intro-Soft-Matter/1-Intro-Soft-Matter/#numerical-estimate",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "1 intro soft matter - Reality Check: Bulk Moduli of Real Materials",
+    "content": "| Material | $K$ (MPa) | $K$ (GPa) | Note | |----------|-----------|-----------|------| | **Diamond** | $4.4 \\times 10^5$ | 440 | Hard to compress **and** hard to shear | | **Steel** | $(1.6\\text{\u2013}1.7) \\times 10^5$ | 160\u2013170 | Hard to compress **and** hard to shear | | **Water** | $2.2 \\times 10^3$ | 2.2 | Hard to compress, liquid (no static shear) | | **Rubber** | $(1\\text{\u2013}2) \\times 10^3$ | 1\u20132 | Hard to compress, soft in shear | > [!important] > Most condensed matter is **hard to compress** (large $K$). What makes something feel \"hard\" in everyday life is actually the **shear modulus $G$**, not the bulk modulus. Everyday \"hardness\" \u2248 resistance to shape change, not resistance to compression. ---",
+    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Intro-Soft-Matter/1-Intro-Soft-Matter/#reality-check-bulk-moduli-of-real-materials",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "1 intro soft matter - Why is Soft Matter *Soft*? \u2014 The Entropic Shear Modulus",
+    "content": "For **soft solids** (rubbers, gels, polymer networks), the small-strain **shear modulus** arises fundamentally from **entropy**, not stiff bond stretching: $$\\boxed{G = n k_B T \\quad \\text{or} \\quad G \\sim \\frac{k_B T}{\\xi^3}}$$ where: - **$n$** = strand/crosslink density (number per unit volume) - **$\\xi$** = mesh size of the network (typical strand spacing, 10\u2013100 nm) - **$k_B T$** = thermal energy (~$4.1 \\times 10^{-21}\\,\\text{J}$ at room temperature)",
+    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Intro-Soft-Matter/1-Intro-Soft-Matter/#why-is-soft-matter-soft-the-entropic-shear-modulus",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "1 intro soft matter - Microscopic Origin: Stretching Reduces Configurations",
+    "content": "**At the chain level:** - Stretching a polymer coil **reduces the number of configurations** it can adopt - **Entropy decreases** when stretched - System **resists entropy loss** with restoring force: $F = -T\\frac{\\partial S}{\\partial x}$ - Unlike a metal spring (stiff atomic bonds resist), **this force is statistical** **From one chain to a network:** Crosslink $n$ strands per unit volume $\\Rightarrow$ the free-energy density is: $$F/V \\sim n k_B T \\quad \\Rightarrow \\quad G = n k_B T$$ For nearly incompressible materials (Poisson's ratio $\\nu \\to 0.5$): $$E \\approx 3G$$",
+    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Intro-Soft-Matter/1-Intro-Soft-Matter/#microscopic-origin-stretching-reduces-configurations",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "1 intro soft matter - Practical Examples",
+    "content": "With $k_B T \\approx 4.1 \\times 10^{-21}\\,\\text{J}$ at room temperature: $$G \\sim \\frac{k_B T}{\\xi^3} \\quad \\Rightarrow \\quad \\begin{cases} \\xi = 10\\,\\text{nm} & \\Rightarrow G \\approx 4\\,\\text{kPa} \\\\ \\xi = 1\\,\\text{nm} & \\Rightarrow G \\approx 4\\,\\text{MPa} \\end{cases}$$ **Interpretation:** Small changes in mesh size (network crosslink density) move the shear modulus from the kPa range (very soft, like a loose gel) to the MPa range (stiffer, more rubber-like), while the **bulk modulus stays large** (still hard to compress). > [!tip] The Soft Matter Paradox Resolved > **Soft in shear, hard in bulk.** Stretching a polymer network just rearranges coil conformations (easy, entropy-driven). Compressing it still pushes on dense electron clouds and liquid trapped in pores (hard, bonding physics). This is why rubbers and gels are \"soft\" yet \"incompressible\". ---",
+    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Intro-Soft-Matter/1-Intro-Soft-Matter/#practical-examples",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "1 intro soft matter - Far from Equilibrium: Dynamics Dominate",
+    "content": "Soft matter reveals its richness when driven away from equilibrium. Time and forcing history often matter more than equilibrium structure alone.",
+    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Intro-Soft-Matter/1-Intro-Soft-Matter/#far-from-equilibrium-dynamics-dominate",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "1 intro soft matter - Drop Impact in Microgravity (ISS \"Liquid Ping-Pong\")",
+    "content": "Without gravity, a water droplet maintains a sphere. When two droplets collide: - **Surface tension dominates** (gravity suppressed) - **Complex coalescence dynamics** unfold - Demonstrates soft matter **far from equilibrium**",
+    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Intro-Soft-Matter/1-Intro-Soft-Matter/#drop-impact-in-microgravity-iss-liquid-ping-pong",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "1 intro soft matter - Mud Volcano at Yellowstone",
+    "content": "Mud is a **viscoelastic soft material**: - Behaves as **solid over short times** (can support surface bumps and cones) - Flows like **liquid over long times** (material spreads slowly) - **Time-dependent response** is essential to understanding behavior",
+    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Intro-Soft-Matter/1-Intro-Soft-Matter/#mud-volcano-at-yellowstone",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "1 intro soft matter - Champagne Bubbles: A Glass of Soft Matter: Bubbles rising through...",
+    "content": "Bubbles rising through champagne display remarkable dynamics driven by: - **Liquid-gas interfaces** (surface tension $\\gamma$) - **Dissolved CO\u2082** (pressure inside bubbles) - **Surfactants** from wine components - **Viscoelasticity** of the liquid (if polymers are present) **Key observation:** Adding trace amounts of **polymer** ($c = 0.001\\%$ to $0.1\\%$) **dramatically changes bubble shape and bursting dynamics**. | Polymer Concentration | Bubble Shape | Behavior | Physical Origin | |---|---|---|---| | $c = 0.001\\%$ | Nearly spherical | Like clean water | No elastic effects | | $c = 0.01\\%$ | Slightly distorted | Viscoelastic effects emerge | Polymer chains begin to store energy | | $c = 0.1\\%$ | Highly deformed | **Viscoelasticity dominates** | Strong elastic resistance to flow | **References:** - E. Ghabache, G. Liger-Belair, A. Antkowiak & T. S\u00e9on, *Sci. Rep.*, **6**, 25148 (2016) - E. Ghabache, A. Antkowiak, C. Josserand & T. S\u00e9on, *Phys. Fluids*, **26**(12) (2014) - P. L. L. Walls, L.",
+    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Intro-Soft-Matter/1-Intro-Soft-Matter/#champagne-bubbles-a-glass-of-soft-matter",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "1 intro soft matter - Champagne Bubbles: A Glass of Soft Matter: Context",
+    "content": "Henaux & J. C. Bird, *Phys. Rev. E*, **92**(2), 021002 (2015) > [!tip] Tiny Additives, Huge Effects > Trace amounts of soft matter (ppm\u2013\u2030 polymer) can **dramatically alter flows and instabilities**. This is an engineer's lever in mixing, coating, printing, and food science applications. ---",
+    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Intro-Soft-Matter/1-Intro-Soft-Matter/#champagne-bubbles-a-glass-of-soft-matter",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "1 intro soft matter - Rayleigh's Pioneering Observations (1891)",
+    "content": "> **179.** *SOME APPLICATIONS OF PHOTOGRAPHY.* > [*Proc. Roy. Inst.* XIII. pp. 261\u2013272, Feb. 1891; *Nature*, XLIV. pp. 249\u2013254, 1891.] ![](../../_Media/1-Intro-Soft-Matter-1761105367372.png) **John William Strutt, 2nd Baron Rayleigh**, one of the 19th century's greatest physicists, used **instantaneous photography** to capture: - **Falling jets breaking into droplets** (Rayleigh\u2013Plateau instability) ![](../../_Media/1-Intro-Soft-Matter-1761105418528.png) - **Liquid stream dynamics and surface tension effects** - **Capillary flows** driven by interfacial forces His 1891 paper essentially **pioneered the study of liquid dynamics**\u2014a cornerstone of soft matter physics.",
+    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Intro-Soft-Matter/1-Intro-Soft-Matter/#rayleighs-pioneering-observations-1891",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "1 intro soft matter - Taylor\u2013Culick Retraction: The Dupr\u00e9\u2013Rayleigh Paradox",
+    "content": "![](../../_Media/1-Intro-Soft-Matter-1761105451051.png) When you **puncture a thin soap bubble**, the film edge **retracts rapidly inward**. The film consists of a thin water layer (thickness $h_0$) with surfactant molecules at both liquid\u2013air interfaces (surface tension $\\gamma_{fa}$ per interface). > [!question] The Paradox: > Two seemingly correct approaches give **different predictions** for retraction speed $v_f$:",
+    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Intro-Soft-Matter/1-Intro-Soft-Matter/#taylorculick-retraction-the-dupr\u00e9rayleigh-paradox",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "1 intro soft matter - Energy Approach (Rayleigh, 1891)",
+    "content": "Rate of surface energy decrease = Rate of kinetic energy increase $$\\frac{d}{dt}\\left(\\frac{1}{2}m v^2\\right) = 2\\gamma_{fa}(2\\pi R) v$$ $$\\Rightarrow \\quad v_f = \\sqrt{\\frac{4\\gamma_{fa}}{\\rho h_0}}$$",
+    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Intro-Soft-Matter/1-Intro-Soft-Matter/#energy-approach-rayleigh-1891",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "1 intro soft matter - Momentum Approach (Taylor, 1959)",
+    "content": "Force from surface tension = Rate of momentum change $$\\frac{dP}{dt} = 2\\gamma_{fa}(2\\pi R)$$ $$\\Rightarrow \\quad \\frac{d}{dt}(m v_f) = 2\\gamma_{fa}(2\\pi R)$$ $$\\Rightarrow \\quad v_f = \\sqrt{\\frac{2\\gamma_{fa}}{\\rho h_0}}$$",
+    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Intro-Soft-Matter/1-Intro-Soft-Matter/#momentum-approach-taylor-1959",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "1 intro soft matter - The Factor of 2 Discrepancy",
+    "content": "$$\\text{Energy method:} \\quad v_f = \\sqrt{\\frac{4\\gamma_{fa}}{\\rho h_0}}$$ $$\\text{Momentum method:} \\quad v_f = \\sqrt{\\frac{2\\gamma_{fa}}{\\rho h_0}}$$ **Question:** Where did the energy go? > [!question] **Think About It** > The resolution of this paradox requires careful accounting of energy dissipation and momentum conservation. We will resolve it in the next lecture, where we properly track kinetic energy, surface energy, and viscous dissipation. ---",
+    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Intro-Soft-Matter/1-Intro-Soft-Matter/#the-factor-of-2-discrepancy",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "1 intro soft matter - Friday Afternoon Experiment: Timescale Matters",
+    "content": "Researchers at Sorbonne Universit\u00e9 studied bubble formation dynamics by varying the **air-blowing rate** during bubble generation: **Reference:** D. Tammaro, R. Pasquino, M. M. Villone, G. D'Avino, V. Ferraro, E. Di Maio, A. Langella, N. Grizzuti & P. L. Maffettone, *Langmuir*, **34**(19), 5646\u20135654 (2018) **Key Observation:** - **Low blowing rate:** Bubbles form slowly; film drains gradually; stable bubble structure - **High blowing rate:** Bubbles form rapidly; less drainage time; different dynamics and breakup modes **Lesson:** In soft matter, **protocol and timescale are decisive control parameters**. The same material exhibits wildly different behavior depending on how fast you drive it. ---",
+    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Intro-Soft-Matter/1-Intro-Soft-Matter/#friday-afternoon-experiment-timescale-matters",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "1 intro soft matter - Epilogue: Reflection Questions",
+    "content": "1. **Name one soft-matter phenomenon you now see in everyday life. Why is it soft?** 2. **What do you want to get out of this course?** 3. *(Optional)* Share a 1\u20132 sentence observation on something from your week that now \"looks like soft matter.\" ---",
+    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Intro-Soft-Matter/1-Intro-Soft-Matter/#epilogue-reflection-questions",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "1 intro soft matter - Homework (Self-Assessed)",
+    "content": "> [!check] **Homework Questions** > > **Q1.** Explain, in your own words, why many soft materials have **shear moduli** orders of magnitude below crystalline solids. (Think about atomic vs mesoscopic length scales and energy sources.) > > **Q2.** Pick an everyday product and identify: > - Its **soft-matter classification** (foam, gel, polymer solution, colloid, etc.) > - The **microstructural ingredient** that gives it its desired function > > **Q3.** A polymer coil in a good solvent is stretched and released. Why is the restoring force **entropic** rather than from stiff bond stretching? > > **Q4.** A thin water stream breaks into drops. Name: > - The **instability** responsible > - Its **thermodynamic driver** (what energy is minimized?) > - One **engineering application** or **mitigation strategy** (e.g., in printing, mixing, coating) ---",
+    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Intro-Soft-Matter/1-Intro-Soft-Matter/#homework-self-assessed",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "1 intro soft matter - **Bulk Modulus ($K$) \u2014 Resistance to Volume Change**",
+    "content": "- **Definition:** $\\Delta V / V = -\\Delta p / K$ (uniform compression from all directions) - **Large $K$** means small volume changes under pressure \u2192 **(nearly) incompressible** - **Typical values:** Water and rubber both have $K \\sim 1$\u2013$2\\,\\text{GPa}$ \u2192 hard to compress **Example:** A 1 atm pressure change (100 kPa) on water with $K = 2\\,\\text{GPa}$ gives $\\Delta V/V \\approx 5 \\times 10^{-5}$ (0.005% volume change)\u2014effectively incompressible in everyday terms.",
+    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Intro-Soft-Matter/1-Intro-Soft-Matter/#bulk-modulus-k-resistance-to-volume-change",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "1 intro soft matter - **Shear Modulus ($G$) \u2014 Resistance to Shape Change**",
+    "content": "- **Definition:** Stress needed to shear a material at (nearly) constant volume - **Small $G$** \u2192 easy to reshape \u2192 **\"soft in shear\"** - **Typical values:** Soft matter $G \\sim 1\\,\\text{kPa}$ to $1\\,\\text{MPa}$; hard matter $G \\sim 50$\u2013$200\\,\\text{GPa}$",
+    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Intro-Soft-Matter/1-Intro-Soft-Matter/#shear-modulus-g-resistance-to-shape-change",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "1 intro soft matter - **Young's Modulus ($E$) \u2014 Uniaxial Stiffness**",
+    "content": "- **Definition:** Stress divided by strain in a simple tension/compression test - **Not independent:** Combines both shear and bulk responses via the Poisson effect - **Typical values:** Soft matter $E \\sim 1$\u2013$100\\,\\text{MPa}$; hard matter $E \\sim 100$\u2013$1000\\,\\text{GPa}$",
+    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Intro-Soft-Matter/1-Intro-Soft-Matter/#youngs-modulus-e-uniaxial-stiffness",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "1 intro soft matter - **Poisson's Ratio ($\\nu$) \u2014 Lateral Contraction**",
+    "content": "- **Definition:** When you stretch a rod, it gets thinner; $\\nu$ quantifies this lateral contraction - **Incompressible limit:** $\\nu \\to 0.5$ (no volume change under axial load) - **Typical values:** Metals $\\nu \\approx 0.2$\u2013$0.35$; rubbers $\\nu \\approx 0.5$",
+    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Intro-Soft-Matter/1-Intro-Soft-Matter/#poissons-ratio-nu-lateral-contraction",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "1 intro soft matter - Relations Between Elastic Constants",
+    "content": "For **isotropic, linear elastic solids**, any two constants determine the others: $$\\boxed{E = 2G(1 + \\nu)}$$ $$\\boxed{E = \\frac{9KG}{3K + G}}$$ $$\\boxed{K = \\frac{E}{3(1 - 2\\nu)}}$$ **Key Limits:** - **Incompressible limit** ($\\nu \\to 0.5$): $K \\gg G$ and **$E \\approx 3G$** - This is why rubbers and gels can be \"soft\" ($G$ small) yet \"incompressible\" ($K$ large) - **Compressible solids** (metals): $\\nu \\approx 0.2$\u2013$0.35$, so $K$ and $G$ are comparable",
+    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Intro-Soft-Matter/1-Intro-Soft-Matter/#relations-between-elastic-constants",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "1 intro soft matter - Liquids: A Special Case",
+    "content": "A **Newtonian liquid** (water, simple oils) **cannot support static shear stress**, so: - **$G = 0$** (no static shear modulus) - **$K$ is large** (liquids are hard to compress) - **Resistance to shear** is purely **viscous** ($\\eta$, viscosity), not elastic > [!abstract] **The Incompressible Yet Soft (?) ** > > **Large $K$ doesn't imply large $G$.** > > - **Bulk modulus ($K$)**: Controls **volume resistance** under hydrostatic pressure (bonding/packing physics) > - **Shear modulus ($G$)**: Controls **shape resistance** at nearly constant volume (entropy in networks; viscosity in liquids) > > **Soft matter is soft in $G$ (easy to reshape), not in $K$ (hard to compress).** > > - Rubbers/gels: $K \\gg G$, $\\nu \\approx 0.5$, $E \\approx 3G$ > - Liquids: $K$ large, $G = 0$ (use $\\eta$ instead), no meaningful $E$ > - Hard solids: Both $K$ and $G$ large",
+    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Intro-Soft-Matter/1-Intro-Soft-Matter/#liquids-a-special-case",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "1 intro soft matter - Quick Reference Table",
+    "content": "| Property | Soft Matter (typical) | Hard Matter (typical) | Meaning | |----------|----------------------|----------------------|---------| | **$K$ (Bulk)** | 1\u20132 GPa | 100\u2013400 GPa | Volume stiffness (hydrostatic) | | **$G$ (Shear)** | 1 kPa \u2013 1 MPa | 50\u2013200 GPa | Shape stiffness | | **$E$ (Young's)** | 1\u2013100 MPa | 100\u20131000 GPa | Uniaxial stiffness | | **$\\nu$ (Poisson)** | $\\approx 0.5$ | 0.2\u20130.35 | Lateral contraction ratio | ---",
+    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Intro-Soft-Matter/1-Intro-Soft-Matter/#quick-reference-table",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "1 intro soft matter - Key Takeaways",
+    "content": "1. **Soft matter is everywhere.** From gels and foams to champagne bubbles and mud, soft materials dominate our everyday experience. 2. **\"Soft\" and \"incompressible\" are not contradictory.** Most soft materials are hard to compress (large $K$) but easy to reshape (small $G$). 3. **Entropic elasticity is different.** In polymer networks, the shear modulus arises from **statistical resistance to entropy loss**, not stiff bond stretching. This makes them temperature-sensitive and tunable via crosslink density. 4. **Time matters.** The same soft material behaves differently over different timescales\u2014as a solid at short times, as a fluid at long times. This **time-dependent response** is central to soft matter physics. 5. **Tiny additives, huge effects.** Trace polymer additions can dramatically alter interfacial dynamics, instabilities, and flow behavior\u2014an important design lever in engineering and biology. ---",
+    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Intro-Soft-Matter/1-Intro-Soft-Matter/#key-takeaways",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "1 intro soft matter - Further Reading: - **Textbook:** Pierre-Gilles...",
+    "content": "- **Textbook:** Pierre-Gilles de Gennes, *Scaling Concepts in Polymer Physics* (Cornell University Press, 1979) \u2014 foundational work on soft matter scaling [Link](https://www.amazon.co.uk/Scaling-Concepts-Polymer-Physics-Pierre-Gilles/dp/080141203X) - **Review:** Patrick Oswald & Pierre Pieranski, *Nematic and Cholesteric Liquid Crystals: Concepts and Physical Properties Illustrated by Experiments* (Taylor & Francis, 2005) \u2014 detailed liquid crystal physics [DOI: 10.1201/9780203023013](https://doi.org/10.1201/9780203023013) - **Modern perspective:** Tom McLeish, *Liquid Crystal Polymers* (Oxford University Press, 2018) \u2014 contemporary soft matter overview [Link](https://global.oup.com/academic/product/soft-matter-9780198807131?cc=gb&lang=en&) See the next lecture for a rigorous treatment of the Taylor\u2013Culick paradox and momentum/energy conservation in soft matter flows. --- > [!significance]- Metadata > Author:: [Vatsal Sanjay](https://vatsalsanjay.com) > Date published:: Oct 22, 2025 > Date modified:: Oct 22, 2025 > [!link] Back to main website > [Home](https://comphy-lab.org/), [Team](https://comphy-lab.org/team), [Research](https://comphy-lab.org/research), [Github](https://github.com/comphy-lab)",
+    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Intro-Soft-Matter/1-Intro-Soft-Matter/#further-reading",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "0 readme - Soft Condensed Matter: An Introduction",
+    "content": "**Course Overview.** A journey through soft materials\u2014from everyday foams and gels to polymer networks and interfacial dynamics. We develop the conceptual and mathematical foundations to understand why soft matter behaves so differently from hard solids and liquids.",
+    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Intro-Soft-Matter/0-README/#soft-condensed-matter-an-introduction",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "0 readme - Course Goals",
+    "content": "- Develop a **basic understanding** of key concepts in Soft Condensed Matter - **Recognize parallels and differences** between Soft Matter and 'Hard Matter' systems - **Engage critically** with publications and seminars (assessed in final presentations) - **Learn how to contribute to Open Source Science** (mid-course assignment)",
+    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Intro-Soft-Matter/0-README/#course-goals",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "0 readme - Course Structure (8 Lectures)",
+    "content": "- **Lecture 1:** [[1-Intro-Soft-Matter|Different Faces of Soft Condensed Matter]] \u2013 What is soft matter, why is it soft, and how do we measure softness? - **Lecture 2:** Coarse-Grained Continuum Mechanics & Conservation Laws - **Lecture 3:** Soft Matter Instabilities - **Lecture 4:** Soft Matter Singularities - **Lecture 5:** Elastic vs Viscous vs Viscoelastic Behavior - **Lecture 6:** Rheology \u2013 Measuring \"Softness\" and Time-Dependent Response - **Lecture 7:** Advanced Topics & Research Frontiers - **Lecture 8:** Presentations (10:00\u201312:00)",
+    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Intro-Soft-Matter/0-README/#course-structure-8-lectures",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "0 readme - Administrative Information",
+    "content": "> [!info] Course Details > - **Format:** 8 weekly lectures (2 hours each) > - **Homework:** Short self-assessed questions at the end of each lecture (model solutions provided) > - **Office Hours:** Thursdays 14:00\u201316:00 (Ph255) or email [vatsal.sanjay@durham.ac.uk](mailto:vatsal.sanjay@durham.ac.uk) > - **Assessments:** > - Mid-course: Open Source Science contribution (Week 5) > - Final: Student presentations (Week 8, 10:00\u201312:00) > - **Grading:** Participation (20%), take-home assignment (30%), final presentation (50%)",
+    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Intro-Soft-Matter/0-README/#administrative-information",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "0 readme - Key Learning Outcomes",
+    "content": "By the end of this course, you will be able to: 1. **Identify soft matter** in everyday materials and explain what makes it \"soft\" 2. **Explain the microscopic origins** of soft material properties (entropy, surface tension, weak interactions) 3. **Compare and contrast** soft and hard condensed matter using scaling arguments and dimensional analysis 4. **Apply continuum mechanics** to soft matter problems (flows, instabilities, deformations) 5. **Interpret rheological data** and connect microscopic structure to macroscopic behavior 6. **Critically read** soft matter research papers and engage in scientific discussion",
+    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Intro-Soft-Matter/0-README/#key-learning-outcomes",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "0 readme - How to Use These Lecture Notes",
+    "content": "- **Start here:** Read [[1-Intro-Soft-Matter|Lecture 1]] for foundational concepts and examples - **Work through systematically:** Each lecture builds on the previous one - **Try the homework:** Self-assessment questions reinforce key ideas - **Use the references:** Further reading suggestions at the end of each lecture - **Engage with videos and figures:** Visual examples illustrate abstract concepts ---",
+    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Intro-Soft-Matter/0-README/#how-to-use-these-lecture-notes",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "0 readme - Recommended Prerequisites",
+    "content": "- **Physics:** Mechanics (Newton's laws, energy, momentum) - **Mathematics:** Calculus (derivatives, integrals), linear algebra basics - **Chemistry:** Basic atomic/molecular structure, thermodynamics concepts No prior knowledge of soft matter or materials science is required.",
+    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Intro-Soft-Matter/0-README/#recommended-prerequisites",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "0 readme - Textbooks & References",
+    "content": "This list will be populated as we go through the course",
+    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Intro-Soft-Matter/0-README/#textbooks-references",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "0 readme - Primary References",
+    "content": "- **de Gennes, P.-G.** (1979). *Scaling Concepts in Polymer Physics*. Cornell University Press. [Amazon UK](https://www.amazon.co.uk/Scaling-Concepts-Polymer-Physics-Pierre-Gilles/dp/080141203X) - **Oswald, P. & Pieranski, P.** (2005). *Nematic and Cholesteric Liquid Crystals: Concepts and Physical Properties Illustrated by Experiments*. Taylor & Francis. - [DOI: 10.1201/9780203023013](https://doi.org/10.1201/9780203023013) - Detailed experimental and theoretical treatment",
+    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Intro-Soft-Matter/0-README/#primary-references",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "0 readme - Modern Overviews",
+    "content": "- Tom McLeish, *Liquid Crystal Polymers* (Oxford University Press, 2018) \u2014 contemporary soft matter overview [Link](https://global.oup.com/academic/product/soft-matter-9780198807131?cc=gb&lang=en&)",
+    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Intro-Soft-Matter/0-README/#modern-overviews",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "0 readme - Research Journals",
+    "content": "- *Phys. Rev. Fluids* (APS) - *J. Fluid Mech.* (Cambridge) - *Soft Matter* (Royal Society of Chemistry) - *Langmuir* (ACS) ---",
+    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Intro-Soft-Matter/0-README/#research-journals",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "0 readme - Contact & Support",
+    "content": "**Instructor:** Vatsal Sanjay **Email:** [vatsal.sanjay@durham.ac.uk](mailto:vatsal.sanjay@durham.ac.uk) **Office Hours:** Thu 14:00\u201316:00 (Ph255) Have questions? Come to office hours or send an email \u2014 I'm here to help! --- > [!link] More Resources > - [CoMPhy Lab Website](https://comphy-lab.org/) > - [Research Group](https://comphy-lab.org/research) > - [GitHub](https://github.com/comphy-lab) **Last updated:** 2025-10-22",
+    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Intro-Soft-Matter/0-README/#contact-support",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "2025 herschel\u2013bulkley formulation - Herschel\u2013Bulkley formulation for non-Newtonian flows",
     "content": "> [!tldr] TL;DR > The **Herschel\u2013Bulkley** model unifies Newtonian, Bingham, and power-law fluids via a yield stress and a strain-rate-dependent viscosity. An \ufffc$\\epsilon$-regularization ensures stable computations and recovers simpler models (Newtonian, Bingham) by tuning model parameters. Dimensionless groups (e.g., the plasto-capillary number \ufffc and the effective Ohnesorge) capture the interplay of fluid rheology, capillarity, and flow scales. Implementation details are provided, along with references, open-source code, and demonstrations of bubble-burst simulations in viscoplastic media.",
-    "url": "https://blogs.comphy-lab.org/Code-Documentations/Herschel\u2013Bulkley formulation/#herschelbulkley-formulation-for-non-newtonian-flows",
+    "url": "https://blogs.comphy-lab.org/Code-Documentations/2025-Herschel\u2013Bulkley-formulation/#herschelbulkley-formulation-for-non-newtonian-flows",
     "type": "blog_section",
     "priority": 3
   },
   {
-    "title": "Herschel\u2013bulkley formulation - Features:",
+    "title": "2025 herschel\u2013bulkley formulation - Features:",
     "content": "* Yield stress $\\tau_y$ * Power law dependance on the strain rate * Shear thinning for $n 1$. * Bingham model for $n = 1$. * Newtonian fluid for $n = 1$ and $\\tau_y = 0$.",
-    "url": "https://blogs.comphy-lab.org/Code-Documentations/Herschel\u2013Bulkley formulation/#features",
+    "url": "https://blogs.comphy-lab.org/Code-Documentations/2025-Herschel\u2013Bulkley-formulation/#features",
     "type": "blog_section",
     "priority": 3
   },
   {
-    "title": "Herschel\u2013bulkley formulation - $\\varepsilon$-formulation: $$ \\boldsymbol{\\tau} =...",
+    "title": "2025 herschel\u2013bulkley formulation - $\\varepsilon$-formulation: $$ \\boldsymbol{\\tau} =...",
     "content": "$$ \\boldsymbol{\\tau} = \\tau_{y}\\,\\boldsymbol{\\mathcal{I}} \\;+\\; K\\left(2\\boldsymbol{\\mathcal{D}}\\right)^{n} = 2\\biggl[\\frac{\\tau_{y}}{2\\|\\boldsymbol{\\mathcal{D}}\\|+\\varepsilon}\\,\\boldsymbol{\\mathcal{I}} + K\\,\\bigl(2\\|\\boldsymbol{\\mathcal{D}}\\|+\\epsilon\\bigr)^{n-1} \\biggr]\\boldsymbol{\\mathcal{D}}. $$ Normalizing stresses with $\\gamma/R_0$, length with $R_0$, and velocity with $\\sqrt{\\gamma/\\rho_lR_0}$... $$ \\boldsymbol{\\tilde{\\tau}} = 2\\biggl[\\frac{\\mathcal{J}}{2\\|\\boldsymbol{\\tilde{\\mathcal{D}}}\\|+\\varepsilon}\\,\\boldsymbol{\\mathcal{I}} + Oh_K\\,\\bigl(2\\|\\boldsymbol{\\tilde{\\mathcal{D}}}\\|+\\epsilon\\bigr)^{n-1} \\biggr]\\boldsymbol{\\tilde{\\mathcal{D}}}. $$ Here, the effective Ohnesorge is $$ Oh_K = \\frac{K}{\\sqrt{\\rho_l^n\\gamma^{2-n}R_0^{3n-2}}} $$ The plasto-capillary number $\\mathcal{J}$ is $$\\mathcal{J} = \\frac{\\tau_yR_0}{\\gamma}$$ One can easily see that putting $n = 1$ recovers the Bingham model with $Oh = \\eta_l/\\sqrt{\\rho_l\\gamma R_0}$.",
-    "url": "https://blogs.comphy-lab.org/Code-Documentations/Herschel\u2013Bulkley formulation/#varepsilon-formulation",
+    "url": "https://blogs.comphy-lab.org/Code-Documentations/2025-Herschel\u2013Bulkley-formulation/#varepsilon-formulation",
     "type": "blog_section",
     "priority": 3
   },
   {
-    "title": "Herschel\u2013bulkley formulation - $\\varepsilon$-formulation: Additionally, with $n...",
+    "title": "2025 herschel\u2013bulkley formulation - $\\varepsilon$-formulation: Additionally, with $n...",
     "content": "Additionally, with $n = 1$ & $\\mathcal{J}$ = 0, the model will give a `Newtonian` response.",
-    "url": "https://blogs.comphy-lab.org/Code-Documentations/Herschel\u2013Bulkley formulation/#varepsilon-formulation",
+    "url": "https://blogs.comphy-lab.org/Code-Documentations/2025-Herschel\u2013Bulkley-formulation/#varepsilon-formulation",
     "type": "blog_section",
     "priority": 3
   },
   {
-    "title": "Herschel\u2013bulkley formulation - Calculate the norm of the deformation tensor $\\boldsymbol{\\mathcal{D}}$:: $$\\mathcal{D}_{11} = \\frac{\\partial...",
+    "title": "2025 herschel\u2013bulkley formulation - Calculate the norm of the deformation tensor $\\boldsymbol{\\mathcal{D}}$:: $$\\mathcal{D}_{11} = \\frac{\\partial...",
     "content": "$$\\mathcal{D}_{11} = \\frac{\\partial u_r}{\\partial r}$$ $$\\mathcal{D}_{22} = \\frac{u_r}{r}$$ $$\\mathcal{D}_{13} = \\frac{1}{2}\\left( \\frac{\\partial u_r}{\\partial z}+ \\frac{\\partial u_z}{\\partial r}\\right)$$$$\\mathcal{D}_{31} = \\frac{1}{2}\\left( \\frac{\\partial u_z}{\\partial r}+ \\frac{\\partial u_r}{\\partial z}\\right)$$ $$\\mathcal{D}_{33} = \\frac{\\partial u_z}{\\partial z}$$ $$\\mathcal{D}_{12} = \\mathcal{D}_{23} = 0.$$ The second invariant is $\\mathcal{D}_2=\\sqrt{\\mathcal{D}_{ij}\\mathcal{D}_{ij}}$ (this is the Frobenius norm) $$\\mathcal{D}_2^2= \\mathcal{D}_{ij}\\mathcal{D}_{ij}= \\mathcal{D}_{11}\\mathcal{D}_{11} + \\mathcal{D}_{22}\\mathcal{D}_{22} + \\mathcal{D}_{13}\\mathcal{D}_{31} + \\mathcal{D}_{31}\\mathcal{D}_{13} + \\mathcal{D}_{33}\\mathcal{D}_{33}$$ **Note:** $\\|\\mathcal{D}\\| = D_2/\\sqrt{2}$.",
-    "url": "https://blogs.comphy-lab.org/Code-Documentations/Herschel\u2013Bulkley formulation/#calculate-the-norm-of-the-deformation-tensor-boldsymbolmathcald",
+    "url": "https://blogs.comphy-lab.org/Code-Documentations/2025-Herschel\u2013Bulkley-formulation/#calculate-the-norm-of-the-deformation-tensor-boldsymbolmathcald",
     "type": "blog_section",
     "priority": 3
   },
   {
-    "title": "Herschel\u2013bulkley formulation - Calculate the norm of the deformation tensor $\\boldsymbol{\\mathcal{D}}$:: We use the...",
+    "title": "2025 herschel\u2013bulkley formulation - Calculate the norm of the deformation tensor $\\boldsymbol{\\mathcal{D}}$:: We use the...",
     "content": "We use the formulation as given in [Balmforth et al. (2013)](https://www.annualreviews.org/doi/pdf/10.1146/annurev-fluid-010313-141424) [1], who use the strain rate tensor $\\boldsymbol{\\dot{\\mathcal{S}}}$ which and its norm $\\sqrt{\\frac{1}{2}\\dot{\\mathcal{S}_{ij}}\\dot{\\mathcal{S}_{ij}}}$. Of course, given $\\dot{\\mathcal{S}}_{ij}=2 D_{ij}$.",
-    "url": "https://blogs.comphy-lab.org/Code-Documentations/Herschel\u2013Bulkley formulation/#calculate-the-norm-of-the-deformation-tensor-boldsymbolmathcald",
+    "url": "https://blogs.comphy-lab.org/Code-Documentations/2025-Herschel\u2013Bulkley-formulation/#calculate-the-norm-of-the-deformation-tensor-boldsymbolmathcald",
     "type": "blog_section",
     "priority": 3
   },
   {
-    "title": "Herschel\u2013bulkley formulation - Calculate the equivalent viscosity",
+    "title": "2025 herschel\u2013bulkley formulation - Calculate the equivalent viscosity",
     "content": "Factorizing with $2 \\mathcal{D}_{ij}$ to obtain an equivalent viscosity $$\\eta_{\\text{eff}} = \\frac{\\mathcal{J}}{2\\|\\boldsymbol{\\tilde{\\mathcal{D}}}\\|+\\varepsilon}\\,\\boldsymbol{\\mathcal{I}} + Oh_K\\,\\bigl(2\\|\\boldsymbol{\\tilde{\\mathcal{D}}}\\|+\\epsilon\\bigr)^{n-1} $$ In this formulation, $\\varepsilon$ is a small number to ensure numerical stability. The term $$\\frac{\\tau_y}{\\varepsilon} + ...$$is equivalent to the $\\mu_{max}$ of the previous (v1.0, see: [GitHub](https://github.com/VatsalSy/Bursting-Bubble-In-a-Viscoplastic-Medium)) formulation [2]. **Note:** The fluid flows always, it is not a solid, but a very viscous fluid. Reproduced from: [P.-Y. Lagr\u00e9e's Sandbox](http://basilisk.fr/sandbox/M1EMN/Exemples/bingham_simple.c). Here, we use a face implementation of the regularisation method, described [here](http://basilisk.fr/sandbox/vatsal/GenaralizedNewtonian/Couette_NonNewtonian.c). ---",
-    "url": "https://blogs.comphy-lab.org/Code-Documentations/Herschel\u2013Bulkley formulation/#calculate-the-equivalent-viscosity",
+    "url": "https://blogs.comphy-lab.org/Code-Documentations/2025-Herschel\u2013Bulkley-formulation/#calculate-the-equivalent-viscosity",
     "type": "blog_section",
     "priority": 3
   },
   {
-    "title": "Herschel\u2013bulkley formulation - Video showcasing a typical simulation of bubble bursting in a Herschel\u2013Bulkley fluid medium",
+    "title": "2025 herschel\u2013bulkley formulation - Video showcasing a typical simulation of bubble bursting in a Herschel\u2013Bulkley fluid medium",
     "content": "[Open on YouTube](https://youtu.be/NmvCVsiEZIA)",
-    "url": "https://blogs.comphy-lab.org/Code-Documentations/Herschel\u2013Bulkley formulation/#video-showcasing-a-typical-simulation-of-bubble-bursting-in-a-herschelbulkley-fluid-medium",
+    "url": "https://blogs.comphy-lab.org/Code-Documentations/2025-Herschel\u2013Bulkley-formulation/#video-showcasing-a-typical-simulation-of-bubble-bursting-in-a-herschelbulkley-fluid-medium",
     "type": "blog_section",
     "priority": 3
   },
   {
-    "title": "Herschel\u2013bulkley formulation - More resources",
-    "content": "| [GitHub](https://github.com/comphy-lab/BurstingBubble_Herschel-Bulkley) | [Demo](https://youtu.be/NmvCVsiEZIA) | [License](https://github.com/comphy-lab/BurstingBubble_Herschel-Bulkley/blob/main/LICENSE) | [Latest Changes](https://github.com/comphy-lab/BurstingBubble_Herschel-Bulkley/commits/main) | [[Herschel\u2013Bulkley formulation.pdf\\|pdf]] | | :---------------------------------------------------------------------: | :----------------------------------: | :----------------------------------------------------------------------------------------: | :------------------------------------------------------------------------------------------: | ----------------------------------------- |",
-    "url": "https://blogs.comphy-lab.org/Code-Documentations/Herschel\u2013Bulkley formulation/#more-resources",
+    "title": "2025 herschel\u2013bulkley formulation - More resources",
+    "content": "| [GitHub](https://github.com/comphy-lab/BurstingBubble_Herschel-Bulkley) | [Demo](https://youtu.be/NmvCVsiEZIA) | [License](https://github.com/comphy-lab/BurstingBubble_Herschel-Bulkley/blob/main/LICENSE) | [Latest Changes](https://github.com/comphy-lab/BurstingBubble_Herschel-Bulkley/commits/main) | [[2025-Herschel\u2013Bulkley-formulation.pdf\\|pdf]] | | :---------------------------------------------------------------------: | :----------------------------------: | :----------------------------------------------------------------------------------------: | :------------------------------------------------------------------------------------------: | ----------------------------------------- |",
+    "url": "https://blogs.comphy-lab.org/Code-Documentations/2025-Herschel\u2013Bulkley-formulation/#more-resources",
     "type": "blog_section",
     "priority": 3
   },
   {
-    "title": "Herschel\u2013bulkley formulation - References",
+    "title": "2025 herschel\u2013bulkley formulation - References",
     "content": "[1] N. J. Balmforth, I. A. Frigaard, and G. Ovarlez, \u201cYielding to Stress: Recent Developments in Viscoplastic Fluid Mechanics,\u201d _Annu. Rev. Fluid Mech._, vol. 46, pp. 121\u2013146, Jan. 2014, doi: [10.1146/annurev-fluid-010313-141424](https://doi.org/10.1146/annurev-fluid-010313-141424). [2] V. Sanjay, D. Lohse, and M. Jalaal, \u201cBursting bubble in a viscoplastic medium,\u201d _J. Fluid Mech._, vol. 922, p. A2, 2021. > [!significance]- Metadata > Author:: [Vatsal Sanjay](https://vatsalsanjay.com) > Date published:: Dec 31, 2024 > Date modified:: Jan 26, 2025 at 11:50 CET > [!meta] Back to main website > [Home](https://comphy-lab.org/), [Team](https://comphy-lab.org/team), [Research](https://comphy-lab.org/research), [Github](https://github.com/comphy-lab)",
-    "url": "https://blogs.comphy-lab.org/Code-Documentations/Herschel\u2013Bulkley formulation/#references",
+    "url": "https://blogs.comphy-lab.org/Code-Documentations/2025-Herschel\u2013Bulkley-formulation/#references",
     "type": "blog_section",
     "priority": 3
   },
@@ -3136,6 +3325,97 @@
     "title": "2025 arrowheads in elastoinertial turbulence - Conclusion: The community\u2019s focus...",
     "content": "The community\u2019s focus has shifted to how such structures populate the state space and trigger transitions, rather than expecting them to appear as steady patterns in experiments. Ongoing work continues to unravel the multi-stage transition to elastic and elasto-inertial turbulence $\u2013$ with arrowhead/narwhal waves serving as a valuable piece of the puzzle, albeit one with clear limitations. This critical understanding ensures that we appreciate the arrowhead structures for what they are: insightful and pedagogical solutions that illuminate EIT\u2019s mechanics, but ultimately unstable in the wild chaos of real 3D turbulence. --- > [!significance]- Metadata > Author:: [Vatsal Sanjay](https://vatsalsanjay.com) > Date published:: Feb 24, 2025 > [!meta] Back to main website > [Home](https://comphy-lab.org/), [Team](https://comphy-lab.org/team), [Research](https://comphy-lab.org/research), [Github](https://github.com/comphy-lab), [Blogs](https://blogs.comphy-lab.org)",
     "url": "https://blogs.comphy-lab.org/Blog/2025-Arrowheads-in-elastoinertial-turbulence/#conclusion",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "2025 jfm viscoelatic worthington jets - Viscoelastic Worthington Jets & Droplets: Breaking the Surface of Bubble Physics: > [!abstract] TL;DR...",
+    "content": "> [!abstract] TL;DR > When bubbles burst at a liquid surface, they create jets and droplets through a fascinating physical process. Our research reveals how adding polymers to the liquid dramatically changes this behavior, creating three distinct regimes depending on elasticity and relaxation time. These findings have implications for everything from oceanic aerosols to biomedical applications and industrial processes. Have you ever watched a bubble pop at the surface of your sparkling water or champagne? This seemingly simple event $-$ a bubble bursting $-$ conceals rich physics that connects to remarkably diverse phenomena, from ocean spray formation to pathogen transmission in respiratory droplets. As a fluid dynamicist studying interfacial phenomena, I've long been fascinated by what happens in the fleeting moments after a bubble bursts. When a bubble at a liquid\u2013air interface bursts, it often shoots out a thin, fast jet of liquid \u2013 a striking phenomenon known as a _Worthington jet_.",
+    "url": "https://blogs.comphy-lab.org/Blog/2025-JFM-Viscoelatic-Worthington-jets/#viscoelastic-worthington-jets-droplets-breaking-the-surface-of-bubble-physics",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "2025 jfm viscoelatic worthington jets - Viscoelastic Worthington Jets & Droplets: Breaking the Surface of Bubble Physics: This process isn\u2019t...",
+    "content": "This process isn\u2019t just a neat visual; it plays a role in everything from ocean spray to the fizz in a glass of champagne. In a typical **Newtonian** fluid like water (where the liquid\u2019s viscosity is constant), a bursting bubble leads to an upward jet driven by surface tension. As the jet rises, it can break up into one or multiple tiny droplets due to the Rayleigh\u2013Plateau instability (the same mechanism that causes a stream of water to form droplets). This is the classic picture that decades of research established for bursting bubbles in simple liquids. But what happens if the liquid is not so simple \u2013 say it contains a bit of polymer or has elastic properties? It turns out the story of bubble bursting gets a lot more interesting, which is what our study explores.",
+    "url": "https://blogs.comphy-lab.org/Blog/2025-JFM-Viscoelatic-Worthington-jets/#viscoelastic-worthington-jets-droplets-breaking-the-surface-of-bubble-physics",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "2025 jfm viscoelatic worthington jets - The Phenomenon: More Than Just a Pop",
+    "content": "When a bubble bursts at a liquid surface, it doesn't simply disappear. Instead, a complex sequence unfolds in milliseconds: 1. The bubble's thin film ruptures[^1][^2] 2. Capillary waves travel along the cavity surface[^3] 3. These waves converge at the bottom of the cavity 4. This convergence creates a focused flow that forms an upward-shooting \"Worthington jet\" [^4][^5][^6] 5. This jet may break into droplets that escape into the air While this process is relatively well-understood for simple liquids like water (Newtonian fluids), many real-world scenarios involve liquids containing polymers\u2014from biological fluids to industrial solutions. Our research investigated how these polymers fundamentally alter the bubble bursting dynamics. See [[2025-History-Worthington-jets-from-bursting-bubbles]] for historical context.",
+    "url": "https://blogs.comphy-lab.org/Blog/2025-JFM-Viscoelatic-Worthington-jets/#the-phenomenon-more-than-just-a-pop",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "2025 jfm viscoelatic worthington jets - The Physics at Play: A Dance of Forces",
+    "content": "> [!note] What makes a fluid viscoelastic? > Viscoelastic fluids contain polymers\u2014long molecular chains that introduce elastic behavior. Unlike ordinary liquids that simply flow, these fluids partially \"remember\" their shape when deformed, similar to a memory foam mattress, but in liquid form! The addition of polymers introduces two key parameters beyond the conventional Ohnesorge number (which relates viscous forces to inertial and surface tension forces): 1. **Elastocapillary number** $Ec$: The ratio of elastic modulus to Laplace pressure, measuring the strength of elastic effects. $$Ec = \\frac{GR_0}{\\gamma} $$ 2. **Deborah number** $De$: The ratio of relaxation time to process time, measuring the fluid's \"memory\". $$De = \\frac{\\lambda}{\\sqrt{\\rho R_0^3/\\gamma}}$$ > [!note] Note: > - Higher $Ec$ means stronger elastic effects > - Higher $De$ means the fluid \"remembers\" deformations longer",
+    "url": "https://blogs.comphy-lab.org/Blog/2025-JFM-Viscoelatic-Worthington-jets/#the-physics-at-play-a-dance-of-forces",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "2025 jfm viscoelatic worthington jets - Key Discoveries: Three Distinct Regimes: Our most fascinating...",
+    "content": "Our most fascinating finding was the emergence of three distinct regimes: > [!important] The Three Regimes > > 1. **Jets forming droplets**: At low elasticity or fast relaxation times, similar to Newtonian behavior but with modified dynamics > 2. **Jets without droplet formation**: At intermediate elasticity, where polymeric stresses suppress droplet breakup > 3. **Complete jet suppression**: At high elasticity, where polymer stresses prevent jet formation entirely What's particularly interesting is how these regimes depend on the Deborah number. For high De (approaching infinity), the viscoelastic medium preserves memory of deformations, and transitions occur at sharp Ec thresholds. For low De (approaching zero), the system behaves more like a Newtonian fluid with enhanced effective viscosity. The critical thresholds we identified provide fundamental insights into when and how polymers influence Worthington jets and droplets.",
+    "url": "https://blogs.comphy-lab.org/Blog/2025-JFM-Viscoelatic-Worthington-jets/#key-discoveries-three-distinct-regimes",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "2025 jfm viscoelatic worthington jets - Key Discoveries: Three Distinct Regimes: Remarkably, while viscoelasticity...",
+    "content": "Remarkably, while viscoelasticity significantly alters the jet dynamics, it doesn't affect the capillary wave speed!",
+    "url": "https://blogs.comphy-lab.org/Blog/2025-JFM-Viscoelatic-Worthington-jets/#key-discoveries-three-distinct-regimes",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "2025 jfm viscoelatic worthington jets - Implementation Details: ElastoFlow Framework",
+    "content": "To conduct these simulations, we developed a framework we call \"ElastoFlow\" for the Basilisk C environment. The implementation handles the complex interplay between viscoelasticity, surface tension, and inertia through: - Volume of Fluid (VoF) method for interface tracking - Log-conformation approach for numerical stability with viscoelastic constitutive models - Adaptive Mesh Refinement for efficiently capturing multiscale dynamics > [!tip] Technical Deep Dive Our computational approach overcomes the notorious \"high Weissenberg number problem\" that has historically plagued viscoelastic simulations. The log-conformation formulation we employed maintains the positive-definiteness of the conformation tensor, enabling stable simulations even in highly elastic regimes.",
+    "url": "https://blogs.comphy-lab.org/Blog/2025-JFM-Viscoelatic-Worthington-jets/#implementation-details-elastoflow-framework",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "2025 jfm viscoelatic worthington jets - Broader Implications: Beyond the Laboratory",
+    "content": "This research has implications across several domains: - **Oceanic aerosol formation**: Understanding how polymers in seawater affect bubble bursting could improve climate models - **Biomedical applications**: Insights into how biological fluids produce droplets could help control pathogen transmission - **Industrial processes**: Better design of polymer-containing sprays and foams The ability to predict and potentially control droplet formation by adjusting polymer properties opens new avenues for engineering applications.",
+    "url": "https://blogs.comphy-lab.org/Blog/2025-JFM-Viscoelatic-Worthington-jets/#broader-implications-beyond-the-laboratory",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "2025 jfm viscoelatic worthington jets - For Fellow Researchers",
+    "content": "If you're interested in exploring this topic further, our simulation code is available on GitHub. We've designed ElastoFlow to be extensible and adaptable to various viscoelastic problems beyond bubble bursting. The framework includes: - Comprehensive implementation of the Oldroyd-B model - Adaptable boundary conditions - Detailed error controls for fluid properties - Streamlined workflows for high-performance computing environments We're continuing to develop this research direction, and we welcome collaborations and extensions of this work.",
+    "url": "https://blogs.comphy-lab.org/Blog/2025-JFM-Viscoelatic-Worthington-jets/#for-fellow-researchers",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "2025 jfm viscoelatic worthington jets - Final Thoughts: What I find...",
+    "content": "What I find most fascinating about this study is how the addition of polymers\u2014molecular chains that introduce elasticity\u2014can fundamentally transform fluid behavior in ways that aren't immediately intuitive. A small amount of polymer can completely suppress droplet formation, or in some regimes, enhance it. This work highlights the rich interplay between elasticity, viscosity, and surface tension at fluid interfaces. Each time I watch a bubble burst in slow motion with our simulations, I'm reminded of how complex and beautiful fluid dynamics can be, even in seemingly simple phenomena we observe every day. For those interested in the technical details, please check out our paper and the available code repositories. And as always, I welcome questions and discussions about this fascinating corner of fluid dynamics! > [!faq] Original Paper > A. Dixit, A. Oratis, K. Zinelis, D. Lohse & V. Sanjay, Viscoelastic Worthington jets and droplets produced by bursting bubbles, J.",
+    "url": "https://blogs.comphy-lab.org/Blog/2025-JFM-Viscoelatic-Worthington-jets/#final-thoughts",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "2025 jfm viscoelatic worthington jets - Final Thoughts: Context",
+    "content": "Fluid Mech., 1010, A2 (2025) [Open Access](https://doi.org/10.1017/jfm.2025.237).",
+    "url": "https://blogs.comphy-lab.org/Blog/2025-JFM-Viscoelatic-Worthington-jets/#final-thoughts",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "2025 jfm viscoelatic worthington jets - Videos: Context",
+    "content": "--- [^1]: V. Sanjay, U. Sen, P. Kant & D. Lohse, Taylor--Culick retractions and the influence of the surroundings, J. Fluid Mech., 948, A14 (2022), [doi: 10.1017/jfm.2022.671](https://doi.org/10.1017/jfm.2022.671) [^2]: E. Villermaux, Fragmentation versus cohesion, J. Fluid Mech., 898, P1 (2020), [doi: 10.1017/jfm.2020.366](https://doi.org/10.1017/jfm.2020.366) [^3]: V. Sanjay, D. Lohse & M. Jalaal, Bursting bubble in a viscoplastic medium, J. Fluid Mech., 922, A2 (2021), [doi: 10.1017/jfm.2021.489](https://doi.org/10.1017/jfm.2021.489) [^4]: A. M. Worthington, On the forms assumed by drops of liquids falling vertically on a horizontal plate, Proc. R. Soc. London A, 25, 261-272 (1877), [doi: 10.1098/rspl.1876.0048](https://doi.org/10.1098/rspl.1876.0048) [^5]: A. M. Worthington, A second paper on the forms assumed by drops of liquids falling vertically on a horizontal plate, Proc. R. Soc. London, 25, 498-503 (1877), [doi: 10.1098/rspl.1876.0073](https://doi.org/10.1098/rspl.1876.0073) [^6]: A. M.",
+    "url": "https://blogs.comphy-lab.org/Blog/2025-JFM-Viscoelatic-Worthington-jets/#videos",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "2025 jfm viscoelatic worthington jets - Videos: Worthington, A study...",
+    "content": "Worthington, A study of splashes, London: Longman, Green and Co (1908), [link](https://bit.ly/Worthington-splash-book) --- > [!significance]- Metadata > Author:: [Vatsal Sanjay](https://vatsalsanjay.com) > Date published:: May 6, 2025 > [!meta] Back to main website > [Home](https://comphy-lab.org/), [Team](https://comphy-lab.org/team), [Research](https://comphy-lab.org/research), [Github](https://github.com/comphy-lab), [Blogs](https://blogs.comphy-lab.org)",
+    "url": "https://blogs.comphy-lab.org/Blog/2025-JFM-Viscoelatic-Worthington-jets/#videos",
     "type": "blog_section",
     "priority": 3
   },
@@ -3682,6 +3962,111 @@
     "title": "2025 james g oldroyd - Influence on the Rheology Community and Honors: By following a...",
     "content": "By following a historical narrative from classical mechanics to modern rheology, Oldroyd essentially wrote the chapter that connects **Isaac Newton's** fluid (ideal viscous) to **James Clerk Maxwell's** elastic solid, and in doing so, he helped create the science of rheology as we know it. His work evolved from early studies of idealized plastic solids to the elegant Oldroyd-B equation, reflecting a consistent vision: to understand and predict the behavior of materials that are not purely solid nor liquid, but something in between. This vision, shaped by great mentors, wartime experiences, industrial collaboration, and personal insight, makes James G. Oldroyd a towering figure in the history of rheology and fluid mechanics \u2013 one whose influence is still climbing upward, much like the fluid on Weissenberg's spinning rod. [^1]: I. A. Frigaard, G. H. McKinley, R. J. Poole & K.",
     "url": "https://blogs.comphy-lab.org/Blog/2025-James-G-Oldroyd/#influence-on-the-rheology-community-and-honors",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "2025 why double\u2011network hydrogels dont shatter - Why Double\u2011Network Hydrogels Don\u2019t Shatter: A Minimal Model of Screened Stress",
+    "content": "> [!summary] TL;DR > **A new mesoscale model explains why double\u2011network (DN) hydrogels are both stiff *and* hard to break.** > The stiff, brittle \u201csacrificial\u201d network shares load with a soft, tough \u201cmatrix\u201d network that *screens* stress between sacrificial bonds. That screening halts the crack\u2011propagating cascade seen in single networks, replacing it with diffuse micro\u2011damage\u2014so the material stretches far without catastrophic failure. The model also maps a practical design trade\u2011off: more matrix (or a stiffer matrix) boosts failure strain but reduces overall stiffness.",
+    "url": "https://blogs.comphy-lab.org/Blog/2025-Why-Double\u2011Network-Hydrogels-Dont-Shatter/#why-doublenetwork-hydrogels-dont-shatter-a-minimal-model-of-screened-stress",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "2025 why double\u2011network hydrogels dont shatter - Quick navigation",
+    "content": "* [[#The question|The question]] * [[#Double network in 60 seconds|Double network in 60 seconds]] * [[#What\u2019s new here|What\u2019s new here]] * [[#Inside the model (plain\u2011English)|Inside the model (plain\u2011English)]] * [[#What the simulations show|What the simulations show]] * [[#Design rules from the parameter sweep|Design rules from the parameter sweep]] * [[#Limitations (and why they\u2019re useful)|Limitations (and why they\u2019re useful)]] * [[#Why it matters|Why it matters]] * [[#Figures at a glance|Figures at a glance]] * [[#FAQ|FAQ]] * [[#How to cite and read more|How to cite and read more]] ---",
+    "url": "https://blogs.comphy-lab.org/Blog/2025-Why-Double\u2011Network-Hydrogels-Dont-Shatter/#quick-navigation",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "2025 why double\u2011network hydrogels dont shatter - The question",
+    "content": "**Why don\u2019t double\u2011network hydrogels shatter the way ordinary gels do?** That was the question animating a lively practice talk by [[Sam Walker]]\u2014and it\u2019s the question at the center of his paper with Suzanne Fielding, *\u201cToughness of double network hydrogels: the role of reduced stress propagation,\u201d* Physics, Durham University (Mar 2025). The work builds a simple but revealing model that goes beyond slogans (\u201csacrificial bonds dissipate energy\u201d) to *mechanism*: **reduced stress propagation between sacrificial bonds thanks to load sharing with a matrix network.** ---",
+    "url": "https://blogs.comphy-lab.org/Blog/2025-Why-Double\u2011Network-Hydrogels-Dont-Shatter/#the-question",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "2025 why double\u2011network hydrogels dont shatter - Double network in 60 seconds",
+    "content": "> [!definition] Two interpenetrating networks, complementary roles > > * **Sacrificial network**: sparse, stiff, weak \u2192 sets **stiffness**, breaks first, dissipates energy. > * **Matrix network**: dense, compliant, tough \u2192 sets **toughness**, prevents crack run\u2011away. > [!key-point] Synergy > The DN inherits the **stiffness** of the sacrificial network **and** the **ductility** of the matrix\u2014properties neither network delivers alone. ---",
+    "url": "https://blogs.comphy-lab.org/Blog/2025-Why-Double\u2011Network-Hydrogels-Dont-Shatter/#double-network-in-60-seconds",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "2025 why double\u2011network hydrogels dont shatter - What\u2019s new here",
+    "content": "> [!idea] The mechanism in one line > **Elastic screening**: when a sacrificial bond snaps, the matrix absorbs part of the released stress so it doesn\u2019t concentrate at neighboring sacrificial bonds\u2014*breaking the cascade that drives macroscopic cracks in single networks*. This \u201cscreened propagator\u201d picture connects micro\u2011events (single bond breaks) to macro\u2011outcomes (no catastrophic crack), giving a quantitative bridge between fracture mechanics and polymer physics. ---",
+    "url": "https://blogs.comphy-lab.org/Blog/2025-Why-Double\u2011Network-Hydrogels-Dont-Shatter/#whats-new-here",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "2025 why double\u2011network hydrogels dont shatter - Inside the model (plain\u2011English)",
+    "content": "> [!note] How the authors simulate a DN > > * Start from two random spring networks created by a jammed disk packing recipe; interpenetrate them so some nodes are shared \u2192 this encodes **load sharing**. > * Stretch the system **quasistatically** with periodic boundaries; allow **one bond to fail at a time**, then fully relax before the next step. > * Track stress with the **Irving\u2013Kirkwood** formula; visualize how stress from a single break travels through the network. > * Key knobs: > > * **M** = number of matrix bond lengths per sacrificial bond length (larger **M** \u21d2 more matrix / sparser sacrificial network), > * **\u03bc\u2098** (matrix bond stiffness), **\u03bb\u2098** (matrix break strain). > * Typical \u201cgood compromise\u201d used to illustrate results: **M = 3**, **\u03bc\u2098 = 0.2**, **\u03bb\u2098 = 3**. ---",
+    "url": "https://blogs.comphy-lab.org/Blog/2025-Why-Double\u2011Network-Hydrogels-Dont-Shatter/#inside-the-model-plainenglish",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "2025 why double\u2011network hydrogels dont shatter - What the simulations show: Examples",
+    "content": "> [!example] From brittle to ductile\u2014seen in the figures > > * **Single network**: a local break sends stress sideways (Eshelby\u2011like quadrupole), neighbors overload, a crack **runs** across the sample \u2192 **sharp stress drop at modest strain** (Fig. 1c & Fig. 2a, p. 2). > * **Double network**: the matrix soaks up part of that released stress, **reducing** the stress that reaches neighboring sacrificial bonds \u2192 many **microcracks** form but do **not** coalesce; the sample stretches **much further** (Fig. 1d & Fig. 2b, p. 2). > [!key-point] Direct evidence of screening > **Fig. 3 (p. 3)** maps how stress from a single sacrificial break decays in space.",
+    "url": "https://blogs.comphy-lab.org/Blog/2025-Why-Double\u2011Network-Hydrogels-Dont-Shatter/#what-the-simulations-show",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "2025 why double\u2011network hydrogels dont shatter - What the simulations show: Increasing **M** (more...",
+    "content": "Increasing **M** (more matrix between sacrificial bonds) or **\u03bc\u2098** (stiffer matrix) clearly *damps the propagator*, recovering the strong, long\u2011range propagator of a single network when **M\u21920** or **\u03bc\u2098\u21920**. > [!summary] Stiffness vs toughness (the trade\u2011off) > **Fig. 4 (p. 4)** sweeps parameters: failure strain rises with **M** or **\u03bc\u2098** (toughness \u2191), while the overall modulus trends downward (stiffness \u2193). The sweet spot that preserves much of the sacrificial stiffness *and* gains matrix ductility sits around **M\u22483, \u03bc\u2098\u22480.2, \u03bb\u2098\u22483** in this model. ---",
+    "url": "https://blogs.comphy-lab.org/Blog/2025-Why-Double\u2011Network-Hydrogels-Dont-Shatter/#what-the-simulations-show",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "2025 why double\u2011network hydrogels dont shatter - Design rules from the parameter sweep",
+    "content": "> [!tip] Practical takeaways for designing DNs > > 1. **To boost failure strain**, increase **M** (more matrix paths) or **\u03bc\u2098** (stiffer matrix)\u2014both enhance screening. > 2. **To retain stiffness**, keep enough sacrificial network connectivity (don\u2019t push **M** so high that the matrix wholly dominates). > 3. **Aim for a compromise region** (illustrated in the paper at *M \u2248 3, \u03bc\u2098 \u2248 0.2, \u03bb\u2098 \u2248 3*) where the DN is **as stiff as** the sacrificial network but **as ductile as** the matrix. > 4. **Subcritical matrix connectivity** (e.g., lowering *z\u2098*) makes stiffness even more dominated by the sacrificial network\u2014consistent with experiments\u2014*while* toughness remains high (Fig. 2c\u2013d, p. 2). ---",
+    "url": "https://blogs.comphy-lab.org/Blog/2025-Why-Double\u2011Network-Hydrogels-Dont-Shatter/#design-rules-from-the-parameter-sweep",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "2025 why double\u2011network hydrogels dont shatter - Limitations (and why they\u2019re useful)",
+    "content": "> [!caution] What the model is *not* > > * 2D springs with central forces (no bending), average coordination above the Maxwell threshold, no explicit pre\u2011stretch\u2014even though real gels are 3D, often sub\u2011isostatic, and the sacrificial network is typically pre\u2011stretched. > **Why that\u2019s fine**: the stripped\u2011down model isolates the **essential physics**\u2014a screened propagator\u2014before adding realism. The authors also show how reducing the matrix connectivity trends the results toward experimental behavior (Fig. 2c\u2013d). ---",
+    "url": "https://blogs.comphy-lab.org/Blog/2025-Why-Double\u2011Network-Hydrogels-Dont-Shatter/#limitations-and-why-theyre-useful",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "2025 why double\u2011network hydrogels dont shatter - Why it matters",
+    "content": "* **Mechanism clarified**: moves beyond \u201csacrificial bonds dissipate energy\u201d to *how* DN architectures block crack cascades. * **Actionable knobs**: gives materials designers clear control parameters (**M, \u03bc\u2098, \u03bb\u2098**) for navigating the stiffness\u2013toughness trade\u2011off. * **Broad relevance**: insights translate to other multicomponent soft materials (elastomers, biological tissues) where **load sharing** and **stress delocalization** govern failure. ---",
+    "url": "https://blogs.comphy-lab.org/Blog/2025-Why-Double\u2011Network-Hydrogels-Dont-Shatter/#why-it-matters",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "2025 why double\u2011network hydrogels dont shatter - Figures at a glance",
+    "content": "> [!note] Reading guide > > * **Fig. 1 (p. 2)**: Side\u2011by\u2011side snapshots\u2014single network develops a running crack; DN shows diffuse sacrificial micro\u2011damage. > * **Fig. 2 (p. 2)**: Stress\u2013strain curves\u2014DN (black) inherits sacrificial stiffness (red) and matrix failure strain (blue). Insets show initial moduli. > * **Fig. 3 (p. 3)**: Heatmaps & linecuts of the **stress propagator**\u2014screening strengthens with **M** and **\u03bc\u2098**. > * **Fig. 4 (p. 4)**: Parameter sweeps\u2014failure strain/stress vs **M** or **\u03bc\u2098**; bottom panels quantify how the sacrificial network\u2019s modulus contribution drops as matrix influence grows. ---",
+    "url": "https://blogs.comphy-lab.org/Blog/2025-Why-Double\u2011Network-Hydrogels-Dont-Shatter/#figures-at-a-glance",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "2025 why double\u2011network hydrogels dont shatter - FAQ",
+    "content": "**Is \u201cscreening\u201d just another word for \u201cdissipation\u201d?** Not exactly. Screening is about **redistribution** of stress so it *doesn\u2019t* concentrate where it can trigger more sacrificial breaks. Dissipation happens when sacrificial bonds actually break; screening limits how far each break can \u201ctalk\u201d to its neighbors. **What sets the key length scale?** The typical separation between sacrificial bonds relative to matrix mesh size\u2014encapsulated by **M**\u2014sets how effectively the matrix can intercept and spread stress before it reaches neighboring sacrificial bonds. **How does this connect to Eshelby physics?** In single networks, a local plastic event sends a quadrupolar elastic signal that loads neighbors along specific directions, seeding a crack. The DN\u2019s matrix **attenuates** that signal\u2014the **effective Eshelby propagator** weakens\u2014so cracks don\u2019t percolate. ---",
+    "url": "https://blogs.comphy-lab.org/Blog/2025-Why-Double\u2011Network-Hydrogels-Dont-Shatter/#faq",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "2025 why double\u2011network hydrogels dont shatter - How to cite and read more",
+    "content": "> [!quote] Core paper > **S. B. Walker & S. M. Fielding (2025)**, *Toughness of double network hydrogels: the role of reduced stress propagation*, Department of Physics, Durham University. The paper introduces the model, quantifies the screened propagator, and maps the stiffness\u2013toughness trade\u2011off with clear figure\u2011level evidence. **Related internal notes:** [[Double Network Hydrogels]], [[Elastic Screening]], [[Eshelby Quadrupolar Propagator]], [[Gong]]. ---",
+    "url": "https://blogs.comphy-lab.org/Blog/2025-Why-Double\u2011Network-Hydrogels-Dont-Shatter/#how-to-cite-and-read-more",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "2025 why double\u2011network hydrogels dont shatter - Tags",
+    "content": "#hydrogels #double-network #fracture-mechanics #soft-materials #materials-science #modeling #elastic-screening #sam-walker #fielding #polymer-physics #design-rules",
+    "url": "https://blogs.comphy-lab.org/Blog/2025-Why-Double\u2011Network-Hydrogels-Dont-Shatter/#tags",
     "type": "blog_section",
     "priority": 3
   },
