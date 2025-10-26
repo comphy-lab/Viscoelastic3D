@@ -718,6 +718,13 @@
     "priority": 3
   },
   {
+    "title": "0_readme - Scientist profiles & history:",
+    "content": "2025-10-24 [[2025-Emmy-Noether-Symmetry-Conservation]]: Emmy Noether's revolutionary contributions to mathematics and physics - from overcoming gender barriers in academia to discovering the profound connection between symmetry and conservation laws that now underpins all of modern physics.",
+    "url": "https://blogs.comphy-lab.org/0_README/#scientist-profiles-history",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
     "title": "0_readme - Laser-droplet interactions:",
     "content": "2025-10-06 [[2025-Curvature-Inversion-in-Laser\u2011Struck-Droplets]]: Understanding how laser-induced pressure impulses control droplet sheet curvature in EUV lithography - from raised-cosine impulses to forward-bending sheets in tin microdroplets.",
     "url": "https://blogs.comphy-lab.org/0_README/#laser-droplet-interactions",
@@ -2924,7 +2931,7 @@
   },
   {
     "title": "2025 jfm viscous drop impact - Videos",
-    "content": "--- > [!significance]- Metadata > Author:: [Vatsal Sanjay](https://vatsalsanjay.com) > Date published:: Feb 22, 2025 > [!meta] Back to main website > [Home](https://comphy-lab.org/), [Team](https://comphy-lab.org/team), [Research](https://comphy-lab.org/research), [Github](https://github.com/comphy-lab), [Blogs](https://blogs.comphy-lab.org)",
+    "content": "--- > [!significance]- Metadata > Author:: [Vatsal Sanjay](https://vatsalsanjay.com) > Date published:: Feb 22, 2025 > [!meta] Back to main website > [Home](https://comphy-lab.org/), [Team](https://comphy-lab.org/team), [Research](https://comphy-lab.org/research), [Github](https://github.com/comphy-lab), [Blogs](https://blogs.comphy-lab.org) > > \ud83d\udcdd [Edit this page on GitHub](https://github.com/comphy-lab/CoMPhy-Lab-Blogs/blob/main/Blog/2025-JFM-viscous-drop-impact.md)",
     "url": "https://blogs.comphy-lab.org/Blog/2025-JFM-viscous-drop-impact/#videos",
     "type": "blog_section",
     "priority": 3
@@ -3029,8 +3036,218 @@
   },
   {
     "title": "2025 features of capillary waves during asymmetric bubble coalescence - More resources: Context",
-    "content": "Fluid Mech._, vol. 867, pp. 556\u2013571, May 2019, doi: [10.1017/jfm.2019.161](https://doi.org/10.1017/jfm.2019.161). > [!significance]- Metadata > Author:: [Vatsal Sanjay](https://vatsalsanjay.com) > Date published:: Jan 12, 2025 > Date modified:: Jan 26, 2025 at 11:50 CET > [!meta] Back to main website > [Home](https://comphy-lab.org/), [Team](https://comphy-lab.org/team), [Research](https://comphy-lab.org/research), [Github](https://github.com/comphy-lab)",
+    "content": "Fluid Mech._, vol. 867, pp. 556\u2013571, May 2019, doi: [10.1017/jfm.2019.161](https://doi.org/10.1017/jfm.2019.161). > [!significance]- Metadata > Author:: [Vatsal Sanjay](https://vatsalsanjay.com) > Date published:: Jan 12, 2025 > Date modified:: Jan 26, 2025 at 11:50 CET > [!meta] Back to main website > [Home](https://comphy-lab.org/), [Team](https://comphy-lab.org/team), [Research](https://comphy-lab.org/research), [Github](https://github.com/comphy-lab) > > \ud83d\udcdd [Edit this page on GitHub](https://github.com/comphy-lab/CoMPhy-Lab-Blogs/blob/main/Blog/2025-Features-of-capillary-waves-during-asymmetric-bubble-coalescence.md)",
     "url": "https://blogs.comphy-lab.org/Blog/2025-Features-of-capillary-waves-during-asymmetric-bubble-coalescence/#more-resources",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "2025 emmy noether symmetry conservation - Executive Summary: - **Trailblazer in...",
+    "content": "- **Trailblazer in Mathematics**: Emmy Noether (1882\u20131935) overcame early 20th-century gender barriers in academia to become one of the first women awarded a PhD in mathematics - **Symmetry and Conservation**: She discovered that every continuous symmetry in nature corresponds to a conserved quantity \u2013 a profound insight now known as **Noether's theorem** - **Universal Examples**: Spatial symmetry (physics laws identical everywhere) gives rise to momentum conservation; time symmetry (laws identical at all times) gives rise to energy conservation - **A Brief but Transformative Life**: Despite dying at just 53, she revolutionized both theoretical physics and abstract algebra, leaving a legacy that continues to guide discovery across all modern science > [!tldr] > Emmy Noether discovered that every continuous symmetry in nature corresponds to a conserved quantity\u2014now called Noether's theorem\u2014one of the most profound insights in physics. She also founded modern abstract algebra.",
+    "url": "https://blogs.comphy-lab.org/Blog/2025-Emmy-Noether-Symmetry-Conservation/#executive-summary",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "2025 emmy noether symmetry conservation - Executive Summary: She accomplished all...",
+    "content": "She accomplished all this while overcoming systematic gender discrimination, and her work continues to shape fundamental physics and mathematics today. ---",
+    "url": "https://blogs.comphy-lab.org/Blog/2025-Emmy-Noether-Symmetry-Conservation/#executive-summary",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "2025 emmy noether symmetry conservation - Against the Odds: Emmy Noether's Early Path",
+    "content": "Emmy Noether was born in Erlangen, Germany, in 1882 to a distinguished family of academics\u2014her father, Max Noether, was himself a respected mathematics professor. Yet being born into intellectual privilege offered no protection against the systematic exclusion of women from academia that defined the early 20th century.",
+    "url": "https://blogs.comphy-lab.org/Blog/2025-Emmy-Noether-Symmetry-Conservation/#against-the-odds-emmy-noethers-early-path",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "2025 emmy noether symmetry conservation - The Barriers of Her Time",
+    "content": "At the University of Erlangen in 1900, women were categorically prohibited from formal enrollment. Emmy, determined to pursue her passion for mathematics, found a creative workaround: she attended lectures unofficially as an auditor, absorbing the material while officially remaining a non-student. This arrangement lasted until 1904, when the university finally permitted women to enroll. Emmy wasted no time, earning her mathematics degree and completing her PhD by 1907\u2014an extraordinary achievement that made her one of the very first women in Europe to attain a doctorate in mathematics. > [!note] > The early 1900s saw dramatic shifts in women's education in Europe. Emmy's persistence during this transitional period reflected both personal determination and changing (albeit glacial) social attitudes toward female scholarship.",
+    "url": "https://blogs.comphy-lab.org/Blog/2025-Emmy-Noether-Symmetry-Conservation/#the-barriers-of-her-time",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "2025 emmy noether symmetry conservation - The G\u00f6ttingen Struggle: Yet a doctorate...",
+    "content": "Yet a doctorate did not open institutional doors for Noether as it would have for a man. She spent the next several years at Erlangen working without pay or official title, essentially volunteering her talents to research and teaching. Her brilliance, however, had not gone unnoticed. By 1915, two of Europe's most eminent mathematicians\u2014David Hilbert and Felix Klein\u2014recognized her genius and invited her to join them at the University of G\u00f6ttingen, then the world's preeminent center for mathematics and physics. The G\u00f6ttingen faculty's response was deeply discouraging. During a contentious faculty meeting, one professor protested: *\"What will our soldiers think when they return and find they have to learn at the feet of a woman?\"* Hilbert's response became legendary. Incensed by this absurdity, he shot back: *\"We are a university, not a bathhouse!\"*\u2014a withering rebuke asserting that a scholar's intellectual merit should be the only measure of fitness for academic work.",
+    "url": "https://blogs.comphy-lab.org/Blog/2025-Emmy-Noether-Symmetry-Conservation/#the-g\u00f6ttingen-struggle",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "2025 emmy noether symmetry conservation - The G\u00f6ttingen Struggle: Despite Hilbert's fierce...",
+    "content": "Despite Hilbert's fierce advocacy, the university still refused to hire Noether officially as faculty. Undeterred, Hilbert devised a workaround: Emmy would teach courses, but officially she would be listed only as his assistant. For several years, she lectured to students under Hilbert's name, conducting faculty-level work for meager (often nonexistent) compensation. Yet her students recognized the extraordinary mind behind those lectures. A devoted group of talented mathematicians\u2014affectionately nicknamed \"**Noether's boys**\"\u2014gathered around her, hungry to learn from one of the era's greatest minds. Her lectures were celebrated for their clarity, depth, and novel insights.",
+    "url": "https://blogs.comphy-lab.org/Blog/2025-Emmy-Noether-Symmetry-Conservation/#the-g\u00f6ttingen-struggle",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "2025 emmy noether symmetry conservation - Recognition and Tragedy: Only after World...",
+    "content": "Only after World War I did academic attitudes shift enough for Noether to formalize her position. In 1919, she finally habilitated (formally qualified as an instructor) and began teaching under her own name. By 1922, she received the title of Associate Professor, and a year later, a modest paid position in algebra. By the 1930s, Noether had achieved international acclaim in mathematical circles. In 1932, she was invited to deliver a plenary lecture at the International Congress of Mathematicians\u2014a singular honor reserved for the most distinguished scholars. Yet even as her scientific star ascended, the political darkness of Nazi Germany descended. In 1933, the regime dismissed Noether from her position, both for being Jewish and for her progressive political views. She emigrated to the United States, continuing her work at Bryn Mawr College in Pennsylvania.",
+    "url": "https://blogs.comphy-lab.org/Blog/2025-Emmy-Noether-Symmetry-Conservation/#recognition-and-tragedy",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "2025 emmy noether symmetry conservation - Recognition and Tragedy: But her journey...",
+    "content": "But her journey was tragically cut short: in 1935, complications from surgery claimed her life at just 53 years old\u2014just as she was beginning to flourish in America. ---",
+    "url": "https://blogs.comphy-lab.org/Blog/2025-Emmy-Noether-Symmetry-Conservation/#recognition-and-tragedy",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "2025 emmy noether symmetry conservation - The Golden Age of Physics",
+    "content": "While at G\u00f6ttingen, Noether turned her formidable mathematical powers toward one of physics' deepest puzzles. This was the extraordinary period of the 1910s and 1920s\u2014the golden age of relativity and quantum theory. Einstein and his contemporaries were fundamentally reshaping humanity's understanding of space, time, energy, and matter. In 1915, amid this intellectual ferment, Noether made a discovery that would prove as foundational as the theories around her: she uncovered a profound mathematical connection between the **symmetries of nature** and the **conservation laws of physics**. Published in 1918, this result\u2014**Noether's theorem**\u2014would ultimately be recognized as perhaps the most important theorem in theoretical physics.",
+    "url": "https://blogs.comphy-lab.org/Blog/2025-Emmy-Noether-Symmetry-Conservation/#the-golden-age-of-physics",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "2025 emmy noether symmetry conservation - Understanding Symmetry: To appreciate Noether's...",
+    "content": "To appreciate Noether's insight, we must first clarify what physicists mean by symmetry. A system exhibits symmetry if it can be transformed in some way without producing a detectable difference in the outcome. Consider a simple example: a perfect sphere looks identical after you rotate it. This rotational symmetry is obvious to the eye. But Noether's theorem deals with deeper, often invisible symmetries\u2014symmetries embedded in the very laws of physics themselves. For instance: - **Spatial symmetry**: The laws of physics are the same here as they are on the other side of the world. There is no preferred location in the universe. - **Temporal symmetry**: The laws of physics are the same today as they were a billion years ago. There is no preferred time. > [!example] > Consider dropping a ball. Whether you drop it in Tokyo or Toronto, whether you drop it today or tomorrow, the laws of gravity and motion governing its fall are identical.",
+    "url": "https://blogs.comphy-lab.org/Blog/2025-Emmy-Noether-Symmetry-Conservation/#understanding-symmetry",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "2025 emmy noether symmetry conservation - Understanding Symmetry: This uniformity\u2014this symmetry\u2014is...",
+    "content": "This uniformity\u2014this symmetry\u2014is not obvious, but it is fundamental.",
+    "url": "https://blogs.comphy-lab.org/Blog/2025-Emmy-Noether-Symmetry-Conservation/#understanding-symmetry",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "2025 emmy noether symmetry conservation - Noether's Great Insight",
+    "content": "**Noether's theorem states: For every continuous symmetry in nature, there exists a corresponding conserved quantity.** In other words, if the laws of physics remain unchanged under some transformation, then some measurable property of the system must remain constant in time.",
+    "url": "https://blogs.comphy-lab.org/Blog/2025-Emmy-Noether-Symmetry-Conservation/#noethers-great-insight",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "2025 emmy noether symmetry conservation - Spatial Symmetry \u2192 Momentum Conservation",
+    "content": "Consider the symmetry of space: physics is invariant if we shift an experiment from one location to another. In mathematical terms, the laws of physics do not depend on our choice of position. This spatial homogeneity guarantees the **conservation of momentum**. In a uniform universe with no preferred location, an isolated object's momentum cannot spontaneously change. Mathematically: $$\\frac{dp}{dt} = 0$$ where $p$ is momentum. This seemingly obvious principle\u2014that objects keep moving unless pushed\u2014is actually a profound consequence of spatial symmetry.",
+    "url": "https://blogs.comphy-lab.org/Blog/2025-Emmy-Noether-Symmetry-Conservation/#spatial-symmetry-momentum-conservation",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "2025 emmy noether symmetry conservation - Temporal Symmetry \u2192 Energy Conservation",
+    "content": "Now consider time: the laws of physics are (to extraordinarily high precision) identical whether we perform an experiment now or performed it a century ago. The universe's physical laws show no dependence on the absolute time. This temporal symmetry guarantees the **conservation of energy**. If the equations of motion contain no explicit dependence on time $t$, energy cannot spontaneously appear or vanish: $$\\frac{dE}{dt} = 0$$ Energy remains constant in time. This profound principle\u2014that energy can be transformed but never created or destroyed\u2014emerges directly from the universe's temporal symmetry.",
+    "url": "https://blogs.comphy-lab.org/Blog/2025-Emmy-Noether-Symmetry-Conservation/#temporal-symmetry-energy-conservation",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "2025 emmy noether symmetry conservation - Other Symmetries, Other Conserved Quantities",
+    "content": "Noether's framework extends far beyond momentum and energy: - **Rotational symmetry** (no preferred direction) \u2192 **angular momentum conservation** - **Phase symmetry** in quantum mechanics \u2192 **electric charge conservation** - **Gauge symmetries** in modern physics \u2192 diverse conservation laws governing particle interactions > [!important] > Before Noether's theorem, conservation laws appeared to be independent empirical discoveries\u2014separate facts about nature. After Noether, they were revealed to be mathematical consequences of *symmetry principles*. This unification was revolutionary.",
+    "url": "https://blogs.comphy-lab.org/Blog/2025-Emmy-Noether-Symmetry-Conservation/#other-symmetries-other-conserved-quantities",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "2025 emmy noether symmetry conservation - The Power of Noether's Unification: Before Noether's work,...",
+    "content": "Before Noether's work, conservation of energy, momentum, and angular momentum were treated as separate, empirically discovered principles. Each had its own history, its own justification. Noether showed that these were not disconnected accidents of nature but rather manifestations of a single, elegant mathematical principle: **symmetry implies conservation**. This insight profoundly reshaped physics. Physicists now recognize symmetry as the guiding light in formulating the laws of nature. Here's how the logic flows: 1. Identify a symmetry of nature (or postulate one based on philosophical or mathematical grounds) 2. Use Noether's theorem to deduce what must be conserved 3. Use conservation laws to constrain possible physical theories 4. Perform experiments to test predictions From Newton's laws to Einstein's relativity to today's quantum field theories, identifying a symmetry directly leads to knowing what quantity will be conserved.",
+    "url": "https://blogs.comphy-lab.org/Blog/2025-Emmy-Noether-Symmetry-Conservation/#the-power-of-noethers-unification",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "2025 emmy noether symmetry conservation - The Power of Noether's Unification: Conversely, discovering an...",
+    "content": "Conversely, discovering an unexpected conserved quantity hints at an unseen symmetry of nature. As one physicist noted, Noether's theorem is \"one of the most important mathematical theorems ever proved in guiding the development of modern physics.\" ---",
+    "url": "https://blogs.comphy-lab.org/Blog/2025-Emmy-Noether-Symmetry-Conservation/#the-power-of-noethers-unification",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "2025 emmy noether symmetry conservation - When Symmetry Breaks",
+    "content": "Noether's theorem teaches us not only *when* conservation laws hold, but equally important\u2014*when they might fail*. If a symmetry is broken or absent, the corresponding conserved quantity need not remain constant. This realization has profound implications for cosmology, particularly regarding one of physics' most sacred principles: the conservation of energy.",
+    "url": "https://blogs.comphy-lab.org/Blog/2025-Emmy-Noether-Symmetry-Conservation/#when-symmetry-breaks",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "2025 emmy noether symmetry conservation - Energy in an Expanding Universe",
+    "content": "We typically take it for granted that energy can neither be created nor destroyed. But this principle depends crucially on an assumption: that the laws of physics do not change with time. In other words, energy conservation requires temporal symmetry\u2014the universe must be unchanging on the largest scales. But our universe is not static. Space itself is expanding. The universe is not the same today as it was billions of years ago. Conditions evolve, densities change, and the cosmic environment is fundamentally dynamic. This means the universe **lacks perfect time-translation symmetry as a whole**. > [!warning] > According to Noether's theorem, when temporal symmetry breaks down, energy conservation breaks down as well. In an expanding universe, total energy need not be strictly conserved.",
+    "url": "https://blogs.comphy-lab.org/Blog/2025-Emmy-Noether-Symmetry-Conservation/#energy-in-an-expanding-universe",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "2025 emmy noether symmetry conservation - Dark Energy and the Creation of Energy",
+    "content": "A striking example: \"dark energy,\" the mysterious form of energy driving the accelerated expansion of the universe, has a roughly constant density of energy per unit volume. But as space expands, the total volume increases\u2014and therefore, the total amount of dark energy increases. This is equivalent to *creating energy from nothing*. Where does this energy come from? How can energy conservation be violated? According to Noether's principle, there is no violation. The expansion of the universe breaks the temporal symmetry that would guarantee energy conservation. Therefore, global energy conservation is not required\u2014it simply does not apply as a universal law.",
+    "url": "https://blogs.comphy-lab.org/Blog/2025-Emmy-Noether-Symmetry-Conservation/#dark-energy-and-the-creation-of-energy",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "2025 emmy noether symmetry conservation - Einstein's Discomfort: Interestingly, even Einstein...",
+    "content": "Interestingly, even Einstein initially resisted this implication. He reportedly struggled with the idea that his own field equations might permit energy non-conservation in an expanding universe. Eventually, however, the logic became undeniable: energy conservation holds locally (in regions where temporal symmetry is a good approximation), but globally, in a dynamically evolving cosmos, energy can change. This subtle distinction\u2014between local and global conservation\u2014has become central to modern cosmology. It shapes our understanding of dark energy, the evolution of the universe, and the ultimate fate of the cosmos itself. > [!note] > Noether's theorem elegantly accounts for this apparent paradox: it ties the fate of every conservation law to the underlying symmetries of spacetime. When symmetries hold, conservation laws are ironclad. When symmetries break, conservation laws can fail. This is not a loophole or a violation\u2014it's the natural, mathematically consistent behavior of nature. ---",
+    "url": "https://blogs.comphy-lab.org/Blog/2025-Emmy-Noether-Symmetry-Conservation/#einsteins-discomfort",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "2025 emmy noether symmetry conservation - Dual Revolutions: Physics and Mathematics: Emmy Noether's impact...",
+    "content": "Emmy Noether's impact on modern science is difficult to overstate. In physics, her eponymous theorem is now part of the standard canon taught to every theoretical physicist. The inseparable link between symmetries and conserved quantities\u2014a link Noether forged\u2014is woven into the fabric of modern theory. It has been said that \"all of modern physics is built\" on the foundation of Noether's theorem. Much of the formulation of contemporary theories\u2014from the Standard Model of particle physics to general relativity to quantum field theory\u2014is fundamentally governed by symmetry principles that echo Noether's insight. In pure mathematics, her influence is equally towering. She is regarded as a founder of **modern abstract algebra**\u2014a revolution in how mathematicians think about algebraic structures. Her work on ring theory, ideals, and algebraic systems fundamentally reshaped 20th-century mathematics.",
+    "url": "https://blogs.comphy-lab.org/Blog/2025-Emmy-Noether-Symmetry-Conservation/#dual-revolutions-physics-and-mathematics",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "2025 emmy noether symmetry conservation - Dual Revolutions: Physics and Mathematics: The term \"**Noetherian**\"...",
+    "content": "The term \"**Noetherian**\" is now standard mathematical terminology, a permanent tribute to her contributions. One of her contemporaries noted that the development of modern algebra was \"largely due to her\u2014in published papers, in lectures, and in personal influence on her contemporaries.\" Whenever physicists speak of a conservation law or a symmetry of nature, and whenever mathematicians work with abstract algebraic structures, they are invoking Emmy Noether's legacy. Her theorem bridges the abstract world of mathematical symmetry to the tangible, measurable laws that govern the universe\u2014and her algebraic innovations form the logical foundation upon which modern mathematics rests.",
+    "url": "https://blogs.comphy-lab.org/Blog/2025-Emmy-Noether-Symmetry-Conservation/#dual-revolutions-physics-and-mathematics",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "2025 emmy noether symmetry conservation - The Enduring Influence of \"Noether's Boys\"",
+    "content": "Her students, the members of \"**Noether's boys**,\" became mathematicians and physicists of distinction in their own right, carrying her ideas forward and amplifying her influence across generations. The mathematics and physics she created outlived her by decades, centuries\u2014and continues to guide discovery today. From the discovery of new subatomic particles to understanding why certain physical processes can (or cannot) occur in nature, Noether's theorem remains a beacon for scientific inquiry.",
+    "url": "https://blogs.comphy-lab.org/Blog/2025-Emmy-Noether-Symmetry-Conservation/#the-enduring-influence-of-noethers-boys",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "2025 emmy noether symmetry conservation - A Genius Recognized Too Late",
+    "content": "It took time for Noether to receive public recognition commensurate with her genius\u2014far too long. Yet when recognition came, it was profound. Albert Einstein's 1935 tribute, published in the *New York Times*, captures the magnitude of her achievement: > \"The most significant creative mathematical genius thus far produced since the higher education of women began.\" In the decades since, that assessment has only been reinforced. Emmy Noether revealed a fundamental truth about the universe: that hidden in every symmetry is a law of conservation. In doing so, she left an indelible mark on both mathematics and physics. Her story\u2014from overcoming systematic prejudice to transforming our understanding of the cosmos\u2014continues to inspire new generations of scientists and scholars. She stands as a testament to the power of genius, the cost of discrimination, and the enduring beauty of mathematical truth. ---",
+    "url": "https://blogs.comphy-lab.org/Blog/2025-Emmy-Noether-Symmetry-Conservation/#a-genius-recognized-too-late",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "2025 emmy noether symmetry conservation - Primary Sources & Historical References",
+    "content": "- **MacTutor History of Mathematics**: Emmy Noether (1882-1935) biography - [Link](https://mathshistory.st-andrews.ac.uk/Biographies/Noether_Emmy/) - University of St Andrews comprehensive biography - **Britannica Encyclopedia**: Emmy Noether biography and contributions - [Link](https://www.britannica.com/biography/Emmy-Noether) - Academic encyclopedia entry on her life and achievements - **Wikipedia**: Comprehensive entry on Emmy Noether with detailed timeline - [Link](https://en.wikipedia.org/wiki/Emmy_Noether) - Detailed historical and scientific information",
+    "url": "https://blogs.comphy-lab.org/Blog/2025-Emmy-Noether-Symmetry-Conservation/#primary-sources-historical-references",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "2025 emmy noether symmetry conservation - Podcasts & Media",
+    "content": "- **Daniel and Kelly's Extraordinary Universe Podcast**: \"What Did Emmy Noether Reveal About the Universe?\" - [Link](https://podcasts.apple.com/us/podcast/what-did-emmy-noether-reveal-about-the-universe/id1436616330?i=1000700056784) - Also available on: Apple Podcasts, Spotify, and other platforms - 52-minute episode featuring detailed discussion of Noether's life, work, and legacy",
+    "url": "https://blogs.comphy-lab.org/Blog/2025-Emmy-Noether-Symmetry-Conservation/#podcasts-media",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "2025 emmy noether symmetry conservation - Academic & Scientific Sources: - **Science News**:...",
+    "content": "- **Science News**: \"In her short life, mathematician Emmy Noether changed the face of physics\" - [Link](https://www.sciencenews.org/article/emmy-noether-theorem-legacy-physics-math) - Detailed exploration of Noether's theorem and its applications in modern physics - **ScienceBlogs (Principles)**: \"Science Story: Not a Bath House\" - [Link](https://scienceblogs.com/principles/2015/02/11/science-story-not-a-bath-house) - Historical account of Noether at G\u00f6ttingen and faculty resistance to women in academia - **Perimeter Institute**: \"Emmy Noether: Her life, work, and influence\" - Public lecture with Peter Olver and Ruth Gregory - [Link](https://pirsa.org/15060040) - Academic discussion of Noether's contributions to mathematics and physics - **Jewish Women's Archive**: Emmy Noether biography and legacy - [Link](https://jwa.org/encyclopedia/article/noether-emmy) - Noether's life in context of Jewish history and women in science - **Max Planck Institute**: \"Without Emmy Noether, there would be a huge gap in mathematics and its understanding\" - [Link](https://www.mpg.de/16548098/emmy-noether) - Institutional reflection on her mathematical contributions and legacy",
+    "url": "https://blogs.comphy-lab.org/Blog/2025-Emmy-Noether-Symmetry-Conservation/#academic-scientific-sources",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "2025 emmy noether symmetry conservation - Mathematical & Physics References",
+    "content": "- **B.L. van der Waerden**: *Moderne Algebra* (1931) - Foundational text built on Noether's ring theory and abstract algebra contributions - Second volume features her algebraic innovations as central framework - **Conservation Laws & Symmetry**: Noether's Theorem as foundational principle - Incorporated in all modern theoretical physics texts - Standard reference in quantum field theory, general relativity, and particle physics education ---",
+    "url": "https://blogs.comphy-lab.org/Blog/2025-Emmy-Noether-Symmetry-Conservation/#mathematical-physics-references",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "2025 emmy noether symmetry conservation - Tags & Categories",
+    "content": "#biography #mathematics #physics #symmetry #conservation-laws #women-in-science #history-of-science #theoretical-physics #abstract-algebra --- **Note**: This blog post is part of the CoMPhy Lab's profile series celebrating influential scientists and their contributions to our understanding of the universe. Emmy Noether's story reminds us that the greatest discoveries often come from those who refuse to be silenced by systemic barriers. > [!significance]- Metadata > Author:: [Vatsal Sanjay](https://comphy-lab.org/VatsalSy) > Date published:: Oct 24, 2025 > [!meta] Back to main website > [Home](https://comphy-lab.org/), [Team](https://comphy-lab.org/team), [Research](https://comphy-lab.org/research), [Github](https://github.com/comphy-lab), [Blogs](https://blogs.comphy-lab.org) > > \ud83d\udcdd [Edit this page on GitHub](https://github.com/comphy-lab/CoMPhy-Lab-Blogs/blob/main/Blog/2025-Emmy-Noether-Symmetry-Conservation.md)",
+    "url": "https://blogs.comphy-lab.org/Blog/2025-Emmy-Noether-Symmetry-Conservation/#tags-categories",
     "type": "blog_section",
     "priority": 3
   },
@@ -3232,7 +3449,7 @@
   },
   {
     "title": "2025 visual pdes - The big picture: Context",
-    "content": "Also see: [https://visualpde.com/about/](https://visualpde.com/about/). > [!significance]- Metadata > Author:: [Vatsal Sanjay](https://comphy-lab.org/VatsalSy) > Date published:: Oct 1, 2025 > [!meta] Back to main website > [Home](https://comphy-lab.org/), [Team](https://comphy-lab.org/team), [Research](https://comphy-lab.org/research), [Github](https://github.com/comphy-lab), [Blogs](https://blogs.comphy-lab.org) [^1]: Walker, B. J., Townsend, A. K., Chudasama, A. K., & Krause, A. L. (2023). VisualPDE: rapid interactive simulations of partial differential equations. Bull. Math. Biol., 85(11), 113. [^2]: https://visualpde.com/user-guide",
+    "content": "Also see: [https://visualpde.com/about/](https://visualpde.com/about/). > [!significance]- Metadata > Author:: [Vatsal Sanjay](https://comphy-lab.org/VatsalSy) > Date published:: Oct 1, 2025 > [!meta] Back to main website > [Home](https://comphy-lab.org/), [Team](https://comphy-lab.org/team), [Research](https://comphy-lab.org/research), [Github](https://github.com/comphy-lab), [Blogs](https://blogs.comphy-lab.org) > > \ud83d\udcdd [Edit this page on GitHub](https://github.com/comphy-lab/CoMPhy-Lab-Blogs/blob/main/Blog/2025-visual-pdes.md) [^1]: Walker, B. J., Townsend, A. K., Chudasama, A. K., & Krause, A. L. (2023). VisualPDE: rapid interactive simulations of partial differential equations. Bull. Math. Biol., 85(11), 113. [^2]: https://visualpde.com/user-guide",
     "url": "https://blogs.comphy-lab.org/Blog/2025-visual-pdes/#the-big-picture",
     "type": "blog_section",
     "priority": 3
@@ -3372,7 +3589,14 @@
   },
   {
     "title": "2025 arrowheads in elastoinertial turbulence - Conclusion: The community\u2019s focus...",
-    "content": "The community\u2019s focus has shifted to how such structures populate the state space and trigger transitions, rather than expecting them to appear as steady patterns in experiments. Ongoing work continues to unravel the multi-stage transition to elastic and elasto-inertial turbulence $\u2013$ with arrowhead/narwhal waves serving as a valuable piece of the puzzle, albeit one with clear limitations. This critical understanding ensures that we appreciate the arrowhead structures for what they are: insightful and pedagogical solutions that illuminate EIT\u2019s mechanics, but ultimately unstable in the wild chaos of real 3D turbulence. --- > [!significance]- Metadata > Author:: [Vatsal Sanjay](https://vatsalsanjay.com) > Date published:: Feb 24, 2025 > [!meta] Back to main website > [Home](https://comphy-lab.org/), [Team](https://comphy-lab.org/team), [Research](https://comphy-lab.org/research), [Github](https://github.com/comphy-lab), [Blogs](https://blogs.comphy-lab.org)",
+    "content": "The community\u2019s focus has shifted to how such structures populate the state space and trigger transitions, rather than expecting them to appear as steady patterns in experiments. Ongoing work continues to unravel the multi-stage transition to elastic and elasto-inertial turbulence $\u2013$ with arrowhead/narwhal waves serving as a valuable piece of the puzzle, albeit one with clear limitations.",
+    "url": "https://blogs.comphy-lab.org/Blog/2025-Arrowheads-in-elastoinertial-turbulence/#conclusion",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "2025 arrowheads in elastoinertial turbulence - Conclusion: This critical understanding...",
+    "content": "This critical understanding ensures that we appreciate the arrowhead structures for what they are: insightful and pedagogical solutions that illuminate EIT\u2019s mechanics, but ultimately unstable in the wild chaos of real 3D turbulence. --- > [!significance]- Metadata > Author:: [Vatsal Sanjay](https://vatsalsanjay.com) > Date published:: Feb 24, 2025 > [!meta] Back to main website > [Home](https://comphy-lab.org/), [Team](https://comphy-lab.org/team), [Research](https://comphy-lab.org/research), [Github](https://github.com/comphy-lab), [Blogs](https://blogs.comphy-lab.org) > > \ud83d\udcdd [Edit this page on GitHub](https://github.com/comphy-lab/CoMPhy-Lab-Blogs/blob/main/Blog/2025-Arrowheads-in-elastoinertial-turbulence.md)",
     "url": "https://blogs.comphy-lab.org/Blog/2025-Arrowheads-in-elastoinertial-turbulence/#conclusion",
     "type": "blog_section",
     "priority": 3
@@ -3638,7 +3862,7 @@
   },
   {
     "title": "2025 curvature inversion in laser\u2011struck droplets - Perspective: JavaScript",
-    "content": "Jalaal, Laser-Induced Droplet Deformation: Curvature Inversion Explained from Instantaneous Pressure Impulse, J. Fluid Mech., 1020, A21 (2025). [DOI (OA): 10.1017/jfm.2025.10665](https://doi.org/10.1017/jfm.2025.10665) Key details on the impulse definition, ($\\theta_{\\max}$) diagnostic, ($W \\leftrightarrow d/D_0$) map, timescales, numerical setup, and limitations are summarized above; see in particular the introduction and figures 1\u20138, Appendix B (ambient effects), and Appendix E (velocity ratio). --- > [!significance]- Metadata > Author:: [Vatsal Sanjay](https://comphy-lab.org/VatsalSy) > Date published:: Oct 6, 2025 > [!meta] Back to main website > [Home](https://comphy-lab.org/), [Team](https://comphy-lab.org/team), [Research](https://comphy-lab.org/research), [Github](https://github.com/comphy-lab), [Blogs](https://blogs.comphy-lab.org)",
+    "content": "Jalaal, Laser-Induced Droplet Deformation: Curvature Inversion Explained from Instantaneous Pressure Impulse, J. Fluid Mech., 1020, A21 (2025). [DOI (OA): 10.1017/jfm.2025.10665](https://doi.org/10.1017/jfm.2025.10665) Key details on the impulse definition, ($\\theta_{\\max}$) diagnostic, ($W \\leftrightarrow d/D_0$) map, timescales, numerical setup, and limitations are summarized above; see in particular the introduction and figures 1\u20138, Appendix B (ambient effects), and Appendix E (velocity ratio). --- > [!significance]- Metadata > Author:: [Vatsal Sanjay](https://comphy-lab.org/VatsalSy) > Date published:: Oct 6, 2025 > [!meta] Back to main website > [Home](https://comphy-lab.org/), [Team](https://comphy-lab.org/team), [Research](https://comphy-lab.org/research), [Github](https://github.com/comphy-lab), [Blogs](https://blogs.comphy-lab.org) > > \ud83d\udcdd [Edit this page on GitHub](https://github.com/comphy-lab/CoMPhy-Lab-Blogs/blob/main/Blog/2025-Curvature-Inversion-in-Laser\u2011Struck-Droplets.md)",
     "url": "https://blogs.comphy-lab.org/Blog/2025-Curvature-Inversion-in-Laser\u2011Struck-Droplets/#perspective",
     "type": "blog_section",
     "priority": 3
