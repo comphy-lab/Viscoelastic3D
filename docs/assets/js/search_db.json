@@ -964,7 +964,7 @@
   },
   {
     "title": "Private todo blog public - Elasticity and viscoelasticity",
-    "content": "- [ ] Jacco paper \u23f3 2025-01-24 \ud83d\udcc5 2025-02-03 ^9A6D89F2-1B19-460B-9DAD-DAB0109C0BC3 - [ ] all about the elastic mapping \u23f3 2025-01-26 \ud83d\udcc5 2025-02-09 ^499BBFE0-EB2C-48CD-B8F4-7DFA004C79A7",
+    "content": "- [ ] Jacco paper Elasticity and viscoelasticity \ud83d\udcc5 2025-11-09 ^9A6D89F2-1B19-460B-9DAD-DAB0109C0BC3 - [ ] all about the elastic mapping \ud83d\udcc5 2025-11-11 ^499BBFE0-EB2C-48CD-B8F4-7DFA004C79A7",
     "url": "https://blogs.comphy-lab.org/Private-ToDo-Blog-public/#elasticity-and-viscoelasticity",
     "type": "blog_section",
     "priority": 3
@@ -2609,7 +2609,7 @@
   },
   {
     "title": "1 intro soft matter - The Factor of 2 Discrepancy",
-    "content": "$$\\text{Energy method:} \\quad v_f = \\sqrt{\\frac{4\\gamma_{fa}}{\\rho h_0}}$$ $$\\text{Momentum method:} \\quad v_f = \\sqrt{\\frac{2\\gamma_{fa}}{\\rho h_0}}$$ **Question:** Where did the energy go? > [!question] **Think About It** > The resolution of this paradox requires careful accounting of energy dissipation and momentum conservation. We will resolve it in the next lecture, where we properly track kinetic energy, surface energy, and viscous dissipation. ---",
+    "content": "$$\\text{Energy method:} \\quad v_f = \\sqrt{\\frac{4\\gamma_{fa}}{\\rho h_0}}$$ $$\\text{Momentum method:} \\quad v_f = \\sqrt{\\frac{2\\gamma_{fa}}{\\rho h_0}}$$ **Question:** Where did the energy go? > [!question] **Think About It** > The resolution of this paradox requires careful accounting of energy dissipation and momentum conservation. We will resolve it in [[1.5-Taylor-Culick-Paradox|Lecture 1.5]], where we properly track kinetic energy, surface energy, and dissipation mechanisms. ---",
     "url": "https://blogs.comphy-lab.org/Lecture-Notes/Intro-Soft-Matter/1-Intro-Soft-Matter/#the-factor-of-2-discrepancy",
     "type": "blog_section",
     "priority": 3
@@ -2693,7 +2693,7 @@
   },
   {
     "title": "1 intro soft matter - Further Reading: - **Textbook:** Pierre-Gilles...",
-    "content": "- **Textbook:** Pierre-Gilles de Gennes, *Scaling Concepts in Polymer Physics* (Cornell University Press, 1979) \u2014 foundational work on soft matter scaling [Link](https://www.amazon.co.uk/Scaling-Concepts-Polymer-Physics-Pierre-Gilles/dp/080141203X) - **Review:** Patrick Oswald & Pierre Pieranski, *Nematic and Cholesteric Liquid Crystals: Concepts and Physical Properties Illustrated by Experiments* (Taylor & Francis, 2005) \u2014 detailed liquid crystal physics [DOI: 10.1201/9780203023013](https://doi.org/10.1201/9780203023013) - **Modern perspective:** Tom McLeish, *Liquid Crystal Polymers* (Oxford University Press, 2018) \u2014 contemporary soft matter overview [Link](https://global.oup.com/academic/product/soft-matter-9780198807131?cc=gb&lang=en&) See the next lecture for a rigorous treatment of the Taylor\u2013Culick paradox and momentum/energy conservation in soft matter flows. --- > [!significance]- Metadata > Author:: [Vatsal Sanjay](https://vatsalsanjay.com) > Date published:: Oct 22, 2025 > Date modified:: Oct 22, 2025 > [!link] Back to main website > [Home](https://comphy-lab.org/), [Team](https://comphy-lab.org/team), [Research](https://comphy-lab.org/research), [Github](https://github.com/comphy-lab)",
+    "content": "- **Textbook:** Pierre-Gilles de Gennes, *Scaling Concepts in Polymer Physics* (Cornell University Press, 1979) \u2014 foundational work on soft matter scaling [Link](https://www.amazon.co.uk/Scaling-Concepts-Polymer-Physics-Pierre-Gilles/dp/080141203X) - **Review:** Patrick Oswald & Pierre Pieranski, *Nematic and Cholesteric Liquid Crystals: Concepts and Physical Properties Illustrated by Experiments* (Taylor & Francis, 2005) \u2014 detailed liquid crystal physics [DOI: 10.1201/9780203023013](https://doi.org/10.1201/9780203023013) - **Modern perspective:** Tom McLeish, *Liquid Crystal Polymers* (Oxford University Press, 2018) \u2014 contemporary soft matter overview [Link](https://global.oup.com/academic/product/soft-matter-9780198807131?cc=gb&lang=en&) See the next lecture for a rigorous treatment of the Taylor\u2013Culick paradox and momentum/energy conservation in soft matter flows. --- > [!significance]- Metadata > Author:: [Vatsal Sanjay](https://vatsalsanjay.com) > Date published:: Oct 22, 2025 > Date modified:: Oct 22, 2025 > [!link] Back to main website > [Home](https://comphy-lab.org/), [Team](https://comphy-lab.org/team), [Research](https://comphy-lab.org/research), [Github](https://github.com/comphy-lab) > > \ud83d\udcdd [Edit this page on GitHub](https://github.com/comphy-lab/CoMPhy-Lab-Blogs/blob/main/Lecture-Notes/Intro-Soft-Matter/1-Intro-Soft-Matter.md)",
     "url": "https://blogs.comphy-lab.org/Lecture-Notes/Intro-Soft-Matter/1-Intro-Soft-Matter/#further-reading",
     "type": "blog_section",
     "priority": 3
@@ -2713,9 +2713,9 @@
     "priority": 3
   },
   {
-    "title": "0 readme - Course Structure (8 Lectures)",
-    "content": "- **Lecture 1:** [[1-Intro-Soft-Matter|Different Faces of Soft Condensed Matter]] \u2013 What is soft matter, why is it soft, and how do we measure softness? - **Lecture 2:** Coarse-Grained Continuum Mechanics & Conservation Laws - **Lecture 3:** Soft Matter Instabilities - **Lecture 4:** Soft Matter Singularities - **Lecture 5:** Elastic vs Viscous vs Viscoelastic Behavior - **Lecture 6:** Rheology \u2013 Measuring \"Softness\" and Time-Dependent Response - **Lecture 7:** Advanced Topics & Research Frontiers - **Lecture 8:** Presentations (10:00\u201312:00)",
-    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Intro-Soft-Matter/0-README/#course-structure-8-lectures",
+    "title": "0 readme - Course Structure (8+ Lectures + Bridges)",
+    "content": "- **Lecture 1:** [[1-Intro-Soft-Matter|Different Faces of Soft Condensed Matter]] \u2013 What is soft matter, why is it soft, and how do we measure softness? - **Lecture 1.5:** [[1.5-Taylor-Culick-Paradox|The Taylor\u2013Culick Paradox \u2014 Where Did the Energy Go?]] \u2013 Resolving a century-old paradox through proper energy accounting and momentum conservation - **Lecture 2:** Coarse-Grained Continuum Mechanics & Conservation Laws - **Lecture 3:** Soft Matter Instabilities - **Lecture 4:** Soft Matter Singularities - **Lecture 5:** Elastic vs Viscous vs Viscoelastic Behavior - **Lecture 6:** Rheology \u2013 Measuring \"Softness\" and Time-Dependent Response - **Lecture 7:** Advanced Topics & Research Frontiers - **Lecture 8:** Presentations (10:00\u201312:00)",
+    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Intro-Soft-Matter/0-README/#course-structure-8-lectures-bridges",
     "type": "blog_section",
     "priority": 3
   },
@@ -2777,8 +2777,176 @@
   },
   {
     "title": "0 readme - Contact & Support",
-    "content": "**Instructor:** Vatsal Sanjay **Email:** [vatsal.sanjay@durham.ac.uk](mailto:vatsal.sanjay@durham.ac.uk) **Office Hours:** Thu 14:00\u201316:00 (Ph255) Have questions? Come to office hours or send an email \u2014 I'm here to help! --- > [!link] More Resources > - [CoMPhy Lab Website](https://comphy-lab.org/) > - [Research Group](https://comphy-lab.org/research) > - [GitHub](https://github.com/comphy-lab) **Last updated:** 2025-10-22",
+    "content": "**Instructor:** Vatsal Sanjay **Email:** [vatsal.sanjay@durham.ac.uk](mailto:vatsal.sanjay@durham.ac.uk) **Office Hours:** Thu 14:00\u201316:00 (Ph255) Have questions? Come to office hours or send an email \u2014 I'm here to help! --- > [!link] More Resources > - [CoMPhy Lab Website](https://comphy-lab.org/) > - [Research Group](https://comphy-lab.org/research) > - [GitHub](https://github.com/comphy-lab) > > \ud83d\udcdd [Edit this page on GitHub](https://github.com/comphy-lab/CoMPhy-Lab-Blogs/blob/main/Lecture-Notes/Intro-Soft-Matter/0-README.md) **Last updated:** 2025-10-22",
     "url": "https://blogs.comphy-lab.org/Lecture-Notes/Intro-Soft-Matter/0-README/#contact-support",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "1.5 taylor culick paradox - Lecture 1.5: The Taylor\u2013Culick Paradox \u2014 Where Did the Energy Go?",
+    "content": "Resolving the Dupr\u00e9\u2013Rayleigh paradox through proper energy accounting and momentum conservation. This lecture bridges [[1-Intro-Soft-Matter|Lecture 1]]'s introduction to the paradox with a complete resolution. ![](../../_Media/1.5-Taylor-Culick-03.png) ---",
+    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Intro-Soft-Matter/1.5-Taylor-Culick-Paradox/#lecture-15-the-taylorculick-paradox-where-did-the-energy-go",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "1.5 taylor culick paradox - Introduction: The Unresolved Paradox",
+    "content": "In Lecture 1, we encountered a puzzle: when you puncture a soap bubble, the film edge retracts inward with remarkable speed. Yet two seemingly correct physical approaches gave **different predictions** for this retraction velocity: $$\\text{Dupr\u00e9\u2013Rayleigh (Energy):} \\quad v = \\sqrt{\\frac{4\\gamma_{fa}}{\\rho h_0}} \\quad \\text{(disagreed with experiment)}$$ $$\\text{Taylor\u2013Culick (Momentum):} \\quad v = \\sqrt{\\frac{2\\gamma_{fa}}{\\rho h_0}} \\quad \\text{(agreed with experiment)}$$ **Question:** If momentum conservation gives the right answer, why did energy conservation fail? Where did the missing energy go? This lecture resolves this paradox, which was finally answered convincingly by Pierre-Gilles de Gennes in 1996\u2014more than a century after Rayleigh's original observations. ---",
+    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Intro-Soft-Matter/1.5-Taylor-Culick-Paradox/#introduction-the-unresolved-paradox",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "1.5 taylor culick paradox - Rayleigh's Pioneering Work (1891)",
+    "content": "![](../../_Media/1.5-Taylor-Culick-01.png) John William Strutt, 2nd Baron Rayleigh, used instantaneous photography to capture the dynamics of liquid jets and interfaces. In a remarkable 1891 paper, he observed breaking jets and proposed an energy-balance argument for the speed of film retraction: > **Rate of surface energy decrease = Rate of kinetic energy increase** Mathematically: $$\\frac{d}{dt}\\left(\\frac{1}{2}mv^2\\right) = 2\\gamma_{fa}(2\\pi R) v$$ This yielded: $$v_{\\text{Rayleigh}} = \\sqrt{\\frac{4\\gamma_{fa}}{\\rho h_0}}$$",
+    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Intro-Soft-Matter/1.5-Taylor-Culick-Paradox/#rayleighs-pioneering-work-1891",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "1.5 taylor culick paradox - A Curious Anomaly",
+    "content": "Despite its elegant derivation, Rayleigh's prediction was **faster than observed**\u2014a factor of $\\sqrt{2}$ too fast. For nearly 70 years, this discrepancy puzzled the fluid mechanics community. ---",
+    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Intro-Soft-Matter/1.5-Taylor-Culick-Paradox/#a-curious-anomaly",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "1.5 taylor culick paradox - 1. The Energy Perspective (Dupr\u00e9 & Rayleigh, 1891): Context",
+    "content": "![](../../_Media/1.5-Taylor-Culick-05.png) The energy balance assumes that all surface energy released goes into kinetic energy of the retracting film: **Setup:** A circular film of radius $R$, thickness $h_0$, with surface energy per interface $\\gamma_{fa}$. **Surface energy in the film:** $$E_s = 2 \\cdot \\gamma_{fa} \\cdot (\\text{area}) = 2\\gamma_{fa} \\cdot 2\\pi R h_0$$ **Rate of energy decrease:** $$-\\frac{dE_s}{dt} = 2\\gamma_{fa} \\cdot 2\\pi \\frac{dR}{dt} \\cdot h_0 = -2\\gamma_{fa} \\cdot 2\\pi h_0 v_f$$ (Negative because $\\frac{dR}{dt} = -v_f$ as radius shrinks) **Kinetic energy of moving film:** $$E_k = \\frac{1}{2}m v_f^2 = \\frac{1}{2}\\rho V v_f^2 = \\frac{1}{2}\\rho (2\\pi R h_0) v_f^2$$ **Energy conservation:** $$\\frac{dE_k}{dt} = 2\\gamma_{fa} \\cdot 2\\pi h_0 v_f$$ $$\\frac{d}{dt}\\left[\\frac{1}{2}\\rho (2\\pi R h_0) v_f^2\\right] = 4\\pi \\gamma_{fa} h_0 v_f$$ Assuming **constant velocity** $v_f$ (steady-state retraction): $$\\frac{1}{2}\\rho \\cdot 2\\pi h_0 \\cdot (2v_f \\cdot v_f) + \\rho 2\\pi h_0 v_f \\cdot v_f = 4\\pi \\gamma_{fa} h_0 v_f$$ Wait\u2014this is subtle.",
+    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Intro-Soft-Matter/1.5-Taylor-Culick-Paradox/#1-the-energy-perspective-dupr\u00e9-rayleigh-1891",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "1.5 taylor culick paradox - 1. The Energy Perspective (Dupr\u00e9 & Rayleigh, 1891): Let me reconsider...",
+    "content": "Let me reconsider carefully. The mass of the rim **changes** as material flows into it from the retracting film. **Correct energy approach (accounting for mass flux):** Energy released per unit time: $$\\dot{E}_{released} = 2 \\cdot \\gamma_{fa} \\cdot 2\\pi R \\cdot v_f$$ This energy goes into: 1. **Kinetic energy of material in the rim** (moving at velocity $v_f$) 2. **Heat dissipation** (if any) If we assume all energy becomes kinetic: $$\\frac{1}{2}\\frac{dm}{dt}v_f^2 = 2\\gamma_{fa} \\cdot 2\\pi R \\cdot v_f$$ The mass flux into the rim: $$\\frac{dm}{dt} = \\rho \\cdot (2\\pi R) \\cdot h_0 \\cdot v_f$$ Substituting: $$\\frac{1}{2}\\rho (2\\pi R h_0) v_f^2 \\cdot v_f = 4\\pi \\gamma_{fa} R v_f$$ $$v_f^2 = \\frac{4\\gamma_{fa}}{\\rho h_0}$$ $$\\boxed{v_f = \\sqrt{\\frac{4\\gamma_{fa}}{\\rho h_0}}} \\quad \\text{(Dupr\u00e9\u2013Rayleigh prediction)}$$ ---",
+    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Intro-Soft-Matter/1.5-Taylor-Culick-Paradox/#1-the-energy-perspective-dupr\u00e9-rayleigh-1891",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "1.5 taylor culick paradox - 2. The Momentum Perspective (G. I. Taylor, 1959): Context",
+    "content": "![](../../_Media/1.5-Taylor-Culick-08.png) **G. I. Taylor** (1905\u20131975), one of the greatest fluid mechanicists, approached the problem differently: he used **momentum conservation** instead of energy. **Newton's second law:** Force = Rate of momentum change **Forces on the film:** - Surface tension acts on the perimeter of the film at both interfaces - Total force: $F = 2\\gamma_{fa}(2\\pi R)$ (pointing inward, opposing motion) **Rate of momentum change:** The film is being pulled inward by surface tension.",
+    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Intro-Soft-Matter/1.5-Taylor-Culick-Paradox/#2-the-momentum-perspective-g-i-taylor-1959",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "1.5 taylor culick paradox - 2. The Momentum Perspective (G. I. Taylor, 1959): The material in...",
+    "content": "The material in the rim has momentum $p = mv$. $$\\frac{dp}{dt} = 2\\gamma_{fa}(2\\pi R)$$ For material flowing into the rim at velocity $v_f$: $$\\frac{d}{dt}(mv_f) = 2\\gamma_{fa}(2\\pi R)$$ This gives: $$v_f \\frac{dm}{dt} + m\\frac{dv_f}{dt} = 2\\gamma_{fa}(2\\pi R)$$ Assuming **steady-state** ($\\frac{dv_f}{dt} = 0$) and $\\frac{dm}{dt} = \\rho (2\\pi R) h_0 v_f$: $$v_f \\cdot \\rho (2\\pi R) h_0 v_f = 2\\gamma_{fa}(2\\pi R)$$ $$\\rho h_0 v_f^2 = 2\\gamma_{fa}$$ $$\\boxed{v_f = \\sqrt{\\frac{2\\gamma_{fa}}{\\rho h_0}}} \\quad \\text{(Taylor\u2013Culick prediction)}$$ **Remarkable fact:** Taylor's prediction agrees with experiments! This immediately suggested that the **energy approach was wrong**\u2014but why? ---",
+    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Intro-Soft-Matter/1.5-Taylor-Culick-Paradox/#2-the-momentum-perspective-g-i-taylor-1959",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "1.5 taylor culick paradox - 3. The Missing Link: Inelastic Collision (de Gennes, 1996)",
+    "content": "![](../../_Media/1.5-Taylor-Culick-13.png) **Pierre-Gilles de Gennes**, a master of soft matter physics (Nobel Prize 1991), provided the decisive resolution in a 1996 *Faraday Discussion* paper: > [!important] The Key Insight > > The film material does **not** smoothly flow into the retracting rim. Instead, it **collides inelastically** with the rim, dissipating energy. This is a **plastic collision**, not an elastic process.",
+    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Intro-Soft-Matter/1.5-Taylor-Culick-Paradox/#3-the-missing-link-inelastic-collision-de-gennes-1996",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "1.5 taylor culick paradox - Energy Budget with Dissipation",
+    "content": "When the soap film retracts, the material at the film edge joins the rim. This material transition is **inelastic**: - **Before collision:** Film material moves inward at velocity $v_f$ - **After collision:** It joins the rim, which is also moving at $v_f$ - **Energy dissipated:** The \"thickness\" direction has an inelastic collision component ![](../../_Media/1.5-Taylor-Culick-14.png) The energy dissipation rate from the inelastic collision: $$\\dot{E}_{dissipated} = \\frac{1}{2}\\frac{dm}{dt}v_f^2$$ This is exactly the kinetic energy of the material **losing its transverse motion** as it merges into the rim. ---",
+    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Intro-Soft-Matter/1.5-Taylor-Culick-Paradox/#energy-budget-with-dissipation",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "1.5 taylor culick paradox - Complete Energy Balance",
+    "content": "Let's now account for all energy flows: **Energy released by surface tension:** $$\\dot{E}_{released} = 2\\gamma_{fa} \\cdot 2\\pi R \\cdot v_f = 4\\pi \\gamma_{fa} R v_f$$ **Energy dissipated (inelastic collision):** $$\\dot{E}_{dissipated} = \\frac{1}{2}\\frac{dm}{dt}v_f^2 = \\frac{1}{2}\\rho (2\\pi R h_0) v_f \\cdot v_f^2 = \\pi \\rho R h_0 v_f^3$$ **Energy conservation (with dissipation):** $$\\dot{E}_{released} = \\dot{E}_{dissipated}$$ $$4\\pi \\gamma_{fa} R v_f = \\pi \\rho R h_0 v_f^3$$ $$4\\gamma_{fa} = \\rho h_0 v_f^2$$ $$\\boxed{v_f = \\sqrt{\\frac{4\\gamma_{fa}}{\\rho h_0}}} \\quad \\text{(Corrected energy prediction!)}$$ Wait\u2014this gives the Dupr\u00e9 prediction again, not Taylor's! Let me reconsider... ---",
+    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Intro-Soft-Matter/1.5-Taylor-Culick-Paradox/#complete-energy-balance",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "1.5 taylor culick paradox - Resolving the Apparent Contradiction",
+    "content": "The resolution lies in **momentum conservation vs. energy conservation**:",
+    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Intro-Soft-Matter/1.5-Taylor-Culick-Paradox/#resolving-the-apparent-contradiction",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "1.5 taylor culick paradox - Why Momentum Conservation Works",
+    "content": "Momentum balance directly applies **regardless of dissipation**: $$\\text{Force} = \\frac{dp}{dt}$$ This is valid whether the process is elastic or inelastic. The surface tension force acts on the film perimeter, and momentum is conserved: $$v_f = \\sqrt{\\frac{2\\gamma_{fa}}{\\rho h_0}} \\quad \\checkmark$$",
+    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Intro-Soft-Matter/1.5-Taylor-Culick-Paradox/#why-momentum-conservation-works",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "1.5 taylor culick paradox - Why the Original Energy Balance Failed",
+    "content": "The error in the Dupr\u00e9\u2013Rayleigh approach was assuming that **only kinetic energy matters**. They wrote: $$2\\gamma_{fa} \\cdot 2\\pi R \\cdot v_f = \\frac{d}{dt}\\left[\\frac{1}{2}m v_f^2\\right]$$ But this neglected the **internal deformation energy** as the film material is \"compressed\" into the rim. The correct energy balance is: $$2\\gamma_{fa} \\cdot 2\\pi R \\cdot v_f = \\frac{d}{dt}\\left[\\frac{1}{2}m v_f^2\\right] + \\dot{E}_{internal}$$ The \"missing\" energy $\\dot{E}_{internal}$ goes into: - **Deforming the fluid** from a thin film to the thicker rim - **Viscous dissipation** at high shear rates - **Acoustic waves** (shock waves in the fluid) ---",
+    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Intro-Soft-Matter/1.5-Taylor-Culick-Paradox/#why-the-original-energy-balance-failed",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "1.5 taylor culick paradox - The Ohnesorge Number and Flow Regimes",
+    "content": "The dynamics of film retraction depend on the balance between surface tension (driving the flow) and viscosity (resisting it). ![](../../_Media/1.5-Taylor-Culick-11.png) **Ohnesorge number:** $$Oh = \\frac{\\eta}{\\sqrt{\\rho \\gamma_{fa} h_0}}$$ where $\\eta$ is the dynamic viscosity. - **Low $Oh$ regime:** Inertia-dominated, momentum conservation dominates - **High $Oh$ regime:** Viscous-dominated, viscous stresses important The classical Taylor\u2013Culick speed $v_f = \\sqrt{2\\gamma_{fa}/(\\rho h_0)}$ applies in the **low-$Oh$ (inertial) regime**. ---",
+    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Intro-Soft-Matter/1.5-Taylor-Culick-Paradox/#the-ohnesorge-number-and-flow-regimes",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "1.5 taylor culick paradox - Experimental Validation and Simulations",
+    "content": "Modern high-speed imaging and numerical simulations have beautifully confirmed the resolution: **Key observations:** - Bursting films retract at speeds very close to Taylor's prediction - Velocity field shows strong acceleration from rest to $v_f$ - Dissipation concentrates near the retracting edge (the rim region) - The flow becomes increasingly complex at high Oh (viscoelastic effects emerge) ![](../../_Media/1.5-Taylor-Culick-16.png) Simulations reveal that the **velocity profile is not uniform**\u2014there's acceleration from the edge into the rim, and stress concentrations that lead to localized dissipation. --- ![](../../_Media/1.5-Taylor-Culick-17.png)",
+    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Intro-Soft-Matter/1.5-Taylor-Culick-Paradox/#experimental-validation-and-simulations",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "1.5 taylor culick paradox - Historical Timeline and Key References",
+    "content": "| Year | Contributor | Contribution | |------|---|---| | **1891** | Rayleigh | First observation and energy-balance prediction | | **1959** | G. I. Taylor | Momentum-balance approach; predicts $v = \\sqrt{2\\gamma/(\\rho h_0)}$ | | **1960** | F. E. C. Culick | Independent confirmation; bubble breakup dynamics | | **1996** | P.-G. de Gennes | Complete resolution via inelastic collision and energy dissipation | > [!note] On the importance of this problem > The Taylor\u2013Culick paradox exemplifies a deep principle: **momentum conservation is always valid**, but **energy conservation requires accounting for dissipation mechanisms**. This lesson transfers to many soft matter phenomena where interfaces dominate. ---",
+    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Intro-Soft-Matter/1.5-Taylor-Culick-Paradox/#historical-timeline-and-key-references",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "1.5 taylor culick paradox - Key Takeaways: Context",
+    "content": "1. **Momentum conservation is robust.** The Taylor\u2013Culick speed $v_f = \\sqrt{2\\gamma_{fa}/(\\rho h_0)}$ follows directly from force balance and does not depend on details of energy dissipation. 2. **Energy dissipation is not negligible.** The naive energy-balance approach fails because it ignores the inelastic collision process\u2014energy is *not* smoothly converted to kinetic energy alone. 3. **Multiple equilibrium approaches.** For the same physical process, different conservation laws give different perspectives. Momentum is fundamental; energy requires accounting for all sinks. 4. **Time and dissipation matter.** In soft matter, the **rate of process** (viscosity, Ohnesorge number) critically determines dynamics. Fast retraction (low Oh) is momentum-dominated; slow retraction (high Oh) is viscous-dominated. 5. **Paradoxes resolve through careful accounting.** Many apparent contradictions in physics arise from incomplete accounting of energy or momentum sinks/sources.",
+    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Intro-Soft-Matter/1.5-Taylor-Culick-Paradox/#key-takeaways",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "1.5 taylor culick paradox - Key Takeaways: Always ask: \"Where...",
+    "content": "Always ask: \"Where did the energy/momentum go?\" ![](../../_Media/1.5-Taylor-Culick-18.png) ---",
+    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Intro-Soft-Matter/1.5-Taylor-Culick-Paradox/#key-takeaways",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "1.5 taylor culick paradox - Primary Literature",
+    "content": "- **G. I. Taylor**, *Proc. R. Soc. A*, **253**, 313\u2013321 (1959) \u2014 Classic momentum-balance derivation - **F. E. C. Culick**, *J. Appl. Phys.*, **31**, 1128 (1960) \u2014 Experimental confirmation - **P.-G. de Gennes**, *Faraday Discuss.*, **104**, 1\u20138 (1996) \u2014 Energy dissipation and resolution - **N. Savva & O. R. Bush**, *J. Fluid Mech.*, **626**, 211\u2013240 (2009) \u2014 Modern computational studies",
+    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Intro-Soft-Matter/1.5-Taylor-Culick-Paradox/#primary-literature",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "1.5 taylor culick paradox - Reviews",
+    "content": "- **J. C. Burton et al.**, *Phys. Rev. Lett.*, **109**, 064501 (2012) \u2014 High-speed imaging and instability - **M. Brenner et al.**, *Physics of Fluids*, **25**, 121704 (2013) \u2014 Viscoelastic film retraction ---",
+    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Intro-Soft-Matter/1.5-Taylor-Culick-Paradox/#reviews",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "1.5 taylor culick paradox - Connection to Lecture 2",
+    "content": "This resolution of the Taylor\u2013Culick paradox illustrates the power of **conservation laws** in fluid mechanics. In Lecture 2, we will develop a systematic framework for: - **Conservation of momentum** \u2192 Euler and Navier\u2013Stokes equations - **Conservation of energy** \u2192 Thermodynamics and dissipation - **Continuum mechanics** \u2192 Coarse-grained descriptions of soft matter Understanding *why* momentum conservation works (even when energy accounting is subtle) is central to soft matter hydrodynamics. ---",
+    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Intro-Soft-Matter/1.5-Taylor-Culick-Paradox/#connection-to-lecture-2",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "1.5 taylor culick paradox - Homework (Self-Assessed): > [!check] **Reflection...",
+    "content": "> [!check] **Reflection Questions** > > **Q1.** In the energy-balance approach, why does neglecting dissipation lead to a speed that's $\\sqrt{2}$ times faster than observed? > > **Q2.** Explain in words why momentum conservation \"just works\" even though energy dissipation is important. Why is momentum balance insensitive to the details of how energy is dissipated? > > **Q3.** Consider a highly viscous soap film (large $\\eta$, large Ohnesorge number). Would you expect the retraction speed to be faster or slower than Taylor's prediction?",
+    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Intro-Soft-Matter/1.5-Taylor-Culick-Paradox/#homework-self-assessed",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "1.5 taylor culick paradox - Homework (Self-Assessed): Explain your reasoning...",
+    "content": "Explain your reasoning using scaling arguments. > > **Q4.** Design a thought experiment or simple calculation to estimate the fraction of released surface energy that goes into: > - (a) Kinetic energy of the rim > - (b) Dissipation (heating, deformation) > > (Hint: Use the Taylor speed and compare the kinetic energy flux $\\frac{1}{2}(\\dot{m})v^2$ with the released energy flux $2\\gamma A \\cdot v$.) --- > [!significance]- Metadata > Author:: [Vatsal Sanjay](https://vatsalsanjay.com) > Date published:: Oct 28, 2025 > Date modified:: Oct 28, 2025 > > Bridge lecture resolving the Dupr\u00e9\u2013Rayleigh paradox through modern understanding of energy dissipation and momentum conservation in soft matter flows. > [!link] Back to main website > [Home](https://comphy-lab.org/), [Team](https://comphy-lab.org/team), [Research](https://comphy-lab.org/research), [Github](https://github.com/comphy-lab) > > \ud83d\udcdd [Edit this page on GitHub](https://github.com/comphy-lab/CoMPhy-Lab-Blogs/blob/main/Lecture-Notes/Intro-Soft-Matter/1.5-Taylor-Culick-Paradox.md)",
+    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Intro-Soft-Matter/1.5-Taylor-Culick-Paradox/#homework-self-assessed",
     "type": "blog_section",
     "priority": 3
   },
