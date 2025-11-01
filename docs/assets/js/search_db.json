@@ -718,6 +718,13 @@
     "priority": 3
   },
   {
+    "title": "0_readme - Double Network Hydroget:",
+    "content": "2025-10-31 [[2025-Why-Double\u2011Network-Hydrogels-Dont-Shatter]]: Why double-network hydrogels combine stiffness and toughness without shattering - elastic screening mechanisms that prevent crack cascades by damping stress propagation between sacrificial bonds.",
+    "url": "https://blogs.comphy-lab.org/0_README/#double-network-hydroget",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
     "title": "0_readme - Scientist profiles & history:",
     "content": "2025-10-24 [[2025-Emmy-Noether-Symmetry-Conservation]]: Emmy Noether's revolutionary contributions to mathematics and physics - from overcoming gender barriers in academia to discovering the profound connection between symmetry and conservation laws that now underpins all of modern physics.",
     "url": "https://blogs.comphy-lab.org/0_README/#scientist-profiles-history",
@@ -1659,6 +1666,153 @@
     "title": "Gaussian surface is very similar to the control volume in fluid mechanics - Gaussian surface is very similar to the control volume in fluid mechanics",
     "content": "They are closely related in a mathematical sense. In [[Gauss-law-of-Electrostatics|Gauss\u2019s law for electrostatics]], one picks a closed surface\u2014the Gaussian surface\u2014to evaluate the net electric flux and relate it to enclosed charge via the divergence theorem. In fluid mechanics, one defines a control volume (with a control surface) to analyze fluxes of mass, momentum, or energy. Both rely on the same underlying integral theorem (the divergence theorem) to connect fluxes through the surface to sources or sinks within the volume. The physical interpretations differ\u2014charge density for electromagnetism versus mass or momentum for fluid flow\u2014but the conceptual framework is very similar.",
     "url": "https://blogs.comphy-lab.org/_AtomicNotes/Gaussian-surface-is-very-similar-to-the-control-volume-in-fluid-mechanics/#gaussian-surface-is-very-similar-to-the-control-volume-in-fluid-mechanics",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "Polymer concentration regimes and blob networks - Executive Summary",
+    "content": "The entropic elasticity relation $G = n k_B T \\sim k_B T / \\xi^3$ applies specifically to **semi-dilute polymer solutions** forming blob networks, not to all polymer systems. Understanding when this scaling holds requires distinguishing between concentration regimes and recognizing the physical nature of $\\xi$ as a correlation length (blob size), not the Kuhn length of individual chains. Key points: - **Dilute regime** ($c c^{**}$): Dense melt-like behavior, different scaling - The mesh size $\\xi$ represents the **blob correlation length** (spacing between entanglements), not the Kuhn segment length - Individual Kuhn chains do not form networks and do not obey this scaling ---",
+    "url": "https://blogs.comphy-lab.org/_AtomicNotes/Polymer-Concentration-Regimes-and-Blob-Networks/#executive-summary",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "Polymer concentration regimes and blob networks - 1.1 The Overlap Concentration $c^*$",
+    "content": "A fundamental transition in polymer solution physics occurs at the **overlap concentration** $c^*$, defined as the concentration at which polymer coils begin to interpenetrate. For a polymer chain with $N$ monomers of size $b$: - Radius of gyration: $R_g \\sim b N^{\\nu}$, where $\\nu \\approx 0.588$ (good solvent) or $\\nu = 0.5$ (theta solvent) - Volume occupied by one coil: $V_{\\text{coil}} \\sim R_g^3$ - Overlap concentration: $c^* \\sim \\frac{N m_{\\text{mon}}}{R_g^3} \\sim \\frac{N}{b^3 N^{3\\nu}} \\sim N^{1-3\\nu}$ In good solvents ($\\nu = 3/5$): $$c^* \\sim N^{-4/5}$$ Physical interpretation: At $c c^*$, chains overlap and begin to interact.",
+    "url": "https://blogs.comphy-lab.org/_AtomicNotes/Polymer-Concentration-Regimes-and-Blob-Networks/#11-the-overlap-concentration-c",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "Polymer concentration regimes and blob networks - 1.2 Three Concentration Regimes",
+    "content": "| Regime | Concentration Range | Chain Behavior | Network Formation | $G$ Scaling | |--------|-------------------|----------------|-------------------|-------------| | **Dilute** | $c \\ll c^*$ | Isolated coils | No network | Not applicable | | **Semi-dilute** | $c^* < c < c^{**}$ | Overlapping, forming blobs | Temporary entanglement network | $G \\sim k_B T / \\xi^3$ | | **Concentrated** | $c \\gg c^{**}$ | Melt-like, dense packing | Dense entangled network | Different scaling | where $c^{**}$ marks the transition to concentrated/melt behavior (typically when chains are tightly packed). ---",
+    "url": "https://blogs.comphy-lab.org/_AtomicNotes/Polymer-Concentration-Regimes-and-Blob-Networks/#12-three-concentration-regimes",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "Polymer concentration regimes and blob networks - 2.1 What is a Blob?",
+    "content": "In the semi-dilute regime, overlapping polymer chains create a network with a characteristic **correlation length** $\\xi$ called the **blob size**. Physical picture: - Inside a blob (length scale $ \\xi$): chains are screened by neighboring chains, forming a network structure - The blob size $\\xi$ decreases with increasing concentration",
+    "url": "https://blogs.comphy-lab.org/_AtomicNotes/Polymer-Concentration-Regimes-and-Blob-Networks/#21-what-is-a-blob",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "Polymer concentration regimes and blob networks - 2.2 Blob Size Scaling",
+    "content": "From scaling arguments (Flory, de Gennes), the correlation length in good solvents scales as: $$\\xi \\sim b \\left(\\frac{c^*}{c}\\right)^{\\nu/(3\\nu-1)}$$ For $\\nu = 3/5$ (good solvent): $$\\xi \\sim b \\left(\\frac{c^*}{c}\\right)^{3/4} \\sim c^{-3/4}$$ Key insight: As concentration increases above $c^*$, the mesh size $\\xi$ decreases, making the network denser and stiffer.",
+    "url": "https://blogs.comphy-lab.org/_AtomicNotes/Polymer-Concentration-Regimes-and-Blob-Networks/#22-blob-size-scaling",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "Polymer concentration regimes and blob networks - 2.3 Number of Blobs per Chain",
+    "content": "A chain with total size $R_g$ in the semi-dilute regime can be viewed as a string of $g$ blobs: $$g \\sim \\left(\\frac{R_g}{\\xi}\\right)^{1/\\nu}$$ Each blob contains roughly $g_{\\text{blob}} \\sim (c/c^*)^{-1/(3\\nu-1)}$ monomers. ---",
+    "url": "https://blogs.comphy-lab.org/_AtomicNotes/Polymer-Concentration-Regimes-and-Blob-Networks/#23-number-of-blobs-per-chain",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "Polymer concentration regimes and blob networks - 3.1 Why $G = k_B T / \\xi^3$ for Semi-Dilute Polymer Networks",
+    "content": "The elastic modulus of a semi-dilute polymer solution arises from the entropic elasticity of the blob network: $$G = n_{\\text{strand}} k_B T \\sim \\frac{k_B T}{\\xi^3}$$ where: - $n_{\\text{strand}}$ = number of elastic strands per unit volume - $\\xi$ = blob correlation length (mesh size) Physical justification: 1. Each blob acts as an entropic spring with characteristic energy $k_B T$ 2. The density of these elastic units is $n_{\\text{strand}} \\sim 1/\\xi^3$ (one strand per blob volume) 3. Therefore: $G \\sim k_B T / \\xi^3$ With the scaling $\\xi \\sim c^{-3/4}$ (good solvent): $$G \\sim k_B T \\cdot c^{9/4}$$ This is the classic de Gennes scaling for semi-dilute polymer solutions.",
+    "url": "https://blogs.comphy-lab.org/_AtomicNotes/Polymer-Concentration-Regimes-and-Blob-Networks/#31-why-g-kb-t-xi3-for-semi-dilute-polymer-networks",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "Polymer concentration regimes and blob networks - 3.2 Concentration Dependence",
+    "content": "Combining the blob scaling with the modulus relation: $$G \\sim \\frac{k_B T}{\\xi^3} \\sim k_B T \\cdot c^{3/(3\\nu-1)}$$ For good solvents ($\\nu = 3/5$): $$\\boxed{G \\sim c^{9/4}}$$ For theta solvents ($\\nu = 1/2$): $$\\boxed{G \\sim c^{3}}$$ These predictions have been extensively validated experimentally (rheology, light scattering). ---",
+    "url": "https://blogs.comphy-lab.org/_AtomicNotes/Polymer-Concentration-Regimes-and-Blob-Networks/#32-concentration-dependence",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "Polymer concentration regimes and blob networks - 4.1 Dilute Solutions ($c < c^*$)",
+    "content": "In dilute solutions: - Chains do not overlap - No network structure forms - No collective elastic response - Individual chains can be characterized by their own $R_g$, but there is no shear modulus in the traditional sense Result: The relation $G \\sim k_B T / \\xi^3$ is **not applicable**.",
+    "url": "https://blogs.comphy-lab.org/_AtomicNotes/Polymer-Concentration-Regimes-and-Blob-Networks/#41-dilute-solutions-c-c",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "Polymer concentration regimes and blob networks - 4.2 Individual Kuhn Chains",
+    "content": "A **Kuhn segment** is the fundamental statistical unit of a polymer chain (contour length $l_K$, Kuhn length). Why $G = k_B T / \\xi^3$ doesn't work: - A single Kuhn chain does not form a network - The Kuhn length $l_K$ is a molecular parameter, not a mesh size - Without crosslinks or entanglements, there is no collective elastic modulus - Individual chains provide no shear resistance (they flow) The confusion arises because both $\\xi$ (mesh/blob size) and $l_K$ (Kuhn length) are length scales in polymer physics, but they describe completely different physics: - $l_K$: molecular property of a single chain - $\\xi$: emergent collective length scale in a network",
+    "url": "https://blogs.comphy-lab.org/_AtomicNotes/Polymer-Concentration-Regimes-and-Blob-Networks/#42-individual-kuhn-chains",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "Polymer concentration regimes and blob networks - 4.3 Concentrated/Melt Regime ($c > c^{**}$)",
+    "content": "In concentrated polymer melts: - Chains are densely packed - Entanglement physics dominates (reptation) - Different scaling laws apply (plateau modulus $G_N^0 \\sim k_B T / N_e l_K^3$, where $N_e$ is entanglement length) The semi-dilute blob picture breaks down in this regime. ---",
+    "url": "https://blogs.comphy-lab.org/_AtomicNotes/Polymer-Concentration-Regimes-and-Blob-Networks/#43-concentratedmelt-regime-c-c",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "Polymer concentration regimes and blob networks - 5. Physical Distinction: $\\xi$ vs $l_K$",
+    "content": "| Quantity | Definition | Physical Meaning | Concentration Dependence | |----------|------------|------------------|-------------------------| | **Kuhn length** $l_K$ | Molecular parameter | Persistence length of polymer backbone | Independent of $c$ (intrinsic property) | | **Blob size** $\\xi$ | Correlation length | Mesh size of network, screening length | $\\xi \\sim c^{-3/4}$ (semi-dilute, good solvent) | | **Radius of gyration** $R_g$ | End-to-end distance | Size of isolated coil | $R_g \\sim N^{\\nu} l_K$ (dilute) | Critical point: In a semi-dilute blob network, $\\xi \\ll R_g$ because chains overlap, but $\\xi$ is still much larger than $l_K$ (typically $\\xi \\sim 10$\u2013$100$ nm, while $l_K \\sim 1$ nm for flexible polymers). ---",
+    "url": "https://blogs.comphy-lab.org/_AtomicNotes/Polymer-Concentration-Regimes-and-Blob-Networks/#5-physical-distinction-xi-vs-lk",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "Polymer concentration regimes and blob networks - 6.1 Rheological Measurements",
+    "content": "Semi-dilute polymer solutions exhibit: - Small-strain shear modulus: $G \\sim c^{9/4}$ (good solvent) - Concentration-dependent relaxation time: $\\tau \\sim c^{1/2}$ (Zimm dynamics) - Zero-shear viscosity: $\\eta_0 \\sim c^{3/2}$ These scalings directly confirm the blob network picture.",
+    "url": "https://blogs.comphy-lab.org/_AtomicNotes/Polymer-Concentration-Regimes-and-Blob-Networks/#61-rheological-measurements",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "Polymer concentration regimes and blob networks - 6.2 Light Scattering",
+    "content": "Static light scattering can directly measure the correlation length $\\xi$: - Scattering intensity: $I(q) \\sim 1/(1 + q^2 \\xi^2)$ (Ornstein-Zernike form) - Extract $\\xi$ from the $q$-dependence - Verify $\\xi \\sim c^{-3/4}$ scaling ---",
+    "url": "https://blogs.comphy-lab.org/_AtomicNotes/Polymer-Concentration-Regimes-and-Blob-Networks/#62-light-scattering",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "Polymer concentration regimes and blob networks - 7.1 Permanent Crosslinks (Chemical Gels)",
+    "content": "For chemically crosslinked networks (rubbers): - Crosslinks are permanent (covalent bonds) - Network structure is frozen - Still entropic elasticity: $G = n_{\\text{crosslink}} k_B T$ - $\\xi$ now represents average distance between crosslinks - $G \\sim k_B T / \\xi^3$ applies to both dilute and concentrated crosslinked networks",
+    "url": "https://blogs.comphy-lab.org/_AtomicNotes/Polymer-Concentration-Regimes-and-Blob-Networks/#71-permanent-crosslinks-chemical-gels",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "Polymer concentration regimes and blob networks - 7.2 Temporary Entanglements (Physical Gels)",
+    "content": "For semi-dilute solutions (physical gels): - Entanglements are temporary (topological constraints) - Network structure is dynamic (chains can reptate) - Entropic elasticity on timescales shorter than reptation time - $\\xi$ represents blob/entanglement spacing - $G \\sim k_B T / \\xi^3$ applies only in the semi-dilute regime Key difference: Permanent vs temporary network structure affects long-time behavior (elastic solid vs viscoelastic fluid), but short-time elasticity follows the same entropic scaling. ---",
+    "url": "https://blogs.comphy-lab.org/_AtomicNotes/Polymer-Concentration-Regimes-and-Blob-Networks/#72-temporary-entanglements-physical-gels",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "Polymer concentration regimes and blob networks - 8. Summary: When to Use $G = k_B T / \\xi^3$",
+    "content": "Use this relation when: 1. Polymer concentration is in the **semi-dilute regime** ($c^* < c < c^{**}$) 2. Chains form a **blob network** with correlation length $\\xi$ 3. The system exhibits **entropic elasticity** (rubber-like behavior) 4. Temperature is sufficiently high ($k_B T$ dominates) Do NOT use this relation for: 1. **Dilute solutions** ($c < c^*$): no network structure 2. **Individual Kuhn chains**: no collective elasticity 3. **Concentrated melts** without considering entanglement modifications 4. Systems where $\\xi$ is not the blob correlation length (e.g., using Kuhn length incorrectly) ---",
+    "url": "https://blogs.comphy-lab.org/_AtomicNotes/Polymer-Concentration-Regimes-and-Blob-Networks/#8-summary-when-to-use-g-kb-t-xi3",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "Polymer concentration regimes and blob networks - 9. Worked Example: Polyacrylamide (PAA) in Water",
+    "content": "Consider a polyacrylamide solution: - Molecular weight: $M = 10^6$ g/mol - Kuhn length: $l_K \\approx 2$ nm - Good solvent (water) Calculate overlap concentration: $$c^* \\sim \\frac{M}{N_A R_g^3} \\sim \\frac{M}{N_A (l_K N^{0.6})^3}$$ For $N \\sim M/M_{\\text{mon}} \\sim 10^4$ (monomer MW $\\sim 100$ g/mol): $$R_g \\sim 2\\,\\text{nm} \\cdot (10^4)^{0.6} \\sim 160\\,\\text{nm}$$ $$c^* \\sim \\frac{10^6\\,\\text{g/mol}}{6 \\times 10^{23} \\cdot (160\\,\\text{nm})^3} \\sim 0.4\\,\\text{g/L}$$ At $c = 10\\,c^* = 4$ g/L (semi-dilute): $$\\xi \\sim l_K \\left(\\frac{c^*}{c}\\right)^{3/4} \\sim 2\\,\\text{nm} \\cdot (0.1)^{0.75} \\sim 0.36\\,\\text{nm} \\times 5.6 \\sim 11\\,\\text{nm}$$ Note: $\\xi = 11$ nm $\\gg l_K = 2$ nm (blob size much larger than Kuhn segment). Elastic modulus: $$G \\sim \\frac{k_B T}{\\xi^3} \\sim \\frac{4.1 \\times 10^{-21}\\,\\text{J}}{(11 \\times 10^{-9}\\,\\text{m})^3} \\sim 3\\,\\text{Pa}$$ This is consistent with typical semi-dilute polymer solution rheology. ---",
+    "url": "https://blogs.comphy-lab.org/_AtomicNotes/Polymer-Concentration-Regimes-and-Blob-Networks/#9-worked-example-polyacrylamide-paa-in-water",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "Polymer concentration regimes and blob networks - 10. Connection to Rubber Elasticity Theory",
+    "content": "The relation $G = k_B T / \\xi^3$ is the soft-matter analogue of classical rubber elasticity: Classical rubber theory (Flory): $$G = \\frac{\\rho R T}{M_c}$$ where $M_c$ is the molecular weight between crosslinks. Converting to mesh size: $$M_c \\sim \\rho_{\\text{polymer}} \\xi^3 \\quad \\Rightarrow \\quad G \\sim \\frac{k_B T}{\\xi^3}$$ Both frameworks describe entropic networks, but: - Rubber theory: permanent covalent crosslinks - Blob network: temporary entanglements in semi-dilute regime ---",
+    "url": "https://blogs.comphy-lab.org/_AtomicNotes/Polymer-Concentration-Regimes-and-Blob-Networks/#10-connection-to-rubber-elasticity-theory",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "Polymer concentration regimes and blob networks - 11. Further Reading",
+    "content": "Key references: 1. **de Gennes, P. G.** (1979). *Scaling Concepts in Polymer Physics*. Cornell University Press. (The definitive blob physics treatment) 2. **Rubinstein, M. & Colby, R. H.** (2003). *Polymer Physics*. Oxford University Press. (Comprehensive modern textbook) 3. **Doi, M. & Edwards, S. F.** (1986). *The Theory of Polymer Dynamics*. Oxford University Press. (For concentrated/melt regime and reptation) Landmark experimental papers: - Ferry, J. D. (1980). *Viscoelastic Properties of Polymers*. Wiley. (Classic rheology reference) - Daoud, M. & Jannink, G. (1976). \"Temperature-concentration diagram of polymer solutions.\" *J. Phys.* (Scaling theory validation) ---",
+    "url": "https://blogs.comphy-lab.org/_AtomicNotes/Polymer-Concentration-Regimes-and-Blob-Networks/#11-further-reading",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "Polymer concentration regimes and blob networks - 12. Key Takeaways",
+    "content": "1. $G = k_B T / \\xi^3$ is a **semi-dilute polymer network** relation, not universal 2. Requires **blob network formation** at $c > c^*$ 3. $\\xi$ is the **correlation/blob length**, NOT the Kuhn length $l_K$ 4. Does NOT apply to: - Dilute solutions - Individual chains (Kuhn or otherwise) - Concentrated melts (without modification) 5. Experimentally verified by rheology ($G \\sim c^{9/4}$) and scattering ($\\xi \\sim c^{-3/4}$) When teaching or using this relation, always specify the regime and clarify what $\\xi$ represents physically.",
+    "url": "https://blogs.comphy-lab.org/_AtomicNotes/Polymer-Concentration-Regimes-and-Blob-Networks/#12-key-takeaways",
     "type": "blog_section",
     "priority": 3
   },
@@ -3127,7 +3281,7 @@
   },
   {
     "title": "1.75 complementary questions answers - Question 1: Why Soft Materials Have Small Moduli: Question: Explain in...",
-    "content": "Question: Explain in your own words why many soft materials (rubbers, gels, emulsions) have moduli that are orders of magnitude smaller than crystalline solids. Answer: In crystalline solids, stiffness arises from steep interatomic potentials acting at atomic spacing (~0.1 nm). The elastic energy density scales like $U/a^3$, which is why bulk and shear moduli reach GPa\u2013TPa scales for materials like diamond and steel. By contrast, in rubbers, gels, and many soft networks, the load-bearing modulus is largely entropic. Thermal fluctuations of network strands resist deformation, giving: $$G \\approx n k_B T \\sim \\frac{k_B T}{\\xi^3}$$ where $\\xi$ is a mesoscopic mesh size.",
+    "content": "Question: Explain in your own words why many soft materials (rubbers, gels, emulsions) have moduli that are orders of magnitude smaller than crystalline solids. Answer: In crystalline solids, stiffness arises from steep interatomic potentials acting at atomic spacing (~0.1 nm). The elastic energy density scales like $U/a^3$, which is why bulk and shear moduli reach GPa\u2013TPa scales for materials like diamond and steel. By contrast, in rubbers, gels, and many soft networks, the load-bearing modulus is largely entropic. Thermal fluctuations of network strands resist deformation, giving: $$G \\approx n k_B T \\sim \\frac{k_B T}{\\xi^3}$$ (This relation applies specifically to semi-dilute polymer networks forming blob structures\u2014see [[Polymer-Concentration-Regimes-and-Blob-Networks]] for details.) where $\\xi$ is a mesoscopic mesh size.",
     "url": "https://blogs.comphy-lab.org/Lecture-Notes/Intro-Soft-Matter/1.75-Complementary-Questions-Answers/#question-1-why-soft-materials-have-small-moduli",
     "type": "blog_section",
     "priority": 3
@@ -3743,7 +3897,7 @@
   },
   {
     "title": "1 intro soft matter - Why is Soft Matter *Soft*? \u2014 The Entropic Shear Modulus",
-    "content": "For soft solids (rubbers, gels, polymer networks), the small-strain shear modulus arises fundamentally from entropy, not stiff bond stretching: $$\\boxed{G = n k_B T \\quad \\text{or} \\quad G \\sim \\frac{k_B T}{\\xi^3}}$$ where: - $n$ = strand/crosslink density (number per unit volume) - $\\xi$ = mesh size of the network (typical strand spacing, 10\u2013100 nm) - $k_B T$ = thermal energy (~$4.1 \\times 10^{-21}\\,\\text{J}$ at room temperature)",
+    "content": "For soft solids (rubbers, gels, polymer networks), the small-strain shear modulus arises fundamentally from entropy, not stiff bond stretching: $$\\boxed{G = n k_B T \\quad \\text{or} \\quad G \\sim \\frac{k_B T}{\\xi^3}}$$ where: - $n$ = strand/crosslink density (number per unit volume) - $\\xi$ = mesh size of the network (typical strand spacing, 10\u2013100 nm) - $k_B T$ = thermal energy (~$4.1 \\times 10^{-21}\\,\\text{J}$ at room temperature) > [!note] > This relation applies specifically to semi-dilute polymer networks forming blob structures\u2014see [[Polymer-Concentration-Regimes-and-Blob-Networks]] for details.",
     "url": "https://blogs.comphy-lab.org/Lecture-Notes/Intro-Soft-Matter/1-Intro-Soft-Matter/#why-is-soft-matter-soft-the-entropic-shear-modulus",
     "type": "blog_section",
     "priority": 3
@@ -5751,106 +5905,120 @@
     "priority": 3
   },
   {
-    "title": "2025 why double\u2011network hydrogels dont shatter - Why Double\u2011Network Hydrogels Don\u2019t Shatter: A Minimal Model of Screened Stress",
-    "content": "> [!summary] TL;DR > A new mesoscale model explains why double\u2011network (DN) hydrogels are both stiff *and* hard to break. > The stiff, brittle \u201csacrificial\u201d network shares load with a soft, tough \u201cmatrix\u201d network that *screens* stress between sacrificial bonds. That screening halts the crack\u2011propagating cascade seen in single networks, replacing it with diffuse micro\u2011damage\u2014so the material stretches far without catastrophic failure. The model also maps a practical design trade\u2011off: more matrix (or a stiffer matrix) boosts failure strain but reduces overall stiffness.",
-    "url": "https://blogs.comphy-lab.org/Blog/2025-Why-Double\u2011Network-Hydrogels-Dont-Shatter/#why-doublenetwork-hydrogels-dont-shatter-a-minimal-model-of-screened-stress",
+    "title": "2025 why double\u2011network hydrogels dont shatter - Why Double-Network Hydrogels Don\u2019t Shatter \u2014 and What That Teaches Us About Tough Design",
+    "content": "> [!summary] TL;DR > A minimal *mesoscale* model shows why double-network (DN) hydrogels are both stiff and hard to break: the soft matrix *screens* stress released by broken sacrificial bonds, halting the crack-propagating cascade that plagues single networks. Screening $\\neq$ dissipation: dissipation is the *cost* when a bond breaks; screening is the *redistribution* that stops one break from triggering the next. The model also maps a practical trade-off: more (or stiffer) matrix boosts failure strain but erodes stiffness\u2014revealing a sweet spot.",
+    "url": "https://blogs.comphy-lab.org/Blog/2025-Why-Double\u2011Network-Hydrogels-Dont-Shatter/#why-double-network-hydrogels-dont-shatter-and-what-that-teaches-us-about-tough-design",
     "type": "blog_section",
     "priority": 3
   },
   {
-    "title": "2025 why double\u2011network hydrogels dont shatter - Quick navigation",
-    "content": "* [[#The question|The question]] * [[#Double network in 60 seconds|Double network in 60 seconds]] * [[#What\u2019s new here|What\u2019s new here]] * [[#Inside the model (plain\u2011English)|Inside the model (plain\u2011English)]] * [[#What the simulations show|What the simulations show]] * [[#Design rules from the parameter sweep|Design rules from the parameter sweep]] * [[#Limitations (and why they\u2019re useful)|Limitations (and why they\u2019re useful)]] * [[#Why it matters|Why it matters]] * [[#Figures at a glance|Figures at a glance]] * [[#FAQ|FAQ]] * [[#How to cite and read more|How to cite and read more]] ---",
-    "url": "https://blogs.comphy-lab.org/Blog/2025-Why-Double\u2011Network-Hydrogels-Dont-Shatter/#quick-navigation",
+    "title": "2025 why double\u2011network hydrogels dont shatter - The questions",
+    "content": "> [!question] > 1. Why don\u2019t double-network hydrogels shatter like ordinary gels? > 2. What micro-to-macro mechanism makes `sacrificial + matrix` deliver both stiffness and ductility? > 3. Can we extract actionable *design rules* (what to tune, in which direction, with what trade-offs)? This post walks through a recent paper by [Samuel Walker](https://scholar.google.com/citations?user=S3M3Re8AAAAJ&hl=en) & [Suzanne Fielding](https://scholar.google.com/citations?user=lMSrIAQAAAAJ&hl=en) on _Toughness of Double Network Hydrogels: The Role of Reduced Stress Propagation_ in Phys. Rev. Lett., 135:18, 188201 (2025), DOI: [10.1103/kck9-tc46](https://doi.org/10.1103/kck9-tc46) that answers those questions with a minimal model connecting bond-level events to crack-scale behavior.",
+    "url": "https://blogs.comphy-lab.org/Blog/2025-Why-Double\u2011Network-Hydrogels-Dont-Shatter/#the-questions",
     "type": "blog_section",
     "priority": 3
   },
   {
-    "title": "2025 why double\u2011network hydrogels dont shatter - The question",
-    "content": "Why don\u2019t double\u2011network hydrogels shatter the way ordinary gels do? That was the question animating a lively practice talk by [[Sam Walker]]\u2014and it\u2019s the question at the center of his paper with Suzanne Fielding, *\u201cToughness of double network hydrogels: the role of reduced stress propagation,\u201d* Physics, Durham University (Mar 2025). The work builds a simple but revealing model that goes beyond slogans (\u201csacrificial bonds dissipate energy\u201d) to *mechanism*: reduced stress propagation between sacrificial bonds thanks to load sharing with a matrix network. ---",
-    "url": "https://blogs.comphy-lab.org/Blog/2025-Why-Double\u2011Network-Hydrogels-Dont-Shatter/#the-question",
+    "title": "2025 why double\u2011network hydrogels dont shatter - Context",
+    "content": "> [!definition] What is a double network? > Two interpenetrating polymer networks with complementary roles: > 1. Sacrificial \u2014 sparse, stiff, breakable $\\rightarrow$ sets *stiffness* and provides *dissipation* when it fails. > 2. Matrix \u2014 dense, compliant, tough $\\rightarrow$ sets *ductility* and *screens* stress between sacrificial bonds. Double Networks (DN) gels famously combine high modulus and high failure strain despite being mostly water, and this duality shows up across hydrogels, elastomers, and biomimetic composites. The puzzle has been not *that* they are tough\u2014but *why* they avoid the runaway cracks typical of single networks under load.",
+    "url": "https://blogs.comphy-lab.org/Blog/2025-Why-Double\u2011Network-Hydrogels-Dont-Shatter/#context",
     "type": "blog_section",
     "priority": 3
   },
   {
-    "title": "2025 why double\u2011network hydrogels dont shatter - Double network in 60 seconds",
-    "content": "> [!definition] Two interpenetrating networks, complementary roles > > * Sacrificial network: sparse, stiff, weak \u2192 sets stiffness, breaks first, dissipates energy. > * Matrix network: dense, compliant, tough \u2192 sets toughness, prevents crack run\u2011away. > [!key-point] Synergy > The DN inherits the stiffness of the sacrificial network and the ductility of the matrix\u2014properties neither network delivers alone. ---",
-    "url": "https://blogs.comphy-lab.org/Blog/2025-Why-Double\u2011Network-Hydrogels-Dont-Shatter/#double-network-in-60-seconds",
+    "title": "2025 why double\u2011network hydrogels dont shatter - What\u2019s new",
+    "content": "> [!idea] Mechanism in one line > Elastic screening: when a sacrificial bond snaps, nearby matrix carries part of the stress that would otherwise load neighboring sacrificial bonds. That *weakens the effective Eshelby propagator* between sacrificial sites and stops crack-seeding cascades. This puts a quantitative spine in the common slogan \u201csacrificial bonds dissipate energy.\u201d Dissipation explains *cost paid* at each break; screening explains *why breaks don\u2019t avalanche*. The distinction matters for designing materials that deform a lot without catastrophic failure. The stress-propagation patterns reveal striking differences: in double networks, stress from a broken bond spreads more diffusely and decays faster spatially compared to single networks. Tuning the amount or stiffness of the matrix progressively damps how far stress travels to neighboring sacrificial bonds.",
+    "url": "https://blogs.comphy-lab.org/Blog/2025-Why-Double\u2011Network-Hydrogels-Dont-Shatter/#whats-new",
     "type": "blog_section",
     "priority": 3
   },
   {
-    "title": "2025 why double\u2011network hydrogels dont shatter - What\u2019s new here",
-    "content": "> [!idea] The mechanism in one line > Elastic screening: when a sacrificial bond snaps, the matrix absorbs part of the released stress so it doesn\u2019t concentrate at neighboring sacrificial bonds\u2014*breaking the cascade that drives macroscopic cracks in single networks*. This \u201cscreened propagator\u201d picture connects micro\u2011events (single bond breaks) to macro\u2011outcomes (no catastrophic crack), giving a quantitative bridge between fracture mechanics and polymer physics. ---",
-    "url": "https://blogs.comphy-lab.org/Blog/2025-Why-Double\u2011Network-Hydrogels-Dont-Shatter/#whats-new-here",
+    "title": "2025 why double\u2011network hydrogels dont shatter - Working hypothesis",
+    "content": "> [!key-point] Hypothesis (paper\u2019s own words, paraphrased) > If the matrix is present and stiff enough to *share load*, then the stress propagated from a local sacrificial failure to neighboring sacrificial bonds is reduced. With sufficient screening, the DN will (i) inherit the *stiffness* of the sacrificial network and (ii) inherit the *ductility* (failure strain) of the matrix. Both require a careful balance\u2014too much matrix, and you lose stiffness.",
+    "url": "https://blogs.comphy-lab.org/Blog/2025-Why-Double\u2011Network-Hydrogels-Dont-Shatter/#working-hypothesis",
     "type": "blog_section",
     "priority": 3
   },
   {
-    "title": "2025 why double\u2011network hydrogels dont shatter - Inside the model (plain\u2011English)",
-    "content": "> [!note] How the authors simulate a DN > > * Start from two random spring networks created by a jammed disk packing recipe; interpenetrate them so some nodes are shared \u2192 this encodes load sharing. > * Stretch the system quasistatically with periodic boundaries; allow one bond to fail at a time, then fully relax before the next step. > * Track stress with the Irving\u2013Kirkwood formula; visualize how stress from a single break travels through the network. > * Key knobs: > > * M = number of matrix bond lengths per sacrificial bond length (larger M \u21d2 more matrix / sparser sacrificial network), > * \u03bc\u2098 (matrix bond stiffness), \u03bb\u2098 (matrix break strain). > * Typical \u201cgood compromise\u201d used to illustrate results: M = 3, \u03bc\u2098 = 0.2, \u03bb\u2098 = 3. ---",
-    "url": "https://blogs.comphy-lab.org/Blog/2025-Why-Double\u2011Network-Hydrogels-Dont-Shatter/#inside-the-model-plainenglish",
+    "title": "2025 why double\u2011network hydrogels dont shatter - How did they test it?: > [!note] The...",
+    "content": "> [!note] The minimal model > > * Geometry: build two random spring networks from jammed disk packings; interpenetrate them so nodes overlap $\\rightarrow$ this encodes load sharing. > * Constituents: sacrificial springs (stiff, low break strain) + matrix springs (softer, high break strain). > * Control knobs: > * $M$ \u2014 sacrificial spacing vs matrix mesh (larger M $\\Rightarrow$ sparser sacrificial / more matrix links), > * $\\mu_m$ \u2014 matrix spring stiffness, > * $\\lambda_m$ \u2014 matrix break strain. > * Protocol: quasistatic uniaxial extension with periodic boundaries; allow one bond to fail at a time and fully relax between steps; compute stress via Irving\u2013Kirkwood; examine where stress from a *single* break goes. What to look for in the results 1. Brittle vs ductile response in whole-sample behavior. In a *single* network, a local break seeds a sideways (Eshelby-like) stress pattern that overloads neighbors $\\rightarrow$ a crack races across the sample (sharp stress drop at modest strain).",
+    "url": "https://blogs.comphy-lab.org/Blog/2025-Why-Double\u2011Network-Hydrogels-Dont-Shatter/#how-did-they-test-it",
     "type": "blog_section",
     "priority": 3
   },
   {
-    "title": "2025 why double\u2011network hydrogels dont shatter - What the simulations show: Examples",
-    "content": "> [!example] From brittle to ductile\u2014seen in the figures > > * Single network: a local break sends stress sideways (Eshelby\u2011like quadrupole), neighbors overload, a crack runs across the sample \u2192 sharp stress drop at modest strain (Fig. 1c & Fig. 2a, p. 2). > * Double network: the matrix soaks up part of that released stress, reducing the stress that reaches neighboring sacrificial bonds \u2192 many microcracks form but do not coalesce; the sample stretches much further (Fig. 1d & Fig. 2b, p. 2). > [!key-point] Direct evidence of screening > Fig. 3 (p. 3) maps how stress from a single sacrificial break decays in space.",
-    "url": "https://blogs.comphy-lab.org/Blog/2025-Why-Double\u2011Network-Hydrogels-Dont-Shatter/#what-the-simulations-show",
+    "title": "2025 why double\u2011network hydrogels dont shatter - How did they test it?: In a double...",
+    "content": "In a double network, the matrix soaks up part of that released stress $\\rightarrow$ many sacrificial microcracks form *without* coalescing; the sample stretches much further. This difference manifests as a sharp stress drop at modest strain in single networks versus a gradual, distributed damage pattern that allows double networks to stretch much further. 2. Direct evidence for \u201cscreening.\u201d Spatial stress maps from a single sacrificial break reveal how screening works in practice. Increasing $M$ (more matrix paths between sacrificial bonds) or $\\mu_m$ (stiffer matrix) clearly damps the propagator; the single-network pattern is recovered when $M \\to 0$ or $\\mu_m \\to 0$. The line-cuts along *x* visualize that reduction in the stress reaching neighbors that would otherwise fail next. 3. A navigable stiffness\u2013toughness trade-off.",
+    "url": "https://blogs.comphy-lab.org/Blog/2025-Why-Double\u2011Network-Hydrogels-Dont-Shatter/#how-did-they-test-it",
     "type": "blog_section",
     "priority": 3
   },
   {
-    "title": "2025 why double\u2011network hydrogels dont shatter - What the simulations show: Increasing M (more...",
-    "content": "Increasing M (more matrix between sacrificial bonds) or \u03bc\u2098 (stiffer matrix) clearly *damps the propagator*, recovering the strong, long\u2011range propagator of a single network when M\u21920 or \u03bc\u2098\u21920. > [!summary] Stiffness vs toughness (the trade\u2011off) > Fig. 4 (p. 4) sweeps parameters: failure strain rises with M or \u03bc\u2098 (toughness \u2191), while the overall modulus trends downward (stiffness \u2193). The sweet spot that preserves much of the sacrificial stiffness *and* gains matrix ductility sits around M\u22483, \u03bc\u2098\u22480.2, \u03bb\u2098\u22483 in this model. ---",
-    "url": "https://blogs.comphy-lab.org/Blog/2025-Why-Double\u2011Network-Hydrogels-Dont-Shatter/#what-the-simulations-show",
+    "title": "2025 why double\u2011network hydrogels dont shatter - How did they test it?: Systematic parameter sweeps...",
+    "content": "Systematic parameter sweeps reveal the trade-off: failure strain and stress rise with $M$ or $\\mu_m$ (toughness $\\uparrow$), while the sacrificial network contributes progressively less to the overall modulus (stiffness $\\downarrow$).",
+    "url": "https://blogs.comphy-lab.org/Blog/2025-Why-Double\u2011Network-Hydrogels-Dont-Shatter/#how-did-they-test-it",
     "type": "blog_section",
     "priority": 3
   },
   {
-    "title": "2025 why double\u2011network hydrogels dont shatter - Design rules from the parameter sweep",
-    "content": "> [!tip] Practical takeaways for designing DNs > > 1. To boost failure strain, increase M (more matrix paths) or \u03bc\u2098 (stiffer matrix)\u2014both enhance screening. > 2. To retain stiffness, keep enough sacrificial network connectivity (don\u2019t push M so high that the matrix wholly dominates). > 3. Aim for a compromise region (illustrated in the paper at *M \u2248 3, \u03bc\u2098 \u2248 0.2, \u03bb\u2098 \u2248 3*) where the DN is as stiff as the sacrificial network but as ductile as the matrix. > 4. Subcritical matrix connectivity (e.g., lowering *z\u2098*) makes stiffness even more dominated by the sacrificial network\u2014consistent with experiments\u2014*while* toughness remains high (Fig. 2c\u2013d, p. 2). ---",
-    "url": "https://blogs.comphy-lab.org/Blog/2025-Why-Double\u2011Network-Hydrogels-Dont-Shatter/#design-rules-from-the-parameter-sweep",
+    "title": "2025 why double\u2011network hydrogels dont shatter - How did they test it?: Around $M \\approx...",
+    "content": "Around $M \\approx 3$, $\\mu_m \\approx 0.2$, $\\lambda_m \\approx 3$, the DN remains comparably stiff to the sacrificial network yet gains the matrix\u2019s ductility\u2014an illustrative \u201csweet spot\u201d in this model. > [!tip] Designer\u2019s cheat sheet (model parameters) > > * To increase failure strain: raise M or $\\mu_m$ $\\rightarrow$ more screening. > * To retain stiffness: keep some sacrificial connectivity; avoid M so large that the matrix dominates. > * If you lower matrix coordination (*$z_m$*), modulus becomes even more dominated by the sacrificial network (experimentally consistent), while toughness stays high (this effect is demonstrated in the reduced-coordination simulations). > [!note] Rate effects > They also checked a finite extension rate: the qualitative picture (tough DN vs brittle single network) survives; simulations confirm convergence to the quasistatic limit.",
+    "url": "https://blogs.comphy-lab.org/Blog/2025-Why-Double\u2011Network-Hydrogels-Dont-Shatter/#how-did-they-test-it",
     "type": "blog_section",
     "priority": 3
   },
   {
-    "title": "2025 why double\u2011network hydrogels dont shatter - Limitations (and why they\u2019re useful)",
-    "content": "> [!caution] What the model is *not* > > * 2D springs with central forces (no bending), average coordination above the Maxwell threshold, no explicit pre\u2011stretch\u2014even though real gels are 3D, often sub\u2011isostatic, and the sacrificial network is typically pre\u2011stretched. > Why that\u2019s fine: the stripped\u2011down model isolates the essential physics\u2014a screened propagator\u2014before adding realism. The authors also show how reducing the matrix connectivity trends the results toward experimental behavior (Fig. 2c\u2013d). ---",
-    "url": "https://blogs.comphy-lab.org/Blog/2025-Why-Double\u2011Network-Hydrogels-Dont-Shatter/#limitations-and-why-theyre-useful",
+    "title": "2025 why double\u2011network hydrogels dont shatter - What design predictions does the model make?",
+    "content": "> [!summary] Read these as trends you can use: > > 1. Screening scale is set by matrix presence and stiffness: $\\uparrow M$ or $\\uparrow \\mu_m$ $\\rightarrow$ $\\downarrow$ stress transfer between sacrificial bonds $\\rightarrow$ fewer cascades $\\rightarrow$ $\\uparrow$ failure strain and stress. > 2. But stiffness is not free: $\\uparrow M$ or $\\uparrow \\mu_m$ shifts load to matrix $\\rightarrow$ sacrificial network contributes less to modulus. > 3. There\u2019s a compromise region where you keep much of the sacrificial stiffness *and* gain matrix ductility (illustrated at $M \\approx 3$, $\\mu_m \\approx 0.2$, $\\lambda_m \\approx 3$). > 4. Connectivity matters: making the matrix sub-isostatic (lower *$z_m$*) increases the DN\u2019s reliance on the sacrificial network for stiffness while preserving toughness (bridging to experimental observations). > *All four emerge from systematic parameter sweeps and connectivity variation tests.*",
+    "url": "https://blogs.comphy-lab.org/Blog/2025-Why-Double\u2011Network-Hydrogels-Dont-Shatter/#what-design-predictions-does-the-model-make",
     "type": "blog_section",
     "priority": 3
   },
   {
-    "title": "2025 why double\u2011network hydrogels dont shatter - Why it matters",
-    "content": "* Mechanism clarified: moves beyond \u201csacrificial bonds dissipate energy\u201d to *how* DN architectures block crack cascades. * Actionable knobs: gives materials designers clear control parameters (M, \u03bc\u2098, \u03bb\u2098) for navigating the stiffness\u2013toughness trade\u2011off. * Broad relevance: insights translate to other multicomponent soft materials (elastomers, biological tissues) where load sharing and stress delocalization govern failure. ---",
-    "url": "https://blogs.comphy-lab.org/Blog/2025-Why-Double\u2011Network-Hydrogels-Dont-Shatter/#why-it-matters",
+    "title": "2025 why double\u2011network hydrogels dont shatter - What we learn (big picture): * Mechanism over...",
+    "content": "* Mechanism over slogan. DN toughness isn\u2019t only about \u201cdissipating\u201d energy in sacrificial breaks\u2014it\u2019s about preventing the chain reaction that turns a few breaks into a running crack. That prevention is elastic screening via matrix load sharing. * Actionable knobs. With M, $\\mu_m$, $\\lambda_m$ you can navigate the stiffness\u2013toughness frontier, aiming for a region that achieves both. * Transferability. The concept \u201csoft sub-network screens stress between brittle load-bearing elements\u201d speaks to other composites: elastomers with sacrificial motifs, biopolymer networks, and engineered lattices. > [!important] Screening vs dissipation (why the distinction matters) > > * Dissipation = energy lost when sacrificial bonds break. > * Screening = reduced amplitude and reach of stress redistribution after a break. > You can dissipate a lot and still crack if stress keeps localizing; you can avoid cracking with *less* dissipation if screening is strong.",
+    "url": "https://blogs.comphy-lab.org/Blog/2025-Why-Double\u2011Network-Hydrogels-Dont-Shatter/#what-we-learn-big-picture",
     "type": "blog_section",
     "priority": 3
   },
   {
-    "title": "2025 why double\u2011network hydrogels dont shatter - Figures at a glance",
-    "content": "> [!note] Reading guide > > * Fig. 1 (p. 2): Side\u2011by\u2011side snapshots\u2014single network develops a running crack; DN shows diffuse sacrificial micro\u2011damage. > * Fig. 2 (p. 2): Stress\u2013strain curves\u2014DN (black) inherits sacrificial stiffness (red) and matrix failure strain (blue). Insets show initial moduli. > * Fig. 3 (p. 3): Heatmaps & linecuts of the stress propagator\u2014screening strengthens with M and \u03bc\u2098. > * Fig. 4 (p. 4): Parameter sweeps\u2014failure strain/stress vs M or \u03bc\u2098; bottom panels quantify how the sacrificial network\u2019s modulus contribution drops as matrix influence grows. ---",
-    "url": "https://blogs.comphy-lab.org/Blog/2025-Why-Double\u2011Network-Hydrogels-Dont-Shatter/#figures-at-a-glance",
+    "title": "2025 why double\u2011network hydrogels dont shatter - What we learn (big picture): Quantitative stress-propagation maps...",
+    "content": "Quantitative stress-propagation maps put numbers on this intuition.",
+    "url": "https://blogs.comphy-lab.org/Blog/2025-Why-Double\u2011Network-Hydrogels-Dont-Shatter/#what-we-learn-big-picture",
     "type": "blog_section",
     "priority": 3
   },
   {
-    "title": "2025 why double\u2011network hydrogels dont shatter - FAQ",
-    "content": "Is \u201cscreening\u201d just another word for \u201cdissipation\u201d? Not exactly. Screening is about redistribution of stress so it *doesn\u2019t* concentrate where it can trigger more sacrificial breaks. Dissipation happens when sacrificial bonds actually break; screening limits how far each break can \u201ctalk\u201d to its neighbors. What sets the key length scale? The typical separation between sacrificial bonds relative to matrix mesh size\u2014encapsulated by M\u2014sets how effectively the matrix can intercept and spread stress before it reaches neighboring sacrificial bonds. How does this connect to Eshelby physics? In single networks, a local plastic event sends a quadrupolar elastic signal that loads neighbors along specific directions, seeding a crack. The DN\u2019s matrix attenuates that signal\u2014the effective Eshelby propagator weakens\u2014so cracks don\u2019t percolate. ---",
-    "url": "https://blogs.comphy-lab.org/Blog/2025-Why-Double\u2011Network-Hydrogels-Dont-Shatter/#faq",
+    "title": "2025 why double\u2011network hydrogels dont shatter - Is this a predictive model?: > [!question] Short...",
+    "content": "> [!question] Short answer: Predictive about trends and mechanisms; not calibrated to chemistry-specific absolutes. Yes, predictive for: * Mechanism: reduced Eshelby-like stress propagation between sacrificial bonds explains ductile micro-damage vs brittle macroscopic cracks. * Trends: how failure strain/stress and modulus shift with M and $\\mu_m$; how reduced matrix connectivity pushes stiffness back to the sacrificial network while retaining toughness. Not intended to predict exact absolute numbers for any given gel formulation\u2014by design it is minimal: 2D, central-force springs, average coordination above Maxwell\u2019s threshold, and no explicit prestretch (the latter is folded into a single stiffness ratio).",
+    "url": "https://blogs.comphy-lab.org/Blog/2025-Why-Double\u2011Network-Hydrogels-Dont-Shatter/#is-this-a-predictive-model",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "2025 why double\u2011network hydrogels dont shatter - Is this a predictive model?: Those simplifications isolate...",
+    "content": "Those simplifications isolate the core physics first; the authors then show that reducing matrix connectivity trends the response toward experiments, improving quantitative agreement. > [!caution] Scope & assumptions (why they\u2019re useful) > 2D, central forces, quasistatic loading, and coarse-grained networks omit bending, 3D geometry, and chemistry. That keeps the model readable and tractable while still bridging single-bond events to macroscopic cracking behavior\u2014precisely what\u2019s hard for atomistic and continuum methods to do simultaneously.",
+    "url": "https://blogs.comphy-lab.org/Blog/2025-Why-Double\u2011Network-Hydrogels-Dont-Shatter/#is-this-a-predictive-model",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "2025 why double\u2011network hydrogels dont shatter - Nuances and open questions",
+    "content": "* How universal is the \u201cscreened propagator\u201d picture across soft composites? The mechanism should translate wherever a compliant sub-network can intercept stress (e.g., multi-network elastomers), but quantifying the screening length vs chemistry is the next step. * Role of prestretch and 3D architecture. Real sacrificial networks are often prestretched by the matrix synthesis; 3D, sub-isostatic networks may change how screening scales. The paper treats $\\mu_s$>$\\mu_m$ as a proxy for these effects\u2014an explicit 3D, bending-aware extension would be valuable. * Fatigue and cyclic loading. The model suggests where screening suppresses cascades; how that interacts with long-cycle fatigue in hydrogels is a natural target for future work.",
+    "url": "https://blogs.comphy-lab.org/Blog/2025-Why-Double\u2011Network-Hydrogels-Dont-Shatter/#nuances-and-open-questions",
     "type": "blog_section",
     "priority": 3
   },
   {
     "title": "2025 why double\u2011network hydrogels dont shatter - How to cite and read more",
-    "content": "> [!quote] Core paper > S. B. Walker & S. M. Fielding (2025), *Toughness of double network hydrogels: the role of reduced stress propagation*, Department of Physics, Durham University. The paper introduces the model, quantifies the screened propagator, and maps the stiffness\u2013toughness trade\u2011off with clear figure\u2011level evidence. Related internal notes: [[Double Network Hydrogels]], [[Elastic Screening]], [[Eshelby Quadrupolar Propagator]], [[Gong]]. ---",
+    "content": "> [!quote] Core paper > S. B. Walker & S. M. Fielding (2025). *Toughness of Double Network Hydrogels: The Role of Reduced Stress Propagation*. Phys. Rev. Lett., 135(18):188201. DOI: [10.1103/kck9-tc46](https://doi.org/10.1103/kck9-tc46) > Mechanism, model, and parameter sweeps that connect bond-level events to macroscopic fracture in DNs. ---",
     "url": "https://blogs.comphy-lab.org/Blog/2025-Why-Double\u2011Network-Hydrogels-Dont-Shatter/#how-to-cite-and-read-more",
     "type": "blog_section",
     "priority": 3
   },
   {
     "title": "2025 why double\u2011network hydrogels dont shatter - Tags",
-    "content": "#hydrogels #double-network #fracture-mechanics #soft-materials #materials-science #modeling #elastic-screening #sam-walker #fielding #polymer-physics #design-rules",
+    "content": "#hydrogels #double-network #fracture-mechanics #soft-materials #modeling #elastic-screening #polymer-physics > [!significance]- Metadata > Author:: [Vatsal Sanjay](https://comphy-lab.org/VatsalSy) > Date published:: Oct 31, 2025 > [!meta] Back to main website > [Home](https://comphy-lab.org/), [Team](https://comphy-lab.org/team), [Research](https://comphy-lab.org/research), [Github](https://github.com/comphy-lab), [Blogs](https://blogs.comphy-lab.org) > > \ud83d\udcdd [Edit this page on GitHub](https://github.com/comphy-lab/CoMPhy-Lab-Blogs/blob/main/Blog/2025-Why-Double\u2011Network-Hydrogels-Dont-Shatter.md)",
     "url": "https://blogs.comphy-lab.org/Blog/2025-Why-Double\u2011Network-Hydrogels-Dont-Shatter/#tags",
     "type": "blog_section",
     "priority": 3
