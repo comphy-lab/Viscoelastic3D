@@ -42,6 +42,20 @@
     "priority": 1
   },
   {
+    "title": "Our Team & Collaborators - Peter Croxford",
+    "content": "Student, Durham University [ ](https://github.com/PCrox) - Department of Physics, Durham Univ. / 2025&#8209;now **Research Interest:** Bretherton drops and bubbles.",
+    "url": "https://comphy-lab.org/team/#peter-croxford",
+    "type": "website_section",
+    "priority": 1
+  },
+  {
+    "title": "Our Team & Collaborators - Mark Boulogne B.Sc.",
+    "content": "M.Sc. Student, University of Twente Co-advised with [Detlef Lohse](https://en.wikipedia.org/wiki/Detlef_Lohse) & [Aman Bhargava](https://pof.tnw.utwente.nl/people/profile/2120) [ ](https://github.com/mcboulogne) - [Phys. Fluids - Univ. Twente / 2024&#8209;now](https://pof.tnw.utwente.nl/people/profile/2359) **Research Interest:** Drops and bubbles spreading on LIS.",
+    "url": "https://comphy-lab.org/team/#mark-boulogne-bsc",
+    "type": "website_section",
+    "priority": 1
+  },
+  {
     "title": "Our Team & Collaborators - We need you!",
     "content": "See: [Join Us](https://github.com/VatsalSy/Project-ideas-for-prospective-students) for ongoing projects.",
     "url": "https://comphy-lab.org/team/#we-need-you",
@@ -287,9 +301,9 @@
     "priority": 1
   },
   {
-    "title": "Our Team & Collaborators - Pim J. Dekker M.Sc.",
-    "content": "[ ](https://www.linkedin.com/in/pim-dekker/) - **Now:** [Ph.D. Student, Phys. Fluids - Univ. Twente](https://pof.tnw.utwente.nl/people/profile/1431) - **2019:** [Graduated with B.Sc., Univ. Twente](https://pof.tnw.utwente.nl/people/profile/1431) - Spreading of a drop on a water-air interface",
-    "url": "https://comphy-lab.org/team/#pim-j-dekker-msc",
+    "title": "Our Team & Collaborators - Dr. Pim J. Dekker",
+    "content": "[ ](https://www.linkedin.com/in/pim-dekker/) - **Now:** [Researcher at Education Applied Physics Univ. Twente-TNW](https://pof.tnw.utwente.nl/people/profile/1431) - **2019:** [Graduated with B.Sc., Univ. Twente](https://pof.tnw.utwente.nl/people/profile/1431) - Spreading of a drop on a water-air interface",
+    "url": "https://comphy-lab.org/team/#dr-pim-j-dekker",
     "type": "website_section",
     "priority": 1
   },
@@ -298,21 +312,6 @@
     "content": "[ ](https://www.linkedin.com/in/laurence-bruggink-b733b222a/) - **Now:** Research Engineer at Alfen - **2019:** [Graduated with B.Sc., Univ. Twente](https://pof.tnw.utwente.nl/people/profile/1518) - Bursting bubble in a Herschel--Bulkley fluid",
     "url": "https://comphy-lab.org/team/#laurence-bruggink-msc",
     "type": "website_section",
-    "priority": 1
-  },
-  {
-    "title": "[16]Dixit, A., Oratis, A., Zinelis, K., Lohse, D., &Sanjay, V.Viscoelastic Worthington Jets and Droplets Produced by Bursting Bubbles. J. Fluid Mech., 1010, A2 (2025).",
-    "content": "[16]Dixit, A., Oratis, A., Zinelis, K., Lohse, D., &Sanjay, V.Viscoelastic Worthington Jets and Droplets Produced by Bursting Bubbles. J. Fluid Mech., 1010, A2 (2025).",
-    "url": "https://comphy-lab.org/research/#16",
-    "type": "paper",
-    "tags": [
-      "Bubbles",
-      "Non-Newtonian",
-      "Jets",
-      "Soft-matter-singularities",
-      "Drops",
-      "Featured"
-    ],
     "priority": 1
   },
   {
@@ -329,14 +328,50 @@
     "priority": 1
   },
   {
-    "title": "[17] Bashkatov, A., B\u00fcrkle, F., Demirk\u0131r, \u00c7., Ding, W.,Sanjay, V., Babich, A., Yang, X., Mutschke, G., Czarske, J., Lohse, D., et al. Electrolyte droplet spraying in H2 bubbles during water electrolysis under normal and microgravity conditions. Nat. Commun., 16, 4580 (2025).",
-    "content": "[17] Bashkatov, A., B\u00fcrkle, F., Demirk\u0131r, \u00c7., Ding, W.,Sanjay, V., Babich, A., Yang, X., Mutschke, G., Czarske, J., Lohse, D., et al. Electrolyte droplet spraying in H2 bubbles during water electrolysis under normal and microgravity conditions. Nat. Commun., 16, 4580 (2025).",
+    "title": "[19] Mclauchlan, J., Walker, J. S.,Sanjay, V., Jalaal, M., Reid, J. P., Squires, A. M., & Souslov, A. Bouncing microdroplets on hydrophobic surfaces. Proc. Natl. Acad. Sci., 122, e2507309122 (2025).",
+    "content": "[19] Mclauchlan, J., Walker, J. S.,Sanjay, V., Jalaal, M., Reid, J. P., Squires, A. M., & Souslov, A. Bouncing microdroplets on hydrophobic surfaces. Proc. Natl. Acad. Sci., 122, e2507309122 (2025).",
+    "url": "https://comphy-lab.org/research/#19",
+    "type": "paper",
+    "tags": [
+      "Drops",
+      "Bouncing"
+    ],
+    "priority": 2
+  },
+  {
+    "title": "[18] Saini, M.,Sanjay, V., Saade, Y., Lohse, D., & Popinet, S. Implementation of integral surface tension formulations in a volume of fluid framework and their applications to Marangoni flows. J. Comput. Phys., 542, 114348 (2025).",
+    "content": "[18] Saini, M.,Sanjay, V., Saade, Y., Lohse, D., & Popinet, S. Implementation of integral surface tension formulations in a volume of fluid framework and their applications to Marangoni flows. J. Comput. Phys., 542, 114348 (2025).",
+    "url": "https://comphy-lab.org/research/#18",
+    "type": "paper",
+    "tags": [
+      "Marangoni flows",
+      "Numerical methods"
+    ],
+    "priority": 2
+  },
+  {
+    "title": "[17] Bashkatov, A., B\u00fcrkle, F., Demirk\u0131r, \u00c7., Ding, W.,Sanjay, V., Babich, A., Yang, X., Mutschke, G., Czarske, J., Lohse, D., Krug, D., Lars, B., & Eckert, E. Electrolyte droplet spraying in H2 bubbles during water electrolysis under normal and microgravity conditions. Nat. Commun., 16, 4580 (2025).",
+    "content": "[17] Bashkatov, A., B\u00fcrkle, F., Demirk\u0131r, \u00c7., Ding, W.,Sanjay, V., Babich, A., Yang, X., Mutschke, G., Czarske, J., Lohse, D., Krug, D., Lars, B., & Eckert, E. Electrolyte droplet spraying in H2 bubbles during water electrolysis under normal and microgravity conditions. Nat. Commun., 16, 4580 (2025).",
     "url": "https://comphy-lab.org/research/#17",
     "type": "paper",
     "tags": [
       "Bubbles",
       "Jets",
       "Coalescence",
+      "Soft-matter-singularities",
+      "Drops"
+    ],
+    "priority": 2
+  },
+  {
+    "title": "[16]Dixit, A., Oratis, A., Zinelis, K., Lohse, D., &Sanjay, V.Viscoelastic Worthington Jets and Droplets Produced by Bursting Bubbles. J. Fluid Mech., 1010, A2 (2025).",
+    "content": "[16]Dixit, A., Oratis, A., Zinelis, K., Lohse, D., &Sanjay, V.Viscoelastic Worthington Jets and Droplets Produced by Bursting Bubbles. J. Fluid Mech., 1010, A2 (2025).",
+    "url": "https://comphy-lab.org/research/#16",
+    "type": "paper",
+    "tags": [
+      "Bubbles",
+      "Non-Newtonian",
+      "Jets",
       "Soft-matter-singularities",
       "Drops"
     ],
@@ -697,8 +732,15 @@
     "priority": 3
   },
   {
-    "title": "Teaching - Teaching",
-    "content": "Welcome to the CoMPhy Lab's educational resources. Apart from the university courses, we aim to develop and offer a range of workshops and tutorials on modern computational methods for multiphase flows and high-fidelity simulations. High-Fidelity Simulations Using Basilisk C Universidad Carlos III de Madrid March 10-13, 2025 A comprehensive course on using Basilisk C for simulating multiphase flows, interface tracking, and solving conservation equations. Learn to tackle complex fluid dynamics problems with high-fidelity numerical methods. View Course Basilisk for Multiphase Flow Simulations European Coating Symposium 2025 September 15, 2025 Intensive 3-hour pre-conference training focused on coating applications. Learn Basilisk fundamentals through hands-on examples: heat conduction, drop impact dynamics, and Landau-Levich dip coating. View Course",
+    "title": "Teaching - Teaching: Methods",
+    "content": "Welcome to the CoMPhy Lab's educational resources. Apart from the university courses, we aim to develop and offer a range of workshops and tutorials on modern computational methods for multiphase flows and high-fidelity simulations. High-Fidelity Simulations Using Basilisk C Universidad Carlos III de Madrid March 10-13, 2025 A comprehensive course on using Basilisk C for simulating multiphase flows, interface tracking, and solving conservation equations. Learn to tackle complex fluid dynamics problems with high-fidelity numerical methods. View Course Basilisk for Multiphase Flow Simulations European Coating Symposium 2025 September 15, 2025 Intensive 3-hour pre-conference training focused on coating applications. Learn Basilisk fundamentals through hands-on examples: heat conduction, drop impact dynamics, and Landau-Levich dip coating.",
+    "url": "https://comphy-lab.org/teaching/#teaching",
+    "type": "website_section",
+    "priority": 3
+  },
+  {
+    "title": "Teaching - Teaching: Introduction",
+    "content": "View Course Introduction to Soft Matter Durham University Fall 2025 Comprehensive lecture notes covering fundamental concepts in soft matter physics and their applications. View Lecture Notes",
     "url": "https://comphy-lab.org/teaching/#teaching",
     "type": "website_section",
     "priority": 3
@@ -15173,6 +15215,27 @@
     "priority": 8
   },
   {
+    "title": "History - November",
+    "content": "- Jnandeep Talukdar won the KHMW Young Talent Graduation Award for Mechanical Engineering and Materials Science 2025 for his master's thesis on fundamental research in droplet formation. Thesis: Singularities with Surfactants",
+    "url": "https://comphy-lab.org#history",
+    "type": "website_section",
+    "priority": 8
+  },
+  {
+    "title": "History - September",
+    "content": "- [Saini, M., Sanjay, V. , Saade, Y., Lohse, D., & Popinet, S. Implementation of integral surface tension formulations in a volume of fluid framework and their applications to Marangoni flows. J. Comput. Phys., 542, 114348 (2025).](/research#18)",
+    "url": "https://comphy-lab.org#history",
+    "type": "website_section",
+    "priority": 8
+  },
+  {
+    "title": "History - August",
+    "content": "- [Mclauchlan, J., Walker, J. S., Sanjay, V. , Jalaal, M., Reid, J. P., Squires, A. M., & Souslov, A. Bouncing microdroplets on hydrophobic surfaces. Proc. Natl. Acad. Sci., 122, e2507309122 (2025).](/research#19)",
+    "url": "https://comphy-lab.org#history",
+    "type": "website_section",
+    "priority": 8
+  },
+  {
     "title": "History - July",
     "content": "- Saumili Jana received the award for best master's thesis from IIT Kharagpur. Thesis: Retract or Collapse? The Role of Viscosity and Viscoelasticity on Bubble Dynamics",
     "url": "https://comphy-lab.org#history",
@@ -15243,6 +15306,27 @@
     "priority": 8
   },
   {
+    "title": "News - November",
+    "content": "- Jnandeep Talukdar won the KHMW Young Talent Graduation Award for Mechanical Engineering and Materials Science 2025 for his master's thesis on fundamental research in droplet formation. Thesis: Singularities with Surfactants",
+    "url": "https://comphy-lab.org#news",
+    "type": "website_section",
+    "priority": 8
+  },
+  {
+    "title": "News - September",
+    "content": "- [Saini, M., Sanjay, V. , Saade, Y., Lohse, D., & Popinet, S. Implementation of integral surface tension formulations in a volume of fluid framework and their applications to Marangoni flows. J. Comput. Phys., 542, 114348 (2025).](/research#18)",
+    "url": "https://comphy-lab.org#news",
+    "type": "website_section",
+    "priority": 8
+  },
+  {
+    "title": "News - August",
+    "content": "- [Mclauchlan, J., Walker, J. S., Sanjay, V. , Jalaal, M., Reid, J. P., Squires, A. M., & Souslov, A. Bouncing microdroplets on hydrophobic surfaces. Proc. Natl. Acad. Sci., 122, e2507309122 (2025).](/research#19)",
+    "url": "https://comphy-lab.org#news",
+    "type": "website_section",
+    "priority": 8
+  },
+  {
     "title": "News - July",
     "content": "- Saumili Jana received the award for best master's thesis from IIT Kharagpur. Thesis: Retract or Collapse? The Role of Viscosity and Viscoelasticity on Bubble Dynamics",
     "url": "https://comphy-lab.org#news",
@@ -15259,13 +15343,6 @@
   {
     "title": "News - May",
     "content": "- [Bashkatov, A., B\u00fcrkle, F., Demirk\u0131r, \u00c7., Ding, W., Sanjay, V. , Babich, A., Yang, X., Mutschke, G., Czarske, J., Lohse, D., et al. Electrolyte droplet spraying in H2 bubbles during water electrolysis under normal and microgravity conditions. Nat. Commun., 16, 4580 (2025).](/research#17) View Paper - [ Dixit, A. , Oratis, A., Zinelis, K., Lohse, D., & Sanjay, V. Viscoelastic Worthington Jets and Droplets Produced by Bursting Bubbles. J. Fluid Mech., 1010, A2 (2025).](/research#16) View Paper",
-    "url": "https://comphy-lab.org#news",
-    "type": "website_section",
-    "priority": 8
-  },
-  {
-    "title": "News - April",
-    "content": "- Vatsal Sanjay awarded the Ammodo Science Fellowship . His research will focus on understanding fluid dynamics in fungal networks\u2014investigating how these vast underground systems transport water, nutrients, and genetic information across ecosystems. Read More Image credit: J. Heitman, B. J. Howlett, P. W. Crous, E. H. Stukenbrock, T. Y. James & N. A. R. Gow, The fungal kingdom, John Wiley & Sons (2020)",
     "url": "https://comphy-lab.org#news",
     "type": "website_section",
     "priority": 8
@@ -15437,6 +15514,167 @@
     "url": "https://comphy-lab.org#intro",
     "type": "website_section",
     "priority": 8
+  },
+  {
+    "title": "Add person - Add Person to Team Page",
+    "content": "Add a new person to the team page in the appropriate category (Present Team, Active Collaborations, or Alumni).",
+    "url": "https://comphy-lab.org/.claude/commands/add-person/#add-person-to-team-page",
+    "type": "website_section",
+    "priority": 10
+  },
+  {
+    "title": "Add person - Task Instructions: Context",
+    "content": "1. **Gather Information**: Ask the user for the following details: - Full name (required) - Degree/title (e.g., \"M.Sc.\", \"Ph.D.\", \"Dr.\", \"Prof.\", \"B.Sc.\") - Category: Present Team, Active Collaborations, or Alumni - Position/role (e.g., \"Ph.D.",
+    "url": "https://comphy-lab.org/.claude/commands/add-person/#task-instructions",
+    "type": "website_section",
+    "priority": 10
+  },
+  {
+    "title": "Add person - Task Instructions: Student, University of...",
+    "content": "Student, University of Twente\") - Image path (optional - if not provided, use `/assets/images/team/anonymous.svg`) **For Present Team members:** - Co-advisor information (if applicable) - Education history (bullet points with institutions, years, thesis links) - Research interests - Social/academic links: GitHub, Google Scholar, Bluesky, Twitter/X, LinkedIn, ORCID, Wikipedia **For Active Collaborations:** - Affiliation with institution URL - Collaboration topics - Social/academic links: Google Scholar, Twitter/X, Bluesky, GitHub, ORCID, Wikipedia **For Alumni:** - Graduation year and degree - Current position - Institution where graduated - Thesis title and link - Social links: LinkedIn, GitHub 2. **Determine Image Path**: - If adding a Present Team member WITH a photo: - Find the highest numbered image in `/assets/images/team/` (currently goes up to 6.jpg) - Use next number (e.g., if highest is 6.jpg, use 7.jpg) - Tell user: \"Please add the team member's photo as `/assets/images/team/[NUMBER].jpg` or `.webp`\" - If NO photo provided: Use `/assets/images/team/anonymous.svg` 3. **Read the current team page**: ```bash Read _team/index.md ``` 4. **Format the entry** based on category:",
+    "url": "https://comphy-lab.org/.claude/commands/add-person/#task-instructions",
+    "type": "website_section",
+    "priority": 10
+  },
+  {
+    "title": "Add person - [Name] [Degree]",
+    "content": "[Position] [If co-advised: Co-advised with [Advisor Name and link]] [Social links with Font Awesome icons - each on separate line] [ ](URL) [ ](URL) [ ](URL) - [Education line 1] - [Education line 2, with thesis link if applicable: Thesis Title ] **Research Interest:** [Research interests] ```",
+    "url": "https://comphy-lab.org/.claude/commands/add-person/#name-degree",
+    "type": "website_section",
+    "priority": 10
+  },
+  {
+    "title": "Add person - [Title] [Name]",
+    "content": "[Social links with Font Awesome icons] [ ](URL) [ ](URL) - [Position, Institution with link] **Collaboration on:** [Topics] ```",
+    "url": "https://comphy-lab.org/.claude/commands/add-person/#title-name",
+    "type": "website_section",
+    "priority": 10
+  },
+  {
+    "title": "Add person - [Name] [Degree]",
+    "content": "[Social links - typically LinkedIn and/or GitHub] [ ](URL) [ ](URL) - **Now:** [Current position] - **[Year]:** Graduated with [Degree], [Institution] - [Thesis Title] ```",
+    "url": "https://comphy-lab.org/.claude/commands/add-person/#name-degree",
+    "type": "website_section",
+    "priority": 10
+  },
+  {
+    "title": "Add person - Icon Reference",
+    "content": "Use appropriate icons based on available links: - GitHub: ` ` - Google Scholar: ` ` - Bluesky: ` ` - Twitter/X: ` ` - LinkedIn: ` ` - ORCID: ` ` - Wikipedia: ` ` - PDF/Thesis: ` `",
+    "url": "https://comphy-lab.org/.claude/commands/add-person/#icon-reference",
+    "type": "website_section",
+    "priority": 10
+  },
+  {
+    "title": "Add person - Insert Location",
+    "content": "- For **Present Team**: Add before \"### We need you!\" section - For **Active Collaborations**: Add at the end of that section (before \"## Our Alumni\") - For **Alumni**: Add at the beginning of that section (most recent first)",
+    "url": "https://comphy-lab.org/.claude/commands/add-person/#insert-location",
+    "type": "website_section",
+    "priority": 10
+  },
+  {
+    "title": "Add person - Final Steps",
+    "content": "1. Save the file and confirm the addition 2. If a new image number was assigned, remind user to add the actual photo file to the specified path",
+    "url": "https://comphy-lab.org/.claude/commands/add-person/#final-steps",
+    "type": "website_section",
+    "priority": 10
+  },
+  {
+    "title": "Add person - Important Notes",
+    "content": "- Always maintain the exact formatting and indentation of existing entries - Use proper HTML entities where needed (e.g., `&#8209;` for non-breaking hyphens in year ranges) - Keep consistent spacing between sections (single blank line between entries) - Font Awesome icon sizes and colors must match existing entries in each section - Image dimensions are always `width=\"200\" height=\"200\"` for team members - The placeholder.jpg should never be used - use anonymous.svg instead - Links should use Markdown format with icons in square brackets - All paths should use forward slashes and start with `/` for absolute paths",
+    "url": "https://comphy-lab.org/.claude/commands/add-person/#important-notes",
+    "type": "website_section",
+    "priority": 10
+  },
+  {
+    "title": "Add paper - Add Research Paper from BibTeX",
+    "content": "Parse a BibTeX entry and add it to `_research/index.md` following the exact format used by the CoMPhy Lab website.",
+    "url": "https://comphy-lab.org/.claude/commands/add-paper/#add-research-paper-from-bibtex",
+    "type": "website_section",
+    "priority": 10
+  },
+  {
+    "title": "Add paper - Workflow",
+    "content": "1. **Parse BibTeX Entry** - Extract authors, title, journal/venue, year, volume, pages, DOI, arXiv ID - Handle special characters and formatting 2. **Determine Publication Type** - If journal contains \"arXiv preprint\" \u2192 Add to \"Work in Progress\" section - Otherwise \u2192 Add to appropriate year section 3. **Format Entry** - For published papers: Use numbered format with ` [NUM]` - For preprints: Use ### without numbering - Bold lab members: **Sanjay, V.** and **Dixit, A.** - Always list all authors, never use \"et al.\" 4. **Interactive Elements** - Ask user for tags based on title keywords - Suggest: Bubbles, Drops, Jets, Sheets, Non-Newtonian, Coalescence, Impact forces, etc. - Ask if Featured tag should be added (max 2 featured papers on homepage) - Ask for optional GitHub URL or YouTube embed 5. **Generate Badges** - arXiv badge if arXiv ID present - Journal badge with DOI if available - Blog badge (standard for all papers) - GitHub badge if URL provided",
+    "url": "https://comphy-lab.org/.claude/commands/add-paper/#workflow",
+    "type": "website_section",
+    "priority": 10
+  },
+  {
+    "title": "Add paper - Step 1: Parse BibTeX",
+    "content": "Read the user-provided BibTeX entry and extract: - Citation key (e.g., jana2025impacting) - Authors list - format as \"LastName, F.\" (use first initial only) - Title (remove curly braces, preserve capitalization) - Journal/venue name - Year, volume, pages, article number - DOI from `doi` field - arXiv ID from `eprint` field or journal field if contains \"arXiv:\" - Any note fields",
+    "url": "https://comphy-lab.org/.claude/commands/add-paper/#step-1-parse-bibtex",
+    "type": "website_section",
+    "priority": 10
+  },
+  {
+    "title": "Add paper - Step 2: Check for Existing Preprint",
+    "content": "For published papers, search \"Work in Progress\" section for matching preprint by: - Similar title (fuzzy match) - Same authors and year If found, note it for removal after adding published version",
+    "url": "https://comphy-lab.org/.claude/commands/add-paper/#step-2-check-for-existing-preprint",
+    "type": "website_section",
+    "priority": 10
+  },
+  {
+    "title": "Add paper - Step 3: Format Authors",
+    "content": "- Format: \"Author1, A., Author2, B., & Author3, C.\" - Bold lab members: ` Sanjay, V. ` and ` Dixit, A. ` - Always list all authors regardless of number (do not use \"et al.\")",
+    "url": "https://comphy-lab.org/.claude/commands/add-paper/#step-3-format-authors",
+    "type": "website_section",
+    "priority": 10
+  },
+  {
+    "title": "Add paper - Step 4: Determine Section and Number",
+    "content": "For published papers: - Find the highest existing paper number (currently [17]) - New paper gets next number - Create year section if doesn't exist - Insert in reverse chronological order within year For preprints (Work in Progress): - No numbering - Add to \"Work in Progress\" section - Format: `### Authors. Title. Journal (Year).`",
+    "url": "https://comphy-lab.org/.claude/commands/add-paper/#step-4-determine-section-and-number",
+    "type": "website_section",
+    "priority": 10
+  },
+  {
+    "title": "Add paper - Step 5: Ask for Tags",
+    "content": "Suggest tags based on keywords in title/abstract: - Bubbles, Drops, Jets, Sheets - Non-Newtonian, Coalescence - Superamphiphobic-surfaces, Impact forces - Dissipative anomaly, Soft-matter-singularities - Featured (only if user confirms, max 2 on homepage)",
+    "url": "https://comphy-lab.org/.claude/commands/add-paper/#step-5-ask-for-tags",
+    "type": "website_section",
+    "priority": 10
+  },
+  {
+    "title": "Add paper - Step 6: Generate Badges",
+    "content": "Standard badges format: ```markdown [![arXiv](https://img.shields.io/static/v1.svg?style=flat-square&label=arXiv&message=XXXX.XXXXX&color=green)](https://arxiv.org/abs/XXXX.XXXXX) [![JOURNAL](https://img.shields.io/static/v1.svg?style=flat-square&label=JOURNAL&message=OA&color=orange)](https://doi.org/DOI) [![GitHub](https://img.shields.io/badge/GitHub-100000?style=flat-square&logo=github&logoColor=white)](GITHUB_URL) [![Blog](https://img.shields.io/badge/Blog-Coming%20Soon-yellow?style=flat-square&logo=obsidian&logoColor=white)](https://blogs.comphy-lab.org/0_ToDo-Blog-public) ``` Common journal abbreviations: - Nature Communications \u2192 Nat. Commun. - Journal of Fluid Mechanics \u2192 JFM - Physical Review Letters \u2192 PRL - Physics of Fluids \u2192 Phys. Fluids - AIChE Journal \u2192 AIChE J. - Chemical Engineering Science \u2192 Chem. Eng. Sci. - Science Advances \u2192 Sci. Adv. - Building Simulations \u2192 Build. Simul.",
+    "url": "https://comphy-lab.org/.claude/commands/add-paper/#step-6-generate-badges",
+    "type": "website_section",
+    "priority": 10
+  },
+  {
+    "title": "Add paper - Step 7: Optional Extras",
+    "content": "Ask if user wants to add: - GitHub repository URL - YouTube video embed (use youtube-nocookie.com domain) - Images or highlights section",
+    "url": "https://comphy-lab.org/.claude/commands/add-paper/#step-7-optional-extras",
+    "type": "website_section",
+    "priority": 10
+  },
+  {
+    "title": "Add paper - Step 8: Insert into File",
+    "content": "- Read current `_research/index.md` - Find appropriate section - Insert formatted entry maintaining proper spacing - If replacing preprint, remove from Work in Progress - Preserve blank lines between entries",
+    "url": "https://comphy-lab.org/.claude/commands/add-paper/#step-8-insert-into-file",
+    "type": "website_section",
+    "priority": 10
+  },
+  {
+    "title": "Add paper - Example Input/Output: JavaScript",
+    "content": "Input BibTeX: ```bibtex @article{bashkatov2025electrolyte, title={Electrolyte droplet spraying in H2 bubbles during water electrolysis}, author={Bashkatov, A. and B\u00fcrkle, F. and Demirk\u0131r, \u00c7. and Ding, W. and Sanjay, V. and Babich, A. and Yang, X. and Mutschke, G. and Czarske, J. and Lohse, D. and Krug, D. and B\u00fcttner, L. and Eckert, K.}, journal={Nature Communications}, volume={16}, pages={4580}, year={2025}, doi={10.1038/s41467-025-59762-7} } ``` Output (for paper [18]): ```markdown [18] Bashkatov, A., B\u00fcrkle, F., Demirk\u0131r, \u00c7., Ding, W., Sanjay, V. , Babich, A., Yang, X., Mutschke, G., Czarske, J., Lohse, D., Krug, D., B\u00fcttner, L., & Eckert, K. Electrolyte droplet spraying in H2 bubbles during water electrolysis. Nat. Commun., 16, 4580 (2025). Bubbles Jets [![Nat.",
+    "url": "https://comphy-lab.org/.claude/commands/add-paper/#example-inputoutput",
+    "type": "website_section",
+    "priority": 10
+  },
+  {
+    "title": "Add paper - Example Input/Output: Context",
+    "content": "Commun.](https://img.shields.io/static/v1.svg?style=flat-square&label=Nat.%20Commun.&message=OA&color=orange)](https://doi.org/10.1038/s41467-025-59762-7) [![Blog](https://img.shields.io/badge/Blog-Coming%20Soon-yellow?style=flat-square&logo=obsidian&logoColor=white)](https://blogs.comphy-lab.org/0_ToDo-Blog-public) ```",
+    "url": "https://comphy-lab.org/.claude/commands/add-paper/#example-inputoutput",
+    "type": "website_section",
+    "priority": 10
+  },
+  {
+    "title": "Add paper - Important Notes",
+    "content": "- Maintain exact formatting with proper spacing - Lab members always in bold - Numbered papers go in year sections, preprints in Work in Progress - Always include Blog badge - Check for duplicate entries before adding - When moving preprint to published, ensure all metadata is updated",
+    "url": "https://comphy-lab.org/.claude/commands/add-paper/#important-notes",
+    "type": "website_section",
+    "priority": 10
   },
   {
     "title": "Add news",
