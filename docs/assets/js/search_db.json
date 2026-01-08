@@ -2027,6 +2027,27 @@
     "priority": 3
   },
   {
+    "title": "Seminar coalescence with surfactants - To merge or not to merge?: > [!significance] Authors...",
+    "content": "> [!significance] Authors > Jnandeep Talukdar, Duarte Rocha, Christian Diddens, Jacco Snoeijer, Detlef Lohse, and [Vatsal Sanjay*](https://comphy-lab.org) ![[Seminar-Coalescence-with-Surfactants-1767795012556.png|To merge or not to merge]] Coalescence of two sessile drops is initiated by a topological transition at first contact: a microscopic liquid bridge nucleates and grows from a vanishing initial length scale, launching the canonical coalescence singularity. For clean interfaces this bridge expansion is symmetric, but the outcome can flip when one drop carries surfactant and the other is clean: rather than merging, one drop can push the other aside. This matters because coalescence outcomes directly control pattern fidelity in inkjet printing, mixing efficiency in microfluidic handling, and emulsion stability, yet the earliest surfactant-mediated dynamics at first contact remain poorly characterised.",
+    "url": "https://blogs.comphy-lab.org/Talks/Seminar-Coalescence-with-Surfactants/#to-merge-or-not-to-merge",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "Seminar coalescence with surfactants - To merge or not to merge?: This talk shows...",
+    "content": "This talk shows how insoluble surfactants modify this earliest stage in an asymmetric configuration where one sessile drop is initially coated (concentration $\\Gamma_0$) and the other is clean. Using a long-wave lubrication model coupled to surfactant transport, together with asymptotic analysis and high-resolution simulations, we map regimes in surfactant strength $\\beta$, surface Peclet number $Pe$ (interfacial advection relative to surface diffusion), and contact angle $\\theta$. In the rapid-diffusion limit ($Pe \\to 0$), surfactant quickly homogenises near the neck, so the bridge height follows the clean-drop similarity with renormalised capillary driving, $h_0 \\simeq 0.272(1-\\beta\\Gamma_0/2)\\theta^4 t$, while transient Marangoni stresses break symmetry and drive a drift $x_0 \\propto t^{3/2}$ with a diffusion-controlled maximum excursion $x_f \\sim \\beta Pe$.",
+    "url": "https://blogs.comphy-lab.org/Talks/Seminar-Coalescence-with-Surfactants/#to-merge-or-not-to-merge",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "Seminar coalescence with surfactants - To merge or not to merge?: In the slow-diffusion...",
+    "content": "In the slow-diffusion limit ($Pe \\to \\infty$), surfactant remains sharply segregated and sharp fronts develop; the dynamics are organised by a critical strength $\\beta_c \\approx 0.15$: above $\\beta_c$, Marangoni stresses suppress vertical bridge growth and sustain a translating, weakly coalescent state, whereas below $\\beta_c$ drift arrests via vorticity generation. In the purely advective limit, the surfactant field develops Burgers-type kinematic shocks. Overall, these results provide a regime map for surfactant-mediated sessile-drop coalescence at first contact. [[Seminar-Coalescence-with-Surfactants.pdf|this page in .pdf]]",
+    "url": "https://blogs.comphy-lab.org/Talks/Seminar-Coalescence-with-Surfactants/#to-merge-or-not-to-merge",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
     "title": "Gauss law of electrostatics - Gauss law of electrostatics: > [!important]- Pre-requisites...",
     "content": "> [!important]- Pre-requisites > I assume a working knowledge of > * Electric field $\\vec{E}$. > * [[Geometric-description-of-electric-field]] > * [[What-is-electric-field-flux?]] > * What is the electric field created by a point change $q$? > $E = q/(4\\pi\\varepsilon_0r^2)$ > * [[Principle-of-superposition-of-electric-fields]] > [!tldr] TL;DR > Gauss\u2019 law states that the net electric flux through any closed surface is proportional to the total charge enclosed inside it. Its integral form, $\\oint \\vec{E} \\cdot d\\vec{A} = q_{\\text{in}}/\\varepsilon_0$, is most practically used with high\u2010symmetry geometries (spherical, cylindrical, planar). Even though it might seem universal, using it directly for complex geometries often requires additional methods. The differential form, $\\vec{\\nabla} \\cdot \\vec{E} = \\rho/\\varepsilon_0$, underpins charge\u2010field relationships in Maxwell\u2019s equations.",
     "url": "https://blogs.comphy-lab.org/Lecture-Notes/Gauss-law-of-Electrostatics/#gauss-law-of-electrostatics",
