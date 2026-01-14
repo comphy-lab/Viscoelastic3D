@@ -6535,34 +6535,6 @@
     "priority": 3
   },
   {
-    "title": "reset_install_requirements.sh | Test documentation: Lid driven cavity using dye injection: Context",
-    "content": "reset_install_requirements.sh See raw file reset_install_requirements.sh #!/bin/zsh # tested on MacOS only.",
-    "url": "https://comphy-lab.org/documentationWeb/reset_install_requirements.sh.html",
-    "type": "docs_content",
-    "priority": 4
-  },
-  {
-    "title": "reset_install_requirements.sh | Test documentation: Lid driven cavity using dye injection: Let us know...",
-    "content": "Let us know if you find issues running with Linux by opening an issue. # modify using http://basilisk.fr/src/INSTALL # ensures that we are always using the latest version of basilisk # Check if --hard flag is passed HARD_RESET = \\f alse if [[ \" \\$ 1\" == \"--hard\" ]]; then HARD_RESET = \\t rue fi # Function to install basilisk install_basilisk() { darcs clone http://basilisk.fr/basilisk cd basilisk/src if [[ \" \\$ OSTYPE\" == \"darwin\" * ]]; then echo \"Using MacOS\" ln -s config.osx config else echo \"Using Linux\" ln -s config.gcc config fi make -k make } # Remove project config always rm -rf .project_config # Check if basilisk needs to be installed if [[ \" \\$ HARD_RESET\" == true ]] || [[ ! -d \"basilisk\" ]]; then echo \"Installing basilisk...\" rm -rf basilisk install_basilisk else echo \"Using existing basilisk installation...\" cd basilisk/src fi # Setup environment variables echo \"export BASILISK= \\$ PWD\" >> ../../.project_config echo \"export PATH= \\\\ $PATH : \\\\ $BASILISK \" >> ../../.project_config source ../../.project_config # Check if qcc is working properly echo \"\\nChecking qcc installation...\" if ! qcc --version > /dev/null 2 >& 1 ; then echo \"\\033[0;31mError: qcc is not working properly.\\033[0m\" echo \"Please ensure you have Xcode Command Line Tools installed.\" echo \"You can install them by running: xcode-select --install\" echo \"For more details, visit: http://basilisk.fr/src/INSTALL\" exit 1 else echo \"\\033[0;32mqcc is properly installed.\\033[0m\" qcc --version fi",
-    "url": "https://comphy-lab.org/documentationWeb/reset_install_requirements.sh.html",
-    "type": "docs_content",
-    "priority": 4
-  },
-  {
-    "title": "reset_install_requirements.sh | Test documentation: Lid driven cavity using dye injection - Code Example: #!/bin/zsh# tested on...",
-    "content": "#!/bin/zsh# tested on MacOS only.",
-    "url": "https://comphy-lab.org/documentationWeb/reset_install_requirements.sh.html",
-    "type": "docs_code",
-    "priority": 4
-  },
-  {
-    "title": "reset_install_requirements.sh | Test documentation: Lid driven cavity using dye injection - Code Example: Let us know...",
-    "content": "Let us know if you find issues running with Linux by opening an issue.# modify using http://basilisk.fr/src/INSTALL# ensures that we are always using the latest version of basilisk# Check if --hard flag is passedHARD_RESET=\\falseif[[\"\\$1\"==\"--hard\"]];thenHARD_RESET=\\truefi# Function to install basiliskinstall_basilisk(){darcsclone http://basilisk.fr/basiliskcdbasilisk/srcif[[\"\\$OSTYPE\"==\"darwin\"*]];thenecho\"Using MacOS\"ln-sconfig.osx configelseecho\"Using Linux\"ln-sconfig.gcc configfimake-kmake}# Remove project config alwaysrm-rf.project_config# Check if basilisk needs to be installedif[[\"\\$HARD_RESET\"==true]]||[[!-d\"basilisk\"]];thenecho\"Installing basilisk...\"rm-rfbasiliskinstall_basiliskelseecho\"Using existing basilisk installation...\"cdbasilisk/srcfi# Setup environment variablesecho\"export BASILISK=\\$PWD\">>../../.project_configecho\"export PATH=\\\\$PATH:\\\\$BASILISK\">>../../.project_configsource../../.project_config# Check if qcc is working properlyecho\"\\nChecking qcc installation...\"if!qcc--version>/dev/null2>&1;thenecho\"\\033[0;31mError: qcc is not working properly.\\033[0m\"echo\"Please ensure you have Xcode Command Line Tools installed.\"echo\"You can install them by running: xcode-select --install\"echo\"For more details, visit: http://basilisk.fr/src/INSTALL\"exit1elseecho\"\\033[0;32mqcc is properly installed.\\033[0m\"qcc--versionfi",
-    "url": "https://comphy-lab.org/documentationWeb/reset_install_requirements.sh.html",
-    "type": "docs_code",
-    "priority": 4
-  },
-  {
     "title": "Test documentation: Lid driven cavity using dye injection | Test documentation: Lid driven cavity using dye injection: Test documentation: Lid...",
     "content": "Test documentation: Lid driven cavity using dye injection This repository contains the computational framework and tools for multiphase fluid dynamics simulations based on the Basilisk C framework. The codebase specializes in the simulation and analysis of lid driven cavity flow with dye injection. Documentation The full documentation for this project is available at comphy-lab.org/documentationWeb/ . This website contains detailed explanations of the code, examples, and usage instructions. Overview The codebase implements a classical lid driven cavity flow problem with dye injection using the Basilisk CFD library with custom implementations for specific dye injection including.",
     "url": "https://comphy-lab.org/documentationWeb/index.html",
@@ -6613,7 +6585,7 @@
   },
   {
     "title": "Test documentation: Lid driven cavity using dye injection | Test documentation: Lid driven cavity using dye injection: Context",
-    "content": "Acknowledgments S. Popinet & collaborators, Basilisk C, http://basilisk.fr (Last accessed: June 2025) (2013-2025) Generated Documentation Root Directory default.params reset_install_requirements.sh sweep.params postProcess postProcess/LidDrivenCavity-Newtonian-dyeInjection.ipynb postProcess/LidDrivenCavity-Newtonian-dyeInjection.py postProcess/Visulization3D.ipynb postProcess/getData-LidDriven.c postProcess/getFacets3D.c simulationCases simulationCases/LidDrivenCavity-Newtonian-dyeInjection.c simulationCases/Makefile src-local src-local/dye-injection.h",
+    "content": "Acknowledgments S. Popinet & collaborators, Basilisk C, http://basilisk.fr (Last accessed: June 2025) (2013-2025) Generated Documentation Root Directory default.params sweep.params postProcess postProcess/LidDrivenCavity-Newtonian-dyeInjection.ipynb postProcess/LidDrivenCavity-Newtonian-dyeInjection.py postProcess/Visulization3D.ipynb postProcess/getData-LidDriven.c postProcess/getFacets3D.c simulationCases simulationCases/LidDrivenCavity-Newtonian-dyeInjection.c simulationCases/Makefile src-local src-local/dye-injection.h",
     "url": "https://comphy-lab.org/documentationWeb/index.html",
     "type": "docs_content",
     "priority": 4
