@@ -315,27 +315,11 @@
     "priority": 1
   },
   {
-    "title": "[11]Sanjay, V., Chantelot, P., & Lohse, D. When does an impacting drop stop bouncing? J. Fluid Mech., 958, A26 (2023).",
-    "content": "[11]Sanjay, V., Chantelot, P., & Lohse, D. When does an impacting drop stop bouncing? J. Fluid Mech., 958, A26 (2023).",
-    "url": "https://comphy-lab.org/research/#11",
-    "type": "paper",
-    "tags": [
-      "Drops",
-      "Bouncing",
-      "Dissipative anomaly",
-      "Featured"
-    ],
-    "priority": 1
-  },
-  {
     "title": "[21] D\u00edaz, D.,Bhargava, A. S., Walz, F., Sharifi, A., Summaly, S., Berger, R., Kappl, M., Butt, H.-J., Lohse, D., Willers, T.,Sanjay, V., & Vollmer, D. Stood-up Drop to Determine Receding Contact Angles. Soft Matter, 22, 657-667 (2026).",
     "content": "[21] D\u00edaz, D.,Bhargava, A. S., Walz, F., Sharifi, A., Summaly, S., Berger, R., Kappl, M., Butt, H.-J., Lohse, D., Willers, T.,Sanjay, V., & Vollmer, D. Stood-up Drop to Determine Receding Contact Angles. Soft Matter, 22, 657-667 (2026).",
     "url": "https://comphy-lab.org/research/#21",
     "type": "paper",
-    "tags": [
-      "Drops",
-      "Contact line"
-    ],
+    "tags": [],
     "priority": 2
   },
   {
@@ -343,10 +327,7 @@
     "content": "[20] Demirk\u0131r, \u00c7., Yang, R., Bashkatov, A.,Sanjay, V., Lohse, D., & Krug, D. To jump or not to jump: Adhesion and viscous dissipation dictate the detachment of coalescing wall-attached bubbles. Phys. Rev. Fluids, 10, 123602 (2025).",
     "url": "https://comphy-lab.org/research/#20",
     "type": "paper",
-    "tags": [
-      "Bubbles",
-      "Coalescence"
-    ],
+    "tags": [],
     "priority": 2
   },
   {
@@ -354,10 +335,7 @@
     "content": "[19] Mclauchlan, J., Walker, J. S.,Sanjay, V., Jalaal, M., Reid, J. P., Squires, A. M., & Souslov, A. Bouncing microdroplets on hydrophobic surfaces. Proc. Natl. Acad. Sci., 122, e2507309122 (2025).",
     "url": "https://comphy-lab.org/research/#19",
     "type": "paper",
-    "tags": [
-      "Drops",
-      "Bouncing"
-    ],
+    "tags": [],
     "priority": 2
   },
   {
@@ -365,10 +343,7 @@
     "content": "[18] Saini, M.,Sanjay, V., Saade, Y., Lohse, D., & Popinet, S. Implementation of integral surface tension formulations in a volume of fluid framework and their applications to Marangoni flows. J. Comput. Phys., 542, 114348 (2025).",
     "url": "https://comphy-lab.org/research/#18",
     "type": "paper",
-    "tags": [
-      "Marangoni flows",
-      "Numerical methods"
-    ],
+    "tags": [],
     "priority": 2
   },
   {
@@ -376,13 +351,7 @@
     "content": "[17] Bashkatov, A., B\u00fcrkle, F., Demirk\u0131r, \u00c7., Ding, W.,Sanjay, V., Babich, A., Yang, X., Mutschke, G., Czarske, J., Lohse, D., Krug, D., Lars, B., & Eckert, E. Electrolyte droplet spraying in H2 bubbles during water electrolysis under normal and microgravity conditions. Nat. Commun., 16, 4580 (2025).",
     "url": "https://comphy-lab.org/research/#17",
     "type": "paper",
-    "tags": [
-      "Bubbles",
-      "Jets",
-      "Coalescence",
-      "Soft-matter-singularities",
-      "Drops"
-    ],
+    "tags": [],
     "priority": 2
   },
   {
@@ -390,13 +359,7 @@
     "content": "[16]Dixit, A., Oratis, A., Zinelis, K., Lohse, D., &Sanjay, V.Viscoelastic Worthington Jets and Droplets Produced by Bursting Bubbles. J. Fluid Mech., 1010, A2 (2025).",
     "url": "https://comphy-lab.org/research/#16",
     "type": "paper",
-    "tags": [
-      "Bubbles",
-      "Non-Newtonian",
-      "Jets",
-      "Soft-matter-singularities",
-      "Drops"
-    ],
+    "tags": [],
     "priority": 2
   },
   {
@@ -404,12 +367,7 @@
     "content": "[15]Sanjay, V., & Lohse, D. Unifying theory of scaling in drop impact: Forces & maximum spreading diameter. Phys. Rev. Lett., 134, 104003 (2025).",
     "url": "https://comphy-lab.org/research/#15",
     "type": "paper",
-    "tags": [
-      "Drops",
-      "Dissipative anomaly",
-      "Superamphiphobic-surfaces",
-      "Impact forces"
-    ],
+    "tags": [],
     "priority": 2
   },
   {
@@ -417,10 +375,7 @@
     "content": "[14]Sanjay, V., Zhang, B., Lv, C., & Lohse, D. The role of viscosity on drop impact forces on non-wetting surfaces. J. Fluid Mech., 1004, A6 (2025).",
     "url": "https://comphy-lab.org/research/#14",
     "type": "paper",
-    "tags": [
-      "Drops",
-      "Impact forces"
-    ],
+    "tags": [],
     "priority": 2
   },
   {
@@ -428,10 +383,7 @@
     "content": "[13] Kayal, L.,Sanjay, V., Yewale, N., Kumar, A., & Dasgupta, R. Focusing of concentric free-surface waves. J. Fluid Mech., 1003, A14 (2025).",
     "url": "https://comphy-lab.org/research/#13",
     "type": "paper",
-    "tags": [
-      "Waves",
-      "Dissipative anomaly"
-    ],
+    "tags": [],
     "priority": 2
   },
   {
@@ -439,12 +391,15 @@
     "content": "[12] Balasubramanian, A. G.,Sanjay, V., Jalaal, M., Vinuesa, R., & Tammisola, O. Bursting bubble in an elastoviscoplastic medium. J. Fluid Mech., 1001, A9 (2024).",
     "url": "https://comphy-lab.org/research/#12",
     "type": "paper",
-    "tags": [
-      "Bubbles",
-      "Non-Newtonian",
-      "Jets",
-      "Soft-matter-singularities"
-    ],
+    "tags": [],
+    "priority": 2
+  },
+  {
+    "title": "[11]Sanjay, V., Chantelot, P., & Lohse, D. When does an impacting drop stop bouncing? J. Fluid Mech., 958, A26 (2023).",
+    "content": "[11]Sanjay, V., Chantelot, P., & Lohse, D. When does an impacting drop stop bouncing? J. Fluid Mech., 958, A26 (2023).",
+    "url": "https://comphy-lab.org/research/#11",
+    "type": "paper",
+    "tags": [],
     "priority": 2
   },
   {
@@ -452,11 +407,7 @@
     "content": "[10]Sanjay, V., Lakshman, S., Chantelot, P., Snoeijer, J. H., & Lohse, D. Drop impact on viscous liquid films. J. Fluid Mech., 958, A25 (2023).",
     "url": "https://comphy-lab.org/research/#10",
     "type": "paper",
-    "tags": [
-      "Drops",
-      "Bouncing",
-      "Superhydrophobic surfaces"
-    ],
+    "tags": [],
     "priority": 2
   },
   {
@@ -464,14 +415,7 @@
     "content": "\u27a1\ufe0fSanjay, V.Viscous free-surface flows. Ph.D. Thesis, Physics of Fluids, University of Twente (2022).",
     "url": "https://comphy-lab.org/research/#thesis",
     "type": "paper",
-    "tags": [
-      "Drops",
-      "Jets",
-      "Sheets",
-      "Bubbles",
-      "Soft-matter-singularities",
-      "Non-Newtonian"
-    ],
+    "tags": [],
     "priority": 2
   },
   {
@@ -479,11 +423,7 @@
     "content": "[9]Sanjay, V., Sen, U., Kant, P., and Lohse, D. Taylor\u2013Culick retractions and the influence of the surroundings. J. Fluid Mech., 948, A14 (2022).",
     "url": "https://comphy-lab.org/research/#9",
     "type": "paper",
-    "tags": [
-      "Sheets",
-      "Dissipative anomaly",
-      "Retraction"
-    ],
+    "tags": [],
     "priority": 2
   },
   {
@@ -491,11 +431,7 @@
     "content": "[8] Zhang, B.,Sanjay, V., Shi, S., and Zhao, Y., and Lv, C., and Feng, X.-Q., & Lohse, D. Impact forces of water drops falling on superhydrophobic surfaces. Phys. Rev. Lett., 129(10), 104501 (2022).",
     "url": "https://comphy-lab.org/research/#8",
     "type": "paper",
-    "tags": [
-      "Drops",
-      "Superhydrophobic surfaces",
-      "Impact forces"
-    ],
+    "tags": [],
     "priority": 2
   },
   {
@@ -503,12 +439,7 @@
     "content": "[7]Sanjay, V., Lohse, D., & Jalaal, M. Bursting bubble in a viscoplastic medium. J. Fluid Mech., 922, A2 (2021).",
     "url": "https://comphy-lab.org/research/#7",
     "type": "paper",
-    "tags": [
-      "Bubbles",
-      "Jets",
-      "Non-Newtonian",
-      "Soft-matter-singularities"
-    ],
+    "tags": [],
     "priority": 2
   },
   {
@@ -516,11 +447,7 @@
     "content": "[6] Ram\u00edrez-Soto, O.,Sanjay, V., Lohse, D., Pham, J. T., & Vollmer, D. Lifting a sessile oil drop from a superamphiphobic surface with an impacting one. Sci. Adv., 6(34), eaba4330 (2020).",
     "url": "https://comphy-lab.org/research/#6",
     "type": "paper",
-    "tags": [
-      "Drops",
-      "Superamphiphobic-surfaces",
-      "Lifting"
-    ],
+    "tags": [],
     "priority": 2
   },
   {
@@ -528,10 +455,7 @@
     "content": "[5] Jain, A.,Sanjay, V., & Das, A. K. Consequences of inclined and dual jet impingement in stagnant liquid and stratified layers. AIChE J., 65(1), 372-384 (2019).",
     "url": "https://comphy-lab.org/research/#5",
     "type": "paper",
-    "tags": [
-      "Jets",
-      "Bubbles"
-    ],
+    "tags": [],
     "priority": 2
   },
   {
@@ -539,9 +463,7 @@
     "content": "[4] Soni, A.,Sanjay, V., & Das, A. K. Formation of fluid structures due to jet-jet and jet-sheet interactions. Chem. Eng. Sci., 191, 67-77 (2018).",
     "url": "https://comphy-lab.org/research/#4",
     "type": "paper",
-    "tags": [
-      "Jets"
-    ],
+    "tags": [],
     "priority": 2
   },
   {
@@ -549,11 +471,7 @@
     "content": "[3]Sanjay, V., Das, A.K. Numerical assessment of hazard in compartmental fire having steady heat release rate from the source. Build. Simul. 11, 613\u2013624 (2018).",
     "url": "https://comphy-lab.org/research/#3",
     "type": "paper",
-    "tags": [
-      "Others",
-      "Fire",
-      "Evacuation"
-    ],
+    "tags": [],
     "priority": 2
   },
   {
@@ -561,10 +479,7 @@
     "content": "[2]Sanjay, V., & Das, A. K. Formation of liquid chain by collision of two laminar jets. Phys. Fluids, 29(11), 112101 (2017).",
     "url": "https://comphy-lab.org/research/#2",
     "type": "paper",
-    "tags": [
-      "Jets",
-      "Sheets"
-    ],
+    "tags": [],
     "priority": 2
   },
   {
@@ -572,10 +487,7 @@
     "content": "[1]Sanjay, V., & Das, A. K. On air entrainment in a water pool by impingement of a jet. AIChE J., 63(11), 5169-5181 (2017).",
     "url": "https://comphy-lab.org/research/#1",
     "type": "paper",
-    "tags": [
-      "Jets",
-      "Bubbles"
-    ],
+    "tags": [],
     "priority": 2
   },
   {
@@ -19459,7 +19371,7 @@
   },
   {
     "title": "Add news: Add the following...",
-    "content": "Add the following news item to both News.md and history.md: $ARGUMENTS Follow these steps: 1. Parse the news content from $ARGUMENTS 2. Determine the appropriate month and year (ask if unclear) 3. Read both News.md and history.md files 4. Add the news item to history.md in the correct chronological position: - Years are organized with `## Year` headings (e.g., `## 2026`, `## 2025`) - Years are sorted descending (newest first) - Create year section if it doesn't exist - Months within a year are in chronological order (January at top) - Format: `- [news content]` 5. Add the same item to News.md: - Years are organized with `## Year` headings - Find or create the correct year section - Find or create the month subsection (### Month) - Insert after the month heading - The Durham announcement is a special item under the `## 2025` heading 6. Count regular news items in News.md (items that start with \"- \") 7.",
+    "content": "Add the following news item to both News.md and history.md: $ARGUMENTS Follow these steps: 1. Parse the news content from $ARGUMENTS 2. Determine the appropriate month and year (ask if unclear) 3. Read both News.md and history.md files 4. Add the news item to history.md in the correct chronological position: - Years are organized with `## Year` headings (e.g., `## 2026`, `## 2025`) - Years are sorted descending (newest first) - Create year section if it doesn't exist - Months within a year are in reverse chronological order (December at top) - Format: `- [news content]` 5. Add the same item to News.md: - Years are organized with `## Year` headings - Find or create the correct year section - Find or create the month subsection (### Month) - Insert after the month heading - The Durham announcement is a special item under the `## 2025` heading 6. Count regular news items in News.md (items that start with \"- \") 7.",
     "url": "https://comphy-lab.org/.opencode/commands/add-news/",
     "type": "website_content",
     "priority": 10
