@@ -694,9 +694,9 @@
     "priority": 3
   },
   {
-    "title": "0_readme - Double Network Hydroget:",
+    "title": "0_readme - Double Network Hydrogel:",
     "content": "2025-10-31 [[2025-Why-Double\u2011Network-Hydrogels-Dont-Shatter]]: Why double-network hydrogels combine stiffness and toughness without shattering - elastic screening mechanisms that prevent crack cascades by damping stress propagation between sacrificial bonds.",
-    "url": "https://blogs.comphy-lab.org/0_README/#double-network-hydroget",
+    "url": "https://blogs.comphy-lab.org/0_README/#double-network-hydrogel",
     "type": "blog_section",
     "priority": 3
   },
@@ -765,21 +765,14 @@
   },
   {
     "title": "0_readme - Individual Lecture Notes:",
-    "content": "2025-01-21 [[Gauss-law-of-Electrostatics]]: Analysis of electric field flux through different surfaces using Gauss's law, with visual demonstrations.",
+    "content": "2025-11-05 [[4-Soft-Matter-Singularities]]: Lecture on finite-time singularities in soft matter, covering pinch-off, contact-line singularities, and scaling behavior across inertial, viscous, and viscoelastic regimes.",
     "url": "https://blogs.comphy-lab.org/0_README/#individual-lecture-notes",
     "type": "blog_section",
     "priority": 3
   },
   {
-    "title": "0_readme - Conference Presentations:",
-    "content": "2025-06-30 [[2025-06-30_Conference-VPflow-abstract]]: VPflow conference abstract on taming singularities through yield-stress regularization in bubble-bursting, exploring how viscoplasticity suppresses Worthington jetting.",
-    "url": "https://blogs.comphy-lab.org/0_README/#conference-presentations",
-    "type": "blog_section",
-    "priority": 3
-  },
-  {
     "title": "0_readme - Seminar Presentations:",
-    "content": "2025-02-21 [[Seminar-Drosophila-continuum-mechanics]]: Durham University seminar exploring polymeric flows as a tunable testbed for unsteady, nonlinear continuum mechanics. 2025-01-19 [[Seminar-UIUC-abstract]]: UIUC fluid seminar investigating how polymers modify classical hydrodynamic singularities in free-surface flows.",
+    "content": "2026-01-07 [[Seminar-Coalescence-with-Surfactants]]: Seminar on asymmetric sessile-drop coalescence showing how insoluble surfactants can bias bridge growth, induce Marangoni-driven drift, and select merge-versus-non-merge outcomes. 2026-01-05 [[Seminar-Singularities]]: Seminar on hydrodynamic singularities in soft matter, connecting drop impact, bubble bursting, and retracting films through experiments, simulations, and theory.",
     "url": "https://blogs.comphy-lab.org/0_README/#seminar-presentations",
     "type": "blog_section",
     "priority": 3
