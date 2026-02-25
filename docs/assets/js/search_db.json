@@ -315,6 +315,14 @@
     "priority": 1
   },
   {
+    "title": "[22]Dixit, A. K., Zhao, C., Zaleski, S., Lohse, D., &Sanjay, V.Holes in Sheets: Double-Threshold Rupture of Draining Liquid Films. Phys. Rev. Lett., 136, 084001 (2026).",
+    "content": "[22]Dixit, A. K., Zhao, C., Zaleski, S., Lohse, D., &Sanjay, V.Holes in Sheets: Double-Threshold Rupture of Draining Liquid Films. Phys. Rev. Lett., 136, 084001 (2026).",
+    "url": "https://comphy-lab.org/research/#22",
+    "type": "paper",
+    "tags": [],
+    "priority": 2
+  },
+  {
     "title": "[21] D\u00edaz, D.,Bhargava, A. S., Walz, F., Sharifi, A., Summaly, S., Berger, R., Kappl, M., Butt, H.-J., Lohse, D., Willers, T.,Sanjay, V., & Vollmer, D. Stood-up Drop to Determine Receding Contact Angles. Soft Matter, 22, 657-667 (2026).",
     "content": "[21] D\u00edaz, D.,Bhargava, A. S., Walz, F., Sharifi, A., Summaly, S., Berger, R., Kappl, M., Butt, H.-J., Lohse, D., Willers, T.,Sanjay, V., & Vollmer, D. Stood-up Drop to Determine Receding Contact Angles. Soft Matter, 22, 657-667 (2026).",
     "url": "https://comphy-lab.org/research/#21",
@@ -687,6 +695,83 @@
     "priority": 3
   },
   {
+    "title": "Agents - CLAUDE.md",
+    "content": "This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.",
+    "url": "https://blogs.comphy-lab.org/AGENTS/#claudemd",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "Agents - Repository Overview",
+    "content": "This is a research blog repository for the Computational Multiphase Physics (CoMPhy) Lab, containing academic content in Markdown format. The site is published at [blogs-comphy-lab.org](https://blogs-comphy-lab.org/).",
+    "url": "https://blogs.comphy-lab.org/AGENTS/#repository-overview",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "Agents - Content Structure",
+    "content": "- `Blog/` - Research blog posts and updates - `Code-Documentations/` - Technical documentation - `Lecture-Notes/` - Teaching materials and course content - `Talks/` - Presentation materials and abstracts - `_AtomicNotes/` - Atomic knowledge pieces (linked notes) - `_Media/` - Images and media files - `_scripts/` - Jupyter notebooks for generating figures",
+    "url": "https://blogs.comphy-lab.org/AGENTS/#content-structure",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "Agents - Markdown Files",
+    "content": "All content uses Markdown with YAML frontmatter: ```yaml --- created: YYYY-MM-DDThh:mm:ss+01:00 modified: YYYY-MM-DDThh:mm:ss+01:00 status: [Published/Working/Draft/done \u2705] website: https://blogs-comphy-lab.org/your-post-url --- ```",
+    "url": "https://blogs.comphy-lab.org/AGENTS/#markdown-files",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "Agents - Obsidian Features",
+    "content": "- Wiki-style links: `[[post-name]]` and `[[post-name|alias]]` - Image embedding: `![[_Media/filename.png]]` - Callouts: `> [!note]`, `> [!tldr]`, `> [!important]`",
+    "url": "https://blogs.comphy-lab.org/AGENTS/#obsidian-features",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "Agents - PDF Export",
+    "content": "Convert Markdown to PDF using the export script: ```bash ./.obsidian/scripts/export-pdf.sh \"filename.md\" ``` The script handles: - Obsidian syntax conversion to standard Markdown - Image path processing - Bibliography integration via Pandoc - LaTeX/XeLaTeX PDF generation",
+    "url": "https://blogs.comphy-lab.org/AGENTS/#pdf-export",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "Agents - Content Validation",
+    "content": "- Ensure all images exist in `_Media/` directory - Verify wiki links point to existing content - Check YAML frontmatter format",
+    "url": "https://blogs.comphy-lab.org/AGENTS/#content-validation",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "Agents - File Organization",
+    "content": "- Place new blog posts in `Blog/` - Store images in `_Media/` with descriptive names - Use atomic notes in `_AtomicNotes/` for reusable concepts",
+    "url": "https://blogs.comphy-lab.org/AGENTS/#file-organization",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "Agents - Mathematical Content",
+    "content": "- Use LaTeX syntax for equations: `$$equation$$` or `$inline$` - Include Jupyter notebooks in `_scripts/` for computational examples - Save generated plots to `_Media/`",
+    "url": "https://blogs.comphy-lab.org/AGENTS/#mathematical-content",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "Agents - Academic Standards",
+    "content": "- Include proper citations and references - Use descriptive filenames without spaces - Maintain consistent notation across related posts",
+    "url": "https://blogs.comphy-lab.org/AGENTS/#academic-standards",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "Agents - Publishing Workflow",
+    "content": "Content is managed through: 1. Obsidian vault for local editing 2. Git version control for collaboration 3. Website deployment at blogs-comphy-lab.org The repository supports both individual researchers and collaborative editing through GitHub's issue templates and pull request workflow.",
+    "url": "https://blogs.comphy-lab.org/AGENTS/#publishing-workflow",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
     "title": "0_readme - Computational Multiphase Physics <br> (CoMPhy)",
     "content": "Welcome to the CoMPhy Lab's documentation hub! We are based at the Physics of Fluids Department at the University of Twente, where we explore non-Newtonian free-surface flows and soft matter singularities.",
     "url": "https://blogs.comphy-lab.org/0_README/#computational-multiphase-physics-br-comphy",
@@ -879,83 +964,6 @@
     "title": "0_todo blog public - 2017",
     "content": "- [ ] **Formation of liquid chain by collision of two laminar jets** Link: [DOI](https://doi.org/10.1063/1.4998288) - [ ] **On air entrainment in a water pool by impingement of a jet** Link: [DOI](https://doi.org/10.1002/aic.15828) --- > [!meta] Back to main website > [Home](https://comphy-lab.org/), [Team](https://comphy-lab.org/team), [Research](https://comphy-lab.org/research), [Github](https://github.com/comphy-lab)",
     "url": "https://blogs.comphy-lab.org/0_ToDo-Blog-public/#2017",
-    "type": "blog_section",
-    "priority": 3
-  },
-  {
-    "title": "Claude - CLAUDE.md",
-    "content": "This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.",
-    "url": "https://blogs.comphy-lab.org/CLAUDE/#claudemd",
-    "type": "blog_section",
-    "priority": 3
-  },
-  {
-    "title": "Claude - Repository Overview",
-    "content": "This is a research blog repository for the Computational Multiphase Physics (CoMPhy) Lab, containing academic content in Markdown format. The site is published at [blogs-comphy-lab.org](https://blogs-comphy-lab.org/).",
-    "url": "https://blogs.comphy-lab.org/CLAUDE/#repository-overview",
-    "type": "blog_section",
-    "priority": 3
-  },
-  {
-    "title": "Claude - Content Structure",
-    "content": "- `Blog/` - Research blog posts and updates - `Code-Documentations/` - Technical documentation - `Lecture-Notes/` - Teaching materials and course content - `Talks/` - Presentation materials and abstracts - `_AtomicNotes/` - Atomic knowledge pieces (linked notes) - `_Media/` - Images and media files - `_scripts/` - Jupyter notebooks for generating figures",
-    "url": "https://blogs.comphy-lab.org/CLAUDE/#content-structure",
-    "type": "blog_section",
-    "priority": 3
-  },
-  {
-    "title": "Claude - Markdown Files",
-    "content": "All content uses Markdown with YAML frontmatter: ```yaml --- created: YYYY-MM-DDThh:mm:ss+01:00 modified: YYYY-MM-DDThh:mm:ss+01:00 status: [Published/Working/Draft/done \u2705] website: https://blogs-comphy-lab.org/your-post-url --- ```",
-    "url": "https://blogs.comphy-lab.org/CLAUDE/#markdown-files",
-    "type": "blog_section",
-    "priority": 3
-  },
-  {
-    "title": "Claude - Obsidian Features",
-    "content": "- Wiki-style links: `[[post-name]]` and `[[post-name|alias]]` - Image embedding: `![[_Media/filename.png]]` - Callouts: `> [!note]`, `> [!tldr]`, `> [!important]`",
-    "url": "https://blogs.comphy-lab.org/CLAUDE/#obsidian-features",
-    "type": "blog_section",
-    "priority": 3
-  },
-  {
-    "title": "Claude - PDF Export",
-    "content": "Convert Markdown to PDF using the export script: ```bash ./.obsidian/scripts/export-pdf.sh \"filename.md\" ``` The script handles: - Obsidian syntax conversion to standard Markdown - Image path processing - Bibliography integration via Pandoc - LaTeX/XeLaTeX PDF generation",
-    "url": "https://blogs.comphy-lab.org/CLAUDE/#pdf-export",
-    "type": "blog_section",
-    "priority": 3
-  },
-  {
-    "title": "Claude - Content Validation",
-    "content": "- Ensure all images exist in `_Media/` directory - Verify wiki links point to existing content - Check YAML frontmatter format",
-    "url": "https://blogs.comphy-lab.org/CLAUDE/#content-validation",
-    "type": "blog_section",
-    "priority": 3
-  },
-  {
-    "title": "Claude - File Organization",
-    "content": "- Place new blog posts in `Blog/` - Store images in `_Media/` with descriptive names - Use atomic notes in `_AtomicNotes/` for reusable concepts",
-    "url": "https://blogs.comphy-lab.org/CLAUDE/#file-organization",
-    "type": "blog_section",
-    "priority": 3
-  },
-  {
-    "title": "Claude - Mathematical Content",
-    "content": "- Use LaTeX syntax for equations: `$$equation$$` or `$inline$` - Include Jupyter notebooks in `_scripts/` for computational examples - Save generated plots to `_Media/`",
-    "url": "https://blogs.comphy-lab.org/CLAUDE/#mathematical-content",
-    "type": "blog_section",
-    "priority": 3
-  },
-  {
-    "title": "Claude - Academic Standards",
-    "content": "- Include proper citations and references - Use descriptive filenames without spaces - Maintain consistent notation across related posts",
-    "url": "https://blogs.comphy-lab.org/CLAUDE/#academic-standards",
-    "type": "blog_section",
-    "priority": 3
-  },
-  {
-    "title": "Claude - Publishing Workflow",
-    "content": "Content is managed through: 1. Obsidian vault for local editing 2. Git version control for collaboration 3. Website deployment at blogs-comphy-lab.org The repository supports both individual researchers and collaborative editing through GitHub's issue templates and pull request workflow.",
-    "url": "https://blogs.comphy-lab.org/CLAUDE/#publishing-workflow",
     "type": "blog_section",
     "priority": 3
   },
@@ -5107,6 +5115,90 @@
     "title": "2025 jfm viscous drop impact - Videos",
     "content": "--- > [!significance]- Metadata > Author:: [Vatsal Sanjay](https://vatsalsanjay.com) > Date published:: Feb 22, 2025 > [!meta] Back to main website > [Home](https://comphy-lab.org/), [Team](https://comphy-lab.org/team), [Research](https://comphy-lab.org/research), [Github](https://github.com/comphy-lab), [Blogs](https://blogs.comphy-lab.org) > > \ud83d\udcdd [Edit this page on GitHub](https://github.com/comphy-lab/CoMPhy-Lab-Blogs/blob/main/Blog/2025-JFM-viscous-drop-impact.md)",
     "url": "https://blogs.comphy-lab.org/Blog/2025-JFM-viscous-drop-impact/#videos",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "2026 holes in sheets rupture - When a Sheet Decides to Tear: The Double Threshold: A soap bubble,...",
+    "content": "A soap bubble, stretched thin by drainage, suddenly sprouts a hole that races outward in a fraction of a second. A cough sends a mucus film billowing into a bag-like sheet that shatters into virus-laden droplets. Rain strikes a lake and a crown of liquid, stretched impossibly thin, perforates before your eye can follow. These events share a deceptively simple question: **what makes a thin liquid film decide to break rather than heal?** The classical answer invokes molecular forces \u2014 van der Waals attractions reaching across the last few nanometres of film. But here is the puzzle: experiments consistently show that films rupture at *micrometre* thicknesses, orders of magnitude before nanoscale forces should matter.",
+    "url": "https://blogs.comphy-lab.org/Blog/2026-holes-in-sheets-rupture/#when-a-sheet-decides-to-tear-the-double-threshold",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "2026 holes in sheets rupture - When a Sheet Decides to Tear: The Double Threshold: Something else is...",
+    "content": "Something else is doing the deciding. > [!abstract] TL;DR > - Micrometer-thick liquid sheets perforate via a **deterministic double threshold** \u2014 *not* through random molecular fluctuations > - Rupture requires two conditions simultaneously: strong enough outward driving AND a sufficiently distorted defect (entrained air bubble) > - Below either threshold, surface tension heals the cavity and the sheet reseals > - The healing timescale is set by the inertia\u2013viscosity balance: fast ($t_c \\sim \\tau_\\gamma$) at low viscosity, slow ($t_c \\sim \\tau_\\gamma \\, Oh$) at high viscosity > - This framework predicts and controls breakup in spray formation, wave breaking, and respiratory film fragmentation",
+    "url": "https://blogs.comphy-lab.org/Blog/2026-holes-in-sheets-rupture/#when-a-sheet-decides-to-tear-the-double-threshold",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "2026 holes in sheets rupture - The Mechanism That Was Missing: Holes in real...",
+    "content": "Holes in real films nucleate at *defects* \u2014 entrained air bubbles, oil droplets, impurities. This has been observed for decades in Savart sheets, in splash crowns, in respiratory films. But how exactly does a bubble trigger irreversible rupture rather than a momentary dimple that closes back? The pathway was unresolved because nucleation events are extraordinarily fast and difficult to isolate experimentally. We tackled this computationally. Using direct numerical simulations with [[Basilisk C]], we modelled a radially draining liquid sheet of thickness $h_0$ with an entrained air bubble of radius $R_0$ at its centre. The drainage velocity $u(r) = \\omega r$ mimics both external-airflow forcing (as in bag breakup during a cough) and inertia-driven drainage (as after drop impact on a liquid pool).",
+    "url": "https://blogs.comphy-lab.org/Blog/2026-holes-in-sheets-rupture/#the-mechanism-that-was-missing",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "2026 holes in sheets rupture - The Mechanism That Was Missing: Three dimensionless numbers...",
+    "content": "Three dimensionless numbers govern the problem: $$Oh = \\frac{\\eta}{\\sqrt{\\rho \\gamma R_0}}, \\quad Bo = \\frac{\\rho \\omega^2 R_0^3}{\\gamma}, \\quad \\frac{\\chi}{R_0}$$ where $Oh$ is the Ohnesorge number (viscosity vs. inertio-capillary forces), $Bo$ is the Bond number (drainage driving vs. surface tension), and $\\chi/R_0$ is the bubble offset. An additional parameter $\\theta$ \u2014 the opening angle of the initial cavity \u2014 encodes delayed nucleation from chemical or thermal heterogeneity.",
+    "url": "https://blogs.comphy-lab.org/Blog/2026-holes-in-sheets-rupture/#the-mechanism-that-was-missing",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "2026 holes in sheets rupture - A Phase Boundary With Two Keys: As the sheet...",
+    "content": "As the sheet thins, its top and bottom interfaces converge at the bubble poles and form a through-cavity. What happens next? - \ud83d\udd11 **Key finding 1 \u2014 Healing or opening?** Capillary waves invert the cavity. Then two outcomes: rims retract outward and the hole expands irreversibly, *or* capillarity drives the rims back together and the sheet heals. The outcome is **not random** \u2014 it is deterministic. - \ud83d\udd2c **Key finding 2 \u2014 The double threshold.** A sharp transition curve divides the $(Oh, Bo)$ space: - For **low viscosity** ($Oh \\ll 1$): rupture requires $Bo \\gtrsim Bo_c = \\mathcal{O}(1)$. Surface tension and inertia balance at the inertio-capillary timescale $\\tau_\\gamma = \\sqrt{\\rho R_0^3 / \\gamma}$. - For **high viscosity** ($Oh \\gg 1$): the boundary shifts as $Bo_c \\sim Oh^{-2}$, or equivalently $Oh \\sim Bo^{-1/2}$.",
+    "url": "https://blogs.comphy-lab.org/Blog/2026-holes-in-sheets-rupture/#a-phase-boundary-with-two-keys",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "2026 holes in sheets rupture - A Phase Boundary With Two Keys: Here healing is...",
+    "content": "Here healing is governed by the visco-capillary timescale $\\tau_\\gamma \\, Oh$. - \ud83d\udca1 **Key finding 3 \u2014 Geometry as a second key.** The opening angle $\\theta$ of the initial cavity introduces a *second* independent threshold. Even if driving is strong, a nearly-closed cavity will heal. Only when both $Bo > Bo_c(Oh)$ AND $\\theta > \\theta_c(Oh)$ does rupture proceed irreversibly. This is the **double threshold**.",
+    "url": "https://blogs.comphy-lab.org/Blog/2026-holes-in-sheets-rupture/#a-phase-boundary-with-two-keys",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "2026 holes in sheets rupture - The Timescale Argument",
+    "content": "The healing-to-opening transition has an elegant physical interpretation. After the cavity forms, the two opposing rims race toward each other. We call the time for them to collide the *collision time* $t_c$ \u2014 this is the healing time when the sheet successfully reseals. For **inertia-dominated** sheets ($Oh \\ll 0.1$): $$t_c \\sim \\tau_\\gamma = \\sqrt{\\frac{\\rho R_0^3}{\\gamma}}$$ For **viscosity-dominated** sheets ($Oh \\gg 0.1$): $$t_c \\sim \\frac{\\eta R_0}{\\gamma} = \\tau_\\gamma \\, Oh$$ The sheet opens when outward radial advection \u2014 driven by $\\omega$, with timescale $t_\\text{adv} \\sim 1/\\omega$ \u2014 is faster than rim closure. Setting $t_c \\sim t_\\text{adv}$ recovers the two asymptotic scalings exactly. Remarkably, even near the critical $Bo_c$, the healing time itself is insensitive to $Bo$ \u2014 the driving decides *whether* the sheet opens, but the healing dynamics are controlled purely by the inertia\u2013viscosity balance.",
+    "url": "https://blogs.comphy-lab.org/Blog/2026-holes-in-sheets-rupture/#the-timescale-argument",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "2026 holes in sheets rupture - What Happens Without Any Driving?",
+    "content": "In the limit $Bo \\to 0$, the sheet always heals for any finite $Oh$. This recovers the classical Taylor\u2013Michael result[^1]: a circular hole can expand spontaneously only if its outer radius satisfies $R/h_0 > \\pi/4$. Our simulations confirm this geometric criterion as the zero-driving baseline. This is reassuring \u2014 it means the double threshold is not a perturbation to existing theory, but rather a natural generalisation that encompasses it.",
+    "url": "https://blogs.comphy-lab.org/Blog/2026-holes-in-sheets-rupture/#what-happens-without-any-driving",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "2026 holes in sheets rupture - Why It Matters",
+    "content": "The double-threshold framework offers something classical nucleation theory never could: **practical control handles**. 1. **Driving strength** ($Bo$): reduce the drainage rate to keep $Bo < Bo_c$ and suppress rupture. Relevant for controlling spray formation and wave breaking. 2. **Defect geometry** ($\\theta$): engineer surface coatings or film composition to keep bubbles spherical (small $\\theta$), preventing the geometric threshold from being crossed. 3. **Viscosity** ($Oh$): increasing viscosity raises $Bo_c$ via $Bo_c \\sim Oh^{-2}$, requiring stronger driving to rupture \u2014 this is why glycerol-laden films are harder to break. In the context of respiratory disease transmission, these levers matter directly: the [[non-Newtonian rheology]] of mucus modifies $Oh$ effectively, changing how easily respiratory films fragment during coughing. This connects directly to our ongoing work on [[viscoelastic films and aerosolization]].",
+    "url": "https://blogs.comphy-lab.org/Blog/2026-holes-in-sheets-rupture/#why-it-matters",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "2026 holes in sheets rupture - Looking Forward: Two open questions...",
+    "content": "Two open questions feel particularly sharp to me: **First**, this study treats the bubble as a passive defect. Real respiratory films carry surfactants, proteins, and viscoelastic networks. How do these modify the threshold scalings? The $Oh$ framework is a starting point, but a truly predictive model of cough aerosolization will need to account for the full constitutive behaviour of mucus. **Second**, the axisymmetric geometry is a controlled idealisation. Real bag-like sheets in a cough are three-dimensional, with multiple bubbles and spatially varying thickness. Does the double threshold survive in this richer geometry, or does it give way to collective dynamics? We suspect the thresholds will remain local and deterministic \u2014 but that is a hypothesis waiting for simulation or experiment. For now: a sheet doesn't tear because it gets thin enough. It tears because *both* the driving and the defect geometry conspire to push it past two simultaneous thresholds.",
+    "url": "https://blogs.comphy-lab.org/Blog/2026-holes-in-sheets-rupture/#looking-forward",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "2026 holes in sheets rupture - Looking Forward: Once you see...",
+    "content": "Once you see it that way, the mystery of micrometer-scale rupture dissolves. --- [^1]: G. I. Taylor and D. H. Michael, *On making holes in a sheet of fluid*, J. Fluid Mech. **58**, 625 (1973).",
+    "url": "https://blogs.comphy-lab.org/Blog/2026-holes-in-sheets-rupture/#looking-forward",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "2026 holes in sheets rupture - References",
+    "content": "- Dixit, A. K., Zhao, C., Zaleski, S., Lohse, D., & Sanjay, V. *Holes in Sheets: Double-Threshold Rupture of Draining Liquid Films.* Phys. Rev. Lett. **136**, 084001 (2026). [DOI](https://doi.org/10.1103/bdpw-7mr5) - Culick, F. E. C. *Comments on a ruptured soap film.* J. Appl. Phys. **31**, 1128 (1960). - Taylor, G. I. *The dynamics of thin sheets of fluid III. Disintegration of fluid sheets.* Proc. R. Soc. A **253**, 313 (1959). - Villermaux, E. & Bossa, B. *Single-drop fragmentation determines size distribution of raindrops.* Nature Phys. **5**, 697 (2009).",
+    "url": "https://blogs.comphy-lab.org/Blog/2026-holes-in-sheets-rupture/#references",
     "type": "blog_section",
     "priority": 3
   },
@@ -18957,6 +19049,13 @@
     "priority": 8
   },
   {
+    "title": "History - February",
+    "content": "- [ Dixit, A. K. , Zhao, C., Zaleski, S., Lohse, D., & Sanjay, V. Holes in Sheets: Double-Threshold Rupture of Draining Liquid Films. Phys. Rev. Lett., 136, 084001 (2026).](/research#22) - Ayush Dixit presents \"Simulating Respiratory Droplet Formation: The Role of Non-Newtonian Fluid Dynamics,\" showing via large-scale simulations that viscoelastic respiratory-fluid effects are essential for accurate droplet-size predictions in airborne transmission models. Video: https://www.youtube.com/watch?v=uFP5K9i8ah8",
+    "url": "https://comphy-lab.org#history",
+    "type": "website_section",
+    "priority": 8
+  },
+  {
     "title": "History - January",
     "content": "- [D\u00edaz, D., Bhargava, A. S. , Walz, F., Sharifi, A., Summaly, S., Berger, R., Kappl, M., Butt, H.-J., Lohse, D., Willers, T., Sanjay, V. , & Vollmer, D. Stood-up Drop to Determine Receding Contact Angles. Soft Matter, 22, 657-667 (2026).](/research#21)",
     "url": "https://comphy-lab.org#history",
@@ -19062,6 +19161,13 @@
     "priority": 8
   },
   {
+    "title": "News - February",
+    "content": "- [ Dixit, A. K. , Zhao, C., Zaleski, S., Lohse, D., & Sanjay, V. Holes in Sheets: Double-Threshold Rupture of Draining Liquid Films. Phys. Rev. Lett., 136, 084001 (2026).](/research#22) - Ayush Dixit presents \"Simulating Respiratory Droplet Formation: The Role of Non-Newtonian Fluid Dynamics,\" showing via large-scale simulations that viscoelastic respiratory-fluid effects are essential for accurate droplet-size predictions in airborne transmission models. Video: https://www.youtube.com/watch?v=uFP5K9i8ah8",
+    "url": "https://comphy-lab.org#news",
+    "type": "website_section",
+    "priority": 8
+  },
+  {
     "title": "News - January",
     "content": "- [D\u00edaz, D., Bhargava, A. S. , Walz, F., Sharifi, A., Summaly, S., Berger, R., Kappl, M., Butt, H.-J., Lohse, D., Willers, T., Sanjay, V. , & Vollmer, D. Stood-up Drop to Determine Receding Contact Angles. Soft Matter, 22, 657-667 (2026).](/research#21)",
     "url": "https://comphy-lab.org#news",
@@ -19099,6 +19205,20 @@
   {
     "title": "News - August",
     "content": "- [Mclauchlan, J., Walker, J. S., Sanjay, V. , Jalaal, M., Reid, J. P., Squires, A. M., & Souslov, A. Bouncing microdroplets on hydrophobic surfaces. Proc. Natl. Acad. Sci., 122, e2507309122 (2025).](/research#19)",
+    "url": "https://comphy-lab.org#news",
+    "type": "website_section",
+    "priority": 8
+  },
+  {
+    "title": "News - July",
+    "content": "- Saumili Jana received the award for best master's thesis from IIT Kharagpur. Thesis: Retract or Collapse? The Role of Viscosity and Viscoelasticity on Bubble Dynamics",
+    "url": "https://comphy-lab.org#news",
+    "type": "website_section",
+    "priority": 8
+  },
+  {
+    "title": "News - June",
+    "content": "- Jnandeep Talukdar graduated with a master's degree (Cum Laude - the highest grade in Dutch master's degree) from University of Twente. Thesis: Singularities with Surfactants",
     "url": "https://comphy-lab.org#news",
     "type": "website_section",
     "priority": 8
@@ -19272,178 +19392,143 @@
     "priority": 8
   },
   {
-    "title": "Add person - Add Person to Team Page",
-    "content": "Add a new person to the team page in the appropriate category (Present Team, Active Collaborations, or Alumni).",
-    "url": "https://comphy-lab.org/.opencode/commands/add-person/#add-person-to-team-page",
+    "title": "Skill - Add Research Paper from BibTeX",
+    "content": "Parse user-provided BibTeX and insert a correctly formatted entry in `_research/index.md`.",
+    "url": "https://comphy-lab.org/.agents/skills/add-paper/SKILL/#add-research-paper-from-bibtex",
     "type": "website_section",
     "priority": 10
   },
   {
-    "title": "Add person - Task Instructions: Context",
-    "content": "1. **Gather Information**: Ask the user for the following details: - Full name (required) - Degree/title (e.g., \"M.Sc.\", \"Ph.D.\", \"Dr.\", \"Prof.\", \"B.Sc.\") - Category: Present Team, Active Collaborations, or Alumni - Position/role (e.g., \"Ph.D.",
-    "url": "https://comphy-lab.org/.opencode/commands/add-person/#task-instructions",
+    "title": "Skill - Workflow: Context",
+    "content": "1. Parse BibTeX fields: - Authors, title, venue, year, volume, pages or article number, DOI, arXiv id. 2. Classify the entry: - If venue indicates arXiv preprint, place in `Work in Progress`. - Otherwise place in the corresponding year section. 3. Format authors: - Use `LastName, F.` style with all authors listed. - Bold lab members exactly as ` Sanjay, V. ` and ` Dixit, A. `. 4. For published papers: - Use numbered heading format ` [NUM] ... `. - Determine next paper number from highest existing number. - Insert into correct year in reverse chronological order. 5. For preprints: - Use non-numbered `###` entry in `Work in Progress`. 6. Check for potential preprint-to-published replacement: - Search `Work in Progress` for matching preprint by title and authors. - Remove old preprint entry when adding published version. 7.",
+    "url": "https://comphy-lab.org/.agents/skills/add-paper/SKILL/#workflow",
     "type": "website_section",
     "priority": 10
   },
   {
-    "title": "Add person - Task Instructions: Student, University of...",
-    "content": "Student, University of Twente\") - Image path (optional - if not provided, use `/assets/images/team/anonymous.svg`) **For Present Team members:** - Co-advisor information (if applicable) - Education history (bullet points with institutions, years, thesis links) - Research interests - Social/academic links: GitHub, Google Scholar, Bluesky, Twitter/X, LinkedIn, ORCID, Wikipedia **For Active Collaborations:** - Affiliation with institution URL - Collaboration topics - Social/academic links: Google Scholar, Twitter/X, Bluesky, GitHub, ORCID, Wikipedia **For Alumni:** - Graduation year and degree - Current position - Institution where graduated - Thesis title and link - Social links: LinkedIn, GitHub 2. **Determine Image Path**: - If adding a Present Team member WITH a photo: - Find the highest numbered image in `/assets/images/team/` (currently goes up to 6.jpg) - Use next number (e.g., if highest is 6.jpg, use 7.jpg) - Tell user: \"Please add the team member's photo as `/assets/images/team/[NUMBER].jpg` or `.webp`\" - If NO photo provided: Use `/assets/images/team/anonymous.svg` 3. **Read the current team page**: ```bash Read _team/index.md ``` 4. **Format the entry** based on category:",
-    "url": "https://comphy-lab.org/.opencode/commands/add-person/#task-instructions",
+    "title": "Skill - Workflow: Ask user for...",
+    "content": "Ask user for interactive metadata: - Tags (suggest from title keywords). - Optional Featured tag (ensure no more than two featured homepage papers). - Optional GitHub URL and optional YouTube embed. 8. Generate badges: - arXiv badge when arXiv id exists. - Journal/DOI badge when DOI exists. - Blog badge always. - GitHub badge when URL is provided. 9. Insert entry and preserve spacing/structure. 10. Save `_research/index.md`.",
+    "url": "https://comphy-lab.org/.agents/skills/add-paper/SKILL/#workflow",
     "type": "website_section",
     "priority": 10
   },
   {
-    "title": "Add person - [Name] [Degree]",
-    "content": "[Position] [If co-advised: Co-advised with [Advisor Name and link]] [Social links with Font Awesome icons - each on separate line] [ ](URL) [ ](URL) [ ](URL) - [Education line 1] - [Education line 2, with thesis link if applicable: Thesis Title ] **Research Interest:** [Research interests] ```",
-    "url": "https://comphy-lab.org/.opencode/commands/add-person/#name-degree",
+    "title": "Skill - Tag Suggestions",
+    "content": "Use title keywords to suggest tags such as: - Bubbles - Drops - Jets - Sheets - Non-Newtonian - Coalescence - Impact forces - Superamphiphobic-surfaces - Dissipative anomaly - Soft-matter-singularities",
+    "url": "https://comphy-lab.org/.agents/skills/add-paper/SKILL/#tag-suggestions",
     "type": "website_section",
     "priority": 10
   },
   {
-    "title": "Add person - [Title] [Name]",
-    "content": "[Social links with Font Awesome icons] [ ](URL) [ ](URL) - [Position, Institution with link] **Collaboration on:** [Topics] ```",
-    "url": "https://comphy-lab.org/.opencode/commands/add-person/#title-name",
+    "title": "Skill - Journal Abbreviation Hints",
+    "content": "- Nature Communications -> Nat. Commun. - Journal of Fluid Mechanics -> JFM - Physical Review Letters -> PRL - Physics of Fluids -> Phys. Fluids - AIChE Journal -> AIChE J. - Chemical Engineering Science -> Chem. Eng. Sci. - Science Advances -> Sci. Adv. - Building Simulations -> Build. Simul.",
+    "url": "https://comphy-lab.org/.agents/skills/add-paper/SKILL/#journal-abbreviation-hints",
     "type": "website_section",
     "priority": 10
   },
   {
-    "title": "Add person - [Name] [Degree]",
-    "content": "[Social links - typically LinkedIn and/or GitHub] [ ](URL) [ ](URL) - **Now:** [Current position] - **[Year]:** Graduated with [Degree], [Institution] - [Thesis Title] ```",
-    "url": "https://comphy-lab.org/.opencode/commands/add-person/#name-degree",
+    "title": "Skill - Badge Shapes",
+    "content": "```markdown [![arXiv](https://img.shields.io/static/v1.svg?style=flat-square&label=arXiv&message=XXXX.XXXXX&color=green)](https://arxiv.org/abs/XXXX.XXXXX) [![JOURNAL](https://img.shields.io/static/v1.svg?style=flat-square&label=JOURNAL&message=OA&color=orange)](https://doi.org/DOI) [![GitHub](https://img.shields.io/badge/GitHub-100000?style=flat-square&logo=github&logoColor=white)](GITHUB_URL) [![Blog](https://img.shields.io/badge/Blog-Coming%20Soon-yellow?style=flat-square&logo=obsidian&logoColor=white)](https://blogs.comphy-lab.org/0_ToDo-Blog-public) ```",
+    "url": "https://comphy-lab.org/.agents/skills/add-paper/SKILL/#badge-shapes",
     "type": "website_section",
     "priority": 10
   },
   {
-    "title": "Add person - Icon Reference",
-    "content": "Use appropriate icons based on available links: - GitHub: ` ` - Google Scholar: ` ` - Bluesky: ` ` - Twitter/X: ` ` - LinkedIn: ` ` - ORCID: ` ` - Wikipedia: ` ` - PDF/Thesis: ` `",
-    "url": "https://comphy-lab.org/.opencode/commands/add-person/#icon-reference",
+    "title": "Skill - Formatting Requirements",
+    "content": "- Preserve exact section spacing style from existing file. - Avoid duplicate entries. - Keep numbering contiguous. - Keep all metadata updated when moving a preprint to published.",
+    "url": "https://comphy-lab.org/.agents/skills/add-paper/SKILL/#formatting-requirements",
     "type": "website_section",
     "priority": 10
   },
   {
-    "title": "Add person - Insert Location",
-    "content": "- For **Present Team**: Add before \"### We need you!\" section - For **Active Collaborations**: Add at the end of that section (before \"## Our Alumni\") - For **Alumni**: Add at the beginning of that section (most recent first)",
-    "url": "https://comphy-lab.org/.opencode/commands/add-person/#insert-location",
+    "title": "Skill - Add Person to Team Page",
+    "content": "Add one person to `_team/index.md` in the correct category while preserving site formatting.",
+    "url": "https://comphy-lab.org/.agents/skills/add-person/SKILL/#add-person-to-team-page",
     "type": "website_section",
     "priority": 10
   },
   {
-    "title": "Add person - Final Steps",
-    "content": "1. Save the file and confirm the addition 2. If a new image number was assigned, remind user to add the actual photo file to the specified path",
-    "url": "https://comphy-lab.org/.opencode/commands/add-person/#final-steps",
+    "title": "Skill - Collect Required Inputs",
+    "content": "Collect: - Full name - Degree or title (for example: `M.Sc.`, `Ph.D.`, `Dr.`, `Prof.`) - Category: Present Team, Active Collaborations, or Alumni - Role or position - Image path if provided (otherwise use `/assets/images/team/anonymous.svg`) Collect category-specific fields: - Present Team: - Optional co-advisor line - Education bullets (institution, year, optional thesis link) - Research interests - Social or academic URLs (GitHub, Google Scholar, Bluesky, X, LinkedIn, ORCID, Wikipedia) - Active Collaborations: - Position with institution URL - Collaboration topics - Social or academic URLs (Google Scholar, X, Bluesky, GitHub, ORCID, Wikipedia) - Alumni: - Graduation year and degree - Institution - Current role - Thesis title and link - Social URLs (LinkedIn, GitHub)",
+    "url": "https://comphy-lab.org/.agents/skills/add-person/SKILL/#collect-required-inputs",
     "type": "website_section",
     "priority": 10
   },
   {
-    "title": "Add person - Important Notes",
-    "content": "- Always maintain the exact formatting and indentation of existing entries - Use proper HTML entities where needed (e.g., `&#8209;` for non-breaking hyphens in year ranges) - Keep consistent spacing between sections (single blank line between entries) - Font Awesome icon sizes and colors must match existing entries in each section - Image dimensions are always `width=\"200\" height=\"200\"` for team members - The placeholder.jpg should never be used - use anonymous.svg instead - Links should use Markdown format with icons in square brackets - All paths should use forward slashes and start with `/` for absolute paths",
-    "url": "https://comphy-lab.org/.opencode/commands/add-person/#important-notes",
+    "title": "Skill - Image Handling",
+    "content": "- If category is Present Team and user wants a real photo: - Check `/assets/images/team/` for highest numbered image file. - Assign next number path (`/assets/images/team/ .jpg` or `.webp`). - Tell user to add the photo at that path. - If no photo is provided, use `/assets/images/team/anonymous.svg`. Never use `placeholder.jpg`.",
+    "url": "https://comphy-lab.org/.agents/skills/add-person/SKILL/#image-handling",
     "type": "website_section",
     "priority": 10
   },
   {
-    "title": "Add paper - Add Research Paper from BibTeX",
-    "content": "Parse a BibTeX entry and add it to `_research/index.md` following the exact format used by the CoMPhy Lab website.",
-    "url": "https://comphy-lab.org/.opencode/commands/add-paper/#add-research-paper-from-bibtex",
+    "title": "Skill - [Name] [Degree]",
+    "content": "[Position] [Optional co-advisor line] [Icon links, one per line] - [Education line 1] - [Education line 2, optional thesis link] **Research Interest:** [Research interests] ```",
+    "url": "https://comphy-lab.org/.agents/skills/add-person/SKILL/#name-degree",
     "type": "website_section",
     "priority": 10
   },
   {
-    "title": "Add paper - Workflow",
-    "content": "1. **Parse BibTeX Entry** - Extract authors, title, journal/venue, year, volume, pages, DOI, arXiv ID - Handle special characters and formatting 2. **Determine Publication Type** - If journal contains \"arXiv preprint\" \u2192 Add to \"Work in Progress\" section - Otherwise \u2192 Add to appropriate year section 3. **Format Entry** - For published papers: Use numbered format with ` [NUM]` - For preprints: Use ### without numbering - Bold lab members: **Sanjay, V.** and **Dixit, A.** - Always list all authors, never use \"et al.\" 4. **Interactive Elements** - Ask user for tags based on title keywords - Suggest: Bubbles, Drops, Jets, Sheets, Non-Newtonian, Coalescence, Impact forces, etc. - Ask if Featured tag should be added (max 2 featured papers on homepage) - Ask for optional GitHub URL or YouTube embed 5. **Generate Badges** - arXiv badge if arXiv ID present - Journal badge with DOI if available - Blog badge (standard for all papers) - GitHub badge if URL provided",
-    "url": "https://comphy-lab.org/.opencode/commands/add-paper/#workflow",
+    "title": "Skill - [Title] [Name]",
+    "content": "[Icon links, one per line] - [Position, Institution with link] **Collaboration on:** [Topics] ```",
+    "url": "https://comphy-lab.org/.agents/skills/add-person/SKILL/#title-name",
     "type": "website_section",
     "priority": 10
   },
   {
-    "title": "Add paper - Step 1: Parse BibTeX",
-    "content": "Read the user-provided BibTeX entry and extract: - Citation key (e.g., jana2025impacting) - Authors list - format as \"LastName, F.\" (use first initial only) - Title (remove curly braces, preserve capitalization) - Journal/venue name - Year, volume, pages, article number - DOI from `doi` field - arXiv ID from `eprint` field or journal field if contains \"arXiv:\" - Any note fields",
-    "url": "https://comphy-lab.org/.opencode/commands/add-paper/#step-1-parse-bibtex",
+    "title": "Skill - [Name] [Degree]",
+    "content": "[Icon links, one per line] - **Now:** [Current position] - **[Year]:** Graduated with [Degree], [Institution] - [Thesis Title] ```",
+    "url": "https://comphy-lab.org/.agents/skills/add-person/SKILL/#name-degree",
     "type": "website_section",
     "priority": 10
   },
   {
-    "title": "Add paper - Step 2: Check for Existing Preprint",
-    "content": "For published papers, search \"Work in Progress\" section for matching preprint by: - Similar title (fuzzy match) - Same authors and year If found, note it for removal after adding published version",
-    "url": "https://comphy-lab.org/.opencode/commands/add-paper/#step-2-check-for-existing-preprint",
+    "title": "Skill - Icon Snippets",
+    "content": "- GitHub: ` ` - Google Scholar: ` ` - Bluesky: ` ` - X: ` ` - LinkedIn: ` ` - ORCID: ` ` - Wikipedia: ` ` - Thesis/PDF: ` `",
+    "url": "https://comphy-lab.org/.agents/skills/add-person/SKILL/#icon-snippets",
     "type": "website_section",
     "priority": 10
   },
   {
-    "title": "Add paper - Step 3: Format Authors",
-    "content": "- Format: \"Author1, A., Author2, B., & Author3, C.\" - Bold lab members: ` Sanjay, V. ` and ` Dixit, A. ` - Always list all authors regardless of number (do not use \"et al.\")",
-    "url": "https://comphy-lab.org/.opencode/commands/add-paper/#step-3-format-authors",
+    "title": "Skill - Insert Location Rules",
+    "content": "- Present Team: insert before `### We need you!` - Active Collaborations: append to that section before `## Our Alumni` - Alumni: insert at top of Alumni section (most recent first)",
+    "url": "https://comphy-lab.org/.agents/skills/add-person/SKILL/#insert-location-rules",
     "type": "website_section",
     "priority": 10
   },
   {
-    "title": "Add paper - Step 4: Determine Section and Number",
-    "content": "For published papers: - Find the highest existing paper number (currently [17]) - New paper gets next number - Create year section if doesn't exist - Insert in reverse chronological order within year For preprints (Work in Progress): - No numbering - Add to \"Work in Progress\" section - Format: `### Authors. Title. Journal (Year).`",
-    "url": "https://comphy-lab.org/.opencode/commands/add-paper/#step-4-determine-section-and-number",
+    "title": "Skill - Final Checks",
+    "content": "- Keep existing spacing and formatting patterns. - Keep icon sizes and colors consistent with nearby entries. - Use forward-slash absolute paths (starting with `/`). - Save `_team/index.md`. - If a new numbered image was assigned, remind user to add the image file.",
+    "url": "https://comphy-lab.org/.agents/skills/add-person/SKILL/#final-checks",
     "type": "website_section",
     "priority": 10
   },
   {
-    "title": "Add paper - Step 5: Ask for Tags",
-    "content": "Suggest tags based on keywords in title/abstract: - Bubbles, Drops, Jets, Sheets - Non-Newtonian, Coalescence - Superamphiphobic-surfaces, Impact forces - Dissipative anomaly, Soft-matter-singularities - Featured (only if user confirms, max 2 on homepage)",
-    "url": "https://comphy-lab.org/.opencode/commands/add-paper/#step-5-ask-for-tags",
+    "title": "Skill - Add News Item",
+    "content": "Add the user-provided news item to both `News.md` and `history.md`.",
+    "url": "https://comphy-lab.org/.agents/skills/add-news/SKILL/#add-news-item",
     "type": "website_section",
     "priority": 10
   },
   {
-    "title": "Add paper - Step 6: Generate Badges",
-    "content": "Standard badges format: ```markdown [![arXiv](https://img.shields.io/static/v1.svg?style=flat-square&label=arXiv&message=XXXX.XXXXX&color=green)](https://arxiv.org/abs/XXXX.XXXXX) [![JOURNAL](https://img.shields.io/static/v1.svg?style=flat-square&label=JOURNAL&message=OA&color=orange)](https://doi.org/DOI) [![GitHub](https://img.shields.io/badge/GitHub-100000?style=flat-square&logo=github&logoColor=white)](GITHUB_URL) [![Blog](https://img.shields.io/badge/Blog-Coming%20Soon-yellow?style=flat-square&logo=obsidian&logoColor=white)](https://blogs.comphy-lab.org/0_ToDo-Blog-public) ``` Common journal abbreviations: - Nature Communications \u2192 Nat. Commun. - Journal of Fluid Mechanics \u2192 JFM - Physical Review Letters \u2192 PRL - Physics of Fluids \u2192 Phys. Fluids - AIChE Journal \u2192 AIChE J. - Chemical Engineering Science \u2192 Chem. Eng. Sci. - Science Advances \u2192 Sci. Adv. - Building Simulations \u2192 Build. Simul.",
-    "url": "https://comphy-lab.org/.opencode/commands/add-paper/#step-6-generate-badges",
+    "title": "Skill - Workflow: Context",
+    "content": "1. Parse the news content from user input. 2. Determine the target month and year from the content. Ask only if date is ambiguous. 3. Read both `News.md` and `history.md`. 4. Update `history.md`: - Organize by `## YEAR` sections in descending order. - Keep months in reverse chronological order within each year. - Create missing year section if needed. - Insert as a regular bullet in format `- [news content]`. 5. Update `News.md`: - Organize by `## YEAR` with `### Month` subsections. - Create missing year or month sections if needed. - Insert the same news bullet under the correct month. - Preserve special announcements (for example, the Durham announcement) as non-regular blocks. 6. Enforce News.md item limit: - Count only regular news bullets that start with `- `. - Keep at most 5 regular items. - Remove oldest regular items first. - Never count or remove special announcement blocks for this limit. 7.",
+    "url": "https://comphy-lab.org/.agents/skills/add-news/SKILL/#workflow",
     "type": "website_section",
     "priority": 10
   },
   {
-    "title": "Add paper - Step 7: Optional Extras",
-    "content": "Ask if user wants to add: - GitHub repository URL - YouTube video embed (use youtube-nocookie.com domain) - Images or highlights section",
-    "url": "https://comphy-lab.org/.opencode/commands/add-paper/#step-7-optional-extras",
+    "title": "Skill - Workflow: JavaScript",
+    "content": "Preserve spacing and structure: - Keep one blank line between major sections. - Keep heading and bullet style consistent with existing file format. 8. Save both files.",
+    "url": "https://comphy-lab.org/.agents/skills/add-news/SKILL/#workflow",
     "type": "website_section",
     "priority": 10
   },
   {
-    "title": "Add paper - Step 8: Insert into File",
-    "content": "- Read current `_research/index.md` - Find appropriate section - Insert formatted entry maintaining proper spacing - If replacing preprint, remove from Work in Progress - Preserve blank lines between entries",
-    "url": "https://comphy-lab.org/.opencode/commands/add-paper/#step-8-insert-into-file",
+    "title": "Skill - Formatting Rules",
+    "content": "- Year heading: `## 2026` - Month heading: `### January` - Regular item: `- News text` - Special announcement blocks remain in their existing icon-based heading style.",
+    "url": "https://comphy-lab.org/.agents/skills/add-news/SKILL/#formatting-rules",
     "type": "website_section",
-    "priority": 10
-  },
-  {
-    "title": "Add paper - Example Input/Output: JavaScript",
-    "content": "Input BibTeX: ```bibtex @article{bashkatov2025electrolyte, title={Electrolyte droplet spraying in H2 bubbles during water electrolysis}, author={Bashkatov, A. and B\u00fcrkle, F. and Demirk\u0131r, \u00c7. and Ding, W. and Sanjay, V. and Babich, A. and Yang, X. and Mutschke, G. and Czarske, J. and Lohse, D. and Krug, D. and B\u00fcttner, L. and Eckert, K.}, journal={Nature Communications}, volume={16}, pages={4580}, year={2025}, doi={10.1038/s41467-025-59762-7} } ``` Output (for paper [18]): ```markdown [18] Bashkatov, A., B\u00fcrkle, F., Demirk\u0131r, \u00c7., Ding, W., Sanjay, V. , Babich, A., Yang, X., Mutschke, G., Czarske, J., Lohse, D., Krug, D., B\u00fcttner, L., & Eckert, K. Electrolyte droplet spraying in H2 bubbles during water electrolysis. Nat. Commun., 16, 4580 (2025). Bubbles Jets [![Nat.",
-    "url": "https://comphy-lab.org/.opencode/commands/add-paper/#example-inputoutput",
-    "type": "website_section",
-    "priority": 10
-  },
-  {
-    "title": "Add paper - Example Input/Output: Context",
-    "content": "Commun.](https://img.shields.io/static/v1.svg?style=flat-square&label=Nat.%20Commun.&message=OA&color=orange)](https://doi.org/10.1038/s41467-025-59762-7) [![Blog](https://img.shields.io/badge/Blog-Coming%20Soon-yellow?style=flat-square&logo=obsidian&logoColor=white)](https://blogs.comphy-lab.org/0_ToDo-Blog-public) ```",
-    "url": "https://comphy-lab.org/.opencode/commands/add-paper/#example-inputoutput",
-    "type": "website_section",
-    "priority": 10
-  },
-  {
-    "title": "Add paper - Important Notes",
-    "content": "- Maintain exact formatting with proper spacing - Lab members always in bold - Numbered papers go in year sections, preprints in Work in Progress - Always include Blog badge - Check for duplicate entries before adding - When moving preprint to published, ensure all metadata is updated",
-    "url": "https://comphy-lab.org/.opencode/commands/add-paper/#important-notes",
-    "type": "website_section",
-    "priority": 10
-  },
-  {
-    "title": "Add news: Add the following...",
-    "content": "Add the following news item to both News.md and history.md: $ARGUMENTS Follow these steps: 1. Parse the news content from $ARGUMENTS 2. Determine the appropriate month and year (ask if unclear) 3. Read both News.md and history.md files 4. Add the news item to history.md in the correct chronological position: - Years are organized with `## Year` headings (e.g., `## 2026`, `## 2025`) - Years are sorted descending (newest first) - Create year section if it doesn't exist - Months within a year are in reverse chronological order (December at top) - Format: `- [news content]` 5. Add the same item to News.md: - Years are organized with `## Year` headings - Find or create the correct year section - Find or create the month subsection (### Month) - Insert after the month heading - The Durham announcement is a special item under the `## 2025` heading 6. Count regular news items in News.md (items that start with \"- \") 7.",
-    "url": "https://comphy-lab.org/.opencode/commands/add-news/",
-    "type": "website_content",
-    "priority": 10
-  },
-  {
-    "title": "Add news: If more than...",
-    "content": "If more than 5 regular news items exist, remove the oldest ones - Special announcements (like Durham) don't count toward the 5-item limit - Only remove items from the oldest months, preserving year structure 8. Ensure proper spacing between sections 9. Save both files Important formatting: - Year headings: `## 2026`, `## 2025`, etc. - Month headings: `### January`, `### December`, etc. - News items start with \"- \" - Leave blank lines between different sections - Special announcements (like Durham) use `### ` format - Special announcements don't count toward the 5-item limit Structure example: ```markdown",
-    "url": "https://comphy-lab.org/.opencode/commands/add-news/",
-    "type": "website_content",
     "priority": 10
   }
 ]
