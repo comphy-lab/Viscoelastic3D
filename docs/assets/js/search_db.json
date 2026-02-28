@@ -885,7 +885,7 @@
   },
   {
     "title": "0_todo blog public",
-    "content": "![CoMPhy-Lab](_Media/CoMPhy-Lab-no-name.png) Here is a list of things on our to-publish list: - [ ] Stokes waves and related topics \ud83d\udcc5 2026-02-26 #overdue ^E1A6F85F-5E63-405E-9EF7-E8CC8662D3CC - [x] Showcase bubbles, waves: \ud83d\udcc5 2025-01-12 ^0B681993-8C8A-49A5-93B6-83368684058E",
+    "content": "![CoMPhy-Lab](_Media/CoMPhy-Lab-no-name.png) Here is a list of things on our to-publish list: - [ ] Stokes waves and related topics \ud83d\udcc5 2026-02-27 #overdue ^E1A6F85F-5E63-405E-9EF7-E8CC8662D3CC - [x] Showcase bubbles, waves: \ud83d\udcc5 2025-01-12 ^0B681993-8C8A-49A5-93B6-83368684058E",
     "url": "https://blogs.comphy-lab.org/0_ToDo-Blog-public/",
     "type": "blog_content",
     "priority": 3
@@ -899,7 +899,7 @@
   },
   {
     "title": "0_todo blog public - Work in Progress",
-    "content": "- [ ] **To jump or not to jump: Adhesion and viscous dissipation dictate the detachment of coalescing wall-attached bubbles** Link: [arXiv:2501.05532](https://arxiv.org/abs/2501.05532) - [ ] **Viscoelastic Worthington jets & droplets produced by bursting bubbles** Link: [arXiv:2408.05089](https://arxiv.org/abs/2408.05089) - [ ] **Unifying theory of scaling in drop impact: Forces & maximum spreading diameter** Link: [arXiv:2408.12714](https://arxiv.org/abs/2408.12714) - [ ] **Electrolyte spraying within H\u2082 bubbles during water electrolysis** Link: [arXiv:2409.00515](https://arxiv.org/abs/2409.00515) ---",
+    "content": "- [x] **To jump or not to jump: Adhesion and viscous dissipation dictate the detachment of coalescing wall-attached bubbles** Link: [arXiv:2501.05532](https://arxiv.org/abs/2501.05532) - [x] **Viscoelastic Worthington jets & droplets produced by bursting bubbles** Link: [arXiv:2408.05089](https://arxiv.org/abs/2408.05089) - [x] **Unifying theory of scaling in drop impact: Forces & maximum spreading diameter** Link: [arXiv:2408.12714](https://arxiv.org/abs/2408.12714) - [ ] **Electrolyte spraying within H\u2082 bubbles during water electrolysis** Link: [arXiv:2409.00515](https://arxiv.org/abs/2409.00515) ---",
     "url": "https://blogs.comphy-lab.org/0_ToDo-Blog-public/#work-in-progress",
     "type": "blog_section",
     "priority": 3
@@ -913,28 +913,28 @@
   },
   {
     "title": "0_todo blog public - 2024",
-    "content": "- [ ] **Bursting bubble in an elastoviscoplastic medium** Highlight: Cover of _J. Fluid Mech._ Link: [DOI](https://doi.org/10.1017/jfm.2024.109) ---",
+    "content": "- [x] **Bursting bubble in an elastoviscoplastic medium** Highlight: Cover of _J. Fluid Mech._ Link: [DOI](https://doi.org/10.1017/jfm.2024.109) ---",
     "url": "https://blogs.comphy-lab.org/0_ToDo-Blog-public/#2024",
     "type": "blog_section",
     "priority": 3
   },
   {
     "title": "0_todo blog public - 2023",
-    "content": "- [ ] **Drop impact on viscous liquid films** Link: [DOI](https://doi.org/10.1017/jfm.2023.895) - [ ] **When does an impacting drop stop bouncing?** Link: [DOI](https://doi.org/10.1017/jfm.2023.896) ---",
+    "content": "- [x] **Drop impact on viscous liquid films** Link: [DOI](https://doi.org/10.1017/jfm.2023.895) - [x] **When does an impacting drop stop bouncing?** Link: [DOI](https://doi.org/10.1017/jfm.2023.896) ---",
     "url": "https://blogs.comphy-lab.org/0_ToDo-Blog-public/#2023",
     "type": "blog_section",
     "priority": 3
   },
   {
     "title": "0_todo blog public - 2022",
-    "content": "- [ ] **Ph.D. Thesis: Viscous free-surface flows** Links: [Thesis Info](https://www.vatsalsanjay.com/phd-thesis), [DOI](https://doi.org/10.3990/1.9789036554077), move here from old website - [ ] **Impact forces of water drops falling on superhydrophobic surfaces** Highlights: Editor's Suggestion, Research Highlight in _Nature_ Link: [DOI](https://doi.org/10.1103/PhysRevLett.129.104501) ---",
+    "content": "- [ ] **Ph.D. Thesis: Viscous free-surface flows** Links: [Thesis Info](https://www.vatsalsanjay.com/phd-thesis), [DOI](https://doi.org/10.3990/1.9789036554077), move here from old website - [x] **Impact forces of water drops falling on superhydrophobic surfaces** Highlights: Editor's Suggestion, Research Highlight in _Nature_ Link: [DOI](https://doi.org/10.1103/PhysRevLett.129.104501) ---",
     "url": "https://blogs.comphy-lab.org/0_ToDo-Blog-public/#2022",
     "type": "blog_section",
     "priority": 3
   },
   {
     "title": "0_todo blog public - 2021",
-    "content": "- [ ] **Bursting bubble in a viscoplastic medium** Link: [DOI](https://doi.org/10.1017/jfm.2021.489) ---",
+    "content": "- [x] **Bursting bubble in a viscoplastic medium** Link: [DOI](https://doi.org/10.1017/jfm.2021.489) ---",
     "url": "https://blogs.comphy-lab.org/0_ToDo-Blog-public/#2021",
     "type": "blog_section",
     "priority": 3
@@ -955,14 +955,14 @@
   },
   {
     "title": "0_todo blog public - 2018",
-    "content": "- [ ] **Formation of fluid structures due to jet-jet and jet-sheet interactions** Link: [DOI](https://doi.org/10.1016/j.ces.2018.06.055) - [ ] **Numerical assessment of hazard in compartmental fire having steady heat release rate from the source** Link: [DOI](https://doi.org/10.1007/s12273-017-0411-y) ---",
+    "content": "- [ ] **Formation of fluid structures due to jet-jet and jet-sheet interactions** Link: [DOI](https://doi.org/10.1016/j.ces.2018.06.055) - [x] **Numerical assessment of hazard in compartmental fire having steady heat release rate from the source** Link: [DOI](https://doi.org/10.1007/s12273-017-0411-y) ---",
     "url": "https://blogs.comphy-lab.org/0_ToDo-Blog-public/#2018",
     "type": "blog_section",
     "priority": 3
   },
   {
     "title": "0_todo blog public - 2017",
-    "content": "- [ ] **Formation of liquid chain by collision of two laminar jets** Link: [DOI](https://doi.org/10.1063/1.4998288) - [ ] **On air entrainment in a water pool by impingement of a jet** Link: [DOI](https://doi.org/10.1002/aic.15828) --- > [!meta] Back to main website > [Home](https://comphy-lab.org/), [Team](https://comphy-lab.org/team), [Research](https://comphy-lab.org/research), [Github](https://github.com/comphy-lab)",
+    "content": "- [x] **Formation of liquid chain by collision of two laminar jets** Link: [DOI](https://doi.org/10.1063/1.4998288) - [ ] **On air entrainment in a water pool by impingement of a jet** Link: [DOI](https://doi.org/10.1002/aic.15828) --- > [!meta] Back to main website > [Home](https://comphy-lab.org/), [Team](https://comphy-lab.org/team), [Research](https://comphy-lab.org/research), [Github](https://github.com/comphy-lab)",
     "url": "https://blogs.comphy-lab.org/0_ToDo-Blog-public/#2017",
     "type": "blog_section",
     "priority": 3
