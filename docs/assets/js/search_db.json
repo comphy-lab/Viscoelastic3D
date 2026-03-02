@@ -885,7 +885,7 @@
   },
   {
     "title": "0_todo blog public",
-    "content": "![CoMPhy-Lab](_Media/CoMPhy-Lab-no-name.png) Here is a list of things on our to-publish list: - [ ] Stokes waves and related topics \ud83d\udcc5 2026-02-28 #overdue ^E1A6F85F-5E63-405E-9EF7-E8CC8662D3CC - [x] Showcase bubbles, waves: \ud83d\udcc5 2025-01-12 ^0B681993-8C8A-49A5-93B6-83368684058E",
+    "content": "![CoMPhy-Lab](_Media/CoMPhy-Lab-no-name.png) Here is a list of things on our to-publish list: - [ ] Stokes waves and related topics \ud83d\udcc5 2026-03-01 #overdue ^E1A6F85F-5E63-405E-9EF7-E8CC8662D3CC - [x] Showcase bubbles, waves: \ud83d\udcc5 2025-01-12 ^0B681993-8C8A-49A5-93B6-83368684058E",
     "url": "https://blogs.comphy-lab.org/0_ToDo-Blog-public/",
     "type": "blog_content",
     "priority": 3
@@ -19120,7 +19120,7 @@
   },
   {
     "title": "History - February",
-    "content": "- [ Dixit, A. K. , Zhao, C., Zaleski, S., Lohse, D., & Sanjay, V. Holes in Sheets: Double-Threshold Rupture of Draining Liquid Films. Phys. Rev. Lett., 136, 084001 (2026).](/research#22) - Ayush Dixit presents \"Simulating Respiratory Droplet Formation: The Role of Non-Newtonian Fluid Dynamics,\" showing via large-scale simulations that viscoelastic respiratory-fluid effects are essential for accurate droplet-size predictions in airborne transmission models. Video: https://www.youtube.com/watch?v=uFP5K9i8ah8",
+    "content": "- [ Dixit, A. K. , Zhao, C., Zaleski, S., Lohse, D., & Sanjay, V. Holes in Sheets: Double-Threshold Rupture of Draining Liquid Films. Phys. Rev. Lett., 136, 084001 (2026).](/research#22) - Ayush Dixit presents \"Simulating Respiratory Droplet Formation: The Role of Non-Newtonian Fluid Dynamics,\" showing via large-scale simulations that viscoelastic respiratory-fluid effects are essential for accurate droplet-size predictions in airborne transmission models. Video:",
     "url": "https://comphy-lab.org#history",
     "type": "website_section",
     "priority": 8
@@ -19386,7 +19386,7 @@
   },
   {
     "title": "News - February",
-    "content": "- [ Dixit, A. K. , Zhao, C., Zaleski, S., Lohse, D., & Sanjay, V. Holes in Sheets: Double-Threshold Rupture of Draining Liquid Films. Phys. Rev. Lett., 136, 084001 (2026).](/research#22) - Ayush Dixit presents \"Simulating Respiratory Droplet Formation: The Role of Non-Newtonian Fluid Dynamics,\" showing via large-scale simulations that viscoelastic respiratory-fluid effects are essential for accurate droplet-size predictions in airborne transmission models. Video: https://www.youtube.com/watch?v=uFP5K9i8ah8",
+    "content": "- [ Dixit, A. K. , Zhao, C., Zaleski, S., Lohse, D., & Sanjay, V. Holes in Sheets: Double-Threshold Rupture of Draining Liquid Films. Phys. Rev. Lett., 136, 084001 (2026).](/research#22) - Ayush Dixit presents \"Simulating Respiratory Droplet Formation: The Role of Non-Newtonian Fluid Dynamics,\" showing via large-scale simulations that viscoelastic respiratory-fluid effects are essential for accurate droplet-size predictions in airborne transmission models. Video:",
     "url": "https://comphy-lab.org#news",
     "type": "website_section",
     "priority": 8
@@ -19512,7 +19512,7 @@
   },
   {
     "title": "Skill - Workflow: Context",
-    "content": "1. Parse the news content from user input. 2. Determine the target month and year from the content. Ask only if date is ambiguous. 3. Read both `News.md` and `history.md`. 4. Update `history.md`: - Organize by `## YEAR` sections in descending order. - Keep months in reverse chronological order within each year. - Create missing year section if needed. - Insert as a regular bullet in format `- [news content]`. 5. Update `News.md`: - Organize by `## YEAR` with `### Month` subsections. - Create missing year or month sections if needed. - Insert the same news bullet under the correct month. - Preserve special announcements (for example, the Durham announcement) as non-regular blocks. 6. Enforce News.md item limit: - Count only regular news bullets that start with `- `. - Keep at most 5 regular items. - Remove oldest regular items first. - Never count or remove special announcement blocks for this limit. 7.",
+    "content": "1. Parse the news content from user input. 2. Determine the target month and year from the content. Ask only if date is ambiguous. 3. Read both `News.md` and `history.md`. 4. Update `history.md`: - Organize by `## YEAR` sections in descending order. - Keep months in reverse chronological order within each year. - Create missing year section if needed. - Insert as a regular bullet in format `- [news content]`. 5. Update `News.md`: - Organize by `## YEAR` with `### Month` subsections. - Create missing year or month sections if needed. - Insert the same news bullet under the correct month. - Preserve special announcements (for example, the Durham announcement) as non-regular blocks. 6. Enforce News.md item limit: - Count only regular news bullets that start with a dash followed by a space (prefix: `-`). - Keep at most 5 regular items. - Remove oldest regular items first. - Never count or remove special announcement blocks for this limit. 7.",
     "url": "https://comphy-lab.org/.agents/skills/add-news/SKILL/#workflow",
     "type": "website_section",
     "priority": 10
