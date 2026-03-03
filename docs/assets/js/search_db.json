@@ -633,14 +633,14 @@
   },
   {
     "title": "\"High-Fidelity Simulations Using Basilisk C\" - Think before you compute",
-    "content": "- **10:00-11:30** &nbsp;|&nbsp; **Lecture (1a)** - Conservation laws and the numerical solution of the Navier\u2013Stokes equations - **11:45-13:00** &nbsp;|&nbsp; **Lecture (1b)** - Transport equations - *Brief intro to Basilisk coding framework*",
+    "content": "- **10:00-11:30** &nbsp;|&nbsp; **Lecture (1a)** - Conservation laws and the numerical solution of the Navier\u2013Stokes equations - **11:45-13:00** &nbsp;|&nbsp; **Lecture (1b)** - Transport equations - _Brief intro to Basilisk coding framework_",
     "url": "https://comphy-lab.org/teaching/2025-Basilisk101-Madrid#think-before-you-compute",
     "type": "website_section",
     "priority": 3
   },
   {
     "title": "\"High-Fidelity Simulations Using Basilisk C\" - First coding steps",
-    "content": "- **15:00-18:00** &nbsp;|&nbsp; **Hybrid Session** - Implementing basic transport equations in Basilisk C. - Using headers in Basilisk, modular code structure, problem setup, and compilation - *Whiteboard + coding* - [1st Working Assignment](https://blogs.comphy-lab.org/Lecture-Notes/Basilisk101/1st-workingAssignment)",
+    "content": "- **15:00-18:00** &nbsp;|&nbsp; **Hybrid Session** - Implementing basic transport equations in Basilisk C. - Using headers in Basilisk, modular code structure, problem setup, and compilation - _Whiteboard + coding_ - [1st Working Assignment](https://blogs.comphy-lab.org/Lecture-Notes/Basilisk101/1st-workingAssignment)",
     "url": "https://comphy-lab.org/teaching/2025-Basilisk101-Madrid#first-coding-steps",
     "type": "website_section",
     "priority": 3
@@ -885,7 +885,7 @@
   },
   {
     "title": "0_todo blog public",
-    "content": "![CoMPhy-Lab](_Media/CoMPhy-Lab-no-name.png) Here is a list of things on our to-publish list: - [ ] Stokes waves and related topics \ud83d\udcc5 2026-03-01 #overdue ^E1A6F85F-5E63-405E-9EF7-E8CC8662D3CC - [x] Showcase bubbles, waves: \ud83d\udcc5 2025-01-12 ^0B681993-8C8A-49A5-93B6-83368684058E",
+    "content": "![CoMPhy-Lab](_Media/CoMPhy-Lab-no-name.png) Here is a list of things on our to-publish list: - [x] Stokes waves and related topics \ud83d\udcc5 2026-03-02 #overdue ^E1A6F85F-5E63-405E-9EF7-E8CC8662D3CC - [x] Showcase bubbles, waves: \ud83d\udcc5 2025-01-12 ^0B681993-8C8A-49A5-93B6-83368684058E",
     "url": "https://blogs.comphy-lab.org/0_ToDo-Blog-public/",
     "type": "blog_content",
     "priority": 3
@@ -899,14 +899,14 @@
   },
   {
     "title": "0_todo blog public - Work in Progress",
-    "content": "- [x] **To jump or not to jump: Adhesion and viscous dissipation dictate the detachment of coalescing wall-attached bubbles** Link: [arXiv:2501.05532](https://arxiv.org/abs/2501.05532) - [x] **Viscoelastic Worthington jets & droplets produced by bursting bubbles** Link: [arXiv:2408.05089](https://arxiv.org/abs/2408.05089) - [x] **Unifying theory of scaling in drop impact: Forces & maximum spreading diameter** Link: [arXiv:2408.12714](https://arxiv.org/abs/2408.12714) - [ ] **Electrolyte spraying within H\u2082 bubbles during water electrolysis** Link: [arXiv:2409.00515](https://arxiv.org/abs/2409.00515) ---",
+    "content": "- [x] **To jump or not to jump: Adhesion and viscous dissipation dictate the detachment of coalescing wall-attached bubbles** Link: [arXiv:2501.05532](https://arxiv.org/abs/2501.05532) - [x] **Viscoelastic Worthington jets & droplets produced by bursting bubbles** Link: [arXiv:2408.05089](https://arxiv.org/abs/2408.05089) - [x] **Unifying theory of scaling in drop impact: Forces & maximum spreading diameter** Link: [arXiv:2408.12714](https://arxiv.org/abs/2408.12714) - [x] **Electrolyte spraying within H\u2082 bubbles during water electrolysis** Link: [arXiv:2409.00515](https://arxiv.org/abs/2409.00515) ---",
     "url": "https://blogs.comphy-lab.org/0_ToDo-Blog-public/#work-in-progress",
     "type": "blog_section",
     "priority": 3
   },
   {
     "title": "0_todo blog public - 2025",
-    "content": "- [ ] **The role of viscosity on drop impact forces on non-wetting surfaces** Link: [arXiv:2311.03012](https://arxiv.org/abs/2311.03012) - [ ] **Focusing of concentric free-surface waves** Link: [arXiv:2406.05416](https://arxiv.org/abs/2406.05416) ---",
+    "content": "- [x] **The role of viscosity on drop impact forces on non-wetting surfaces** Link: [arXiv:2311.03012](https://arxiv.org/abs/2311.03012) - [x] **Focusing of concentric free-surface waves** Link: [arXiv:2406.05416](https://arxiv.org/abs/2406.05416) ---",
     "url": "https://blogs.comphy-lab.org/0_ToDo-Blog-public/#2025",
     "type": "blog_section",
     "priority": 3
@@ -927,7 +927,7 @@
   },
   {
     "title": "0_todo blog public - 2022",
-    "content": "- [ ] **Ph.D. Thesis: Viscous free-surface flows** Links: [Thesis Info](https://www.vatsalsanjay.com/phd-thesis), [DOI](https://doi.org/10.3990/1.9789036554077), move here from old website - [x] **Impact forces of water drops falling on superhydrophobic surfaces** Highlights: Editor's Suggestion, Research Highlight in _Nature_ Link: [DOI](https://doi.org/10.1103/PhysRevLett.129.104501) ---",
+    "content": "- [x] **Ph.D. Thesis: Viscous free-surface flows** Links: [Thesis Info](https://www.vatsalsanjay.com/phd-thesis), [DOI](https://doi.org/10.3990/1.9789036554077), move here from old website - [x] **Impact forces of water drops falling on superhydrophobic surfaces** Highlights: Editor's Suggestion, Research Highlight in _Nature_ Link: [DOI](https://doi.org/10.1103/PhysRevLett.129.104501) ---",
     "url": "https://blogs.comphy-lab.org/0_ToDo-Blog-public/#2022",
     "type": "blog_section",
     "priority": 3
@@ -941,28 +941,28 @@
   },
   {
     "title": "0_todo blog public - 2020",
-    "content": "- [ ] **Lifting a sessile oil drop from a superamphiphobic surface with an impacting one** Link: [DOI](https://doi.org/10.1126/sciadv.aba4330) ---",
+    "content": "- [x] **Lifting a sessile oil drop from a superamphiphobic surface with an impacting one** Link: [DOI](https://doi.org/10.1126/sciadv.aba4330) ---",
     "url": "https://blogs.comphy-lab.org/0_ToDo-Blog-public/#2020",
     "type": "blog_section",
     "priority": 3
   },
   {
     "title": "0_todo blog public - 2019",
-    "content": "- [ ] **Consequences of inclined and dual jet impingement in stagnant liquid and stratified layers** Link: [DOI](https://doi.org/10.1002/aic.16373) ---",
+    "content": "- [x] **Consequences of inclined and dual jet impingement in stagnant liquid and stratified layers** Link: [DOI](https://doi.org/10.1002/aic.16373) ---",
     "url": "https://blogs.comphy-lab.org/0_ToDo-Blog-public/#2019",
     "type": "blog_section",
     "priority": 3
   },
   {
     "title": "0_todo blog public - 2018",
-    "content": "- [ ] **Formation of fluid structures due to jet-jet and jet-sheet interactions** Link: [DOI](https://doi.org/10.1016/j.ces.2018.06.055) - [x] **Numerical assessment of hazard in compartmental fire having steady heat release rate from the source** Link: [DOI](https://doi.org/10.1007/s12273-017-0411-y) ---",
+    "content": "- [x] **Formation of fluid structures due to jet-jet and jet-sheet interactions** Link: [DOI](https://doi.org/10.1016/j.ces.2018.06.055) - [x] **Numerical assessment of hazard in compartmental fire having steady heat release rate from the source** Link: [DOI](https://doi.org/10.1007/s12273-017-0411-y) ---",
     "url": "https://blogs.comphy-lab.org/0_ToDo-Blog-public/#2018",
     "type": "blog_section",
     "priority": 3
   },
   {
     "title": "0_todo blog public - 2017",
-    "content": "- [x] **Formation of liquid chain by collision of two laminar jets** Link: [DOI](https://doi.org/10.1063/1.4998288) - [ ] **On air entrainment in a water pool by impingement of a jet** Link: [DOI](https://doi.org/10.1002/aic.15828) --- > [!meta] Back to main website > [Home](https://comphy-lab.org/), [Team](https://comphy-lab.org/team), [Research](https://comphy-lab.org/research), [Github](https://github.com/comphy-lab)",
+    "content": "- [x] **Formation of liquid chain by collision of two laminar jets** Link: [DOI](https://doi.org/10.1063/1.4998288) - [x] **On air entrainment in a water pool by impingement of a jet** Link: [DOI](https://doi.org/10.1002/aic.15828) --- > [!meta] Back to main website > [Home](https://comphy-lab.org/), [Team](https://comphy-lab.org/team), [Research](https://comphy-lab.org/research), [Github](https://github.com/comphy-lab)",
     "url": "https://blogs.comphy-lab.org/0_ToDo-Blog-public/#2017",
     "type": "blog_section",
     "priority": 3
