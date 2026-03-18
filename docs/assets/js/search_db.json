@@ -19455,6 +19455,20 @@
     "priority": 8
   },
   {
+    "title": "Nested indented bullets - March",
+    "content": "- First real news item - Nested supporting detail that should not count - Deeper nested detail that should not count - Second real news item",
+    "url": "https://comphy-lab.org/tests/fixtures/news-bullets/nested-indented-bullets/#march",
+    "type": "website_section",
+    "priority": 10
+  },
+  {
+    "title": "Special announcement block - <i class=\"fa-solid fa-graduation-cap gradcap-icon\"></i> CoMPhy Lab is Moving to Durham University!",
+    "content": "Join Us Starting July 1st, 2025 , the CoMPhy Lab will be relocating.",
+    "url": "https://comphy-lab.org/tests/fixtures/news-bullets/special-announcement-block/#i-classfa-solid-fa-graduation-cap-gradcap-iconi-comphy-lab-is-moving-to-durham-university",
+    "type": "website_section",
+    "priority": 10
+  },
+  {
     "title": "Skill - Add Research Paper from BibTeX",
     "content": "Parse user-provided BibTeX and insert a correctly formatted entry in `_research/index.md`.",
     "url": "https://comphy-lab.org/.agents/skills/add-paper/SKILL/#add-research-paper-from-bibtex",
