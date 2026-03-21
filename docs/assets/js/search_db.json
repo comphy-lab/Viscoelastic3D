@@ -599,7 +599,7 @@
   },
   {
     "title": "\"Basilisk for Multiphase Flow Simulations\" - Registration & Resources",
-    "content": "Registration for this pre-conference session is handled through [ECS 2025](https://ecs2025.org/program/#program). **Technical Support:** vatsal.sanjay@comphy-lab.org Course Examples & Resources",
+    "content": "Registration for this pre-conference session is handled through [ECS 2025](https://ecs2025.org/program/#program). **Technical Support:** vatsal.sanjay@durham.ac.uk Course Examples & Resources",
     "url": "https://comphy-lab.org/teaching/2025-Basilisk101nano-ECS#registration-resources",
     "type": "website_section",
     "priority": 3
@@ -697,7 +697,7 @@
   },
   {
     "title": "\"High-Fidelity Simulations Using Basilisk C\" - Registration",
-    "content": "For registration details, please contact bubbles@ing.uc3m.es vatsal.sanjay@comphy-lab.org vatsal.sanjay@durham.ac.uk function copyEmail(button) { const textToCopy = button.getAttribute('data-text'); // Create a temporary textarea element to copy from const textarea = document.createElement('textarea'); textarea.value = textToCopy; textarea.setAttribute('readonly', ''); textarea.style.position = 'absolute'; textarea.style.left = '-9999px'; document.body.appendChild(textarea); // Select and copy the text textarea.select(); document.execCommand('copy'); // Remove the temporary element document.body.removeChild(textarea); // Show feedback const originalIcon = button.innerHTML; button.innerHTML = ' '; button.classList.add('copied'); // Restore original state after a delay setTimeout(() => { button.innerHTML = originalIcon; button.classList.remove('copied'); }, 2000); } Course GitHub Repository",
+    "content": "For registration details, please contact bubbles@ing.uc3m.es vatsal.sanjay@durham.ac.uk function copyEmail(button) { const textToCopy = button.getAttribute('data-text'); // Create a temporary textarea element to copy from const textarea = document.createElement('textarea'); textarea.value = textToCopy; textarea.setAttribute('readonly', ''); textarea.style.position = 'absolute'; textarea.style.left = '-9999px'; document.body.appendChild(textarea); // Select and copy the text textarea.select(); document.execCommand('copy'); // Remove the temporary element document.body.removeChild(textarea); // Show feedback const originalIcon = button.innerHTML; button.innerHTML = ' '; button.classList.add('copied'); // Restore original state after a delay setTimeout(() => { button.innerHTML = originalIcon; button.classList.remove('copied'); }, 2000); } Course GitHub Repository",
     "url": "https://comphy-lab.org/teaching/2025-Basilisk101-Madrid#registration",
     "type": "website_section",
     "priority": 3
@@ -6703,7 +6703,7 @@
   },
   {
     "title": "\"Join Us\"",
-    "content": "We are always looking for enthusiastic researchers to join our group. We welcome applicants with strong backgrounds in physics, applied mathematics, or engineering, especially in continuum mechanics, numerics, and scientific computing. vatsal.sanjay@comphy-lab.org vatsal.sanjay@durham.ac.uk",
+    "content": "We are always looking for enthusiastic researchers to join our group. We welcome applicants with strong backgrounds in physics, applied mathematics, or engineering, especially in continuum mechanics, numerics, and scientific computing. vatsal.sanjay@durham.ac.uk",
     "url": "https://comphy-lab.org/join/",
     "type": "website_content",
     "priority": 4
@@ -6808,7 +6808,7 @@
   },
   {
     "title": "\"Join Us\" - <span class=\"section-icon\"><i class=\"fa-solid fa-graduation-cap\"></i></span> PhD Positions: English requirements apply...",
-    "content": "English requirements apply for non\u2011native speakers. ([How to Apply](https://www.durham.ac.uk/study/postgraduate/research-degrees/how-to-apply/)) - How to apply (CoMPhy Lab)? - email us ([vatsal.sanjay@comphy-lab.org](mailto:vatsal.sanjay@comphy-lab.org)/[vatsal.sanjay@durham.ac.uk](mailto:vatsal.sanjay@durham.ac.uk)) with a brief statement of fit and CV. - In the portal, select CMP, name Dr. Vatsal Sanjay as supervisor. Final applications can only be submitted via the Postgraduate Applicant Portal. ([How to Apply](https://www.durham.ac.uk/study/postgraduate/research-degrees/how-to-apply/)) - Funding we typically target: [EPSRC DTP (Physics)](https://www.ukri.org/councils/epsrc/), [Durham studentships](https://www.durham.ac.uk/departments/academic/physics/postgraduate-study/studentships-funding/available-studentships/), [CSC](https://www.durham.ac.uk/study/scholarships/international/chinese-scholarships-council/).",
+    "content": "English requirements apply for non\u2011native speakers. ([How to Apply](https://www.durham.ac.uk/study/postgraduate/research-degrees/how-to-apply/)) - How to apply (CoMPhy Lab)? - email us ([vatsal.sanjay@durham.ac.uk](mailto:vatsal.sanjay@durham.ac.uk)) with a brief statement of fit and CV. - In the portal, select CMP, name Dr. Vatsal Sanjay as supervisor. Final applications can only be submitted via the Postgraduate Applicant Portal. ([How to Apply](https://www.durham.ac.uk/study/postgraduate/research-degrees/how-to-apply/)) - Funding we typically target: [EPSRC DTP (Physics)](https://www.ukri.org/councils/epsrc/), [Durham studentships](https://www.durham.ac.uk/departments/academic/physics/postgraduate-study/studentships-funding/available-studentships/), [CSC](https://www.durham.ac.uk/study/scholarships/international/chinese-scholarships-council/).",
     "url": "https://comphy-lab.org/join/#span-classsection-iconi-classfa-solid-fa-graduation-capispan-phd-positions",
     "type": "website_section",
     "priority": 4
@@ -19261,7 +19261,7 @@
   },
   {
     "title": "Aboutcomphy - Location & Website",
-    "content": "[![Location](https://img.shields.io/badge/-Durham%20University-4285F4?style=flat&logo=googlemaps&logoColor=white)](https://maps.app.goo.gl/btdPViKxEoXFmVxM9) [![Website](https://img.shields.io/badge/-comphy--lab.org-4285F4?style=flat&logo=googlechrome&logoColor=white)](http://www.comphy-lab.org) vatsal.sanjay@comphy-lab.org vatsal.sanjay@durham.ac.uk",
+    "content": "[![Location](https://img.shields.io/badge/-Durham%20University-4285F4?style=flat&logo=googlemaps&logoColor=white)](https://maps.app.goo.gl/btdPViKxEoXFmVxM9) [![Website](https://img.shields.io/badge/-comphy--lab.org-4285F4?style=flat&logo=googlechrome&logoColor=white)](http://www.comphy-lab.org) vatsal.sanjay@durham.ac.uk",
     "url": "https://comphy-lab.org/#about",
     "type": "website_section",
     "priority": 8
@@ -19277,6 +19277,55 @@
     "title": "Aboutcomphy - Social Media",
     "content": "[![X](https://img.shields.io/badge/-@CoMPhyLab-000000?style=flat&logo=x&logoColor=white)](https://twitter.com/VatsalSanjay) [![Bluesky](https://img.shields.io/badge/-@comphy--lab.org-0285FF?style=flat&logo=bluesky&logoColor=white)](https://bsky.app/profile/comphy-lab.org) For supplementary videos and teaser of our upcoming work:",
     "url": "https://comphy-lab.org/#about",
+    "type": "website_section",
+    "priority": 8
+  },
+  {
+    "title": "Fix summary - Issue #63 \u2014 deploy.sh strict-mode and CLI validation",
+    "content": "**Changed:** `tests/deploy-script-regression.sh` The `deploy.sh` already had all required guards (livereload guarded branch, IPv6 URL bracketing, port/host validation). Added the missing smoke-test cases to `tests/deploy-script-regression.sh`: - `test_missing_port_argument_is_rejected` \u2014 `--port` with no following value - `test_port_flag_as_value_is_rejected` \u2014 `--port --drafts` (flag as value) - `test_missing_host_argument_is_rejected` \u2014 `--host` with no following value - `test_nonnumeric_port_is_rejected` \u2014 `--port abc` **Test result:** `deploy-script regression tests passed` (9 scenarios, all pass) ---",
+    "url": "https://comphy-lab.org#fix-summary",
+    "type": "website_section",
+    "priority": 8
+  },
+  {
+    "title": "Fix summary - Issue #64 \u2014 validate-content-rules fail-fast for missing files / bad headings",
+    "content": "**Changed:** `scripts/validate-content-rules.sh` - Updated `require_file` error message to the specified format: `\"file not found: \"`. - Fixed check ordering in `validate_history_order`: year-context presence is now asserted **before** the month-name validity check, so a heading that appears before any `## YYYY` heading always gets the \"appears before any year heading\" diagnostic rather than being swallowed by an \"invalid month name\" error. - Improved all three history-parsing error messages to include the full offending heading text and surrounding context. **Test result:** `\u2713 Content ordering and research tag rules passed.` ---",
+    "url": "https://comphy-lab.org#fix-summary",
+    "type": "website_section",
+    "priority": 8
+  },
+  {
+    "title": "Fix summary - Issue #66 \u2014 Non-standard CSS selectors and design-token correctness: Context",
+    "content": "**Changed:** `assets/css/command-palette.css`, `assets/css/teaching.css`, `assets/js/command-palette.js` - **command-palette.css:** Replaced the non-standard `:has(.command-palette-section-title:contains(\"Search Results\"))` selector with the class `.command-palette-section--search-results`. - **command-palette.js:** `renderSections` now sets the `command-palette-section--search-results` class on the section element when the section name is `\"Search Results\"`. - **teaching.css:** Replaced four `:contains(\"Course Schedule\")` rules with: - `.course-schedule-heading` (for the preceding `h2`), and - explicit `.schedule-container h3 / h4 / ul` rules (the `.schedule-container` wrapper already existed in templates). - **teaching.css:** Corrected two wrong CSS custom-property fallback values: - `var(--color-heading-h2, #ff6b6b)` \u2192 `var(--color-heading-h2, #0156b3)` (`#ff6b6b` was a red fallback for a blue token) - `var(--color-heading-h3, #000)` \u2192 `var(--color-heading-h3, #333)` (matches the light-mode definition in `styles.css`) ---",
+    "url": "https://comphy-lab.org#fix-summary",
+    "type": "website_section",
+    "priority": 8
+  },
+  {
+    "title": "Fix summary - Issue #67 \u2014 Teaching markdown CI gate scope",
+    "content": "**Changed:** `.github/workflows/teaching-content-checks.yml`, `CLAUDE.md` - Added `assets/images/teaching/README.md` to the `paths` triggers for both `pull_request` and `push` events so changes to that file fire the workflow. - Extended both `markdownlint-cli2` and `prettier --check` invocations to include `assets/images/teaching/README.md` alongside `_teaching/**/*.md`. - Documented the equivalent local one-liner in the **Essential Commands** section of `CLAUDE.md`. ---",
+    "url": "https://comphy-lab.org#fix-summary",
+    "type": "website_section",
+    "priority": 8
+  },
+  {
+    "title": "Fix summary - Issue #68 \u2014 Stale async search results in command palette",
+    "content": "**Changed:** `assets/js/command-palette.js`, `tests/command-palette-stale-search.test.js` *(new)* - Added a `_searchToken` monotonic counter at module scope. Each call to `renderCommandResults` captures the current token value. The async `SearchManager.searchForCommandPalette` callback checks `token !== _searchToken` before updating the DOM; if a newer search has been issued it returns without rendering, eliminating stale-result overwrites. - Exposed `window._getSearchToken()` for test introspection. - Added `tests/command-palette-stale-search.test.js` with three behaviour- focused regression scenarios: 1. Stale first result is discarded when a second search is still in-flight. 2. Single in-flight search resolves and renders normally. 3. Stale result resolves after the current result \u2014 DOM is unchanged. ---",
+    "url": "https://comphy-lab.org#fix-summary",
+    "type": "website_section",
+    "priority": 8
+  },
+  {
+    "title": "Fix summary - Test Results",
+    "content": "| Suite | Result | |---|---| | `jest` (all 9 suites, 51 tests) | **PASS** | | `tests/deploy-script-regression.sh` (9 scenarios) | **PASS** | | `scripts/validate-content-rules.sh` | **PASS** |",
+    "url": "https://comphy-lab.org#fix-summary",
+    "type": "website_section",
+    "priority": 8
+  },
+  {
+    "title": "History - March",
+    "content": "- [ Jana, S. , Kolinski, J., Lohse, D., & Sanjay, V. Impacting spheres: from liquid drops to elastic beads. Soft Matter, 22, 2226-2236 (2026), selected as the cover article.](/research#23) Download Cover View Paper",
+    "url": "https://comphy-lab.org#history",
     "type": "website_section",
     "priority": 8
   },
@@ -19429,7 +19478,14 @@
   },
   {
     "title": "Claude - Fix common issues",
-    "content": "./scripts/fix-script-order.sh # Fix script loading order ./scripts/fix-js-line-length.sh # Enforce 80 char limit ./scripts/fix-quotes.sh # Standardize to double quotes ```",
+    "content": "./scripts/fix-script-order.sh # Fix script loading order ./scripts/fix-js-line-length.sh # Enforce 80 char limit ./scripts/fix-quotes.sh # Standardize to double quotes",
+    "url": "https://comphy-lab.org#claude",
+    "type": "website_section",
+    "priority": 8
+  },
+  {
+    "title": "Claude - Lint teaching markdown files locally (mirrors CI gate)",
+    "content": "npx markdownlint-cli2 --config .markdownlint-cli2.jsonc \"_teaching/**/*.md\" \"assets/images/teaching/README.md\" npx prettier --check \"_teaching/**/*.md\" \"assets/images/teaching/README.md\" ```",
     "url": "https://comphy-lab.org#claude",
     "type": "website_section",
     "priority": 8
@@ -19591,20 +19647,6 @@
   {
     "title": "News - September",
     "content": "- [Saini, M., Sanjay, V. , Saade, Y., Lohse, D., & Popinet, S. Implementation of integral surface tension formulations in a volume of fluid framework and their applications to Marangoni flows. J. Comput. Phys., 542, 114348 (2025).](/research#18)",
-    "url": "https://comphy-lab.org#news",
-    "type": "website_section",
-    "priority": 8
-  },
-  {
-    "title": "News - August",
-    "content": "- [Mclauchlan, J., Walker, J. S., Sanjay, V. , Jalaal, M., Reid, J. P., Squires, A. M., & Souslov, A. Bouncing microdroplets on hydrophobic surfaces. Proc. Natl. Acad. Sci., 122, e2507309122 (2025).](/research#19)",
-    "url": "https://comphy-lab.org#news",
-    "type": "website_section",
-    "priority": 8
-  },
-  {
-    "title": "News - July",
-    "content": "- Saumili Jana received the award for best master's thesis from IIT Kharagpur. Thesis: Retract or Collapse? The Role of Viscosity and Viscoelasticity on Bubble Dynamics",
     "url": "https://comphy-lab.org#news",
     "type": "website_section",
     "priority": 8
