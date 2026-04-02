@@ -35,23 +35,9 @@
     "priority": 1
   },
   {
-    "title": "Our Team & Collaborators - Floris Hoek B.Sc.",
-    "content": "M.Sc. Student, University of Twente Co-advised with [Martin van der Hoef](https://pof.tnw.utwente.nl/people/profile/244) & [Alvaro Marin](https://pof.tnw.utwente.nl/people/profile/243) [ ](https://github.com/Floris-Hoek) - [Phys. Fluids - Univ. Twente / 2024](https://pof.tnw.utwente.nl/people/profile/1937) **Research Interest:** Molecular Dynamics Simulations of Evaporation-Driven Colloidal Self-Assembly.",
-    "url": "https://comphy-lab.org/team/#floris-hoek-bsc",
-    "type": "website_section",
-    "priority": 1
-  },
-  {
     "title": "Our Team & Collaborators - Peter Croxford",
     "content": "Student, Durham University [ ](https://github.com/PCrox) - Department of Physics, Durham Univ. / 2025&#8209;now **Research Interest:** Bretherton drops and bubbles.",
     "url": "https://comphy-lab.org/team/#peter-croxford",
-    "type": "website_section",
-    "priority": 1
-  },
-  {
-    "title": "Our Team & Collaborators - Mark Boulogne B.Sc.",
-    "content": "M.Sc. Student, University of Twente Co-advised with [Detlef Lohse](https://en.wikipedia.org/wiki/Detlef_Lohse) & [Aman Bhargava](https://pof.tnw.utwente.nl/people/profile/2120) [ ](https://github.com/mcboulogne) - [Phys. Fluids - Univ. Twente / 2024&#8209;now](https://pof.tnw.utwente.nl/people/profile/2359) **Research Interest:** Drops and bubbles spreading on LIS.",
-    "url": "https://comphy-lab.org/team/#mark-boulogne-bsc",
     "type": "website_section",
     "priority": 1
   },
@@ -231,8 +217,22 @@
     "priority": 1
   },
   {
+    "title": "Our Team & Collaborators - Floris Hoek M.Sc.",
+    "content": "[ ](https://github.com/Floris-Hoek) - **2026:** Graduated with M.Sc., Univ. Twente - Colloidal shell formation inside an evaporating droplet",
+    "url": "https://comphy-lab.org/team/#floris-hoek-msc",
+    "type": "website_section",
+    "priority": 1
+  },
+  {
+    "title": "Our Team & Collaborators - Mark Boulogne M.Sc.",
+    "content": "[ ](https://github.com/mcboulogne) - **2026:** Graduated with M.Sc., Univ. Twente - Droplets and bubbles spreading on liquid-infused surfaces",
+    "url": "https://comphy-lab.org/team/#mark-boulogne-msc",
+    "type": "website_section",
+    "priority": 1
+  },
+  {
     "title": "Our Team & Collaborators - Milan Sent B.Sc.",
-    "content": "[ ](https://github.com/mdjsent) - **2025:** Graduated with B.Sc., Univ. Twente - Spinning Pizza",
+    "content": "[ ](https://github.com/mdjsent) - **Now:** M.Sc. Student, Applied Physics - Univ. Twente - **2025:** Graduated with B.Sc., Univ. Twente - Spinning Pizza",
     "url": "https://comphy-lab.org/team/#milan-sent-bsc",
     "type": "website_section",
     "priority": 1
