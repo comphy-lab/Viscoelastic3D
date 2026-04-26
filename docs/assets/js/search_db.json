@@ -1,317 +1,37 @@
 [
   {
-    "title": "Our Team & Collaborators - Dr. Vatsal Sanjay",
-    "content": "Assistant Professor, Durham University [ ](https://github.com/VatsalSy) [ ](https://scholar.google.com/citations?user=tHb_qZoAAAAJ&hl=en) [ ](https://bsky.app/profile/comphy-lab.org) - Department of Physics, Durham Univ. / since 2025 - [Postdoc, Phys. Fluids - Univ. Twente / 2022&#8209;25](https://pof.tnw.utwente.nl/people/profile/1330) - **Ph.D.**, Phys. Fluids - Univ. Twente / 2018&#8209;22, Viscous Free-Surface Flows - **B.Tech. + M.Tech.**, Two-Phase Flow & Instability Lab, IIT-R / 2013&#8209;18, Understanding of mutual interactions between liquid jets: Entrainment and sheet formation - [Personal Website](https://vatsalsanjay.com), Photo: Florian Braakman. **Research Interest:** See [research page](/research) [Download CV](https://raw.githubusercontent.com/VatsalSy/Vatsal_CV/master/Vatsal_CV.pdf){: .cv-button}",
-    "url": "https://comphy-lab.org/team/#dr-vatsal-sanjay",
-    "type": "website_section",
+    "title": "Team: {% assign team...",
+    "content": "{% assign team = site.data.team %} CoMPhy Lab \u00b7 People The people in the room {% comment %} ---------------- Present ---------------- {% endcomment %} Present team \u00b7 {{ team.present | size }} members {% for m in team.present %} {% if m.photo %} {% else %} {%- assign clean_name = m.name | replace: \"Dr. \", \"\" | replace: \"Prof. \", \"\" | replace: \"Adj.",
+    "url": "https://comphy-lab.org/team/",
+    "type": "website_content",
     "priority": 1
   },
   {
-    "title": "Our Team & Collaborators - Ayush Dixit M.Sc.",
-    "content": "Ph.D. Student, University of Twente Co-advised with [Detlef Lohse](https://en.wikipedia.org/wiki/Detlef_Lohse) [ ](https://github.com/ayushkumardixit) [ ](https://scholar.google.com/citations?hl=en&user=ws43SmkAAAAJ) - [Phys. Fluids - Univ. Twente / 2023&#8209;now](https://pof.tnw.utwente.nl/people/profile/2068) - **B.Tech + M.Tech**, Two-Phase Flow & Instability Lab, IIT-R / 2018&#8209;23, Understanding interfacial interaction in macro and nano scales **Research Interest:** Viscoelastic Flows, Bursting Bubbles, Respiratory Drops.",
-    "url": "https://comphy-lab.org/team/#ayush-dixit-msc",
-    "type": "website_section",
+    "title": "Team: Context",
+    "content": "Prof. \", \"\" -%} {%- assign name_words = clean_name | split: \" \" -%} {%- capture initials -%} {%- for word in name_words -%} {%- assign first_char = word | slice: 0, 1 -%} {%- unless first_char == \"(\" -%}{{ first_char }}{%- endunless -%} {%- endfor -%} {%- endcapture -%} {{ initials | strip | upcase | slice: 0, 2 }} {% endif %} {% if m.slug %} {{ m.name }} {% else %}{{ m.name }}{% endif %} {{ m.role }}{% if m.affiliation %} \u00b7 {{ m.affiliation }}{% endif %} {{ m.bio }} {% if m.links.email %} {% endif %} {% if m.links.scholar %} {% endif %} {% if m.links.github %} {% endif %} {% if m.links.bluesky %} {% endif %} {% if m.links.orcid %} {% endif %} {% if m.links.site %} {% endif %} {% endfor %} {% comment %} ---------------- Collaborators ---------------- {% endcomment %} Collaborators {% for m in team.collaborators %} {%- assign clean_name = m.name | replace: \"Dr. \", \"\" | replace: \"Prof. \", \"\" | replace: \"Adj.",
+    "url": "https://comphy-lab.org/team/",
+    "type": "website_content",
     "priority": 1
   },
   {
-    "title": "Our Team & Collaborators - Aman Bhargava M.Sc.",
-    "content": "Ph.D. Student, University of Twente Co-advised with [Detlef Lohse](https://en.wikipedia.org/wiki/Detlef_Lohse) [ ](https://github.com/amanb1901) [ ](https://scholar.google.com/citations?hl=en&user=AmGOP8gAAAAJ) - [Phys. Fluids - Univ. Twente / 2024-now](https://pof.tnw.utwente.nl/people/profile/2120) - **M.Sc.** Chem. Eng., Purdue University / 2022&#8209;23 - **B.Tech. (Hons.)** Chem. Eng., IIT-B / 2018&#8209;22 **Research Interest:** Inertial Contact Line, Drop Retraction.",
-    "url": "https://comphy-lab.org/team/#aman-bhargava-msc",
-    "type": "website_section",
+    "title": "Team: Context",
+    "content": "Prof. \", \"\" -%} {%- assign name_words = clean_name | split: \" \" -%} {%- capture initials -%} {%- for word in name_words -%} {%- assign first_char = word | slice: 0, 1 -%} {%- unless first_char == \"(\" -%}{{ first_char }}{%- endunless -%} {%- endfor -%} {%- endcapture -%} {{ initials | strip | upcase | slice: 0, 2 }} {{ m.name }} {{ m.role }} {{ m.bio }} {% if m.links.email %} {% endif %} {% if m.links.scholar %} {% endif %} {% if m.links.orcid %} {% endif %} {% if m.links.site %} {% endif %} {% endfor %} {% comment %} ---------------- Alumni ---------------- {% endcomment %} Alumni \u00b7 last seven years {% for m in team.alumni %} {%- assign clean_name = m.name | replace: \"Dr. \", \"\" | replace: \"Prof. \", \"\" | replace: \"Adj.",
+    "url": "https://comphy-lab.org/team/",
+    "type": "website_content",
     "priority": 1
   },
   {
-    "title": "Our Team & Collaborators - Jnandeep Talukdar M.Sc.",
-    "content": "Ph.D. Student, University of Twente Co-advised with [Detlef Lohse](https://en.wikipedia.org/wiki/Detlef_Lohse) [ ](https://github.com/spilltheT) [ ](https://scholar.google.com/citations?hl=en&user=Coxj4VQAAAAJ) [ ](https://bsky.app/profile/jnandeep.bsky.social) - [Phys. Fluids - Univ. Twente / 2025&#8209;now](https://pof.tnw.utwente.nl/people/profile/1938) - **M.Sc.**, Phys. Fluids - Univ. Twente / 2023&#8209;25, Singularities with Surfactants - **B.Tech.** Mech. Eng., IIT-P / 2019&#8209;23 **Research Interest:** Surfactant Dynamics, Dissipative Anomaly, Soft Wetting.",
-    "url": "https://comphy-lab.org/team/#jnandeep-talukdar-msc",
-    "type": "website_section",
+    "title": "Team: Context",
+    "content": "Prof. \", \"\" -%} {%- assign name_words = clean_name | split: \" \" -%} {%- capture initials -%} {%- for word in name_words -%} {%- assign first_char = word | slice: 0, 1 -%} {%- unless first_char == \"(\" -%}{{ first_char }}{%- endunless -%} {%- endfor -%} {%- endcapture -%} {{ initials | strip | upcase | slice: 0, 2 }} {{ m.name }} {{ m.role }} {{ m.bio }} {% if m.thesis.href %} Thesis \u2014 {{ m.thesis.title }} {% endif %} {% if m.links.github %} {% endif %} {% if m.links.linkedin %} {% endif %} {% if m.links.scholar %} {% endif %} {% endfor %} {% comment %} ---------------- World map ---------------- {% endcomment %} 04 \u00b7 Around the world Team, collaborators, and conference visits Locations meet one of four criteria, in this order of preference: Hometown of a team member or alum Base of an active collaborator Talks we've given Places we've visited (no talk) {% comment %} Lightweight placeholder until the iframe is lazy-loaded. {% endcomment %} Loading the world map\u2026 /* Lazy-load the Google Map iframe only when it's about to enter the viewport \u2014 saves a heavy iframe + Google scripts on initial team-page load.",
+    "url": "https://comphy-lab.org/team/",
+    "type": "website_content",
     "priority": 1
   },
   {
-    "title": "Our Team & Collaborators - Saumili Jana M.Sc.",
-    "content": "Ph.D. Student, University of Twente Co-advised with [Detlef Lohse](https://en.wikipedia.org/wiki/Detlef_Lohse) [ ](https://github.com/SaumiliJana) - [Phys. Fluids - Univ. Twente / 2025-now](https://pof.tnw.utwente.nl/people/profile/2152) - **B.Tech.+M.Tech.**, Mech. Eng., IIT-KGP / 2020&#8209;25, Retract or Collapse? The Role of Viscosity and Viscoelasticity on Bubble Dynamics **Research Interest:** Soft Impact.",
-    "url": "https://comphy-lab.org/team/#saumili-jana-msc",
-    "type": "website_section",
-    "priority": 1
-  },
-  {
-    "title": "Our Team & Collaborators - Peter Croxford",
-    "content": "Student, Durham University [ ](https://github.com/PCrox) - Department of Physics, Durham Univ. / 2025&#8209;now **Research Interest:** Bretherton drops and bubbles.",
-    "url": "https://comphy-lab.org/team/#peter-croxford",
-    "type": "website_section",
-    "priority": 1
-  },
-  {
-    "title": "Our Team & Collaborators - We need you!",
-    "content": "See: [Join Us](https://github.com/VatsalSy/Project-ideas-for-prospective-students) for ongoing projects.",
-    "url": "https://comphy-lab.org/team/#we-need-you",
-    "type": "website_section",
-    "priority": 1
-  },
-  {
-    "title": "Our Team & Collaborators - Prof. Detlef Lohse",
-    "content": "[ ](https://scholar.google.com/citations?user=WvP_pIUAAAAJ) [ ](https://x.com/detlef_lohse) - [Professor, Phys. Fluids - Univ. Twente](https://pof.tnw.utwente.nl/people/profile/3) **Collaboration on:** Drop Impact, Viscoelastic Flows, Dissipative Anomaly, Surfactant Dynamics, Electrolysis, Bubbles, and Everything in Between.",
-    "url": "https://comphy-lab.org/team/#prof-detlef-lohse",
-    "type": "website_section",
-    "priority": 1
-  },
-  {
-    "title": "Our Team & Collaborators - Prof. Jacco Snoeijer",
-    "content": "[ ](https://scholar.google.com/citations?user=7qdux_4AAAAJ&hl=nl) - [Professor, Phys. Fluids - Univ. Twente](https://pof.tnw.utwente.nl/people/profile/21) **Collaboration on:** Elastic Sheets, Viscoelasticity vs. Elasticity, Surfactant Dynamics, Spinning Pizza.",
-    "url": "https://comphy-lab.org/team/#prof-jacco-snoeijer",
-    "type": "website_section",
-    "priority": 1
-  },
-  {
-    "title": "Our Team & Collaborators - Prof. Dominik Krug",
-    "content": "[ ](https://scholar.google.com/citations?user=qGEpq7IAAAAJ&hl=en&inst=5726176096060060532&oi=ao) - [Professor, RWTH Aachen University](https://www.aia.rwth-aachen.de/) - [Adjunct Professor, Phys. Fluids - Univ. Twente](https://pof.tnw.utwente.nl/people/profile/1199) **Collaboration on:** Electrolysis, Bubble Coalescence, Swimming Bubbles.",
-    "url": "https://comphy-lab.org/team/#prof-dominik-krug",
-    "type": "website_section",
-    "priority": 1
-  },
-  {
-    "title": "Our Team & Collaborators - Dr. Maziyar (Mazi) Jalaal",
-    "content": "[ ](https://scholar.google.com/citations?user=FE8TQeUAAAAJ) [ ](https://x.com/maziyarj) [ ](https://bsky.app/profile/mazi1.bsky.social) - [Associate Professor, Fluid Lab, Univ. Amsterdam](https://www.fluidlab.nl/) **Collaboration on:** Plastocapillarity, Viscoplastic Flows.",
-    "url": "https://comphy-lab.org/team/#dr-maziyar-mazi-jalaal",
-    "type": "website_section",
-    "priority": 1
-  },
-  {
-    "title": "Our Team & Collaborators - Dr. Uddalok (Udo) Sen",
-    "content": "[ ](https://scholar.google.com/citations?user=a6h2uMQAAAAJ) - [Assistant Professor, PhySM, Wageningen University and Research](https://www.physm-lab.org/) **Collaboration on:** Drop Impact, Sheet Retraction.",
-    "url": "https://comphy-lab.org/team/#dr-uddalok-udo-sen",
-    "type": "website_section",
-    "priority": 1
-  },
-  {
-    "title": "Our Team & Collaborators - Adj. Prof. Alvaro Marin",
-    "content": "[ ](https://scholar.google.com/citations?user=0_jOqqkAAAAJ) [ ](https://github.com/alvarogum) [ ](https://x.com/AlvaroGMarin) [ ](https://bsky.app/profile/alvaromarin.bsky.social) - [Adjunct Professor, Phys. Fluids - Univ. Twente](https://pof.tnw.utwente.nl/people/profile/243) **Collaboration on:** Colloidal Systems, Evaporation, Shell Formation.",
-    "url": "https://comphy-lab.org/team/#adj-prof-alvaro-marin",
-    "type": "website_section",
-    "priority": 1
-  },
-  {
-    "title": "Our Team & Collaborators - Dr. Christian Diddens",
-    "content": "[ ](https://scholar.google.com/citations?user=3QSyucwAAAAJ&hl=en&inst=5726176096060060532&oi=ao) [ ](https://github.com/cdiddens) - [Group Leader, Phys. Fluids - Univ. Twente](https://pof.tnw.utwente.nl/people/profile/1143) - [Developer of pyoomph](https://pyoomph.github.io/) **Collaboration on:** Surfactant Dynamics in Free Surface Flows, Dissipative Anomaly, Sliding Drops.",
-    "url": "https://comphy-lab.org/team/#dr-christian-diddens",
-    "type": "website_section",
-    "priority": 1
-  },
-  {
-    "title": "Our Team & Collaborators - Prof. Gareth McKinley",
-    "content": "[ ](https://scholar.google.com/citations?user=uLxFfGkAAAAJ) [ ](https://en.wikipedia.org/wiki/Gareth_H._McKinley) [ ](https://x.com/garethmckinley) - [Professor, MIT](https://nnf.mit.edu/) **Collaboration on:** Die-Swelling, Viscoelastic Flows.",
-    "url": "https://comphy-lab.org/team/#prof-gareth-mckinley",
-    "type": "website_section",
-    "priority": 1
-  },
-  {
-    "title": "Our Team & Collaborators - Dr. John Kolinski",
-    "content": "[ ](https://scholar.google.com/citations?user=BDzF8kMAAAAJ) [ ](https://en.wikipedia.org/wiki/John_Martin_Kolinski) - [Assistant Professor, EPFL (\u00c9cole Polytechnique F\u00e9d\u00e9rale de Lausanne)](https://people.epfl.ch/john.kolinski) **Collaboration on:** Soft Impact",
-    "url": "https://comphy-lab.org/team/#dr-john-kolinski",
-    "type": "website_section",
-    "priority": 1
-  },
-  {
-    "title": "Our Team & Collaborators - Dr. C. Ricardo Constante-Amores",
-    "content": "[ ](https://scholar.google.com/citations?user=ncqnphMAAAAJ) [ ](https://github.com/rcrc15) - [Assistant Professor, Univ. Illinois Urbana-Champaign](https://publish.illinois.edu/constanteamores/home/) **Collaboration on:** Non-Newtonian Flows, Bubble Bursting, Herschel--Bulkley Fluids, Elastic Coating.",
-    "url": "https://comphy-lab.org/team/#dr-c-ricardo-constante-amores",
-    "type": "website_section",
-    "priority": 1
-  },
-  {
-    "title": "Our Team & Collaborators - Dr. Radu Cimpeanu",
-    "content": "[ ](https://scholar.google.com/citations?user=6grZnhQAAAAJ&hl=en&inst=5726176096060060532&oi=ao) [ ](https://x.com/rcimpeanu) [ ](https://github.com/RaduCimpeanu) - [Associate Professor, Univ. Warwick](https://www.raducimpeanu.com/) **Collaboration on:** Open-Source Code Development, Non-Coalescence Impacts.",
-    "url": "https://comphy-lab.org/team/#dr-radu-cimpeanu",
-    "type": "website_section",
-    "priority": 1
-  },
-  {
-    "title": "Our Team & Collaborators - Dr. Jie Feng",
-    "content": "[ ](https://scholar.google.com/citations?user=226dDBAAAAAJ) [ ](https://x.com/FengFluidsLab) - [Assistant Professor, Univ. Illinois Urbana-Champaign](https://fengfluidslab.web.illinois.edu/wp/) **Collaboration on:** Elastic Coating, Bursting Bubbles.",
-    "url": "https://comphy-lab.org/team/#dr-jie-feng",
-    "type": "website_section",
-    "priority": 1
-  },
-  {
-    "title": "Our Team & Collaborators - Prof. Omar Matar",
-    "content": "[ ](https://scholar.google.com/citations?user=mLXz_NAAAAAJ&hl=en) [ ](https://x.com/okmatar?lang=en) - [Professor, Imperial College London](https://profiles.imperial.ac.uk/o.matar) **Collaboration on:** Surfactant Dynamics, Viscoelastic Drop Impact.",
-    "url": "https://comphy-lab.org/team/#prof-omar-matar",
-    "type": "website_section",
-    "priority": 1
-  },
-  {
-    "title": "Our Team & Collaborators - Dr. Ratul Dasgupta",
-    "content": "[ ](https://scholar.google.com/citations?user=I1jFG_oAAAAJ) [ ](https://x.com/RatulDG) - [Associate Professor, IIT Bombay](https://sites.google.com/view/ratuldasgupta/home) **Collaboration on:** Waves, Dissipative Anomaly.",
-    "url": "https://comphy-lab.org/team/#dr-ratul-dasgupta",
-    "type": "website_section",
-    "priority": 1
-  },
-  {
-    "title": "Our Team & Collaborators - Prof. Eric Lauga",
-    "content": "[ ](https://scholar.google.com/citations?hl=en&user=5ObY7hsAAAAJ) - [Professor, Univ. Cambridge](https://www.damtp.cam.ac.uk/user/lauga/) **Collaboration on:** Mycofluidic Transport.",
-    "url": "https://comphy-lab.org/team/#prof-eric-lauga",
-    "type": "website_section",
-    "priority": 1
-  },
-  {
-    "title": "Our Team & Collaborators - Dr. Saikat Datta",
-    "content": "[ ](https://scholar.google.com/citations?user=o4mXtIgAAAAJ) - Senior Lecturer, Swansea University **Collaboration on:** Multiscale Simulation, Ice Nucleation and Removal, Hydrogen Storage.",
-    "url": "https://comphy-lab.org/team/#dr-saikat-datta",
-    "type": "website_section",
-    "priority": 1
-  },
-  {
-    "title": "Our Team & Collaborators - Dr. Doris Vollmer",
-    "content": "[ ](https://orcid.org/0000-0001-9599-5589) - [Apl. Professor, Max Planck Institute for Polymer Research, Mainz, Germany.](https://www.mpip-mainz.mpg.de/en/butt/groups/vollmer) **Collaboration on:** Contact Line, Drop Impact, Superhydrophobic Surfaces.",
-    "url": "https://comphy-lab.org/team/#dr-doris-vollmer",
-    "type": "website_section",
-    "priority": 1
-  },
-  {
-    "title": "Our Team & Collaborators - Prof. St\u00e9phane Zaleski",
-    "content": "[ ](https://scholar.google.com/citations?hl=en&user=no1GX_QAAAAJ) [ ](https://x.com/zaleski) - [Professor, Sorbonne Universite](http://www.ida.upmc.fr/~zaleski/zaleski.html) **Collaboration on:** Holey Sheets.",
-    "url": "https://comphy-lab.org/team/#prof-st\u00e9phane-zaleski",
-    "type": "website_section",
-    "priority": 1
-  },
-  {
-    "title": "Our Team & Collaborators - Dr. Pierre Chantelot",
-    "content": "[ ](https://scholar.google.nl/citations?user=BQWXUKYAAAAJ) - [Postdoc, Institut Langevin, ESPCI Paris](https://sites.google.com/view/pierre-chantelot/) **Collaboration on:** Drop Impact",
-    "url": "https://comphy-lab.org/team/#dr-pierre-chantelot",
-    "type": "website_section",
-    "priority": 1
-  },
-  {
-    "title": "Our Team & Collaborators - Dr. Aleksandr Bashkatov",
-    "content": "[ ](https://scholar.google.com/citations?user=9_vPSFsAAAAJ&hl=en&inst=5726176096060060532&oi=ao) - [Postdoc, RWTH Aachen University](https://scholar.google.com/citations?user=9_vPSFsAAAAJ&hl=en&inst=5726176096060060532&oi=ao) **Collaboration on:** Electrolysis, Bubble Coalescence, Swimming Bubbles.",
-    "url": "https://comphy-lab.org/team/#dr-aleksandr-bashkatov",
-    "type": "website_section",
-    "priority": 1
-  },
-  {
-    "title": "Our Team & Collaborators - Dr. Vincent Bertin",
-    "content": "[ ](https://scholar.google.com/citations?user=jO_RTLR2xBYC&hl=en&inst=5726176096060060532&oi=ao) - [Postdoc, University Aix-Marseille](https://vincent-bertin.github.io/) **Collaboration on:** Elastic Sheets, Spinning Pizza.",
-    "url": "https://comphy-lab.org/team/#dr-vincent-bertin",
-    "type": "website_section",
-    "priority": 1
-  },
-  {
-    "title": "Our Team & Collaborators - Dr. Alexandros Oratis",
-    "content": "[ ](https://scholar.google.com/citations?user=2lOr8WQAAAAJ&hl=en&inst=5726176096060060532&oi=ao) - [Postdoc, TU Delft](https://garbinlab.org/people/) **Collaboration on:** Electrolysis, Bubble Coalescence, Swimming Bubbles.",
-    "url": "https://comphy-lab.org/team/#dr-alexandros-oratis",
-    "type": "website_section",
-    "priority": 1
-  },
-  {
-    "title": "Our Team & Collaborators - Arivazhagan (Ari) Balasubramanian M.Sc.",
-    "content": "[ ](https://scholar.google.com/citations?user=xyheRZ8AAAAJ) [ ](https://github.com/GbArivazhagan) [ ](https://bsky.app/profile/gbarivaz.bsky.social) - [Ph.D. Student, KTH Sweden](https://www.kth.se/profile/argb?l=en) **Collaboration on:** Elastoviscoplastic Flows, Bursting Bubbles",
-    "url": "https://comphy-lab.org/team/#arivazhagan-ari-balasubramanian-msc",
-    "type": "website_section",
-    "priority": 1
-  },
-  {
-    "title": "Our Team & Collaborators - Dr. Konstantinos (Costis) Zinelis",
-    "content": "[ ](https://scholar.google.com/citations?user=dZrR_z8AAAAJ&hl=en&inst=5726176096060060532&oi=ao) [ ](https://x.com/KZinelis) - [Postdoc, MIT](https://qigroup.mit.edu/team/) **Collaboration on:** Viscoelastic Flows, Drop Impact.",
-    "url": "https://comphy-lab.org/team/#dr-konstantinos-costis-zinelis",
-    "type": "website_section",
-    "priority": 1
-  },
-  {
-    "title": "Our Team & Collaborators - Floris Hoek M.Sc.",
-    "content": "[ ](https://github.com/Floris-Hoek) - **2026:** Graduated with M.Sc., Univ. Twente - Colloidal shell formation inside an evaporating droplet",
-    "url": "https://comphy-lab.org/team/#floris-hoek-msc",
-    "type": "website_section",
-    "priority": 1
-  },
-  {
-    "title": "Our Team & Collaborators - Mark Boulogne M.Sc.",
-    "content": "[ ](https://github.com/mcboulogne) - **2026:** Graduated with M.Sc., Univ. Twente - Droplets and bubbles spreading on liquid-infused surfaces",
-    "url": "https://comphy-lab.org/team/#mark-boulogne-msc",
-    "type": "website_section",
-    "priority": 1
-  },
-  {
-    "title": "Our Team & Collaborators - Milan Sent B.Sc.",
-    "content": "[ ](https://github.com/mdjsent) - **Now:** M.Sc. Student, Applied Physics - Univ. Twente - **2025:** Graduated with B.Sc., Univ. Twente - Spinning Pizza",
-    "url": "https://comphy-lab.org/team/#milan-sent-bsc",
-    "type": "website_section",
-    "priority": 1
-  },
-  {
-    "title": "Our Team & Collaborators - Valentin Rosario M.Sc.",
-    "content": "[ ](https://www.linkedin.com/in/valentin-rosario-6377602b2/?originalSubdomain=nl) [ ](https://github.com/ValeRos9) - **Now:** Ph.D. Student, Leiden University - **2024:** Graduated with M.Sc., Univ. Amsterdam - Modelling the Ward--Hunt ice-shelf as viscoelastic solid",
-    "url": "https://comphy-lab.org/team/#valentin-rosario-msc",
-    "type": "website_section",
-    "priority": 1
-  },
-  {
-    "title": "Our Team & Collaborators - Swen van den Heuvel M.Sc.",
-    "content": "[ ](https://www.linkedin.com/in/swen-van-den-heuvel-33a1901aa/) - **Now:** [Ph.D. Student, Phys. Fluids - Univ. Twente](https://pof.tnw.utwente.nl/people/profile/2119) - **2023:** [Graduated with M.Sc., Univ. Twente](https://pof.tnw.utwente.nl/people/profile/2119) - Hydrodynamic forces acting on vertically rising bubbles",
-    "url": "https://comphy-lab.org/team/#swen-van-den-heuvel-msc",
-    "type": "website_section",
-    "priority": 1
-  },
-  {
-    "title": "Our Team & Collaborators - Niels Kuipers B.Sc.",
-    "content": "[ ](https://www.linkedin.com/in/nielskuipers1/) - **Now:** M.Sc. Student, Adv. Technology - Univ. Twente - **2023:** [Graduated with B.Sc., Univ. Twente](https://pof.tnw.utwente.nl/people/profile/2064) - Partial coalescence of drops on viscous films",
-    "url": "https://comphy-lab.org/team/#niels-kuipers-bsc",
-    "type": "website_section",
-    "priority": 1
-  },
-  {
-    "title": "Our Team & Collaborators - C. H. (Luuk) Maurits M.Sc.",
-    "content": "- **2023:** [Graduated with M.Sc., Univ. Twente](https://pof.tnw.utwente.nl/people/profile/1741) - When Laplace meets Marangoni",
-    "url": "https://comphy-lab.org/team/#c-h-luuk-maurits-msc",
-    "type": "website_section",
-    "priority": 1
-  },
-  {
-    "title": "Our Team & Collaborators - Tom Appleford M.Sc.",
-    "content": "- **Now:** [Ph.D. Student, Fluid Lab - Univ. Amsterdam](https://www.fluidlab.nl/team) - **2022:** [Graduated with M.Sc., Univ. Amsterdam](https://pof.tnw.utwente.nl/people/profile/1741) - The deformation of a droplet in a viscoplastic simple shear flow",
-    "url": "https://comphy-lab.org/team/#tom-appleford-msc",
-    "type": "website_section",
-    "priority": 1
-  },
-  {
-    "title": "Our Team & Collaborators - Twan Heijink B.Sc.",
-    "content": "[ ](https://www.linkedin.com/in/twanheijink/) - **Now:** Software IVQA Engineer at Thales - **2021:** [Graduated with B.Sc., Saxion Univ.](https://pof.tnw.utwente.nl/people/profile/1822) - Standing waves at a fluid-fluid interface with plastocapillarity",
-    "url": "https://comphy-lab.org/team/#twan-heijink-bsc",
-    "type": "website_section",
-    "priority": 1
-  },
-  {
-    "title": "Our Team & Collaborators - Steven Meuleman M.Sc.",
-    "content": "[ ](https://www.linkedin.com/in/steven-meuleman/) - **Now:** Mechanical Engineer at VIRO - **2020:** Graduated with B.Sc., Univ. Twente - Simulations of foam generation for a custom axisymmetric core-shell nozzle",
-    "url": "https://comphy-lab.org/team/#steven-meuleman-msc",
-    "type": "website_section",
-    "priority": 1
-  },
-  {
-    "title": "Our Team & Collaborators - Thijmen Kroeze M.Sc.",
-    "content": "[ ](https://www.linkedin.com/in/thijmen-kroeze-535aa3207/) - **Now:** CFD Engineer, Brink Climate Systems - **2020:** [Graduated with B.Sc., Univ. Twente](https://pof.tnw.utwente.nl/people/profile/1630) - Singular jet dynamics of drop impacts at high Bond numbers",
-    "url": "https://comphy-lab.org/team/#thijmen-kroeze-msc",
-    "type": "website_section",
-    "priority": 1
-  },
-  {
-    "title": "Our Team & Collaborators - Coen Verschuur M.Sc.",
-    "content": "- **Now:** [Ph.D. Student, Phys. Fluids - Univ. Twente](https://pof.tnw.utwente.nl/people/profile/1709) - **2020:** [Graduated with B.Sc., Univ. Twente](https://pof.tnw.utwente.nl/people/profile/1709) - Early time dynamics in immiscible drop impacts",
-    "url": "https://comphy-lab.org/team/#coen-verschuur-msc",
-    "type": "website_section",
-    "priority": 1
-  },
-  {
-    "title": "Our Team & Collaborators - Dr. Pim J. Dekker",
-    "content": "[ ](https://www.linkedin.com/in/pim-dekker/) - **Now:** [Researcher at Education Applied Physics Univ. Twente-TNW](https://pof.tnw.utwente.nl/people/profile/1431) - **2019:** [Graduated with B.Sc., Univ. Twente](https://pof.tnw.utwente.nl/people/profile/1431) - Spreading of a drop on a water-air interface",
-    "url": "https://comphy-lab.org/team/#dr-pim-j-dekker",
-    "type": "website_section",
-    "priority": 1
-  },
-  {
-    "title": "Our Team & Collaborators - Laurence Bruggink M.Sc.",
-    "content": "[ ](https://www.linkedin.com/in/laurence-bruggink-b733b222a/) - **Now:** Research Engineer at Alfen - **2019:** [Graduated with B.Sc., Univ. Twente](https://pof.tnw.utwente.nl/people/profile/1518) - Bursting bubble in a Herschel--Bulkley fluid",
-    "url": "https://comphy-lab.org/team/#laurence-bruggink-msc",
-    "type": "website_section",
+    "title": "Team: Function Definition",
+    "content": "Falls back to immediate load when IntersectionObserver isn't available. */ (function () { var frame = document.getElementById('team-map'); if (!frame) return; var loaded = false; function load() { if (loaded) return; loaded = true; frame.innerHTML = ' '; } if ('IntersectionObserver' in window) { var io = new IntersectionObserver(function (entries) { entries.forEach(function (e) { if (e.isIntersecting) { load(); io.disconnect(); } }); }, { rootMargin: '300px' }); io.observe(frame); } else { load(); } })();",
+    "url": "https://comphy-lab.org/team/",
+    "type": "website_content",
     "priority": 1
   },
   {
@@ -516,16 +236,9 @@
   },
   {
     "title": "\"High-Fidelity Simulations Using Basilisk C\"",
-    "content": "// Function to update image visibility based on theme function updateBannerImages() { const theme = document.documentElement.getAttribute('data-theme') || 'light'; const lightImages = document.querySelectorAll('.light-mode-img'); const darkImages = document.querySelectorAll('.dark-mode-img'); if (theme === 'dark') { lightImages.forEach(img => img.style.display = 'none'); darkImages.forEach(img => img.style.display = 'block'); } else { lightImages.forEach(img => img.style.display = 'block'); darkImages.forEach(img => img.style.display = 'none'); } } // Run on page load document.addEventListener('DOMContentLoaded', updateBannerImages); // Watch for theme changes const observer = new MutationObserver(function(mutations) { mutations.forEach(function(mutation) { if (mutation.attributeName === 'data-theme') { updateBannerImages(); } }); }); observer.observe(document.documentElement, { attributes: true });",
+    "content": "Dates March 10-13, 2025 Location Universidad Carlos III de Madrid, Spain Duration 4 days, full-time",
     "url": "https://comphy-lab.org/teaching/2025-Basilisk101-Madrid",
     "type": "website_content",
-    "priority": 3
-  },
-  {
-    "title": "\"High-Fidelity Simulations Using Basilisk C\" - High-Fidelity Simulations Using Basilisk C",
-    "content": "Dates March 10-13, 2025 Location Universidad Carlos III de Madrid, Spain Duration 4 days, full-time",
-    "url": "https://comphy-lab.org/teaching/2025-Basilisk101-Madrid#high-fidelity-simulations-using-basilisk-c",
-    "type": "website_section",
     "priority": 3
   },
   {
@@ -537,7 +250,7 @@
   },
   {
     "title": "\"High-Fidelity Simulations Using Basilisk C\" - Course Description",
-    "content": "This intensive 4-day course provides a comprehensive introduction to high-fidelity simulations using Basilisk C, a powerful computational framework for fluid dynamics. Participants will learn to implement and solve complex fluid mechanics problems with an emphasis on multiphase flows, interface dynamics, and non-Newtonian rheology. The course combines theoretical lectures with extensive hands-on sessions, allowing participants to immediately apply concepts through guided coding exercises. By the end of the course, you'll be able to develop your own simulations for a variety of fluid dynamics applications.",
+    "content": "This four-day course teaches Basilisk C through the equations and numerics used in multiphase-flow DNS: conservation laws, transport, interface tracking, and non-Newtonian rheology. Lectures stay close to implementation. Participants write and modify working Basilisk cases during the course, then use those cases as templates for their own simulations.",
     "url": "https://comphy-lab.org/teaching/2025-Basilisk101-Madrid#course-description",
     "type": "website_section",
     "priority": 3
@@ -600,44 +313,30 @@
   },
   {
     "title": "\"High-Fidelity Simulations Using Basilisk C\" - Registration",
-    "content": "For registration details, please contact bubbles@ing.uc3m.es vatsal.sanjay@durham.ac.uk function copyEmail(button) { const textToCopy = button.getAttribute('data-text'); // Create a temporary textarea element to copy from const textarea = document.createElement('textarea'); textarea.value = textToCopy; textarea.setAttribute('readonly', ''); textarea.style.position = 'absolute'; textarea.style.left = '-9999px'; document.body.appendChild(textarea); // Select and copy the text textarea.select(); document.execCommand('copy'); // Remove the temporary element document.body.removeChild(textarea); // Show feedback const originalIcon = button.innerHTML; button.innerHTML = ' '; button.classList.add('copied'); // Restore original state after a delay setTimeout(() => { button.innerHTML = originalIcon; button.classList.remove('copied'); }, 2000); } Course GitHub Repository",
+    "content": "For registration details, please contact bubbles@ing.uc3m.es vatsal.sanjay@durham.ac.uk Course GitHub Repository",
     "url": "https://comphy-lab.org/teaching/2025-Basilisk101-Madrid#registration",
     "type": "website_section",
     "priority": 3
   },
   {
-    "title": "Teaching - Teaching: Methods",
-    "content": "Welcome to the CoMPhy Lab's educational resources. Apart from the university courses, we aim to develop and offer a range of workshops and tutorials on modern computational methods for multiphase flows and high-fidelity simulations. High-Fidelity Simulations Using Basilisk C Universidad Carlos III de Madrid March 10-13, 2025 A comprehensive course on using Basilisk C for simulating multiphase flows, interface tracking, and solving conservation equations. Learn to tackle complex fluid dynamics problems with high-fidelity numerical methods. View Course Basilisk for Multiphase Flow Simulations European Coating Symposium 2025 September 15, 2025 Intensive 3-hour pre-conference training focused on coating applications. Learn Basilisk fundamentals through hands-on examples: heat conduction, drop impact dynamics, and Landau-Levich dip coating.",
-    "url": "https://comphy-lab.org/teaching/#teaching",
-    "type": "website_section",
+    "title": "Teaching",
+    "content": "High-Fidelity Simulations Using Basilisk C Universidad Carlos III de Madrid March 10-13, 2025 Four-day Basilisk C course on conservation laws, interface tracking, and non-Newtonian flow exercises. View Course Basilisk for Multiphase Flow Simulations European Coating Symposium 2025 September 15, 2025 Three-hour ECS session on heat conduction, drop impact, and Landau-Levich dip coating. View Course Introduction to Soft Matter Durham University Fall 2025 Lecture notes for the Durham soft-matter course. View Lecture Notes",
+    "url": "https://comphy-lab.org/teaching/",
+    "type": "website_content",
     "priority": 3
   },
   {
-    "title": "Teaching - Teaching: Introduction",
-    "content": "View Course Introduction to Soft Matter Durham University Fall 2025 Comprehensive lecture notes covering fundamental concepts in soft matter physics and their applications. View Lecture Notes",
-    "url": "https://comphy-lab.org/teaching/#teaching",
-    "type": "website_section",
-    "priority": 3
-  },
-  {
-    "title": "Teaching - About Our Teaching Philosophy",
-    "content": "At CoMPhy Lab, we believe in hands-on learning and deep understanding of computational methods. Our courses combine theoretical foundations with practical implementation, allowing students to develop both conceptual understanding and technical skills. Our teaching approach emphasizes: - **Think before you compute**: Understanding the underlying physics before implementation - **Modular code structure**: Building maintainable and extensible computational tools - **Advanced numerical methods**: Mastering state-of-the-art techniques for complex problems - **Open science**: Sharing knowledge and tools with the scientific community. Checkout If you're interested in hosting a course or workshop with CoMPhy Lab, please [contact us](/join) for collaboration opportunities.",
-    "url": "https://comphy-lab.org/teaching/#about-our-teaching-philosophy",
+    "title": "Teaching - How we teach",
+    "content": "We start from the physics, then write the code. Students derive or read the governing equations, implement a minimal case, and compare the output with scaling arguments, benchmarks, or experiments. Our teaching approach emphasizes: - **Think before you compute**: Understanding the underlying physics before implementation - **Modular code structure**: Building maintainable and extensible computational tools - **Numerical methods**: Using the right discretisation for the problem - **Open science**: Sharing knowledge and tools with the scientific community. Checkout If you're interested in hosting a course or workshop with CoMPhy Lab, please [contact us](/join) for collaboration opportunities.",
+    "url": "https://comphy-lab.org/teaching/#how-we-teach",
     "type": "website_section",
     "priority": 3
   },
   {
     "title": "\"Basilisk for Multiphase Flow Simulations\"",
-    "content": "// Function to update image visibility based on theme function updateBannerImages() { const theme = document.documentElement.getAttribute('data-theme') || 'light'; const lightImages = document.querySelectorAll('.light-mode-img'); const darkImages = document.querySelectorAll('.dark-mode-img'); if (theme === 'dark') { lightImages.forEach(img => img.style.display = 'none'); darkImages.forEach(img => img.style.display = 'block'); } else { lightImages.forEach(img => img.style.display = 'block'); darkImages.forEach(img => img.style.display = 'none'); } } // Run on page load document.addEventListener('DOMContentLoaded', updateBannerImages); // Watch for theme changes const observer = new MutationObserver(function(mutations) { mutations.forEach(function(mutation) { if (mutation.attributeName === 'data-theme') { updateBannerImages(); } }); }); observer.observe(document.documentElement, { attributes: true });",
+    "content": "Date September 15, 2025 Location European Coating Symposium 2025 Duration 3 hours (9:30 AM - 12:30 PM)",
     "url": "https://comphy-lab.org/teaching/2025-Basilisk101nano-ECS",
     "type": "website_content",
-    "priority": 3
-  },
-  {
-    "title": "\"Basilisk for Multiphase Flow Simulations\" - Basilisk for Multiphase Flow Simulations",
-    "content": "Date September 15, 2025 Location European Coating Symposium 2025 Duration 3 hours (9:30 AM - 12:30 PM)",
-    "url": "https://comphy-lab.org/teaching/2025-Basilisk101nano-ECS#basilisk-for-multiphase-flow-simulations",
-    "type": "website_section",
     "priority": 3
   },
   {
@@ -649,7 +348,7 @@
   },
   {
     "title": "\"Basilisk for Multiphase Flow Simulations\" - Course Description",
-    "content": "This intensive 3-hour pre-conference training provides a focused introduction to high-fidelity multiphase flow simulation using Basilisk C, a powerful open-source framework. Designed for ECS 2025 participants with intermediate CFD background, the course emphasizes practical applications to coating processes while building foundational skills in adaptive mesh refinement and interface dynamics. The hands-on format combines theoretical insights with live coding demonstrations, enabling participants to immediately apply concepts. Through three carefully selected examples\u2014basic heat conduction, drop impact dynamics, and Landau-Levich dip coating\u2014attendees will gain practical experience with Basilisk's approach to conservation equations, interface tracking, and complex physics modeling relevant to coating applications.",
+    "content": "This three-hour ECS 2025 session introduces Basilisk C for multiphase flow problems in coating applications. It assumes an intermediate CFD background and focuses on adaptive mesh refinement, interface tracking, and contact-line dynamics. The examples are deliberately small: heat conduction, drop impact, and Landau-Levich dip coating. Each one introduces a numerical ingredient that appears again in coating-flow simulations.",
     "url": "https://comphy-lab.org/teaching/2025-Basilisk101nano-ECS#course-description",
     "type": "website_section",
     "priority": 3
@@ -705,7 +404,7 @@
   },
   {
     "title": "\"Basilisk for Multiphase Flow Simulations\" - Expected Outcomes",
-    "content": "By the end of this intensive 3-hour session, participants will: - **Execute Basilisk simulations** confidently on their own systems - **Modify key parameters** to explore different physical scenarios - **Understand VOF methodology** for interface tracking in multiphase flows - **Apply to coating processes** through the Landau-Levich example - **Connect theory to practice** by relating simulation results to physical phenomena This training provides the foundation for applying high-fidelity simulation techniques to coating research, with immediate practical skills and clear pathways for advanced applications.",
+    "content": "By the end of the session, participants will be able to: - **Execute Basilisk simulations** confidently on their own systems - **Modify key parameters** to explore different physical scenarios - **Understand VOF methodology** for interface tracking in multiphase flows - **Apply to coating processes** through the Landau-Levich example - **Connect theory to practice** by relating simulation results to physical phenomena The point is practical: leave with a working Basilisk setup and a few small cases that can be modified after the workshop.",
     "url": "https://comphy-lab.org/teaching/2025-Basilisk101nano-ECS#expected-outcomes",
     "type": "website_section",
     "priority": 3
@@ -6690,14 +6389,21 @@
   },
   {
     "title": "\"Join Us\"",
-    "content": "We are always looking for enthusiastic researchers to join our group. We welcome applicants with strong backgrounds in physics, applied mathematics, or engineering, especially in continuum mechanics, numerics, and scientific computing. vatsal.sanjay@durham.ac.uk",
+    "content": "The lab takes PhD, MPhys/MSc, visiting, and postdoctoral researchers when the project and funding fit. Strong preparation in physics, applied mathematics, or engineering helps, especially in continuum mechanics, numerics, and scientific computing. vatsal.sanjay@durham.ac.uk",
     "url": "https://comphy-lab.org/join/",
     "type": "website_content",
     "priority": 4
   },
   {
+    "title": "\"Join Us\" - How we work",
+    "content": "We share code early and keep simulation repositories public whenever the paper allows it. Most projects use [GitHub](https://github.com/comphy-lab) from the start, so discussion happens around equations, runs, figures, and commits rather than around polished final files.",
+    "url": "https://comphy-lab.org/join/#how-we-work",
+    "type": "website_section",
+    "priority": 4
+  },
+  {
     "title": "\"Join Us\" - Current Research Projects",
-    "content": "To get an idea of the kind of projects we are interested in, please have a look at our current research topics (see [Research](/research)). Also, below are some of the ongoing research projects:",
+    "content": "These examples show the current scope. Details change with funding, timing, and the person joining the project.",
     "url": "https://comphy-lab.org/join/#current-research-projects",
     "type": "website_section",
     "priority": 4
@@ -6711,7 +6417,7 @@
   },
   {
     "title": "\"Join Us\" - From Champagne to Coughs: Modelling Droplet Formation",
-    "content": "Investigate how bubbles burst in complex fluids that behave like both liquids and elastic solids \u2014 from volcanic mudpots to respiratory mucus. Using Basilisk C simulations, discover how viscosity and elasticity control jet formation and droplet ejection when bubble cavities collapse. Map regimes where elastic stresses suppress or enhance jetting, with experimental validation from collaborators at Twente and Delft. [ View Project PDF](/assets/pdf-files/BubbleBursting.pdf){: .pdf-link }",
+    "content": "Model bubble bursting in complex fluids such as respiratory mucus and volcanic mudpots. Basilisk C simulations resolve capillary-wave focusing, viscoelastic stress buildup, jet formation, and droplet ejection; experiments at Twente and Delft validate the jetting regimes. [ View Project PDF](/assets/pdf-files/BubbleBursting.pdf){: .pdf-link }",
     "url": "https://comphy-lab.org/join/#from-champagne-to-coughs-modelling-droplet-formation",
     "type": "website_section",
     "priority": 4
@@ -6766,8 +6472,8 @@
     "priority": 4
   },
   {
-    "title": "\"Join Us\" - <span class=\"section-icon\"><i class=\"fa-solid fa-user-tie\"></i></span> Postdoctoral Positions: We occasionally have...",
-    "content": "We occasionally have openings for postdoctoral researchers to lead independent research projects within our computational multiphase physics framework. Postdoc positions offer excellent opportunities for career development and research leadership. **What we're looking for:** - PhD in Physics, Applied Mathematics, Mechanical Engineering, or related field - Strong background in computational fluid dynamics - Experience with numerical methods and high-performance computing - Independent research capabilities and leadership potential **Opportunities include:** - Leading research projects with PhD students - Developing new computational methods and tools - International collaborations and research visits - Grant writing and proposal development - Mentoring junior researchers When positions are available, they will be advertised here.",
+    "title": "\"Join Us\" - <span class=\"section-icon\"><i class=\"fa-solid fa-user-tie\"></i></span> Postdoctoral Positions: When funding is...",
+    "content": "When funding is available, postdocs lead projects in DNS of free-surface or non-Newtonian flows, maintain the accompanying code, and work with PhD and MPhys/MSc students. **What we're looking for:** - PhD in Physics, Applied Mathematics, Mechanical Engineering, or related field - Strong background in computational fluid dynamics - Experience with numerical methods and high-performance computing - Independent research capabilities and leadership potential **Opportunities include:** - Leading research projects with PhD students - Developing new computational methods and tools - International collaborations and research visits - Grant writing and proposal development - Mentoring junior researchers When positions are available, they will be advertised here.",
     "url": "https://comphy-lab.org/join/#span-classsection-iconi-classfa-solid-fa-user-tieispan-postdoctoral-positions",
     "type": "website_section",
     "priority": 4
@@ -6787,8 +6493,8 @@
     "priority": 4
   },
   {
-    "title": "\"Join Us\" - <span class=\"section-icon\"><i class=\"fa-solid fa-graduation-cap\"></i></span> PhD Positions: We are always...",
-    "content": "We are always looking for enthusiastic PhD students to join our research group and contribute to cutting-edge computational multiphase physics research. We offer fully funded positions with opportunities for international collaboration and conference participation. **Research Areas:** - High-performance Computing and Numerical Methods - Multiphase flows and Interface Dynamics - Physics-based Modeling and Simulation - Soft Singularities in Fluid Systems - Droplet Dynamics and Respiratory Physics **What we offer:** - Access to high-performance computing resources - Collaboration with leading international research groups - Conference attendance and networking opportunities - Mentorship in both research and career development **Admissions and studentships:** - Entry: First-class BSc or at least a 2:1 MPhys/MSc (or international equivalent).",
+    "title": "\"Join Us\" - <span class=\"section-icon\"><i class=\"fa-solid fa-graduation-cap\"></i></span> PhD Positions: PhD projects are...",
+    "content": "PhD projects are usually computational and sit in free-surface flow, soft singularities, or non-Newtonian rheology. Funded studentships are advertised here when available; strong candidates should make contact before the Durham ranking cycle. **Research Areas:** - High-performance Computing and Numerical Methods - Multiphase flows and Interface Dynamics - Physics-based Modeling and Simulation - Soft Singularities in Fluid Systems - Droplet Dynamics and Respiratory Physics **Lab support:** - Access to high-performance computing resources - Collaboration with leading international research groups - Conference attendance - Mentorship in both research and career development **Admissions and studentships:** - Entry: First-class BSc or at least a 2:1 MPhys/MSc (or international equivalent).",
     "url": "https://comphy-lab.org/join/#span-classsection-iconi-classfa-solid-fa-graduation-capispan-phd-positions",
     "type": "website_section",
     "priority": 4
@@ -6809,14 +6515,14 @@
   },
   {
     "title": "\"Join Us\" - <span class=\"section-icon\"><i class=\"fa-solid fa-book\"></i></span> Bachelor's/Master's/Level-4 Projects",
-    "content": "We offer exciting research projects for Bachelor's and Master's students interested in computational physics and fluid dynamics. These projects provide hands-on experience with cutting-edge simulation tools and real-world physics problems. **Project Types:** - Computational fluid dynamics simulations using state-of-the-art [numerical techniques](https://www.github.com/comphy-lab). - Data analysis and visualization of complex flow phenomena. - Development of numerical methods and algorithms. - Experimental-computational comparison studies. **What you'll gain:** - Experience with high-performance computing - Skills in scientific programming (C, Python, Julia, MATLAB) - Understanding of advanced numerical methods - Opportunity to contribute to published research Contact us to discuss project fit and scope for your specific interests and timeline. > See the projects above.",
+    "content": "Bachelor's, MPhys, and MSc projects usually involve a small DNS problem, a scaling argument, or data analysis tied to an active paper. **Project Types:** - Computational fluid dynamics simulations using [open-source numerical methods](https://www.github.com/comphy-lab). - Data analysis and visualization of complex flow phenomena. - Development of numerical methods and algorithms. - Experimental-computational comparison studies. **What you'll gain:** - Experience with high-performance computing - Skills in scientific programming (C, Python, Julia, MATLAB) - Understanding of advanced numerical methods - Opportunity to contribute to published research Contact us to discuss project fit and scope for your specific interests and timeline.",
     "url": "https://comphy-lab.org/join/#span-classsection-iconi-classfa-solid-fa-bookispan-bachelorsmasterslevel-4-projects",
     "type": "website_section",
     "priority": 4
   },
   {
-    "title": "\"Join Us\" - <span class=\"section-icon\"><i class=\"fa-solid fa-flask\"></i></span> Internships: We welcome motivated...",
-    "content": "We welcome motivated students for summer internships and short-term research projects. Our internship program provides intensive research experience in a collaborative environment. **Internship Details:** - Duration: 2-6 months (flexible based on academic calendar). - Focus on specific research questions within ongoing projects. - Close mentorship and regular progress meetings. - Opportunity to present results at group seminars. **Ideal candidates have:** - Background in physics, mathematics, or engineering. - Basic programming experience (any language). - Curiosity about soft matter, fluid mechanics and computational methods. - Strong motivation for hands-on research. **Application process:** Send a short note describing your interests and any prior experience, along with your transcript, to the email addresses above.",
+    "title": "\"Join Us\" - <span class=\"section-icon\"><i class=\"fa-solid fa-flask\"></i></span> Internships: Summer internships and...",
+    "content": "Summer internships and short research visits are possible when there is a well-scoped project and enough supervision time. **Internship Details:** - Duration: 2-6 months (flexible based on academic calendar). - Focus on specific research questions within ongoing projects. - Close mentorship and regular progress meetings. - Opportunity to present results at group seminars. **Ideal candidates have:** - Background in physics, mathematics, or engineering. - Basic programming experience (any language). - Curiosity about soft matter, fluid mechanics and computational methods. - Interest in hands-on research. **Application process:** Send a short note describing your interests and any prior experience, along with your transcript, to the email addresses above.",
     "url": "https://comphy-lab.org/join/#span-classsection-iconi-classfa-solid-fa-flaskispan-internships",
     "type": "website_section",
     "priority": 4
@@ -19122,211 +18828,204 @@
   },
   {
     "title": "Agents - AGENTS.md",
-    "content": "This file provides guidance to Codex (Codex.ai/code) when working with code in this repository.",
+    "content": "Operating notes for AI coding assistants (Claude Code, Codex, etc.) working in this repository. Treated as canonical; `CLAUDE.md` defers here.",
     "url": "https://comphy-lab.org#agents",
     "type": "website_section",
     "priority": 8
   },
   {
-    "title": "Agents - Repository Overview",
-    "content": "This repository contains the CoMPhy Lab website, a static site built with Jekyll for the Computational Multiphase Physics Laboratory. The site features research publications, team member information, teaching materials, and lab news.",
+    "title": "Agents - Repository overview",
+    "content": "Static Jekyll site for the CoMPhy (Computational Multiphase Physics) Lab \u2014 research publications, team profiles, teaching materials, lab news. Hosted on GitHub Pages at .",
     "url": "https://comphy-lab.org#agents",
     "type": "website_section",
     "priority": 8
   },
   {
-    "title": "Agents - Command Palette and Search System",
-    "content": "The website implements a sophisticated command palette system that requires coordination between multiple files: - **`command-palette.js`** must load before **`command-data.js`** (dependency order) - **Fuse.js** powers fuzzy search functionality - Search database (`search_db.json`) is maintained in a separate repository and updated via GitHub Actions - Context-aware commands based on current page location - Keyboard shortcut: \u2318K (Mac) / Ctrl+K (Windows)",
+    "title": "Agents - v2 design system",
+    "content": "The site is mid-migration to a \"v2\" design language: - **`assets/css/tokens.css`** \u2014 design tokens (`--c-*` brand colours, `--t-*` typography, `--s-*` spacing, `--r-*` radii). Single source of truth. - **`assets/css/bridge.css`** \u2014 loaded **after** `tokens.css` and `styles.css` so its `:root` declarations win. Maps legacy `--color-*`/`--font-*`/`--shadow-*` names onto v2 tokens, declares shared component primitives (panel, eyebrow, lede, chip, btn-ghost, paper-card, news-row, team-tile). - **v2 page stylesheets** \u2014 `home.css`, `team-v2.css`, `research-v2.css`, `footer-v2.css`, `about-layout.css`, `shared-news-history.css`, `join-us.css`. Coexist with legacy `styles.css`, `research.css`, `team.css`, `teaching.css`. When adding a new v2 page, prefer composing from bridge primitives over duplicating styles. Page-specific files only for genuinely page-specific rules.",
     "url": "https://comphy-lab.org#agents",
     "type": "website_section",
     "priority": 8
   },
   {
-    "title": "Agents - Theme System Architecture",
-    "content": "- CSS variables defined in `:root` for light theme, overridden in `[data-theme=\"dark\"]` - Theme state persisted in localStorage and synced across all pages - Page-specific theme variables in `research.css`, `teaching.css`, `team.css` - Smooth transitions between themes using CSS transitions",
+    "title": "Agents - Data-driven pages",
+    "content": "Several pages render from YAML rather than handwritten HTML: - **`_data/hero.yml`** \u2014 homepage hero section (slides, copy, eyebrow). - **`_data/news.yml`** \u2014 news items shown on the homepage and `/news/` archive (date, kind, title, meta, action). - **`_data/team.yml`** \u2014 present members, collaborators, alumni for the team page (name, role, photo, bio). - **`_data/research_themes.yml`** \u2014 research-themes block. The Jekyll collections (`_research/`, `_team/`, `_teaching/`, `_join-us/`) still drive their own pages. Team is the one with both a YAML feed and a collection, and `_team/index.md` is the rendered surface \u2014 the YAML is the content.",
     "url": "https://comphy-lab.org#agents",
     "type": "website_section",
     "priority": 8
   },
   {
-    "title": "Agents - Research Tag Filtering",
-    "content": "- Client-side JavaScript filtering with SEO-friendly static pages - Pre-generated tag pages that redirect to filtered views - Multiple URL variations for better SEO coverage - Tags must be added to `_research/index.md` using ` TagName ` format",
+    "title": "Agents - Layouts and includes",
+    "content": "- `_layouts/default.html` \u2014 base layout, used by everything except the collection-specific layouts below. - `_layouts/research.html`, `team.html`, `teaching.html`, `teaching-course.html`, `join-us.html`, `history.html` \u2014 collection / page layouts. - `_includes/footer-v2.html` \u2014 site footer (v2 footer is the only footer). - `_includes/theme-init.html`, `tokens-bridge.html`, `tokens-head.html` \u2014 early-load fragments for theme persistence and token wiring.",
     "url": "https://comphy-lab.org#agents",
     "type": "website_section",
     "priority": 8
   },
   {
-    "title": "Agents - Fix common issues",
-    "content": "./scripts/fix-script-order.sh # Fix script loading order ./scripts/fix-js-line-length.sh # Enforce 80 char limit ./scripts/fix-quotes.sh # Standardize to double quotes ```",
+    "title": "Agents - Command palette and search",
+    "content": "- `command-palette.js` must load **before** `command-data.js` (dependency order; `scripts/fix-script-order.sh` enforces this). - Fuse.js powers fuzzy search. - Search database (`search_db.json`) is generated and updated daily from the [comphy-lab/comphy-search](https://github.com/comphy-lab/comphy-search) repository via GitHub Actions; not edited by hand here. - Keyboard shortcut: \u2318K (Mac) / Ctrl+K (Windows).",
     "url": "https://comphy-lab.org#agents",
     "type": "website_section",
     "priority": 8
   },
   {
-    "title": "Agents - Adding Research Papers",
-    "content": "Add to `_research/index.md` with this exact format: ```markdown [NUMBER] Author1, A., **Author2, B.**, & Author3, C. Title. _Journal_, Volume, Pages (Year). Tag1 Tag2 Featured [![Badge](https://img.shields.io/static/v1.svg?style=flat-square&label=LABEL&message=MESSAGE&color=COLOR)](URL) ``` - Use `**Name**` for lab members - Add ` Featured ` tag to display on homepage (max 2) - ID attribute enables direct linking: `/research/#NUMBER`",
+    "title": "Agents - Theme system",
+    "content": "- CSS variables in `:root` for light, overridden under `[data-theme=\"dark\"]`. - Theme persisted in `localStorage`, applied early via `theme-init.html` to avoid FOUC.",
     "url": "https://comphy-lab.org#agents",
     "type": "website_section",
     "priority": 8
   },
   {
-    "title": "Agents - Team Member Format",
-    "content": "In `_team/index.md`: ```html ```",
+    "title": "Agents - Research tag filtering",
+    "content": "- Client-side JS filtering plus pre-generated tag pages for SEO. - Tags must use ` TagName ` in `_research/index.md`.",
+    "url": "https://comphy-lab.org#agents",
+    "type": "website_section",
+    "priority": 8
+  },
+  {
+    "title": "Agents - Redirect pages",
+    "content": "- `about.html` \u2014 Jekyll permalink `/about/`, redirects to `/`. Plain JS redirect with visible fallback link, mirrors the `contact.html` pattern. - `contact.html` \u2014 Jekyll permalink `/contact/`, redirects to `/join`.",
+    "url": "https://comphy-lab.org#agents",
+    "type": "website_section",
+    "priority": 8
+  },
+  {
+    "title": "Agents - Tests",
+    "content": "npm test npm test -- --coverage npm test -- command-data.test.js",
+    "url": "https://comphy-lab.org#agents",
+    "type": "website_section",
+    "priority": 8
+  },
+  {
+    "title": "Agents - Targeted fixers",
+    "content": "./scripts/fix-script-order.sh # enforces command-palette.js first ./scripts/fix-js-line-length.sh # 80-char enforcement ./scripts/fix-quotes.sh # standardises to double quotes",
+    "url": "https://comphy-lab.org#agents",
+    "type": "website_section",
+    "priority": 8
+  },
+  {
+    "title": "Agents - Lint teaching markdown locally (mirrors CI gate)",
+    "content": "npx markdownlint-cli2 --config .markdownlint-cli2.jsonc \\ \"_teaching/**/*.md\" \"assets/images/teaching/README.md\" npx prettier --check \"_teaching/**/*.md\" \"assets/images/teaching/README.md\" ```",
+    "url": "https://comphy-lab.org#agents",
+    "type": "website_section",
+    "priority": 8
+  },
+  {
+    "title": "Agents - Adding research papers",
+    "content": "Add to `_research/index.md` in this exact form: ```markdown [NUMBER] Author1, A., **Author2, B.**, & Author3, C. Title. _Journal_, Volume, Pages (Year). Tag1 Tag2 Featured [![Badge](https://img.shields.io/static/v1.svg?style=flat-square&label=LABEL&message=MESSAGE&color=COLOR)](URL) ``` - Use `**Name**` for lab members. - Add ` Featured ` to display on the homepage (max 2). - The `id` attribute enables direct linking: `/research/#NUMBER`.",
+    "url": "https://comphy-lab.org#agents",
+    "type": "website_section",
+    "priority": 8
+  },
+  {
+    "title": "Agents - Team members",
+    "content": "Edit `_data/team.yml`. The team page (`_team/index.md` + `team.html` layout) renders from this data. Photo files live under `assets/images/team/` (1:1 crop, used at `--r-md` radius). Bio lines are line-clamped per section (3 lines for present, 4 for collaborators, unset for alumni).",
     "url": "https://comphy-lab.org#agents",
     "type": "website_section",
     "priority": 8
   },
   {
     "title": "Agents - News",
-    "content": "Managing news items across the site: - **Using slash command**: `/add-news \"Your news content here\"` - automatically handles both News.md and history.md - **Manual editing**: - Add to both `News.md` (main page) and `history.md` (archive) - News.md maintains only 5 most recent items (plus pinned Durham announcement) - Format: `- News content` under `### Month Year` headers - **Important notes**: - Pinned items have no month/year header - Maintain blank lines between sections - Months appear in reverse chronological order within each year - Older items removed from News.md remain in history.md",
+    "content": "- **Slash command**: `/add-news \"Your news content here\"` \u2014 see \"Custom slash commands\" below. - **Manual**: edit `_data/news.yml` (the source of truth for the homepage feed and `/news/` archive), then mirror to `News.md` and `history.md`. `News.md` keeps only the 5 most recent legacy items plus the pinned Durham announcement; older items live on in `history.md` and `_data/news.yml`. - Format: `- News content` under `### Month Year` headers; pinned items have no header. Months are reverse-chronological within each year.",
     "url": "https://comphy-lab.org#agents",
     "type": "website_section",
     "priority": 8
   },
   {
-    "title": "Agents - Teaching Course Pages",
-    "content": "- Main page: `_teaching/index.md` (uses `teaching` layout) - Course pages: `_teaching/YYYY-CourseName-Location.md` (uses `teaching-course` layout) - Images: Store in `/assets/images/teaching/` (600x400px for cards, 1200x400px for banners)",
+    "title": "Agents - Teaching",
+    "content": "- Main page: `_teaching/index.md` (uses the `teaching` layout, sorts and filters courses). - Course pages: `_teaching/YYYY-CourseName-Location.md` (uses `teaching-course` layout). - Images: `/assets/images/teaching/` \u2014 600x400 for cards, 1200x400 for banners.",
     "url": "https://comphy-lab.org#agents",
     "type": "website_section",
     "priority": 8
   },
   {
-    "title": "Agents - Script Dependencies",
-    "content": "The lint-check.sh script automatically fixes these, but be aware: - Fuse.js must load before any search functionality - command-palette.js must load before command-data.js - Theme initialization must happen early in page load",
+    "title": "Agents - Script dependencies",
+    "content": "Enforced by `lint-check.sh`, but worth keeping in mind: - Fuse.js loads before any search code. - `command-palette.js` loads before `command-data.js`. - `theme-init.html` runs as early as possible to avoid theme flash.",
     "url": "https://comphy-lab.org#agents",
     "type": "website_section",
     "priority": 8
   },
   {
-    "title": "Agents - Pre-commit Hooks",
-    "content": "Automatically installed via setup.sh using Husky: - ESLint with auto-fix for JavaScript - Prettier for formatting - markdownlint for Markdown files - Only staged files are checked - Bypass with `git commit --no-verify` in emergencies",
+    "title": "Agents - Pre-commit hooks",
+    "content": "Installed by `setup.sh` via Husky: - ESLint with auto-fix for JS. - Prettier for JS/CSS/JSON/YAML formatting. - markdownlint-cli2 for Markdown. - Only staged files are checked. - Bypass with `git commit --no-verify` only in real emergencies.",
     "url": "https://comphy-lab.org#agents",
     "type": "website_section",
     "priority": 8
   },
   {
-    "title": "Agents - Search Database Updates",
-    "content": "- Maintained in [comphy-lab/comphy-search](https://github.com/comphy-lab/comphy-search) repository - Updated daily via GitHub Actions - Includes blog content from blogs.comphy-lab.org - Manual trigger available in Actions tab",
+    "title": "Agents - Search database updates",
+    "content": "Maintained externally in [comphy-lab/comphy-search](https://github.com/comphy-lab/comphy-search). Updated daily via GitHub Actions and pulled into `assets/js/search_db.json`. Includes blog content from blogs.comphy-lab.org. Manual trigger available in the Actions tab.",
     "url": "https://comphy-lab.org#agents",
     "type": "website_section",
     "priority": 8
   },
   {
-    "title": "Agents - CSS Variable System",
-    "content": "Key variables for customization: ```css /* Colors */ --primary-color, --secondary-color, --accent-color --text-color, --bg-color, --card-bg /* Typography */ --font-family-serif, --font-family-sans /* Spacing */ --spacing-unit, --content-max-width /* Shadows & Transitions */ --shadow-sm, --shadow-md, --transition-speed ```",
+    "title": "Agents - Content-rules CI",
+    "content": "The `content-rules` workflow validates `history.md` chronological ordering and `_research/index.md` tag markup. Trigger paths must match the validated-file set; `scripts/check-content-rules-trigger-parity.py` enforces this. If you add a new file to the validator, also add its path to `.github/workflows/content-rules-checks.yml`.",
     "url": "https://comphy-lab.org#agents",
     "type": "website_section",
     "priority": 8
   },
   {
-    "title": "Agents - Test Coverage Areas",
-    "content": "- Command palette functionality (navigation, search, keyboard shortcuts) - Line breaking utilities (80-character enforcement) - Platform detection (Mac vs Windows shortcuts) - Teaching page sorting algorithms - Browser API mocks in `setup.js`",
+    "title": "Agents - Coverage areas",
+    "content": "- Command palette (navigation, search, keyboard shortcuts). - Line-breaking utilities (80-char enforcement). - Platform detection (Mac vs Windows shortcuts). - Teaching page sorting. - Featured-papers homepage media handling regression. - Browser API mocks in `tests/setup.js`.",
     "url": "https://comphy-lab.org#agents",
     "type": "website_section",
     "priority": 8
   },
   {
-    "title": "Agents - Build Process",
-    "content": "The build.sh script performs these operations in sequence: 1. Jekyll build with production environment 2. Search database generation (if in GitHub Actions) 3. SEO tag generation 4. Filtered research page creation",
+    "title": "Agents - Running specific tests",
+    "content": "```bash npm test -- command-data.test.js npm test -- --watch node scripts/simple-test.js # quick validation without Jest ```",
     "url": "https://comphy-lab.org#agents",
     "type": "website_section",
     "priority": 8
   },
   {
-    "title": "Agents - Asset Optimization",
-    "content": "- Images should be optimized before adding - Use WebP format where possible - Lazy loading implemented for images - CSS consolidated by breakpoint for better caching",
+    "title": "Agents - Build process",
+    "content": "`scripts/build.sh` runs (in order): 1. Jekyll build (production env). 2. Search database fetch (in CI only). 3. SEO tag generation. 4. Filtered research tag pages.",
     "url": "https://comphy-lab.org#agents",
     "type": "website_section",
     "priority": 8
   },
   {
-    "title": "Agents - File Management",
-    "content": "- ALWAYS prefer editing existing files over creating new ones - Developer documentation (README.md, CONTRIBUTING.md, etc.) should NEVER be created unless explicitly requested - Site content markdown files (research papers, news items, teaching pages) follow their specific workflows: - Research: Add to `_research/index.md` following the documented format - News: Use `/add-news` command or edit `News.md` and `history.md` - Teaching: Create course pages in `_teaching/` directory when adding new courses - Follow existing patterns in the codebase",
+    "title": "Agents - Asset optimisation",
+    "content": "- WebP where possible; optimise before adding. - Lazy loading on images. - CSS organised by breakpoint (1700, 1300, 900, 768, 500) for cache hits.",
     "url": "https://comphy-lab.org#agents",
     "type": "website_section",
     "priority": 8
   },
   {
-    "title": "Agents - Code Style",
-    "content": "- 80-character line limit for JavaScript - Double quotes for strings - ES6+ features (arrow functions, const/let, async/await) - Mobile-first CSS with min-width media queries - BEM naming for CSS classes",
+    "title": "Agents - File management",
+    "content": "- ALWAYS prefer editing existing files over creating new ones. - Developer docs (READMEs, CONTRIBUTING) are not created unless asked. - Site content follows its specific workflow (research / news / teaching / team \u2014 see \"Content management\" above).",
     "url": "https://comphy-lab.org#agents",
     "type": "website_section",
     "priority": 8
   },
   {
-    "title": "Agents - Git Workflow",
-    "content": "- Work on feature branches - Run `./scripts/lint-check.sh` before committing - Ensure tests pass with `npm test` - Reference issue numbers in commits",
+    "title": "Agents - Code style",
+    "content": "- 80-char line limit for JavaScript. - Double quotes for strings. - ES6+ (arrow functions, const/let, async/await). - Mobile-first CSS; min-width media queries. - BEM naming for CSS classes (`.s-header__nav-list`, `.news-item__body`). - Compose from `bridge.css` primitives where possible.",
     "url": "https://comphy-lab.org#agents",
     "type": "website_section",
     "priority": 8
   },
   {
-    "title": "Agents - /add-news: Adds a news...",
-    "content": "Adds a news item to both News.md and history.md while maintaining the 5-item limit on the main page. **Workflow:** 1. Add the news item to the appropriate month/year section in both files 2. If month/year doesn't exist, create it 3. Keep only 5 most recent news items in News.md (excluding the pinned Durham announcement) 4. Preserve the pinned item (recognized by not having ### Month header above it) **Usage:** ```bash /add-news \"Your news content here\" ``` **Implementation steps:** 1. Read both News.md and history.md 2. Ask for month/year if not provided or unclear 3. Add to history.md in reverse chronological position (latest first) 4. Add to News.md in reverse chronological position (latest first) 5. Count non-pinned news items in News.md 6. If count > 5, remove oldest items from News.md only 7.",
+    "title": "Agents - Git workflow",
+    "content": "- Work on feature branches. - Run `./scripts/lint-check.sh` and `npm test` before committing. - Reference issue numbers in commits where relevant. - Don't bypass hooks (`--no-verify`) unless explicitly authorised.",
     "url": "https://comphy-lab.org#agents",
     "type": "website_section",
     "priority": 8
   },
   {
-    "title": "Agents - /add-news: Save both files...",
-    "content": "Save both files **Important notes:** - The pinned Durham announcement has no month/year header - News items start with \"- \" (dash and space) - Maintain blank lines between sections for proper formatting - In history.md, years are sorted descending (newest first) - Within a year, months appear in reverse chronological order",
+    "title": "Agents - Custom slash commands",
+    "content": "The canonical definitions for `/add-news` and the other content skills live outside this repository (in the agent system that invoked them). The repo previously contained an `.agents/skills/` mirror, which was removed deliberately to avoid drift. The notes below describe the expected behaviour so non-agent contributors can follow the same recipe manually.",
     "url": "https://comphy-lab.org#agents",
     "type": "website_section",
     "priority": 8
   },
   {
-    "title": "Aboutcomphy - About Us",
-    "content": "We investigate [**non-Newtonian free-surface flows**](/research/?tag=Non-Newtonian) and [**soft matter singularities**](/research/?tag=Soft-matter-singularities). Our group employs a synergy of continuum simulations, experiments (through collaborations), and theoretical analysis to understand phenomena ranging involving drops, bubbles, jets, sheets, and more. We strive to connect fundamental findings with real-world applications, from industrial processes to everyday fluid dynamics.",
-    "url": "https://comphy-lab.org/#about",
-    "type": "website_section",
-    "priority": 8
-  },
-  {
-    "title": "Aboutcomphy - Soft Matter Singularities",
-    "content": "We examine topological transitions in fluid systems\u2014such as [**droplet impact**](/research/?tag=Drops), [**bubble bursting**](/research/?tag=Bubbles), and [**sheet fragmentation**](/research/?tag=Sheets) \u2014 where local instabilities drive fast, often dramatic flow dynamics. Our goal is to expose the universal mechanisms governing these [**singular**](/research/?tag=Soft-matter-singularities) events in soft matter.",
-    "url": "https://comphy-lab.org/#about",
-    "type": "website_section",
-    "priority": 8
-  },
-  {
-    "title": "Aboutcomphy - Non-Newtonian Flows as the `Drosophila' of Continuum Mechanics",
-    "content": "From [**elastoviscoplastic**](/research/?tag=Non-Newtonian) bubble bursting and elastic sheet break-up to champagne [**bubble**](/research/?tag=Bubbles) bursting and classical Taylor\u2013Culick retractions, non-Newtonian fluids serve as model systems to explore the fundamentals of continuum mechanics. By integrating high-fidelity simulations, analytical frameworks, and collaborative experiments, we reveal how microstructural stresses affect fluid and solid dynamics. This research provides key insights for industrial and environmental applications.",
-    "url": "https://comphy-lab.org/#about",
-    "type": "website_section",
-    "priority": 8
-  },
-  {
-    "title": "Aboutcomphy - Viscous Free-Surface Flows",
-    "content": "We investigate various viscous free-surface flows including inertial contact lines, [**bubble**](/research/?tag=Bubbles) removal, and focusing of [**waves**](/research/?tag=Waves). These phenomena are critical to energy transitions and manufacturing. For instance, a key challenge is optimizing bubble detachment in electrolysis to boost efficiency. This research involves advanced numerical methods and industry partnerships, with the broader aim of advancing technologies from chemical reactors to printing processes.",
-    "url": "https://comphy-lab.org/#about",
-    "type": "website_section",
-    "priority": 8
-  },
-  {
-    "title": "Aboutcomphy - Commitment to Open Science",
-    "content": "Open exchange of ideas drives our progress. We share our codes from the earliest stages of development, embracing transparent research practices to foster collaboration and reproducibility. We welcome inquiries and partnerships from the broader scientific community. Watchout for [![GitHub](https://img.shields.io/badge/GitHub-100000?style=flat-square&logo=github&logoColor=white)](https://github.com/comphy-lab) and [ ](https://github.com/comphy-lab \"Visit our GitHub organization\") on this website to interact with our codes. Feel free to contact us for discussions about our work or anything else related to fluid physics. Nothing is more exhilarating than a healthy scientific discussion.",
-    "url": "https://comphy-lab.org/#about",
-    "type": "website_section",
-    "priority": 8
-  },
-  {
-    "title": "Aboutcomphy - Location & Website",
-    "content": "[![Location](https://img.shields.io/badge/-Durham%20University-4285F4?style=flat&logo=googlemaps&logoColor=white)](https://maps.app.goo.gl/btdPViKxEoXFmVxM9) [![Website](https://img.shields.io/badge/-comphy--lab.org-4285F4?style=flat&logo=googlechrome&logoColor=white)](http://www.comphy-lab.org) vatsal.sanjay@durham.ac.uk",
-    "url": "https://comphy-lab.org/#about",
-    "type": "website_section",
-    "priority": 8
-  },
-  {
-    "title": "Aboutcomphy - Academic Profiles",
-    "content": "[![Google Scholar](https://img.shields.io/badge/-Google%20Scholar-4285F4?style=flat&logo=googlescholar&logoColor=white)](https://scholar.google.com/citations?user=tHb_qZoAAAAJ&hl=en) [![ORCID](https://img.shields.io/badge/-ORCID-A6CE39?style=flat&logo=orcid&logoColor=white)](https://orcid.org/0000-0002-4293-6099) [![arXiv](https://img.shields.io/badge/-arXiv-B31B1B?style=flat&logo=arxiv&logoColor=white)](https://arxiv.org/search/?query=vatsal+sanjay&searchtype=all&source=header) [![ResearchGate](https://img.shields.io/badge/-ResearchGate-00CCBB?style=flat&logo=researchgate&logoColor=white)](https://www.researchgate.net/profile/Vatsal-Sanjay-2)",
-    "url": "https://comphy-lab.org/#about",
-    "type": "website_section",
-    "priority": 8
-  },
-  {
-    "title": "Aboutcomphy - Social Media",
-    "content": "[![X](https://img.shields.io/badge/-@CoMPhyLab-000000?style=flat&logo=x&logoColor=white)](https://twitter.com/VatsalSanjay) [![Bluesky](https://img.shields.io/badge/-@comphy--lab.org-0285FF?style=flat&logo=bluesky&logoColor=white)](https://bsky.app/profile/comphy-lab.org) For supplementary videos and teaser of our upcoming work:",
-    "url": "https://comphy-lab.org/#about",
+    "title": "Agents - /add-news",
+    "content": "Adds a news item to `_data/news.yml`, `News.md`, and `history.md` while maintaining the 5-item limit on `News.md`. `_data/news.yml` is the visible source for the homepage and `/news/`. **Workflow**: 1. Add a structured item to `_data/news.yml` in reverse-chronological position with `date`, `kind`, `title`, `meta`, `action_label`, `action_href`. 2. Add the item to the matching `### Month Year` section in `history.md`. 3. Add the item to `News.md` in the same section. 4. If the count of non-pinned items in `News.md` exceeds 5, remove the oldest from `News.md` only (`history.md` keeps everything). 5. Save all three files. **Rules**: - The pinned Durham announcement has no month/year header \u2014 preserve it. - News items use the `- News content` bullet form (dash + space + text). - Maintain blank lines between sections. - Years descend in `history.md`; months descend within each year.",
+    "url": "https://comphy-lab.org#agents",
     "type": "website_section",
     "priority": 8
   },
@@ -19352,8 +19051,8 @@
     "priority": 8
   },
   {
-    "title": "News - <i class=\"fa-solid fa-graduation-cap gradcap-icon\"></i> CoMPhy Lab is Moving to Durham University!",
-    "content": "Join Us Starting July 1st, 2025 , the CoMPhy Lab will be relocating to Durham University, UK. We are excited to join the [Condensed Matter Physics section](https://www.durham.ac.uk/research/institutes-and-centres/condensed-matter-physics/) in the [Department of Physics](https://www.durham.ac.uk/departments/academic/physics/) and continue our research in computational physics and fluid dynamics in our new home.",
+    "title": "News - <i class=\"fa-solid fa-graduation-cap gradcap-icon\"></i> CoMPhy Lab at Durham University",
+    "content": "Join Us Since July 1st, 2025 , the CoMPhy Lab has been based at Durham University, UK, in the [Condensed Matter Physics section](https://www.durham.ac.uk/research/institutes-and-centres/condensed-matter-physics/) of the [Department of Physics](https://www.durham.ac.uk/departments/academic/physics/).",
     "url": "https://comphy-lab.org#news",
     "type": "website_section",
     "priority": 8
@@ -19376,167 +19075,6 @@
     "title": "News - September",
     "content": "- [Saini, M., Sanjay, V. , Saade, Y., Lohse, D., & Popinet, S. Implementation of integral surface tension formulations in a volume of fluid framework and their applications to Marangoni flows. J. Comput. Phys., 542, 114348 (2025).](/research#18)",
     "url": "https://comphy-lab.org#news",
-    "type": "website_section",
-    "priority": 8
-  },
-  {
-    "title": "Claude - CLAUDE.md",
-    "content": "This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.",
-    "url": "https://comphy-lab.org#claude",
-    "type": "website_section",
-    "priority": 8
-  },
-  {
-    "title": "Claude - Repository Overview",
-    "content": "This repository contains the CoMPhy Lab website, a static site built with Jekyll for the Computational Multiphase Physics Laboratory. The site features research publications, team member information, teaching materials, and lab news.",
-    "url": "https://comphy-lab.org#claude",
-    "type": "website_section",
-    "priority": 8
-  },
-  {
-    "title": "Claude - Command Palette and Search System",
-    "content": "The website implements a sophisticated command palette system that requires coordination between multiple files: - **`command-palette.js`** must load before **`command-data.js`** (dependency order) - **Fuse.js** powers fuzzy search functionality - Search database (`search_db.json`) is maintained in a separate repository and updated via GitHub Actions - Context-aware commands based on current page location - Keyboard shortcut: \u2318K (Mac) / Ctrl+K (Windows)",
-    "url": "https://comphy-lab.org#claude",
-    "type": "website_section",
-    "priority": 8
-  },
-  {
-    "title": "Claude - Theme System Architecture",
-    "content": "- CSS variables defined in `:root` for light theme, overridden in `[data-theme=\"dark\"]` - Theme state persisted in localStorage and synced across all pages - Page-specific theme variables in `research.css`, `teaching.css`, `team.css` - Smooth transitions between themes using CSS transitions",
-    "url": "https://comphy-lab.org#claude",
-    "type": "website_section",
-    "priority": 8
-  },
-  {
-    "title": "Claude - Research Tag Filtering",
-    "content": "- Client-side JavaScript filtering with SEO-friendly static pages - Pre-generated tag pages that redirect to filtered views - Multiple URL variations for better SEO coverage - Tags must be added to `_research/index.md` using ` TagName ` format",
-    "url": "https://comphy-lab.org#claude",
-    "type": "website_section",
-    "priority": 8
-  },
-  {
-    "title": "Claude - Fix common issues",
-    "content": "./scripts/fix-script-order.sh # Fix script loading order ./scripts/fix-js-line-length.sh # Enforce 80 char limit ./scripts/fix-quotes.sh # Standardize to double quotes",
-    "url": "https://comphy-lab.org#claude",
-    "type": "website_section",
-    "priority": 8
-  },
-  {
-    "title": "Claude - Lint teaching markdown files locally (mirrors CI gate)",
-    "content": "npx markdownlint-cli2 --config .markdownlint-cli2.jsonc \"_teaching/**/*.md\" \"assets/images/teaching/README.md\" npx prettier --check \"_teaching/**/*.md\" \"assets/images/teaching/README.md\" ```",
-    "url": "https://comphy-lab.org#claude",
-    "type": "website_section",
-    "priority": 8
-  },
-  {
-    "title": "Claude - Adding Research Papers",
-    "content": "Add to `_research/index.md` with this exact format: ```markdown [NUMBER] Author1, A., **Author2, B.**, & Author3, C. Title. _Journal_, Volume, Pages (Year). Tag1 Tag2 Featured [![Badge](https://img.shields.io/static/v1.svg?style=flat-square&label=LABEL&message=MESSAGE&color=COLOR)](URL) ``` - Use `**Name**` for lab members - Add ` Featured ` tag to display on homepage (max 2) - ID attribute enables direct linking: `/research/#NUMBER`",
-    "url": "https://comphy-lab.org#claude",
-    "type": "website_section",
-    "priority": 8
-  },
-  {
-    "title": "Claude - Team Member Format",
-    "content": "In `_team/index.md`: ```html ```",
-    "url": "https://comphy-lab.org#claude",
-    "type": "website_section",
-    "priority": 8
-  },
-  {
-    "title": "Claude - News",
-    "content": "Managing news items across the site: - **Using slash command**: `/add-news \"Your news content here\"` - automatically handles both News.md and history.md - **Manual editing**: - Add to both `News.md` (main page) and `history.md` (archive) - News.md maintains only 5 most recent items (plus pinned Durham announcement) - Format: `- News content` under `### Month Year` headers - **Important notes**: - Pinned items have no month/year header - Maintain blank lines between sections - Months appear in reverse chronological order within each year - Older items removed from News.md remain in history.md",
-    "url": "https://comphy-lab.org#claude",
-    "type": "website_section",
-    "priority": 8
-  },
-  {
-    "title": "Claude - Teaching Course Pages",
-    "content": "- Main page: `_teaching/index.md` (uses `teaching` layout) - Course pages: `_teaching/YYYY-CourseName-Location.md` (uses `teaching-course` layout) - Images: Store in `/assets/images/teaching/` (600x400px for cards, 1200x400px for banners)",
-    "url": "https://comphy-lab.org#claude",
-    "type": "website_section",
-    "priority": 8
-  },
-  {
-    "title": "Claude - Script Dependencies",
-    "content": "The lint-check.sh script automatically fixes these, but be aware: - Fuse.js must load before any search functionality - command-palette.js must load before command-data.js - Theme initialization must happen early in page load",
-    "url": "https://comphy-lab.org#claude",
-    "type": "website_section",
-    "priority": 8
-  },
-  {
-    "title": "Claude - Pre-commit Hooks",
-    "content": "Automatically installed via setup.sh using Husky: - ESLint with auto-fix for JavaScript - Prettier for formatting - markdownlint for Markdown files - Only staged files are checked - Bypass with `git commit --no-verify` in emergencies",
-    "url": "https://comphy-lab.org#claude",
-    "type": "website_section",
-    "priority": 8
-  },
-  {
-    "title": "Claude - Search Database Updates",
-    "content": "- Maintained in [comphy-lab/comphy-search](https://github.com/comphy-lab/comphy-search) repository - Updated daily via GitHub Actions - Includes blog content from blogs.comphy-lab.org - Manual trigger available in Actions tab",
-    "url": "https://comphy-lab.org#claude",
-    "type": "website_section",
-    "priority": 8
-  },
-  {
-    "title": "Claude - CSS Variable System",
-    "content": "Key variables for customization: ```css /* Colors */ --primary-color, --secondary-color, --accent-color --text-color, --bg-color, --card-bg /* Typography */ --font-family-serif, --font-family-sans /* Spacing */ --spacing-unit, --content-max-width /* Shadows & Transitions */ --shadow-sm, --shadow-md, --transition-speed ```",
-    "url": "https://comphy-lab.org#claude",
-    "type": "website_section",
-    "priority": 8
-  },
-  {
-    "title": "Claude - Test Coverage Areas",
-    "content": "- Command palette functionality (navigation, search, keyboard shortcuts) - Line breaking utilities (80-character enforcement) - Platform detection (Mac vs Windows shortcuts) - Teaching page sorting algorithms - Browser API mocks in `setup.js`",
-    "url": "https://comphy-lab.org#claude",
-    "type": "website_section",
-    "priority": 8
-  },
-  {
-    "title": "Claude - Build Process",
-    "content": "The build.sh script performs these operations in sequence: 1. Jekyll build with production environment 2. Search database generation (if in GitHub Actions) 3. SEO tag generation 4. Filtered research page creation",
-    "url": "https://comphy-lab.org#claude",
-    "type": "website_section",
-    "priority": 8
-  },
-  {
-    "title": "Claude - Asset Optimization",
-    "content": "- Images should be optimized before adding - Use WebP format where possible - Lazy loading implemented for images - CSS consolidated by breakpoint for better caching",
-    "url": "https://comphy-lab.org#claude",
-    "type": "website_section",
-    "priority": 8
-  },
-  {
-    "title": "Claude - File Management",
-    "content": "- ALWAYS prefer editing existing files over creating new ones - Developer documentation (README.md, CONTRIBUTING.md, etc.) should NEVER be created unless explicitly requested - Site content markdown files (research papers, news items, teaching pages) follow their specific workflows: - Research: Add to `_research/index.md` following the documented format - News: Use `/add-news` command or edit `News.md` and `history.md` - Teaching: Create course pages in `_teaching/` directory when adding new courses - Follow existing patterns in the codebase",
-    "url": "https://comphy-lab.org#claude",
-    "type": "website_section",
-    "priority": 8
-  },
-  {
-    "title": "Claude - Code Style",
-    "content": "- 80-character line limit for JavaScript - Double quotes for strings - ES6+ features (arrow functions, const/let, async/await) - Mobile-first CSS with min-width media queries - BEM naming for CSS classes",
-    "url": "https://comphy-lab.org#claude",
-    "type": "website_section",
-    "priority": 8
-  },
-  {
-    "title": "Claude - Git Workflow",
-    "content": "- Work on feature branches - Run `./scripts/lint-check.sh` before committing - Ensure tests pass with `npm test` - Reference issue numbers in commits",
-    "url": "https://comphy-lab.org#claude",
-    "type": "website_section",
-    "priority": 8
-  },
-  {
-    "title": "Claude - /add-news: Adds a news...",
-    "content": "Adds a news item to both News.md and history.md while maintaining the 5-item limit on the main page. **Workflow:** 1. Add the news item to the appropriate month/year section in both files 2. If month/year doesn't exist, create it 3. Keep only 5 most recent news items in News.md (excluding the pinned Durham announcement) 4. Preserve the pinned item (recognized by not having ### Month header above it) **Usage:** ```bash /add-news \"Your news content here\" ``` **Implementation steps:** 1. Read both News.md and history.md 2. Ask for month/year if not provided or unclear 3. Add to history.md in reverse chronological position (latest first) 4. Add to News.md in reverse chronological position (latest first) 5. Count non-pinned news items in News.md 6. If count > 5, remove oldest items from News.md only 7.",
-    "url": "https://comphy-lab.org#claude",
-    "type": "website_section",
-    "priority": 8
-  },
-  {
-    "title": "Claude - /add-news: Save both files...",
-    "content": "Save both files **Important notes:** - The pinned Durham announcement has no month/year header - News items start with \"- \" (dash and space) - Maintain blank lines between sections for proper formatting - In history.md, years are sorted descending (newest first) - Within a year, months appear in reverse chronological order",
-    "url": "https://comphy-lab.org#claude",
     "type": "website_section",
     "priority": 8
   },
@@ -19577,7 +19115,7 @@
   },
   {
     "title": "Fix summary - Test Results",
-    "content": "| Suite | Result | |---|---| | `jest` (all 9 suites, 51 tests) | **PASS** | | `tests/deploy-script-regression.sh` (9 scenarios) | **PASS** | | `scripts/validate-content-rules.sh` | **PASS** |",
+    "content": "| Suite | Result | | --- | --- | | `jest` (all 9 suites, 51 tests) | **PASS** | | `tests/deploy-script-regression.sh` (9 scenarios) | **PASS** | | `scripts/validate-content-rules.sh` | **PASS** |",
     "url": "https://comphy-lab.org#fix-summary",
     "type": "website_section",
     "priority": 8
@@ -19604,8 +19142,8 @@
     "priority": 8
   },
   {
-    "title": "History - <i class=\"fa-solid fa-graduation-cap gradcap-icon\"></i> CoMPhy Lab is Moving to Durham University!",
-    "content": "Join Us Starting July 1st, 2025 , the CoMPhy Lab will be relocating to Durham University, UK. We are excited to join the [Condensed Matter Physics section](https://www.durham.ac.uk/research/institutes-and-centres/condensed-matter-physics/) in the [Department of Physics](https://www.durham.ac.uk/departments/academic/physics/) and continue our research in computational physics and fluid dynamics in our new home.",
+    "title": "History - <i class=\"fa-solid fa-graduation-cap gradcap-icon\"></i> CoMPhy Lab at Durham University",
+    "content": "Join Us Since July 1st, 2025 , the CoMPhy Lab has been based at Durham University, UK, in the [Condensed Matter Physics section](https://www.durham.ac.uk/research/institutes-and-centres/condensed-matter-physics/) of the [Department of Physics](https://www.durham.ac.uk/departments/academic/physics/).",
     "url": "https://comphy-lab.org#history",
     "type": "website_section",
     "priority": 8
@@ -19668,7 +19206,7 @@
   },
   {
     "title": "History - March",
-    "content": "- Prof. Detlef Lohse shares his scientific journey in The Living Histories Series . His inspiring discussion on curiosity, mentorship, and the \"puzzle solving\" joy of science offers valuable insights for researchers at all career stages. Watch on YouTube - [ Sanjay, V. , & Lohse, D. Unifying theory of scaling in drop impact: Forces & maximum spreading diameter. Published in Physical Review Letters.](/research#15) View Paper - Join us for a hybrid online+offline course: [High-Fidelity Simulations Using Basilisk C](/teaching/2025-Basilisk101-Madrid) in Madrid, Spain (March 10-13). Learn some computational (colorful) fluid dynamics with hands-on coding sessions.",
+    "content": "- Prof. Detlef Lohse discusses the people, questions, and experiments that shaped his work in fluid dynamics in The Living Histories Series . Watch on YouTube - [ Sanjay, V. , & Lohse, D. Unifying theory of scaling in drop impact: Forces & maximum spreading diameter. Published in Physical Review Letters.](/research#15) View Paper - Hybrid online/offline course: [High-Fidelity Simulations Using Basilisk C](/teaching/2025-Basilisk101-Madrid) in Madrid, Spain (March 10-13). Computational fluid dynamics with hands-on coding sessions.",
     "url": "https://comphy-lab.org#history",
     "type": "website_section",
     "priority": 8
@@ -19702,10 +19240,10 @@
     "priority": 8
   },
   {
-    "title": "Index - Computational MultiphasePhysics (CoMPhy) Lab",
-    "content": "Computational Multiphase Physics (CoMPhy) Lab Picture: Worthington jet formed due to bursting bubble. Featured Research",
-    "url": "https://comphy-lab.org#intro",
-    "type": "website_section",
+    "title": "Index",
+    "content": "A research group \u00b7 Durham University \u00b7 Department of Physics CoMPhy Lab Computational Multiphase Physics {{ hero.tagline }} {{ hero.lede }} Principal investigator {{ hero.pi.name }} {{ hero.pi.role }} Department {{ hero.department.name }} {{ hero.department.note }} Location {{ hero.location.name }} {{ hero.location.note }} {{ hero.cta_primary.label }} {{ hero.cta_secondary.label }} {% for img in hero.images %} {% assign is_motion = false %} {% if img.video or img.youtube %}{% assign is_motion = true %}{% endif %} {% if img.video %} {% elsif img.youtube %} {% else %} {% endif %} Featured work {{ img.caption_title }} {{ img.caption_sub }} {%- comment -%} caption_sub may contain for journal names; it's author-curated content, safe to render as HTML. {%- endcomment -%} {% if img.href %} Read the paper \u2197 {% endif %} {% endfor %} {{ themes_data.currently.label }} {{ themes_data.currently.text }} 01 \u00b7 Research How does soft matter break? Capillary, inertial, viscous, and elastic stresses dictate how drops impact, films rupture, bubbles burst, and jets pinch off. All 24 papers \u2197 {% for t in themes_data.themes %} {% if t.figure %} {% else %} Figure \u00b7 {{ t.tag }} {% endif %} {{ t.num }} \u00b7 {{ t.tag }} {{ t.title }} {{ t.description }} {% for p in t.papers %} {{ p.year }} {{ p.title }} {{ p.venue }} {% endfor %} {% endfor %} 02 \u00b7 Recent News What's happening in the lab All news \u2197 {% assign sorted_news = news_items | sort: \"date\" | reverse %} {% for n in sorted_news limit:5 %} {% assign d = n.date | date: \"%-d\" %} {% assign mo = n.date | date: \"%b %y\" %} {{ d }} {{ mo }} {% if n.kind == \"paper\" %} {% if n.thumb %} {% endif %} {% else %} {{ n.avatar | default: \"\u00b7\" }} {% endif %} {% case n.kind %} {% when \"paper\" %}Paper {% when \"talk\" %}Talk {% when \"people\" %}People {% when \"move\" %}Announcement {% when \"award\" %}Award {% endcase %} {{ n.title }} {{ n.meta }} {{ n.action_label }} {% endfor %} 03 \u00b7 People The people in the room Full roster \u2197 {% for m in team.present limit:6 %} {% if m.photo %} {% else %} {%- comment -%}Strip the longest title prefix first so \"Adj. Prof. X\" doesn't lose the \"Prof. \" inside it before \"Adj. Prof. \" matches.{%- endcomment -%} {%- assign clean = m.name | replace: \"Adj. Prof. \", \"\" | replace: \"Prof. \", \"\" | replace: \"Dr. \", \"\" -%} {%- assign words = clean | split: \" \" -%} {%- capture initials -%}{%- for w in words limit: 2 -%}{{ w | slice: 0, 1 -}}{%- endfor -%}{%- endcapture -%} {{ initials | upcase }} {% endif %} {{ m.name }} {{ m.role }} {{ m.bio }} {% if m.links.email %} {% endif %} {% if m.links.scholar %} {% endif %} {% if m.links.github %} {% endif %} {% if m.links.bluesky %} {% endif %} {% if m.links.site %} {% endif %} {% endfor %} Looking for a postdoc, PhD, MSc, or visiting position? The lab is always recruiting \u2014 postdoc fellowships, funded doctoral positions, MSc projects, and visiting researcher spots in Durham. Open projects and how to apply are on the Join Us page. Current opportunities \u2192",
+    "url": "https://comphy-lab.org",
+    "type": "website_content",
     "priority": 8
   },
   {
@@ -19730,143 +19268,10 @@
     "priority": 10
   },
   {
-    "title": "Skill - Add Research Paper from BibTeX",
-    "content": "Parse user-provided BibTeX and insert a correctly formatted entry in `_research/index.md`.",
-    "url": "https://comphy-lab.org/.agents/skills/add-paper/SKILL/#add-research-paper-from-bibtex",
-    "type": "website_section",
-    "priority": 10
-  },
-  {
-    "title": "Skill - Workflow: Context",
-    "content": "1. Parse BibTeX fields: - Authors, title, venue, year, volume, pages or article number, DOI, arXiv id. 2. Classify the entry: - If venue indicates arXiv preprint, place in `Work in Progress`. - Otherwise place in the corresponding year section. 3. Format authors: - Use `LastName, F.` style with all authors listed. - Bold lab members exactly as ` Sanjay, V. ` and ` Dixit, A. `. 4. For published papers: - Use numbered heading format ` [NUM] ... `. - Determine next paper number from highest existing number. - Insert into correct year in reverse chronological order. 5. For preprints: - Use non-numbered `###` entry in `Work in Progress`. 6. Check for potential preprint-to-published replacement: - Search `Work in Progress` for matching preprint by title and authors. - Remove old preprint entry when adding published version. 7.",
-    "url": "https://comphy-lab.org/.agents/skills/add-paper/SKILL/#workflow",
-    "type": "website_section",
-    "priority": 10
-  },
-  {
-    "title": "Skill - Workflow: Ask user for...",
-    "content": "Ask user for interactive metadata: - Tags (suggest from title keywords). - Optional Featured tag (ensure no more than two featured homepage papers). - Optional GitHub URL and optional YouTube embed. 8. Generate badges: - arXiv badge when arXiv id exists. - Journal/DOI badge when DOI exists. - Blog badge always. - GitHub badge when URL is provided. 9. Insert entry and preserve spacing/structure. 10. Save `_research/index.md`.",
-    "url": "https://comphy-lab.org/.agents/skills/add-paper/SKILL/#workflow",
-    "type": "website_section",
-    "priority": 10
-  },
-  {
-    "title": "Skill - Tag Suggestions",
-    "content": "Use title keywords to suggest tags such as: - Bubbles - Drops - Jets - Sheets - Non-Newtonian - Coalescence - Impact forces - Superamphiphobic-surfaces - Dissipative anomaly - Soft-matter-singularities",
-    "url": "https://comphy-lab.org/.agents/skills/add-paper/SKILL/#tag-suggestions",
-    "type": "website_section",
-    "priority": 10
-  },
-  {
-    "title": "Skill - Journal Abbreviation Hints",
-    "content": "- Nature Communications -> Nat. Commun. - Journal of Fluid Mechanics -> JFM - Physical Review Letters -> PRL - Physics of Fluids -> Phys. Fluids - AIChE Journal -> AIChE J. - Chemical Engineering Science -> Chem. Eng. Sci. - Science Advances -> Sci. Adv. - Building Simulations -> Build. Simul.",
-    "url": "https://comphy-lab.org/.agents/skills/add-paper/SKILL/#journal-abbreviation-hints",
-    "type": "website_section",
-    "priority": 10
-  },
-  {
-    "title": "Skill - Badge Shapes",
-    "content": "```markdown [![arXiv](https://img.shields.io/static/v1.svg?style=flat-square&label=arXiv&message=XXXX.XXXXX&color=green)](https://arxiv.org/abs/XXXX.XXXXX) [![JOURNAL](https://img.shields.io/static/v1.svg?style=flat-square&label=JOURNAL&message=OA&color=orange)](https://doi.org/DOI) [![GitHub](https://img.shields.io/badge/GitHub-100000?style=flat-square&logo=github&logoColor=white)](GITHUB_URL) [![Blog](https://img.shields.io/badge/Blog-Coming%20Soon-yellow?style=flat-square&logo=obsidian&logoColor=white)](https://blogs.comphy-lab.org/0_ToDo-Blog-public) ```",
-    "url": "https://comphy-lab.org/.agents/skills/add-paper/SKILL/#badge-shapes",
-    "type": "website_section",
-    "priority": 10
-  },
-  {
-    "title": "Skill - Formatting Requirements",
-    "content": "- Preserve exact section spacing style from existing file. - Avoid duplicate entries. - Keep numbering contiguous. - Keep all metadata updated when moving a preprint to published.",
-    "url": "https://comphy-lab.org/.agents/skills/add-paper/SKILL/#formatting-requirements",
-    "type": "website_section",
-    "priority": 10
-  },
-  {
-    "title": "Skill - Add Person to Team Page",
-    "content": "Add one person to `_team/index.md` in the correct category while preserving site formatting.",
-    "url": "https://comphy-lab.org/.agents/skills/add-person/SKILL/#add-person-to-team-page",
-    "type": "website_section",
-    "priority": 10
-  },
-  {
-    "title": "Skill - Collect Required Inputs",
-    "content": "Collect: - Full name - Degree or title (for example: `M.Sc.`, `Ph.D.`, `Dr.`, `Prof.`) - Category: Present Team, Active Collaborations, or Alumni - Role or position - Image path if provided (otherwise use `/assets/images/team/anonymous.svg`) Collect category-specific fields: - Present Team: - Optional co-advisor line - Education bullets (institution, year, optional thesis link) - Research interests - Social or academic URLs (GitHub, Google Scholar, Bluesky, X, LinkedIn, ORCID, Wikipedia) - Active Collaborations: - Position with institution URL - Collaboration topics - Social or academic URLs (Google Scholar, X, Bluesky, GitHub, ORCID, Wikipedia) - Alumni: - Graduation year and degree - Institution - Current role - Thesis title and link - Social URLs (LinkedIn, GitHub)",
-    "url": "https://comphy-lab.org/.agents/skills/add-person/SKILL/#collect-required-inputs",
-    "type": "website_section",
-    "priority": 10
-  },
-  {
-    "title": "Skill - Image Handling",
-    "content": "- If category is Present Team and user wants a real photo: - Check `/assets/images/team/` for highest numbered image file. - Assign next number path (`/assets/images/team/ .jpg` or `.webp`). - Tell user to add the photo at that path. - If no photo is provided, use `/assets/images/team/anonymous.svg`. Never use `placeholder.jpg`.",
-    "url": "https://comphy-lab.org/.agents/skills/add-person/SKILL/#image-handling",
-    "type": "website_section",
-    "priority": 10
-  },
-  {
-    "title": "Skill - [Name] [Degree]",
-    "content": "[Position] [Optional co-advisor line] [Icon links, one per line] - [Education line 1] - [Education line 2, optional thesis link] **Research Interest:** [Research interests] ```",
-    "url": "https://comphy-lab.org/.agents/skills/add-person/SKILL/#name-degree",
-    "type": "website_section",
-    "priority": 10
-  },
-  {
-    "title": "Skill - [Title] [Name]",
-    "content": "[Icon links, one per line] - [Position, Institution with link] **Collaboration on:** [Topics] ```",
-    "url": "https://comphy-lab.org/.agents/skills/add-person/SKILL/#title-name",
-    "type": "website_section",
-    "priority": 10
-  },
-  {
-    "title": "Skill - [Name] [Degree]",
-    "content": "[Icon links, one per line] - **Now:** [Current position] - **[Year]:** Graduated with [Degree], [Institution] - [Thesis Title] ```",
-    "url": "https://comphy-lab.org/.agents/skills/add-person/SKILL/#name-degree",
-    "type": "website_section",
-    "priority": 10
-  },
-  {
-    "title": "Skill - Icon Snippets",
-    "content": "- GitHub: ` ` - Google Scholar: ` ` - Bluesky: ` ` - X: ` ` - LinkedIn: ` ` - ORCID: ` ` - Wikipedia: ` ` - Thesis/PDF: ` `",
-    "url": "https://comphy-lab.org/.agents/skills/add-person/SKILL/#icon-snippets",
-    "type": "website_section",
-    "priority": 10
-  },
-  {
-    "title": "Skill - Insert Location Rules",
-    "content": "- Present Team: insert before `### We need you!` - Active Collaborations: append to that section before `## Our Alumni` - Alumni: insert at top of Alumni section (most recent first)",
-    "url": "https://comphy-lab.org/.agents/skills/add-person/SKILL/#insert-location-rules",
-    "type": "website_section",
-    "priority": 10
-  },
-  {
-    "title": "Skill - Final Checks",
-    "content": "- Keep existing spacing and formatting patterns. - Keep icon sizes and colors consistent with nearby entries. - Use forward-slash absolute paths (starting with `/`). - Save `_team/index.md`. - If a new numbered image was assigned, remind user to add the image file.",
-    "url": "https://comphy-lab.org/.agents/skills/add-person/SKILL/#final-checks",
-    "type": "website_section",
-    "priority": 10
-  },
-  {
-    "title": "Skill - Add News Item",
-    "content": "Add the user-provided news item to both `News.md` and `history.md`.",
-    "url": "https://comphy-lab.org/.agents/skills/add-news/SKILL/#add-news-item",
-    "type": "website_section",
-    "priority": 10
-  },
-  {
-    "title": "Skill - Workflow: Context",
-    "content": "1. Parse the news content from user input. 2. Determine the target month and year from the content. Ask only if date is ambiguous. 3. Read both `News.md` and `history.md`. 4. Update `history.md`: - Organize by `## YEAR` sections in descending order. - Keep months in reverse chronological order within each year. - Create missing year section if needed. - Insert as a regular bullet in format `- [news content]`. 5. Update `News.md`: - Organize by `## YEAR` with `### Month` subsections. - Create missing year or month sections if needed. - Insert the same news bullet under the correct month. - Preserve special announcements (for example, the Durham announcement) as non-regular blocks. 6. Enforce News.md item limit: - Count only regular news bullets that start with a dash followed by a space (prefix: `-`). - Keep at most 5 regular items. - Remove oldest regular items first. - Never count or remove special announcement blocks for this limit. 7.",
-    "url": "https://comphy-lab.org/.agents/skills/add-news/SKILL/#workflow",
-    "type": "website_section",
-    "priority": 10
-  },
-  {
-    "title": "Skill - Workflow: JavaScript",
-    "content": "Preserve spacing and structure: - Keep one blank line between major sections. - Keep heading and bullet style consistent with existing file format. 8. Save both files.",
-    "url": "https://comphy-lab.org/.agents/skills/add-news/SKILL/#workflow",
-    "type": "website_section",
-    "priority": 10
-  },
-  {
-    "title": "Skill - Formatting Rules",
-    "content": "- Year heading: `## 2026` - Month heading: `### January` - Regular item: `- News text` - Special announcement blocks remain in their existing icon-based heading style.",
-    "url": "https://comphy-lab.org/.agents/skills/add-news/SKILL/#formatting-rules",
-    "type": "website_section",
+    "title": "\"News & announcements\": {% assign news_items...",
+    "content": "{% assign news_items = site.data.news.items | sort: \"date\" | reverse %} CoMPhy Lab \u00b7 News archive News &amp; announcements Papers, talks, arrivals, and awards. {% for n in news_items %} {% assign d = n.date | date: \"%-d\" %} {% assign mo = n.date | date: \"%b %y\" %} {{ d }} {{ mo }} {% if n.kind == \"paper\" %} {% if n.thumb %} {% endif %} {% else %} {{ n.avatar | default: \"\u00b7\" }} {% endif %} {% case n.kind %} {% when \"paper\" %}Paper {% when \"talk\" %}Talk {% when \"people\" %}People {% when \"move\" %}Announcement {% when \"award\" %}Award {% else %}Update {% endcase %} {{ n.title }} {{ n.meta }} {{ n.action_label }} {% endfor %} .news-page { width: min(100% - 2rem, var(--maxw-page)); margin: 0 auto; padding: var(--s-9) 0 var(--s-8); position: relative; z-index: 1; } .news-page__head { max-width: 68ch; margin: 0 auto var(--s-8); text-align: center; } .news-page__kicker { display: inline-flex; align-items: center; gap: 10px; font-family: var(--t-sans); font-size: var(--t-eyebrow); font-weight: 600; letter-spacing: var(--t-track-wide); text-transform: uppercase; color: var(--fg-2); margin-bottom: var(--s-4); } .news-page__kicker .rule { width: 32px; height: 1px; background: var(--c-border-strong); } .news-page__title { font-family: var(--t-serif); font-weight: 600; font-size: clamp(32px, 4vw, 48px); line-height: 1.1; letter-spacing: -0.02em; color: var(--fg-strong); font-variation-settings: \"opsz\" 96; margin: 0 0 var(--s-4); text-wrap: balance; } .news-page__lede { font-family: var(--t-serif); font-weight: 400; font-size: var(--t-body-lg); line-height: 1.55; color: var(--fg-1); margin: 0 auto; max-width: 60ch; font-variation-settings: \"opsz\" 18; } .news-page .newsfeed { display: grid; gap: 0; border-top: 1px solid var(--c-border); } .news-page .news-item { display: grid; grid-template-columns: 90px 1fr auto; gap: var(--s-5); padding: var(--s-5) 0; border-bottom: 1px solid var(--c-border); align-items: start; } .news-page .news-item__date { display: grid; text-align: center; padding: var(--s-3) var(--s-2); background: color-mix(in srgb, var(--c-brand-purple) 6%, transparent); border: 1px solid color-mix(in srgb, var(--c-brand-purple) 15%, transparent); border-radius: var(--r-sm); } .news-page .news-item__day { font-family: var(--t-serif); font-weight: 700; font-size: 30px; line-height: 1; color: var(--c-brand-purple); letter-spacing: -0.02em; font-variation-settings: \"opsz\" 48; } [data-theme=\"dark\"] .news-page .news-item__day { color: #d99adc; } .news-page .news-item__mo { font-family: var(--t-mono); font-size: 10px; text-transform: uppercase; letter-spacing: var(--t-track-wide); color: var(--fg-2); margin-top: 6px; } .news-page .news-item__kicker { display: inline-flex; align-items: center; gap: 6px; font-family: var(--t-sans); font-size: var(--t-eyebrow); font-weight: 700; letter-spacing: var(--t-track-wide); text-transform: uppercase; color: var(--fg-2); margin-bottom: 6px; } .news-page .news-item__kicker .swatch { width: 8px; height: 8px; border-radius: 2px; } .news-page .news-item[data-kind=\"paper\"] .swatch { background: var(--c-brand-purple); } .news-page .news-item[data-kind=\"talk\"] .swatch { background: var(--c-accent-coral); } .news-page .news-item[data-kind=\"people\"] .swatch, .news-page .news-item[data-kind=\"move\"] .swatch, .news-page .news-item[data-kind=\"award\"] .swatch { background: var(--c-accent-teal); } .news-page .news-item__title { font-family: var(--t-serif); font-weight: 600; font-size: var(--t-body-lg); line-height: 1.35; color: var(--fg-strong); margin: 0 0 var(--s-2); letter-spacing: -0.005em; max-width: 58ch; font-variation-settings: \"opsz\" 24; } .news-page .news-item__meta { font-size: var(--t-small); color: var(--fg-2); line-height: 1.5; margin: 0; max-width: 68ch; } .news-page .news-item__meta em { font-family: var(--t-serif); font-variation-settings: \"opsz\" 14; } .news-page .news-item__meta strong { color: var(--c-accent-coral); font-weight: 600; } .news-page .news-item__action { align-self: center; } .news-page .news-item--paper .news-item__body { display: grid; grid-template-columns: 88px 1fr; gap: var(--s-4); } .news-page .news-item__thumb { width: 88px; height: 104px; border-radius: var(--r-xs); overflow: hidden; background: linear-gradient(135deg, var(--c-brand-purple), var(--c-brand-blue)); display: flex; align-items: center; justify-content: center; flex-shrink: 0; } .news-page .news-item__thumb img { width: 100%; height: 100%; object-fit: cover; } .news-page .news-item--talk .news-item__body, .news-page .news-item--people .news-item__body, .news-page .news-item--move .news-item__body, .news-page .news-item--award .news-item__body { display: grid; grid-template-columns: 56px 1fr; gap: var(--s-4); align-items: start; } .news-page .news-item__avatar { width: 56px; height: 56px; border-radius: 50%; background: linear-gradient(145deg, var(--c-accent-teal), var(--c-brand-purple)); display: flex; align-items: center; justify-content: center; color: #fff; font-family: var(--t-serif); font-weight: 600; font-size: 20px; letter-spacing: -0.02em; flex-shrink: 0; } @media (max-width: 760px) { .news-page .news-item { grid-template-columns: 70px 1fr; } .news-page .news-item__action { grid-column: 1 / -1; justify-self: start; margin-top: var(--s-2); } }",
+    "url": "https://comphy-lab.org/news/",
+    "type": "website_content",
     "priority": 10
   }
 ]
