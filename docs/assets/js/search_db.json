@@ -606,6 +606,13 @@
     "priority": 3
   },
   {
+    "title": "Private todo blog public - \ud83c\udfe5 GP Registration \u2014 Claypath & University Medical Group",
+    "content": "**Status:** Registered 28 May 2026, pending activation (~5 days) **Phone:** 0191 374 6888 **Website:** https://durhamstudenthealth.co.uk/ **Reference Numbers:** - GPREG-461961-00002174 - GPREG-461961-00002175 - Application ID: 1f6e87f2-8584-486d-a2c5-6b6172f5da3c **Next Action:** Call on 30 May to confirm registration + book stitch removal (due ~4-5 June) **Full details:** See [[Admin/GP-Registration-2025-05]]",
+    "url": "https://blogs.comphy-lab.org/Private-ToDo-Blog-public/#-gp-registration-claypath-university-medical-group",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
     "title": "Surface parameterization - Surface Element Parameterization",
     "content": "> [!tldr] TL;DR > Surface parameterization is a powerful mathematical technique for describing fluid interfaces using coordinates $(u,v)$ that map a 2D parameter space onto 3D surfaces. The tangent vectors $\\mathbf{x}_u = \\partial\\mathbf{x}/\\partial u$ and $\\mathbf{x}_v = \\partial\\mathbf{x}/\\partial v$ define the local surface geometry and are tangent to curves of constant $v$ and $u$, respectively. The normal vector to the surface is calculated as $\\mathbf{n} = (\\mathbf{x}_u \\times \\mathbf{x}_v)/|\\mathbf{x}_u \\times \\mathbf{x}_v|$. This framework enables mathematical analysis of surface metrics like curvature and area, which are essential for understanding interfacial phenomena in multiphase flows, bubble dynamics, and capillary effects.",
     "url": "https://blogs.comphy-lab.org/Lecture-Notes/Surface-parameterization/#surface-element-parameterization",
@@ -6384,6 +6391,34 @@
     "title": "2025 herschel\u2013bulkley formulation - References",
     "content": "[1] N. J. Balmforth, I. A. Frigaard, and G. Ovarlez, \u201cYielding to Stress: Recent Developments in Viscoplastic Fluid Mechanics,\u201d _Annu. Rev. Fluid Mech._, vol. 46, pp. 121\u2013146, Jan. 2014, doi: [10.1146/annurev-fluid-010313-141424](https://doi.org/10.1146/annurev-fluid-010313-141424). [2] V. Sanjay, D. Lohse, and M. Jalaal, \u201cBursting bubble in a viscoplastic medium,\u201d _J. Fluid Mech._, vol. 922, p. A2, 2021. > [!significance]- Metadata > Author:: [Vatsal Sanjay](https://vatsalsanjay.com) > Date published:: Dec 31, 2024 > Date modified:: Jan 26, 2025 at 11:50 CET > [!meta] Back to main website > [Home](https://comphy-lab.org/), [Team](https://comphy-lab.org/team), [Research](https://comphy-lab.org/research), [Github](https://github.com/comphy-lab)",
     "url": "https://blogs.comphy-lab.org/Code-Documentations/2025-Herschel\u2013Bulkley-formulation/#references",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "Gp registration 2025 05 - GP Registration - Claypath & University Medical Group",
+    "content": "**Date:** 28 May 2026 **Surgery:** Claypath & University Medical Group **Address:** 26 Gilesgate, Durham, County Durham, DH1 1QW **Phone:** 0191 374 6888 **Website:** https://durhamstudenthealth.co.uk/",
+    "url": "https://blogs.comphy-lab.org/Admin/GP-Registration-2025-05/#gp-registration---claypath-university-medical-group",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "Gp registration 2025 05 - Reference Numbers",
+    "content": "| Item | Reference | |------|-----------| | GP Registration Form | GPREG-461961-00002174 | | GP Registration Form | GPREG-461961-00002175 | | Application ID | 1f6e87f2-8584-486d-a2c5-6b6172f5da3c |",
+    "url": "https://blogs.comphy-lab.org/Admin/GP-Registration-2025-05/#reference-numbers",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "Gp registration 2025 05 - Notes",
+    "content": "- Registration submitted: 28 May 2026 - Expected activation: ~5 days (by ~2 June 2026) - Urgent: Need stitch removal appointment for ~4-5 June 2026 - Call on 30 May to confirm registration status and book appointment",
+    "url": "https://blogs.comphy-lab.org/Admin/GP-Registration-2025-05/#notes",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "Gp registration 2025 05 - Related",
+    "content": "- [[Vatsal-SuperUrgent-ToDo]] \u2014 Call Claypath 30 May for stitch removal",
+    "url": "https://blogs.comphy-lab.org/Admin/GP-Registration-2025-05/#related",
     "type": "blog_section",
     "priority": 3
   },
