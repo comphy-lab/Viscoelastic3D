@@ -298,13 +298,6 @@
     "priority": 3
   },
   {
-    "title": "\"Basilisk for Multiphase Flow Simulations\" - Registration & Resources",
-    "content": "Registration for this pre-conference session is handled through [ECS 2025](https://ecs2025.org/program/#program). **Technical Support:** vatsal.sanjay@durham.ac.uk Course Examples & Resources",
-    "url": "https://comphy-lab.org/teaching/2025-Basilisk101nano-ECS#registration-resources",
-    "type": "website_section",
-    "priority": 3
-  },
-  {
     "title": "\"Basilisk for Multiphase Flow Simulations\" - Expected Outcomes",
     "content": "By the end of the session, participants will be able to: - **Execute Basilisk simulations** confidently on their own systems - **Modify key parameters** to explore different physical scenarios - **Understand VOF methodology** for interface tracking in multiphase flows - **Apply to coating processes** through the Landau-Levich example - **Connect theory to practice** by relating simulation results to physical phenomena The point is practical: leave with a working Basilisk setup and a few small cases that can be modified after the workshop.",
     "url": "https://comphy-lab.org/teaching/2025-Basilisk101nano-ECS#expected-outcomes",
@@ -389,13 +382,6 @@
     "priority": 3
   },
   {
-    "title": "\"High-Fidelity Simulations Using Basilisk C\" - Registration",
-    "content": "For registration details, please contact bubbles@ing.uc3m.es vatsal.sanjay@durham.ac.uk Course GitHub Repository",
-    "url": "https://comphy-lab.org/teaching/2025-Basilisk101-Madrid#registration",
-    "type": "website_section",
-    "priority": 3
-  },
-  {
     "title": "Teaching",
     "content": "High-Fidelity Simulations Using Basilisk C Universidad Carlos III de Madrid March 10-13, 2025 Four-day Basilisk C course on conservation laws, interface tracking, and non-Newtonian flow exercises. View Course Basilisk for Multiphase Flow Simulations European Coating Symposium 2025 September 15, 2025 Three-hour ECS session on heat conduction, drop impact, and Landau-Levich dip coating. View Course Introduction to Soft Matter Durham University Fall 2025 Lecture notes for the Durham soft-matter course. View Lecture Notes",
     "url": "https://comphy-lab.org/teaching/",
@@ -420,6 +406,13 @@
     "title": "Agents - Repository Overview",
     "content": "This is a research blog repository for the Computational Multiphase Physics (CoMPhy) Lab, containing academic content in Markdown format. The site is published at [blogs-comphy-lab.org](https://blogs-comphy-lab.org/).",
     "url": "https://blogs.comphy-lab.org/AGENTS/#repository-overview",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "Agents - Privacy Boundary",
+    "content": "Treat this repository as public and publishable. Do not add personal admin notes, medical records, GP/NHS material, appointment details, identifiers, addresses, travel documents, finance paperwork, or private tasks here. `Private-ToDo-Blog-public.md` may be read as an input surface for public-safe blog work, but automation must not write private/admin/medical material into it or normalise private notes inside this repo. Route medical documents to iCloud `MedicalStuff`; route private notes/tasks to Vatsal's private Obsidian vault.",
+    "url": "https://blogs.comphy-lab.org/AGENTS/#privacy-boundary",
     "type": "blog_section",
     "priority": 3
   },
@@ -596,20 +589,6 @@
     "content": "Choose an option below: - [\ud83d\udde3\ufe0f Request a new blog topic](https://github.com/comphy-lab/CoMPhy-Lab-Blogs/issues/new?template=blog_topic_request.md&labels=blog-request,enhancement) - [\ud83d\udcda Request documentation](https://github.com/comphy-lab/CoMPhy-Lab-Blogs/issues/new?template=documentation_request.md&labels=documentation) - [\ud83d\udd0d Report content correction](https://github.com/comphy-lab/CoMPhy-Lab-Blogs/issues/new?template=content_correction.md&labels=correction) 2. **Pull Requests**: Want to contribute directly? - Fork the repository - Make your changes (it can simply be correcting grammar or making a new post - simply write in plain text or markdown format and add it to the root folder). - Submit a pull request with a clear description of your changes Visit our [GitHub repository](https://github.com/comphy-lab/CoMPhy-Lab-Blogs) to get started. --- *Note: This documentation is maintained by the CoMPhy Lab team and is regularly updated with our latest research findings and computational methods.* > [!meta] Back to main website > [Home](https://comphy-lab.org/), [Team](https://comphy-lab.org/team), [Research](https://comphy-lab.org/research), [Github](https://github.com/comphy-lab)",
     "url": "https://blogs.comphy-lab.org/0_README/#contributing",
     "type": "blog_section",
-    "priority": 3
-  },
-  {
-    "title": "Private todo blog public - \ud83c\udfe5 GP Registration \u2014 Claypath & University Medical Group",
-    "content": "**Status:** Registered 28 May 2026, pending activation (~5 days) **Phone:** 0191 374 6888 **Website:** https://durhamstudenthealth.co.uk/ **Reference Numbers:** - GPREG-461961-00002174 - GPREG-461961-00002175 - Application ID: 1f6e87f2-8584-486d-a2c5-6b6172f5da3c **Next Action:** Call on 30 May to confirm registration + book stitch removal (due ~4-5 June) **Full details:** See [[Admin/GP-Registration-2025-05]]",
-    "url": "https://blogs.comphy-lab.org/Private-ToDo-Blog-public/#-gp-registration-claypath-university-medical-group",
-    "type": "blog_section",
-    "priority": 3
-  },
-  {
-    "title": "0_todo blog public",
-    "content": "![CoMPhy-Lab](_Media/CoMPhy-Lab-no-name.png) --- > [!meta] Back to main website > [Home](https://comphy-lab.org/), [Team](https://comphy-lab.org/team), [Research](https://comphy-lab.org/research), [Github](https://github.com/comphy-lab)",
-    "url": "https://blogs.comphy-lab.org/0_ToDo-Blog-public/",
-    "type": "blog_content",
     "priority": 3
   },
   {
@@ -1834,34 +1813,6 @@
     "title": "Seminar singularities - References",
     "content": "[1] V. Sanjay, B. Zhang, C. Lv, and D. Lohse, \"The role of viscosity on drop impact forces on non-wetting surfaces,\" _J. Fluid Mech._, vol. 998, p. A40, 2024, doi: [10.1017/jfm.2024.982](https://doi.org/10.1017/jfm.2024.982). [2] A. K. Dixit, A. Oratis, K. Zinelis, D. Lohse, and V. Sanjay, \"Viscoelastic Worthington jets and droplets produced by bursting bubbles,\" _J. Fluid Mech._, vol. 1010, p. A2, 2025, doi: [10.1017/jfm.2025.237](https://doi.org/10.1017/jfm.2025.237). [3] V. Sanjay, U. Sen, P. Kant, and D. Lohse, \"Taylor\u2013Culick retractions and the influence of the surroundings,\" _J. Fluid Mech._, vol. 948, p. A14, 2022, doi: [10.1017/jfm.2022.671](https://doi.org/10.1017/jfm.2022.671). [[Seminar-Singularities.pdf|this page in .pdf]]",
     "url": "https://blogs.comphy-lab.org/Talks/Seminar-Singularities/#references",
-    "type": "blog_section",
-    "priority": 3
-  },
-  {
-    "title": "Gp registration 2025 05 - GP Registration - Claypath & University Medical Group",
-    "content": "**Date:** 28 May 2026 **Surgery:** Claypath & University Medical Group **Address:** 26 Gilesgate, Durham, County Durham, DH1 1QW **Phone:** 0191 374 6888 **Website:** https://durhamstudenthealth.co.uk/",
-    "url": "https://blogs.comphy-lab.org/Admin/GP-Registration-2025-05/#gp-registration---claypath-university-medical-group",
-    "type": "blog_section",
-    "priority": 3
-  },
-  {
-    "title": "Gp registration 2025 05 - Reference Numbers",
-    "content": "| Item | Reference | |------|-----------| | GP Registration Form | GPREG-461961-00002174 | | GP Registration Form | GPREG-461961-00002175 | | Application ID | 1f6e87f2-8584-486d-a2c5-6b6172f5da3c |",
-    "url": "https://blogs.comphy-lab.org/Admin/GP-Registration-2025-05/#reference-numbers",
-    "type": "blog_section",
-    "priority": 3
-  },
-  {
-    "title": "Gp registration 2025 05 - Notes",
-    "content": "- Registration submitted: 28 May 2026 - Expected activation: ~5 days (by ~2 June 2026) - Urgent: Need stitch removal appointment for ~4-5 June 2026 - Call on 30 May to confirm registration status and book appointment",
-    "url": "https://blogs.comphy-lab.org/Admin/GP-Registration-2025-05/#notes",
-    "type": "blog_section",
-    "priority": 3
-  },
-  {
-    "title": "Gp registration 2025 05 - Related",
-    "content": "- [[Vatsal-SuperUrgent-ToDo]] \u2014 Call Claypath 30 May for stitch removal",
-    "url": "https://blogs.comphy-lab.org/Admin/GP-Registration-2025-05/#related",
     "type": "blog_section",
     "priority": 3
   },
@@ -5824,13 +5775,6 @@
     "title": "2025 visual pdes - Environment: landscapes come alive",
     "content": "- [Dryland vegetation (Klausmeier):](https://visualpde.com/mathematical-biology/vegetation-patterns.html) Add a rainfall gradient on a slope and watch tiger\u2011bush stripes emerge, rotate, or break up. - [Urban flooding (Oxford):](https://visualpde.com/visual-stories/flooding) A LiDAR\u2011based elevation map lets you \u201cpour\u201d water, adjust river inflow, and even \u201cdig\u201d diversion channels\u2014an intuitive sandbox for flood intuition.",
     "url": "https://blogs.comphy-lab.org/Blog/2025-visual-pdes/#environment-landscapes-come-alive",
-    "type": "blog_section",
-    "priority": 3
-  },
-  {
-    "title": "2025 visual pdes - Health: waves of life and risk",
-    "content": "- FitzHugh\u2013Nagumo model. Visualize spiral waves and their competition with homogeneous oscillations\u2014an accessible window into arrhythmia\u2011like dynamics. FitzHugh\u2013Nagumo model - [Airborne virus story:](https://visualpde.com/visual-stories/airborne-infections) Toggle ventilation to see how airflow reshapes indoor concentration patterns; an interactive Plus Magazine feature showcased this beautifully.",
-    "url": "https://blogs.comphy-lab.org/Blog/2025-visual-pdes/#health-waves-of-life-and-risk",
     "type": "blog_section",
     "priority": 3
   },
