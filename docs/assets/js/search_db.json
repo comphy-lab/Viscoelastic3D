@@ -3960,6 +3960,237 @@
     "priority": 3
   },
   {
+    "title": "6 rheology",
+    "content": "> [!info] \ud83d\udcc4 PDF Version > [Download PDF](./6-Rheology.pdf)",
+    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Intro-Soft-Matter/6-Rheology/",
+    "type": "blog_content",
+    "priority": 3
+  },
+  {
+    "title": "6 rheology - What is Rheology?",
+    "content": "**Definition:** The study of flow and deformation of matter **Central Question:** How do we quantify the softness or flow behavior of a material? **Focus:** - Experimental rheology - Storage and loss moduli (G', G\") - Viscosity as function of shear rate or frequency - Relaxation timescales",
+    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Intro-Soft-Matter/6-Rheology/#what-is-rheology",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "6 rheology - Linear Viscoelastic Characterization",
+    "content": "**Method:** Small oscillatory deformations **Apply oscillating strain:** $$\\gamma(t) = \\gamma_0 \\sin(\\omega t)$$ **Measure resulting stress:** $$\\sigma(t) = \\gamma_0 [G' \\sin(\\omega t) + G\" \\cos(\\omega t)]$$",
+    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Intro-Soft-Matter/6-Rheology/#linear-viscoelastic-characterization",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "6 rheology - Storage Modulus (G')",
+    "content": "**Physical Meaning:** - **In-phase** stress response - Energy **stored** like a spring - Measure of material **stiffness** - Elastic component **When G' dominates:** - Material behaves solid-like - Most energy stored and recovered - Little energy dissipation",
+    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Intro-Soft-Matter/6-Rheology/#storage-modulus-g",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "6 rheology - Loss Modulus (G\")",
+    "content": "**Physical Meaning:** - **Out-of-phase** stress response - Energy **dissipated** as heat like a dashpot - Viscous component - Energy lost per cycle **When G\" dominates:** - Material behaves fluid-like - Energy dissipated as heat - Flow-dominated behavior",
+    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Intro-Soft-Matter/6-Rheology/#loss-modulus-g",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "6 rheology - Phase Angle and Loss Tangent",
+    "content": "**Phase Angle (\u03b4):** - Lag between stress and strain - \u03b4 = 0\u00b0 \u2192 Purely elastic (all energy stored) - \u03b4 = 90\u00b0 \u2192 Purely viscous (all energy lost) **Loss Tangent:** $$\\tan \\delta = \\frac{G\"}{G'}$$ **Interpretation:** - tan \u03b4 >> 1: Very damped, fluid-like - tan \u03b4 << 1: Elastic, solid-like - tan \u03b4 ~ 1: Balanced viscoelastic behavior",
+    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Intro-Soft-Matter/6-Rheology/#phase-angle-and-loss-tangent",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "6 rheology - 1. Rotational (Shear) Rheometer",
+    "content": "**Common Configuration:** - Material sandwiched between plates - Or cone-and-plate geometry - Apply controlled strain or stress **Measurements:** **Steady Shear:** - Measure viscosity: \u03b7 = (shear stress)/(strain rate) - Flow curves - Shear-thinning or thickening behavior **Oscillatory Shear:** - Measure G' and G\" - Frequency sweeps - Amplitude sweeps **Cone-Plate Geometry:** - Advantage: Uniform shear across radius - Precise measurements - Common in research",
+    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Intro-Soft-Matter/6-Rheology/#1-rotational-shear-rheometer",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "6 rheology - 2. Creep Test",
+    "content": "**Procedure:** 1. Apply constant stress 2. Watch strain vs time **Results by Material Type:** **Elastic Solid:** - Immediate strain - Then no further creep - Constant strain (if truly Hookean) **Viscous Fluid:** - Strain increases linearly forever - No asymptote - Slope = 1/\u03b7 **Viscoelastic Material:** - **Kelvin-Voigt behavior:** Immediate elastic jump + slow creep \u2192 asymptote - **Maxwell behavior:** Indefinite creep (has liquid component) **Information Gained:** - Directly measures compliance (how \"soft\") - Time-dependent response - Viscosity at long times",
+    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Intro-Soft-Matter/6-Rheology/#2-creep-test",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "6 rheology - 3. Stress Relaxation Test",
+    "content": "**Procedure:** 1. Apply quick fixed strain 2. Hold constant 3. Measure stress decay over time **Results by Material Type:** **Purely Elastic:** - Constant stress (no decay) **Viscoelastic:** - **Maxwell fluid:** Decays to zero eventually $$\\sigma(t) = \\sigma_0 e^{-t/\\tau}$$ - **With permanent network:** Decays to plateau **Information Gained:** - Relaxation time \u03c4 - Material's internal timescale - Separates elastic (short-term) and viscous (long-term)",
+    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Intro-Soft-Matter/6-Rheology/#3-stress-relaxation-test",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "6 rheology - 4. Dynamic Mechanical Analysis (DMA)",
+    "content": "**Application:** Solid samples (polymer bars, films) **Method:** - Oscillatory loading - Often in tension or bending - Similar concept to rotational rheometry **Advantages:** - For materials that can't flow into gap - Temperature sweeps - Glass transition measurements",
+    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Intro-Soft-Matter/6-Rheology/#4-dynamic-mechanical-analysis-dma",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "6 rheology - 5. Other Methods",
+    "content": "**Capillary Viscometers:** - For simple fluids - Measure flow through tube - Use Poiseuille's law - Older method but still useful",
+    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Intro-Soft-Matter/6-Rheology/#5-other-methods",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "6 rheology - Practical Meanings",
+    "content": "**G' >> G\" (Storage dominates):** - Material is **gel-like** or **solid-like** - Can support deforming load elastically - Barely flows - Example: Firm gel, rubber **G\" >> G' (Loss dominates):** - Material is **liquid-like** - Will flow and not hold shape - Most energy dissipated - Example: Viscous liquid, honey **G' \u2248 G\" (Crossover):** - **Critical point** - Marks characteristic timescale - Material transitions from solid to liquid behavior - Important for gel point determination",
+    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Intro-Soft-Matter/6-Rheology/#practical-meanings",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "6 rheology - Frequency Dependence",
+    "content": "**Many Soft Materials:** - G' G\" at **high frequencies** (solid-like, short times) - Crossover at \u03c9 \u2248 1/\u03c4 (relaxation time) **Physical Interpretation:** - High frequency (fast deformation): No time to relax \u2192 solid - Low frequency (slow deformation): Plenty of time to relax \u2192 liquid **Example Plot:** - X-axis: Frequency (\u03c9) - Y-axis: G', G\" (log scale) - Show crossover point - Identify relaxation time from crossover",
+    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Intro-Soft-Matter/6-Rheology/#frequency-dependence",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "6 rheology - For Solids: Modulus",
+    "content": "**Young's Modulus or Shear Modulus:** **Measure of Stiffness:** - High modulus \u2192 stiff \u2192 \"hard\" - Low modulus \u2192 compliant \u2192 \"soft\" **Examples:** - Hard plastic: E ~ 3 GPa - Rubber: E ~ 1 MPa (1000\u00d7 softer) - Soft silicone gel: E ~ 50 kPa (60\u00d7 softer than rubber) - Brain tissue: E ~ 1 kPa (extremely soft) **Biological Relevance:** - Tissue engineering cares deeply about modulus - Cells respond to substrate stiffness - Preview of Engler et al. paper (Lectures 7-8)",
+    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Intro-Soft-Matter/6-Rheology/#for-solids-modulus",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "6 rheology - For Fluids: Viscosity",
+    "content": "**Measure of Flow Resistance:** - Low viscosity \u2192 flows easily - High viscosity \u2192 flows slowly **Examples (at room temperature):** - Water: \u03b7 ~ 1 mPa\u00b7s (very fluid) - Blood: \u03b7 ~ 3-4 mPa\u00b7s - Olive oil: \u03b7 ~ 100 mPa\u00b7s - Honey: \u03b7 ~ 10,000 mPa\u00b7s = 10 Pa\u00b7s - Glycerol: \u03b7 ~ 1000 mPa\u00b7s = 1 Pa\u00b7s",
+    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Intro-Soft-Matter/6-Rheology/#for-fluids-viscosity",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "6 rheology - Non-Newtonian Behavior",
+    "content": "**Shear-Thinning:** - Viscosity **decreases** with shear rate - Common in polymer solutions, paints - Example: Ketchup (shaking lowers viscosity) **Shear-Thickening:** - Viscosity **increases** with shear rate - Example: Cornstarch suspension (oobleck) - Acts solid under impact - Preview of Waitukaitis & Jaeger paper **Rheometer Detection:** - Flow curve: Stress vs shear rate - Slope changes reveal non-Newtonian behavior",
+    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Intro-Soft-Matter/6-Rheology/#non-newtonian-behavior",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "6 rheology - Frequency-Dependent Softness",
+    "content": "**Key Insight:** Softness can depend on measurement frequency! **Example: Silly Putty** - Measured slowly (low \u03c9): Low effective modulus (soft, flows) - Measured quickly (high \u03c9): High effective modulus (stiff, bounces) **Practical Implication:** Must specify conditions when reporting \"softness\"",
+    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Intro-Soft-Matter/6-Rheology/#frequency-dependent-softness",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "6 rheology - Laboratory Demonstration",
+    "content": "**Rheometer Reading:** - Show real data from rheometer - Oscillatory test on known material - Point out G', G\" values - Discuss crossover frequency **Tabletop Viscoelastic:** - Gelatin dessert - Quick oscillation (tapping) vs slow deformation (letting sag) - Relate to G' and G\"",
+    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Intro-Soft-Matter/6-Rheology/#laboratory-demonstration",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "6 rheology - Jello vs Silly Putty",
+    "content": "**Jello at Room Temperature:** - Jiggles (G' low, near solid/liquid boundary) - Breaks if strained too far - Gel with low modulus - G' > G\" but both relatively small **Silly Putty:** - Frequency-dependent as discussed previously - Classic example of viscoelasticity",
+    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Intro-Soft-Matter/6-Rheology/#jello-vs-silly-putty",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "6 rheology - Polymer Dynamic Mechanical Analysis",
+    "content": "**Example: Polyvinyl chloride (PVC)** **Below Glass Transition (~60\u00b0C):** - G' >> G\" (glassy solid) - Very stiff - Brittle **Above Glass Transition:** - G\" >> G' (rubbery flow) - Much softer - Can flow **Demonstrates:** - Temperature plays similar role to frequency - Time-temperature superposition",
+    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Intro-Soft-Matter/6-Rheology/#polymer-dynamic-mechanical-analysis",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "6 rheology - Data Example: Frequency Sweep",
+    "content": "**Generic Polymer Melt or Colloidal Paste:** **Low \u03c9:** - G\" > G' (fluid-like) - Material has time to flow **High \u03c9:** - G' > G\" (solid-like) - No time to relax **Crossover at \u03c9\u2080:** - Mark: \u03c9\u2080 = 1/\u03c4 - Identifies relaxation time",
+    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Intro-Soft-Matter/6-Rheology/#data-example-frequency-sweep",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "6 rheology - Shear-Thinning Example",
+    "content": "**Ketchup Viscosity:** - High viscosity at low shear (doesn't flow from bottle) - Low viscosity at high shear (flows when shaken/squeezed) - Flow curve shows decreasing viscosity with shear rate **Why:** Structure breaks down under shear",
+    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Intro-Soft-Matter/6-Rheology/#shear-thinning-example",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "6 rheology - 1. Making Measurements",
+    "content": "**Scenario:** New synthesized hydrogel **Question:** Want to know if it's solid-like or liquid-like. What experiment? **Answer:** - Oscillatory shear test at relevant frequency - Or simple poke test: rebounds (elastic) vs slowly indents (viscous) - Look at G' vs G\"",
+    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Intro-Soft-Matter/6-Rheology/#1-making-measurements",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "6 rheology - 2. Interpreting Moduli",
+    "content": "**Data:** Material has G' = 1000 Pa, G\" = 200 Pa at 1 Hz **Question:** How would it behave if deformed rhythmically at 1 Hz? **Answer:** - Mostly elastic response - Will return ~80% of energy - Only 20% lost - Will hold shape and only slowly relax **Follow-up:** What if frequency increases where G\" rises and G' drops?",
+    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Intro-Soft-Matter/6-Rheology/#2-interpreting-moduli",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "6 rheology - 3. Measuring Viscosity Without High-End Rheometer",
+    "content": "**Question:** How to measure honey viscosity? **Possible Answers:** - Timed flow experiment (drip and use gravity + Poiseuille's law) - Falling ball viscometer (Stoke's law) - Drop marble in honey - Measure terminal speed - Compute viscosity **Engages:** Creative thinking about measurements",
+    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Intro-Soft-Matter/6-Rheology/#3-measuring-viscosity-without-high-end-rheometer",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "6 rheology - 4. Relaxation Time Thought Experiment",
+    "content": "**Comparison:** Cold honey vs warm honey **Question:** How would relaxation times differ? **Answer:** - Warm honey: Lower viscosity \u2192 faster relaxation (low \u03c4) - Cold honey: Higher viscosity \u2192 slower relaxation (high \u03c4) - At room temp: Flows quickly - At fridge temp: Almost solid-like (\u03c4 very long) **Insight:** \"Colder = more solid-like\" because molecular motion slows",
+    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Intro-Soft-Matter/6-Rheology/#4-relaxation-time-thought-experiment",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "6 rheology - 5. Rheology in Everyday Life",
+    "content": "**Ketchup Question:** Why does shaking bottle make it easier to pour? **Answer:** - Shear-thinning behavior - Structure breaks down - Viscosity decreases - Easier flow **Milkshake Question:** Why add polymers (like carboxymethyl cellulose) to make thicker? **Answer:** - Increase zero-shear viscosity - Suspension stays uniform (slower creaming) - Gives smoother \"body\" - Better mouthfeel",
+    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Intro-Soft-Matter/6-Rheology/#5-rheology-in-everyday-life",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "6 rheology - Rheological Properties",
+    "content": "| Property | Symbol | Units | Meaning | |----------|--------|-------|---------| | **Storage Modulus** | G' | Pa | Elastic stiffness, energy stored | | **Loss Modulus** | G\" | Pa | Viscous dissipation, energy lost | | **Complex Modulus** | G* | Pa | $\\|G^*\\| = \\sqrt{G'^2 + G\"^2}$ | | **Loss Tangent** | tan \u03b4 | - | G\"/G' (damping ratio) | | **Viscosity** | \u03b7 | Pa\u00b7s | Flow resistance |",
+    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Intro-Soft-Matter/6-Rheology/#rheological-properties",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "6 rheology - Experimental Methods Summary",
+    "content": "| Method | Measures | Best For | |--------|----------|----------| | **Oscillatory Shear** | G', G\" | Viscoelastic characterization | | **Steady Shear** | \u03b7(\u03b3\u0307) | Flow curves, non-Newtonian | | **Creep** | J(t) | Compliance, long-time behavior | | **Stress Relaxation** | G(t) | Relaxation time, memory | | **DMA** | E', E\" | Solid samples, temperature sweeps |",
+    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Intro-Soft-Matter/6-Rheology/#experimental-methods-summary",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "6 rheology - Why Rheological Properties Matter",
+    "content": "**Material Processing:** - Polymer melt needs right viscosity to mold - Cured rubber needs right modulus for application **Formulation Stability:** - Mayonnaise with higher G' holds shape on sandwich - Paint with proper shear-thinning flows on brush but not off wall **Product Performance:** - Tire rubber needs damping (G\") for ride comfort - But stiffness (G') for handling **Biological Systems:** - Mucus rheology affects clearance - Blood viscosity affects circulation - Cell mechanics affect function",
+    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Intro-Soft-Matter/6-Rheology/#why-rheological-properties-matter",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "6 rheology - Connecting Lab Numbers to Tactile Impressions",
+    "content": "**Why peanut butter doesn't flow from jar:** - High zero-shear viscosity - Often has yield stress - Requires finite stress to initiate flow **Why shampoo thins when squeezed:** - Shear-thinning behavior - Polymer network breaks down temporarily",
+    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Intro-Soft-Matter/6-Rheology/#connecting-lab-numbers-to-tactile-impressions",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "6 rheology - Preparation for Next Lecture",
+    "content": "Next lectures: **Student Presentations** (Lectures 7-8, 2-hour session) **Prepare:** - Read selected paper carefully - Understand key concepts and methods - Prepare 10-12 minute presentation - Be ready for questions from peers **Papers span:** - Historical foundations (Einstein, Onsager, de Gennes) - Novel materials (auxetics, soft robots) - Phase transitions (jamming, active matter) - Applications (mechanobiology, shear thickening)",
+    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Intro-Soft-Matter/6-Rheology/#preparation-for-next-lecture",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "6 rheology - References",
+    "content": "1. \"Storage modulus (G') and loss modulus (G\") for beginners\" - Rheology Lab 2. \"Basics of Dynamic Mechanical Analysis (DMA)\" - Anton Paar Wiki 3. Macosko, C.W. \"Rheology: Principles, Measurements, and Applications\" (1994) 4. Barnes, H.A. \"A Handbook of Elementary Rheology\" (2000) --- **Previous Lecture:** [[5-Viscoelasticity|Lecture 5: Elastic vs Viscous vs Viscoelastic]] **Next Lecture:** [[7-8-Student-Presentations|Lectures 7-8: Student Presentations]] **Course Home:** [[0-README|Course Overview]] > [!significance]- Metadata > Author:: [Vatsal Sanjay](https://vatsalsanjay.com) > Date published:: Jul 19, 2026 > Date modified:: Jul 19, 2026 > [!link] Back to main website > [Home](https://comphy-lab.org/), [Team](https://comphy-lab.org/team), [Research](https://comphy-lab.org/research), [Github](https://github.com/comphy-lab) > > \ud83d\udcdd [Edit this page on GitHub](https://github.com/comphy-lab/CoMPhy-Lab-Blogs/blob/main/Lecture-Notes/Intro-Soft-Matter/6-Rheology.md)",
+    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Intro-Soft-Matter/6-Rheology/#references",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
     "title": "2.75 complementary questions answers",
     "content": "> [!info] \ud83d\udcc4 PDF Version > [Download PDF](./2.75-Complementary-Questions-Answers.pdf)",
     "url": "https://blogs.comphy-lab.org/Lecture-Notes/Intro-Soft-Matter/2.75-Complementary-Questions-Answers/",
@@ -4040,6 +4271,174 @@
     "title": "2.75 complementary questions answers - Microscopic picture:: Connection to lecture:...",
     "content": "Connection to lecture: This is the continuum manifestation of momentum diffusion we derived from kinetic theory\u2014the stress tensor component $\\tau = \\eta \\frac{\\partial v}{\\partial y}$ represents the momentum flux that ultimately dissipates energy. --- > [!significance]- Metadata > Author:: [Vatsal Sanjay](https://vatsalsanjay.com) > Date published:: Oct 30, 2025 > Date modified:: Oct 30, 2025 > [!link] Back to main website > [Home](https://comphy-lab.org/), [Team](https://comphy-lab.org/team), [Research](https://comphy-lab.org/research), [Github](https://github.com/comphy-lab) > > \ud83d\udcdd [Edit this page on GitHub](https://github.com/comphy-lab/CoMPhy-Lab-Blogs/blob/main/Lecture-Notes/Intro-Soft-Matter/2.75-Complementary-Questions-Answers.md)",
     "url": "https://blogs.comphy-lab.org/Lecture-Notes/Intro-Soft-Matter/2.75-Complementary-Questions-Answers/#microscopic-picture",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "7 8 student presentations",
+    "content": "> [!info] \ud83d\udcc4 PDF Version > [Download PDF](./7-8-Student-Presentations.pdf)",
+    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Intro-Soft-Matter/7-8-Student-Presentations/",
+    "type": "blog_content",
+    "priority": 3
+  },
+  {
+    "title": "7 8 student presentations - Mini-Seminars",
+    "content": "**Structure:** - Each student presents one selected paper - **8 minutes** per presentation - Followed by peer discussion and Q&A (3 minutes) - Instructor moderates and connects to course themes **Objectives:** - Expose class to broad range of soft matter topics - Practice critical reading skills - Develop scientific presentation abilities - Engage in scholarly discourse",
+    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Intro-Soft-Matter/7-8-Student-Presentations/#mini-seminars",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "7 8 student presentations - What to Include",
+    "content": "1. **Paper Context** - Authors, journal, year - Historical or scientific significance - Connection to course themes 2. **Main Questions/Hypotheses** - What problem does paper address? - What was known before? - What gap does it fill? 3. **Key Methods** - Experimental techniques OR - Theoretical approach OR - Computational methods - Briefly explain novel techniques 4. **Main Results** - Most important findings - Key figures/data - Quantitative results when relevant 5. **Significance** - Why does this matter? - Impact on field - Applications or implications - Connection to modern research 6. **Critical Thinking** - Assumptions made - Limitations - Future directions",
+    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Intro-Soft-Matter/7-8-Student-Presentations/#what-to-include",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "7 8 student presentations - Presentation Tips",
+    "content": "- **Visual:** Use slides with clear figures - **Clarity:** Explain jargon and technical terms - **Focus:** Don't try to cover everything - **Engagement:** Make eye contact, invite questions - **Time:** Practice to stay within 8 minutes",
+    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Intro-Soft-Matter/7-8-Student-Presentations/#presentation-tips",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "7 8 student presentations - Peer Discussion",
+    "content": "**Students should:** - Ask clarifying questions - Pose critical questions - Make connections to other papers/lectures - Respectful and constructive **Example Questions:** - \"What are assumptions of that model?\" - \"How might experiment behave with different fluid?\" - \"How does this connect to [course topic]?\"",
+    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Intro-Soft-Matter/7-8-Student-Presentations/#peer-discussion",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "7 8 student presentations - Paper 1: Brownian Motion and Atomic Theory",
+    "content": "**Citation:** Einstein, A. (1905) \"On the motion of small particles suspended in stationary liquids required by the molecular-kinetic theory of heat.\" **Key Points:** - Explained jittery motion of pollen grains as molecular collisions - Provided direct evidence of atoms - Quantified diffusion - Related diffusion coefficient to particle size and temperature - Jean Perrin experimentally validated predictions (1908) **Why Foundational:** - Cornerstone of soft matter physics - Introduced stochastic processes underlying colloidal science - Bridge between microscopic and macroscopic **Connection to Course:** - Lecture 1: Thermal energy scale, mesoscopic structure - Underpins all subsequent colloidal physics",
+    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Intro-Soft-Matter/7-8-Student-Presentations/#paper-1-brownian-motion-and-atomic-theory",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "7 8 student presentations - Paper 2: Entropic Forces and Liquid Crystal Ordering",
+    "content": "**Citation:** Onsager, L. (1949) \"The effects of shape on the interaction of colloidal particles\" Ann. N.Y. Acad. Sci. **Key Points:** - Theory of isotropic-nematic transition in rod-like colloids - Purely repulsive hard rods can spontaneously align at high concentration - Driven by **entropy maximization** - Increased orientational order frees up translational entropy - Drives nematic liquid crystal phase **Why Foundational:** - Generalized how shape alone causes phase transitions - Laid groundwork for liquid crystal science - Polymer liquid crystals - Counter-intuitive: more order increases entropy! **Connection to Course:** - Lecture 1: Entropy-driven behavior in soft matter - Shows complexity emerging from simple interactions",
+    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Intro-Soft-Matter/7-8-Student-Presentations/#paper-2-entropic-forces-and-liquid-crystal-ordering",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "7 8 student presentations - Paper 3: Polymer Dynamics (Reptation)",
+    "content": "**Citation:** de Gennes, P.G. (1971) \"Reptation of a Polymer Chain in the Presence of Fixed Obstacles\" J. Chem. Phys. **Key Points:** - Reptation model for polymer melts - Polymer moves snake-like through tube of confining neighbors - Explains dramatic viscosity increase in long entangled polymers - Specific scaling: diffusion ~ N\u207b\u00b2 (N = polymer length) - Reptation length ~ N\u00b9 **Why Foundational:** - Revolutionized polymer rheology - Molecular picture for viscoelasticity - Earned de Gennes Nobel Prize (1991) for soft matter universality **Connection to Course:** - Lecture 5: Viscoelastic behavior of polymers - Lecture 6: Rheology, relaxation times",
+    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Intro-Soft-Matter/7-8-Student-Presentations/#paper-3-polymer-dynamics-reptation",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "7 8 student presentations - Paper 4: Auxetic Materials",
+    "content": "**Citation:** Lakes, R.S. (1987) \"Foam Structures with a Negative Poisson's Ratio\" Science **Key Points:** - Fabricated novel re-entrant foam - Expands laterally when stretched (Poisson's ratio = \u20130.6) - Counter-intuitive behavior from internal structure design - Hinged cell ribs create auxetic behavior - Improved stiffness and energy absorption **Why Foundational:** - Opened field of mechanical metamaterials - Properties thought impossible in natural materials - Design-driven material properties **Connection to Course:** - Soft matter engineering - Structure-property relationships - Mesoscopic design principles",
+    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Intro-Soft-Matter/7-8-Student-Presentations/#paper-4-auxetic-materials",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "7 8 student presentations - Paper 5: Colloidal Glass Transition",
+    "content": "**Citation:** Pusey, P.N. & van Megen, W. (1986) \"Phase Behavior of Concentrated Suspensions of Nearly Hard Colloidal Spheres\" Nature **Key Points:** - Demonstrated glass transition in colloidal hard-spheres - Dramatic slowdown in particle motion at high volume fraction - Structural arrest using dynamic light scattering - Approaches random close packing (~58% volume fraction) - Analogous to molecular glass formation **Why Significant:** - Established colloids as model for glassy dynamics - Bridge soft matter and condensed matter - Disorder-induced solidification is general phenomenon - Colloids allow real-space imaging of glass transition **Connection to Course:** - Soft matter phase transitions - Role of volume fraction and packing - Non-equilibrium phenomena",
+    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Intro-Soft-Matter/7-8-Student-Presentations/#paper-5-colloidal-glass-transition",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "7 8 student presentations - Paper 6: Jamming Concept",
+    "content": "**Citation:** Liu, A.J. & Nagel, S.R. (1998) \"Jamming is Not Just Cool Any More\" Nature **Key Points:** - Unified disparate systems: granular media, glasses, foams - Proposed jamming phase diagram (density, load, temperature) - Above certain density + below certain temperature/shear \u2192 jammed (rigid) - \"Fragile matter\" rigidifies under stress - Collapses if stress direction changes **Why Important:** - Interdisciplinary unification - How liquids solidify without crystalline order - Connected granular physics with phase transitions - Spawned new research field **Connection to Course:** - Lecture 6: G' and G\" behavior - Transition from fluid to solid - Shear thickening (related to paper 10)",
+    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Intro-Soft-Matter/7-8-Student-Presentations/#paper-6-jamming-concept",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "7 8 student presentations - Paper 7: Active Matter",
+    "content": "**Citation:** Vicsek, T. et al. (1995) \"Novel Type of Phase Transition in a System of Self-Driven Particles\" Phys. Rev. Lett. **Key Points:** - Simple model of flocking behavior - Point particles: constant speed + align with neighbors + noise - Continuous phase transition from disordered to collective motion - Non-zero average velocity when noise reduced or density increased - Now called \"Vicsek model\" **Why Significant:** - Foundational in active matter field - Local alignment \u2192 macroscopic order - Applies to bird flocks, fish schools, self-propelled colloids - Spontaneous symmetry breaking in non-equilibrium systems **Connection to Course:** - Non-equilibrium soft matter - Collective behavior - Pattern formation - Beyond thermal equilibrium",
+    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Intro-Soft-Matter/7-8-Student-Presentations/#paper-7-active-matter",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "7 8 student presentations - Paper 8: Mechanobiology",
+    "content": "**Citation:** Engler, A.J. et al. (2006) \"Matrix Elasticity Directs Stem Cell Lineage Specification\" Cell **Key Points:** - Stem cells sense substrate stiffness - Commit to different fates based on mechanical cues - Soft (~0.1-1 kPa, brain-like) \u2192 neurons - Intermediate (~10 kPa, muscle-like) \u2192 muscle cells - Stiff (~30-40 kPa, bone-like) \u2192 osteoblasts - Inhibiting cytoskeletal tension (myosin II) prevents effect **Why Groundbreaking:** - Linked soft matter mechanics to biology - Tissue softness directs cell differentiation - Profound implications for tissue engineering - Understanding developmental biology **Connection to Course:** - Lecture 6: Modulus as meaningful parameter (kPa range matters!) - Biological relevance of \"softness\" - Cells as mechanical sensors",
+    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Intro-Soft-Matter/7-8-Student-Presentations/#paper-8-mechanobiology",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "7 8 student presentations - Paper 9: Soft Robotics",
+    "content": "**Citation:** Shepherd, R.F. et al. (2011) \"Multigait soft robot\" Proc. Natl. Acad. Sci. **Key Points:** - Completely soft pneumatic robot from Whitesides' group - Made of silicone elastomers - Could crawl and walk with different gaits - Switch between undulating snake-like and four-legged walking - Controlled by air inflation sequences - Could sustain impacts and squeeze through gaps **Why Notable:** - Seminal demonstration of soft robotics - Functionalities hard for rigid robots - Safe human interaction - Morphing locomotion - Inspired wave of soft robotics research **Connection to Course:** - Soft matter engineering - Rubber elasticity applications - Pneumatic networks - Search-and-rescue, medical devices",
+    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Intro-Soft-Matter/7-8-Student-Presentations/#paper-9-soft-robotics",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "7 8 student presentations - Paper 10: Shear Thickening & Dynamic Jamming",
+    "content": "**Citation:** Waitukaitis, S.R. & Jaeger, H.M. (2012) \"Impact-Activated Solidification of Dense Suspensions via Dynamic Jamming Fronts\" Nature **Key Points:** - Investigated cornstarch-water suspension (\"oobleck\") - Turns solid-like under impact - High-speed imaging + force measurements - Rapidly moving object creates **jamming front** in suspension - Grains jam into temporary rigid network - Once front percolates, material solidifies locally **Why Significant:** - Mechanism for discontinuous shear thickening - Links to transition from unjammed to jammed under stress - Explains everyday phenomena (running on oobleck!) - Novel impact-resistant materials - Shear-thickening fluids in protective gear **Connection to Course:** - Lecture 6: Non-Newtonian rheology - Lecture 3: Instabilities and pattern formation - Dramatic material behavior change under stress",
+    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Intro-Soft-Matter/7-8-Student-Presentations/#paper-10-shear-thickening-dynamic-jamming",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "7 8 student presentations - Schedule Overview",
+    "content": "The final running order is set after paper selection. For a cohort of ten, each slot is 11 minutes: 8 minutes to present and 3 minutes for questions. This leaves 10 minutes for opening and synthesis within the two-hour session. Smaller cohorts use the same presentation limit with additional discussion time.",
+    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Intro-Soft-Matter/7-8-Student-Presentations/#schedule-overview",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "7 8 student presentations - During Presentations",
+    "content": "- Time keeping - Note connections to course material - Prepare bridging comments",
+    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Intro-Soft-Matter/7-8-Student-Presentations/#during-presentations",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "7 8 student presentations - After Each Presentation",
+    "content": "**Connect to Course Concepts:** - Example: \"Einstein (1905) relates to Brownian motion and energy scales from Lecture 1\" - Example: \"Engler et al. (2006) ties into importance of modulus from Lecture 6\" **Facilitate Discussion:** - Encourage questions - Prompt deeper thinking - Ensure respectful dialogue",
+    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Intro-Soft-Matter/7-8-Student-Presentations/#after-each-presentation",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "7 8 student presentations - Wrap-Up",
+    "content": "**Course Synthesis:** - Survey broad swath of soft matter - 100-year-old theories to cutting-edge research - Versatility and unifying principles of field - From fundamental physics to engineering applications - From molecular scale to macroscopic behavior",
+    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Intro-Soft-Matter/7-8-Student-Presentations/#wrap-up",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "7 8 student presentations - Learning Outcomes",
+    "content": "By end of these sessions, students will: 1. **Breadth of Soft Matter:** - Appreciate historical development - Understand current research frontiers - See connections across sub-disciplines 2. **Critical Reading:** - Extract key points from scientific papers - Evaluate assumptions and limitations - Place work in broader context 3. **Scientific Communication:** - Present complex ideas clearly - Respond to questions professionally - Engage in scholarly discussion 4. **Course Integration:** - Connect papers to lecture themes - Synthesize knowledge across topics - Develop holistic understanding",
+    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Intro-Soft-Matter/7-8-Student-Presentations/#learning-outcomes",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "7 8 student presentations - Assessment Criteria",
+    "content": "This final presentation contributes **60% of the course grade**. The percentages below describe how the presentation mark itself is calculated.",
+    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Intro-Soft-Matter/7-8-Student-Presentations/#assessment-criteria",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "7 8 student presentations - Presentation (70%)",
+    "content": "- **Content Understanding (30%):** Grasp of paper's main ideas - **Clarity of Explanation (20%):** Clear, organized presentation - **Visual Aids (10%):** Effective use of slides/figures - **Time Management (10%):** Stay within 8 minutes",
+    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Intro-Soft-Matter/7-8-Student-Presentations/#presentation-70",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "7 8 student presentations - Discussion Participation (30%)",
+    "content": "- **Questions Asked (15%):** Thoughtful questions to peers - **Answers Given (15%):** Thoughtful responses to questions",
+    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Intro-Soft-Matter/7-8-Student-Presentations/#discussion-participation-30",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "7 8 student presentations - References",
+    "content": "Full citations are provided in the [[7.5-Presentation-Paper-Topics|Student Presentation Topics]] document. --- **Previous Lecture:** [[6-Rheology|Lecture 6: Rheology]] **Course Home:** [[0-README|Course Overview]] **Paper Selection:** [[7.5-Presentation-Paper-Topics|Detailed Paper Topics]] > [!significance]- Metadata > Author:: [Vatsal Sanjay](https://vatsalsanjay.com) > Date published:: Jul 19, 2026 > Date modified:: Jul 19, 2026 > [!link] Back to main website > [Home](https://comphy-lab.org/), [Team](https://comphy-lab.org/team), [Research](https://comphy-lab.org/research), [Github](https://github.com/comphy-lab) > > \ud83d\udcdd [Edit this page on GitHub](https://github.com/comphy-lab/CoMPhy-Lab-Blogs/blob/main/Lecture-Notes/Intro-Soft-Matter/7-8-Student-Presentations.md)",
+    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Intro-Soft-Matter/7-8-Student-Presentations/#references",
     "type": "blog_section",
     "priority": 3
   },
@@ -4423,14 +4822,14 @@
   },
   {
     "title": "0 readme - Course Structure (Lectures + Bridges): Understanding how competing...",
-    "content": "Understanding how competing forces select characteristic length scales and how to harness instabilities for fabrication. - Lecture 4: Soft Matter Singularities - Lecture 5: Elastic vs Viscous vs Viscoelastic Behavior - Lecture 6: Rheology \u2013 Measuring \"Softness\" and Time-Dependent Response - Lecture 7: Advanced Topics & Research Frontiers - Lecture 8: Presentations (10:00\u201312:00)",
+    "content": "Understanding how competing forces select characteristic length scales and how to harness instabilities for fabrication. - Lecture 4: [[4-Soft-Matter-Singularities|Soft Matter Singularities]] \u2013 Finite-time singularities, contact lines, and the mid-course open-science assignment - Lecture 5: [[5-Viscoelasticity|Elastic, Viscous, and Viscoelastic Behaviour]] \u2013 Constitutive response, mechanical analogues, and relaxation times - Lecture 6: [[6-Rheology|Rheology]] \u2013 Measuring softness and interpreting time-dependent response - Lectures 7\u20138: [[7-8-Student-Presentations|Student Presentations]] \u2013 Paper-led synthesis and discussion - [[7.5-Presentation-Paper-Topics|Presentation Paper Topics]] \u2013 Paper choices, preparation process, and assessment criteria",
     "url": "https://blogs.comphy-lab.org/Lecture-Notes/Intro-Soft-Matter/0-README/#course-structure-lectures-bridges",
     "type": "blog_section",
     "priority": 3
   },
   {
     "title": "0 readme - Administrative Information",
-    "content": "> [!info] Course Details > - Format: 8 weekly lectures (2 hours each) > - Homework: Short self-assessed questions at the end of each lecture (model solutions provided) > - Office Hours: Thursdays 14:00\u201316:00 (Ph255) or email [vatsal.sanjay@durham.ac.uk](mailto:vatsal.sanjay@durham.ac.uk) > - Assessments: > - Mid-course: Open Source Science contribution (Week 5) > - Final: Student presentations (Week 8, 10:00\u201312:00) > - Grading: Participation (20%), take-home assignment (30%), final presentation (50%)",
+    "content": "> [!info] Course Details > - Format: Six one-hour lectures plus one two-hour presentation session (8 contact hours) > - Homework: Short self-assessed questions at the end of each lecture (model solutions provided) > - Office Hours: Announced at the start of each course run, or by appointment via [vatsal.sanjay@durham.ac.uk](mailto:vatsal.sanjay@durham.ac.uk) > - Assessments: > - Mid-course: Open Source Science contribution (40%, after Lecture 4), with feedback before the final assessment > - Final: Student presentation (60%, final course session) > - Grading: Mid-course assignment (40%), final presentation (60%)",
     "url": "https://blogs.comphy-lab.org/Lecture-Notes/Intro-Soft-Matter/0-README/#administrative-information",
     "type": "blog_section",
     "priority": 3
@@ -4486,7 +4885,7 @@
   },
   {
     "title": "0 readme - Contact & Support",
-    "content": "Instructor: Vatsal Sanjay Email: [vatsal.sanjay@durham.ac.uk](mailto:vatsal.sanjay@durham.ac.uk) Office Hours: Thu 14:00\u201316:00 (Ph255) Have questions? Come to office hours or send an email \u2014 I'm here to help! --- > [!significance]- Metadata > Author:: [Vatsal Sanjay](https://vatsalsanjay.com) > Date published:: Oct 14, 2025 > Date modified:: Oct 30, 2025 > [!link] Back to main website > [Home](https://comphy-lab.org/), [Team](https://comphy-lab.org/team), [Research](https://comphy-lab.org/research), [Github](https://github.com/comphy-lab) > > \ud83d\udcdd [Edit this page on GitHub](https://github.com/comphy-lab/CoMPhy-Lab-Blogs/blob/main/Lecture-Notes/Intro-Soft-Matter/0-README.md)",
+    "content": "Instructor: Vatsal Sanjay Email: [vatsal.sanjay@durham.ac.uk](mailto:vatsal.sanjay@durham.ac.uk) Office Hours: Announced at the start of each course run, or by appointment. Have questions? Come to office hours or send an email \u2014 I'm here to help! --- > [!significance]- Metadata > Author:: [Vatsal Sanjay](https://vatsalsanjay.com) > Date published:: Oct 14, 2025 > Date modified:: Jul 19, 2026 > [!link] Back to main website > [Home](https://comphy-lab.org/), [Team](https://comphy-lab.org/team), [Research](https://comphy-lab.org/research), [Github](https://github.com/comphy-lab) > > \ud83d\udcdd [Edit this page on GitHub](https://github.com/comphy-lab/CoMPhy-Lab-Blogs/blob/main/Lecture-Notes/Intro-Soft-Matter/0-README.md)",
     "url": "https://blogs.comphy-lab.org/Lecture-Notes/Intro-Soft-Matter/0-README/#contact-support",
     "type": "blog_section",
     "priority": 3
@@ -4989,6 +5388,237 @@
     "priority": 3
   },
   {
+    "title": "5 viscoelasticity",
+    "content": "> [!info] \ud83d\udcc4 PDF Version > [Download PDF](./5-Viscoelasticity.pdf)",
+    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Intro-Soft-Matter/5-Viscoelasticity/",
+    "type": "blog_content",
+    "priority": 3
+  },
+  {
+    "title": "5 viscoelasticity - How Materials Deform",
+    "content": "Contrasting three fundamental behaviors: 1. **Elastic Solids** - Store energy, recover shape 2. **Viscous Fluids** - Dissipate energy, flow continuously 3. **Viscoelastic Materials** - Combine both behaviors",
+    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Intro-Soft-Matter/5-Viscoelasticity/#how-materials-deform",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "5 viscoelasticity - Defining Characteristics",
+    "content": "**Hooke's Law:** $$\\sigma = E \\cdot \\varepsilon$$ Where: - \u03c3 = stress (force per unit area) - E = Young's modulus (material stiffness) - \u03b5 = strain (fractional deformation) **Key Properties:** - Stress proportional to **strain** (not rate) - Deform under load but **store energy** - **Recover original shape** when load removed - Energy stored elastically (like a spring)",
+    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Intro-Soft-Matter/5-Viscoelasticity/#defining-characteristics",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "5 viscoelasticity - Examples",
+    "content": "- Spring - Rubber band (small extension) - Steel beam (small deformations) - Hard plastic below glass transition temperature",
+    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Intro-Soft-Matter/5-Viscoelasticity/#examples",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "5 viscoelasticity - Stress-Strain Curves",
+    "content": "**Linear Elastic Regime:** - Straight line - Slope = Young's modulus E - Higher E \u2192 more stress needed for same strain (stiffer) **Shear Modulus:** - For shear deformations: \u03c4 = G\u00b7\u03b3 - G = shear modulus - Similar concept, different geometry",
+    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Intro-Soft-Matter/5-Viscoelasticity/#stress-strain-curves",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "5 viscoelasticity - Typical Moduli Values",
+    "content": "- **Steel:** E ~ 200 GPa (very stiff) - **Rubber:** E ~ 1 MPa (soft) - **Silicone gel:** E ~ 50 kPa (very soft) - **Brain tissue:** E ~ 1 kPa (extremely soft)",
+    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Intro-Soft-Matter/5-Viscoelasticity/#typical-moduli-values",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "5 viscoelasticity - Defining Characteristics",
+    "content": "**Newton's Law of Viscosity:** $$\\tau = \\eta \\cdot \\dot{\\gamma}$$ Where: - \u03c4 = shear stress - \u03b7 = viscosity (Pa\u00b7s) - $\\dot{\\gamma}$ = shear rate (strain rate) **Key Properties:** - Stress proportional to **strain rate** (not strain itself) - Flows continuously under any applied stress - **Dissipates energy** as heat (irreversible) - No shape recovery when stress removed",
+    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Intro-Soft-Matter/5-Viscoelasticity/#defining-characteristics",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "5 viscoelasticity - Examples",
+    "content": "- Water (\u03b7 \u2248 1 mPa\u00b7s) - Honey (\u03b7 \u2248 10 Pa\u00b7s, ~10,000\u00d7 water) - Glycerol (\u03b7 \u2248 1 Pa\u00b7s) - Motor oil",
+    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Intro-Soft-Matter/5-Viscoelasticity/#examples",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "5 viscoelasticity - Dimensional Analogy",
+    "content": "| Property | Elastic | Viscous | |----------|---------|---------| | **Relation** | \u03c3 = E\u00b7\u03b5 | \u03c4 = \u03b7\u00b7$\\dot{\\gamma}$ | | **Units** | Pa = N/m\u00b2 | Pa\u00b7s | | **Response to** | Strain | Strain rate | | **Energy** | Stored | Dissipated |",
+    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Intro-Soft-Matter/5-Viscoelasticity/#dimensional-analogy",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "5 viscoelasticity - Behavior Under Load",
+    "content": "- If you stop applying stress to viscous fluid: - Deformation continues until stress is zero - No recovery - Fluid remains in deformed state",
+    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Intro-Soft-Matter/5-Viscoelasticity/#behavior-under-load",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "5 viscoelasticity - Combined Characteristics",
+    "content": "**Definition:** Materials exhibiting **both** elastic and viscous behaviors - Deform like elastic solid on **short timescales** - Flow like viscous fluid over **long times** - Behavior depends on observation timescale",
+    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Intro-Soft-Matter/5-Viscoelasticity/#combined-characteristics",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "5 viscoelasticity - Common Viscoelastic Materials",
+    "content": "- Polymers (quintessential examples) - Biological tissues (cartilage, muscle, skin) - Gels - Silly putty (classic demo material) - Many food products (dough, cheese, etc.)",
+    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Intro-Soft-Matter/5-Viscoelasticity/#common-viscoelastic-materials",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "5 viscoelasticity - Maxwell Model",
+    "content": "**Configuration:** Spring and dashpot in **series** **Represents:** Fluid with memory **Behavior:** - Can relax stress over time - If sudden strain applied and held: - Initially: High stress (spring compressed) - Over time: Stress gradually decays (dashpot flows) - Eventually: Stress \u2192 0 (full relaxation) **Equation:** $$\\dot{\\varepsilon} = \\frac{\\dot{\\sigma}}{E} + \\frac{\\sigma}{\\eta}$$ **Relaxation Time:** $$\\tau_M = \\frac{\\eta}{E}$$",
+    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Intro-Soft-Matter/5-Viscoelasticity/#maxwell-model",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "5 viscoelasticity - Kelvin-Voigt Model",
+    "content": "**Configuration:** Spring and dashpot in **parallel** **Represents:** Solid that creeps under load **Behavior:** - Under sudden load: - No instantaneous elastic jump (dashpot resists) - Gradual spring deformation (creep) - Approaches equilibrium asymptotically - When load removed: - Slow recovery back to original shape **Equation:** $$\\sigma = E\\varepsilon + \\eta\\dot{\\varepsilon}$$ **Retardation Time:** $$\\tau_K = \\frac{\\eta}{E}$$",
+    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Intro-Soft-Matter/5-Viscoelasticity/#kelvin-voigt-model",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "5 viscoelasticity - Stress Relaxation",
+    "content": "**Experiment:** 1. Apply sudden fixed strain 2. Hold constant 3. Measure stress vs time **Results:** - **Elastic material:** Constant stress (no decay) - **Viscoelastic (Maxwell):** Stress decays exponentially $$\\sigma(t) = \\sigma_0 e^{-t/\\tau_M}$$ - **Time constant \u03c4_M** = relaxation time",
+    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Intro-Soft-Matter/5-Viscoelasticity/#stress-relaxation",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "5 viscoelasticity - Creep",
+    "content": "**Experiment:** 1. Apply constant stress 2. Measure strain vs time **Results:** - **Elastic:** Immediate strain, then constant - **Viscous:** Strain increases linearly forever - **Viscoelastic (Kelvin-Voigt):** - Immediate dashpot resistance - Gradual approach to equilibrium - $$\\varepsilon(t) = \\frac{\\sigma_0}{E}(1 - e^{-t/\\tau_K})$$",
+    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Intro-Soft-Matter/5-Viscoelasticity/#creep",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "5 viscoelasticity - Definition",
+    "content": "**Relaxation Time (\u03c4):** Characteristic time for material to transition from elastic to viscous response **Physical Meaning:** - Maxwell time: \u03c4 = \u03b7/E - Time for stress to decay to 1/e of initial value - Separates elastic (short-term) and viscous (long-term) regimes",
+    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Intro-Soft-Matter/5-Viscoelasticity/#definition",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "5 viscoelasticity - Time-Scale Dependence",
+    "content": "**Fast Observation (t > \u03c4):** - Material behaves **viscous** (liquid-like) - Spring equilibrated - Dashpot flows freely **Application to Silly Putty:** - \u03c4 ~ few seconds - Quick poke (t > \u03c4): Flows like liquid (viscous)",
+    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Intro-Soft-Matter/5-Viscoelasticity/#time-scale-dependence",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "5 viscoelasticity - Silly Putty Demonstration",
+    "content": "**Classic Demo:** **Fast Impact (High Strain Rate):** 1. Roll into ball 2. Drop from height 3. **Bounces** like elastic ball 4. Behavior: Solid-like (t > \u03c4) **Very Fast (Brittle Failure):** - Quick yank \u2192 snaps (brittle behavior) - Elastic domination with insufficient time for viscous flow",
+    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Intro-Soft-Matter/5-Viscoelasticity/#silly-putty-demonstration",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "5 viscoelasticity - Metal vs Polymer Comparison",
+    "content": "**Metal Spring:** - Apply weight briefly - Springs back **immediately** - Pure elastic response - Negligible viscous component **Viscoelastic Polymer Strip:** - Apply same weight - Might slowly rebound - Or not fully recover if short time - Clear viscoelastic behavior",
+    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Intro-Soft-Matter/5-Viscoelasticity/#metal-vs-polymer-comparison",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "5 viscoelasticity - Pitch Drop Experiment",
+    "content": "**Famous Long-Term Experiment:** **Short Timescale (Impact):** - Block of pitch (tar) - Hit with hammer \u2192 **shatters** - Feels solid, elastic **Long Timescale (Years):** - Over ~10 years, drops form and fall out - **Flows** like extremely viscous liquid - Demonstrates extreme relaxation time (years!) **Lesson:** Time scale of observation matters!",
+    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Intro-Soft-Matter/5-Viscoelasticity/#pitch-drop-experiment",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "5 viscoelasticity - Quantitative Example",
+    "content": "**Dynamic Testing:** - **Water:** Phase angle \u03b4 \u2248 90\u00b0 (all viscous, no elastic storage) - **Rubber:** Phase angle \u03b4 \u2248 0\u00b0 (all elastic storage) - **Silly putty:** Phase angle \u03b4 \u2248 45\u00b0 at intermediate frequencies (half-half) **Units Reminder:** - Elastic modulus: Pa - Viscosity: Pa\u00b7s - Example values: - Rubber E ~ 1 MPa - Honey \u03b7 ~ 10 Pa\u00b7s - Silly putty \u03c4 ~ seconds",
+    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Intro-Soft-Matter/5-Viscoelasticity/#quantitative-example",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "5 viscoelasticity - Learning Outcomes: Students will be...",
+    "content": "Students will be able to: 1. **Differentiate elastic vs viscous response** - State defining constitutive relations (Hooke's law vs Newton's viscosity law) - Qualitatively describe behavior under load 2. **Give examples of each type** - Elastic: Steel, hard plastic below T_g, rubber (small strains) - Viscous: Water, oil, glycerin - Viscoelastic: Silly putty, cartilage, polymer melt - Justify classifications 3. **Understand viscoelastic models** - Maxwell model: Initial stress from spring, then decays as dashpot flows - Kelvin-Voigt: Sudden stress \u2192 dashpot resistance + gradual spring deformation - Conceptual understanding (no ODE solving required) 4. **Interpret storage vs loss qualitatively** - Viscoelastic material has: - **Storage modulus** (elastic part, energy stored) - **Loss modulus** (viscous part, energy dissipated) - More elastic \u2192 bounces back (stores energy) - More viscous \u2192 damps motion (loses energy as heat) 5. **Apply time-scale reasoning** - Predict material behavior based on deformation rate - Quick stretch \u2192 stiff (elastic) - Slow stretch \u2192 soft/flowy (viscous) - Articulate relaxation time concept",
+    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Intro-Soft-Matter/5-Viscoelasticity/#learning-outcomes",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "5 viscoelasticity - 1. Identify Behaviors",
+    "content": "**Scenarios to classify:** - **Bowling ball impacts cement floor and rebounds** - Mostly elastic (some energy lost) - **Person slowly sinking into memory foam mattress** - Viscoelastic (slow deformation over time) - **Toothpaste extruded from tube** - Mostly viscous flow (with yield stress) - **Guitar string vibrating** - Elastic **Task:** Students debate and justify answers",
+    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Intro-Soft-Matter/5-Viscoelasticity/#1-identify-behaviors",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "5 viscoelasticity - 2. Spring vs Dashpot Analogy",
+    "content": "**Questions:** - If you stretch Maxwell material (spring+dashpot series) and hold, what happens to stress? - Initially: High stress from spring - Over time: Gradually decays (dashpot relieves it) - **Stress relaxation** - If suddenly released after long hold, will it return to original length? - No \u2013 dashpot has flowed (permanent deformation) - Only spring part returns - Some deformation remains - How does this differ from Kelvin-Voigt under sudden load?",
+    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Intro-Soft-Matter/5-Viscoelasticity/#2-spring-vs-dashpot-analogy",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "5 viscoelasticity - 3. Energy Storage vs Loss",
+    "content": "**Scenario:** Two materials feel similarly stiff when tapped, but one gets warm when bent repeatedly, the other doesn't. **Question:** What does this indicate? - Warming material: Dissipating energy \u2192 higher **loss modulus** - Non-warming: Stores-returns energy \u2192 higher **storage modulus** **Examples:** - Rubber bands heating up after stretching - Car tires heating up (viscoelastic damping)",
+    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Intro-Soft-Matter/5-Viscoelasticity/#3-energy-storage-vs-loss",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "5 viscoelasticity - 4. Design Considerations",
+    "content": "**Shoe Sole for Runners:** - More elastic or more viscous? - **Discussion:** - Elastic: Returns energy (spring in step) - Viscous: Absorbs energy (shock absorption) - Likely want mix (viscoelastic) - Different answers possible - Shows engineering balance **Seismic Dampers:** - Should be highly **viscous** - Dissipate earthquake energy - Not elastic (would spring back and forth) - Connects material behavior to function",
+    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Intro-Soft-Matter/5-Viscoelasticity/#4-design-considerations",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "5 viscoelasticity - Elastic Behavior",
+    "content": "- **Relation:** \u03c3 = E\u00b7\u03b5 - **Energy:** Stored (recoverable) - **Response:** Immediate - **Examples:** Springs, metals, rubber (small strain)",
+    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Intro-Soft-Matter/5-Viscoelasticity/#elastic-behavior",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "5 viscoelasticity - Viscous Behavior",
+    "content": "- **Relation:** \u03c4 = \u03b7\u00b7$\\dot{\\gamma}$ - **Energy:** Dissipated as heat - **Response:** Continuous flow - **Examples:** Water, honey, oils",
+    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Intro-Soft-Matter/5-Viscoelasticity/#viscous-behavior",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "5 viscoelasticity - Viscoelastic Behavior",
+    "content": "- **Models:** Maxwell (fluid-like) vs Kelvin-Voigt (solid-like) - **Key parameter:** Relaxation time \u03c4 = \u03b7/E - **Time dependence:** Solid when fast, liquid when slow - **Examples:** Polymers, silly putty, tissues",
+    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Intro-Soft-Matter/5-Viscoelasticity/#viscoelastic-behavior",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "5 viscoelasticity - Storage vs Loss",
+    "content": "- **Storage modulus (G'):** Elastic energy stored - **Loss modulus (G\"):** Viscous energy dissipated - **Phase angle (\u03b4):** tan \u03b4 = G\"/G' - Sets up next lecture on rheology!",
+    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Intro-Soft-Matter/5-Viscoelasticity/#storage-vs-loss",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "5 viscoelasticity - Preparation for Next Lecture",
+    "content": "Next lecture: **Rheology \u2013 Measuring \"Softness\"** Consider: - How do we experimentally measure these properties? - What is a rheometer? - How do G' and G\" relate to oscillatory tests? - What does \"soft\" really mean quantitatively?",
+    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Intro-Soft-Matter/5-Viscoelasticity/#preparation-for-next-lecture",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "5 viscoelasticity - References",
+    "content": "1. \"What is a Viscoelastic material?\" - Biolin Scientific 2. Ferry, J.D. \"Viscoelastic Properties of Polymers\" (1980) 3. Lakes, R.S. \"Viscoelastic Materials\" (2009) 4. Newtonian fluid - Wikipedia --- **Previous Lecture:** [[4-Soft-Matter-Singularities|Lecture 4: Finite-Time Singularities]] **Next Lecture:** [[6-Rheology|Lecture 6: Rheology]] **Course Home:** [[0-README|Course Overview]] > [!significance]- Metadata > Author:: [Vatsal Sanjay](https://vatsalsanjay.com) > Date published:: Jul 19, 2026 > Date modified:: Jul 19, 2026 > [!link] Back to main website > [Home](https://comphy-lab.org/), [Team](https://comphy-lab.org/team), [Research](https://comphy-lab.org/research), [Github](https://github.com/comphy-lab) > > \ud83d\udcdd [Edit this page on GitHub](https://github.com/comphy-lab/CoMPhy-Lab-Blogs/blob/main/Lecture-Notes/Intro-Soft-Matter/5-Viscoelasticity.md)",
+    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Intro-Soft-Matter/5-Viscoelasticity/#references",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
     "title": "2 what is viscosity",
     "content": "> [!info] \ud83d\udcc4 PDF Version > [Download PDF](./2-What-is-Viscosity.pdf)",
     "url": "https://blogs.comphy-lab.org/Lecture-Notes/Intro-Soft-Matter/2-What-is-Viscosity/",
@@ -5431,7 +6061,7 @@
   },
   {
     "title": "4 soft matter singularities - Take-Home Coding Assignment: Contact Line Singularity: Along the way,...",
-    "content": "Along the way, think about how the boundary condition at infinity can be handled in a finite numerical domain (hint: you'll likely impose $h''$ approaches 0 at a large but finite $x$). > > **Instructions**: Use the class GitHub repository **Intro-Soft-Matter-2025** \u2013 fork it, add your code (we suggest Python or MATLAB for ODE solving), and submit a pull request as described in the README.[^github-readme] The README's \"Contact Line Singularity\" section provides the exact steps and an example prompt to get you started. This will be a graded exercise focusing not only on the correct physics solution but also on your use of computational tools and interpretation of the results. Good luck, and have fun seeing how a singular problem can be tamed numerically! [^eggers1997]: J. Eggers, Nonlinear dynamics and breakup of free-surface flows, Rev. Mod. Phys., 69, 865 (1997).",
+    "content": "Along the way, think about how the boundary condition at infinity can be handled in a finite numerical domain (hint: you'll likely impose $h''$ approaches 0 at a large but finite $x$). > > **Instructions**: Use the class GitHub repository **Intro-Soft-Matter-2025** \u2013 fork it, add your code (we suggest Python or MATLAB for ODE solving), and submit a pull request as described in the README.[^github-readme] The README's \"Contact Line Singularity\" section provides the exact steps and an example prompt to get you started. This mid-course assignment contributes **40% of the course grade**, and you will receive feedback before the final presentation. The assessment focuses on the physics solution, use of computational tools, and interpretation of the results. [^eggers1997]: J. Eggers, Nonlinear dynamics and breakup of free-surface flows, Rev. Mod. Phys., 69, 865 (1997).",
     "url": "https://blogs.comphy-lab.org/Lecture-Notes/Intro-Soft-Matter/4-Soft-Matter-Singularities/#take-home-coding-assignment-contact-line-singularity",
     "type": "blog_section",
     "priority": 3
@@ -5445,7 +6075,7 @@
   },
   {
     "title": "4 soft matter singularities - Take-Home Coding Assignment: Contact Line Singularity: Context",
-    "content": "Bertin & J. H. Snoeijer, Viscoelastic wetting: Cox\u2013Voinov theory with normal stress effects, J. Fluid Mech., 985, A17 (2024). DOI: [10.1017/jfm.2024.296](https://doi.org/10.1017/jfm.2024.296). [^github-readme]: Course GitHub repository: [Intro-Soft-Matter-2025](https://github.com/comphy-lab/Intro-Soft-Matter-2025/blob/fb7fdb9beb90b278b360830478d8be97cbe17113/README.md). [^1]: M. Tjahjadi, H. A. Stone & J. M. Ottino, Satellite and subsatellite formation in capillary breakup, J. Fluid Mech., 243, 297-317 (1992). DOI: [10.1017/S0022112092002738](https://doi.org/10.1017/S0022112092002738). [^2]: C. Huh & L. E. Scriven, Hydrodynamic model of steady movement of a solid/liquid/fluid contact line, J. Colloid Interface Sci., 35:1, 85-101 (1971).",
+    "content": "Bertin & J. H. Snoeijer, Viscoelastic wetting: Cox\u2013Voinov theory with normal stress effects, J. Fluid Mech., 985, A17 (2024). DOI: [10.1017/jfm.2024.296](https://doi.org/10.1017/jfm.2024.296). [^github-readme]: Course GitHub repository: [Intro-Soft-Matter-2025](https://github.com/comphy-lab/Intro-Soft-Matter-2025/blob/main/README.md). [^1]: M. Tjahjadi, H. A. Stone & J. M. Ottino, Satellite and subsatellite formation in capillary breakup, J. Fluid Mech., 243, 297-317 (1992). DOI: [10.1017/S0022112092002738](https://doi.org/10.1017/S0022112092002738). [^2]: C. Huh & L. E. Scriven, Hydrodynamic model of steady movement of a solid/liquid/fluid contact line, J. Colloid Interface Sci., 35:1, 85-101 (1971).",
     "url": "https://blogs.comphy-lab.org/Lecture-Notes/Intro-Soft-Matter/4-Soft-Matter-Singularities/#take-home-coding-assignment-contact-line-singularity",
     "type": "blog_section",
     "priority": 3
@@ -5454,6 +6084,440 @@
     "title": "4 soft matter singularities - Take-Home Coding Assignment: Contact Line Singularity: Context",
     "content": "DOI: [10.1016/0021-9797(71)90188-3](https://doi.org/10.1016/0021-9797(71)90188-3). > [!significance]- Metadata > Author:: [Vatsal Sanjay](https://vatsalsanjay.com) > Date published:: Nov 12, 2025 > Date modified:: Nov 19, 2025 > [!link] Back to main website > [Home](https://comphy-lab.org/), [Team](https://comphy-lab.org/team), [Research](https://comphy-lab.org/research), [Github](https://github.com/comphy-lab) > > \ud83d\udcdd [Edit this page on GitHub](https://github.com/comphy-lab/CoMPhy-Lab-Blogs/blob/main/Lecture-Notes/Intro-Soft-Matter/4-Soft-Matter-Singularities.md)",
     "url": "https://blogs.comphy-lab.org/Lecture-Notes/Intro-Soft-Matter/4-Soft-Matter-Singularities/#take-home-coding-assignment-contact-line-singularity",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "7.5 presentation paper topics",
+    "content": "> [!info] \ud83d\udcc4 PDF Version > [Download PDF](./7.5-Presentation-Paper-Topics.pdf)",
+    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Intro-Soft-Matter/7.5-Presentation-Paper-Topics/",
+    "type": "blog_content",
+    "priority": 3
+  },
+  {
+    "title": "7.5 presentation paper topics - Paper Selection Instructions",
+    "content": "1. **Choose ONE paper** from the list below 2. **By the announced selection deadline**: Confirm your choice with the instructor 3. **By the announced slide deadline**: Submit your presentation slides 4. **Final session**: Present during the two-hour presentation session",
+    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Intro-Soft-Matter/7.5-Presentation-Paper-Topics/#paper-selection-instructions",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "7.5 presentation paper topics - Presentation Requirements",
+    "content": "- **Duration**: 8 minutes (strict), followed by 3 minutes of questions - **Format**: Slides (PDF or PowerPoint) - **Content**: See [[7-8-Student-Presentations|Presentation Guidelines]] ---",
+    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Intro-Soft-Matter/7.5-Presentation-Paper-Topics/#presentation-requirements",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "7.5 presentation paper topics - Paper 1: Brownian Motion and the Atomic Theory (1905)",
+    "content": "**Author**: Albert Einstein **Title**: \"On the motion of small particles suspended in stationary liquids required by the molecular-kinetic theory of heat\" **Journal**: Annalen der Physik **Year**: 1905",
+    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Intro-Soft-Matter/7.5-Presentation-Paper-Topics/#paper-1-brownian-motion-and-the-atomic-theory-1905",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "7.5 presentation paper topics - Why This Paper?",
+    "content": "- Foundational paper providing evidence for atoms - Explained Brownian motion as molecular collisions - Quantified diffusion at molecular scale - Direct experimental validation by Jean Perrin (1908)",
+    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Intro-Soft-Matter/7.5-Presentation-Paper-Topics/#why-this-paper",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "7.5 presentation paper topics - Key Topics to Cover",
+    "content": "- Historical context: Debate over atomic theory - Einstein's theoretical prediction: D = kT/(6\u03c0\u03b7r) - Relationship between diffusion, temperature, particle size - Perrin's experimental validation - Impact on soft matter and colloidal science - Stochastic processes in physics",
+    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Intro-Soft-Matter/7.5-Presentation-Paper-Topics/#key-topics-to-cover",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "7.5 presentation paper topics - Connection to Course",
+    "content": "- Lecture 1: Thermal energy scales (kBT) - Foundational for understanding mesoscopic systems - Entropy and fluctuations in soft matter",
+    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Intro-Soft-Matter/7.5-Presentation-Paper-Topics/#connection-to-course",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "7.5 presentation paper topics - References",
+    "content": "- Einstein, A. Ann. Phys. 17, 549 (1905) - Perrin, J. Ann. Chim. Phys. 18, 5 (1909) - Wikipedia: Brownian motion ---",
+    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Intro-Soft-Matter/7.5-Presentation-Paper-Topics/#references",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "7.5 presentation paper topics - Paper 2: Entropic Forces and Liquid Crystal Ordering (1949)",
+    "content": "**Author**: Lars Onsager **Title**: \"The effects of shape on the interaction of colloidal particles\" **Journal**: Annals of the New York Academy of Sciences **Year**: 1949",
+    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Intro-Soft-Matter/7.5-Presentation-Paper-Topics/#paper-2-entropic-forces-and-liquid-crystal-ordering-1949",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "7.5 presentation paper topics - Why This Paper?",
+    "content": "- Counter-intuitive: More order increases entropy! - Shape alone can cause phase transitions - Foundation for liquid crystal physics - Shows power of entropy in soft matter",
+    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Intro-Soft-Matter/7.5-Presentation-Paper-Topics/#why-this-paper",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "7.5 presentation paper topics - Key Topics to Cover",
+    "content": "- Isotropic vs nematic phases - Hard-rod model (purely repulsive interactions) - Entropic ordering mechanism - Role of packing fraction - Translational vs orientational entropy - Modern applications in colloidal liquid crystals",
+    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Intro-Soft-Matter/7.5-Presentation-Paper-Topics/#key-topics-to-cover",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "7.5 presentation paper topics - Connection to Course",
+    "content": "- Lecture 1: Entropy-driven behavior - Mesoscopic structure determining properties - Phase transitions without attractive forces",
+    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Intro-Soft-Matter/7.5-Presentation-Paper-Topics/#connection-to-course",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "7.5 presentation paper topics - References",
+    "content": "- Onsager, L. Ann. N.Y. Acad. Sci. 51, 627 (1949) - Frenkel, D. Physica A 263, 26 (1999) - Recent work on DNA liquid crystals ---",
+    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Intro-Soft-Matter/7.5-Presentation-Paper-Topics/#references",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "7.5 presentation paper topics - Paper 3: Polymer Dynamics - Reptation (1971)",
+    "content": "**Author**: Pierre-Gilles de Gennes **Title**: \"Reptation of a Polymer Chain in the Presence of Fixed Obstacles\" **Journal**: Journal of Chemical Physics **Year**: 1971",
+    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Intro-Soft-Matter/7.5-Presentation-Paper-Topics/#paper-3-polymer-dynamics---reptation-1971",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "7.5 presentation paper topics - Why This Paper?",
+    "content": "- Revolutionary model for polymer rheology - Nobel Prize work (1991) - Molecular picture for viscoelasticity - Explains dramatic viscosity changes",
+    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Intro-Soft-Matter/7.5-Presentation-Paper-Topics/#why-this-paper",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "7.5 presentation paper topics - Key Topics to Cover",
+    "content": "- Reptation (snake-like motion) concept - Tube model for entangled polymers - Scaling laws: D ~ N\u207b\u00b2, \u03c4 ~ N\u00b3 - Entanglement length and molecular weight - Experimental validation - Impact on polymer processing",
+    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Intro-Soft-Matter/7.5-Presentation-Paper-Topics/#key-topics-to-cover",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "7.5 presentation paper topics - Connection to Course",
+    "content": "- Lecture 5: Viscoelastic behavior - Lecture 6: Rheology and relaxation times - Microscopic origin of macroscopic properties",
+    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Intro-Soft-Matter/7.5-Presentation-Paper-Topics/#connection-to-course",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "7.5 presentation paper topics - References",
+    "content": "- de Gennes, P.G. J. Chem. Phys. 55, 572 (1971) - Doi, M. & Edwards, S.F. \"The Theory of Polymer Dynamics\" (1986) - Nobel lecture (1991) ---",
+    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Intro-Soft-Matter/7.5-Presentation-Paper-Topics/#references",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "7.5 presentation paper topics - Paper 4: Auxetic Materials (1987)",
+    "content": "**Author**: Roderic S. Lakes **Title**: \"Foam Structures with a Negative Poisson's Ratio\" **Journal**: Science **Year**: 1987",
+    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Intro-Soft-Matter/7.5-Presentation-Paper-Topics/#paper-4-auxetic-materials-1987",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "7.5 presentation paper topics - Why This Paper?",
+    "content": "- Counter-intuitive behavior: Expands when stretched! - Opened field of mechanical metamaterials - Design-driven material properties - Engineering applications",
+    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Intro-Soft-Matter/7.5-Presentation-Paper-Topics/#why-this-paper",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "7.5 presentation paper topics - Key Topics to Cover",
+    "content": "- Poisson's ratio (normal: positive, auxetic: negative) - Re-entrant foam structure design - Mechanical testing results (\u03bd = -0.6) - Enhanced energy absorption - Stiffness improvements - Modern metamaterials inspired by this work",
+    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Intro-Soft-Matter/7.5-Presentation-Paper-Topics/#key-topics-to-cover",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "7.5 presentation paper topics - Connection to Course",
+    "content": "- Soft matter engineering - Structure-property relationships - Mesoscopic design principles",
+    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Intro-Soft-Matter/7.5-Presentation-Paper-Topics/#connection-to-course",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "7.5 presentation paper topics - References",
+    "content": "- Lakes, R.S. Science 235, 1038 (1987) - Modern reviews on auxetic materials - Applications in protective equipment, medical devices ---",
+    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Intro-Soft-Matter/7.5-Presentation-Paper-Topics/#references",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "7.5 presentation paper topics - Paper 5: Colloidal Glass Transition (1986)",
+    "content": "**Authors**: P.N. Pusey & W. van Megen **Title**: \"Phase Behavior of Concentrated Suspensions of Nearly Hard Colloidal Spheres\" **Journal**: Nature **Year**: 1986",
+    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Intro-Soft-Matter/7.5-Presentation-Paper-Topics/#paper-5-colloidal-glass-transition-1986",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "7.5 presentation paper topics - Why This Paper?",
+    "content": "- Established colloids as model system for glasses - Bridged soft matter and condensed matter - Demonstrated glassy dynamics experimentally - Accessible system for theoretical validation",
+    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Intro-Soft-Matter/7.5-Presentation-Paper-Topics/#why-this-paper",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "7.5 presentation paper topics - Key Topics to Cover",
+    "content": "- Hard-sphere colloids - Volume fraction dependence - Dynamic light scattering technique - Structural arrest at \u03c6 ~ 0.58 - Glass vs crystal transitions - Modern applications (real-space imaging)",
+    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Intro-Soft-Matter/7.5-Presentation-Paper-Topics/#key-topics-to-cover",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "7.5 presentation paper topics - Connection to Course",
+    "content": "- Soft matter phase transitions - Role of packing and jamming - Non-equilibrium phenomena",
+    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Intro-Soft-Matter/7.5-Presentation-Paper-Topics/#connection-to-course",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "7.5 presentation paper topics - References",
+    "content": "- Pusey, P.N. & van Megen, W. Nature 320, 340 (1986) - van Megen, W. & Underwood, S.M. Nature 362, 616 (1993) - Review: Hunter & Weeks Rep. Prog. Phys. (2012) ---",
+    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Intro-Soft-Matter/7.5-Presentation-Paper-Topics/#references",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "7.5 presentation paper topics - Paper 6: Jamming Concept (1998)",
+    "content": "**Authors**: Andrea J. Liu & Sidney R. Nagel **Title**: \"Jamming is Not Just Cool Any More\" **Journal**: Nature **Year**: 1998",
+    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Intro-Soft-Matter/7.5-Presentation-Paper-Topics/#paper-6-jamming-concept-1998",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "7.5 presentation paper topics - Why This Paper?",
+    "content": "- Unified disparate systems - Jamming phase diagram concept - Interdisciplinary impact - Active research field today",
+    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Intro-Soft-Matter/7.5-Presentation-Paper-Topics/#why-this-paper",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "7.5 presentation paper topics - Key Topics to Cover",
+    "content": "- Jamming phase diagram (density, load, temperature) - Granular media, foams, glasses unified - \"Fragile matter\" concept - Unjammed vs jammed states - Critical packing fraction - Modern jamming research",
+    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Intro-Soft-Matter/7.5-Presentation-Paper-Topics/#key-topics-to-cover",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "7.5 presentation paper topics - Connection to Course",
+    "content": "- Lecture 6: G' and G\" behavior near jamming - Transition from fluid to solid - Non-equilibrium solidification",
+    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Intro-Soft-Matter/7.5-Presentation-Paper-Topics/#connection-to-course",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "7.5 presentation paper topics - References",
+    "content": "- Liu, A.J. & Nagel, S.R. Nature 396, 21 (1998) - van Hecke, M. J. Phys. Condens. Matter 22, 033101 (2010) - Modern jamming reviews ---",
+    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Intro-Soft-Matter/7.5-Presentation-Paper-Topics/#references",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "7.5 presentation paper topics - Paper 7: Active Matter - Vicsek Model (1995)",
+    "content": "**Authors**: Tam\u00e1s Vicsek et al. **Title**: \"Novel Type of Phase Transition in a System of Self-Driven Particles\" **Journal**: Physical Review Letters **Year**: 1995",
+    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Intro-Soft-Matter/7.5-Presentation-Paper-Topics/#paper-7-active-matter---vicsek-model-1995",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "7.5 presentation paper topics - Why This Paper?",
+    "content": "- Foundational for active matter field - Simple model with rich behavior - Non-equilibrium phase transition - Applications from biology to robotics",
+    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Intro-Soft-Matter/7.5-Presentation-Paper-Topics/#why-this-paper",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "7.5 presentation paper topics - Key Topics to Cover",
+    "content": "- Vicsek model rules (alignment + noise) - Phase transition to collective motion - Order parameter (average velocity) - Critical noise and density - Biological examples (flocking, schooling) - Modern active matter research",
+    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Intro-Soft-Matter/7.5-Presentation-Paper-Topics/#key-topics-to-cover",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "7.5 presentation paper topics - Connection to Course",
+    "content": "- Beyond thermal equilibrium - Collective behavior in soft matter - Pattern formation - Emergent phenomena",
+    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Intro-Soft-Matter/7.5-Presentation-Paper-Topics/#connection-to-course",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "7.5 presentation paper topics - References",
+    "content": "- Vicsek, T. et al. Phys. Rev. Lett. 75, 1226 (1995) - Modern reviews on active matter - Applications in self-propelled colloids, bacteria ---",
+    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Intro-Soft-Matter/7.5-Presentation-Paper-Topics/#references",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "7.5 presentation paper topics - Paper 8: Mechanobiology - Matrix Elasticity (2006)",
+    "content": "**Authors**: Adam J. Engler, Shamik Sen, Dennis E. Discher **Title**: \"Matrix Elasticity Directs Stem Cell Lineage Specification\" **Journal**: Cell **Year**: 2006",
+    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Intro-Soft-Matter/7.5-Presentation-Paper-Topics/#paper-8-mechanobiology---matrix-elasticity-2006",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "7.5 presentation paper topics - Why This Paper?",
+    "content": "- Groundbreaking link between mechanics and biology - Tissue engineering implications - Showed cells sense and respond to stiffness - Developmental biology insights",
+    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Intro-Soft-Matter/7.5-Presentation-Paper-Topics/#why-this-paper",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "7.5 presentation paper topics - Key Topics to Cover",
+    "content": "- Mesenchymal stem cells - Substrate stiffness ranges: - Soft (0.1-1 kPa) \u2192 neurons - Medium (10 kPa) \u2192 muscle - Stiff (30-40 kPa) \u2192 bone - Mechanotransduction mechanism - Myosin II inhibition experiments - Impact on tissue engineering",
+    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Intro-Soft-Matter/7.5-Presentation-Paper-Topics/#key-topics-to-cover",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "7.5 presentation paper topics - Connection to Course",
+    "content": "- Lecture 6: Modulus as meaningful parameter - Biological relevance of \"softness\" - Real-world application of rheology",
+    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Intro-Soft-Matter/7.5-Presentation-Paper-Topics/#connection-to-course",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "7.5 presentation paper topics - References",
+    "content": "- Engler, A.J. et al. Cell 126, 677 (2006) - Discher, D.E. et al. Science 310, 1139 (2005) - Modern mechanobiology reviews ---",
+    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Intro-Soft-Matter/7.5-Presentation-Paper-Topics/#references",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "7.5 presentation paper topics - Paper 9: Soft Robotics - Multigait Robot (2011)",
+    "content": "**Authors**: Robert F. Shepherd et al. (Whitesides group) **Title**: \"Multigait soft robot\" **Journal**: Proceedings of the National Academy of Sciences **Year**: 2011",
+    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Intro-Soft-Matter/7.5-Presentation-Paper-Topics/#paper-9-soft-robotics---multigait-robot-2011",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "7.5 presentation paper topics - Why This Paper?",
+    "content": "- Seminal soft robotics demonstration - Pneumatic actuation principles - Novel locomotion strategies - Inspired new research field",
+    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Intro-Soft-Matter/7.5-Presentation-Paper-Topics/#why-this-paper",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "7.5 presentation paper topics - Key Topics to Cover",
+    "content": "- Silicone elastomer construction - Pneumatic network design - Multiple gaits (undulating, walking) - Advantages over rigid robots: - Impact resistance - Squeezing through gaps - Safe human interaction - Modern soft robotics applications",
+    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Intro-Soft-Matter/7.5-Presentation-Paper-Topics/#key-topics-to-cover",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "7.5 presentation paper topics - Connection to Course",
+    "content": "- Soft matter engineering - Rubber elasticity in action - Practical applications of material properties",
+    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Intro-Soft-Matter/7.5-Presentation-Paper-Topics/#connection-to-course",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "7.5 presentation paper topics - References",
+    "content": "- Shepherd, R.F. et al. Proc. Natl. Acad. Sci. 108, 20400 (2011) - Reviews on soft robotics - Medical and search-rescue applications ---",
+    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Intro-Soft-Matter/7.5-Presentation-Paper-Topics/#references",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "7.5 presentation paper topics - Paper 10: Shear Thickening - Dynamic Jamming (2012)",
+    "content": "**Authors**: Scott R. Waitukaitis & Heinrich M. Jaeger **Title**: \"Impact-Activated Solidification of Dense Suspensions via Dynamic Jamming Fronts\" **Journal**: Nature **Year**: 2012",
+    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Intro-Soft-Matter/7.5-Presentation-Paper-Topics/#paper-10-shear-thickening---dynamic-jamming-2012",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "7.5 presentation paper topics - Why This Paper?",
+    "content": "- Explained famous \"oobleck\" behavior - Novel mechanism (jamming fronts) - High-speed imaging insights - Impact-resistant material applications",
+    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Intro-Soft-Matter/7.5-Presentation-Paper-Topics/#why-this-paper",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "7.5 presentation paper topics - Key Topics to Cover",
+    "content": "- Cornstarch-water suspension properties - Discontinuous shear thickening - Dynamic jamming front propagation - High-speed imaging and force measurements - Grain jamming mechanism - Applications in protective materials",
+    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Intro-Soft-Matter/7.5-Presentation-Paper-Topics/#key-topics-to-cover",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "7.5 presentation paper topics - Connection to Course",
+    "content": "- Lecture 6: Non-Newtonian rheology - Dramatic material behavior changes - Stress-dependent properties - Connection to Paper 6 (jamming)",
+    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Intro-Soft-Matter/7.5-Presentation-Paper-Topics/#connection-to-course",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "7.5 presentation paper topics - References",
+    "content": "- Waitukaitis, S.R. & Jaeger, H.M. Nature 487, 205 (2012) - Morris, J.F. Annu. Rev. Fluid Mech. 52, 121 (2020) - Shear-thickening fluid applications ---",
+    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Intro-Soft-Matter/7.5-Presentation-Paper-Topics/#references",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "7.5 presentation paper topics - Step 1: Review All Papers",
+    "content": "- Read abstracts and summaries above - Consider your interests - Think about which connects to your background",
+    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Intro-Soft-Matter/7.5-Presentation-Paper-Topics/#step-1-review-all-papers",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "7.5 presentation paper topics - Step 2: Select a Paper",
+    "content": "- Email instructor with: - First choice - Second choice (backup) - First-come, first-served for popular papers - Instructor will confirm assignment",
+    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Intro-Soft-Matter/7.5-Presentation-Paper-Topics/#step-2-select-a-paper",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "7.5 presentation paper topics - Step 3: Deep Dive",
+    "content": "- Read paper thoroughly (multiple times) - Research background/context - Find supplementary materials - Identify key figures to present - Prepare questions you might receive",
+    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Intro-Soft-Matter/7.5-Presentation-Paper-Topics/#step-3-deep-dive",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "7.5 presentation paper topics - Step 4: Create the Presentation",
+    "content": "- Follow [[7-8-Student-Presentations|Presentation Guidelines]] - Include: context, methods, results, significance - Practice timing (8 minutes strict) - Submit slides 24 hours before class",
+    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Intro-Soft-Matter/7.5-Presentation-Paper-Topics/#step-4-create-the-presentation",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "7.5 presentation paper topics - Finding Papers",
+    "content": "- University library access - Google Scholar - Ask instructor for PDF if access issues",
+    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Intro-Soft-Matter/7.5-Presentation-Paper-Topics/#finding-papers",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "7.5 presentation paper topics - Understanding Papers",
+    "content": "- Read related reviews - Check citation context - Office hours for clarification - Discuss with classmates (respectfully)",
+    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Intro-Soft-Matter/7.5-Presentation-Paper-Topics/#understanding-papers",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "7.5 presentation paper topics - Creating Presentations",
+    "content": "- PowerPoint / Keynote / Google Slides - Include clear figures from paper - Explain technical terms - Visual aids important",
+    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Intro-Soft-Matter/7.5-Presentation-Paper-Topics/#creating-presentations",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "7.5 presentation paper topics - Grading Criteria: See [[7-8-Student-Presentations|Lectures 7-8]]...",
+    "content": "See [[7-8-Student-Presentations|Lectures 7-8]] for the full rubric. The final presentation contributes **60% of the course grade**. The split below is within the presentation mark. **Presentation (70%)**: - Content understanding: 30% - Clarity of explanation: 20% - Visual aids: 10% - Time management: 10% **Discussion (30%)**: - Questions asked to peers: 15% - Thoughtful responses to questions: 15% --- **Questions?** Contact Dr.",
+    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Intro-Soft-Matter/7.5-Presentation-Paper-Topics/#grading-criteria",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "7.5 presentation paper topics - Grading Criteria: Sanjay during office...",
+    "content": "Sanjay during office hours or via email. **Paper selection deadline**: Announced for the current course run **Slides submission deadline**: Announced for the current course run **Presentations**: Final two-hour course session **Course Home:** [[0-README|Course Overview]] > [!significance]- Metadata > Author:: [Vatsal Sanjay](https://vatsalsanjay.com) > Date published:: Jul 19, 2026 > Date modified:: Jul 19, 2026 > [!link] Back to main website > [Home](https://comphy-lab.org/), [Team](https://comphy-lab.org/team), [Research](https://comphy-lab.org/research), [Github](https://github.com/comphy-lab) > > \ud83d\udcdd [Edit this page on GitHub](https://github.com/comphy-lab/CoMPhy-Lab-Blogs/blob/main/Lecture-Notes/Intro-Soft-Matter/7.5-Presentation-Paper-Topics.md)",
+    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Intro-Soft-Matter/7.5-Presentation-Paper-Topics/#grading-criteria",
     "type": "blog_section",
     "priority": 3
   },
