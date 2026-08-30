@@ -256,23 +256,24 @@ int verify_eigenpairs(const pseudo_t3d* A, const pseudo_t3d* R,
     
     // Compute A * v
     for (int j = 0; j < 3; j++) {
-      ((double*)&Av)[j] = ((double*)A)[j*3] * ((double*)R)[i] + 
-                          ((double*)A)[j*3+1] * ((double*)R)[i+3] + 
-                          ((double*)A)[j*3+2] * ((double*)R)[i+6];
+      ((long double*)&Av)[j] = ((long double*)A)[j*3] * ((long double*)R)[i] +
+                          ((long double*)A)[j*3+1] * ((long double*)R)[i+3] +
+                          ((long double*)A)[j*3+2] * ((long double*)R)[i+6];
     }
-    
+
     // Compute λ * v
     for (int j = 0; j < 3; j++) {
-      ((double*)&lambda_v)[j] = ((double*)Lambda)[i] * ((double*)R)[i+j*3];
+      ((long double*)&lambda_v)[j] = ((long double*)Lambda)[i] *
+                                     ((long double*)R)[i+j*3];
     }
-    
+
     printf("Eigenpair %d:\n", i + 1);
     printf("A * v = %8.4Lf %8.4Lf %8.4Lf\n", Av.x, Av.y, Av.z);
     printf("λ * v = %8.4Lf %8.4Lf %8.4Lf\n", lambda_v.x, lambda_v.y, lambda_v.z);
-    
+
     // Check if A * v ≈ λ * v
     for (int j = 0; j < 3; j++) {
-      if (fabs(((double*)&Av)[j] - ((double*)&lambda_v)[j]) > EPSILON) {
+      if (fabsl(((long double*)&Av)[j] - ((long double*)&lambda_v)[j]) > EPSILON) {
         printf("Mismatch for eigenpair %d, component %d\n", i + 1, j + 1);
       }
     }

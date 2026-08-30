@@ -126,8 +126,6 @@ simulation.
 @return Exit status
 */
 int main(int argc, char const *argv[]) {
-  // dtmax = 1e-5; //  BEWARE of this for stability issues. 
-
   L0 = 20;
   init_grid(1 << 6);
 
