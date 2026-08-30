@@ -102,7 +102,7 @@ qcc -O2 -Wall -I./src-local -disable-dimensions simulationCases/dropAtomisation.
 - **Axisymmetric/2D/3D**: Use the appropriate header for your geometry (see comments in each header for guidance).
 
 ## 🧑‍💻 Contributing
-- See [CLAUDE.md](CLAUDE.md) for code style and development guidelines.
+- See [AGENTS.md](AGENTS.md) for code style and development guidelines.
 - Issue templates and feature requests: [GitHub Issue Templates](.github/ISSUE_TEMPLATE/)
 - Pull requests are welcome! Please document your changes and update relevant tests/examples.
 
