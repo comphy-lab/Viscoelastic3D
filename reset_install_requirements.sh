@@ -1,24 +1,7 @@
-#!/bin/zsh
-# MacOS only. modify using http://basilisk.fr/src/INSTALL 
-# ensures that we are always using the latest version of basilisk
+#!/usr/bin/env bash
+# Install the CoMPhy ref-locked Basilisk tree into ./basilisk (gitignored).
+set -euo pipefail
 
-rm -rf basilisk
-rm -rf .project_config
-
-darcs clone http://basilisk.fr/basilisk
-cd basilisk/src
-
-if [[ "$OSTYPE" == "darwin"* ]]; then
-    echo "Using MacOS"
-    ln -s config.osx config
-else
-    echo "Using Linux"
-    ln -s config.gcc config
-fi
-make
-
-echo "export BASILISK=$PWD" >> ../../.project_config
-echo "export PATH=\$PATH:\$BASILISK" >> ../../.project_config
-
-source ../../.project_config 
-
+REF="${1:-v2026-08-30}"
+curl -sL "https://raw.githubusercontent.com/comphy-lab/basilisk-C/${REF}/reset_install_basilisk-ref-locked.sh" \
+  | bash -s -- --ref="${REF}" --hard

@@ -1,3 +1,8 @@
+# Basilisk sources and tooling
+basilisk/
+**/.comphy-basilisk
+CLAUDE.md
+
 testCases/pinchOff
 testCases/dropImpact
 testCases/src-local

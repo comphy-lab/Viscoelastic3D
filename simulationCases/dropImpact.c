@@ -118,7 +118,7 @@ Returns 0 on successful completion
 */
 int main(int argc, char const *argv[]) {
 
-  dtmax = 1e-5;
+  DT = 1e-5;
 
   L0 = 4.0;
   

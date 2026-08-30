@@ -28,7 +28,6 @@
 ## 🗂️ Repository Structure
 
 ```
-├── basilisk/src/               # Core Basilisk CFD library (reference only, do not modify)
 ├── src-local/                  # Custom viscoelastic solvers and tensor utilities
 │   ├── log-conform-viscoelastic-scalar-3D.h   # 3D log-conformation (scalar)
 │   ├── log-conform-viscoelastic-scalar-2D.h   # 2D/axi log-conformation (scalar)
@@ -47,6 +46,8 @@
     ├── VideoAxi.py                           # Python visualization script
 ```
 
+A local Basilisk tree belongs in `basilisk/` after the ref-locked install below. Do not commit it.
+
 ## 📚 Documentation
 - [docs/](docs/) — Full HTML documentation, mathematical background, and API
 - Inline documentation in all major headers (see `src-local/`)
@@ -55,10 +56,18 @@
 ## 🚀 Quick Start
 
 ### 1. Prerequisites
-- [Basilisk C](http://basilisk.fr/) (included as submodule in `basilisk/`)
+- [Basilisk C](https://github.com/comphy-lab/basilisk-C) via the ref-locked installer (gitignored in `basilisk/`)
 - C compiler (e.g., gcc)
 - Python 3 (for post-processing)
 - Optional: Jupyter for notebooks
+
+```sh
+git clone https://github.com/comphy-lab/Viscoelastic3D.git
+cd Viscoelastic3D
+curl -sL https://raw.githubusercontent.com/comphy-lab/basilisk-C/v2026-08-30/reset_install_basilisk-ref-locked.sh | bash -s -- --ref=v2026-08-30 --hard
+```
+
+Update `v2026-08-30` with the latest [basilisk-C release](https://github.com/comphy-lab/basilisk-C/releases).
 
 ### 2. Compiling & Running Simulations
 
@@ -93,7 +102,7 @@ qcc -O2 -Wall -I./src-local -disable-dimensions simulationCases/dropAtomisation.
 - **Axisymmetric/2D/3D**: Use the appropriate header for your geometry (see comments in each header for guidance).
 
 ## 🧑‍💻 Contributing
-- See [CLAUDE.md](CLAUDE.md) for code style and development guidelines.
+- See [AGENTS.md](AGENTS.md) for code style and development guidelines.
 - Issue templates and feature requests: [GitHub Issue Templates](.github/ISSUE_TEMPLATE/)
 - Pull requests are welcome! Please document your changes and update relevant tests/examples.
 
