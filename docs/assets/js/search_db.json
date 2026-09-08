@@ -22,14 +22,7 @@
   },
   {
     "title": "Team: Context",
-    "content": "Prof. \", \"\" -%} {%- assign name_words = clean_name | split: \" \" -%} {%- capture initials -%} {%- for word in name_words -%} {%- assign first_char = word | slice: 0, 1 -%} {%- unless first_char == \"(\" -%}{{ first_char }}{%- endunless -%} {%- endfor -%} {%- endcapture -%} {{ initials | strip | upcase | slice: 0, 2 }} {{ m.name }} {{ m.role }} {{ m.bio }} {% if m.thesis.href %} Thesis \u2014 {{ m.thesis.title }} {% endif %} {% if m.links.github %} {% endif %} {% if m.links.linkedin %} {% endif %} {% if m.links.scholar %} {% endif %} {% endfor %} {% comment %} ---------------- World map ---------------- {% endcomment %} 04 \u00b7 Around the world Team, collaborators, and conference visits Locations meet one of four criteria, in this order of preference: Hometown of a team member or alum Base of an active collaborator Talks we've given Places we've visited (no talk) {% comment %} Lightweight placeholder until the iframe is lazy-loaded. {% endcomment %} Loading the world map\u2026 /* Lazy-load the Google Map iframe only when it's about to enter the viewport \u2014 saves a heavy iframe + Google scripts on initial team-page load.",
-    "url": "https://comphy-lab.org/team/",
-    "type": "website_content",
-    "priority": 1
-  },
-  {
-    "title": "Team: Function Definition",
-    "content": "Falls back to immediate load when IntersectionObserver isn't available. */ (function () { var frame = document.getElementById('team-map'); if (!frame) return; var loaded = false; function load() { if (loaded) return; loaded = true; frame.innerHTML = ' '; } if ('IntersectionObserver' in window) { var io = new IntersectionObserver(function (entries) { entries.forEach(function (e) { if (e.isIntersecting) { load(); io.disconnect(); } }); }, { rootMargin: '300px' }); io.observe(frame); } else { load(); } })();",
+    "content": "Prof. \", \"\" -%} {%- assign name_words = clean_name | split: \" \" -%} {%- capture initials -%} {%- for word in name_words -%} {%- assign first_char = word | slice: 0, 1 -%} {%- unless first_char == \"(\" -%}{{ first_char }}{%- endunless -%} {%- endfor -%} {%- endcapture -%} {{ initials | strip | upcase | slice: 0, 2 }} {{ m.name }} {{ m.role }} {{ m.bio }} {% if m.thesis.href %} Thesis \u2014 {{ m.thesis.title }} {% endif %} {% if m.links.github %} {% endif %} {% if m.links.linkedin %} {% endif %} {% if m.links.scholar %} {% endif %} {% endfor %} {% comment %} ---------------- World map ---------------- {% endcomment %} 04 \u00b7 Around the world Team, collaborators, and conference visits Locations meet one of four criteria, in this order of preference: Hometown of a team member or alum Base of an active collaborator Talks we've given Places we've visited (no talk) {% comment %} Lightweight placeholder until the iframe is lazy-loaded. {% endcomment %} Loading the world map\u2026",
     "url": "https://comphy-lab.org/team/",
     "type": "website_content",
     "priority": 1
@@ -5731,6 +5724,55 @@
     "priority": 3
   },
   {
+    "title": "Browser security - Browser security boundary",
+    "content": "This note records the live browser-security boundary observed on 7 September 2026. It does not change production headers or close GitHub Issue [#3](https://github.com/comphy-lab/comphy-lab-blogs/issues/3).",
+    "url": "https://blogs.comphy-lab.org/docs/browser-security/#browser-security-boundary",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "Browser security - Service and ownership: Context",
+    "content": "`https://blogs.comphy-lab.org/` is the canonical site and returns the Obsidian Publish application. `https://blogs-comphy-lab.org/` redirects permanently to the canonical hostname. The boundary has three owners: - This repository owns published Markdown, local media, `publish.css`, and any deliberately added root `publish.js`. Obsidian documents those two root files as the supported CSS and JavaScript customization points in its [Publish customization guide](https://obsidian.md/help/publish/customize). - Obsidian Publish owns the generated HTML application, feature scripts and baseline Content Security Policy. Repository content changes do not directly rewrite that provider policy. - Cloudflare owns the proxied custom-domain edge. It can add, replace or remove browser response headers through separately managed [Response Header Transform Rules](https://developers.cloudflare.com/rules/transform/response-header-modification/).",
+    "url": "https://blogs.comphy-lab.org/docs/browser-security/#service-and-ownership",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "Browser security - Service and ownership: A rule is...",
+    "content": "A rule is effective only after live readback proves that it matches this hostname and returns the intended header.",
+    "url": "https://blogs.comphy-lab.org/docs/browser-security/#service-and-ownership",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "Browser security - Observed response policy: The canonical homepage...",
+    "content": "The canonical homepage returned `200`. Its Content Security Policy was: ```text default-src 'self' *.obsidian.md; script-src 'self' 'unsafe-inline' 'unsafe-eval' *.obsidian.md blob: https://*:*; frame-src 'self' https://*:* http://127.0.0.1:*; child-src 'self' * blob:; style-src 'self' 'unsafe-inline' https://*:* http://127.0.0.1:*; font-src * https://*:* data: blob:; img-src * data: blob:; media-src * data: blob:; connect-src 'self' 'unsafe-eval' ws://*:* http://*:* ``` This is a broad compatibility policy. In particular, it permits inline and evaluated scripts and wide network, frame, image, media and font sources. The snapshot does not establish that every allowed source is needed or safe. The response also included: - `Strict-Transport-Security: max-age=15552000; includeSubDomains`; - `X-Content-Type-Options: nosniff`. It did not include `X-Frame-Options`, `Referrer-Policy` or `Permissions-Policy`.",
+    "url": "https://blogs.comphy-lab.org/docs/browser-security/#observed-response-policy",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "Browser security - Observed response policy: Framing protection also...",
+    "content": "Framing protection also was not present as a `frame-ancestors` directive in the observed CSP. The path `/.well-known/security.txt` returned the Publish HTML application rather than an [RFC 9116](https://www.rfc-editor.org/rfc/rfc9116.html) security contact document. These are tracked limitations. They are not evidence of a demonstrated attack, and no stricter production policy has yet passed compatibility testing.",
+    "url": "https://blogs.comphy-lab.org/docs/browser-security/#observed-response-policy",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "Browser security - Required staged hardening work: Before changing the...",
+    "content": "Before changing the production CSP or adding a second policy at Cloudflare: 1. Map each Publish feature and repository customization to the script, style, connection, image, media and frame sources it actually uses. Record provider shell sources separately from repository-owned sources. 2. Capture a reproducible baseline for homepage and representative nested pages. Exercise search, mathematical rendering, internal and external links, local and remote images, supported embeds, downloads, navigation, theme and mobile layout. 3. Test one restriction at a time on a non-production or otherwise isolated surface. Inspect browser console violations and network failures across desktop and mobile engines. Do not infer safety from a page merely loading. 4. Remember that a second enforced CSP combines with the provider policy; it does not simply replace it. Re-run the complete baseline after each change. 5. Define rollback before deployment.",
+    "url": "https://blogs.comphy-lab.org/docs/browser-security/#required-staged-hardening-work",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "Browser security - Required staged hardening work: Preserve the prior...",
+    "content": "Preserve the prior rule, deploy the smallest reviewed change, read the live headers back, and restore the prior rule if any required feature regresses. The missing `Referrer-Policy`, framing control, `Permissions-Policy` and valid `security.txt` each need an explicit owner and delivery route. Cloudflare may be appropriate for response headers, but the final choice must account for Obsidian's generated application and be verified at the canonical hostname. Issue #3 remains incomplete until the feature-to-source map, staged browser matrix, selected provider or edge configuration, rollback plan, live deployment and post-deployment readback all exist.",
+    "url": "https://blogs.comphy-lab.org/docs/browser-security/#required-staged-hardening-work",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
     "title": "2025 thesis viscous free surface flows",
     "content": "> [!meta] Back to main website > [Home](https://comphy-lab.org/), [Team](https://comphy-lab.org/team), [Research](https://comphy-lab.org/research), [Github](https://github.com/comphy-lab) > [!significance]- Metadata > Author:: [Vatsal Sanjay](https://vatsalsanjay.com) > Date published:: > Date modified::",
     "url": "https://blogs.comphy-lab.org/Blog/2025-Thesis-Viscous-Free-Surface-Flows/",
@@ -7685,7 +7727,7 @@
   },
   {
     "title": "\"Join Us\" - <span class=\"section-icon\"><i class=\"fa-solid fa-flask\"></i></span> Internships: Include your preferred...",
-    "content": "Include your preferred internship timeline and any specific research areas of interest. > Eligible PhD candidates from Commonwealth countries may also consider the [Commonwealth Split-site PhD Scholarships](https://cscuk.fcdo.gov.uk/scholarships/commonwealth-split-site-scholarships-for-low-and-middle-income-countries/) to undertake a 1\u2011year research period at CoMPhy Lab as part of their PhD.",
+    "content": "Include your preferred internship timeline and any specific research areas of interest. > Eligible PhD candidates from Commonwealth countries may also consider the [Commonwealth Split-site PhD Scholarships](https://cscuk.fcdo.gov.uk/about-us/scholarships/) to undertake a 1\u2011year research period at CoMPhy Lab as part of their PhD.",
     "url": "https://comphy-lab.org/join/#span-classsection-iconi-classfa-solid-fa-flaskispan-internships",
     "type": "website_section",
     "priority": 4
