@@ -880,58 +880,275 @@
     "priority": 3
   },
   {
+    "title": "From slender jet to uniform filament - From the slender-jet hierarchy to a uniform-filament force balance",
+    "content": "> [!pdf] PDF version > [[_Media/PDF/Lecture-Notes/Slender-Jets/from-slender-jet-to-uniform-filament.pdf|Download this page as PDF]] Consider a cylindrical liquid filament that stretches while its radius decreases. Its axial force depends on the pressure averaged over a cross-section. The surface condition fixes the pressure at the interface, so we first need to find how the radial acceleration changes the pressure between the axis and the surface. We start from [[slender-jets-VE-order-0|the leading-order slender-jet equations]] and [[slender-jets-VE-order-2|their second-order expansion]]. As in those notes, $r$ and $h$ are dimensional, $\\eta$ is the solvent viscosity, and pressure is measured relative to a uniform surrounding gas pressure. We neglect gravity and gas stresses. Primes denote $\\partial_z$ and dots denote time derivatives.",
+    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Slender-Jets/from-slender-jet-to-uniform-filament/#from-the-slender-jet-hierarchy-to-a-uniform-filament-force-balance",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "From slender jet to uniform filament - 1. Specify the local extension",
+    "content": "Let the radius be $h(t)$ and choose the origin at the stagnation plane of a homogeneous extensional flow. The velocity is $$ v_z=-2\\frac{\\dot h}{h}z, \\qquad v_r=\\frac{\\dot h}{h}r, $$ with axial strain rate $$ \\dot\\epsilon\\equiv\\partial_zv_z=-2\\frac{\\dot h}{h}. $$ The radial velocity follows from continuity and is regular at the axis. At the surface, $v_r(h)=\\dot h$, so the kinematic condition is satisfied exactly: $$ \\partial_t(h^2)+\\partial_z(h^2v_z) =2h\\dot h-2h\\dot h=0. $$ We also assume spatially uniform, diagonal polymer stress. Thus, $S=S_3=0$ and $\\Sigma_{zz,2}=\\Sigma_{rr,2}=\\Theta_2=0$ in the notation of the previous note. The homogeneous velocity profile has $v_2=v_4=0$ and satisfies both tangential-traction conditions. These statements establish the kinematics and shear-free surface; we check axial momentum separately below.",
+    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Slender-Jets/from-slender-jet-to-uniform-filament/#1-specify-the-local-extension",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "From slender jet to uniform filament - 2. Calculate the radial acceleration: For this velocity...",
+    "content": "For this velocity field, $\\partial_zv_r=0$. The radial acceleration is $$ \\begin{aligned} a_r&=\\partial_tv_r+v_r\\partial_rv_r\\\\ &=\\left(\\frac{\\ddot h}{h}-\\frac{\\dot h^2}{h^2}\\right)r +\\frac{\\dot h^2}{h^2}r =\\frac{\\ddot h}{h}r. \\end{aligned} $$ The two $\\dot h^2$ contributions cancel. The vector Laplacian of this radial velocity vanishes, as does the radial divergence of the uniform polymer stress. Radial momentum therefore gives $$ \\partial_rp=-\\rho\\frac{\\ddot h}{h}r, $$ and integration from the axis gives $$ \\boxed{p(r,t)=p_0(t)-\\frac{\\rho}{2}\\frac{\\ddot h}{h}r^2.} $$ The same result follows from (R) in the second-order hierarchy: $$ \\frac{\\rho}{4}\\partial_tv_0' =-\\frac{\\rho}{2}\\left(\\frac{\\ddot h}{h}-\\frac{\\dot h^2}{h^2}\\right), \\qquad -\\frac{\\rho}{8}(v_0')^2=-\\frac{\\rho}{2}\\frac{\\dot h^2}{h^2}, $$ so $$ p_2=-\\frac{\\rho}{2}\\frac{\\ddot h}{h}, \\qquad \\mathcal B=-h^2p_2=\\frac{\\rho}{2}h\\ddot h. $$ Keeping only the convective radial acceleration would instead give $p_2=-\\rho\\dot h^2/(2h^2)$.",
+    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Slender-Jets/from-slender-jet-to-uniform-filament/#2-calculate-the-radial-acceleration",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "From slender jet to uniform filament - 2. Calculate the radial acceleration: Definitions",
+    "content": "That expression omits the local acceleration and does not follow from the time-dependent ansatz above. A velocity-squared correction would require its own approximation and definition of the pressure being used.",
+    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Slender-Jets/from-slender-jet-to-uniform-filament/#2-calculate-the-radial-acceleration",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "From slender jet to uniform filament - 3. Distinguish the three pressures",
+    "content": "Write $p_0$ for the centreline pressure, $p_h$ for the surface pressure and $\\bar p$ for the cross-sectional mean. The parabola gives $$ p_h=p_0-\\frac{\\rho}{2}h\\ddot h, $$ $$ \\bar p=\\frac{1}{\\pi h^2}\\int_0^h p\\,2\\pi r\\,\\mathrm dr =p_0-\\frac{\\rho}{4}h\\ddot h. $$ Eliminating $p_0$, we obtain $$ \\boxed{\\bar p=p_h+\\frac{\\rho}{4}h\\ddot h.} $$ The traction condition determines $p_h$. The axial force requires $\\bar p$. Replacing one by the other would lose the radial-inertia contribution.",
+    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Slender-Jets/from-slender-jet-to-uniform-filament/#3-distinguish-the-three-pressures",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "From slender jet to uniform filament - 4. Integrate the axial force: For a cylinder,...",
+    "content": "For a cylinder, $\\boldsymbol n=\\boldsymbol e_r$ and $\\kappa=1/h$. Normal traction gives $$ -p_h+2\\eta\\frac{\\dot h}{h}+\\Sigma_{rr}=-\\frac{\\gamma}{h}, $$ so $$ p_h=\\frac{\\gamma}{h}+2\\eta\\frac{\\dot h}{h}+\\Sigma_{rr}. $$ Define $F_z$ as the total tensile force transmitted through a section, including the surface-tension line force at its circumference. With tension taken positive, $$ \\begin{aligned} F_z &=\\int_{\\mathcal S}\\left(-p+2\\eta\\partial_zv_z+\\sigma_{p,zz}\\right)\\mathrm dS +2\\pi\\gamma h\\\\ &=\\pi h^2\\left(-\\bar p-4\\eta\\frac{\\dot h}{h}+\\Sigma_{zz}\\right)+2\\pi\\gamma h. \\end{aligned} $$ Substituting the mean pressure gives $$ \\boxed{ \\frac{F_z}{\\pi h^2} =\\frac{\\gamma}{h}-6\\eta\\frac{\\dot h}{h} +\\Delta\\Sigma-\\frac{\\rho}{4}h\\ddot h, \\qquad \\Delta\\Sigma=\\Sigma_{zz}-\\Sigma_{rr}. } $$ The capillary contribution is $2\\gamma/h$ from the circumference minus $\\gamma/h$ from the surface pressure. The solvent contribution is $3\\eta\\dot\\epsilon$, and the polymer contributes its normal-stress difference.",
+    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Slender-Jets/from-slender-jet-to-uniform-filament/#4-integrate-the-axial-force",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "From slender jet to uniform filament - 4. Integrate the axial force: The final term...",
+    "content": "The final term comes from averaging the radial pressure profile. Its sign depends on $\\ddot h$; it is an inertial contribution, not a viscous resistance.",
+    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Slender-Jets/from-slender-jet-to-uniform-filament/#4-integrate-the-axial-force",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "From slender jet to uniform filament - 5. Check axial momentum before using the force balance: The force expression...",
+    "content": "The force expression follows from radial momentum, normal traction and the imposed kinematics. A solution of the full problem must also satisfy axial momentum. For the same ansatz, $$ \\partial_tv_z+v_z\\partial_zv_z =\\left(-2\\frac{\\ddot h}{h}+6\\frac{\\dot h^2}{h^2}\\right)z. $$ If $h$ and the polymer stresses are spatially uniform, normal traction makes the pressure independent of $z$. The right-hand side of the axial momentum equation then vanishes. At finite density, the ansatz can satisfy that equation everywhere only if $$ h\\ddot h=3\\dot h^2. $$ An exponentially thinning radius does not satisfy this condition. Also, although $\\mathcal B\\ne0$, both $\\partial_z\\mathcal B$ and $\\mathcal T_2$ vanish here. The surviving radial pressure correction therefore cannot supply the missing axial force gradient. For a nonuniform filament, axial inertia is supplied by the variation of transmitted force along its length.",
+    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Slender-Jets/from-slender-jet-to-uniform-filament/#5-check-axial-momentum-before-using-the-force-balance",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "From slender jet to uniform filament - 5. Check axial momentum before using the force balance: A local model...",
+    "content": "A local model replaces that spatial problem by a prescribed or matched $F_z(t)$ and must justify the treatment of axial inertia. In a regime where inertia is negligible, the tensile force is approximately uniform in $z$, and matching to the end regions can determine its value. Prescribing the force alone does not turn the homogeneous ansatz into an exact inertial solution. Under the slender ordering, the radial-inertia correction is a relative $O(\\varepsilon^2)$ contribution. If it becomes dynamically important, its use in a radius-only model requires an axial-inertia estimate as well. The force identity supplies the local stress relation; the surrounding flow supplies the additional dynamics.",
+    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Slender-Jets/from-slender-jet-to-uniform-filament/#5-check-axial-momentum-before-using-the-force-balance",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "From slender jet to uniform filament - 6. Evolve the polymer stretch: For an Oldroyd-B...",
+    "content": "For an Oldroyd-B liquid, $$ \\boldsymbol\\sigma_p=G(\\boldsymbol A-\\boldsymbol I), $$ where $G$ is the elastic modulus, $\\boldsymbol A$ is the conformation tensor and $\\lambda$ is the relaxation time. Homogeneous extension gives $$ \\frac{\\mathrm dA_{zz}}{\\mathrm dt} =2\\dot\\epsilon A_{zz}-\\frac{A_{zz}-1}{\\lambda} =-4\\frac{\\dot h}{h}A_{zz}-\\frac{A_{zz}-1}{\\lambda}. $$ To see what is lost in a strong-stretch approximation, start from $A_{zz}(0)=1$ and $h(0)=h_0$. Define $$ q(t)=\\left(\\frac{h_0}{h(t)}\\right)^4e^{-t/\\lambda}. $$ The exact integrating-factor solution is $$ A_{zz}(t)=q(t)\\left[1+\\frac{1}{\\lambda}\\int_0^t\\frac{\\mathrm ds}{q(s)}\\right]. $$ Thus, $A_{zz}\\simeq(h_0/h)^4e^{-t/\\lambda}$ additionally assumes that the source integral is negligible. Strong stretch at a later time does not by itself establish that assumption for the earlier history. Within an interval where $A_{zz}\\gg1$, we can neglect $1/\\lambda$ relative to $A_{zz}/\\lambda$ in the differential equation.",
+    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Slender-Jets/from-slender-jet-to-uniform-filament/#6-evolve-the-polymer-stretch",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "From slender jet to uniform filament - 6. Evolve the polymer stretch: Starting that interval...",
+    "content": "Starting that interval at $t_*$, with radius $h_*$ and conformation $A_*=A_{zz}(t_*)$, gives $$ A_{zz}\\simeq A_*\\left(\\frac{h_*}{h}\\right)^4e^{-(t-t_*)/\\lambda}. $$ If $A_{zz}\\gg A_{rr}$ as well, then $\\Delta\\Sigma=G(A_{zz}-A_{rr})\\simeq GA_{zz}$. The local force relation becomes $$ \\frac{F_z}{\\pi h^2} \\simeq\\frac{\\gamma}{h}-6\\eta\\frac{\\dot h}{h} -\\frac{\\rho}{4}h\\ddot h +GA_*\\left(\\frac{h_*}{h}\\right)^4e^{-(t-t_*)/\\lambda}. $$",
+    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Slender-Jets/from-slender-jet-to-uniform-filament/#6-evolve-the-polymer-stretch",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "From slender jet to uniform filament - 7. Compare the two thinning laws: First consider an...",
+    "content": "First consider an elastocapillary interval in which polymer stress is proportional to capillary pressure, while solvent and inertial stresses are smaller: $$ \\Delta\\Sigma\\simeq c\\frac{\\gamma}{h},\\qquad c>0. $$ Here, $c$ is constant in the asymptotic regime and is set by matching to the rest of the filament. Using the strong-stretch expression gives $$ GA_*h_*^4h^{-4}e^{-(t-t_*)/\\lambda}\\simeq c\\gamma h^{-1}, $$ and hence $$ h^3\\propto e^{-(t-t_*)/\\lambda}, \\qquad \\boxed{h\\propto e^{-(t-t_*)/(3\\lambda)}.} $$ This is the classical elastocapillary thinning rate described by [Entov and Hinch (1997)](https://doi.org/10.1016/S0377-0257(97)00022-0). The tension is of order $\\gamma h$: the force relation gives $F_z\\simeq\\pi(1+c)\\gamma h$. The role of matching the thread to its end regions is developed by [Clasen et al. (2006)](https://doi.org/10.1017/S0022112006009633).",
+    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Slender-Jets/from-slender-jet-to-uniform-filament/#7-compare-the-two-thinning-laws",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "From slender jet to uniform filament - 7. Compare the two thinning laws: Definitions",
+    "content": "With the present definition of total tensile force, taking $F_z/(\\pi h^2)\\ll\\gamma/h$ would instead require cancellation between positive capillary and tensile polymer stresses, so it cannot describe this balance. Now impose a positive force $F_z=F_*$ that is constant in time, and suppose the polymer supplies the dominant tensile stress. Then $$ F_*\\simeq\\pi h^2GA_*\\left(\\frac{h_*}{h}\\right)^4e^{-(t-t_*)/\\lambda}, $$ which gives $$ h^2\\propto e^{-(t-t_*)/\\lambda}, \\qquad \\boxed{h\\propto e^{-(t-t_*)/(2\\lambda)}.} $$ The distinction is the force condition: $F_z\\propto h$ in the elastocapillary balance, whereas $F_z$ is constant in the second calculation. A force that is merely uniform along the filament need not be constant in time. The effect of different tension conditions on CaBER and ROJER thinning is discussed by [Mathues et al. (2018)](https://doi.org/10.1122/1.5021834). Finally, take $h\\propto e^{-t/(m\\lambda)}$, with $m=3$ or $2$.",
+    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Slender-Jets/from-slender-jet-to-uniform-filament/#7-compare-the-two-thinning-laws",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "From slender jet to uniform filament - 7. Compare the two thinning laws: The magnitude of...",
+    "content": "The magnitude of the radial-inertia term is $$ \\frac{\\rho}{4}h\\ddot h=\\frac{\\rho h^2}{4m^2\\lambda^2}, $$ and its ratio to capillary pressure is $$ \\frac{\\rho h^3}{4m^2\\gamma\\lambda^2}\\longrightarrow0 \\qquad\\text{as}\\qquad h\\longrightarrow0. $$ Radial inertia therefore becomes small in these exponential thinning limits. During a transient, its size must be assessed from the actual $h\\ddot h$, together with the axial-inertia constraint above. The application to transient elastocapillary Worthington jets is discussed in Sen, Sanjay et al. (in preparation).",
+    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Slender-Jets/from-slender-jet-to-uniform-filament/#7-compare-the-two-thinning-laws",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "From slender jet to uniform filament - Related calculations",
+    "content": "- [[slender-jets-VE-order-0|Viscoelastic slender jets at leading order]] - [[slender-jets-VE-order-2|The second-order slender-jet hierarchy]] - [[continuity-slender-jet|Continuity in a slender jet]] - [[dynamic-BC-slender-jet|Free-surface stress balance]]",
+    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Slender-Jets/from-slender-jet-to-uniform-filament/#related-calculations",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
     "title": "Slender jets ve order 0 - Viscoelastic Slender Jets",
-    "content": "> [!pdf] PDF version > [[_Media/PDF/Lecture-Notes/Slender-Jets/slender-jets-VE-order-0.pdf|Download this page as PDF]]",
+    "content": "> [!pdf] PDF version > [[_Media/PDF/Lecture-Notes/Slender-Jets/slender-jets-VE-order-0.pdf|Download this page as PDF]] Consider an axisymmetric liquid jet whose radius changes slowly along its length. As the jet stretches, incompressibility couples the axial velocity to the radial motion of its surface. We use this constraint to reduce the momentum equation to a balance between axial inertia, capillarity, solvent viscosity and polymer stress.",
     "url": "https://blogs.comphy-lab.org/Lecture-Notes/Slender-Jets/slender-jets-VE-order-0/#viscoelastic-slender-jets",
     "type": "blog_section",
     "priority": 3
   },
   {
-    "title": "Slender jets ve order 0 - Velocity and pressure",
-    "content": "Even powers for $v_z, p$ and odd for $v_r$. > [!important] Compact notation: > Primes are $\\partial_z$: Expanding $v_z$ in powers of $r$: $$ v_z(r,z,t)=v_0(z,t)+\\varepsilon^2 r^2 v_2(z,t)+\\cdots, $$ Using continuity, $v_r$ in the leading order is (see: [[continuity-slender-jet|Continuity equation in slender jet]]) $$ v_r(r,z,t)= -\\frac{1}{2}v_0'(z,t)\\,r-\\frac{1}{4}\\varepsilon^2 v_2'(z,t)\\,r^3+\\cdots, $$ $$ p(r,z,t)=p_0(z,t)+\\varepsilon^2 r^2 p_2(z,t)+\\cdots. $$",
-    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Slender-Jets/slender-jets-VE-order-0/#velocity-and-pressure",
+    "title": "Slender jets ve order 0 - 1. Set up the expansion: The free surface...",
+    "content": "The free surface is $r=h(z,t)$, with no azimuthal flow. The liquid has density $\\rho$, solvent viscosity $\\eta>0$ and constant surface tension $\\gamma$. We neglect gravity and the stress in the surrounding gas, and measure pressure relative to the uniform gas pressure. Primes denote $\\partial_z$. Let $\\ell_r$ and $L$ be the radial and axial length scales, respectively, with $\\varepsilon=\\ell_r/L\\ll1$. We retain dimensional coordinates throughout. Thus, $r/L=O(\\varepsilon)$, $h'=O(\\varepsilon)$ and $Lh''=O(\\varepsilon)$. The powers of $r$ already carry the radial ordering; we do not multiply them by additional powers of $\\varepsilon$. Smoothness at the axis requires the axial velocity and pressure to be even in $r$, and the radial velocity to be odd. Expanding the axial velocity and pressure gives $$ v_z(r,z,t)=v_0(z,t)+r^2v_2(z,t)+\\cdots, \\qquad p(r,z,t)=p_0(z,t)+r^2p_2(z,t)+\\cdots. $$ Here, $v_0$ is the centreline axial velocity.",
+    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Slender-Jets/slender-jets-VE-order-0/#1-set-up-the-expansion",
     "type": "blog_section",
     "priority": 3
   },
   {
-    "title": "Slender jets ve order 0 - Stress",
-    "content": "The Cauchy stress is $$ \\boldsymbol{\\sigma} = -p\\boldsymbol{I} + 2\\eta \\boldsymbol{D} + \\boldsymbol{\\sigma}_p, $$ The momentum balance, free-surface traction balance, and shear-free condition use this $\\boldsymbol{\\sigma}$. Expanding polymer stresses consistently with [[polymeric-stress-regularity-slender-jet|axisymmetry/regularity]]: $$ \\sigma_{p,zz}(r,z,t)=\\Sigma_{zz}(z,t)+O(\\varepsilon^2 r^2),\\qquad \\sigma_{p,rr}(r,z,t)=\\Sigma_{rr}(z,t)+O(\\varepsilon^2 r^2), $$ $$ \\sigma_{p,rz}(r,z,t)= r\\,S(z,t)+O(\\varepsilon^2 r^3). $$ > [!note] Hoop stress > Regularity also implies $\\Sigma_{rr}=\\Sigma_{\\theta\\theta}$ at leading order.",
-    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Slender-Jets/slender-jets-VE-order-0/#stress",
+    "title": "Slender jets ve order 0 - 1. Set up the expansion: We assume $r^2v_2/v_0=O(\\varepsilon^2)$...",
+    "content": "We assume $r^2v_2/v_0=O(\\varepsilon^2)$ on the characteristic velocity scale. Continuity, $$ \\frac{1}{r}\\partial_r(rv_r)+\\partial_zv_z=0, $$ then determines the radial velocity. Integrating from the axis and requiring regularity gives $$ v_r=-\\frac{r}{2}v_0'-\\frac{r^3}{4}v_2'+\\cdots. $$ The details of this integration are in [[continuity-slender-jet|the continuity note]]. The Cauchy stress is $$ \\boldsymbol\\sigma=-p\\boldsymbol I+2\\eta\\boldsymbol D+\\boldsymbol\\sigma_p, \\qquad \\boldsymbol D=\\frac{\\nabla\\boldsymbol v+(\\nabla\\boldsymbol v)^{\\mathsf T}}{2}, $$ where $\\boldsymbol\\sigma_p$ is the polymer extra stress. Its regular expansion has the form $$ \\sigma_{p,zz}=\\Sigma_{zz}+O(r^2),\\qquad \\sigma_{p,rr}=\\Sigma_{rr}+O(r^2),\\qquad \\sigma_{p,rz}=rS+O(r^3). $$ Axis regularity also requires $\\Sigma_{\\theta\\theta}=\\Sigma_{rr}$; see [[polymeric-stress-regularity-slender-jet|polymer stress regularity]]. We define the polymer normal-stress difference as $$ \\Delta\\Sigma=\\Sigma_{zz}-\\Sigma_{rr}. $$",
+    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Slender-Jets/slender-jets-VE-order-0/#1-set-up-the-expansion",
     "type": "blog_section",
     "priority": 3
   },
   {
-    "title": "Slender jets ve order 0 - Axial momentum at $O(\\varepsilon^0)$",
-    "content": "Polymeric stress contribution: $$ (\\nabla\\cdot\\boldsymbol{\\sigma}_p)_z=\\partial_z \\sigma_{p,zz}+\\frac1r\\partial_r(r\\sigma_{p,rz}). $$ Using $\\sigma_{p,zz}\\approx \\Sigma_{zz}(z,t)$ and $\\sigma_{p,rz}\\approx r S(z,t)$, $$ \\frac1r\\partial_r(r\\sigma_{p,rz})=\\frac1r\\partial_r(r^2 S)=2S. $$ Thus the $r^0$ coefficient of the axial equation becomes (why factor 4? See: [[Laplacian-in-axisymmetric-slender-jet|Laplacian in axisymmetric slender jet]]. For full derivation of LHS, see [[LHS-slender-jet|LHS of slender jet momentum]]) $$ \\rho\\left(\\partial_t v_0+v_0 v_0'\\right)=-p_0'+\\eta(4v_2+v_0'')+\\Sigma_{zz}'+2S+O(\\varepsilon^2). $$",
-    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Slender-Jets/slender-jets-VE-order-0/#axial-momentum-at-ovarepsilon0",
+    "title": "Slender jets ve order 0 - 2. Find the axial momentum balance",
+    "content": "The axial component of the polymer-stress divergence is $$ (\\nabla\\cdot\\boldsymbol\\sigma_p)_z =\\partial_z\\sigma_{p,zz}+\\frac{1}{r}\\partial_r(r\\sigma_{p,rz}). $$ Since $\\sigma_{p,rz}=rS+\\cdots$, its radial contribution at the axis is $$ \\frac{1}{r}\\partial_r(r^2S)=2S. $$ Similarly, the radial part of the axial viscous Laplacian gives $4v_2$. The $r^0$ coefficient of axial momentum is therefore $$ \\rho\\left(\\partial_tv_0+v_0v_0'\\right) =-p_0'+\\eta\\left(4v_2+v_0''\\right)+\\Sigma_{zz}'+2S. \\tag{M0} $$ Although $r^2v_2$ is a small velocity correction, two radial derivatives bring $v_2$ into this balance. We must determine it from the surface traction before discarding the radial structure. See [[Laplacian-in-axisymmetric-slender-jet|the Laplacian calculation]] and [[LHS-slender-jet|the acceleration calculation]] for the intermediate steps.",
+    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Slender-Jets/slender-jets-VE-order-0/#2-find-the-axial-momentum-balance",
     "type": "blog_section",
     "priority": 3
   },
   {
-    "title": "Slender jets ve order 0 - Kinematic BC:",
-    "content": "See [[continuity-slender-jet|Continuity equation in slender jet]] for details $$ \\partial_t(h^2)+\\partial_z(h^2 v_0)=0, $$",
-    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Slender-Jets/slender-jets-VE-order-0/#kinematic-bc",
+    "title": "Slender jets ve order 0 - 3. Apply the surface conditions: The surface moves...",
+    "content": "The surface moves with the liquid. At leading order, $$ \\partial_th+v_0h'=-\\frac{h}{2}v_0', $$ which gives conservation of cross-sectional area, $$ \\partial_t(h^2)+\\partial_z(h^2v_0)=0. $$ The leading normal traction fixes the centreline pressure, $$ p_0=\\frac{\\gamma}{h}-\\eta v_0'+\\Sigma_{rr}. $$ The first nonzero tangential-traction balance is $$ \\eta\\left(-3h'v_0'-\\frac{h}{2}v_0''+2hv_2\\right) +hS-\\Delta\\Sigma h'=0. \\tag{T0} $$ The terms proportional to $h'$ arise because the surface normal is tilted relative to the radial direction. These include the projection of the polymer normal-stress difference, so they must be retained alongside the shear stress. The full geometry is given in [[dynamic-BC-slender-jet|the free-surface stress balance]].",
+    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Slender-Jets/slender-jets-VE-order-0/#3-apply-the-surface-conditions",
     "type": "blog_section",
     "priority": 3
   },
   {
-    "title": "Slender jets ve order 0 - Leading-order stress BCs with polymer normal + shear stresses",
-    "content": "> [!info] See: [[dynamic-BC-slender-jet|Full free surface stress balance]] for details. Normal traction (leading order, $n\\approx e_r$): $$ p_0=\\frac{\\gamma}{h} - \\eta v_0' + \\Sigma_{rr}+O(\\varepsilon^2). $$ Tangential traction (leading order, $t\\approx e_z$, $n\\approx e_r$): $$ \\underbrace{\\eta\\Big(-3v_0'h'-\\frac12 v_0'' h+2v_2 h\\Big)}_{\\text{Newtonian part}} +\\underbrace{\\sigma_{p,rz}(h)}_{\\approx hS} +\\underbrace{(\\Sigma_{rr}-\\Sigma_{zz})h'}_{=-\\Delta\\Sigma\\,h'} =O(\\varepsilon^2), $$ where polymeric \u201ctensile\u201d normal-stress difference is $$ \\Delta\\Sigma \\equiv \\Sigma_{zz}-\\Sigma_{rr}. $$",
-    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Slender-Jets/slender-jets-VE-order-0/#leading-order-stress-bcs-with-polymer-normal-shear-stresses",
+    "title": "Slender jets ve order 0 - 3. Apply the surface conditions: Solving (T0) for...",
+    "content": "Solving (T0) for $v_2$ gives $$ 2\\eta hv_2 =3\\eta h'v_0'+\\frac{\\eta h}{2}v_0''-hS+\\Delta\\Sigma h'. $$ Differentiating the normal-traction condition gives $$ p_0'=\\left(\\frac{\\gamma}{h}\\right)'-\\eta v_0''+\\Sigma_{rr}'. $$ Substituting both expressions into (M0), we obtain $$ \\boxed{ \\rho\\left(\\partial_tv_0+v_0v_0'\\right) =-\\left(\\frac{\\gamma}{h}\\right)' +3\\eta\\frac{(h^2v_0')'}{h^2} +\\frac{(h^2\\Delta\\Sigma)'}{h^2}. } $$ The polymer shear stress cancels: the $2S$ in the bulk equation is removed by the $-2S$ supplied through $4\\eta v_2$. This cancellation does not require $S=0$. The factor three multiplying the solvent contribution is the Trouton ratio for uniaxial extension.",
+    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Slender-Jets/slender-jets-VE-order-0/#3-apply-the-surface-conditions",
     "type": "blog_section",
     "priority": 3
   },
   {
-    "title": "Slender jets ve order 0 - Combining",
-    "content": "Using the tangential stress balance to solve for $v_2$ (substituting $O(\\varepsilon^2) \\to 0$): $$ 2\\eta v_2 h =3\\eta v_0'h' +\\frac{\\eta}{2} v_0'' h -\\sigma_{p,rz}(h)+\\Delta\\Sigma\\,h'. $$ Next use the normal stress BC for $p_0$: $$ p_0'=(\\gamma/h)'-\\eta v_0''+\\Sigma_{rr}'. $$ Now substitute into the axial momentum equation and using $\\sigma_{p,rz}\\approx r S(z,t)$: $$ \\rho\\left(\\partial_t v_0+v_0 v_0'\\right) = -\\Big(\\frac{\\gamma}{h}\\Big)' +3\\eta\\frac{(h^2 v_0')'}{h^2} +\\frac{(h^2\\Delta\\Sigma)'}{h^2} +O(\\varepsilon^2), $$ with $\\Delta\\Sigma=\\Sigma_{zz}-\\Sigma_{rr}$. Here, 3 is the Trouton ratio. $\\Sigma_{rr}=\\Sigma_{\\theta\\theta}$ at leading order (so \u201choop\u201d is already accounted for). > [!important] > What happened to the shear stress $\\sigma_{p,rz}$? It enters both (i) the axial momentum equation through $(\\nabla\\cdot\\sigma_p)_z$, and (ii) the tangential traction condition $t\\cdot\\sigma\\cdot n=0$. Those two appearances will cancel.",
-    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Slender-Jets/slender-jets-VE-order-0/#combining",
+    "title": "Slender jets ve order 0 - 4. Write momentum in conservative form: Multiplying by $h^2$...",
+    "content": "Multiplying by $h^2$ and using $h^2(1/h)'=-h'$ gives $$ \\rho h^2\\left(\\partial_tv_0+v_0v_0'\\right) =\\left(\\gamma h+3\\eta h^2v_0'+h^2\\Delta\\Sigma\\right)'. $$ Continuity converts the left-hand side into a momentum density and flux, since $$ \\partial_t(h^2v_0)+\\partial_z(h^2v_0^2) =h^2\\left(\\partial_tv_0+v_0v_0'\\right) +v_0\\left[\\partial_t(h^2)+\\partial_z(h^2v_0)\\right]. $$ The term in square brackets vanishes. The leading-order equations are therefore $$ \\boxed{\\partial_t(h^2)+\\partial_z(h^2v_0)=0,} $$ $$ \\boxed{ \\rho\\left[\\partial_t(h^2v_0)+\\partial_z(h^2v_0^2)\\right] =\\partial_z\\left[\\gamma h+3\\eta h^2\\partial_zv_0+h^2\\Delta\\Sigma\\right]. } $$ Multiplying the quantity in the final square brackets by $\\pi$ gives the leading axial tensile force. Its variation along the jet changes the axial momentum. A constitutive equation for the polymer stress is still needed to close the dynamics. These equations neglect relative $O(\\varepsilon^2)$ corrections under the stated slender ordering.",
+    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Slender-Jets/slender-jets-VE-order-0/#4-write-momentum-in-conservative-form",
     "type": "blog_section",
     "priority": 3
   },
   {
-    "title": "Slender jets ve order 0 - Conservative form: Continuity (see: [[continuity-slender-jet|Continuity...",
-    "content": "Continuity (see: [[continuity-slender-jet|Continuity equation in slender jet]] for details): $$ \\boxed{\\partial_t h^2 + \\partial_z(h^2 v_0)=0} $$ Momentum equation: $$ \\rho(\\partial_tv_0 + v_0 v_0') = -\\Big(\\frac{\\gamma}{h}\\Big)' + 3\\eta\\frac{(h^2 v_0')'}{h^2} + \\frac{(h^2\\Delta\\Sigma)'}{h^2}. $$ Multiply by $h^2$: $$ \\rho h^2(\\partial_tv_0 + v_0 v_0') = -h^2\\Big(\\frac{\\gamma}{h}\\Big)' + 3\\eta\\left(h^2 v_0'\\right)' + \\left(h^2\\Delta\\Sigma\\right)'. $$ Using $h^2(1/h)' = -h'$: $$ \\rho h^2(\\partial_tv_0 + v_0 v_0') = \\gamma\\Big(h\\Big)' + 3\\eta\\left(h^2 v_0'\\right)' + \\left(h^2\\Delta\\Sigma\\right)'. $$ On the left hand side: $$ \\partial_t(h^2 v_0) + (h^2 v_0^2)' = h^2(v_t + v v') \\quad\\text{if (by continuity equation)}\\quad \\partial_t(h^2)+(v_0h^2)'=0. $$ The conservative momentum equation is $$ \\rho\\left(\\partial_t(h^2 v_0) + (h^2 v_0^2)'\\right) = \\left(\\gamma h + 3\\eta h^2 v_0' + h^2\\Delta\\Sigma\\right)'. $$ $$ \\boxed{ \\rho\\left(\\partial_t(h^2 v_0) + \\partial_z(h^2 v_0^2)\\right) = \\partial_z\\left[\\gamma h + 3\\eta h^2 \\partial_zv_0 + h^2\\left(\\sigma_{p,zz}-\\sigma_{p,rr}\\right)\\right]. } $$",
-    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Slender-Jets/slender-jets-VE-order-0/#conservative-form",
+    "title": "Slender jets ve order 0 - 4. Write momentum in conservative form: In particular, the...",
+    "content": "In particular, the pressure is uniform across a section only at leading order. The next calculation retains its radial variation and the corresponding corrections to both surface tractions.",
+    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Slender-Jets/slender-jets-VE-order-0/#4-write-momentum-in-conservative-form",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "Slender jets ve order 0 - Continue reading",
+    "content": "- [[slender-jets-VE-order-2|Viscoelastic slender jets at $O(\\varepsilon^2)$]] - [[from-slender-jet-to-uniform-filament|From the slender-jet hierarchy to a uniform-filament force balance]]",
+    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Slender-Jets/slender-jets-VE-order-0/#continue-reading",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "Slender jets ve order 2 - Viscoelastic slender jets at $O(\\varepsilon^2)$",
+    "content": "> [!pdf] PDF version > [[_Media/PDF/Lecture-Notes/Slender-Jets/slender-jets-VE-order-2.pdf|Download this page as PDF]] A thinning jet has a radial acceleration. Its pressure therefore varies across a section, even when the leading axial velocity is uniform in $r$. We now retain this pressure variation, together with the velocity and polymer-stress corrections required by the surface conditions. The starting point is [[slender-jets-VE-order-0|the leading-order derivation]]. We keep the same assumptions: an incompressible, axisymmetric liquid with no swirl, constant density $\\rho$, solvent viscosity $\\eta>0$ and surface tension $\\gamma$, negligible gas stress and no body force. Pressure is measured relative to the gas. Primes denote $\\partial_z$ and dots denote $\\partial_t$.",
+    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Slender-Jets/slender-jets-VE-order-2/#viscoelastic-slender-jets-at-ovarepsilon2",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "Slender jets ve order 2 - 1. Keep the radial ordering explicit: Let $\\varepsilon=\\ell_r/L\\ll1$, where...",
+    "content": "Let $\\varepsilon=\\ell_r/L\\ll1$, where $\\ell_r$ and $L$ are the radial and axial length scales. We use dimensional $r$ and $h$ throughout, with $$ \\frac{r}{L}=O(\\varepsilon),\\qquad h'=O(\\varepsilon),\\qquad Lh''=O(\\varepsilon). $$ The Taylor coefficients vary on the axial scale. Thus, $r^2v_2$ and $r^4v_4$ are successive relative $O(\\varepsilon^2)$ corrections to the axial velocity. There are no additional $\\varepsilon$ factors multiplying the dimensional powers of $r$.",
+    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Slender-Jets/slender-jets-VE-order-2/#1-keep-the-radial-ordering-explicit",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "Slender jets ve order 2 - 1. Keep the radial ordering explicit: Smoothness at the...",
+    "content": "Smoothness at the axis gives $$ v_z=v_0+r^2v_2+r^4v_4+\\cdots, \\qquad p=p_0+r^2p_2+r^4p_4+\\cdots, $$ and [[continuity-slender-jet|continuity]] gives $$ v_r=-\\frac{r}{2}v_0'-\\frac{r^3}{4}v_2'-\\frac{r^5}{6}v_4'+\\cdots. $$ The polymer stresses have the corresponding expansion $$ \\begin{aligned} \\sigma_{p,zz}&=\\Sigma_{zz}+r^2\\Sigma_{zz,2}+\\cdots,\\\\ \\sigma_{p,rr}&=\\Sigma_{rr}+r^2\\Sigma_{rr,2}+\\cdots,\\\\ \\sigma_{p,\\theta\\theta}&=\\Sigma_{rr}+r^2\\Theta_2+\\cdots,\\\\ \\sigma_{p,rz}&=rS+r^3S_3+\\cdots. \\end{aligned} $$ The equality of the leading radial and hoop stresses follows from [[polymeric-stress-regularity-slender-jet|axis regularity]]. Their $r^2$ coefficients need not be equal. We continue to write $\\Delta\\Sigma=\\Sigma_{zz}-\\Sigma_{rr}$. The even and odd powers follow from [[r-2-parity|the parity of the fields]]. Under this regular slender expansion, the first relative correction to the leading equations is $O(\\varepsilon^2)$.",
+    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Slender-Jets/slender-jets-VE-order-2/#1-keep-the-radial-ordering-explicit",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "Slender jets ve order 2 - 1. Keep the radial ordering explicit: All surface and...",
+    "content": "All surface and reduced equations below are truncated at that accuracy unless identified as exact.",
+    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Slender-Jets/slender-jets-VE-order-2/#1-keep-the-radial-ordering-explicit",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "Slender jets ve order 2 - 2. Collect the bulk equations: The $r^0$ and...",
+    "content": "The $r^0$ and $r^2$ coefficients of axial momentum are $$ \\rho\\left(\\partial_tv_0+v_0v_0'\\right) =-p_0'+\\eta\\left(4v_2+v_0''\\right)+\\Sigma_{zz}'+2S, \\tag{M0} $$ $$ \\rho\\left(\\partial_tv_2+v_0v_2'\\right) =-p_2'+\\eta\\left(16v_4+v_2''\\right)+\\Sigma_{zz,2}'+4S_3. \\tag{M2} $$ The radial Laplacian maps $r^2$ to $4$ and $r^4$ to $16r^2$. This is why $v_4$ enters (M2), even though its contribution to the velocity is fourth order. In the acceleration, the $r^2v_2v_0'$ term from $v_z\\partial_zv_z$ cancels the $-r^2v_0'v_2$ term from $v_r\\partial_rv_z$. The remaining material derivative in (M2) therefore has the form shown above. The radial derivatives are worked out in [[Laplacian-in-axisymmetric-slender-jet|the Laplacian note]]. To determine $p_2$, we use the coefficient of $r$ in radial momentum.",
+    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Slender-Jets/slender-jets-VE-order-2/#2-collect-the-bulk-equations",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "Slender jets ve order 2 - 2. Collect the bulk equations: The radial acceleration...",
+    "content": "The radial acceleration at this order is $$ \\partial_tv_r+v_r\\partial_rv_r+v_z\\partial_zv_r =r\\left[-\\frac{1}{2}\\left(\\partial_tv_0'+v_0v_0''\\right) +\\frac{1}{4}(v_0')^2\\right]+\\cdots. $$ The polymer contribution is $$ (\\nabla\\cdot\\boldsymbol\\sigma_p)_r =\\partial_r\\sigma_{p,rr} +\\frac{\\sigma_{p,rr}-\\sigma_{p,\\theta\\theta}}{r} +\\partial_z\\sigma_{p,rz} =r\\left(3\\Sigma_{rr,2}-\\Theta_2+S'\\right)+\\cdots. $$ Balancing these terms with pressure and solvent viscosity gives $$ \\boxed{ p_2=\\frac{\\rho}{4}\\left(\\partial_tv_0'+v_0v_0''\\right) -\\frac{\\rho}{8}(v_0')^2 -\\eta\\left(v_2'+\\frac{1}{4}v_0'''\\right) +\\frac{3\\Sigma_{rr,2}-\\Theta_2+S'}{2}. } \\tag{R} $$ Both the local and convective radial accelerations contribute. Dropping $\\partial_tv_0'$ requires a separate time-scale argument; slenderness alone does not remove it.",
+    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Slender-Jets/slender-jets-VE-order-2/#2-collect-the-bulk-equations",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "Slender jets ve order 2 - 3. Retain the correction to the volume flux",
+    "content": "At $r=h$, the kinematic condition is $$ \\dot h+\\left(v_0+h^2v_2\\right)h' =-\\frac{h}{2}v_0'-\\frac{h^3}{4}v_2'. $$ Multiplying by $2h$ gives $$ \\boxed{\\partial_t(h^2)+\\partial_z\\left(h^2v_0+\\frac{h^4}{2}v_2\\right)=0.} \\tag{C} $$ The same flux follows by integrating $v_z$ over the cross-section: $$ Q=2\\pi\\int_0^h v_zr\\,\\mathrm dr =\\pi\\left(h^2v_0+\\frac{h^4}{2}v_2\\right)+\\cdots. $$ Thus, the centreline velocity $v_0$ and the mean velocity $Q/(\\pi h^2)$ differ at second order.",
+    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Slender-Jets/slender-jets-VE-order-2/#3-retain-the-correction-to-the-volume-flux",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "Slender jets ve order 2 - 4. Expand both surface tractions",
+    "content": "The exact unit normal, tangent and curvature are $$ \\boldsymbol n=\\frac{\\boldsymbol e_r-h'\\boldsymbol e_z}{\\sqrt{1+h'^2}}, \\qquad \\boldsymbol t=\\frac{h'\\boldsymbol e_r+\\boldsymbol e_z}{\\sqrt{1+h'^2}}, $$ $$ \\kappa=\\frac{1}{h\\sqrt{1+h'^2}} -\\frac{h''}{(1+h'^2)^{3/2}}. $$ With this sign convention, a sphere $h=\\sqrt{a^2-z^2}$ has $\\kappa=2/a$. Expanding for small slope gives $$ \\kappa=\\frac{1}{h}-h''-\\frac{h'^2}{2h}+\\cdots. $$ The last two terms are relative $O(\\varepsilon^2)$ corrections to $1/h$. The exact traction conditions are derived in [[dynamic-BC-slender-jet|the surface-stress note]].",
+    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Slender-Jets/slender-jets-VE-order-2/#4-expand-both-surface-tractions",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "Slender jets ve order 2 - Normal traction",
+    "content": "Solving $\\boldsymbol n\\cdot\\boldsymbol\\sigma\\cdot\\boldsymbol n=-\\gamma\\kappa$ for the centreline pressure gives $$ p_0=\\frac{\\gamma}{h}-\\eta v_0'+\\Sigma_{rr}+\\mathcal B, \\tag{N} $$ where $$ \\begin{aligned} \\mathcal B={}&-\\gamma\\left(h''+\\frac{h'^2}{2h}\\right)-h^2p_2\\\\ &-\\eta\\left(\\frac{3}{2}h^2v_2'+4hh'v_2-hh'v_0''-3h'^2v_0'\\right)\\\\ &+\\Delta\\Sigma h'^2-2hh'S+h^2\\Sigma_{rr,2}. \\end{aligned} \\tag{B} $$ The first line accounts for curvature and the pressure difference between the axis and the surface. The second line is the solvent normal traction, including the change in the surface normal. The last line contains the three polymer corrections: the projection of the normal-stress difference, the projection of shear stress and the radial variation of $\\sigma_{p,rr}$.",
+    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Slender-Jets/slender-jets-VE-order-2/#normal-traction",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "Slender jets ve order 2 - Tangential traction: Multiplying $\\boldsymbol t\\cdot\\boldsymbol\\sigma\\cdot\\boldsymbol...",
+    "content": "Multiplying $\\boldsymbol t\\cdot\\boldsymbol\\sigma\\cdot\\boldsymbol n=0$ by $1+h'^2$ gives the exact surface condition $$ h'(\\sigma_{rr}-\\sigma_{zz})+(1-h'^2)\\sigma_{rz}=0. $$ Let $\\mathcal T_0$ denote its leading contribution, $$ \\mathcal T_0= \\eta\\left(-3h'v_0'-\\frac{h}{2}v_0''+2hv_2\\right) +hS-\\Delta\\Sigma h', \\tag{T0} $$ and $\\mathcal T_2$ the contribution smaller by two powers of slenderness, $$ \\begin{aligned} \\mathcal T_2={}&\\eta\\left(4h^3v_4-\\frac{h^3}{4}v_2'' -\\frac{7}{2}h^2h'v_2'-2hh'^2v_2+\\frac{1}{2}hh'^2v_0''\\right)\\\\ &+h^3S_3+h^2h'(\\Sigma_{rr,2}-\\Sigma_{zz,2})-hh'^2S. \\end{aligned} \\tag{T2} $$ At leading order we use $\\mathcal T_0=0$. At second order, the condition is $$ \\boxed{\\mathcal T_0+\\mathcal T_2=0.} \\tag{T} $$ This distinction determines the accuracy of the axial equation. In a perturbation expansion, the second-order correction to $v_2$ enters through $\\mathcal T_0$ and balances $\\mathcal T_2$ evaluated with the leading coefficients.",
+    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Slender-Jets/slender-jets-VE-order-2/#tangential-traction",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "Slender jets ve order 2 - Tangential traction: Setting the two...",
+    "content": "Setting the two contributions to zero separately would remove that correction. An alternative expression follows by using the leading condition to eliminate $hS-\\Delta\\Sigma h'$. The equivalent cubic contribution is $$ \\begin{aligned} \\widetilde{\\mathcal T}_2={}&\\eta\\left(4h^3v_4-\\frac{h^3}{4}v_2'' -\\frac{7}{2}h^2h'v_2'-3h'^3v_0'\\right)\\\\ &+h^3S_3+h^2h'(\\Sigma_{rr,2}-\\Sigma_{zz,2})-\\Delta\\Sigma h'^3. \\end{aligned} $$ Indeed, $\\widetilde{\\mathcal T}_2=\\mathcal T_2+h'^2\\mathcal T_0$. Their difference is beyond the retained order when (T) holds. The direct form (T2) avoids making this substitution.",
+    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Slender-Jets/slender-jets-VE-order-2/#tangential-traction",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "Slender jets ve order 2 - 5. Obtain the corrected axial equation: Using (T) to...",
+    "content": "Using (T) to rearrange the viscous term in (M0) gives $$ 4\\eta v_2 =6\\eta\\frac{h'}{h}v_0'+\\eta v_0''-2S +2\\Delta\\Sigma\\frac{h'}{h}-\\frac{2\\mathcal T_2}{h}. $$ Now substitute this expression and (N) into (M0). The explicit $2S$ again cancels, leaving $$ \\boxed{ \\begin{aligned} \\rho\\left(\\partial_tv_0+v_0v_0'\\right) ={}&-\\left(\\frac{\\gamma}{h}\\right)' +3\\eta\\frac{(h^2v_0')'}{h^2} +\\frac{(h^2\\Delta\\Sigma)'}{h^2}\\\\ &-\\partial_z\\mathcal B-\\frac{2\\mathcal T_2}{h}. \\end{aligned} } \\tag{E2} $$ Both final terms are second-order corrections. The pressure correction $\\mathcal B$ comes from normal traction, while $\\mathcal T_2$ changes the radial velocity profile through tangential traction. Polymer shear can still enter these corrections even though its explicit leading-order contribution has cancelled. To use this hierarchy, retain (C), (M0), (M2), (R), (N) and (T), or replace (M0) and (N) by the equivalent equation (E2).",
+    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Slender-Jets/slender-jets-VE-order-2/#5-obtain-the-corrected-axial-equation",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "Slender jets ve order 2 - 5. Obtain the corrected axial equation: In particular, (M2)...",
+    "content": "In particular, (M2) supplies $$ 16\\eta v_4 =\\rho(\\partial_tv_2+v_0v_2')+p_2' -\\eta v_2''-\\Sigma_{zz,2}'-4S_3. $$ Substituting this into (T2) removes $v_4$ as an independent unknown. It does not remove its contribution to the second-order balance. The polymer coefficients must be supplied by a constitutive equation expanded to the same accuracy, together with the appropriate initial and boundary conditions. The four leading closures alone do not constitute a complete second-order model.",
+    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Slender-Jets/slender-jets-VE-order-2/#5-obtain-the-corrected-axial-equation",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "Slender jets ve order 2 - 6. Test a uniform filament",
+    "content": "Take $h=h(t)$ and impose homogeneous extension, $$ v_0=-2\\frac{\\dot h}{h}z. $$ Assume spatially uniform, diagonal polymer stress, so all radial polymer coefficients and shear stresses vanish. The homogeneous velocity profile has $v_2=v_4=0$, and (C) is satisfied exactly. Equation (R) gives $$ p_2=-\\frac{\\rho}{2}\\frac{\\ddot h}{h}, \\qquad \\mathcal B=-h^2p_2=\\frac{\\rho}{2}h\\ddot h, \\qquad \\mathcal T_2=0. $$ The $\\dot h^2$ terms from local and convective radial acceleration cancel. A radial pressure variation survives, but it has no axial gradient in this homogeneous ansatz. Consequently, it does not by itself balance axial acceleration: (M0) also requires $h\\ddot h=3\\dot h^2$ if the stresses are spatially uniform and inertia is retained. The same pressure variation does contribute to the force integrated over a section. We calculate that force, and the additional assumptions needed to use it as a local thinning model, in [[from-slender-jet-to-uniform-filament|the next note]].",
+    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Slender-Jets/slender-jets-VE-order-2/#6-test-a-uniform-filament",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "Slender jets ve order 2 - Related calculations",
+    "content": "- [[slender-jets-VE-order-0|Viscoelastic slender jets at leading order]] - [[from-slender-jet-to-uniform-filament|Uniform-filament force balance]] - [[r-2-parity|Parity of the radial expansion]] - [[polymeric-stress-regularity-slender-jet|Polymer stress regularity]] - [[dynamic-BC-slender-jet|Free-surface stress balance]]",
+    "url": "https://blogs.comphy-lab.org/Lecture-Notes/Slender-Jets/slender-jets-VE-order-2/#related-calculations",
     "type": "blog_section",
     "priority": 3
   },
@@ -4654,71 +4871,85 @@
   },
   {
     "title": "R 2 parity - Why $\\sigma_{rr}-\\sigma_{\\theta\\theta}=O(r^2)$",
-    "content": "Goal: show the tensor-parity refinement used in [[polymeric-stress-regularity-slender-jet|slender-jet regularity arguments]].",
+    "content": "A smooth stress tensor has a unique value at the axis, even though the radial and azimuthal basis vectors depend on the direction of approach. Rotational symmetry therefore makes the radial and hoop stresses equal at $r=0$. Smoothness also determines how quickly their difference can grow away from the axis. We assume a smooth, symmetric stress tensor whose Cartesian components admit a Taylor expansion near the axis. The field is axisymmetric: rotating the position about $z$ rotates its vector and tensor components accordingly. All powers of $r$ below are dimensional Taylor powers.",
     "url": "https://blogs.comphy-lab.org/_AtomicNotes/r-2-parity/#why-sigmarr-sigmathetathetaor2",
     "type": "blog_section",
     "priority": 3
   },
   {
-    "title": "R 2 parity - 1) Scalar/velocity parity reminder",
-    "content": "For smooth axisymmetric fields near the axis (also see [[continuity-slender-jet|Continuity equation in slender jet]]), $$ v_z(r,z,t),\\;p(r,z,t)\\;\\text{are even in }r, \\qquad v_r(r,z,t)\\;\\text{is odd in }r. $$ So $$ v_z=v_0+v_2 r^2+\\cdots, \\qquad p=p_0+p_2 r^2+\\cdots, \\qquad v_r=u_1 r+u_3 r^3+\\cdots. $$",
-    "url": "https://blogs.comphy-lab.org/_AtomicNotes/r-2-parity/#1-scalarvelocity-parity-reminder",
+    "title": "R 2 parity - 1. Establish parity on a line through the axis",
+    "content": "Take the line $y=0$ and rotate it by $\\pi$ about $z$. This maps $x$ to $-x$. A scalar and an axial vector component are unchanged by this rotation, whereas a transverse vector component changes sign. Thus, for an axisymmetric velocity and pressure, $$ v_z=v_0+r^2v_2+\\cdots, \\qquad p=p_0+r^2p_2+\\cdots, \\qquad v_r=ru_1+r^3u_3+\\cdots. $$ Here, even and odd parity refer to smooth continuation along a signed transverse coordinate through the axis; the cylindrical radius itself is nonnegative. [[continuity-slender-jet|Continuity]] then relates the radial-velocity coefficients to axial derivatives, giving $u_1=-v_0'/2$ and $u_3=-v_2'/4$.",
+    "url": "https://blogs.comphy-lab.org/_AtomicNotes/r-2-parity/#1-establish-parity-on-a-line-through-the-axis",
     "type": "blog_section",
     "priority": 3
   },
   {
-    "title": "R 2 parity - 2) Axis regularity for transverse stress",
-    "content": "At $r=0$, there is no preferred direction in the $(x,y)$ plane. For a smooth rank-2 tensor this implies transverse isotropy at the axis: $$ \\sigma_{xx}(0)=\\sigma_{yy}(0), \\qquad \\sigma_{xy}(0)=0. $$ In cylindrical components, $$ \\sigma_{rr}(0)=\\sigma_{\\theta\\theta}(0). $$",
-    "url": "https://blogs.comphy-lab.org/_AtomicNotes/r-2-parity/#2-axis-regularity-for-transverse-stress",
+    "title": "R 2 parity - 2. Use rotational symmetry at the axis",
+    "content": "At $r=0$, a symmetric transverse stress tensor invariant under every rotation must be proportional to the identity. Hence $$ \\sigma_{xx}(0)=\\sigma_{yy}(0),\\qquad \\sigma_{xy}(0)=0, $$ or, in cylindrical components, $$ \\sigma_{rr}(0)=\\sigma_{\\theta\\theta}(0). $$ The mixed transverse-axial components also vanish at the axis because no nonzero transverse vector is invariant under all rotations.",
+    "url": "https://blogs.comphy-lab.org/_AtomicNotes/r-2-parity/#2-use-rotational-symmetry-at-the-axis",
     "type": "blog_section",
     "priority": 3
   },
   {
-    "title": "R 2 parity - 3) Cartesian-cylindrical relation that enforces $r^2$",
-    "content": "For axisymmetric stress with no $r\\theta$ component in the local $(\\mathbf e_r,\\mathbf e_\\theta)$ basis, $$ \\boldsymbol\\sigma =\\sigma_{rr}\\,\\mathbf e_r\\otimes\\mathbf e_r +\\sigma_{\\theta\\theta}\\,\\mathbf e_\\theta\\otimes\\mathbf e_\\theta. $$ Using $$ \\mathbf e_r=(\\cos\\theta,\\sin\\theta), \\qquad \\mathbf e_\\theta=(-\\sin\\theta,\\cos\\theta), $$ one gets $$ \\sigma_{xy} =(\\sigma_{rr}-\\sigma_{\\theta\\theta})\\sin\\theta\\cos\\theta =(\\sigma_{rr}-\\sigma_{\\theta\\theta})\\frac{xy}{x^2+y^2}. $$ Now require $\\sigma_{xy}(x,y)$ to be smooth at $(0,0)$. Since $$ \\frac{xy}{x^2+y^2}=O(1) $$ but depends on direction, smoothness at the origin forces the prefactor to vanish at least as $x^2+y^2=r^2$: $$ \\sigma_{rr}-\\sigma_{\\theta\\theta}=O(r^2). $$ So the difference cannot start at $O(1)$ or $O(r)$; it starts at even order $r^2$.",
-    "url": "https://blogs.comphy-lab.org/_AtomicNotes/r-2-parity/#3-cartesian-cylindrical-relation-that-enforces-r2",
+    "title": "R 2 parity - 3. Determine the first allowed difference",
+    "content": "On the positive $x$-axis, $\\sigma_{rr}=\\sigma_{xx}$ and $\\sigma_{\\theta\\theta}=\\sigma_{yy}$. A rotation by $\\pi$ changes the sign of each transverse basis vector, so the two signs cancel in a transverse rank-two tensor component. Both $\\sigma_{xx}(x,0)$ and $\\sigma_{yy}(x,0)$ are therefore even functions of $x$. Their Taylor series have equal constant terms and no linear terms. We can write $$ \\sigma_{rr}=\\Sigma_0+\\Sigma_2r^2+\\Sigma_4r^4+\\cdots, \\qquad \\sigma_{\\theta\\theta}=\\Sigma_0+\\Theta_2r^2+\\Theta_4r^4+\\cdots. $$ Subtracting gives $$ \\boxed{\\sigma_{rr}-\\sigma_{\\theta\\theta}=(\\Sigma_2-\\Theta_2)r^2+O(r^4).} $$ The difference may vanish faster, but it cannot start at $O(1)$ or $O(r)$ under these smoothness assumptions. Continuity at the axis alone would not establish the quadratic ordering.",
+    "url": "https://blogs.comphy-lab.org/_AtomicNotes/r-2-parity/#3-determine-the-first-allowed-difference",
     "type": "blog_section",
     "priority": 3
   },
   {
-    "title": "R 2 parity - 4) Equivalent expansion form",
-    "content": "Write $$ \\sigma_{rr}=\\Sigma_0+\\Sigma_2 r^2+\\Sigma_4 r^4+\\cdots, \\qquad \\sigma_{\\theta\\theta}=\\Sigma_0+\\Theta_2 r^2+\\Theta_4 r^4+\\cdots, $$ then $$ \\sigma_{rr}-\\sigma_{\\theta\\theta}=(\\Sigma_2-\\Theta_2)r^2+O(r^4)=O(r^2). $$",
-    "url": "https://blogs.comphy-lab.org/_AtomicNotes/r-2-parity/#4-equivalent-expansion-form",
+    "title": "R 2 parity - 4. Check the Cartesian representation: For the meridionally...",
+    "content": "For the meridionally reflection-symmetric stress used in the slender-jet model, $\\sigma_{r\\theta}=\\sigma_{\\theta z}=0$. Its transverse block is $$ \\boldsymbol\\sigma_\\perp =\\sigma_{rr}\\boldsymbol e_r\\otimes\\boldsymbol e_r +\\sigma_{\\theta\\theta}\\boldsymbol e_\\theta\\otimes\\boldsymbol e_\\theta, $$ where $\\boldsymbol e_r=(\\cos\\theta,\\sin\\theta)$ and $\\boldsymbol e_\\theta=(-\\sin\\theta,\\cos\\theta)$. Therefore, $$ \\sigma_{xy} =(\\sigma_{rr}-\\sigma_{\\theta\\theta})\\sin\\theta\\cos\\theta =(\\sigma_{rr}-\\sigma_{\\theta\\theta})\\frac{xy}{r^2}. $$ Substituting the quadratic difference gives $$ \\sigma_{xy}=(\\Sigma_2-\\Theta_2)xy+O(r^4), $$ which is smooth at the origin. The directional factor $xy/r^2$ is thus cancelled by the radial dependence established in step 3. The reflection assumption removes azimuthal shear away from the axis. Axisymmetry and a swirl-free velocity alone do not impose that condition on an arbitrary prescribed polymer stress.",
+    "url": "https://blogs.comphy-lab.org/_AtomicNotes/r-2-parity/#4-check-the-cartesian-representation",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "R 2 parity - 4. Check the Cartesian representation: The regularity of...",
+    "content": "The regularity of the remaining polymer components, and their contribution to momentum, are developed in [[polymeric-stress-regularity-slender-jet|the polymer-stress note]].",
+    "url": "https://blogs.comphy-lab.org/_AtomicNotes/r-2-parity/#4-check-the-cartesian-representation",
     "type": "blog_section",
     "priority": 3
   },
   {
     "title": "Polymeric stress regularity slender jet - Polymeric Stress Regularity in a Slender Jet",
-    "content": "Axis-regularity constraints on $\\boldsymbol{\\sigma}_p$ used in [[polymeric-stress-regularity-slender-jet|Slender jet momentum equations]]. Use axisymmetric cylindrical coordinates $(r,\\theta,z)$ with no swirl ($\\partial_\\theta() = 0$).",
+    "content": "The cylindrical basis is undefined at the axis, but the physical polymer stress must remain smooth there. This constrains both its radial dependence and the equality of its transverse components. We derive the expansion used in [[slender-jets-VE-order-0|the leading-order momentum balance]] and identify the additional coefficients needed at second order. We use dimensional cylindrical coordinates $(r,\\theta,z)$ and a smooth, symmetric polymer extra stress. The fields are axisymmetric. For the meridional model, we also assume reflection symmetry through planes containing the axis, so $\\sigma_{p,r\\theta}=\\sigma_{p,\\theta z}=0$. This stress symmetry is an additional assumption; a swirl-free velocity alone does not enforce it for arbitrary stress data. Primes denote $\\partial_z$.",
     "url": "https://blogs.comphy-lab.org/_AtomicNotes/polymeric-stress-regularity-slender-jet/#polymeric-stress-regularity-in-a-slender-jet",
     "type": "blog_section",
     "priority": 3
   },
   {
-    "title": "Polymeric stress regularity slender jet - 1) Axis regularity and rotational invariance",
-    "content": "At $r=0$, the transverse plane is rotationally symmetric. A physical tensor field must have a unique, direction-independent limit at the axis. For the polymer stress components in the $(r,\\theta)$ plane, this implies $$ \\sigma_{p,rr}(0,z,t)=\\sigma_{p,\\theta\\theta}(0,z,t), \\qquad \\sigma_{p,r\\theta}(0,z,t)=0. $$ So there is no preferred transverse direction at the axis.",
-    "url": "https://blogs.comphy-lab.org/_AtomicNotes/polymeric-stress-regularity-slender-jet/#1-axis-regularity-and-rotational-invariance",
+    "title": "Polymeric stress regularity slender jet - 1. Match the transverse stresses at the axis: At $r=0$, rotational...",
+    "content": "At $r=0$, rotational invariance leaves no preferred direction in the transverse plane. Therefore, $$ \\sigma_{p,rr}(0,z,t)=\\sigma_{p,\\theta\\theta}(0,z,t), \\qquad \\sigma_{p,r\\theta}(0,z,t)=0. $$ The diagonal stress components have even radial Taylor expansions. As shown in [[r-2-parity|the tensor-parity calculation]], their difference consequently satisfies $$ \\Delta_\\perp\\equiv\\sigma_{p,rr}-\\sigma_{p,\\theta\\theta}=O(r^2). $$ This also removes the apparent singularity in the radial stress divergence, $$ (\\nabla\\cdot\\boldsymbol\\sigma_p)_r =\\partial_r\\sigma_{p,rr} +\\frac{\\sigma_{p,rr}-\\sigma_{p,\\theta\\theta}}{r} +\\partial_z\\sigma_{p,rz}. $$ The quotient $\\Delta_\\perp/r$ is $O(r)$. Boundedness of that quotient alone would allow $\\Delta_\\perp=O(r)$; the stronger quadratic result comes from Cartesian smoothness and rotational symmetry.",
+    "url": "https://blogs.comphy-lab.org/_AtomicNotes/polymeric-stress-regularity-slender-jet/#1-match-the-transverse-stresses-at-the-axis",
     "type": "blog_section",
     "priority": 3
   },
   {
-    "title": "Polymeric stress regularity slender jet - 2) Why $\\sigma_{p,rr}-\\sigma_{p,\\theta\\theta}=O(r^2)$",
-    "content": "The radial divergence contains $$ (\\nabla\\cdot\\boldsymbol{\\sigma}_p)_r =\\partial_r\\sigma_{p,rr}+\\frac{\\sigma_{p,rr}-\\sigma_{p,\\theta\\theta}}{r}+\\partial_z\\sigma_{p,rz}. $$ To avoid a singular $1/r$ forcing at $r=0$, the difference $$ \\Delta_\\perp\\equiv\\sigma_{p,rr}-\\sigma_{p,\\theta\\theta} $$ must vanish at least as $O(r)$, and axis smoothness with Taylor-expandable fields gives the stronger form ([[r-2-parity|why?]]) $$ \\Delta_\\perp=O(r^2). $$ Hence $$ \\sigma_{p,rr}(0,z,t)=\\sigma_{p,\\theta\\theta}(0,z,t), \\qquad \\sigma_{p,rr}-\\sigma_{p,\\theta\\theta}=O(r^2). $$ Equivalent decomposition near the axis: $$ \\Sigma_\\perp\\equiv\\frac{\\sigma_{p,rr}+\\sigma_{p,\\theta\\theta}}{2} =\\Sigma_{\\perp,0}(z,t)+\\Sigma_{\\perp,2}(z,t)r^2+\\cdots, $$ $$ \\Delta_\\perp\\equiv\\frac{\\sigma_{p,rr}-\\sigma_{p,\\theta\\theta}}{2} =\\Delta_{\\perp,2}(z,t)r^2+\\cdots. $$",
-    "url": "https://blogs.comphy-lab.org/_AtomicNotes/polymeric-stress-regularity-slender-jet/#2-why-sigmaprr-sigmapthetathetaor2",
+    "title": "Polymeric stress regularity slender jet - 1. Match the transverse stresses at the axis: An equivalent decomposition...",
+    "content": "An equivalent decomposition uses the transverse mean and the same full difference, $$ \\Sigma_\\perp\\equiv\\frac{\\sigma_{p,rr}+\\sigma_{p,\\theta\\theta}}{2} =\\Sigma_{\\perp,0}+r^2\\Sigma_{\\perp,2}+\\cdots, $$ $$ \\Delta_\\perp=r^2\\Delta_{\\perp,2}+\\cdots. $$ Thus, $\\sigma_{p,rr}=\\Sigma_\\perp+\\Delta_\\perp/2$ and $\\sigma_{p,\\theta\\theta}=\\Sigma_\\perp-\\Delta_\\perp/2$. The factors of two follow from separating the mean and the full difference.",
+    "url": "https://blogs.comphy-lab.org/_AtomicNotes/polymeric-stress-regularity-slender-jet/#1-match-the-transverse-stresses-at-the-axis",
     "type": "blog_section",
     "priority": 3
   },
   {
-    "title": "Polymeric stress regularity slender jet - 3) Why $\\sigma_{p,rz}=r\\,S+O(r^3)$",
-    "content": "The axial divergence contains $$ (\\nabla\\cdot\\boldsymbol{\\sigma}_p)_z =\\partial_z\\sigma_{p,zz}+\\frac{1}{r}\\partial_r(r\\sigma_{p,rz}). $$ If $\\sigma_{p,rz}\\to c\\neq0$ as $r\\to0$, then $$ \\frac{1}{r}\\partial_r(r\\sigma_{p,rz})\\sim\\frac{c}{r}, $$ which is singular. Therefore boundedness requires $$ \\sigma_{p,rz}=O(r). $$ With smooth odd parity in $r$, $$ \\sigma_{p,rz}(r,z,t)=r\\,S(z,t)+O(r^3). $$",
-    "url": "https://blogs.comphy-lab.org/_AtomicNotes/polymeric-stress-regularity-slender-jet/#3-why-sigmaprzrsor3",
+    "title": "Polymeric stress regularity slender jet - 2. Determine the radial shear stress",
+    "content": "The mixed transverse-axial stress changes sign under a rotation by $\\pi$ along a signed transverse coordinate. Smoothness therefore gives an odd expansion, $$ \\sigma_{p,rz}=rS+r^3S_3+\\cdots. $$ In particular, $\\sigma_{p,rz}$ vanishes at the axis. A nonzero constant limit $c$ would give a singular contribution to axial momentum, $$ \\frac{1}{r}\\partial_r(r\\sigma_{p,rz})\\sim\\frac{c}{r}. $$ For the regular expansion, the same derivative is finite: $$ \\frac{1}{r}\\partial_r(r\\sigma_{p,rz})=2S+4r^2S_3+\\cdots. $$",
+    "url": "https://blogs.comphy-lab.org/_AtomicNotes/polymeric-stress-regularity-slender-jet/#2-determine-the-radial-shear-stress",
     "type": "blog_section",
     "priority": 3
   },
   {
-    "title": "Polymeric stress regularity slender jet - 4) Leading-order form used in slender-jet reduction",
-    "content": "A consistent regular expansion is $$ \\sigma_{p,zz}(r,z,t)=\\Sigma_{zz}(z,t)+O(\\varepsilon^2 r^2), $$ $$ \\sigma_{p,rr}(r,z,t)=\\Sigma_{rr}(z,t)+O(\\varepsilon^2 r^2), $$ $$ \\sigma_{p,\\theta\\theta}(r,z,t)=\\Sigma_{\\theta\\theta}(z,t)+O(\\varepsilon^2 r^2), $$ $$ \\sigma_{p,rz}(r,z,t)=r\\,S(z,t)+O(\\varepsilon^2 r^3), $$ with $$ \\Sigma_{rr}=\\Sigma_{\\theta\\theta} \\quad\\text{at leading order.} $$ So the independent leading-order polymer contribution in the axial 1D model is the axial-radial normal-stress difference $$ \\Delta\\Sigma\\equiv\\Sigma_{zz}-\\Sigma_{rr}, $$ while hoop stress is not an additional independent leading-order degree of freedom.",
-    "url": "https://blogs.comphy-lab.org/_AtomicNotes/polymeric-stress-regularity-slender-jet/#4-leading-order-form-used-in-slender-jet-reduction",
+    "title": "Polymeric stress regularity slender jet - 3. Collect the coefficients used in the jet model: The complete set...",
+    "content": "The complete set needed here is $$ \\begin{aligned} \\sigma_{p,zz}&=\\Sigma_{zz}+r^2\\Sigma_{zz,2}+O(r^4),\\\\ \\sigma_{p,rr}&=\\Sigma_{rr}+r^2\\Sigma_{rr,2}+O(r^4),\\\\ \\sigma_{p,\\theta\\theta}&=\\Sigma_{rr}+r^2\\Theta_2+O(r^4),\\\\ \\sigma_{p,rz}&=rS+r^3S_3+O(r^5). \\end{aligned} $$ The Taylor coefficients depend on $z$ and $t$. Let $\\varepsilon=\\ell_r/L\\ll1$, with $\\ell_r$ and $L$ the radial and axial scales. Since $r$ is dimensional, the slenderness factors are already contained in the radial powers. Under the regular ordering, the $r^2$ terms in the normal stresses are relative $O(\\varepsilon^2)$ corrections on the characteristic stress scale. Substitution into the stress divergence gives $$ (\\nabla\\cdot\\boldsymbol\\sigma_p)_z =\\Sigma_{zz}'+2S+r^2\\left(\\Sigma_{zz,2}'+4S_3\\right)+O(r^4), $$ $$ (\\nabla\\cdot\\boldsymbol\\sigma_p)_r =r\\left(3\\Sigma_{rr,2}-\\Theta_2+S'\\right)+O(r^3). $$ These are the polymer contributions to (M0), (M2) and (R) in [[slender-jets-VE-order-2|the second-order hierarchy]].",
+    "url": "https://blogs.comphy-lab.org/_AtomicNotes/polymeric-stress-regularity-slender-jet/#3-collect-the-coefficients-used-in-the-jet-model",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "Polymeric stress regularity slender jet - 3. Collect the coefficients used in the jet model: The radial and...",
+    "content": "The radial and hoop stresses share their leading coefficient, but $\\Sigma_{rr,2}$ and $\\Theta_2$ remain distinct at the next order. At leading order, eliminating $v_2$ with [[dynamic-BC-slender-jet|the tangential traction condition]] cancels the explicit shear contribution $2S$ from axial momentum. The remaining polymer force is $$ \\frac{(h^2\\Delta\\Sigma)'}{h^2}, \\qquad \\Delta\\Sigma\\equiv\\Sigma_{zz}-\\Sigma_{rr}. $$ This cancellation follows from the bulk and surface balances together. Regularity neither sets $S=0$ nor supplies a constitutive equation. At second order, shear and transverse-stress variation still enter the corrected tractions and must be evolved consistently with the polymer model.",
+    "url": "https://blogs.comphy-lab.org/_AtomicNotes/polymeric-stress-regularity-slender-jet/#3-collect-the-coefficients-used-in-the-jet-model",
     "type": "blog_section",
     "priority": 3
   },
@@ -4751,16 +4982,37 @@
     "priority": 3
   },
   {
-    "title": "Lhs slender jet - LHS of the Slender-Jet Axial Equation: The full axial...",
-    "content": "The full axial momentum inertia terms in axisymmetric cylindrical coordinates: $$ \\partial_t v_z+v_r\\,\\partial_r v_z+v_z\\,\\partial_z v_z. $$ Use the long-wave expansions (see: [[continuity-slender-jet|Continuity equation in slender jet]]) $$ v_z(r,z,t)=v_0(z,t)+\\varepsilon^2 r^2 v_2(z,t)+O(\\varepsilon^4 r^4), $$ $$ v_r(r,z,t)=-\\frac{1}{2}v_0'(z,t)\\,r+O(\\varepsilon^2 r^3). $$ Compute each inertia contribution.",
+    "title": "Lhs slender jet - LHS of the Slender-Jet Axial Equation",
+    "content": "The axial velocity of a slender jet is nearly uniform across each section. Radial advection is therefore small at leading order, but it contributes at the same order as the first correction to axial advection. We calculate both terms before truncating the acceleration. Use dimensional $r$ and $z$, with primes denoting $\\partial_z$. The expansions from [[continuity-slender-jet|continuity]] are $$ v_z=v_0+r^2v_2+O(r^4), \\qquad v_r=-\\frac{r}{2}v_0'-\\frac{r^3}{4}v_2'+O(r^5). $$ Here, $O(r^n)$ denotes the omitted Taylor powers with their dimensional coefficients. Under the slender ordering $r/L=O(\\varepsilon)$ and slow axial variation, $r^2v_2$ is a relative $O(\\varepsilon^2)$ velocity correction.",
     "url": "https://blogs.comphy-lab.org/_AtomicNotes/LHS-slender-jet/#lhs-of-the-slender-jet-axial-equation",
     "type": "blog_section",
     "priority": 3
   },
   {
-    "title": "Lhs slender jet - LHS of the Slender-Jet Axial Equation: Time derivative: $$...",
-    "content": "Time derivative: $$ \\partial_t v_z=\\partial_t v_0+\\varepsilon^2 r^2\\partial_t v_2+O(\\varepsilon^4) =\\partial_t v_0+O(\\varepsilon^2). $$ Axial advection: $$ \\partial_z v_z=v_0'+\\varepsilon^2 r^2 v_2'+O(\\varepsilon^4), $$ $$ v_z\\,\\partial_z v_z =\\left(v_0+\\varepsilon^2 r^2 v_2+O(\\varepsilon^4)\\right) \\left(v_0'+\\varepsilon^2 r^2 v_2'+O(\\varepsilon^4)\\right) =v_0 v_0'+O(\\varepsilon^2). $$ Radial advection: $$ \\partial_r v_z=2\\varepsilon^2 r v_2+O(\\varepsilon^4 r^3), $$ $$ v_r\\,\\partial_r v_z =\\left(-\\frac{1}{2}v_0'\\,r+O(\\varepsilon^2 r^3)\\right) \\left(2\\varepsilon^2 r v_2+O(\\varepsilon^4 r^3)\\right) =-\\varepsilon^2 r^2 v_0'v_2+O(\\varepsilon^4) =O(\\varepsilon^2). $$ Therefore, at leading order, $$ \\partial_t v_z+v_r\\,\\partial_r v_z+v_z\\,\\partial_z v_z =\\partial_t v_0+v_0 v_0'+O(\\varepsilon^2). $$ So the $O(1)$ LHS in the slender-jet axial equation is $$ \\partial_t v_0+v_0 v_0'. $$",
-    "url": "https://blogs.comphy-lab.org/_AtomicNotes/LHS-slender-jet/#lhs-of-the-slender-jet-axial-equation",
+    "title": "Lhs slender jet - 1. Calculate the local acceleration",
+    "content": "Differentiating at fixed position gives $$ \\partial_tv_z=\\partial_tv_0+r^2\\partial_tv_2+O(r^4). $$ No steady-flow assumption has been made. Both time derivatives remain in their respective coefficient equations.",
+    "url": "https://blogs.comphy-lab.org/_AtomicNotes/LHS-slender-jet/#1-calculate-the-local-acceleration",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "Lhs slender jet - 2. Calculate axial advection",
+    "content": "Since $$ \\partial_zv_z=v_0'+r^2v_2'+O(r^4), $$ the axial advective term is $$ v_z\\partial_zv_z =v_0v_0'+r^2\\left(v_0v_2'+v_2v_0'\\right)+O(r^4). $$ The second-order coefficient contains both the advection of $v_2$ by $v_0$ and the product $v_2v_0'$.",
+    "url": "https://blogs.comphy-lab.org/_AtomicNotes/LHS-slender-jet/#2-calculate-axial-advection",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "Lhs slender jet - 3. Calculate radial advection",
+    "content": "The radial gradient of axial velocity is $$ \\partial_rv_z=2rv_2+O(r^3). $$ Multiplying by the radial velocity gives $$ v_r\\partial_rv_z =\\left(-\\frac{r}{2}v_0'+O(r^3)\\right) \\left(2rv_2+O(r^3)\\right) =-r^2v_0'v_2+O(r^4). $$ This cancels the $r^2v_2v_0'$ term from axial advection.",
+    "url": "https://blogs.comphy-lab.org/_AtomicNotes/LHS-slender-jet/#3-calculate-radial-advection",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "Lhs slender jet - 4. Collect the acceleration",
+    "content": "Adding the three contributions gives $$ \\boxed{ \\partial_tv_z+v_r\\partial_rv_z+v_z\\partial_zv_z =\\partial_tv_0+v_0v_0' +r^2\\left(\\partial_tv_2+v_0v_2'\\right)+O(r^4). } $$ Multiplying by the density $\\rho$ gives the inertial terms in the momentum equation. The $r^0$ coefficient is $\\rho(\\partial_tv_0+v_0v_0')$, as used in [[slender-jets-VE-order-0|the leading-order model]]. The $r^2$ coefficient is $\\rho(\\partial_tv_2+v_0v_2')$, as used in (M2) of [[slender-jets-VE-order-2|the second-order hierarchy]]. Dropping radial advection before collecting this coefficient would leave a spurious $v_2v_0'$ term.",
+    "url": "https://blogs.comphy-lab.org/_AtomicNotes/LHS-slender-jet/#4-collect-the-acceleration",
     "type": "blog_section",
     "priority": 3
   },
@@ -4892,43 +5144,57 @@
   },
   {
     "title": "Dynamic bc slender jet - Leading-Order Dynamic BC in a Slender Jet",
-    "content": "Leading-order free-surface stress balances (normal and tangential) used in [[polymeric-stress-regularity-slender-jet|Slender jet momentum equations]]. Use cylindrical coordinates $(r,z)$, axisymmetry, no swirl, interface $r=h(z,t)$. Total liquid stress: $$ \\boldsymbol{\\sigma}=-p\\,\\boldsymbol{I}+2\\eta\\,\\boldsymbol{D}+\\boldsymbol{\\sigma}_p. $$ With passive gas outside, $\\boldsymbol{\\sigma}^{\\mathrm{out}}=-p_a\\boldsymbol{I}$, and constant surface tension $\\gamma$, $$ (\\boldsymbol{\\sigma}-\\boldsymbol{\\sigma}^{\\mathrm{out}})\\cdot\\boldsymbol{n}=-\\gamma\\kappa\\,\\boldsymbol{n}. $$",
+    "content": "The free surface determines both the pressure and the first radial correction to axial velocity. Normal traction gives the pressure at leading order. Tangential traction determines $v_2$, including the effect of polymer shear and the projection of polymer normal stress onto a tilted interface. Consider an axisymmetric, swirl-free liquid with surface $r=h(z,t)$. We use dimensional coordinates, with primes denoting $\\partial_z$. The solvent viscosity $\\eta$ and surface tension $\\gamma$ are constant. The surrounding gas exerts a uniform pressure $p_a$ and negligible viscous stress. We use the meridional polymer-stress symmetry specified in [[polymeric-stress-regularity-slender-jet|the regularity note]].",
     "url": "https://blogs.comphy-lab.org/_AtomicNotes/dynamic-BC-slender-jet/#leading-order-dynamic-bc-in-a-slender-jet",
     "type": "blog_section",
     "priority": 3
   },
   {
-    "title": "Dynamic bc slender jet - Projections:",
-    "content": "$$ \\boldsymbol{n}\\cdot\\boldsymbol{\\sigma}\\cdot\\boldsymbol{n}=-p_a-\\gamma\\kappa, \\qquad \\boldsymbol{t}\\cdot\\boldsymbol{\\sigma}\\cdot\\boldsymbol{n}=0. $$",
-    "url": "https://blogs.comphy-lab.org/_AtomicNotes/dynamic-BC-slender-jet/#projections",
+    "title": "Dynamic bc slender jet - 1. Fix the stress and curvature signs: Write the absolute...",
+    "content": "Write the absolute liquid pressure as $P$. The liquid and gas stresses are $$ \\boldsymbol\\sigma=-P\\boldsymbol I+2\\eta\\boldsymbol D+\\boldsymbol\\sigma_p, \\qquad \\boldsymbol\\sigma^{\\mathrm{out}}=-p_a\\boldsymbol I, $$ where $\\boldsymbol D=[\\nabla\\boldsymbol v+(\\nabla\\boldsymbol v)^{\\mathsf T}]/2$. With the unit normal pointing out of the liquid, $$ (\\boldsymbol\\sigma-\\boldsymbol\\sigma^{\\mathrm{out}})\\cdot\\boldsymbol n =-\\gamma\\kappa\\boldsymbol n. $$ The normal and tangential projections are therefore $$ \\boldsymbol n\\cdot\\boldsymbol\\sigma\\cdot\\boldsymbol n=-p_a-\\gamma\\kappa, \\qquad \\boldsymbol t\\cdot\\boldsymbol\\sigma\\cdot\\boldsymbol n=0. $$ For $r=h(z,t)$, the exact geometry is $$ \\boldsymbol n=\\frac{\\boldsymbol e_r-h'\\boldsymbol e_z}{\\sqrt{1+h'^2}}, \\qquad \\boldsymbol t=\\frac{h'\\boldsymbol e_r+\\boldsymbol e_z}{\\sqrt{1+h'^2}}, $$ $$ \\kappa=\\frac{1}{h\\sqrt{1+h'^2}}-\\frac{h''}{(1+h'^2)^{3/2}}. $$ A cylindrical surface has $\\kappa=1/h$, and a sphere of radius $a$ has $\\kappa=2/a$.",
+    "url": "https://blogs.comphy-lab.org/_AtomicNotes/dynamic-BC-slender-jet/#1-fix-the-stress-and-curvature-signs",
     "type": "blog_section",
     "priority": 3
   },
   {
-    "title": "Dynamic bc slender jet - Geometry:",
-    "content": "$$ \\boldsymbol{n}=\\frac{\\boldsymbol{e}_r-h_z\\boldsymbol{e}_z}{\\sqrt{1+h_z^2}}, \\qquad \\boldsymbol{t}=\\frac{h_z\\boldsymbol{e}_r+\\boldsymbol{e}_z}{\\sqrt{1+h_z^2}}, \\qquad \\kappa=\\frac{1}{h}+O(\\varepsilon^2), \\qquad h_z=O(\\varepsilon). $$",
-    "url": "https://blogs.comphy-lab.org/_AtomicNotes/dynamic-BC-slender-jet/#geometry",
+    "title": "Dynamic bc slender jet - 1. Fix the stress and curvature signs: These limits fix...",
+    "content": "These limits fix the curvature sign in the normal balance. Let $\\ell_r/L=\\varepsilon\\ll1$. With $h'=O(\\varepsilon)$ and $Lh''=O(\\varepsilon)$, the expansion is $$ \\kappa=\\frac{1}{h}-h''-\\frac{h'^2}{2h}+\\cdots. $$ The last two terms are relative $O(\\varepsilon^2)$ corrections to $1/h$. We retain only the leading curvature in the calculation below.",
+    "url": "https://blogs.comphy-lab.org/_AtomicNotes/dynamic-BC-slender-jet/#1-fix-the-stress-and-curvature-signs",
     "type": "blog_section",
     "priority": 3
   },
   {
-    "title": "Dynamic bc slender jet - Long-wave fields:",
-    "content": "$$ v_z(r,z,t)=v_0(z,t)+\\varepsilon^2 r^2 v_2(z,t)+\\cdots, $$ $$ v_r(r,z,t)=-\\frac{1}{2}v_0'(z,t)\\,r-\\frac{1}{4}\\varepsilon^2 v_2'(z,t)\\,r^3+\\cdots, $$ See: [[continuity-slender-jet|Continuity equation in slender jet]] $$ \\sigma_{p,rr}=\\Sigma_{rr}(z,t)+O(\\varepsilon^2 r^2), \\quad \\sigma_{p,zz}=\\Sigma_{zz}(z,t)+O(\\varepsilon^2 r^2), \\quad \\sigma_{p,rz}=r\\,S(z,t)+O(\\varepsilon^2 r^3). $$ See: [[polymeric-stress-regularity-slender-jet|Polymeric stress in slender jet]] Needed derivatives at $r=h$: $$ \\partial_r v_r=-\\frac{1}{2}v_0'+O(\\varepsilon^2), \\qquad \\partial_z v_z=v_0'+O(\\varepsilon^2), $$ $$ \\partial_r v_z+\\partial_z v_r=-\\frac{1}{2}h\\,v_0''+2h\\,v_2+O(\\varepsilon^2). $$",
-    "url": "https://blogs.comphy-lab.org/_AtomicNotes/dynamic-BC-slender-jet/#long-wave-fields",
+    "title": "Dynamic bc slender jet - 2. Evaluate the velocity gradients at the surface",
+    "content": "Use the dimensional radial expansion and its [[continuity-slender-jet|continuity constraint]], $$ v_z=v_0+r^2v_2+\\cdots, \\qquad v_r=-\\frac{r}{2}v_0'-\\frac{r^3}{4}v_2'+\\cdots. $$ The required surface gradients are $$ \\left.\\partial_rv_r\\right|_h=-\\frac{1}{2}v_0'-\\frac{3h^2}{4}v_2'+\\cdots, \\qquad \\left.\\partial_zv_z\\right|_h=v_0'+h^2v_2'+\\cdots, $$ $$ \\left.(\\partial_rv_z+\\partial_zv_r)\\right|_h =2hv_2-\\frac{h}{2}v_0''+\\cdots. $$ Derivatives are taken at fixed coordinates before evaluating at $r=h$. In the normal gradients, the displayed $h^2v_2'$ terms are second-order corrections. In the shear gradient, both displayed terms contribute at the first nonzero order. The polymer stresses at this accuracy are $$ \\sigma_{p,rr}(h)=\\Sigma_{rr}+\\cdots, \\qquad \\sigma_{p,zz}(h)=\\Sigma_{zz}+\\cdots, \\qquad \\sigma_{p,rz}(h)=hS+\\cdots. $$",
+    "url": "https://blogs.comphy-lab.org/_AtomicNotes/dynamic-BC-slender-jet/#2-evaluate-the-velocity-gradients-at-the-surface",
     "type": "blog_section",
     "priority": 3
   },
   {
-    "title": "Dynamic bc slender jet - 1) Leading-order normal stress balance",
-    "content": "At small slope, $\\boldsymbol{n}\\approx\\boldsymbol{e}_r$, so $$ \\boldsymbol{n}\\cdot\\boldsymbol{\\sigma}\\cdot\\boldsymbol{n} =-p+2\\eta\\,\\partial_r v_r+\\sigma_{p,rr}+O(\\varepsilon^2). $$ Using $\\boldsymbol{n}\\cdot\\boldsymbol{\\sigma}\\cdot\\boldsymbol{n}=-p_a-\\gamma\\kappa$: $$ p=p_a+\\gamma\\kappa+2\\eta\\,\\partial_r v_r+\\sigma_{p,rr}+O(\\varepsilon^2). $$ Therefore $$ p_0(z,t)=p_a+\\frac{\\gamma}{h}-\\eta v_0'+\\Sigma_{rr}+O(\\varepsilon^2). $$ If pressure is gauged by $p_a=0$: $$ \\boxed{p_0=\\frac{\\gamma}{h}-\\eta v_0'+\\Sigma_{rr}+O(\\varepsilon^2).} $$",
-    "url": "https://blogs.comphy-lab.org/_AtomicNotes/dynamic-BC-slender-jet/#1-leading-order-normal-stress-balance",
+    "title": "Dynamic bc slender jet - 3. Use normal traction to determine the pressure",
+    "content": "The exact normal projection gives $$ P=p_a+\\gamma\\kappa+2\\eta\\,\\boldsymbol n\\cdot\\boldsymbol D\\cdot\\boldsymbol n +\\boldsymbol n\\cdot\\boldsymbol\\sigma_p\\cdot\\boldsymbol n. $$ At leading order, $\\boldsymbol n\\simeq\\boldsymbol e_r$, $\\kappa\\simeq1/h$ and the pressure is uniform across the section. Thus, $$ P_0=p_a+\\frac{\\gamma}{h}-\\eta v_0'+\\Sigma_{rr}. $$ Defining the pressure relative to the gas as $p=P-p_a$, we obtain the convention used in the main notes: $$ \\boxed{p_0=\\frac{\\gamma}{h}-\\eta v_0'+\\Sigma_{rr}.} $$ At second order, the surface and centreline pressures differ by $h^2p_2$, so this leading expression cannot be used unchanged at that accuracy.",
+    "url": "https://blogs.comphy-lab.org/_AtomicNotes/dynamic-BC-slender-jet/#3-use-normal-traction-to-determine-the-pressure",
     "type": "blog_section",
     "priority": 3
   },
   {
-    "title": "Dynamic bc slender jet - 2) Leading-order tangential stress balance: At small slope,...",
-    "content": "At small slope, expand $\\boldsymbol{t}\\cdot\\boldsymbol{\\sigma}\\cdot\\boldsymbol{n}=0$ to first nontrivial order: $$ \\eta\\left[(\\partial_r v_z+\\partial_z v_r)+2h_z(\\partial_r v_r-\\partial_z v_z)\\right] +\\boldsymbol{t}\\cdot\\boldsymbol{\\sigma}_p\\cdot\\boldsymbol{n} =O(\\varepsilon^2). $$ Newtonian contribution: $$ \\partial_r v_z+\\partial_z v_r=-\\frac{1}{2}h v_0''+2h v_2+O(\\varepsilon^2), $$ $$ 2h_z(\\partial_r v_r-\\partial_z v_z)=-3v_0'h'+O(\\varepsilon^2), $$ so $$ \\eta\\left(-3v_0'h'-\\frac{1}{2}h v_0''+2h v_2\\right)+\\boldsymbol{t}\\cdot\\boldsymbol{\\sigma}_p\\cdot\\boldsymbol{n} =O(\\varepsilon^2). $$ Polymer projection at small slope: $$ \\boldsymbol{t}\\cdot\\boldsymbol{\\sigma}_p\\cdot\\boldsymbol{n} =\\sigma_{p,rz}(h)+h'\\big(\\Sigma_{rr}-\\Sigma_{zz}\\big)+O(\\varepsilon^2). $$ Hence $$ \\eta\\left(-3v_0'h'-\\frac{1}{2}h v_0''+2h v_2\\right) +\\sigma_{p,rz}(h) +h'\\big(\\Sigma_{rr}-\\Sigma_{zz}\\big) =O(\\varepsilon^2). $$ Define $\\Delta\\Sigma\\equiv\\Sigma_{zz}-\\Sigma_{rr}$, then equivalently $$ \\eta\\left(-3v_0'h'-\\frac{1}{2}h v_0''+2h v_2\\right) +\\sigma_{p,rz}(h)-\\Delta\\Sigma\\,h' =O(\\varepsilon^2). $$",
-    "url": "https://blogs.comphy-lab.org/_AtomicNotes/dynamic-BC-slender-jet/#2-leading-order-tangential-stress-balance",
+    "title": "Dynamic bc slender jet - 4. Use tangential traction to determine $v_2$: The exact tangential...",
+    "content": "The exact tangential projection is $$ \\boldsymbol t\\cdot\\boldsymbol\\sigma\\cdot\\boldsymbol n =\\frac{h'(\\sigma_{rr}-\\sigma_{zz})+(1-h'^2)\\sigma_{rz}}{1+h'^2}. $$ Pressure cancels from $\\sigma_{rr}-\\sigma_{zz}$. At the first nonzero order, the solvent contribution is therefore $$ \\eta\\left[(\\partial_rv_z+\\partial_zv_r) +2h'(\\partial_rv_r-\\partial_zv_z)\\right]_h. $$ The first bracketed term supplies $2hv_2-hv_0''/2$. The second gives $$ 2h'\\left(-\\frac{1}{2}v_0'-v_0'\\right)=-3h'v_0'. $$ The polymer projection contributes $$ \\sigma_{p,rz}(h)+h'(\\Sigma_{rr}-\\Sigma_{zz}) =hS-\\Delta\\Sigma h', \\qquad \\Delta\\Sigma=\\Sigma_{zz}-\\Sigma_{rr}. $$ Combining these terms gives the leading tangential condition, $$ \\boxed{\\eta\\left(-3h'v_0'-\\frac{h}{2}v_0''+2hv_2\\right) +hS-\\Delta\\Sigma h'=0.} $$ For $\\eta>0$, we can rearrange it as $$ 2\\eta hv_2=3\\eta h'v_0'+\\frac{\\eta h}{2}v_0''-hS+\\Delta\\Sigma h'. $$ The tilted interface projects normal stress into the tangential direction.",
+    "url": "https://blogs.comphy-lab.org/_AtomicNotes/dynamic-BC-slender-jet/#4-use-tangential-traction-to-determine-v2",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "Dynamic bc slender jet - 4. Use tangential traction to determine $v_2$: Consequently, $hS$ and...",
+    "content": "Consequently, $hS$ and $\\Delta\\Sigma h'$ must both be retained; a shear-free surface does not require the polymer shear stress itself to vanish.",
+    "url": "https://blogs.comphy-lab.org/_AtomicNotes/dynamic-BC-slender-jet/#4-use-tangential-traction-to-determine-v2",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "Dynamic bc slender jet - 5. Keep track of the accuracy",
+    "content": "The leading normal condition neglects relative $O(\\varepsilon^2)$ corrections. The first tangential balance is itself $O(\\varepsilon)$ on the characteristic stress scale, and its next contribution is $O(\\varepsilon^3)$ on that scale. In the notation of [[slender-jets-VE-order-2|the second-order derivation]], the full retained tangential condition is $\\mathcal T_0+\\mathcal T_2=0$. Using only $\\mathcal T_0=0$ is sufficient for [[slender-jets-VE-order-0|leading-order momentum]], but loses the correction $-2\\mathcal T_2/h$ at the next order. Together with the normal-traction correction $\\mathcal B$, the second-order axial equation therefore contains $$ -\\partial_z\\mathcal B-\\frac{2\\mathcal T_2}{h}. $$ The full expressions for these corrections, including the radial polymer-stress coefficients, are given in the main second-order note.",
+    "url": "https://blogs.comphy-lab.org/_AtomicNotes/dynamic-BC-slender-jet/#5-keep-track-of-the-accuracy",
     "type": "blog_section",
     "priority": 3
   },
@@ -5220,16 +5486,30 @@
     "priority": 3
   },
   {
-    "title": "Continuity slender jet - Continuity in the Slender-Jet Expansion: Axisymmetric incompressibility: $$...",
-    "content": "Axisymmetric incompressibility: $$ \\frac{1}{r}\\partial_r(r v_r)+\\partial_z v_z=0. $$ Use the long-wave expansion for axial velocity: $$ v_z(r,z,t)=v_0(z,t)+\\varepsilon^2 r^2 v_2(z,t)+O(\\varepsilon^4 r^4). $$ Differentiate in $z$: $$ \\partial_z v_z=v_0'(z,t)+\\varepsilon^2 r^2 v_2'(z,t)+O(\\varepsilon^4 r^4). $$ Substitute into continuity: $$ \\partial_r(r v_r) =-r\\left[v_0'(z,t)+\\varepsilon^2 r^2 v_2'(z,t)+O(\\varepsilon^4 r^4)\\right]. $$ Integrate in $r$: $$ r v_r=-\\frac{1}{2}v_0' r^2-\\frac{1}{4}\\varepsilon^2 v_2' r^4+C(z,t)+O(\\varepsilon^4 r^6). $$ Axis regularity requires $v_r(0,z,t)=0$, so $C(z,t)=0$. Divide by $r$: $$ v_r(r,z,t)=-\\frac{1}{2}v_0'(z,t)\\,r-\\frac{1}{4}\\varepsilon^2 v_2'(z,t)\\,r^3+O(\\varepsilon^4 r^5). $$ This is the odd-in-$r$ velocity expansion used in the slender-jet reduction.",
+    "title": "Continuity slender jet - Continuity in the Slender-Jet Expansion",
+    "content": "Consider an incompressible, axisymmetric jet with surface $r=h(z,t)$. Once the axial velocity is specified, continuity determines the radial velocity. Requiring regularity at the axis removes the integration constant, and the surface kinematics then give conservation of cross-sectional area. We use dimensional coordinates, as in [[slender-jets-VE-order-0|the leading-order derivation]]. Primes denote $\\partial_z$. If $\\ell_r/L=\\varepsilon\\ll1$, the dimensional powers of $r$ carry the slender ordering; no additional powers of $\\varepsilon$ multiply them.",
     "url": "https://blogs.comphy-lab.org/_AtomicNotes/continuity-slender-jet/#continuity-in-the-slender-jet-expansion",
     "type": "blog_section",
     "priority": 3
   },
   {
-    "title": "Continuity slender jet - Continuity in the Slender-Jet Expansion: Now apply the...",
-    "content": "Now apply the kinematic free-surface condition at $r=h(z,t)$: $$ h_t+v_z(h,z,t)\\,h_z=v_r(h,z,t). $$ At leading order, $v_z(h,z,t)=v_0+O(\\varepsilon^2)$ and $$ v_r(h,z,t)=-\\frac{1}{2}h\\,v_0'+O(\\varepsilon^2). $$ Hence $$ h_t+v_0 h_z=-\\frac{1}{2}h v_0'+O(\\varepsilon^2). $$ Multiply by $2h$: $$ \\partial_t(h^2)+\\partial_z(h^2 v_0)=O(\\varepsilon^2). $$ Leading-order 1D continuity equation: $$ \\partial_t(h^2)+\\partial_z(h^2 v_0)=0. $$ This is the continuity relation used in [[slender-jets-VE-order-0| VE order 0 slender jet]].",
-    "url": "https://blogs.comphy-lab.org/_AtomicNotes/continuity-slender-jet/#continuity-in-the-slender-jet-expansion",
+    "title": "Continuity slender jet - 1. Integrate continuity from the axis",
+    "content": "Axisymmetric incompressibility requires $$ \\frac{1}{r}\\partial_r(rv_r)+\\partial_zv_z=0. $$ Expand the axial velocity as $$ v_z=v_0+r^2v_2+r^4v_4+\\cdots, $$ where the coefficients depend on $z$ and $t$. Substitution into continuity gives $$ \\partial_r(rv_r)=-rv_0'-r^3v_2'-r^5v_4'+\\cdots. $$ Integrating with respect to $r$, $$ rv_r=-\\frac{r^2}{2}v_0'-\\frac{r^4}{4}v_2'-\\frac{r^6}{6}v_4'+C(z,t). $$ A nonzero $C$ would give a singular velocity $C/r$ at the axis. Regularity therefore requires $C=0$, giving $$ \\boxed{v_r=-\\frac{r}{2}v_0'-\\frac{r^3}{4}v_2'-\\frac{r^5}{6}v_4'+\\cdots.} $$ The radial velocity is odd in $r$, as required by [[r-2-parity|axis regularity]]. In particular, a positive axial strain rate $v_0'$ produces an inward radial velocity.",
+    "url": "https://blogs.comphy-lab.org/_AtomicNotes/continuity-slender-jet/#1-integrate-continuity-from-the-axis",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "Continuity slender jet - 2. Apply the surface kinematics",
+    "content": "The surface moves with the liquid, so $$ \\partial_th+v_z(h,z,t)h'=v_r(h,z,t). $$ At leading order this becomes $$ \\partial_th+v_0h'=-\\frac{h}{2}v_0'. $$ Multiplying by $2h$ and collecting the axial derivative gives $$ \\boxed{\\partial_t(h^2)+\\partial_z(h^2v_0)=0.} $$ This is the leading continuity equation used in [[slender-jets-VE-order-0|the slender-jet model]].",
+    "url": "https://blogs.comphy-lab.org/_AtomicNotes/continuity-slender-jet/#2-apply-the-surface-kinematics",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "Continuity slender jet - 3. Retain the first correction to the flux: Keeping the $r^2$...",
+    "content": "Keeping the $r^2$ axial-velocity correction gives $$ \\partial_th+(v_0+h^2v_2)h' =-\\frac{h}{2}v_0'-\\frac{h^3}{4}v_2'. $$ Multiplication by $2h$ now yields $$ \\boxed{\\partial_t(h^2)+\\partial_z\\left(h^2v_0+\\frac{h^4}{2}v_2\\right)=0.} $$ We can check the coefficient by integrating the axial velocity over a section. The exact volume flux is $$ Q=2\\pi\\int_0^h v_zr\\,\\mathrm dr, $$ so its expansion is $$ Q=\\pi\\left(h^2v_0+\\frac{h^4}{2}v_2+\\frac{h^6}{3}v_4+\\cdots\\right). $$ The exact area balance is $\\partial_t(\\pi h^2)+\\partial_zQ=0$. Truncating this flux after $v_2$ recovers the second-order equation above. Under the regular slender ordering, the $v_2$ contribution is a relative $O(\\varepsilon^2)$ correction, while the $v_4$ contribution is relative $O(\\varepsilon^4)$. Consequently, the centreline velocity $v_0$ and the mean velocity $Q/(\\pi h^2)$ agree only at leading order. The corresponding momentum and traction corrections are given in [[slender-jets-VE-order-2|the second-order derivation]].",
+    "url": "https://blogs.comphy-lab.org/_AtomicNotes/continuity-slender-jet/#3-retain-the-first-correction-to-the-flux",
     "type": "blog_section",
     "priority": 3
   },
@@ -5346,9 +5626,30 @@
     "priority": 3
   },
   {
-    "title": "Laplacian in axisymmetric slender jet - Viscous stress in the Slender-Jet Axial Equation: > The origin...",
-    "content": "> The origin of the $4v_2$ term used in [[slender-jets-VE-order-0|Slender jet viscous stress divergence]] Use the long-wave expansion $$ v_z(r,z,t)=v_0(z,t)+\\varepsilon^2 r^2 v_2(z,t)+O(\\varepsilon^4 r^4). $$ In the nondimensional axial equation, the viscous operator is $$ \\frac{1}{\\varepsilon^2}\\left(\\partial_{rr}v_z+\\frac{1}{r}\\partial_r v_z\\right)+\\partial_{zz}v_z. $$ Given (see: [[continuity-slender-jet|Continuity equation in slender jet]]) $$ v_z(r,z,t)=v_0(z,t)+\\varepsilon^2 r^2 v_2(z,t)+\\cdots, $$ $$ v_r(r,z,t)= -\\frac{1}{2}v_0'(z,t)\\,r-\\frac{1}{4}\\varepsilon^2 v_2'(z,t)\\,r^3+\\cdots, $$ Compute radial derivatives of $v_z$: $$ \\partial_r v_z=2\\varepsilon^2 r v_2+O(\\varepsilon^4 r^3), $$ $$ \\partial_{rr}v_z=2\\varepsilon^2 v_2+O(\\varepsilon^4 r^2), $$ $$ \\frac{1}{r}\\partial_r v_z=2\\varepsilon^2 v_2+O(\\varepsilon^4 r^2). $$ Therefore $$ \\frac{1}{\\varepsilon^2}\\left(\\partial_{rr}v_z+\\frac{1}{r}\\partial_r v_z\\right) =\\frac{1}{\\varepsilon^2}\\left(2\\varepsilon^2 v_2+2\\varepsilon^2 v_2\\right)+O(\\varepsilon^2) =4v_2+O(\\varepsilon^2). $$ Now compute the axial derivative: $$ \\partial_{zz}v_z=v_0''+\\varepsilon^2 r^2 v_2''+O(\\varepsilon^4 r^4) =v_0''+O(\\varepsilon^2). $$ So the full viscous contribution at leading order is $$ \\frac{1}{\\varepsilon^2}\\left(\\partial_{rr}v_z+\\frac{1}{r}\\partial_r v_z\\right)+\\partial_{zz}v_z =4v_2+v_0''+O(\\varepsilon^2). $$ Hence the $O(1)$ axial momentum balance contains $$ \\partial_t v_0+v_0 v_0'=-p_0'+\\left(4v_2+v_0''\\right)+O(\\varepsilon^2), $$ or in dimensional form $$ \\rho\\left(\\partial_t v_0+v_0 v_0'\\right)=-p_0'+\\eta\\left(4v_2+v_0''\\right)+O(\\varepsilon^2). $$ > [!important] Essentially: > $$ f(r)=f_0+f_2 r^2+O(r^4) \\quad\\Longrightarrow\\quad \\left(\\partial_{rr}+\\frac{1}{r}\\partial_r\\right)f=4f_2+O(r^2). $$",
+    "title": "Laplacian in axisymmetric slender jet - Viscous stress in the Slender-Jet Axial Equation",
+    "content": "The first radial correction to axial velocity is small, but its viscous contribution need not be. Two radial derivatives of $r^2v_2$ leave the finite term $4v_2$. We derive this term and the next coefficient using the same dimensional coordinates as [[slender-jets-VE-order-0|the leading-order slender-jet equation]]. For an incompressible liquid with constant solvent viscosity $\\eta$, the axial component of the solvent-stress divergence is $\\eta\\nabla^2v_z$. In axisymmetric cylindrical coordinates, $$ \\nabla^2v_z=\\partial_{rr}v_z+\\frac{1}{r}\\partial_rv_z+\\partial_{zz}v_z. $$ The axial component has the scalar Laplacian shown here. The radial component of the vector Laplacian has an additional $-v_r/r^2$ term.",
     "url": "https://blogs.comphy-lab.org/_AtomicNotes/Laplacian-in-axisymmetric-slender-jet/#viscous-stress-in-the-slender-jet-axial-equation",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "Laplacian in axisymmetric slender jet - 1. Differentiate the radial expansion",
+    "content": "Write $$ v_z=v_0+r^2v_2+r^4v_4+O(r^6), $$ with coefficients depending on $z$ and $t$. Primes denote $\\partial_z$. Then $$ \\partial_rv_z=2rv_2+4r^3v_4+O(r^5), $$ $$ \\partial_{rr}v_z=2v_2+12r^2v_4+O(r^4), \\qquad \\frac{1}{r}\\partial_rv_z=2v_2+4r^2v_4+O(r^4). $$ Adding gives $$ \\left(\\partial_{rr}+\\frac{1}{r}\\partial_r\\right)v_z =4v_2+16r^2v_4+O(r^4). $$ The apparent $1/r$ singularity is removable because $\\partial_rv_z$ vanishes linearly at the axis. More generally, for $n\\geq1$, $$ \\left(\\partial_{rr}+\\frac{1}{r}\\partial_r\\right)r^{2n} =4n^2r^{2n-2}. $$",
+    "url": "https://blogs.comphy-lab.org/_AtomicNotes/Laplacian-in-axisymmetric-slender-jet/#1-differentiate-the-radial-expansion",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "Laplacian in axisymmetric slender jet - 2. Add the axial derivatives",
+    "content": "The axial part is $$ \\partial_{zz}v_z=v_0''+r^2v_2''+O(r^4). $$ Hence $$ \\boxed{\\nabla^2v_z=4v_2+v_0''+r^2\\left(16v_4+v_2''\\right)+O(r^4).} $$ For a Newtonian liquid, combining the $r^0$ coefficient with [[LHS-slender-jet|the axial acceleration]] gives $$ \\rho\\left(\\partial_tv_0+v_0v_0'\\right) =-p_0'+\\eta\\left(4v_2+v_0''\\right). $$ Polymer stress adds $\\Sigma_{zz}'+2S$ to this coefficient equation; it is separate from the solvent contribution derived here. At the next radial order, the solvent term is $\\eta(16v_4+v_2'')$. The full equations are given in [[slender-jets-VE-order-2|the second-order hierarchy]].",
+    "url": "https://blogs.comphy-lab.org/_AtomicNotes/Laplacian-in-axisymmetric-slender-jet/#2-add-the-axial-derivatives",
+    "type": "blog_section",
+    "priority": 3
+  },
+  {
+    "title": "Laplacian in axisymmetric slender jet - 3. Check the length scales",
+    "content": "Let the axial velocity scale be $U$, with radial scale $\\ell_r=\\varepsilon L$. In the regular slender expansion, $v_2=O(U/L^2)$, so $$ \\ell_r^2v_2=O(\\varepsilon^2U), \\qquad 4v_2=O(U/L^2), \\qquad v_0''=O(U/L^2). $$ Thus, the small correction to the axial velocity profile and the leading axial velocity contribute at the same order after viscous differentiation. The surface traction must determine $v_2$ before we eliminate it from the leading momentum balance. If instead we introduce scaled coordinates $R=r/\\ell_r$ and $Z=z/L$, the dimensional operator becomes $$ \\nabla^2=\\frac{1}{L^2}\\left[ \\frac{1}{\\varepsilon^2}\\left(\\partial_{RR}+\\frac{1}{R}\\partial_R\\right)+\\partial_{ZZ} \\right]. $$ This is the origin of the $1/\\varepsilon^2$ factor in the scaled equation. It belongs to derivatives with respect to $R$, not to the dimensional operator used above.",
+    "url": "https://blogs.comphy-lab.org/_AtomicNotes/Laplacian-in-axisymmetric-slender-jet/#3-check-the-length-scales",
     "type": "blog_section",
     "priority": 3
   },
