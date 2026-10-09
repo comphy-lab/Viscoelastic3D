@@ -28,6 +28,14 @@
     "priority": 1
   },
   {
+    "title": "[26]Sanjay, V.Singularities in Soft Matter Systems. Contemporary Physics (2026).",
+    "content": "[26]Sanjay, V.Singularities in Soft Matter Systems. Contemporary Physics (2026).",
+    "url": "https://comphy-lab.org/research/#26",
+    "type": "paper",
+    "tags": [],
+    "priority": 2
+  },
+  {
     "title": "[25] Verschuur, C. I., Oratis, A. T.,Sanjay, V., & Snoeijer, J. H. How elasticity affects bubble pinch-off. Phys. Rev. Fluids (2026).",
     "content": "[25] Verschuur, C. I., Oratis, A. T.,Sanjay, V., & Snoeijer, J. H. How elasticity affects bubble pinch-off. Phys. Rev. Fluids (2026).",
     "url": "https://comphy-lab.org/research/#25",
@@ -18773,28 +18781,28 @@
   },
   {
     "title": "\"Join Us\" - From Champagne to Coughs: Modelling Droplet Formation",
-    "content": "Model bubble bursting in complex fluids such as respiratory mucus and volcanic mudpots. Basilisk C simulations resolve capillary-wave focusing, viscoelastic stress buildup, jet formation, and droplet ejection; experiments at Twente and Delft validate the jetting regimes. [ View Project PDF](/assets/pdf-files/BubbleBursting.pdf){: .pdf-link }",
+    "content": "Model bubble bursting in complex fluids such as respiratory mucus and volcanic mudpots. Basilisk C simulations resolve capillary-wave focusing, viscoelastic stress buildup, jet formation, and droplet ejection; experiments at Twente and Delft validate the jetting regimes. [ View Project PDF](/assets/pdf-files/BubbleBursting.pdf){: .btn }",
     "url": "https://comphy-lab.org/join/#from-champagne-to-coughs-modelling-droplet-formation",
     "type": "website_section",
     "priority": 4
   },
   {
     "title": "\"Join Us\" - Instability Dynamics of Flowing Liquid Films: Plates and Fibers",
-    "content": "Thin films transition between instability regimes as inclination varies. Use Basilisk CFD to map stability boundaries, characterize wave dynamics via spectral analysis, and study coupling between Kapitza, Rayleigh\u2013Taylor, and Rayleigh\u2013Plateau instabilities. [ View Project PDF](/assets/pdf-files/DropsOnFibers.pdf){: .pdf-link }",
+    "content": "Thin films transition between instability regimes as inclination varies. Use Basilisk CFD to map stability boundaries, characterize wave dynamics via spectral analysis, and study coupling between Kapitza, Rayleigh\u2013Taylor, and Rayleigh\u2013Plateau instabilities. [ View Project PDF](/assets/pdf-files/DropsOnFibers.pdf){: .btn }",
     "url": "https://comphy-lab.org/join/#instability-dynamics-of-flowing-liquid-films-plates-and-fibers",
     "type": "website_section",
     "priority": 4
   },
   {
     "title": "\"Join Us\" - Sneezing Droplets: Modelling Respiratory Droplet Formation",
-    "content": "Numerically investigate how viscoelasticity affects filament breakup \u2014 the second stage of droplet formation. Simulate viscoelastic filaments, compare with Newtonian benchmarks, and improve predictions of droplet size distributions in respiratory events. [ View Project PDF](/assets/pdf-files/FilamentRetraction.pdf){: .pdf-link }",
+    "content": "Numerically investigate how viscoelasticity affects filament breakup \u2014 the second stage of droplet formation. Simulate viscoelastic filaments, compare with Newtonian benchmarks, and improve predictions of droplet size distributions in respiratory events. [ View Project PDF](/assets/pdf-files/FilamentRetraction.pdf){: .btn }",
     "url": "https://comphy-lab.org/join/#sneezing-droplets-modelling-respiratory-droplet-formation",
     "type": "website_section",
     "priority": 4
   },
   {
     "title": "\"Join Us\" - Holey Sheets: Bursting of Liquid Films",
-    "content": "Test how submicron impurities trigger hole nucleation in micron\u2011thick sheets. Using CLSVOF in Basilisk C, simulate radial drainage flows to reveal a double threshold for breakup and develop scaling laws for hole formation relevant to aerosols and sprays. [ View Project PDF](/assets/pdf-files/HoleySheets.pdf){: .pdf-link }",
+    "content": "Test how submicron impurities trigger hole nucleation in micron\u2011thick sheets. Using CLSVOF in Basilisk C, simulate radial drainage flows to reveal a double threshold for breakup and develop scaling laws for hole formation relevant to aerosols and sprays. [ View Project PDF](/assets/pdf-files/HoleySheets.pdf){: .btn }",
     "url": "https://comphy-lab.org/join/#holey-sheets-bursting-of-liquid-films",
     "type": "website_section",
     "priority": 4
@@ -18808,21 +18816,21 @@
   },
   {
     "title": "\"Join Us\" - Drops and Bubbles Spreading on Lubricant-Infused Surfaces",
-    "content": "Liquid-infused surfaces enable control over fluid spreading. Use Basilisk's adaptive VOF solver to capture capillary-wave cascades when fluids contact LIS, map spreading regimes, and reveal how wave convergence entrains secondary droplets. Develop scaling laws with experimental partners at TU Delft and Univ. Twente. [ View Project PDF](/assets/pdf-files/BubbleSpreadingLIS.pdf){: .pdf-link }",
+    "content": "Liquid-infused surfaces enable control over fluid spreading. Use Basilisk's adaptive VOF solver to capture capillary-wave cascades when fluids contact LIS, map spreading regimes, and reveal how wave convergence entrains secondary droplets. Develop scaling laws with experimental partners at TU Delft and Univ. Twente. [ View Project PDF](/assets/pdf-files/BubbleSpreadingLIS.pdf){: .btn }",
     "url": "https://comphy-lab.org/join/#drops-and-bubbles-spreading-on-lubricant-infused-surfaces",
     "type": "website_section",
     "priority": 4
   },
   {
     "title": "\"Join Us\" - Playing Ping-Pong with Liquid Droplets",
-    "content": "Simulate droplet bouncing on superhydrophobic surfaces \u2014 from Scott Kelly's space ping\u2011pong to hydrodynamic singularities. Map bouncing regimes, quantify force profiles and dissipation, and study Worthington jet formation with high-fidelity CFD. [ View Project PDF](/assets/pdf-files/BouncingDrops.pdf){: .pdf-link }",
+    "content": "Simulate droplet bouncing on superhydrophobic surfaces \u2014 from Scott Kelly's space ping\u2011pong to hydrodynamic singularities. Map bouncing regimes, quantify force profiles and dissipation, and study Worthington jet formation with high-fidelity CFD. [ View Project PDF](/assets/pdf-files/BouncingDrops.pdf){: .btn }",
     "url": "https://comphy-lab.org/join/#playing-ping-pong-with-liquid-droplets",
     "type": "website_section",
     "priority": 4
   },
   {
     "title": "\"Join Us\" - Gravity\u2011Defying Liquids: Thermoresponsive Viscoplastic Gels",
-    "content": "Study hot droplet impacts on cold substrates in gels transitioning from Newtonian to yield\u2011stress behavior. Implement temperature\u2011dependent rheology in DNS and correlate with experimental data for printing applications. [ View Project PDF](/assets/pdf-files/VP_Numerics.pdf){: .pdf-link }",
+    "content": "Study hot droplet impacts on cold substrates in gels transitioning from Newtonian to yield\u2011stress behavior. Implement temperature\u2011dependent rheology in DNS and correlate with experimental data for printing applications. [ View Project PDF](/assets/pdf-files/VP_Numerics.pdf){: .btn }",
     "url": "https://comphy-lab.org/join/#gravitydefying-liquids-thermoresponsive-viscoplastic-gels",
     "type": "website_section",
     "priority": 4
