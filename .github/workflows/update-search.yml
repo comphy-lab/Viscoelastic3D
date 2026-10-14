@@ -5,7 +5,7 @@ name: Update Search Database
 
 on:
   schedule:
-    - cron: '0 4 * * *'  # Run daily at 4:00 UTC
+    - cron: '27 5 1,15 * *'  # Run on the 1st and 15th at 05:27 UTC
   workflow_dispatch:  # Allow manual trigger
 
 # Add permissions needed for the workflow
