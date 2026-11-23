@@ -62,6 +62,27 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
+      # A re-run of this job reuses the artifact of its own commit. Deploy it
+      # only while that commit is still the head of the branch, so a late
+      # re-run cannot replace a newer deployment with older pages.
+      - name: Check that this commit is still the latest
+        id: fresh
+        run: |
+          set -euo pipefail
+          refs="$(git ls-remote "${GITHUB_SERVER_URL}/${GITHUB_REPOSITORY}.git" "refs/heads/${GITHUB_REF_NAME}")"
+          latest_sha="$(printf '%s\n' "$refs" | cut -f1)"
+          if [ -z "$latest_sha" ]; then
+            echo "::error::Could not read the head of ${GITHUB_REF_NAME}"
+            exit 1
+          fi
+          if [ "$latest_sha" = "$GITHUB_SHA" ]; then
+            echo "current=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "current=false" >> "$GITHUB_OUTPUT"
+            echo "::warning::${GITHUB_REF_NAME} has moved to ${latest_sha}; not deploying ${GITHUB_SHA}"
+          fi
+
       - name: Deploy to GitHub Pages
         id: deployment
+        if: ${{ steps.fresh.outputs.current == 'true' }}
         uses: actions/deploy-pages@v4
