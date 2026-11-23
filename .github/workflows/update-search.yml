@@ -61,12 +61,12 @@ jobs:
             printf '%s\n' 'An index update pull request already exists.'
             exit 0
           fi
-          if [[ -z "$(git ls-remote origin "refs/heads/$branch")" ]]; then
-            git -c user.name='github-actions[bot]' \
-              -c user.email='41898282+github-actions[bot]@users.noreply.github.com' \
-              commit -m 'Update the reviewed search index' -- "$INDEX_DESTINATION"
-            git push origin "HEAD:refs/heads/$branch"
-          fi
+          # No pull request is open, so any retained branch is stale: rebuild
+          # it from the current main with the index validated in this run.
+          git -c user.name='github-actions[bot]' \
+            -c user.email='41898282+github-actions[bot]@users.noreply.github.com' \
+            commit -m 'Update the reviewed search index' -- "$INDEX_DESTINATION"
+          git push --force origin "HEAD:refs/heads/$branch"
           gh pr create --base main --head "$branch" \
             --title 'Update the reviewed search index' \
             --body "Import the validated search database at comphy-lab/comphy-search@${SEARCH_REVISION}."
