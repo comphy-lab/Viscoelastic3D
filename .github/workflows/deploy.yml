@@ -6,6 +6,7 @@ on:
       - main
     paths:
       - 'docs/**'  # Only trigger when docs directory changes
+      - '.github/workflows/deploy.yml'  # Redeploy when this workflow changes
 
 permissions:
   contents: read
@@ -35,12 +36,12 @@ jobs:
             echo "should_skip=false" >> "$GITHUB_OUTPUT"
           fi
 
-  deploy:
+  # Build and deploy are separate jobs: the deploy job starts only after the
+  # artifact upload has finished, and a failed deployment can be re-run on its
+  # own without uploading a second artifact.
+  build:
     needs: check-skip
     if: ${{ needs.check-skip.outputs.should-skip == 'false' }}
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -54,6 +55,13 @@ jobs:
         with:
           path: 'docs'  # Deploy the pre-built docs directory
 
+  deploy:
+    needs: build
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v4 
+        uses: actions/deploy-pages@v4
