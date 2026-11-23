@@ -1,44 +1,72 @@
 name: Update Search Database
 
-# This workflow only updates the search database from the comphy-search repository
-# It does not rebuild the documentation, which should be built locally due to dependencies
-
 on:
   schedule:
     - cron: '27 5 1,15 * *'  # Run on the 1st and 15th at 05:27 UTC
-  workflow_dispatch:  # Allow manual trigger
+  workflow_dispatch:
 
-# Add permissions needed for the workflow
 permissions:
-  contents: write    # This allows the action to commit and push changes
+  contents: write
+  pull-requests: write
 
 jobs:
   update-search:
+    if: github.ref == 'refs/heads/main'
     runs-on: ubuntu-latest
-    
+    env:
+      SEARCH_REVISION: ${{ vars.COMPHY_SEARCH_REVISION }}
+      INDEX_DESTINATION: docs/assets/js/search_db.json
     steps:
-    - uses: actions/checkout@v4
-      with:
-        fetch-depth: 0  # Fetch all history for proper git operations
-    
-    - name: Clone comphy-search repository
-      run: |
-        git clone https://github.com/comphy-lab/comphy-search.git
-        mkdir -p docs/assets/js
-    
-    - name: Copy search database
-      run: |
-        cp comphy-search/search_db.json docs/assets/js/search_db.json
-    
-    - name: Commit and push changes directly (bypassing branch protection)
-      run: |
-        git config --local user.email "action@github.com"
-        git config --local user.name "GitHub Action"
-        git add docs/assets/js/search_db.json
-        if git diff --staged --quiet; then
-          echo "No changes to commit"
-        else
-          git commit -m "Update search database from comphy-search repository [skip-deploy]"
-          # Use PAT to bypass branch protection
-          git push "https://${{ secrets.BYPASS_TOKEN }}@github.com/${GITHUB_REPOSITORY}.git" HEAD:main
-        fi
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - name: Fetch and validate the reviewed index
+        id: prepare
+        shell: bash
+        run: |
+          set -euo pipefail
+          if [[ -z "$SEARCH_REVISION" ]]; then
+            printf '%s\n' 'No reviewed COMPHY_SEARCH_REVISION is configured; skipping import.'
+            exit 0
+          fi
+          [[ "$SEARCH_REVISION" =~ ^[0-9a-f]{40}$ ]]
+          tmp="$(mktemp -d)"
+          trap 'rm -rf -- "$tmp"' EXIT
+          git -C "$tmp" init -q
+          git -C "$tmp" fetch --depth=1 --no-tags https://github.com/comphy-lab/comphy-search.git "$SEARCH_REVISION"
+          [[ "$(git -C "$tmp" rev-parse FETCH_HEAD)" == "$SEARCH_REVISION" ]]
+          read -r mode kind object path <<< "$(git -C "$tmp" ls-tree "$SEARCH_REVISION" -- search_db.json)"
+          [[ "$mode" == 100644 && "$kind" == blob && "$path" == search_db.json ]]
+          # Read the blob, not a checked-out path that may be a symlink.
+          git -C "$tmp" cat-file blob "$object" > "$tmp/search_db.json"
+          python3 .github/scripts/validate-search-index.py "$tmp/search_db.json"
+          install -m 0644 "$tmp/search_db.json" "$INDEX_DESTINATION"
+          git add -- "$INDEX_DESTINATION"
+          if ! git diff --cached --quiet -- "$INDEX_DESTINATION"; then
+            printf '%s\n' 'changed=true' >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Open an index update pull request
+        if: steps.prepare.outputs.changed == 'true'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GIT_CONFIG_COUNT: '1'
+          GIT_CONFIG_KEY_0: credential.helper
+          GIT_CONFIG_VALUE_0: '!gh auth git-credential'
+        shell: bash
+        run: |
+          set -euo pipefail
+          branch="automation/review-search-index-${SEARCH_REVISION}"
+          if [[ -n "$(gh pr list --head "$branch" --state open --json number --jq '.[0].number // empty')" ]]; then
+            printf '%s\n' 'An index update pull request already exists.'
+            exit 0
+          fi
+          # No pull request is open, so any retained branch is stale: rebuild
+          # it from the current main with the index validated in this run.
+          git -c user.name='github-actions[bot]' \
+            -c user.email='41898282+github-actions[bot]@users.noreply.github.com' \
+            commit -m 'Update the reviewed search index' -- "$INDEX_DESTINATION"
+          git push --force origin "HEAD:refs/heads/$branch"
+          gh pr create --base main --head "$branch" \
+            --title 'Update the reviewed search index' \
+            --body "Import the validated search database at comphy-lab/comphy-search@${SEARCH_REVISION}."
