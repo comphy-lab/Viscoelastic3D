@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 import os, subprocess, re, shutil, argparse, html, json
 from pathlib import Path
+from urllib.parse import quote
 from typing import Dict, List, Optional, Any, Union
 
 # Parse args
@@ -288,6 +289,25 @@ def process_shell_file(file_path: Path) -> str:
         content = content.replace("=false", "=\\false")
         return f"# {file_path.name}\n\n```bash\n{content}\n```"
 
+def inert_notebook_text(value: str) -> str:
+    """Render notebook-supplied text as one line of plain text.
+
+    The text is used both in raw HTML and in a Markdown heading, where pandoc
+    would read braces as heading attributes, brackets as links and backticks as
+    a fence. Every ASCII character that is not a letter, digit or space is
+    written as a numeric character reference, which is text in both places.
+    """
+    text = "".join(ch for ch in " ".join(value.split()) if ord(ch) >= 32)
+    return "".join(ch if ch == " " or ch.isalnum() or ord(ch) > 126 else f"&#{ord(ch)};"
+                   for ch in text)
+
+
+def seo_metadata_comment(metadata: dict) -> str:
+    """Serialise metadata so no value can end the surrounding HTML comment."""
+    encoded = json.dumps(metadata).replace("<", "\\u003c").replace(">", "\\u003e")
+    return f"<!--SEO_METADATA:{encoded}-->"
+
+
 def process_jupyter_notebook(file_path: Path) -> str:
     """
     Generates an HTML snippet to embed a Jupyter notebook with preview, download, and external viewing options.
@@ -356,9 +376,12 @@ def process_jupyter_notebook(file_path: Path) -> str:
             meta_safe_description = meta_safe_description[:157] + "..."
         
         # Properly escape all content for HTML use
-        safe_notebook_title = html.escape(notebook_title)
-        safe_notebook_description = html.escape(notebook_description)
-        safe_notebook_features = [html.escape(f) for f in notebook_features]
+        safe_filename_link = quote(notebook_filename, safe="")
+        notebook_path = quote(str(notebook_path), safe="/")
+        notebook_id = re.sub(r'[^A-Za-z0-9_-]', '-', notebook_filename)
+        safe_notebook_title = inert_notebook_text(notebook_title)
+        safe_notebook_description = inert_notebook_text(notebook_description)
+        safe_notebook_features = [inert_notebook_text(f) for f in notebook_features]
         features_html = "\n".join([f'<li>{feature}</li>' for feature in safe_notebook_features])
         
         # Store meta description for later use in SEO metadata
@@ -375,7 +398,7 @@ def process_jupyter_notebook(file_path: Path) -> str:
     <h2>Jupyter Notebook: {safe_notebook_title}</h2>
     
     <div class="notebook-action-buttons">
-        <a href="{notebook_filename}" download class="notebook-btn download-btn">
+        <a href="{safe_filename_link}" download class="notebook-btn download-btn">
             <i class="fa-solid fa-download"></i> Download Notebook
         </a>
         <a href="https://nbviewer.org/github/comphy-lab/{REPO_NAME}/blob/main/{notebook_path}" 
@@ -405,13 +428,13 @@ def process_jupyter_notebook(file_path: Path) -> str:
     <!-- Embedded Jupyter Notebook -->
     <div class="embedded-notebook">
         <h3>Notebook Preview</h3>
-        <div id="notebook-container-{notebook_filename.replace('.', '-')}" >
-            <iframe id="notebook-iframe-{notebook_filename.replace('.', '-')}" 
+        <div id="notebook-container-{notebook_id}" >
+            <iframe id="notebook-iframe-{notebook_id}" 
                     src="https://nbviewer.org/github/comphy-lab/{REPO_NAME}/blob/main/{notebook_path}" 
                     width="100%" height="800px" frameborder="0"
-                    onload="checkIframeLoaded('{notebook_filename.replace('.', '-')}')"
-                    onerror="handleIframeError('{notebook_filename.replace('.', '-')}')"></iframe>
-            <div id="notebook-error-{notebook_filename.replace('.', '-')}" 
+                    onload="checkIframeLoaded('{notebook_id}')"
+                    onerror="handleIframeError('{notebook_id}')"></iframe>
+            <div id="notebook-error-{notebook_id}" 
                  class="notebook-error-message" style="display: none;">
                 <div class="error-container">
                     <i class="fa-solid fa-exclamation-triangle"></i>
@@ -468,10 +491,10 @@ def process_jupyter_notebook(file_path: Path) -> str:
 ```
 """
         # Add metadata to the embed_html for extraction later
-        embed_html = f"<!--SEO_METADATA:{json.dumps(seo_metadata)}-->\n" + embed_html
+        embed_html = seo_metadata_comment(seo_metadata) + "\n" + embed_html
         return embed_html
     except Exception as e:
-        return f"# {notebook_filename}\n\nError processing notebook: {str(e)}"
+        return "# Notebook\n\nError processing notebook."
 
 def process_python_file(file_path: Path) -> str:
     """
