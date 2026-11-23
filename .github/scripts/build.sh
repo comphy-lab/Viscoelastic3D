@@ -26,11 +26,14 @@ PROJECT_ROOT=$(dirname "$(dirname "$SCRIPT_DIR")") # Go two levels up from scrip
 # Change to project root to ensure paths work correctly
 cd "$PROJECT_ROOT"
 
-# Use shallow clone (--depth=1) for better performance
-git clone --depth=1 https://github.com/comphy-lab/comphy-search.git
-mkdir -p .github/assets/js
-cp comphy-search/search_db.json .github/assets/js/search_db.json
-rm -rf comphy-search
+# The search index is the committed, reviewed copy. It is updated only by
+# .github/workflows/update-search.yml, which imports a pinned comphy-search
+# revision through a reviewed pull request. Never fetch it at build time.
+for SEARCH_INDEX in "$PROJECT_ROOT/.github/assets/js/search_db.json" "$PROJECT_ROOT/docs/assets/js/search_db.json"; do
+    if [ -f "$SEARCH_INDEX" ]; then
+        python3 "$PROJECT_ROOT/.github/scripts/validate-search-index.py" "$SEARCH_INDEX"
+    fi
+done
 DOCS_DIR="$PROJECT_ROOT/docs"
 PYTHON_SCRIPT="$PROJECT_ROOT/.github/scripts/generate_docs.py"
 
