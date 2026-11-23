@@ -6,6 +6,7 @@ on:
       - main
     paths:
       - 'docs/**'  # Only trigger when docs directory changes
+      - '.github/workflows/deploy.yml'  # Redeploy when this workflow changes
 
 permissions:
   contents: read
@@ -35,12 +36,12 @@ jobs:
             echo "should_skip=false" >> "$GITHUB_OUTPUT"
           fi
 
-  deploy:
+  # Build and deploy are separate jobs: the deploy job starts only after the
+  # artifact upload has finished, and a failed deployment can be re-run on its
+  # own without uploading a second artifact.
+  build:
     needs: check-skip
     if: ${{ needs.check-skip.outputs.should-skip == 'false' }}
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -54,6 +55,34 @@ jobs:
         with:
           path: 'docs'  # Deploy the pre-built docs directory
 
+  deploy:
+    needs: build
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      # A re-run of this job reuses the artifact of its own commit. Deploy it
+      # only while that commit is still the head of the branch, so a late
+      # re-run cannot replace a newer deployment with older pages.
+      - name: Check that this commit is still the latest
+        id: fresh
+        run: |
+          set -euo pipefail
+          refs="$(git ls-remote "${GITHUB_SERVER_URL}/${GITHUB_REPOSITORY}.git" "refs/heads/${GITHUB_REF_NAME}")"
+          latest_sha="$(printf '%s\n' "$refs" | cut -f1)"
+          if [ -z "$latest_sha" ]; then
+            echo "::error::Could not read the head of ${GITHUB_REF_NAME}"
+            exit 1
+          fi
+          if [ "$latest_sha" = "$GITHUB_SHA" ]; then
+            echo "current=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "current=false" >> "$GITHUB_OUTPUT"
+            echo "::warning::${GITHUB_REF_NAME} has moved to ${latest_sha}; not deploying ${GITHUB_SHA}"
+          fi
+
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v4 
+        if: ${{ steps.fresh.outputs.current == 'true' }}
+        uses: actions/deploy-pages@v4
